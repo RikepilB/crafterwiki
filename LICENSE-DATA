@@ -1,5 +1,8 @@
 # Data license — CC BY 4.0
 
+> Scope: [LICENSE](LICENSE) (MIT) covers the software — `cli/`, `mcp/`, `web/`, `test/`, `skills/`,
+> `agents/`, `commands/`, `.claude-plugin/` and the build scripts. This file covers the corpus.
+
 The CrafterWIKI corpus — everything in `data/` and `schema/`, and the corpus as served
 through `/api/v0`, `/data/corpus.json` and the MCP server — is licensed under the
 **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
