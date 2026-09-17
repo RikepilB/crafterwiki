@@ -370,3 +370,15 @@ permanent redirect; remove its duplicate navbar entry. Preserve original query p
 12-item pagination. Verify queries across both sources,dedup,advanced filters and both languages.
 
 Navigation follows three click-open topics: Explore (references/events/discovery), Build (brief/guide), and Learn (patterns/mechanisms/resources). One menu opens at a time; Escape, outside click and focus leaving navigation close it. Mobile menus span the navigation width. Rendered review passed at desktop and 390px in dark/light modes; no horizontal overflow. Verified bilingual search, single S-KBD67 result, optional roster total173, and preserved query filters.37 tests pass and corpus validation reports zero errors/warnings.
+
+## Hall public coverage audit — 2026-09-17
+
+The coverage-only follow-up reconciles all 29 public event filters, nine category filters,
+Classic view and 51 detail pages. Their union is the existing 51 Hall records; the main feed
+cycles duplicates rather than terminating. A sanitized receipt in hall-of-hacks-audit.json and
+scripts/audit-hall-coverage.mjs make the dated reconciliation reviewable without publishing
+raw browser captures. Four observed Vimeo links and JailCall's external project page restore
+missing resource actions. Counts remain 85 default references and 88 optional roster entries;
+all 51 Hall records now have video links. No award status, navigation, card styling, theme,
+language or responsive media asset changes. See hall-of-hacks-coverage.md for limits and
+hall-of-hacks-design-study.md for source-based organization lessons and future options.
