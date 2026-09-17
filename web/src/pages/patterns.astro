@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Bars from '../components/Bars.astro';
+import { corpus, T, href, patterns, eventName, hackathon } from '../lib/data.mjs';
+import { humanize } from '../lib/labels.mjs';
+
+const overall = patterns(corpus);
+const byKind = T.event_kinds
+  .map((k) => ({ k, p: patterns(corpus, { eventKind: k.id }), events: corpus.hackathons.filter((h) => h.kind === k.id) }))
+  .filter((x) => x.events.length)
+  .sort((a, b) => b.p.sample.analyzed_records - a.p.sample.analyzed_records);
+const withWinners = byKind.filter((x) => x.p.sample.analyzed_records > 0);
+const without = byKind.filter((x) => x.p.sample.analyzed_records === 0);
+const saturation = Object.entries(overall.saturation)
+  .map(([slug, s]) => ({ h: hackathon(slug), s }))
+  .sort((a, b) => Number(b.s.base_rate_valid) - Number(a.s.base_rate_valid) || b.s.indexed - a.s.indexed);
+---
+<Layout title="Patterns" description="What confirmed hackathon winners have in common, stratified by kind of event.">
+  <p class="eyebrow">Evidence</p>
+  <h1>Patterns by kind of event</h1>
+  <p class="lede">
+    Playbooks differ. In-person student events, online open-source events and agency data challenges reward
+    different things, so read each kind on its own and mind the sample size.
+  </p>
+  <p class="callout">
+    <b>Small samples, not causal.</b> {overall.sample.analyzed_records} confirmed winners and finalists in total;
+    mechanism tags are mostly curator inference.
+  </p>
+
+  {withWinners.map(({ k, p, events }) => (
+    <section class="kind">
+      <h2>{humanize(k.id)} <span class="meta">· n = {p.sample.analyzed_records}</span></h2>
+      <p class="muted">
+        {k.definition} Events:{' '}
+        {events.map((h, i) => <>{i > 0 && ', '}<a href={href(`/hackathons/${h.slug}/`)}>{eventName(h)}</a></>)}
+      </p>
+      <div class="two-col">
+        <section><h3>Winning mechanisms</h3><Bars rows={p.mechanisms} facet="mechanisms" of={p.sample.analyzed_records} /></section>
+        <section>
+          <h3>Judging lenses</h3><Bars rows={p.judging_lenses} of={p.sample.analyzed_records} />
+          <h3 class="spaced">AI patterns</h3><Bars rows={p.ai_patterns} of={p.sample.analyzed_records} limit={5} />
+        </section>
+      </div>
+    </section>
+  ))}
+
+  {without.length > 0 && (
+    <>
+      <h2>No confirmed winners yet</h2>
+      <ul>{without.map(({ k, events }) => <li><b>{humanize(k.id)}</b> — {events.map((h) => eventName(h)).join(', ')}</li>)}</ul>
+    </>
+  )}
+
+  <h2>Saturation by event</h2>
+  <p class="muted">Base rates exist only where every submission is indexed.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Event</th><th>Indexed</th><th>Roster</th><th>Top domains</th></tr></thead>
+      <tbody>
+        {saturation.map(({ h, s }) => (
+          <tr>
+            <td><a href={href(`/hackathons/${h.slug}/#roster`)}>{eventName(h)}</a></td>
+            <td class="nowrap">{s.indexed}{s.of_teams ? ` / ${Number(s.of_teams).toLocaleString('en-US')}` : ''}</td>
+            <td><span class={`badge ${s.base_rate_valid ? 'win' : 'neutral'}`}>{s.base_rate_valid ? 'Full · base rate' : humanize(s.roster_coverage)}</span></td>
+            <td class="meta">{s.top_domains.map(([d, n]) => `${humanize(d)} ${n}`).join(' · ')}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Layout>
+
+<style>
+  .kind { border-top: 1px solid var(--line); margin-top: 30px; }
+  h3 { margin: 0 0 10px; font-size: 0.95rem; }
+  .spaced { margin-top: 20px; }
+  .nowrap { white-space: nowrap; }
+</style>

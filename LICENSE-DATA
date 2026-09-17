@@ -1,0 +1,36 @@
+# Data license — CC BY 4.0
+
+The CrafterWIKI corpus — everything in `data/` and `schema/`, and the corpus as served
+through `/api/v0`, `/data/corpus.json` and the MCP server — is licensed under the
+**Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+- Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+- Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Copyright (c) 2026 Richard Pillaca and CrafterWIKI contributors.
+
+## You are free to
+
+- **Share** — copy and redistribute the corpus in any medium or format.
+- **Adapt** — remix, transform and build upon it, for any purpose, including commercially.
+
+## Under one condition
+
+**Attribution.** Give appropriate credit, link to this license, and indicate if changes were
+made. For example:
+
+> Hackathon data from CrafterWIKI (https://github.com/RikepilB/crafterwiki), CC BY 4.0.
+
+## What this license does and does not cover
+
+- **Covered:** the records, tags, analyses and taxonomy written for this project.
+- **Not covered:** the underlying facts (facts are not copyrightable), and the linked source
+  material. Project write-ups, images and videos on organizer or team pages belong to their
+  authors — this repository links to them and paraphrases; it does not redistribute them.
+- The software in this repository is MIT licensed instead — see LICENSE.
+
+## Accuracy and corrections
+
+Records carry a placement status, a source list and a basis for each claim, but they are a
+best effort from public sources and may be wrong. To correct or remove a record, see
+[SECURITY.md](SECURITY.md) and [CONTRIBUTING.md](CONTRIBUTING.md).

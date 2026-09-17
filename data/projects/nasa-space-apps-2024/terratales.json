@@ -1,0 +1,39 @@
+{
+  "slug": "terratales",
+  "name": "TerraTales",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "Mother Earth meets her children North, South and Neutral every five years to compare climate notes — then you play, and see the forecast if nothing changes.",
+  "placement": { "status": "track-winner", "awards": ["Best Storytelling"], "track": "tell-us-a-climate-story" },
+  "team": { "size": 5, "members": [], "countries": ["EG"] },
+  "problem": "Climate data is freely available but hard for most people to understand or connect to their own choices.",
+  "solution": "A website built on NASA's U.S. Greenhouse Gas Center data: illustrated stories for Brazil, Egypt and Germany with charts and native-language narration, an interactive game where eco-friendly choices change the story, and a forecast section driven by a CNN-LSTM model on air-sea CO₂ flux maps and a regression on population density.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["html", "css", "javascript", "python", "keras", "tensorflow", "netlify", "ghg-center-data"], "ai_patterns": ["ml-model", "generative-media"] },
+  "domains": ["climate-sustainability", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for most creatively communicating the potential of open data through storytelling.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Shared stories of how climate change affects Egypt, Brazil and Germany, with an AI climate forecasting model and an interactive game for eco-friendly choices.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Three layers by design: story to engage, game to show individual impact, forecast to warn — because 'storytelling alone isn't enough'.", "basis": "team-stated", "source": 2 },
+      { "claim": "Each country is narrated in its own language (Egyptian Arabic for Egypt), tying the global story to the local event's audience.", "basis": "team-stated", "source": 2 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "place-based-specificity", "theme-native-twist"],
+    "judging_lens": ["storytelling-pitch", "challenge-relevance", "design-ux"],
+    "lessons": [
+      "Give data a cast of characters; a family meeting frame makes three countries comparable at a glance.",
+      "Pair the story with one thing the audience does and one consequence they see."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/terratales/?tab=project",
+    "demo": "https://terratalesjourney.netlify.app/",
+    "video": "https://drive.google.com/file/d/18fZCTpWv1b-nGf7o6hufBO35blM6vzQx/view"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/terratales/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written story concept, components, models, AI-use disclosure (ChatGPT, Leonardo AI, Canva)." }
+  ]
+}

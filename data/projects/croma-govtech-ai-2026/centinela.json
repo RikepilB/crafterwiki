@@ -1,0 +1,34 @@
+{
+  "slug": "centinela",
+  "name": "Centinela",
+  "hackathon": "croma-govtech-ai-2026",
+  "tagline": "Autonomous agent that watches Colombian public procurement and issues opportunities and red flags with cited evidence.",
+  "placement": { "status": "grand-winner", "awards": ["Winner (only prize): USD 300 + 6 months of Croma"], "rank": 1, "of_teams": 12 },
+  "team": { "size": 1, "members": ["Adrian Issac"], "countries": ["PE"] },
+  "problem": "Procurement risk and opportunity are invisible when contracts are read one at a time, and checking a supplier across registries takes weeks of integration work.",
+  "solution": "Every two hours it checks new processes for flagged entities and contractors, chains six official sources (procurement, company registry, corporate supervisor, judiciary, disciplinary and fiscal-control records) and returns a verdict with the evidence chain; it spots cross-contract signals and drafts the freedom-of-information request, evidence dossier and social thread.",
+  "demo_moment": "The same flagged process shown twice: as a winnable low-competition opportunity for a small business, and as a red flag (single bidder, two-month-old company) for a citizen.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["croma-platform"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["govtech-transparency", "due-diligence-risk"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "One engine, two products: the paying SME opportunity feed funds the free citizen watchdog.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Finds patterns invisible contract-by-contract: award concentration around one supplier, shared legal representatives between supposed competitors.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Does not stop at the finding — drafts the legal information request and the dossier.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Autonomous: runs on a schedule without being asked, unlike the search/research tools most other entrants built.", "basis": "curator-inference" },
+      { "claim": "Won from the most crowded lane (7 of 12 projects did procurement): differentiation came from autonomy, dual use and action, not topic choice.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["dual-use-value", "takes-action", "cited-evidence-trust", "sponsor-platform-mastery", "live-real-world-proof"],
+    "judging_lens": ["impact", "business-potential", "sponsor-api-use"],
+    "lessons": ["In a crowded lane, compete on autonomy and the next action, not on better search.", "Show the business model inside the demo: who pays, who benefits."],
+    "confidence": "high"
+  },
+  "links": { "devpost": null, "repo": null, "demo": "https://centinela.aido.lat", "video": null },
+  "sources": [
+    { "url": "https://usecroma.com/en/blog/hackathon-govtech-resultados", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ]
+}

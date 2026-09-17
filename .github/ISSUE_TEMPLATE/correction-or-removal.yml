@@ -1,0 +1,41 @@
+name: Correction or removal request
+description: A record is wrong, or you want your project's record taken down.
+title: "[correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you are on a team described here and want the record removed, just say so — you do not
+        have to justify it. Prefer to do this privately? Open a security advisory instead:
+        https://github.com/RikepilB/crafterwiki/security/advisories/new
+  - type: input
+    id: record
+    attributes:
+      label: Record
+      description: The project or event slug, or the page URL.
+      placeholder: "data/projects/nasa-space-apps-2024/waterwise.json"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What do you need?
+      options:
+        - "Fix a factual error"
+        - "Fix a placement (we did not win that / we won something else)"
+        - "Remove the record entirely"
+        - "Something else"
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What is wrong, and what is correct?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source for the correction (optional)
+      description: Organizer page, announcement, or your project page.

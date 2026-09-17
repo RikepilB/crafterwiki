@@ -1,0 +1,42 @@
+{
+  "slug": "woki",
+  "name": "WOKI",
+  "hackathon": "platanus-hack-26-bogota",
+  "tagline": "Ask for help and coordinate rescues without internet, with remote visibility once the network returns.",
+  "placement": {
+    "status": "submitted-only",
+    "awards": [],
+    "track": "emergencies"
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "When an earthquake takes down the cell network, asking for help stops being an interface problem and becomes a communication and coordination problem.",
+  "solution": "A person joins the Wi-Fi of a TTGO LoRa node without installing an app, reports what they need with GPS or a description; the node sends a short LoRa (915 MHz) packet, waits for an acknowledgement and retries. A Raspberry Pi command center stores incidents in SQLite, prioritizes them, recommends compatible resources and lets an operator authorize dispatch; the resource accepts and reports progress until the incident closes. An online replica (Vercel + Supabase) syncs pending events when internet returns but never executes critical actions.",
+  "demo_moment": "Not described publicly. The write-up lists LoRa messaging with acknowledgements between boards on real hardware, an offline dashboard, and an automatically verified flow from SOS through triage, dispatch, acceptance and resolution.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["ttgo-lora32", "esp32", "lora", "raspberry-pi", "sqlite", "python", "captive-portal-wifi", "vercel", "supabase", "3d-printing"],
+    "ai_patterns": []
+  },
+  "domains": ["emergencies-disaster", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Zero-install entry: a phone joins the node's Wi-Fi to report an emergency; delivery uses acknowledgements and retries over LoRa.", "basis": "team-stated", "source": 0 },
+      { "claim": "Offline is the operational source of truth; the cloud hub only mirrors and syncs when the network returns, so a cloud failure never stops operations.", "basis": "team-stated", "source": 0 },
+      { "claim": "Shipped beyond a slide: a public hub, an isolated demo command center, printable enclosures and a LoRa flow visualization.", "basis": "team-stated", "source": 0 },
+      { "claim": "Entered the joint most crowded Bogotá track (7 of 24 submissions in Emergencies) with physical hardware and a one-line promise — works when the internet does not.", "basis": "curator-inference", "source": 1 }
+    ],
+    "mechanisms": ["physical-artifact", "zero-install-channel", "human-stakes", "visible-engineering-depth", "one-sentence-clarity"],
+    "judging_lens": ["technical-depth", "impact", "wow-factor"],
+    "lessons": [
+      "State the failure condition the product survives (no internet) in the tagline; judges remember constraints.",
+      "Separate the operational path (local, authoritative) from the showcase path (cloud mirror) so the demo cannot be broken by venue Wi-Fi."
+    ],
+    "confidence": "low"
+  },
+  "links": { "devpost": null, "repo": null, "demo": "https://woki-hub.vercel.app", "video": null },
+  "sources": [
+    { "url": "https://hack.platan.us/26-co/vote/woki", "kind": "voting-page", "retrieved_at": "2026-09-14", "note": "Team-written project page hosted by the organizer; no placement." },
+    { "url": "data/hackathons/platanus-hack-26-bogota.json", "kind": "voting-page", "retrieved_at": "2026-09-14", "note": "Track counts (full roster)." }
+  ],
+  "curator_notes": "Placement unknown: official results pages returned server errors on 2026-09-14."
+}

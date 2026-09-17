@@ -1,0 +1,42 @@
+{
+  "slug": "astro-sweepers",
+  "name": "Astro Sweepers",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "Orbital debris compliance and risk intelligence: automated Debris Assessment Software runs, ready-to-file disposal reports and a risk index for every object.",
+  "placement": { "status": "track-winner", "awards": ["Galactic Impact"], "track": "commercializing-leo" },
+  "team": { "size": 6, "members": [], "countries": [], "note": "Universal Event (virtual)." },
+  "problem": "Commercial activity in low Earth orbit multiplies debris risk and regulatory paperwork; assessing each object and producing compliance reports takes operators weeks.",
+  "solution": "A platform that ingests public orbital data (SPARK 2022, Space-Track TLEs and conjunction messages, ESA DISCOS), scores every object with a weighted risk index (debris legacy, compliance, collision-risk burden, sustainability), computes the Δv needed to lower perigee, re-runs NASA's Debris Assessment Software to show compliance before and after, and auto-fills disposal and end-of-mission plans — paired with a tiered SaaS and licensing business model and long-term debris population forecasts.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["nasa-debris-assessment-software", "space-track", "esa-discos", "vercel"], "ai_patterns": [] },
+  "domains": ["space-operations", "due-diligence-risk"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the most potential to improve life on Earth or in the universe.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Addresses the operational, regulatory and environmental sides of commercial spaceflight, not only orbital physics.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "A worked case study makes the value concrete: a single ~22 m/s burn moves an 11-year-old rocket body from failing to compliant, with before-and-after assessment numbers and an auto-generated disposal plan.", "basis": "team-stated", "source": 2 },
+      { "claim": "Answers the challenge's business requirement in full: pricing tiers, operator and insurer licenses, and a multi-year financial model.", "basis": "team-stated", "source": 2 },
+      { "claim": "Speaks the industry's compliance language, so the output is something an operator would file rather than a visualization.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "visible-engineering-depth", "dual-use-value"],
+    "judging_lens": ["impact", "challenge-relevance", "technical-depth", "business-potential"],
+    "lessons": [
+      "Produce the artifact the real user must deliver (a compliance report), not only a dashboard.",
+      "Carry one worked, numeric case study from problem to fix; it proves the whole system in a minute.",
+      "When the challenge asks for a business model, bring pricing and a financial model, not a slide title."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/astro-sweepers-we-catch-what-space-leaves-behind/?tab=project",
+    "demo": "https://astro-sweepers.vercel.app/",
+    "video": "https://drive.google.com/file/d/1L3cIR8WZdzdp7eUY3leIToGTbnMiBT4N/view?usp=sharing"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/astro-sweepers-we-catch-what-space-leaves-behind/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written description, risk model, case study, business model, AI-use note and data." }
+  ],
+  "curator_notes": "The team page mentions an exploratory CNN that was not part of the submission, so no AI pattern is recorded."
+}

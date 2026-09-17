@@ -1,0 +1,41 @@
+{
+  "slug": "skyshield-wmpgang",
+  "name": "SkyShield (WMPGang)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "A physically based 3D orrery that puts near-Earth objects and meteoroid streams in one view to show the overlooked hazard to satellites.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Science"], "track": "orrery-web-app-neos" },
+  "team": { "size": 4, "members": [], "countries": ["CA"] },
+  "problem": "Asteroid-risk tools focus on large near-Earth objects, while the steady flux of small meteoroids from streams and the sporadic complex is a constant, overlooked threat to satellites.",
+  "solution": "A JavaScript/Three.js web orrery that computes orbits from orbital elements at their epoch: planets, dwarf planets, 1,669 NEOs from the ESA risk list, 107 meteoroid streams and the sporadic meteoroid complex. Streams light up only when active near Earth; NEOs filter by orbit, size and Palermo impact rating; time runs live, faster or backwards.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "three-js", "python-preprocessing", "github"], "ai_patterns": [] },
+  "domains": ["space-science", "space-operations"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the best and most valid use of science.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Identifies satellite risk zones using real-time data on near-Earth objects and meteor streams.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "The team comes from a university meteor physics group and adds the meteoroid threat that NEO tools overlook.", "basis": "team-stated", "source": 2 },
+      { "claim": "Positions are computed from physical orbital elements at each object's epoch, so objects appear where they truly are at the chosen time.", "basis": "team-stated", "source": 2 },
+      { "claim": "Domain experts answering a visualization challenge with a physically correct model is what the science award rewards: the orrery is accurate, not just pretty.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "inverted-approach", "expert-data-for-everyone", "complete-submission-package"],
+    "judging_lens": ["scientific-validity", "technical-depth", "design-ux"],
+    "lessons": [
+      "Bring real domain expertise to a visualization challenge and let accuracy be the differentiator.",
+      "Add the hazard everyone ignores (meteoroids next to asteroids) to make a standard brief your own.",
+      "AI was used only for code snippets and debugging, and the disclosure says so."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/wmpgang/?tab=project",
+    "demo": "https://simonvse.com/projects/neo-orrery/app/",
+    "video": "https://youtu.be/RBl_3ZsmVFo"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/wmpgang/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, technical details, AI-use disclosure, data list." }
+  ]
+}

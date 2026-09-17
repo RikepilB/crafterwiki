@@ -1,0 +1,44 @@
+{
+  "slug": "resonant-exoplanets",
+  "name": "Resonant Exoplanets",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "End-to-end pipeline that finds exoplanets in Kepler, TESS and JWST data and checks possible biosignatures against false positives.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Data"], "track": "hunting-exoplanets-with-ai" },
+  "team": { "size": 4, "members": [], "countries": ["US"] },
+  "problem": "Most exoplanets were identified manually, and AI-only detection can misclassify signals; for biosignatures, a false positive is the costliest mistake.",
+  "solution": "A full-stack pipeline that fetches Kepler, TESS and JWST data, detects transits with machine learning, validates candidates with physics models, and checks atmospheric chemistry with an exact-arithmetic solver to separate biosignatures (such as O₂ and CH₄ coexisting) from abiotic false positives, with plots and automatically generated scientific reports in a web interface.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "xgboost", "lightkurve", "astroquery", "react", "typescript", "google-cloud", "qwen", "reportlab"],
+    "ai_patterns": ["ml-model"]
+  },
+  "domains": ["space-science"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the project that best makes space data accessible or leverages it for a unique application.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Replaces manual identification with automatic analysis and goes as far as possible biosignatures, using mission data such as JWST spectra.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Aims at the weak spot of AI-only detection — false positives — by adding physics validation and exact chemistry checks before calling anything a biosignature.", "basis": "team-stated", "source": 2 },
+      { "claim": "Ships the whole path rather than a model: data fetch, detection, validation, web interface and automated reports.", "basis": "team-stated", "source": 2 },
+      { "claim": "Took the challenge's task (find exoplanets) one step further to the question the public cares about (signs of life), raising both the stakes and the story.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust", "trend-wave-timing"],
+    "judging_lens": ["scientific-validity", "technical-depth", "originality"],
+    "lessons": [
+      "Push the challenge's task one step toward the question people actually care about.",
+      "In AI challenges judged on validity, show how you catch the model's false positives.",
+      "Name the mission data you used; validity judges look for it."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/resonant-exoplanets/?tab=project",
+    "demo": "https://resonant-planet.vercel.app",
+    "video": "https://www.youtube.com/watch?v=5fBB5YJpfwU"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/resonant-exoplanets/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, pipeline, stack, AI-use disclosure and data." }
+  ]
+}

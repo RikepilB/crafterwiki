@@ -1,0 +1,56 @@
+{
+  "slug": "solo-mcp-ai-agents-2026",
+  "name": "Hackathon for MCP & AI Agents",
+  "edition": "2026",
+  "year": 2026,
+  "organizer": "Solo.io (open-source team)",
+  "kind": "open-source-community",
+  "format": "online",
+  "region": "Global",
+  "countries": [],
+  "city": null,
+  "venue": null,
+  "start_date": "2026-02-01",
+  "end_date": "2026-04-10",
+  "date_precision": "month",
+  "duration_hours": null,
+  "participants": null,
+  "teams": null,
+  "team_size": null,
+  "theme": "Build MCP servers and AI agents with CNCF-adjacent open source (kagent, agentgateway, agentregistry, kgateway, kmcp)",
+  "tracks": [
+    { "id": "building-cool-agents", "name": "Building Cool Agents" },
+    { "id": "explore-agentregistry", "name": "Explore agentregistry" },
+    { "id": "starter", "name": "MCP & AI Agents Starter" },
+    { "id": "open-source-contributions", "name": "Open Source Contributions" },
+    { "id": "secure-govern-mcp", "name": "Secure & Govern MCP" }
+  ],
+  "prizes": [],
+  "judging": {
+    "criteria": [],
+    "judges": [],
+    "notes": "Criteria not published in the results post. The organizer's praise repeatedly cites the blog, the project video and the GitHub repository together, and 'practical and impactful' outcomes."
+  },
+  "required_tech": ["kagent", "agentgateway", "agentregistry", "kgateway", "kmcp"],
+  "sponsors": ["Solo.io"],
+  "submission_requirements": ["Project video", "GitHub repository", "Blog (encouraged)"],
+  "results_status": "complete",
+  "roster_coverage": "winners-only",
+  "entries": [
+    { "name": "Frugalia", "project": "frugalia" },
+    { "name": "Kubernetes-native clinical MCP federation", "project": "mimic-clinical-mcp-federation" },
+    { "name": "Multi-cluster AI inventory controller", "project": "multicluster-ai-inventory-controller" },
+    { "name": "Vision agent with ASL mode", "project": "kagent-vision-asl-agent" },
+    { "name": "kagent-dotnet", "project": "kagent-dotnet" },
+    { "name": "agentgateway identity-aware control plane", "project": "agentgateway-identity-control-plane" },
+    { "name": "Kubernetes-native MCP governance", "project": "k8s-mcp-governance" },
+    { "name": "MCP.STORE", "project": "mcp-store" }
+  ],
+  "organizer_takeaways": [
+    { "claim": "Competition was close in many categories, so standout runner-ups were named alongside winners.", "source": 0 }
+  ],
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "Published 2026-05-06. Ran early February to early April 2026." }
+  ],
+  "curator_notes": "Start/end dates are month-precision approximations of 'early February to early April'."
+}

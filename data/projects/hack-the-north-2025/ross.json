@@ -1,0 +1,35 @@
+{
+  "slug": "ross",
+  "name": "ROSS - Remote Operated Semantic Sketching",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A robot that draws paintings onto a blind person's palm with warm and cold brushes, with narration.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": null, "members": ["Theodore Zhu"] },
+  "problem": "Galleries are mostly 2D visual work; blind and low-vision visitors cannot experience paintings.",
+  "solution": "Segment a painting into meaningful objects, convert each into simplified stroke graphs and millimetre coordinates, and have a two-axis robot trace them on the palm; warm vs cold colours map to heated vs cooled brushes, with narration and mood music in a Bob Ross voice.",
+  "demo_moment": "Photograph a painting by voice, then feel its shapes drawn on your hand while a familiar voice describes them.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["meta-sam", "python", "ramer-douglas-peucker", "arduino", "nema-steppers", "servos", "3d-printing", "xtts-fine-tune"],
+    "ai_patterns": ["computer-vision", "generative-media", "voice-ai"]
+  },
+  "domains": ["accessibility", "creative-media", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Clear human stakes: a specific group gets access to culture they are excluded from.", "basis": "curator-inference" },
+      { "claim": "The warm/cold two-brush feature was not working; the team demoed one brush and no colour, and still reached the finals — a working core beat a complete feature list.", "basis": "team-stated", "source": 0 },
+      { "claim": "Dropped an LLM-based simplification approach for a deterministic geometric pipeline after inconsistent results.", "basis": "team-stated", "source": 0 },
+      { "claim": "Bob Ross as name and narrator makes the accessibility message warm and memorable.", "basis": "curator-inference" },
+      { "claim": "Featured by the organizer as a past showcase project.", "basis": "organizer-stated", "source": 1 }
+    ],
+    "mechanisms": ["human-stakes", "physical-artifact", "cultural-reference-hook", "visible-engineering-depth", "demo-first-wow"],
+    "judging_lens": ["wow-factor", "impact", "technical-depth"],
+    "lessons": ["Cut the broken feature from the demo and describe it as next; never let the unfinished part define the pitch.", "When an LLM step is flaky, replace it with deterministic code before demo day."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/ross-42pnvi", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/ross-42pnvi", "kind": "devpost-project", "retrieved_at": "2026-09-14" },
+    { "url": "https://hackthenorth.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14" }
+  ]
+}

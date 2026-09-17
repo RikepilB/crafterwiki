@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { corpus, href, eventName } from '../../lib/data.mjs';
+import { humanize, fmtRange } from '../../lib/labels.mjs';
+
+const rows = [...corpus.hackathons]
+  .sort((a, b) => (b.start_date ?? '').localeCompare(a.start_date ?? ''))
+  .map((h) => {
+    const items = corpus.items.filter((i) => i.hackathon === h.slug);
+    return { h, analyzed: items.filter((i) => i.analyzed).length, roster: items.filter((i) => !i.analyzed).length };
+  });
+const resultsClass = (s) => (s === 'complete' ? 'win' : s === 'upcoming' ? 'vote' : 'neutral');
+---
+<Layout title="Hackathons" description="Indexed hackathons with rubric, judges, prizes, results and roster coverage.">
+  <p class="eyebrow">Events</p>
+  <h1>Hackathons</h1>
+  <p class="lede">
+    Each event carries its rubric, judge profile, prizes and — where known — every submission, so you can
+    see base rates and not only winners.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Event</th><th>Dates</th><th>Kind</th><th>Results</th><th>Roster</th><th>Indexed</th></tr></thead>
+      <tbody>
+        {rows.map(({ h, analyzed, roster }) => (
+          <tr>
+            <td><a href={href(`/hackathons/${h.slug}/`)}><b>{eventName(h)}</b></a><br /><span class="meta">{[h.city, humanize(h.format)].filter(Boolean).join(' · ')}</span></td>
+            <td class="nowrap">{fmtRange(h.start_date, h.end_date)}</td>
+            <td>{humanize(h.kind)}</td>
+            <td><span class={`badge ${resultsClass(h.results_status)}`}>{humanize(h.results_status)}</span></td>
+            <td>{humanize(h.roster_coverage)}{h.roster_coverage === 'full' && <><br /><span class="meta">base rates valid</span></>}</td>
+            <td class="meta nowrap">{analyzed} analyzed<br />{roster} roster</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Layout>
+
+<style>
+  .nowrap { white-space: nowrap; }
+</style>

@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/data.mjs';
+
+const steps = [
+  ['Recon', 'Rubric → judging lenses and weights, judge backgrounds, prizes and stackable sponsor lanes, constraints, and what the last edition produced.', false],
+  ['Patterns', 'Event brief, winning mechanisms for this kind of event, and similar situations from other events.', false],
+  ['Problems → angles', 'At least six real problems, then three structurally different angles, each with a one-sentence idea, a named live demo moment, human stakes and the mechanisms it bets on.', false],
+  ['Judge panel', 'Simulated judges score every angle against the rubric and check whether it has been done before. Kill, merge or keep.', true],
+  ['Demo script and pitch', 'A 2–3 minute storyline with a fallback for every live moment.', false],
+  ['Your approval', 'No stack or architecture decisions until you approve the angle and the demo.', true],
+  ['Architecture', 'Only the system the demo path needs; everything else is a slide.', false],
+  ['Build plan', 'Roles in parallel from hour one, single-device bottlenecks, code freeze, two rehearsals, sleep.', false],
+];
+const endpoints = [
+  ['manifest.json', 'Version, counts, endpoint list'],
+  ['index.json', 'Every public project and roster entry as a flat item'],
+  ['taxonomy.json', 'Allowed facet values with definitions'],
+  ['patterns.json', 'Winner frequencies and per-event saturation'],
+  ['hackathons/nasa-space-apps-2025.json', 'One event: rubric, prizes, roster, sources'],
+  ['projects/centinela.json', 'One analyzed project with basis-labelled claims'],
+];
+const mcpConfig = `{
+  "mcpServers": {
+    "crafterwiki": { "command": "node", "args": ["/path/to/CrafterWIKI/mcp/server.mjs"] }
+  }
+}`;
+---
+<Layout title="Guide" description="How to plan a hackathon demo-first with CrafterWIKI, and how to use it from Claude Code, the CLI, MCP and the static API.">
+  <p class="eyebrow">Guide</p>
+  <h1>Decide the demo before the architecture.</h1>
+  <p class="lede">
+    The expensive decision at a hackathon is <em>what</em> to build. CrafterWIKI makes it against the judging
+    reality of your event, and only then turns to stack and system design.
+  </p>
+
+  <h2>The demo-first method</h2>
+  <ol class="steps">
+    {steps.map(([title, text, gate]) => (
+      <li class={gate ? 'gate' : undefined}>
+        <b>{title}</b>{gate && <span class="badge accent gate-badge">Gate</span>}<br />
+        <span class="muted">{text}</span>
+      </li>
+    ))}
+  </ol>
+  <p class="spaced"><a class="btn" href={href('/plans/nasa-space-apps-2026/')}>See a real run: NASA Space Apps 2026</a></p>
+
+  <h2>Reading the labels</h2>
+  <div class="two-col">
+    <dl class="deflist">
+      <div><dt><span class="badge win">Grand winner · Podium · Award winner · Runner-up · Finalist</span></dt><dd>Organizer-confirmed placements. Only these count as wins.</dd></div>
+      <div><dt><span class="badge vote">Public vote</span></dt><dd>Ranked by community voting, with votes stored. Not a jury result.</dd></div>
+      <div><dt><span class="badge feat">Featured</span></dt><dd>Showcased by the organizer without a stated placement.</dd></div>
+      <div><dt><span class="badge warn">Reported · unverified</span></dt><dd>Claimed by a team member or a secondary source; official results not found.</dd></div>
+      <div><dt><span class="badge neutral">Submitted</span></dt><dd>On a submission or voting list. Used for base rates, never as a winner.</dd></div>
+    </dl>
+    <dl class="deflist">
+      <div><dt><span class="basis organizer-stated">organizer stated</span></dt><dd>Written by the organizer or judges: a results post or prize citation.</dd></div>
+      <div><dt><span class="basis team-stated">team stated</span></dt><dd>Written by the team: project page, README or write-up.</dd></div>
+      <div><dt><span class="basis curator-inference">curator inference</span></dt><dd>CrafterWIKI's own reading of the evidence. Always labelled.</dd></div>
+      <div><dt>Roster coverage</dt><dd>Only <b>full</b> rosters produce base rates. Partial and winners-only counts are never presented as what an event produced.</dd></div>
+    </dl>
+  </div>
+
+  <h2 id="agents">Use it from Claude Code</h2>
+  <p>The repository is a Claude Code plugin: a <code>/hack-plan</code> command, four skills, four agents and an MCP server. Load it for one session:</p>
+  <pre>claude --plugin-dir /path/to/CrafterWIKI</pre>
+  <p>Then run <code>/hack-plan &lt;event URL or slug&gt;</code>. Each phase writes <code>hack-plan/&lt;event&gt;/01-recon.md</code> … <code>06-build-plan.md</code>.</p>
+
+  <h2>CLI</h2>
+  <pre>node cli/crafterwiki.mjs event nasa-space-apps-2026
+node cli/crafterwiki.mjs patterns --event-kind agency-open-data-challenge
+node cli/crafterwiki.mjs similar --mechanism expert-data-for-everyone --lens scientific-validity
+node cli/crafterwiki.mjs search "voice agent" --winners --json
+node cli/crafterwiki.mjs deal --mechanism familiar-thing-new-job --seed 7</pre>
+  <p class="muted">Node 20 or newer, no install step. Every command accepts <code>--json</code>.</p>
+
+  <h2>MCP server</h2>
+  <p>
+    A zero-dependency stdio server with the tools <code>search_projects</code>, <code>similar_situations</code>,
+    <code>event_brief</code>, <code>patterns</code>, <code>deal</code>, <code>get_record</code>,
+    <code>list_hackathons</code> and <code>list_facets</code>.
+  </p>
+  <pre>claude mcp add crafterwiki -- node /path/to/CrafterWIKI/mcp/server.mjs</pre>
+  <pre>{mcpConfig}</pre>
+
+  <h2>Static API</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Endpoint</th><th>What</th></tr></thead>
+      <tbody>
+        {endpoints.map(([path, what]) => <tr><td><a href={href(`/api/v0/${path}`)}><code>/api/v0/{path}</code></a></td><td>{what}</td></tr>)}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="corrections">Corrections, additions and removal</h2>
+  <p>
+    Records come from primary sources: organizer results, event pages and team project pages. If a placement is
+    wrong, a source is missing, or you want your project removed, open an issue in the CrafterWIKI repository
+    with the record slug. Removal requests are honored.
+  </p>
+  <p class="muted">
+    To add an event, follow the <code>wiki-curate</code> skill: new facet values go into the taxonomy first, every
+    claim carries a basis, and <code>crafterwiki validate</code> must pass.
+  </p>
+</Layout>
+
+<style>
+  .gate-badge { margin-left: 8px; }
+  .spaced { margin-top: 16px; }
+</style>

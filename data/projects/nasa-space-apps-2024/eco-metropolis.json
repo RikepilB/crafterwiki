@@ -1,0 +1,39 @@
+{
+  "slug": "eco-metropolis",
+  "name": "Eco-Metropolis (Innovisionaries)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "A three-level city-building game that teaches sustainability, ending with urban-planning decisions made on real NASA Earth data.",
+  "placement": { "status": "track-winner", "awards": ["Most Inspirational"], "track": "sdgs-in-the-classroom" },
+  "team": { "size": 4, "members": [], "countries": ["AE"] },
+  "problem": "Sustainability is hard to teach as a lesson; students need to practise the trade-offs cities face.",
+  "solution": "A Pygame city-building simulation with levels for ages 12–14, 14–16 and 16–18: guided basics, then resource and waste decisions, then data-driven planning with NASA Worldview/MODIS and UAE government datasets scored on carbon, water and biodiversity. Players take roles such as urban planner or waste manager.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "pygame", "figma"], "ai_patterns": [] },
+  "domains": ["education", "climate-sustainability", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the project that captures our hearts.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inspires sustainability through gameplay: players make urban planning and resource decisions based on real-world environmental data.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Levels are matched to school age groups, so one game spans a curriculum.", "basis": "team-stated", "source": 2 },
+      { "claim": "The challenge asked for a lesson plan; turning it into a playable game made the entry memorable to judges.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "theme-native-twist", "expert-data-for-everyone"],
+    "judging_lens": ["storytelling-pitch", "impact", "design-ux"],
+    "lessons": [
+      "A familiar game genre can carry an education challenge further than the literal deliverable.",
+      "No AI in the product and a prototype on a shared drive still won an inspiration award."
+    ],
+    "confidence": "medium"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/innovisionaries/?tab=project",
+    "demo": "https://drive.google.com/file/d/1airNh_tsDVddD7beW2M3TJ8sdsoB9Ofi/view?usp=sharing",
+    "video": "https://drive.google.com/file/d/1PVFNjSIwi91avWh3bmaGw1CLEHiD1U8j/view?usp=sharing"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/innovisionaries/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written game design, levels, data list; AI use 'N/A'." }
+  ]
+}

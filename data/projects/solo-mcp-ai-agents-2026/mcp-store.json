@@ -1,0 +1,29 @@
+{
+  "slug": "mcp-store",
+  "name": "MCP.STORE",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "A full e-commerce store used to demonstrate protocol-level MCP authentication and authorization that agents cannot bypass.",
+  "placement": { "status": "runner-up", "awards": ["Secure & Govern MCP — runner-up"], "track": "secure-govern-mcp" },
+  "team": { "size": 1, "members": ["Mehmet Hilmi Emel"], "countries": ["TR"] },
+  "problem": "MCP authorization is abstract and hard to evaluate; agents may slip past application-level checks.",
+  "solution": "An online store whose MCP traffic is enforced at the protocol level through agentgateway, Keycloak-issued JWTs and CEL rules.",
+  "demo_moment": "An agent tries to act beyond its permissions in a shop everyone understands, and the gateway blocks it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["agentgateway", "keycloak", "jwt", "cel"], "ai_patterns": ["agent", "mcp-server"] },
+  "domains": ["ai-security", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Security enforced at the protocol level so agents cannot bypass boundaries.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Wraps an invisible infrastructure guarantee in a familiar store, making the security story demoable.", "basis": "curator-inference" },
+      { "claim": "Blog, video and repository all cited.", "basis": "organizer-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "visible-engineering-depth", "complete-submission-package"],
+    "judging_lens": ["technical-depth", "design-ux"],
+    "lessons": ["Infrastructure wins need a stage: build the smallest familiar app that makes the guarantee visible."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null, "blog": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ]
+}

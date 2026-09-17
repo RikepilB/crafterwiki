@@ -1,0 +1,48 @@
+name: Add a hackathon or project
+description: Suggest an event or a winning project to index, with its primary source.
+title: "[data] "
+labels: ["data", "coverage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Primary sources only: organizer results pages, official announcements, team project pages.
+        Aggregator links are useful as a pointer, but the record needs the original.
+  - type: input
+    id: event
+    attributes:
+      label: Event
+      placeholder: "NASA Space Apps Challenge 2023"
+    validations:
+      required: true
+  - type: input
+    id: primary-source
+    attributes:
+      label: Primary source URL
+      description: Official results, announcement or project page.
+    validations:
+      required: true
+  - type: dropdown
+    id: results
+    attributes:
+      label: Are the results published?
+      options:
+        - "Yes — winners are official"
+        - "Partly — some placements are unclear"
+        - "No — event is upcoming or judging is open"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Roster completeness, judging criteria, why this event is worth indexing.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Please confirm
+      options:
+        - label: This links to primary sources, not copied text from another site.
+          required: true
+        - label: I have not included team members' names or personal contact details.
+          required: true

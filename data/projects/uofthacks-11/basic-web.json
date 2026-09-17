@@ -1,0 +1,34 @@
+{
+  "slug": "basic-web",
+  "name": "BASIC Web",
+  "hackathon": "uofthacks-11",
+  "tagline": "A from-scratch BASIC compiler and runtime for building interactive web pages.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Overall UofTHacks Second Place Winner", "CSE"], "track": null },
+  "team": { "size": 4, "members": ["Yiu Him Chung", "Patrick He", "Akshar Barot", "Patrick Gu"] },
+  "problem": "Nostalgia theme: modern web development is buried under frameworks; what if you could build for the web with 1960s-simple imperative code?",
+  "solution": "A TypeScript parser, compiler and runtime that turns BASIC programs into HTML, with the project's own website written in BASIC and shipped via CI to GitHub Pages as a single bundled file.",
+  "demo_moment": "Open a to-do app and reveal it was written entirely in BASIC.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["typescript", "node.js", "webpack", "github-actions", "github-pages", "recursive-descent-parser"],
+    "ai_patterns": ["none"]
+  },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Most of the team had no compiler experience and built parser, IR and runtime in 36 hours — visible, verifiable depth.", "basis": "team-stated", "source": 0 },
+      { "claim": "Theme answered through a programming language rather than a retro UI skin.", "basis": "curator-inference" },
+      { "claim": "Shipped, not mocked: deployed site, CI/CD and dependency scanning.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won two prizes (overall 2nd and a sponsor prize), showing one project can stack a main-rubric win with a sponsor lane.", "basis": "organizer-stated", "source": 0 }
+    ],
+    "mechanisms": ["theme-native-twist", "visible-engineering-depth", "familiar-thing-new-job", "tight-scope-finished"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["A no-AI project with genuine depth can out-place AI wrappers; depth is most persuasive when the demo proves it (the site itself is BASIC)."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/basic-web", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/basic-web", "kind": "devpost-project", "retrieved_at": "2026-09-14", "note": "Story, stack and prize list." },
+    { "url": "https://uofthacks-11.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-09-14" }
+  ]
+}

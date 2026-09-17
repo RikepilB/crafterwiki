@@ -1,0 +1,37 @@
+{
+  "slug": "hack-the-north-2026",
+  "name": "Hack the North",
+  "edition": "2026",
+  "year": 2026,
+  "organizer": "Hack the North (student-run, University of Waterloo)",
+  "kind": "student-major-league",
+  "format": "in-person",
+  "region": "North America",
+  "countries": ["CA"],
+  "city": "Waterloo",
+  "venue": "University of Waterloo",
+  "start_date": "2026-09-18",
+  "end_date": "2026-09-20",
+  "duration_hours": null,
+  "participants": null,
+  "participants_note": "1,000+ hackers announced.",
+  "teams": null,
+  "team_size": null,
+  "theme": null,
+  "tracks": [],
+  "prizes": [],
+  "judging": { "criteria": [], "judges": [], "notes": "Not yet published. 2025 rubric (WOW factor, technical ability, originality, design) is the best prior." },
+  "required_tech": [],
+  "sponsors": [],
+  "submission_requirements": [],
+  "results_status": "upcoming",
+  "roster_coverage": "none",
+  "entries": [],
+  "organizer_takeaways": [
+    { "claim": "Hacker applications are closed; volunteers still being recruited. Food, travel help and lodging covered.", "source": 0 }
+  ],
+  "sources": [
+    { "url": "https://hackthenorth.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14" }
+  ],
+  "curator_notes": "13th edition. Use hack-the-north-2025 as the pattern prior."
+}

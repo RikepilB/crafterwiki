@@ -1,0 +1,15 @@
+{
+  "name": "crafterwiki",
+  "version": "0.2.0",
+  "description": "Demo-first hackathon planning harness backed by the CrafterWIKI corpus of winning and submitted projects: event recon, similar-situation pattern matching, angle generation, judge-panel review and demo script before architecture. Ships a zero-dependency MCP server over the public corpus.",
+  "author": {
+    "name": "Richard Pillaca"
+  },
+  "keywords": ["hackathon", "ideation", "pitch", "demo", "wiki", "planning", "mcp"],
+  "mcpServers": {
+    "crafterwiki": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/server.mjs"]
+    }
+  }
+}

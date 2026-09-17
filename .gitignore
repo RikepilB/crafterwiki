@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env*
+*.private.md
+.DS_Store
+Thumbs.db
+
+# Consent-gated material (private interviews). Never commit; see CLAUDE.md §3.
+private/
+
+# Local session state and generated web assets
+handoff.md
+docs/handoff/
+.astro/
+web/public/api/

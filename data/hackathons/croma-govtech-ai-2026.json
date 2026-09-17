@@ -1,0 +1,54 @@
+{
+  "slug": "croma-govtech-ai-2026",
+  "name": "Croma GOV-TECH AI Hackathon",
+  "edition": "2026",
+  "year": 2026,
+  "organizer": "Croma",
+  "kind": "sponsor-platform",
+  "format": "unknown",
+  "region": "LATAM",
+  "countries": ["CO", "PE", "MX"],
+  "city": null,
+  "venue": null,
+  "start_date": null,
+  "end_date": "2026-08-16",
+  "duration_hours": null,
+  "duration_days": 5,
+  "participants": null,
+  "teams": 12,
+  "team_size": null,
+  "theme": "Government technology on official public data",
+  "tracks": [],
+  "prizes": [
+    { "name": "Winner (single prize)", "winners_count": 1, "reward": "USD 300 cash + 6 months of Croma", "criteria": [] }
+  ],
+  "judging": { "criteria": [], "judges": [], "notes": "One prize only; the other eleven are listed alphabetically, unranked." },
+  "required_tech": ["Croma Platform via API or MCP"],
+  "sponsors": ["Croma"],
+  "submission_requirements": ["Working product", "Video"],
+  "results_status": "complete",
+  "roster_coverage": "full",
+  "entries": [
+    { "name": "Centinela", "project": "centinela" },
+    { "name": "Análisis de negocios con gobierno, línea automotriz", "tagline": "Public-procurement intelligence for the automotive sector: what the state buys and from whom.", "placement": { "status": "submitted-only" }, "domains": ["govtech-transparency", "commerce-retail"], "team_size": 1, "country": "CO" },
+    { "name": "AUTODATA", "tagline": "Telegram bot that checks a used car and its seller against six Peruvian sources and returns a verdict, fair price and negotiation script.", "placement": { "status": "submitted-only" }, "domains": ["due-diligence-risk", "commerce-retail"], "team_size": 5, "country": "PE" },
+    { "name": "Contraparte", "tagline": "Due diligence on companies and people across Colombia, Mexico and Peru, each datum tied to its official source.", "placement": { "status": "submitted-only" }, "domains": ["due-diligence-risk"], "team_size": 1, "country": "MX" },
+    { "name": "Creva Score", "tagline": "Explainable credit score for women entrepreneurs without credit history, built from official records.", "placement": { "status": "submitted-only" }, "domains": ["fintech"], "team_size": 1, "country": "CO" },
+    { "name": "CROMLAFT", "tagline": "Presented on video only.", "placement": { "status": "submitted-only" }, "domains": ["due-diligence-risk"], "team_size": 1, "country": "CO", "note": "Domain inferred from name (LAFT = anti-money-laundering)." },
+    { "name": "Croma Legal Intelligence", "tagline": "Presented on video only.", "placement": { "status": "submitted-only" }, "domains": ["legal-access"], "country": "PE" },
+    { "name": "GraphAudit", "tagline": "Corporate-control map: which individuals concentrate control over a contracting entity's suppliers, prioritized for review.", "placement": { "status": "submitted-only" }, "domains": ["govtech-transparency"], "team_size": 4, "country": "CO" },
+    { "name": "Mallanet Verify", "tagline": "MCP server that screens an NGO's volunteers against public sources and stores a Pass/Alert/Fail report.", "placement": { "status": "submitted-only" }, "domains": ["due-diligence-risk"], "team_size": 1, "country": "CO" },
+    { "name": "RASTRO", "tagline": "Risk file on any contractor or entity, crossing six sources in parallel with source and lookup date per finding.", "placement": { "status": "submitted-only" }, "domains": ["govtech-transparency", "due-diligence-risk"], "team_size": 1, "country": "CO" },
+    { "name": "TRAZA", "tagline": "Research agent turning a plain-language procurement question into an auditable case file.", "placement": { "status": "submitted-only" }, "domains": ["govtech-transparency"], "team_size": 1, "country": "CO" },
+    { "name": "Trazo", "tagline": "Interactive live graph of public procurement: entities, suppliers, contracts and sanctions.", "placement": { "status": "submitted-only" }, "domains": ["govtech-transparency"], "team_size": 1, "country": "CO" }
+  ],
+  "organizer_takeaways": [
+    { "claim": "Seven of twelve projects targeted public procurement; none stopped at contract search — all crossed corporate registry, financials and disciplinary records against the process.", "source": 0 },
+    { "claim": "Almost every team wrote its own counter-explanation (prioritize not accuse; cite source and date; do not penalize missing voluntary data). Once data is easy to cross, the judgment used to read it becomes the product.", "source": 0 },
+    { "claim": "The winner was chosen because one analysis reads two ways: opportunity for a small business, red flag for a citizen — one engine, two products.", "source": 0 }
+  ],
+  "sources": [
+    { "url": "https://usecroma.com/en/blog/hackathon-govtech-resultados", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "Published 2026-08-17." }
+  ],
+  "curator_notes": "Strong base-rate data: complete roster with one winner. Procurement was the crowded lane (7/12) and still produced the winner — differentiation came from dual use and autonomous action, not lane choice."
+}

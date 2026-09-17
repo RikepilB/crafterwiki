@@ -1,0 +1,28 @@
+{
+  "slug": "k8s-mcp-governance",
+  "name": "Kubernetes-native MCP governance",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "Monitors agentgateway and kagent resources, scores MCP security posture and adds AI risk analysis.",
+  "placement": { "status": "track-winner", "awards": ["Secure & Govern MCP — winner"], "track": "secure-govern-mcp" },
+  "team": { "size": 1, "members": ["Huzefa Hamdard"], "countries": ["IN"] },
+  "problem": "Teams deploying MCP servers have no posture view of how secure their agent infrastructure is.",
+  "solution": "A Kubernetes-native governance layer that watches gateway and agent resources, scores each MCP server's security posture and explains risks with Gemini or a local Ollama model.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["kubernetes", "agentgateway", "kagent", "gemini", "ollama"], "ai_patterns": ["llm-api", "mcp-server"] },
+  "domains": ["ai-security", "cloud-native-infra"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "MCP-server-centric scoring model applied to the organizer's own resources.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Offers a local-model option (Ollama), which matters for governance buyers.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "trend-wave-timing", "complete-submission-package"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": [],
+    "confidence": "low"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ]
+}

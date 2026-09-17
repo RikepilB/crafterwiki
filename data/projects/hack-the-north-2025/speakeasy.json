@@ -1,0 +1,33 @@
+{
+  "slug": "speakeasy",
+  "name": "SpeakEasy",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Behavioral-interview practice that scores what you say and how you say it from video.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": null, "members": [] },
+  "problem": "Video interview analysis tools are sold to recruiters; applicants only meet them in the real interview and have no fair way to practice against that kind of scoring.",
+  "solution": "Pick behavioral topics, answer generated questions on camera, and get verbal scores (relevance, STAR structure, insight, vocabulary, filler words) plus non-verbal scores (face, eyes, gestures, pauses, framing) with concrete pros and cons.",
+  "demo_moment": "Record one answer and immediately see a breakdown of both your content and your body language.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["firebase", "fastapi", "spacy", "assemblyai", "mediapipe", "martian-router", "gpt-4.1-nano"],
+    "ai_patterns": ["llm-api", "llm-scoring", "computer-vision", "voice-ai"]
+  },
+  "domains": ["careers-hr", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Inverts a crowded enterprise market: the same analysis recruiters buy, pointed at the applicant.", "basis": "team-stated", "source": 0 },
+      { "claim": "Named a list of incumbents in the write-up, showing the team knew the market it was flipping.", "basis": "team-stated", "source": 0 },
+      { "claim": "Engineering discipline on LLM output: benchmarked providers, then added validation with automatic re-prompting until output met format rules.", "basis": "team-stated", "source": 0 },
+      { "claim": "Used a sponsor's model router as core infrastructure, fitting a sponsor prize lane alongside the main rubric.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach", "human-stakes", "visible-engineering-depth", "sponsor-platform-mastery", "one-sentence-clarity"],
+    "judging_lens": ["technical-depth", "impact", "sponsor-api-use"],
+    "lessons": ["Look for a tool that exists only for the powerful side of a transaction and build the other side's version."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/speakeasy-vdkc9n", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/speakeasy-vdkc9n", "kind": "devpost-project", "retrieved_at": "2026-09-14" }
+  ]
+}

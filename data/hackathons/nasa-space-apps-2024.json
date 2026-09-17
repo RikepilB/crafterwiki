@@ -1,0 +1,91 @@
+{
+  "slug": "nasa-space-apps-2024",
+  "name": "NASA International Space Apps Challenge",
+  "edition": "2024",
+  "year": 2024,
+  "organizer": "NASA Space Apps Global Organizing Team (funded by NASA's Earth Science Division)",
+  "kind": "agency-open-data-challenge",
+  "format": "hybrid",
+  "region": "global",
+  "countries": [],
+  "country_count": 163,
+  "local_events": 485,
+  "city": null,
+  "venue": "485 in-person and virtual Local Events plus the virtual Universal Event",
+  "start_date": "2024-10-05",
+  "end_date": "2024-10-06",
+  "duration_hours": 48,
+  "participants": 93520,
+  "teams": null,
+  "submissions": 9996,
+  "team_size": "1-6",
+  "theme": null,
+  "tracks": [
+    { "id": "orrery-web-app-neos", "name": "Create an Orrery Web App that Displays Near-Earth Objects" },
+    { "id": "earth-observation-agriculture", "name": "Leveraging Earth Observation Data for Informed Agricultural Decision-Making" },
+    { "id": "seismic-detection-solar-system", "name": "Seismic Detection Across the Solar System" },
+    { "id": "landsat-reflectance-data", "name": "Landsat Reflectance Data: On the Fly and at Your Fingertips" },
+    { "id": "sdgs-in-the-classroom", "name": "SDGs in the Classroom" },
+    { "id": "tell-us-a-climate-story", "name": "Tell Us a Climate Story!" },
+    { "id": "hwo-navigator", "name": "Navigator for the Habitable Worlds Observatory (HWO): Mapping the Characterizable Exoplanets in our Galaxy" },
+    { "id": "imagine-our-connected-earth", "name": "Imagine our Connected Earth" },
+    { "id": "community-mapping", "name": "Community Mapping" }
+  ],
+  "prizes": [
+    { "name": "Best Use of Science", "winners_count": 1, "reward": null, "definition": "The best and most valid use of science and/or the scientific method.", "criteria": ["scientific-validity"] },
+    { "name": "Best Use of Data", "winners_count": 1, "reward": null, "definition": "Best makes space data accessible or leverages it for a unique application.", "criteria": ["design-ux", "originality"] },
+    { "name": "Best Use of Technology", "winners_count": 1, "reward": null, "definition": "The most innovative use of technology.", "criteria": ["technical-depth", "originality"] },
+    { "name": "Galactic Impact", "winners_count": 1, "reward": null, "definition": "The most potential to improve life on Earth or in the universe.", "criteria": ["impact"] },
+    { "name": "Best Mission Concept", "winners_count": 1, "reward": null, "definition": "The most plausible concept and design.", "criteria": ["scientific-validity", "challenge-relevance"] },
+    { "name": "Most Inspirational", "winners_count": 1, "reward": null, "definition": "The project that captures our hearts.", "criteria": ["storytelling-pitch", "impact"] },
+    { "name": "Best Storytelling", "winners_count": 1, "reward": null, "definition": "Most creatively communicates the potential of open data through the art of storytelling.", "criteria": ["storytelling-pitch"] },
+    { "name": "Global Connection", "winners_count": 1, "reward": null, "definition": "Best connects people around the world through technology.", "criteria": ["impact"] },
+    { "name": "Art & Technology", "winners_count": 1, "reward": null, "definition": "Most effectively combines technical and creative skills.", "criteria": ["design-ux", "technical-depth"] },
+    { "name": "Local Impact", "winners_count": 1, "reward": null, "definition": "The greatest potential for local impact.", "criteria": ["impact"] }
+  ],
+  "judging": {
+    "criteria": [
+      { "lens": "impact", "label": "Influence", "description": "How much good the project can do, in quality and quantity. Renamed 'Impact' in 2025." },
+      { "lens": "originality", "label": "Creativity", "description": "How novel the approach is, versus an incremental improvement on something that exists." },
+      { "lens": "scientific-validity", "label": "Validity", "description": "Scientifically valid; does what it sets out to do; can work in the real world." },
+      { "lens": "challenge-relevance", "label": "Relevance", "description": "Responsive to the chosen challenge; complete; technically feasible; usable." },
+      { "lens": "storytelling-pitch", "label": "Presentation", "description": "How well the team tells the story: the challenge, the proposed solution and why it matters." }
+    ],
+    "judge_profile_summary": "Three phases. Local and Universal Event judges choose Global Nominees (940+); NASA and Space Agency Partner subject-matter experts choose 40 Global Finalists plus Honorable Mentions; an executive committee of agency leaders assigns the 10 Global Awards.",
+    "judges": [],
+    "notes": "Criteria from the 2024 Judging & Awards guide (third-party-hosted copy); each is scored 1–5."
+  },
+  "required_tech": ["At least one NASA data source or resource"],
+  "sponsors": [],
+  "submission_requirements": [
+    "Project page on spaceappschallenge.org with summary, demonstration link, project link, details, use of AI, NASA data and other data",
+    "Use and link at least one NASA data source or resource",
+    "1–6 members registered for the same Local Event or the Universal Event",
+    "'Create Your Own Challenge' projects are not eligible for global judging"
+  ],
+  "results_status": "partial",
+  "roster_coverage": "winners-only",
+  "entries": [
+    { "name": "SkyShield (WMPGang)", "project": "skyshield-wmpgang" },
+    { "name": "WaterWise (GaamaRamma)", "project": "waterwise" },
+    { "name": "42 QuakeHeroes", "project": "quakeheroes" },
+    { "name": "2plant (NVS-knot)", "project": "2plant" },
+    { "name": "Landsat Connect (AsturExplorers)", "project": "landsat-connect" },
+    { "name": "Eco-Metropolis (Innovisionaries)", "project": "eco-metropolis" },
+    { "name": "TerraTales", "project": "terratales" },
+    { "name": "Asteroid Destroyer", "project": "asteroid-destroyer" },
+    { "name": "Connected Earth Museum", "project": "connected-earth-museum" },
+    { "name": "G.R.O.W. (Team I.O.)", "project": "grow-team-io" }
+  ],
+  "organizer_takeaways": [
+    { "claim": "The 10 Global Winners were chosen from 40 Global Finalists, who were selected from 940+ Global Nominees out of 9,996 submissions.", "source": 3 }
+  ],
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "10 Global Winners with award, challenge, city/country and description; 93,520 registered participants, 485 events, 163 countries, 9,996 submissions." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definitions and the three judging phases." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "21 challenges (20 eligible for global awards)." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/global-finalists/", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "40 Global Finalists from 940+ Global Nominees (count only; list not indexed)." },
+    { "url": "https://www.scribd.com/document/876777314/Judging-Awards-Guideline", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Third-party-hosted copy of the organizer's 2024 Judging & Awards guide." }
+  ],
+  "curator_notes": "Holdout event: indexed after pre-registering docs/research/holdout-nasa-2024.md. Tracks list only the 9 of 20 eligible challenges with a Global Winner; the agriculture challenge produced two winners and three winners are from Brazil — counts among winners, not base rates. The spaceappschallenge.org global-winners page rendered an unrelated team list on 2026-09-14, so nasa.gov is the results source. NASA publishes member names abbreviated; CrafterWIKI stores team size only."
+}

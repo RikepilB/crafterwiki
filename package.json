@@ -1,0 +1,39 @@
+{
+  "name": "crafterwiki",
+  "version": "0.2.0",
+  "description": "Provenance-first wiki of hackathon winners and submissions, with a demo-first planning harness (CLI, MCP server, static API, Astro site, Claude Code plugin).",
+  "license": "MIT",
+  "author": "Richard Pillaca",
+  "homepage": "https://github.com/RikepilB/crafterwiki#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikepilB/crafterwiki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RikepilB/crafterwiki/issues"
+  },
+  "keywords": [
+    "hackathon",
+    "hackathon-winners",
+    "dataset",
+    "open-data",
+    "mcp",
+    "mcp-server",
+    "claude-code",
+    "cli",
+    "astro"
+  ],
+  "type": "module",
+  "bin": {
+    "crafterwiki": "cli/crafterwiki.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node cli/crafterwiki.mjs validate",
+    "build": "node cli/crafterwiki.mjs build",
+    "patterns": "node cli/crafterwiki.mjs patterns",
+    "test": "node --test"
+  }
+}

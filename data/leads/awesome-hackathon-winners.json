@@ -1,0 +1,19 @@
+{
+  "source": { "url": "https://github.com/unicorn-mafia/awesome-hackathon-winners", "kind": "community-list", "retrieved_at": "2026-09-14", "license": "MIT" },
+  "notes": "Secondary, community-curated. Every lead must be verified against the event's own results or the project page before becoming a record. Claims are recorded as written, not as facts.",
+  "leads": [
+    { "name": "Clueless (agentic home-screen support)", "event": "AI Engine hackathon (London)", "claim": "£32k in winnings", "url": "https://github.com/Theocat321/electron-ai-engine-hack", "status": "unverified" },
+    { "name": "Mosaic (AI council to reduce bias and reject hallucinations)", "event": "AI Engine hackathon (London)", "claim": "£10K in winnings", "url": "https://www.figma.com/slides/iV5b72cbBijYxLYR8l4MsR/Untitled?node-id=1-86", "status": "unverified" },
+    { "name": "CareLink (real-time intent translation for accessibility)", "event": "AI Engine mini hackathon", "claim": "listed as winner/impressive", "url": "https://github.com/Shiv716/CareLink-AI-Engine-Mini-Hackathon", "status": "unverified" },
+    { "name": "MPS Enhancer", "event": "EF Hack", "claim": "leaderboard topper (agentic judgement)", "url": "https://github.com/Shiv716/MPSEnhancer-SaturnxEF", "status": "unverified" },
+    { "name": "yappah.ai (social behaviour analysis)", "event": "Bolt x ElevenLabs", "claim": "Omi track 2nd place", "url": "https://github.com/Yappah-ai/yappah_fastapi", "status": "unverified" },
+    { "name": "MuseAI (automated meme creation and timed posting)", "event": "Bolt x ElevenLabs", "claim": "top 11 finalists", "url": "https://github.com/Shiv716/Hack_submission", "status": "unverified" },
+    { "name": "Kagami", "event": "Google FunctionGemma hackathon", "claim": "#2 in London venue, top 2 worldwide", "url": "https://github.com/avimallick/functiongemma-hackathon", "status": "unverified" },
+    { "name": "Context Cache", "event": "Tessl HQ Hackathon 2025", "claim": "Best Product", "url": "https://github.com/Shiv716/Hack_SDLC", "status": "unverified" },
+    { "name": "gibberlink", "event": "a16z x ElevenLabs (London)", "claim": "listed under winners", "url": "https://github.com/PennyroyalTea/gibberlink", "status": "unverified" },
+    { "name": "Tiger MOM (online meeting Mom-Test agent)", "event": "Tech Europe hackathon", "claim": "listed under winners", "url": "https://github.com/Theocat321/ai-tech-europe-hack", "status": "unverified" },
+    { "name": "Longevity (conversation analysis for lung-cancer risk)", "event": "London AI hackathon", "claim": "listed under winners", "url": "https://github.com/Shiv716/Longevity_LondonAI_Hackathon", "status": "unverified" },
+    { "name": "TreeHacks 2025 winners thread", "event": "TreeHacks 2025", "claim": "thread of all winners", "url": "https://x.com/AlexReibman/status/1891809083411320913", "status": "unverified" },
+    { "name": "Screenpipe hackathon winners page", "event": "Screenpi.pe hackathon", "claim": "official winners page", "url": "https://screenpi.pe/hackathon-winners", "status": "unverified" }
+  ]
+}

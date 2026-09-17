@@ -1,0 +1,40 @@
+{
+  "slug": "connected-earth-museum",
+  "name": "Connected Earth Museum",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "Walk a 3D virtual museum where each painting opens a live NASA data visualization of how Earth's systems connect.",
+  "placement": { "status": "track-winner", "awards": ["Art & Technology"], "track": "imagine-our-connected-earth" },
+  "team": { "size": 6, "members": [], "countries": ["BR"] },
+  "problem": "The links between temperature, fires, population, emissions and air quality are hard for the public to see in separate datasets.",
+  "solution": "A React/three.js museum modelled in Blender: a guide character leads visitors along a spline path; clicking paintings opens a 3D globe with time series (land and ocean temperature, vegetation, emissions, population, wildfires), 2D maps linking fire hotspots, precipitation and wind, and population with emissions and real-time air quality, ending with a quiz mini-game.",
+  "demo_moment": "Team-described: step into a painting and land inside a data visualization of the planet.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "three-js", "blender", "github-pages", "nasa-firms", "sedac", "modis", "mopitt", "air-quality-api"], "ai_patterns": ["generative-media"] },
+  "domains": ["climate-sustainability", "earth-observation", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for most effectively combining technical and creative skills.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "An immersive virtual museum where an AI host guides users through 3D and 2D visualizations of temperature, population density, wildfires and more.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Built its own museum model, baked lighting and a path spline editor rather than using a template.", "basis": "team-stated", "source": 2 },
+      { "claim": "A museum is a format everyone understands, so the data exploration needs no instructions — the art award rewards that pairing of craft and data.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "expert-data-for-everyone", "visible-engineering-depth", "complete-submission-package"],
+    "judging_lens": ["design-ux", "storytelling-pitch", "technical-depth"],
+    "lessons": [
+      "Put data inside a familiar place (a museum) so exploring it feels natural.",
+      "Craft visible in 3D assets counts as depth for an art-and-technology award.",
+      "LATAM precedent: a student team from Brazil won Art & Technology."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/connected-earth-museum/?tab=project",
+    "demo": "https://connected-earth.github.io/connected-earth-museum/",
+    "video": "https://youtu.be/hOUBkhFR_cE"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/connected-earth-museum/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written tour, visualizations, technical details, AI-use disclosure (ChatGPT, DALL-E for slides, ElevenLabs guide voice), data list." }
+  ]
+}

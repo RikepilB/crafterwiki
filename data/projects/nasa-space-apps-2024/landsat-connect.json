@@ -1,0 +1,38 @@
+{
+  "slug": "landsat-connect",
+  "name": "Landsat Connect (AsturExplorers)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "Pin a spot, get told before Landsat flies over, then compare your ground measurement with the 3×3 pixel it captured.",
+  "placement": { "status": "track-winner", "awards": ["Best Mission Concept"], "track": "landsat-reflectance-data" },
+  "team": { "size": 6, "members": [], "countries": ["ES"] },
+  "problem": "Comparing ground measurements with Landsat surface reflectance means knowing when the satellite passes and then finding the right pixel — tedious for non-specialists.",
+  "solution": "A designed web app (Figma prototype plus planned Django architecture): users save locations on a map, choose notification lead time and channel (email, SMS, push), get alerts before an overpass and when data is ready, then view a 3×3 pixel grid with metadata and spectral signature, filter by cloud cover and export CSV or PDF. Accessibility is specified (WCAG 2.1, localization, offline cache).",
+  "demo_moment": null,
+  "build_style": "concept-design",
+  "tech": { "stack": ["figma", "django-planned", "landsat-api", "earth-engine"], "ai_patterns": [] },
+  "domains": ["earth-observation", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the most plausible concept and design.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Provides a simple, intuitive way to track Landsat satellites, access surface reflectance data, set a target location and receive overpass notifications.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Designed for users of all technical levels and abilities, with concrete use cases for farmers, conservation researchers and urban planners.", "basis": "team-stated", "source": 2 },
+      { "claim": "The concept award rewarded a complete, accessible design that follows the challenge brief closely, even though the deliverable was a prototype rather than running software.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "one-sentence-clarity"],
+    "judging_lens": ["challenge-relevance", "design-ux"],
+    "lessons": [
+      "A thorough design with use cases and accessibility can win the concept award without a deployed build.",
+      "Answer every clause of the brief (location, notification, data access) visibly in the design."
+    ],
+    "confidence": "medium"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/asturexplorers/?tab=project",
+    "video": "https://youtu.be/hipj00EOSDI"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/asturexplorers/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written features, use cases, planned architecture, accessibility, Figma project link; AI used for research, logo and video voice-over." }
+  ]
+}

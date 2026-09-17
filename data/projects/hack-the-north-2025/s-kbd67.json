@@ -1,0 +1,34 @@
+{
+  "slug": "s-kbd67",
+  "name": "S-KBD67",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A Nerf blaster rebuilt as a first-person-shooter controller.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": null, "members": ["Dorothy Fanzhu"] },
+  "problem": "Shooter games are played with a mouse and keyboard; the physical fantasy of actually aiming a blaster is missing.",
+  "solution": "Microcontrollers, a gyroscope, a joystick and buttons mounted on the blaster stream motion and inputs over Wi-Fi as UDP packets to a Python app that maps them to mouse and keyboard events.",
+  "demo_moment": "Pick up the toy gun, aim, pump to reload, pull the trigger — and the game on screen responds.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["esp8266", "esp32", "gyroscope", "python", "udp"],
+    "ai_patterns": ["none"]
+  },
+  "domains": ["games-entertainment", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Gives an object every judge recognizes a job it was never meant for; the idea fits in one sentence.", "basis": "curator-inference" },
+      { "claim": "Split into hardware and backend sub-teams that integrated at the end, keeping both halves moving in parallel.", "basis": "team-stated", "source": 0 },
+      { "claim": "No AI at a 2025 AI-heavy event; wow came from physical play, not model calls.", "basis": "curator-inference" },
+      { "claim": "Organizer featured it as the lead past project on the next year's homepage.", "basis": "organizer-stated", "source": 1 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "physical-artifact", "demo-first-wow", "one-sentence-clarity", "tight-scope-finished", "cultural-reference-hook"],
+    "judging_lens": ["wow-factor", "originality"],
+    "lessons": ["A finished, playable toy beats an unfinished platform. Parallelize hardware and software from hour one."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/s-kbd67", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/s-kbd67", "kind": "devpost-project", "retrieved_at": "2026-09-14" },
+    { "url": "https://hackthenorth.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14" }
+  ]
+}

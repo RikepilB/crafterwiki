@@ -1,0 +1,29 @@
+{
+  "slug": "mimic-clinical-mcp-federation",
+  "name": "Kubernetes-native clinical MCP federation",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "Clinical AI agent platform that federates several MCP servers behind one endpoint to query MIMIC-IV securely.",
+  "placement": { "status": "runner-up", "awards": ["Building Cool Agents — runner-up"], "track": "building-cool-agents" },
+  "team": { "size": 1, "members": ["Oswaldo Gomez"], "countries": ["PL"] },
+  "problem": "IDEs and AI clients need governed access to sensitive clinical research data across many tools.",
+  "solution": "Federates multiple MCP servers into a single endpoint on Kubernetes, with agents, tools and service discovery mediating access to the MIMIC-IV dataset.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["kubernetes", "kagent", "mcp", "mimic-iv"], "ai_patterns": ["agent", "mcp-server"] },
+  "domains": ["health", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Named as a standout runner-up in a close category, with video and repository cited.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Pairs a sensitive real dataset with the governance problem MCP federation solves.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "visible-engineering-depth", "complete-submission-package"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": [],
+    "confidence": "low"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ],
+  "curator_notes": "Project name not given in the results post; slug is descriptive."
+}

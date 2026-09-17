@@ -1,0 +1,54 @@
+{
+  "slug": "soon-hackathon",
+  "name": "SOON",
+  "edition": "past edition (undated)",
+  "year": 2026,
+  "organizer": "SOON (founded by a repeat hackathon winner/organizer; UofT-affiliated contact)",
+  "kind": "invite-residential",
+  "format": "residential",
+  "region": "North America",
+  "countries": ["CA"],
+  "city": "Greater Toronto Area",
+  "venue": "Private house (address shared with accepted hackers)",
+  "start_date": null,
+  "end_date": null,
+  "duration_hours": 48,
+  "participants": 50,
+  "teams": 17,
+  "team_size": null,
+  "theme": null,
+  "tracks": [],
+  "prizes": [],
+  "judging": {
+    "criteria": [],
+    "judge_profile_summary": "Past judges/speakers skew to founders with exits, a YC solo founder, and big-tech engineers/DevRel.",
+    "judges": [
+      { "name": "Barry Hillier", "org": "Auto Agentic AI", "role": "Founder (7 exits)" },
+      { "name": "Robert Ciborowski", "org": "Chatforce", "role": "CEO (prev. Meta)" },
+      { "name": "Nikos Dritsakos", "org": "YC S26", "role": "Solo founder (1 exit, prev. Composio)" },
+      { "name": "Arhum Shahzad", "org": "Google", "role": "SWE (prev. Amazon)" },
+      { "name": "Jen Looper", "org": "Cloudinary", "role": "Director of Developer Relations" },
+      { "name": "Ryan Ning", "org": "Uber", "role": "SWE" }
+    ],
+    "notes": "Listed as 'past judges and speakers'; not all may have judged."
+  },
+  "required_tech": [],
+  "sponsors": ["Althra", "Composio", "CyStack", "Polar", "Polarity", "Cloudinary", "backboard.io", "Chatforce", "aucctus"],
+  "submission_requirements": [],
+  "results_status": "featured-only",
+  "roster_coverage": "partial",
+  "entries": [
+    { "name": "Memento", "tagline": "AI visual-memory system turning everyday video into searchable, explorable 3D memories.", "placement": { "status": "featured" }, "domains": ["memory-journaling", "creative-media"], "team_size": 4 },
+    { "name": "SAMM", "tagline": "AI innovation platform compressing weeks of product work into an afternoon: idea to brand-aligned concept with strategy, visuals, 3D renders and video.", "placement": { "status": "featured" }, "domains": ["marketing-growth", "creative-media"], "team_size": 4 },
+    { "name": "Oyster", "tagline": "Sketches to 3D assets for Godot, plus an agent that edits your game codebase with hot reload.", "placement": { "status": "featured" }, "domains": ["games-entertainment", "dev-tools"], "team_size": 4 },
+    { "name": "Auctopus", "tagline": "Product idea to interactive prototype: brand research, 3D models, video and AI persona simulations.", "placement": { "status": "featured" }, "domains": ["marketing-growth", "simulation-forecasting"], "team_size": 4 },
+    { "name": "Lootboard", "tagline": "AI marketplace for native in-game sponsorships that match brands to games and generate placements developers approve.", "placement": { "status": "featured" }, "domains": ["marketing-growth", "games-entertainment"], "team_size": 2 }
+  ],
+  "organizer_takeaways": [
+    { "claim": "Outcomes claimed: 25% of hackers founded a startup, 4 hiring positions, 2 projects integrated into sponsors' systems, 30+ referrals, 300k social impressions.", "source": 0 }
+  ],
+  "sources": [
+    { "url": "https://www.soonhackathon.ca/", "kind": "official-event-page", "retrieved_at": "2026-09-14" }
+  ],
+  "curator_notes": "Year set to 2026 based on the founder's '2026' activity statement; exact dates unknown. Two of five featured projects (SAMM, Auctopus) pitch nearly the same idea-to-concept pipeline — a sponsor-fit signal (brand/3D/video generation sponsors) rather than originality."
+}

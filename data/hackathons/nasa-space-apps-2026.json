@@ -1,0 +1,61 @@
+{
+  "slug": "nasa-space-apps-2026",
+  "name": "NASA International Space Apps Challenge",
+  "edition": "2026",
+  "year": 2026,
+  "organizer": "NASA Space Apps Global Organizing Team",
+  "kind": "agency-open-data-challenge",
+  "format": "hybrid",
+  "region": "global",
+  "countries": [],
+  "city": null,
+  "venue": "In-person and virtual Local Events worldwide, plus the virtual Universal Event",
+  "start_date": "2026-11-14",
+  "end_date": "2026-11-15",
+  "duration_hours": 48,
+  "participants": null,
+  "teams": null,
+  "team_size": "1-6",
+  "theme": "The Next Frontier!",
+  "tracks": [],
+  "timeline": [
+    { "date": "2026-08-26", "what": "Registration opens" },
+    { "date": "2026-09-17", "what": "Challenge summaries published; team formation opens" },
+    { "date": "2026-10-28", "what": "Full challenge statements with data sets and requirements" },
+    { "date": "2026-11-02", "what": "Space Apps Connect opens" },
+    { "date": "2026-11-13", "what": "Project Submission and Judging & Awards guides published" },
+    { "date": "2026-11-14", "what": "Hackathon starts; project submission opens 09:00 local time" },
+    { "date": "2026-11-15", "what": "Submission closes 23:59 local time" },
+    { "date": "2026-12-31", "what": "December 2026: Global Nominees, Finalists and Honorable Mentions announced" },
+    { "date": "2027-01-31", "what": "January 2027: Global Winners announced" }
+  ],
+  "prizes": [],
+  "judging": {
+    "criteria": [
+      { "lens": "impact", "label": "Impact", "description": "Carried from 2025 until the 2026 Judging & Awards guide is published (2026-11-13)." },
+      { "lens": "originality", "label": "Creativity", "description": "Carried from 2025." },
+      { "lens": "scientific-validity", "label": "Validity", "description": "Carried from 2025." },
+      { "lens": "challenge-relevance", "label": "Relevance", "description": "Carried from 2025." },
+      { "lens": "storytelling-pitch", "label": "Presentation", "description": "Carried from 2025." }
+    ],
+    "judge_profile_summary": "Expected three phases as in 2025: Local/Universal Event judges → NASA and Space Agency Partner subject-matter experts → an executive committee of agency leaders.",
+    "judges": [],
+    "notes": "Criteria and award list are provisional until 2026-11-13. Recognition for 2026 Global Winners is 'to be announced'."
+  },
+  "required_tech": ["At least one NASA data source or resource (expected, as in 2025)"],
+  "sponsors": [],
+  "submission_requirements": [
+    "Teams of at most six, all registered for the same Local Event or the Universal Event",
+    "Teams must not begin working on the challenges before the hackathon",
+    "Submit through the team's project page on spaceappschallenge.org by the end of the Local Event"
+  ],
+  "results_status": "upcoming",
+  "roster_coverage": "none",
+  "entries": [],
+  "organizer_takeaways": [],
+  "sources": [
+    { "url": "https://www.spaceappschallenge.org/resources/participant-faqs/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Dates, theme, timeline, team rules, no work before the hackathon." },
+    { "url": "https://www.spaceappschallenge.org/2026/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Registration, team size, submission window." }
+  ],
+  "curator_notes": "Dogfood target for the /hack-plan harness (hack-plan/nasa-space-apps-2026/). Prior: nasa-space-apps-2025."
+}

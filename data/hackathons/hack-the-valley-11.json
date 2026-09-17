@@ -1,0 +1,41 @@
+{
+  "slug": "hack-the-valley-11",
+  "name": "Hack the Valley",
+  "edition": "11",
+  "year": 2026,
+  "organizer": "Hack the Valley",
+  "kind": "student-major-league",
+  "format": "in-person",
+  "region": "North America",
+  "countries": ["CA"],
+  "city": "Toronto",
+  "venue": null,
+  "start_date": "2026-10-16",
+  "end_date": "2026-10-18",
+  "duration_hours": 36,
+  "participants": 750,
+  "participants_note": "750 announced capacity; historical averages 3,602 applicants and 553 participants.",
+  "teams": null,
+  "team_size": null,
+  "theme": "Spark your build with purpose",
+  "tracks": [
+    { "id": "ai-social-impact", "name": "Artificial Intelligence for Social Impact" },
+    { "id": "climate", "name": "Climate Action & Sustainability" },
+    { "id": "sustainable-fintech", "name": "Sustainable FinTech & Economic Inclusion" },
+    { "id": "healthcare", "name": "Healthcare Innovation & Well-being" },
+    { "id": "sustainable-cities", "name": "Future of Sustainable Cities" }
+  ],
+  "prizes": [],
+  "judging": { "criteria": [], "judges": [], "notes": "Themes emphasize ethical design, transparency and measurable societal impact — expect an impact-heavy lens." },
+  "required_tech": [],
+  "sponsors": ["School of Cities", "PointClickCare", "Fidelity", "Dell", "FDM", "Greenhouse", "NordVPN", "NordPass", "Incogni", "Saily", "Papiers"],
+  "submission_requirements": [],
+  "results_status": "upcoming",
+  "roster_coverage": "none",
+  "entries": [],
+  "organizer_takeaways": [],
+  "sources": [
+    { "url": "https://hackthevalley.io/", "kind": "official-event-page", "retrieved_at": "2026-09-14" }
+  ],
+  "curator_notes": "Good dogfood target for the harness (one month out). Past edition (Oct 2025) winners still to be indexed from primary sources."
+}

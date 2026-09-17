@@ -1,0 +1,41 @@
+{
+  "slug": "waterwise",
+  "name": "WaterWise (GaamaRamma)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "Map your field, enter the crop and irrigation system, and get a 7-day watering schedule computed from NASA-backed evapotranspiration data.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Data"], "track": "earth-observation-agriculture" },
+  "team": { "size": 5, "members": [], "countries": ["US"] },
+  "problem": "Farmers waste or under-supply irrigation water because they cannot turn evapotranspiration and weather data into a daily plan.",
+  "solution": "A Next.js web app where a farmer draws a field on a map and enters crop, growth stage and irrigation efficiency; it combines OpenET evapotranspiration, Open-Meteo precipitation and crop coefficients into daily water needs, hours to run the system and field hydration status, with a GPT-3.5 chatbot for farming questions.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "typescript", "python", "vercel", "leaflet", "openstreetmap", "openet", "open-meteo", "openai-api", "figma"], "ai_patterns": ["llm-api"] },
+  "domains": ["agriculture-food", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for making space data accessible or leveraging it for a unique application.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Aims to help farmers manage water availability in the face of drought, pests and disease.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Presents actions rather than raw numbers: hydrated/dehydrated fields, pending irrigation jobs, hours to run tonight.", "basis": "team-stated", "source": 2 },
+      { "claim": "Shows its method: field area from polygon vertices with Earth curvature, then water use = (crop coefficient × ET − precipitation) × area.", "basis": "team-stated", "source": 2 },
+      { "claim": "The data award went to the entry that turned one expert variable (evapotranspiration) into a single weekly decision.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "one-sentence-clarity", "complete-submission-package"],
+    "judging_lens": ["challenge-relevance", "design-ux", "impact"],
+    "lessons": [
+      "Pick one expert variable and turn it into one recurring decision (how much to water this week).",
+      "Write the formula on the project page; judges of a data award can check it.",
+      "The chatbot is an add-on; the schedule is the product."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/gaamaramma/?tab=project",
+    "demo": "https://nasa-hackathon-2024-nine.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=Wg-gE3kYaas"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/gaamaramma/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, method, tools, AI-use disclosure (OpenAI chatbot, Perplexity for code edits), data list." }
+  ]
+}

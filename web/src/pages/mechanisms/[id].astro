@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Bars from '../../components/Bars.astro';
+import { corpus, T, base, href, analyzed, isWinner, count } from '../../lib/data.mjs';
+import { humanize, cardHTML } from '../../lib/labels.mjs';
+
+export function getStaticPaths() {
+  return T.mechanisms.map((m) => ({ params: { id: m.id }, props: { m } }));
+}
+
+const { m } = Astro.props;
+const withIt = analyzed.filter((i) => i.mechanisms.includes(m.id));
+const won = withIt.filter((i) => isWinner(corpus, i));
+const others = withIt.filter((i) => !isWinner(corpus, i));
+const byKind = T.event_kinds.map((k) => [k, won.filter((i) => i.event_kind === k.id)]).filter(([, list]) => list.length);
+const pairs = count(withIt.flatMap((i) => i.mechanisms.filter((x) => x !== m.id)));
+const lenses = count(won.flatMap((i) => i.lenses));
+---
+<Layout title={humanize(m.id)} description={m.definition}>
+  <p class="meta crumbs"><a href={href('/mechanisms/')}>Mechanisms</a></p>
+  <p class="eyebrow">Winning mechanism</p>
+  <h1>{humanize(m.id)}</h1>
+  <p class="lede">{m.definition}</p>
+  <div class="stats">
+    <div class="stat"><b>{won.length}</b><span>confirmed winners</span></div>
+    <div class="stat"><b>{withIt.length}</b><span>analyzed projects</span></div>
+    <div class="stat"><b>{byKind.length}</b><span>kinds of event</span></div>
+  </div>
+
+  {byKind.length ? (
+    byKind.map(([k, list]) => (
+      <section>
+        <h2>At {humanize(k.id)} events <span class="meta">· {list.length}</span></h2>
+        <div class="grid" set:html={list.map((i) => cardHTML(i, base)).join('')} />
+      </section>
+    ))
+  ) : (
+    <p class="muted spaced">No confirmed winner uses this mechanism yet.</p>
+  )}
+
+  {others.length > 0 && (
+    <>
+      <h2>Also used by projects without a confirmed win</h2>
+      <div class="grid" set:html={others.map((i) => cardHTML(i, base)).join('')} />
+    </>
+  )}
+
+  {withIt.length > 0 && (
+    <div class="two-col">
+      <section><h2>Often combined with</h2><Bars rows={pairs} facet="mechanisms" of={withIt.length} limit={6} /></section>
+      <section><h2>Lenses it played to</h2><Bars rows={lenses} of={won.length || undefined} limit={6} /></section>
+    </div>
+  )}
+
+  <h2>Try it on your situation</h2>
+  <pre>crafterwiki similar --mechanism {m.id} --json</pre>
+  <p><a class="btn" href={href(`/similar/?mechanism=${m.id}`)}>Open in Similar situations</a></p>
+</Layout>
+
+<style>
+  .spaced { margin-top: 20px; }
+</style>

@@ -1,0 +1,45 @@
+{
+  "slug": "quenaris",
+  "name": "QUEÑARIS",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "Smart reforestation of Arequipa's queñua forests against water scarcity, combining NASA vegetation indices, drone mapping, AI and native microorganisms.",
+  "placement": { "status": "track-winner", "awards": ["Local Impact"], "track": "bloomwatch" },
+  "team": { "size": 6, "members": [], "countries": ["PE"] },
+  "problem": "Arequipa, Peru's second-largest city, faces critical water scarcity: queñua forests that retain water have been degraded, and traditional reforestation is slow and hard to scale.",
+  "solution": "A decision-support platform for large-scale reforestation: drone orthomosaics and NASA vegetation and moisture indices (NDVI, EVI, NDMI and others from Earthdata and MODIS products) feed an AI analysis that picks the best planting areas; seedlings are strengthened with native microorganisms; a web platform lets communities plan campaigns and monitor forest health over time.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "tailwind", "django", "geodjango", "postgresql", "celery", "redis", "gemini-api", "rasterio", "geopandas", "gdal", "qgis", "earthaccess", "drone-orthomosaic", "vercel"],
+    "ai_patterns": ["llm-api", "computer-vision"]
+  },
+  "domains": ["earth-observation", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the greatest potential for local impact.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Names one city, one ecosystem (queñua forests) and one causal chain (forest loss → water scarcity).", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Quantifies the local stake: spring flow dropping from 14 L/s to zero within days threatens water for households, agriculture, energy and mining.", "basis": "team-stated", "source": 2 },
+      { "claim": "Joins three scales — satellite indices, drone orthomosaics and field biology — into one planting decision, with seedlings already prepared for a first field campaign.", "basis": "team-stated", "source": 2 },
+      { "claim": "Moved from the BloomWatch phenology brief to a local restoration intervention, trading challenge literalism for concrete local stakes — what the Local Impact award rewards.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["place-based-specificity", "human-stakes", "takes-action", "visible-engineering-depth"],
+    "judging_lens": ["impact", "challenge-relevance", "scientific-validity"],
+    "lessons": [
+      "Name the place, the ecosystem and the causal chain; Local Impact is decided by specificity.",
+      "Bring field reality into the submission (a named site, seedlings ready); it turns a platform into a plan.",
+      "LATAM precedent: a team from Peru won a global award with a local problem."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/watana-project/?tab=project",
+    "demo": "https://quenaris.vercel.app",
+    "video": "https://youtu.be/QvbLhHqKULc"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/watana-project/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, workflow, stack, AI-use disclosure and NASA data." }
+  ],
+  "curator_notes": "Uses an off-the-shelf drone for data capture; recorded as software-only because no custom hardware was built."
+}

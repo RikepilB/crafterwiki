@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Bars from '../components/Bars.astro';
+import { corpus, base, href, winners, analyzed, entries, patterns, weight, eventName } from '../lib/data.mjs';
+import { cardHTML, fmtRange } from '../lib/labels.mjs';
+
+// Newest events first, one winner per event per round, so the front page shows breadth.
+const byEvent = new Map();
+for (const it of [...winners].sort((a, b) => (b.year ?? 0) - (a.year ?? 0) || weight(b) - weight(a))) {
+  if (!byEvent.has(it.hackathon)) byEvent.set(it.hackathon, []);
+  byEvent.get(it.hackathon).push(it);
+}
+const featured = [];
+for (let round = 0; featured.length < 6 && round < 12; round++) {
+  for (const list of byEvent.values()) if (list[round] && featured.length < 6) featured.push(list[round]);
+}
+
+const overall = patterns(corpus);
+const kinds = new Set(winners.map((i) => i.event_kind));
+const upcoming = corpus.hackathons
+  .filter((h) => h.results_status === 'upcoming')
+  .sort((a, b) => (a.start_date ?? '').localeCompare(b.start_date ?? ''));
+const stats = [
+  [corpus.hackathons.length, 'hackathons indexed'],
+  [analyzed.length, 'projects analyzed'],
+  [winners.length, 'confirmed winners & finalists'],
+  [entries.length, 'other submissions tracked'],
+];
+---
+<Layout>
+  <section class="hero">
+    <p class="eyebrow">Open hackathon intelligence</p>
+    <h1>Know why projects win<br />before you pick your idea.</h1>
+    <p class="lede">
+      CrafterWIKI tracks hackathon winners <em>and</em> what everyone else built, tags each project by the
+      mechanisms that made it stand out and the judging lenses it played to, and turns that evidence into a
+      demo-first plan for your next event.
+    </p>
+    <div class="row">
+      <a class="btn primary" href={href('/similar/')}>Find a similar situation</a>
+      <a class="btn" href={href('/projects/')}>Explore projects</a>
+      <a class="btn" href={href('/guide/')}>Plan a hackathon</a>
+    </div>
+    <div class="stats">
+      {stats.map(([n, label]) => <div class="stat"><b>{n}</b><span>{label}</span></div>)}
+    </div>
+  </section>
+
+  <h2>Recently analyzed winners</h2>
+  <div class="grid" set:html={featured.map((it) => cardHTML(it, base)).join('')} />
+
+  <div class="two-col">
+    <section>
+      <h2>What confirmed winners have in common</h2>
+      <p class="muted">
+        Across {overall.sample.analyzed_records} confirmed winners and finalists from {kinds.size} kinds of event.
+        Small and unstratified — <a href={href('/patterns/')}>compare by kind of event</a> before you draw conclusions.
+      </p>
+      <Bars rows={overall.mechanisms} facet="mechanisms" of={overall.sample.analyzed_records} limit={8} />
+    </section>
+    <section>
+      <h2>Coming up</h2>
+      <ul class="plain">
+        {upcoming.map((h) => (
+          <li><a href={href(`/hackathons/${h.slug}/`)}><b>{eventName(h)}</b></a><br /><span class="meta">{fmtRange(h.start_date, h.end_date)}</span></li>
+        ))}
+      </ul>
+      <p style="margin-top:14px"><a class="btn" href={href('/plans/nasa-space-apps-2026/')}>See a real plan: NASA Space Apps 2026</a></p>
+      <h2>How to read a card</h2>
+      <dl class="deflist">
+        <div><dt><span class="badge win">Finalist</span> <span class="badge win">Award winner</span></dt><dd>Organizer-confirmed placements. Only these count as wins.</dd></div>
+        <div><dt><span class="badge vote">Public vote</span> <span class="badge feat">Featured</span></dt><dd>A community ranking or an organizer showcase — not a jury result.</dd></div>
+        <div><dt><span class="badge warn">Reported · unverified</span></dt><dd>A claimed win without official results.</dd></div>
+        <div><dt><span class="badge neutral">Submitted</span></dt><dd>On the submission list. Used for base rates, never as a win.</dd></div>
+      </dl>
+    </section>
+  </div>
+
+  <h2 id="agents">Built for terminals and agents too</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>CLI</h3>
+      <pre>node cli/crafterwiki.mjs similar \
+  --mechanism expert-data-for-everyone \
+  --lens scientific-validity --json</pre>
+    </div>
+    <div class="card">
+      <h3>MCP server</h3>
+      <pre>claude mcp add crafterwiki -- \
+  node ./CrafterWIKI/mcp/server.mjs</pre>
+    </div>
+    <div class="card">
+      <h3>Static API</h3>
+      <pre>GET {href('/api/v0/index.json')}
+GET {href('/api/v0/projects/centinela.json')}</pre>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .hero { padding-block: 18px 6px; }
+  .plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .deflist dt { display: flex; flex-wrap: wrap; gap: 6px; }
+</style>

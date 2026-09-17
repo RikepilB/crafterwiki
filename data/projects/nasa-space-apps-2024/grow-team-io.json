@@ -1,0 +1,39 @@
+{
+  "slug": "grow-team-io",
+  "name": "G.R.O.W. (Team I.O.)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "Ask a voice agent about wildfires near you in plain language; it queries NASA FIRMS and weather data and moves the map for you.",
+  "placement": { "status": "track-winner", "awards": ["Local Impact"], "track": "community-mapping" },
+  "team": { "size": 5, "members": [], "countries": ["BR"] },
+  "problem": "Wildfire and weather data that could warn farmers exists, but it sits in GIS tools farmers do not use; the team opens with a named coffee farmer in São Paulo state who lost 10 acres to a fire the data foreshadowed.",
+  "solution": "A voice-powered, chat-style web interface on a real-time LLM API that turns spoken questions into SQL over NASA FIRMS wildfire records (Brazil only at submission) and weather sources, answers fire counts, current conditions and days without rain, and moves the map through structured output.",
+  "demo_moment": "Team-described: ask out loud 'How many wildfires were there in Brazil in the last week?' and get the count while the map flies to the area.",
+  "build_style": "software-only",
+  "tech": { "stack": ["openai-realtime-api", "text-to-sql", "nasa-firms", "weather-api", "netlify"], "ai_patterns": ["agent", "voice-ai"] },
+  "domains": ["emergencies-disaster", "earth-observation", "agriculture-food"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the greatest potential for local impact.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Bridges complex GIS data and user-friendly communication, making environmental information accessible regardless of technical expertise.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Grounds the problem in one farmer's loss, with the weather and FIRMS readings from the days before the fire and the estimated cost.", "basis": "team-stated", "source": 2 },
+      { "claim": "A familiar chat interface hides the GIS layer entirely; the local story makes the impact claim checkable.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "place-based-specificity", "expert-data-for-everyone", "trend-wave-timing", "relatable-demo-wrapper"],
+    "judging_lens": ["impact", "challenge-relevance", "storytelling-pitch"],
+    "lessons": [
+      "Open with one named person and the data that could have warned them.",
+      "A conversational front end can be the whole accessibility story for GIS data.",
+      "LATAM precedent: a team from Brazil won Local Impact."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/team-io/?tab=project",
+    "video": "https://www.youtube.com/watch?v=Q2BKln7vniM"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/team-io/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written case study, features, implementation and AI-use disclosure. The page also exposes credentials for its demo; not copied." }
+  ]
+}

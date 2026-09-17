@@ -1,0 +1,23 @@
+---
+import { href } from '../lib/data.mjs';
+import { humanize } from '../lib/labels.mjs';
+
+// rows: [[id, count], ...] as returned by count(); `of` renders "n/of" for sample-size honesty.
+const { rows = [], facet, limit = 8, of } = Astro.props;
+const shown = rows.slice(0, limit);
+const max = Math.max(1, ...shown.map(([, n]) => n));
+const linkFor = (id) => (facet === 'mechanisms' ? href(`/mechanisms/${id}/`) : null);
+---
+{shown.length ? (
+  <ul class="bars">
+    {shown.map(([id, n]) => (
+      <li class="bar-row">
+        <span class="bar-label">{linkFor(id) ? <a href={linkFor(id)}>{humanize(id)}</a> : humanize(id)}</span>
+        <span class="bar-track" aria-hidden="true"><span class="bar-fill" style={`width:${Math.round((n / max) * 100)}%`}></span></span>
+        <span class="bar-n">{n}{of ? `/${of}` : ''}</span>
+      </li>
+    ))}
+  </ul>
+) : (
+  <p class="muted">No data yet.</p>
+)}

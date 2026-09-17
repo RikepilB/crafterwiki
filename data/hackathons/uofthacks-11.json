@@ -1,0 +1,49 @@
+{
+  "slug": "uofthacks-11",
+  "name": "UofTHacks",
+  "edition": "11",
+  "year": 2024,
+  "organizer": "UofTHacks (University of Toronto)",
+  "kind": "student-major-league",
+  "format": "in-person",
+  "region": "North America",
+  "countries": ["CA"],
+  "city": "Toronto",
+  "venue": "University of Toronto, Myhal Centre",
+  "start_date": "2024-01-26",
+  "end_date": "2024-01-28",
+  "duration_hours": 36,
+  "participants": 399,
+  "teams": null,
+  "team_size": null,
+  "theme": "Nostalgia",
+  "tracks": [],
+  "prizes": [
+    { "name": "Overall UofTHacks First Place", "winners_count": 1, "reward": null, "criteria": [] },
+    { "name": "Overall UofTHacks Second Place", "winners_count": 1, "reward": null, "criteria": [] },
+    { "name": "Overall UofTHacks Third Place", "winners_count": 1, "reward": null, "criteria": [] },
+    { "name": "Co:Here", "winners_count": null, "reward": null, "criteria": ["sponsor-api-use"] },
+    { "name": "CSE", "winners_count": null, "reward": null, "criteria": [] },
+    { "name": "UofTHacks Sub Challenge - Best Beginner Hack", "winners_count": null, "reward": null, "criteria": [] },
+    { "name": "MLH sponsor prizes (Auth0, Kintone, Starknet, Taipy, .Tech domain, AI in Education)", "winners_count": null, "reward": null, "criteria": ["sponsor-api-use"] }
+  ],
+  "prize_pool": "CAD 23,420",
+  "judging": { "criteria": [], "judges": [], "notes": "Rubric not captured yet." },
+  "required_tech": [],
+  "sponsors": ["Cohere", "CSE", "Digile", "WISE x WiCS", "Moonshine Gaming", "MLH"],
+  "submission_requirements": ["Devpost submission"],
+  "results_status": "partial",
+  "roster_coverage": "partial",
+  "entries": [
+    { "name": "FurMe", "project": "furme" },
+    { "name": "BASIC Web", "project": "basic-web" }
+  ],
+  "organizer_takeaways": [],
+  "sources": [
+    { "url": "https://uofthacks-11.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14" },
+    { "url": "https://uofthacks-11.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-09-14" },
+    { "url": "https://devpost.com/submit-to/19869-uofthacks-11/manage/submissions", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Dates, venue, prize pool, participant count." },
+    { "url": "https://xi.uofthacks.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Site shell only; no content extractable." }
+  ],
+  "curator_notes": "Theme confirmed by team write-ups (FurMe, Rexflection). Third place not yet identified."
+}

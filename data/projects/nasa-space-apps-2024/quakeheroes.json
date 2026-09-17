@@ -1,0 +1,39 @@
+{
+  "slug": "quakeheroes",
+  "name": "42 QuakeHeroes",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "A U-Net deep network on decomposed seismic energy that finds the onset of moonquakes and marsquakes in noisy lander data.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Technology"], "track": "seismic-detection-solar-system" },
+  "team": { "size": 6, "members": [], "countries": ["BR"] },
+  "problem": "Planetary landers cannot afford the power to send continuous seismic data home, yet only a fraction of it contains quakes.",
+  "solution": "A pipeline that band-pass filters Apollo and Mars InSight ground-velocity data, decomposes it with empirical mode decomposition, computes sliding-window energy per mode into a 2D matrix, and trains a U-Net encoder-decoder against Gaussian labels centred on each event's arrival time. A companion web page shows detected moonquake and marsquake types.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "u-net", "empirical-mode-decomposition", "apollo-seismic-data", "insight-seismic-data", "github-pages"], "ai_patterns": ["ml-model"] },
+  "domains": ["space-science"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the most innovative use of technology.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Used a deep neural network to locate seismic events precisely in time-series data, with advanced signal processing to isolate components of non-stationary signals.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Validated on held-out data: 63 lunar events for training, 13 for validation, and both available Mars cases used only to check that a Moon-trained model generalizes.", "basis": "team-stated", "source": 2 },
+      { "claim": "The write-up explains each step and why (filtering alone failed on low signal-to-noise, so they added decomposition), which makes the depth visible to expert judges.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "trend-wave-timing", "complete-submission-package"],
+    "judging_lens": ["technical-depth", "scientific-validity", "challenge-relevance"],
+    "lessons": [
+      "For a technology award, show the pipeline and the reason for each step, not only the result.",
+      "State the validation split, especially when the target environment has almost no data.",
+      "LATAM precedent: a team from Brazil won Best Use of Technology."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/42-quakeheroes/?tab=project",
+    "video": "https://www.youtube.com/watch?v=thxLntBLF1I"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/42-quakeheroes/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written method, training and validation split, links to notebook repository and web page." }
+  ]
+}

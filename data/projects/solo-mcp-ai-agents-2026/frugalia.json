@@ -1,0 +1,29 @@
+{
+  "slug": "frugalia",
+  "name": "Frugalia",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "Agentic FinOps platform that detects, analyzes and resolves infrastructure waste in Kubernetes clusters.",
+  "placement": { "status": "track-winner", "awards": ["Building Cool Agents — winner"], "track": "building-cool-agents" },
+  "team": { "size": 1, "members": ["Salvador Arreola"], "countries": ["MX"] },
+  "problem": "Kubernetes clusters accumulate idle and oversized resources that teams pay for without noticing.",
+  "solution": "Agents built on kagent, kgateway and kmcp continuously find waste, explain it and act to resolve it.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["kubernetes", "kagent", "kgateway", "kmcp"], "ai_patterns": ["agent", "mcp-server"] },
+  "domains": ["cloud-native-infra"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Practical and impactful: continuous cost optimization for real teams.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Strong submission package — the organizer called out the blog, the video and the repository.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Uses three of the organizer's own projects together, the deepest platform fit in its track.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "takes-action", "complete-submission-package"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["For online open-source hackathons, the write-up and video are the demo — invest in them like a live pitch."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null, "blog": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ]
+}

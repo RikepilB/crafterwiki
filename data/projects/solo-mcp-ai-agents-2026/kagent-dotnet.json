@@ -1,0 +1,28 @@
+{
+  "slug": "kagent-dotnet",
+  "name": "kagent-dotnet",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "Brings Microsoft Agent Framework agents into the kagent ecosystem via A2A.",
+  "placement": { "status": "runner-up", "awards": ["MCP & AI Agents Starter — runner-up"], "track": "starter" },
+  "team": { "size": 1, "members": ["Massimo Crippa"], "countries": ["IT"] },
+  "problem": ".NET developers using Microsoft Agent Framework cannot plug their agents into kagent.",
+  "solution": "An A2A-based integration between kagent and Microsoft Agent Framework.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["dotnet", "microsoft-agent-framework", "a2a", "kagent"], "ai_patterns": ["agent"] },
+  "domains": ["agent-infrastructure", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Complete package: blog, project video and repository all cited by the organizer.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Bridges an ecosystem the organizer's project did not reach — expands the sponsor's user base.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "complete-submission-package"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["An integration that opens the sponsor's project to a new developer community is a reliable sponsor-lane play."],
+    "confidence": "low"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null, "blog": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ]
+}

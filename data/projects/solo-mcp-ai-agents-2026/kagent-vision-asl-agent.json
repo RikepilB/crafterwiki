@@ -1,0 +1,28 @@
+{
+  "slug": "kagent-vision-asl-agent",
+  "name": "Vision agent with ASL mode",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "A kagent-based agent that captures webcam photos and transforms them into AI-augmented media, with an American Sign Language mode.",
+  "placement": { "status": "track-winner", "awards": ["MCP & AI Agents Starter — winner"], "track": "starter" },
+  "team": { "size": null, "members": ["John Capobianco"], "countries": ["CA"] },
+  "problem": "Newcomers to agents rarely build something delightful or accessible.",
+  "solution": "An agent with vision on kagent that takes webcam photos and remixes them with image and video generation models, plus an ASL mode.",
+  "demo_moment": "The demo video — the organizer said it made her smile.",
+  "build_style": "software-only",
+  "tech": { "stack": ["kagent", "nano-banana", "veo-3", "webcam"], "ai_patterns": ["agent", "computer-vision", "generative-media"] },
+  "domains": ["creative-media", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Fun and creative; the demo video produced an emotional reaction in the judge.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Accessibility (ASL mode) called out as a 'huge bonus'.", "basis": "organizer-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "human-stakes", "complete-submission-package", "trend-wave-timing"],
+    "judging_lens": ["wow-factor", "impact"],
+    "lessons": ["An accessibility mode is a cheap, high-signal bonus on top of a fun demo."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ]
+}

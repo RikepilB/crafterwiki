@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { T, href, winners, analyzed } from '../../lib/data.mjs';
+import { humanize } from '../../lib/labels.mjs';
+
+const rows = T.mechanisms
+  .map((m) => {
+    const won = winners.filter((i) => i.mechanisms.includes(m.id));
+    return {
+      m,
+      won: won.length,
+      all: analyzed.filter((i) => i.mechanisms.includes(m.id)).length,
+      kinds: [...new Set(won.map((i) => i.event_kind))],
+    };
+  })
+  .sort((a, b) => b.won - a.won || b.all - a.all || a.m.id.localeCompare(b.m.id));
+---
+<Layout title="Winning mechanisms" description="The recurring reasons hackathon projects stand out, and the winners that used each one.">
+  <p class="eyebrow">Taxonomy</p>
+  <h1>Winning mechanisms</h1>
+  <p class="lede">
+    A mechanism is a repeatable reason a project stood out, independent of its problem or stack. That is what
+    makes “similar situations” findable across very different projects.
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Mechanism</th><th class="num">Winners</th><th class="num">Analyzed</th><th>Seen winning at</th></tr></thead>
+      <tbody>
+        {rows.map(({ m, won, all, kinds }) => (
+          <tr>
+            <td><a href={href(`/mechanisms/${m.id}/`)}><b>{humanize(m.id)}</b></a><br /><span class="muted">{m.definition}</span></td>
+            <td class="num">{won}</td>
+            <td class="num">{all}</td>
+            <td>{kinds.length ? <ul class="chips">{kinds.map((k) => <li><span class="chip">{humanize(k)}</span></li>)}</ul> : <span class="muted">—</span>}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="meta note">Mechanism tags are mostly curator inference; every project page shows the basis of each claim.</p>
+</Layout>
+
+<style>
+  .num { font-family: var(--mono); text-align: right; }
+  .note { margin-top: 12px; }
+</style>

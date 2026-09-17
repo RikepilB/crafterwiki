@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { T, analyzed, used } from '../lib/data.mjs';
+import { humanize } from '../lib/labels.mjs';
+
+const inUse = (facet, key) => T[facet].filter((v) => used(key).has(v.id));
+const groups = [
+  ['mechanism', 'Winning mechanisms you are betting on', inUse('mechanisms', 'mechanisms')],
+  ['lens', 'Judging lenses you expect', inUse('judging_lenses', 'lenses')],
+  ['domain', 'Domains', inUse('domains', 'domains')],
+  ['ai', 'AI patterns', inUse('ai_patterns', 'ai')],
+];
+const presets = [
+  ['Govtech data, impact-minded judges', '?domain=govtech-transparency&lens=impact'],
+  ['Technical judges (CTOs, engineers)', '?mechanism=visible-engineering-depth&lens=technical-depth'],
+  ['Storytelling-heavy judging', '?mechanism=human-stakes,one-sentence-clarity&lens=storytelling-pitch'],
+  ['AI for payments', '?domain=agentic-payments,fintech&ai=agent&entries=1'],
+  ['Hardware wow at a student event', '?mechanism=physical-artifact,demo-first-wow&lens=wow-factor'],
+  ['Space data for non-experts', '?mechanism=expert-data-for-everyone&lens=scientific-validity,challenge-relevance'],
+];
+const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
+---
+<Layout title="Similar situations" description="Find hackathon projects that share your situation — judges, mechanisms, domain, AI use — even with a different problem and stack.">
+  <p class="eyebrow">Pattern match</p>
+  <h1>Similar situations</h1>
+  <p class="lede">
+    Different problem, different stack, same situation. Describe yours — the judging lenses you expect, the
+    mechanisms you are betting on, the domain — and see who has been there and how it went.
+  </p>
+  <ul class="chips presets" aria-label="Example situations">
+    {presets.map(([label, query]) => <li><a class="chip" href={query}>{label}</a></li>)}
+  </ul>
+  <form id="similar" class="panel">
+    <label class="field">Start from a project (replaces the facets below)
+      <select name="to">
+        <option value="">— build a profile instead —</option>
+        {projects.map((i) => <option value={i.slug}>{i.name} · {i.event}</option>)}
+      </select>
+    </label>
+    {groups.map(([key, label, values], idx) => (
+      <details class="group" open={idx < 2}>
+        <summary>{label}</summary>
+        <div class="checks">
+          {values.map((v) => <label class="toggle" title={v.definition}><input type="checkbox" name={key} value={v.id} /> {humanize(v.id)}</label>)}
+        </div>
+      </details>
+    ))}
+    <div class="form-row">
+      <label class="toggle"><input type="checkbox" name="entries" /> Include roster entries (domain overlap only)</label>
+      <button class="btn primary" type="submit">Find similar situations</button>
+    </div>
+  </form>
+  <p id="similar-status" class="meta" aria-live="polite">Pick a project, or tick a few facets.</p>
+  <div id="similar-results" class="grid results"></div>
+  <noscript><p class="callout">This page needs JavaScript. The same query runs offline: <code>crafterwiki similar --mechanism … --lens …</code></p></noscript>
+</Layout>
+
+<script>
+  import { initSimilar } from '../scripts/similar.js';
+  initSimilar();
+</script>
+
+<style>
+  .presets { margin: 4px 0 6px; }
+  .results { margin-top: 12px; }
+</style>

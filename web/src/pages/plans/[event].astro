@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { href, hackathon, eventName } from '../../lib/data.mjs';
+
+// Renders /hack-plan output folders (hack-plan/<event>/NN-*.md) as one page per event.
+export function getStaticPaths() {
+  const files = import.meta.glob('../../../../hack-plan/*/*.md', { eager: true });
+  const byEvent = {};
+  for (const [path, mod] of Object.entries(files)) {
+    const match = path.match(/hack-plan\/([^/]+)\/([^/]+)\.md$/);
+    if (!match) continue;
+    (byEvent[match[1]] ??= []).push({ file: match[2], mod });
+  }
+  return Object.entries(byEvent).map(([event, docs]) => ({
+    params: { event },
+    props: { event, docs: docs.sort((a, b) => a.file.localeCompare(b.file)) },
+  }));
+}
+
+const { event, docs } = Astro.props;
+const h = hackathon(event);
+const title = h ? eventName(h) : event;
+---
+<Layout title={`Plan · ${title}`} description={`A /hack-plan run for ${title}: recon, patterns, angles, judge panel and demo script.`}>
+  <p class="meta crumbs"><a href={href('/guide/')}>Guide</a>{h && <> / <a href={href(`/hackathons/${h.slug}/`)}>{title}</a></>}</p>
+  <p class="eyebrow">Harness run</p>
+  <h1>{title}: the plan</h1>
+  <p class="lede">
+    Output of <code>/hack-plan</code>, phase by phase. Built from the corpus and the event's public rules;
+    anything marked pending waits for the organizer's challenge statements or the team's approval.
+  </p>
+  <nav class="panel toc" aria-label="Phases">
+    <b>Phases</b>
+    <ol>{docs.map((d) => <li><a href={`#${d.file}`}>{d.mod.frontmatter?.title ?? d.file}</a></li>)}</ol>
+  </nav>
+  {docs.map(({ file, mod }) => {
+    const Content = mod.Content;
+    return <section id={file} class="doc"><Content /></section>;
+  })}
+</Layout>
+
+<style>
+  .toc ol { margin: 0; padding-left: 1.3em; }
+  .doc { border-top: 1px solid var(--line); margin-top: 34px; padding-top: 6px; max-width: 80ch; }
+  .doc :global(h1) { font-size: 1.7rem; margin-top: 0.8em; }
+  .doc :global(table) { display: block; overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+  .doc :global(blockquote) { margin: 0; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--surface); border-radius: 6px; }
+</style>

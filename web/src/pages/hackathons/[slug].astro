@@ -1,0 +1,193 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Bars from '../../components/Bars.astro';
+import { corpus, base, href, definition, eventName, eventBrief, weight, sourceHref, isWinner } from '../../lib/data.mjs';
+import { statusClass, statusLabel, humanize, cardHTML, fmtRange, fmtDate } from '../../lib/labels.mjs';
+
+export function getStaticPaths() {
+  return corpus.hackathons.map((h) => ({ params: { slug: h.slug }, props: { h } }));
+}
+
+const { h } = Astro.props;
+const b = eventBrief(corpus, h.slug);
+const items = corpus.items.filter((i) => i.hackathon === h.slug);
+const byPlacement = (x, y) => weight(y) - weight(x) || (x.rank ?? 999) - (y.rank ?? 999) || x.name.localeCompare(y.name);
+const results = items.filter((i) => i.analyzed && i.status !== 'submitted-only').sort(byPlacement);
+const roster = [...items].sort(byPlacement);
+const trackName = new Map((h.tracks ?? []).map((t) => [t.id, t.name]));
+const sat = b.saturation;
+const priors = b.prior_from_same_event_kind;
+const priorCount = corpus.items.filter((i) => i.analyzed && i.event_kind === h.kind && i.hackathon !== h.slug && isWinner(corpus, i)).length;
+const fmtNum = (n) => Number(n).toLocaleString('en-US');
+const facts = [
+  ['Dates', fmtRange(h.start_date, h.end_date)],
+  ['Format', humanize(h.format)],
+  ['Where', [h.venue, h.city].filter(Boolean).join(' · ') || humanize(h.region) || 'Not stated'],
+  h.participants && ['Participants', fmtNum(h.participants)],
+  h.teams && ['Teams', fmtNum(h.teams)],
+  h.team_size && ['Team size', String(h.team_size)],
+  ['Results', humanize(h.results_status)],
+].filter(Boolean);
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: eventName(h),
+  startDate: h.start_date ?? undefined,
+  endDate: h.end_date ?? undefined,
+  organizer: h.organizer ? { '@type': 'Organization', name: h.organizer } : undefined,
+  description: h.theme ?? undefined,
+};
+---
+<Layout title={eventName(h)} description={`Rubric, judges, prizes, results and base rates for ${eventName(h)}.`} jsonld={jsonld}>
+  <p class="meta crumbs"><a href={href('/hackathons/')}>Hackathons</a></p>
+  <p class="eyebrow">{humanize(h.kind)}</p>
+  <h1>{eventName(h)}</h1>
+  {(h.theme || h.organizer) && (
+    <p class="lede">{h.theme && <>Theme: <b>{h.theme}</b>. </>}{h.organizer && <>Organized by {h.organizer}.</>}</p>
+  )}
+  <dl class="facts">{facts.map(([k, v]) => <div class="fact"><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+  {h.results_status === 'upcoming' && (
+    <p class="callout info">
+      <b>Upcoming.</b> Plan with the rubric, constraints and priors below; results are added after the event.
+      <a href={href('/guide/')}>How to plan with CrafterWIKI →</a>
+    </p>
+  )}
+
+  {(h.timeline ?? []).length > 0 && (
+    <>
+      <h2>Timeline</h2>
+      <div class="table-wrap"><table><tbody>
+        {h.timeline.map((t) => <tr><td class="nowrap meta">{fmtDate(t.date)}</td><td>{t.what}</td></tr>)}
+      </tbody></table></div>
+    </>
+  )}
+
+  <div class="two-col">
+    <section>
+      <h2>How it is judged</h2>
+      {b.judging.criteria.length ? (
+        <div class="table-wrap"><table>
+          <thead><tr><th>Criterion</th><th>Lens</th><th>What judges look for</th></tr></thead>
+          <tbody>
+            {b.judging.criteria.map((c) => (
+              <tr>
+                <td><b>{c.label}</b></td>
+                <td><span class="chip" title={definition('judging_lenses', c.lens)}>{humanize(c.lens)}</span></td>
+                <td>{c.description ?? definition('judging_lenses', c.lens)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table></div>
+      ) : (
+        <p class="muted">No published rubric. Infer lenses from the judge profile and the prizes.</p>
+      )}
+      {b.judging.judge_profile && <p class="spaced"><b>Judges.</b> {b.judging.judge_profile}</p>}
+      {b.judging.notes && <p class="muted">{b.judging.notes}</p>}
+    </section>
+    <aside>
+      <h2>Constraints</h2>
+      {b.required_tech.length > 0 && <p><b>Required:</b> {b.required_tech.join('; ')}</p>}
+      {b.submission_requirements.length
+        ? <ul>{b.submission_requirements.map((s) => <li>{s}</li>)}</ul>
+        : <p class="muted">No submission rules recorded.</p>}
+    </aside>
+  </div>
+
+  {b.prizes.length > 0 && (
+    <>
+      <h2>Prizes and lanes</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Prize</th><th>Reward</th><th>Criteria</th></tr></thead>
+        <tbody>
+          {b.prizes.map((prize) => (
+            <tr>
+              <td><b>{prize.name}</b>{(prize.definition || prize.notes) && <><br /><span class="muted">{prize.definition ?? prize.notes}</span></>}</td>
+              <td>{prize.reward ?? '—'}</td>
+              <td><ul class="chips">{(prize.criteria ?? []).map((c) => <li><span class="chip">{humanize(c)}</span></li>)}</ul></td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </>
+  )}
+
+  {results.length > 0 && (
+    <>
+      <h2>Known results</h2>
+      <div class="grid" set:html={results.map((i) => cardHTML(i, base)).join('')} />
+    </>
+  )}
+
+  <h2 id="roster">Submissions and base rates</h2>
+  <p class={sat.base_rate_valid ? 'callout info' : 'callout'}>
+    {sat.base_rate_valid ? (
+      <><b>Full roster.</b> All {sat.indexed} submissions are indexed, so track and domain counts are real base rates.</>
+    ) : (
+      <><b>{humanize(sat.roster_coverage)} roster.</b> {sat.indexed}{sat.of_teams ? ` of ${fmtNum(sat.of_teams)} teams` : ''} indexed.
+        These counts describe what CrafterWIKI indexed, not what the event produced — do not read them as base rates.</>
+    )}
+  </p>
+  {sat.base_rate_valid && (
+    <div class="two-col">
+      <section><h3>By track</h3><Bars rows={sat.tracks} of={sat.indexed} limit={10} /></section>
+      <section><h3>By domain</h3><Bars rows={sat.domains} of={sat.indexed} limit={8} /></section>
+    </div>
+  )}
+  {roster.length > 0 && (
+    <div class="table-wrap spaced"><table>
+      <thead><tr><th>Project</th><th>Placement</th><th>Track</th><th>Domains</th></tr></thead>
+      <tbody>
+        {roster.map((i) => (
+          <tr>
+            <td>{i.analyzed ? <a href={href(`/projects/${i.slug}/`)}><b>{i.name}</b></a> : <b>{i.name}</b>}<br /><span class="muted">{i.tagline}</span></td>
+            <td><span class={`badge ${statusClass(i.status)}`}>{statusLabel(i)}</span></td>
+            <td>{i.track ? (trackName.get(i.track) ?? humanize(i.track)) : '—'}</td>
+            <td><ul class="chips">{i.domains.map((d) => <li><span class="chip">{humanize(d)}</span></li>)}</ul></td>
+          </tr>
+        ))}
+      </tbody>
+    </table></div>
+  )}
+
+  <h2>Priors from other {humanize(h.kind)} events</h2>
+  {priorCount ? (
+    <>
+      <p class="muted">Mechanisms and lenses among {priorCount} confirmed winners from {priors.events.length} other event{priors.events.length === 1 ? '' : 's'} of this kind.</p>
+      <div class="two-col">
+        <section><h3>Mechanisms</h3><Bars rows={priors.mechanisms} facet="mechanisms" of={priorCount} /></section>
+        <section><h3>Judging lenses</h3><Bars rows={priors.lenses} of={priorCount} /></section>
+      </div>
+    </>
+  ) : (
+    <p class="muted">No confirmed winners from other events of this kind yet. Use <a href={href('/patterns/')}>patterns by kind of event</a> and treat any prior as weak.</p>
+  )}
+
+  {b.organizer_takeaways.length > 0 && (
+    <>
+      <h2>Organizer takeaways</h2>
+      <ul>{b.organizer_takeaways.map((t) => <li>{t}</li>)}</ul>
+    </>
+  )}
+  {b.curator_notes && <p class="callout info"><b>Curator note.</b> {b.curator_notes}</p>}
+
+  <h2>Use this brief</h2>
+  <pre>crafterwiki event {h.slug}</pre>
+  <p class="meta"><a href={href(`/api/v0/hackathons/${h.slug}.json`)}>JSON record</a></p>
+
+  <h2>Sources</h2>
+  <ol class="sources">
+    {(h.sources ?? []).map((s) => (
+      <li>
+        {sourceHref(s.url) ? <a href={s.url} rel="noopener">{s.url}</a> : <code>{s.url}</code>}
+        <span class="meta"> · {humanize(s.kind)} · retrieved {s.retrieved_at}</span>
+        {s.note && <span class="muted"> — {s.note}</span>}
+      </li>
+    ))}
+  </ol>
+</Layout>
+
+<style>
+  .nowrap { white-space: nowrap; }
+  .spaced { margin-top: 14px; }
+  h3 { margin: 0 0 10px; font-size: 0.95rem; }
+</style>

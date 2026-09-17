@@ -1,0 +1,45 @@
+{
+  "slug": "skysense",
+  "name": "SkySense (Team Twisters)",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "Ultra-local, personalized weather risk from NASA Earth observation data, with the safest time window for your activity.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Technology"], "track": "will-it-rain-on-my-parade" },
+  "team": { "size": 5, "members": [], "countries": ["MX"] },
+  "problem": "People planning outdoor events, sports or travel get generic, unreliable forecasts rather than a personal answer for their place and time.",
+  "solution": "A web app that combines NASA Earth observation data with AI analysis for ultra-local predictions of rain, wind, temperature, humidity and visibility, real-time risk assessments and suggested safest time windows, plus a conversational assistant (TwisterBot) that sends adaptive alerts and reminders.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "firebase", "google-apis", "gemini-api", "nasa-power-api", "nasa-earthdata", "open-meteo", "openstreetmap", "figma"],
+    "ai_patterns": ["llm-api", "ai-unspecified"]
+  },
+  "domains": ["earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the most innovative use of technology.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns weather variables into a decision: a real-time risk assessment plus the safest time window for an activity.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Grounded in named NASA sources (POWER API, Earthdata, Giovanni, GES DISC) alongside Open-Meteo, with a Gemini-powered assistant for alerts.", "basis": "team-stated", "source": 2 },
+      { "claim": "Submission package is complete: live product URL, demo video, data list and a specific AI-use disclosure (code assistance, design-to-code, icon generation) that separates the team's own work from tool help.", "basis": "team-stated", "source": 2 },
+      { "claim": "Answers the challenge's playful question literally, for one person and one plan, which makes the product understandable in a sentence.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "one-sentence-clarity", "complete-submission-package"],
+    "judging_lens": ["challenge-relevance", "technical-depth", "design-ux"],
+    "lessons": [
+      "Convert raw data into the one decision the user wants (when is it safe?).",
+      "For everyday-data challenges, personal and local beats global and generic.",
+      "Write the AI-use disclosure as carefully as the pitch: say what the tools did and what the team built.",
+      "LATAM precedent: a team from Mexico won a global technology award."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/twisters/?tab=project",
+    "demo": "https://skysense.surf/",
+    "video": "https://drive.google.com/file/d/1LDaKDOHBKm3PxC03xcEJGfdybsVEwOTf/view?usp=sharing"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/twisters/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, project details, AI-use disclosure, NASA and other data used." }
+  ]
+}

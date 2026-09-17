@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { T, winners } from '../lib/data.mjs';
+import { humanize } from '../lib/labels.mjs';
+
+const mechanisms = T.mechanisms.filter((m) => winners.some((i) => i.mechanisms.includes(m.id)));
+const kinds = T.event_kinds.filter((k) => winners.some((i) => i.event_kind === k.id));
+---
+<Layout title="Deal me one" description="No idea yet? Draw a random confirmed hackathon winner, optionally by mechanism or kind of event.">
+  <p class="eyebrow">Inspiration</p>
+  <h1>No idea? Deal me one.</h1>
+  <p class="lede">
+    Draw a random confirmed winner. Read why it stood out, then ask what the same mechanism would look like at
+    your event.
+  </p>
+  <form id="deal" class="panel">
+    <div class="form-row">
+      <label class="field">Mechanism
+        <select name="mechanism"><option value="">Any</option>{mechanisms.map((m) => <option value={m.id}>{humanize(m.id)}</option>)}</select>
+      </label>
+      <label class="field">Event kind
+        <select name="kind"><option value="">Any</option>{kinds.map((k) => <option value={k.id}>{humanize(k.id)}</option>)}</select>
+      </label>
+      <button class="btn primary" type="submit">Deal me one</button>
+      <a id="deal-link" class="meta" href="#" hidden>Permalink to this draw</a>
+    </div>
+  </form>
+  <div id="deal-result" class="slot">
+    <p class="muted">Press the button. Draws come from {winners.length} confirmed winners and finalists.</p>
+  </div>
+</Layout>
+
+<script>
+  import { initDeal } from '../scripts/deal.js';
+  initDeal();
+</script>
+
+<style>
+  .slot { max-width: 560px; }
+</style>

@@ -1,0 +1,96 @@
+{
+  "slug": "nasa-space-apps-2025",
+  "name": "NASA International Space Apps Challenge",
+  "edition": "2025",
+  "year": 2025,
+  "organizer": "NASA Space Apps Global Organizing Team (funded by NASA's Earth Science Division)",
+  "kind": "agency-open-data-challenge",
+  "format": "hybrid",
+  "region": "global",
+  "countries": [],
+  "country_count": 167,
+  "local_events": 551,
+  "city": null,
+  "venue": "551 in-person and virtual Local Events plus the virtual Universal Event",
+  "start_date": "2025-10-04",
+  "end_date": "2025-10-05",
+  "duration_hours": 48,
+  "participants": 114000,
+  "teams": 18860,
+  "submissions": 11500,
+  "team_size": "1-6",
+  "theme": null,
+  "tracks": [
+    { "id": "build-space-biology-knowledge-engine", "name": "Build a Space Biology Knowledge Engine" },
+    { "id": "hunting-exoplanets-with-ai", "name": "A World Away: Hunting for Exoplanets with AI" },
+    { "id": "will-it-rain-on-my-parade", "name": "Will It Rain on My Parade?" },
+    { "id": "commercializing-leo", "name": "Commercializing Low Earth Orbit (LEO)" },
+    { "id": "habitat-layout-creator", "name": "Your Home in Space: The Habitat Layout Creator" },
+    { "id": "stellar-stories-space-weather", "name": "Stellar Stories: Space Weather Through the Eyes of Earthlings" },
+    { "id": "farm-navigators", "name": "NASA Farm Navigators: Using NASA Data Exploration in Agriculture" },
+    { "id": "bloomwatch", "name": "BloomWatch: An Earth Observation Application for Global Flowering Phenology" }
+  ],
+  "prizes": [
+    { "name": "Best Use of Science", "winners_count": 1, "reward": null, "definition": "The best and most valid use of science and/or the scientific method.", "criteria": ["scientific-validity"] },
+    { "name": "Best Use of Data", "winners_count": 1, "reward": null, "definition": "Best makes space data accessible or leverages it for a unique application.", "criteria": ["design-ux", "originality"] },
+    { "name": "Best Use of Technology", "winners_count": 1, "reward": null, "definition": "The most innovative use of technology.", "criteria": ["technical-depth", "originality"] },
+    { "name": "Galactic Impact", "winners_count": 1, "reward": null, "definition": "The most potential to improve life on Earth or in the universe.", "criteria": ["impact"] },
+    { "name": "Best Mission Concept", "winners_count": 1, "reward": null, "definition": "The most plausible concept and design.", "criteria": ["scientific-validity", "challenge-relevance"] },
+    { "name": "Most Inspirational", "winners_count": 1, "reward": null, "definition": "The project that captures our hearts.", "criteria": ["storytelling-pitch", "impact"] },
+    { "name": "Best Use of Storytelling", "winners_count": 1, "reward": null, "definition": "Most creatively communicates the potential of open data through the art of storytelling.", "criteria": ["storytelling-pitch"] },
+    { "name": "Global Connection", "winners_count": 1, "reward": null, "definition": "Best connects people around the world through technology.", "criteria": ["impact"] },
+    { "name": "Art & Technology", "winners_count": 1, "reward": null, "definition": "Most effectively combines technical and creative skills.", "criteria": ["design-ux", "technical-depth"] },
+    { "name": "Local Impact", "winners_count": 1, "reward": null, "definition": "The greatest potential for local impact.", "criteria": ["impact"] }
+  ],
+  "judging": {
+    "criteria": [
+      { "lens": "impact", "label": "Impact", "description": "How much good the project can do, in quality and quantity; a big or a small problem; helps many or few. Called 'Influence' in the 2024 guide." },
+      { "lens": "originality", "label": "Creativity", "description": "How novel the approach is, versus an incremental improvement on something that exists." },
+      { "lens": "scientific-validity", "label": "Validity", "description": "Scientifically valid; does what it sets out to do; can work in the real world." },
+      { "lens": "challenge-relevance", "label": "Relevance", "description": "Responsive to the chosen challenge; complete; technically feasible; usable." },
+      { "lens": "storytelling-pitch", "label": "Presentation", "description": "How well the team tells the story: the challenge, the proposed solution and why it matters." }
+    ],
+    "judge_profile_summary": "Three phases. Local and Universal Event judges choose Global Nominees (about one per ten projects in the 2024 guide); NASA and Space Agency Partner subject-matter experts choose 45 Global Finalists plus Honorable Mentions; an executive committee of agency leaders assigns the 10 Global Awards.",
+    "judges": [],
+    "notes": "Each criterion is scored 1–5 at every level. Local Awards are separate and do not qualify a team for global judging."
+  },
+  "required_tech": ["At least one NASA data source or resource"],
+  "sponsors": [],
+  "submission_requirements": [
+    "Project page on spaceappschallenge.org in English; a demo video in another language needs English subtitles",
+    "Use and link at least one NASA data source or resource",
+    "Disclose every AI tool used; watermark AI-generated images and video; acknowledge AI-generated code, data, audio and text",
+    "No NASA branding (logo, flag, mission identifiers)",
+    "1–6 members, all registered for the same Local Event",
+    "Submit before 23:59 local time on the last day; no edits afterwards",
+    "'Create Your Own Challenge' projects are not eligible for global judging"
+  ],
+  "results_status": "partial",
+  "roster_coverage": "winners-only",
+  "entries": [
+    { "name": "SpaceGenes+", "project": "spacegenes-plus" },
+    { "name": "Resonant Exoplanets", "project": "resonant-exoplanets" },
+    { "name": "SkySense (Twisters)", "project": "skysense" },
+    { "name": "Astro Sweepers", "project": "astro-sweepers" },
+    { "name": "PureFlow", "project": "pureflow" },
+    { "name": "Photonics Odyssey", "project": "photonics-odyssey" },
+    { "name": "HerCode Space", "project": "hercode-space" },
+    { "name": "Gaia+LEO", "project": "gaia-leo" },
+    { "name": "Zumorroda-X", "project": "zumorroda-x" },
+    { "name": "QUEÑARIS", "project": "quenaris" }
+  ],
+  "organizer_takeaways": [
+    { "claim": "Many teams do well on the first four criteria and under-invest in presentation; devote real time to the pitch and story, and recruit storytelling and design skills.", "source": 4 },
+    { "claim": "The 10 winning teams came from 8 countries and territories, selected from 18,860 participating teams.", "source": 5 }
+  ],
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "10 Global Winners with award, challenge, country and description; 114,000+ participants, 551 events, 167 countries, 11,500+ submissions." },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definitions and the three judging phases." },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/global-finalists/", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "45 Global Finalists (count only; list not indexed)." },
+    { "url": "https://www.youtube.com/watch?v=SAm_2GB7PGc", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Official 2025 Project Submission and Judging & Awards video: criteria names, 1–5 scale, AI disclosure, deadline." },
+    { "url": "https://www.scribd.com/document/876777314/Judging-Awards-Guideline", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Third-party-hosted copy of the organizer's 2024 Judging & Awards guide (criteria definitions, presentation advice); the official guide page did not render." },
+    { "url": "https://www.spaceappschallenge.org/2025/meet-the-2025-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14", "note": "18,860 teams; winners from 8 countries and territories." },
+    { "url": "https://www.spaceappschallenge.org/2025/challenges/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "18 challenges (list rendered client-side; only the 8 with a Global Winner are listed as tracks)." }
+  ],
+  "curator_notes": "Tracks list only the 8 of 18 challenges that produced a Global Winner. Three of the ten awards went to 'Commercializing LEO' — a count among winners, not a base rate. Team pages render client-side and could not be extracted on 2026-09-14, so project analyses rest on NASA's announcement. NASA publishes member names abbreviated; CrafterWIKI stores team size only."
+}

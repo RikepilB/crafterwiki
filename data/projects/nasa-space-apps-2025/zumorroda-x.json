@@ -1,0 +1,41 @@
+{
+  "slug": "zumorroda-x",
+  "name": "Henry's Farm Adventures (Zumorroda-X)",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "A story-driven farming game: travel with Henry to farmers facing floods, heat, drought and salty soil, and solve each with real NASA satellite data.",
+  "placement": { "status": "track-winner", "awards": ["Art & Technology"], "track": "farm-navigators" },
+  "team": { "size": 4, "members": [], "countries": ["EG"] },
+  "problem": "How farmers adapt to heat waves, floods, drought and salinization — and how satellite data reveals those risks — is hard for students and non-experts to grasp.",
+  "solution": "A Phaser web game in which a struggling farmer travels to India (2021 heat), Pakistan (2022 floods), Egypt (salinization), the United States (drought) and Brazil (crop management); each stop turns NASA data — heat maps, Landsat before-and-after imagery, NDVI, the U.S. Drought Monitor — into a mini-game, plus a small model that predicts crop survival from CO₂ levels and adaptation choices.",
+  "demo_moment": "Team-described: sliding between NASA satellite images of Pakistan before and after the 2022 floods, then placing straw and drainage pipes to save the fields.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "phaser", "python", "piskel", "landsat", "ndvi", "vercel"], "ai_patterns": ["ml-model"] },
+  "domains": ["agriculture-food", "games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the project that most effectively combines technical and creative skills.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Puts the player in a farmer's shoes on a world journey, so adapting to climate hazards is experienced rather than read.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Every level is anchored in a real place and event (India's 2021 heat, Pakistan's 2022 floods) with the matching NASA imagery.", "basis": "team-stated", "source": 2 },
+      { "claim": "States its own limits (some hazards, such as wildfires, are not covered), which reads as honest scope.", "basis": "team-stated", "source": 2 },
+      { "claim": "The game framing turns an agriculture-data challenge into empathy plus learning, which works for judges who are not agronomists.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "expert-data-for-everyone", "human-stakes", "place-based-specificity"],
+    "judging_lens": ["design-ux", "storytelling-pitch", "originality"],
+    "lessons": [
+      "Let the user play the stakeholder; empathy is a judging advantage.",
+      "Anchor each scene in a real place, date and dataset.",
+      "When an award rewards art and technology together, staff both on purpose."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/zumorroda-x/?tab=project",
+    "demo": "https://henrysfarmadventures.vercel.app/",
+    "video": "https://drive.google.com/file/d/1P-sOTecG2uO2eLu3UabS0PXWLYUKaF4p/view?usp=sharing"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/zumorroda-x/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written game design, levels, data sources, tools and AI-use disclosure." }
+  ]
+}

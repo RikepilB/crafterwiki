@@ -1,0 +1,39 @@
+{
+  "slug": "asteroid-destroyer",
+  "name": "HWO Exoplanet Characterization Platform (Asteroid Destroyer)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "A 3D map of known exoplanets scored for habitability and detectability, to help the Habitable Worlds Observatory pick targets.",
+  "placement": { "status": "track-winner", "awards": ["Global Connection"], "track": "hwo-navigator" },
+  "team": { "size": 4, "members": [], "countries": ["CA"] },
+  "problem": "The future Habitable Worlds Observatory needs to know which known exoplanets it could actually observe and characterize.",
+  "solution": "A React/three.js web platform over NASA Exoplanet Archive and Gaia data that renders exoplanets relative to Earth, classifies them (gas giant, super-Earth, terrestrial, Neptunian) with literature thresholds, combines habitable-zone, size, temperature and eccentricity scores, estimates signal-to-noise for characterization, and adds K-nearest-neighbours and an LLM-based habitability classifier.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "three-js", "flask", "nodejs", "vercel", "nasa-exoplanet-archive", "gaia", "openai-api"], "ai_patterns": ["llm-api", "ml-model"] },
+  "domains": ["space-science"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for best connecting people around the world through technology.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Used data processing and machine learning to map exoplanets by size, temperature and distance.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Every classification threshold and habitability score cites the paper it comes from.", "basis": "team-stated", "source": 2 },
+      { "claim": "Adds a signal-to-noise estimate, so the map answers 'can HWO characterize it?' rather than only 'where is it?'.", "basis": "team-stated", "source": 2 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust", "trend-wave-timing", "complete-submission-package"],
+    "judging_lens": ["technical-depth", "scientific-validity", "design-ux"],
+    "lessons": [
+      "Cite the source of every scoring rule; it turns a visualization into a defensible tool.",
+      "Answer the mission's real question (observability), not just the display request."
+    ],
+    "confidence": "medium"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/asteroid-destroyer/?tab=project",
+    "demo": "https://hwo-navigation.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=SYPQo4-P5J0"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/asteroid-destroyer/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written architecture, classification and habitability methods with citations, SNR calculation, repositories." }
+  ]
+}

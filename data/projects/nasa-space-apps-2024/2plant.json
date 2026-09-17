@@ -1,0 +1,41 @@
+{
+  "slug": "2plant",
+  "name": "2plant (NVS-knot)",
+  "hackathon": "nasa-space-apps-2024",
+  "tagline": "Two weeks of daily planting windows per 100 m of field: is there enough moisture to germinate, and is the ground safe for machinery?",
+  "placement": { "status": "track-winner", "awards": ["Galactic Impact"], "track": "earth-observation-agriculture" },
+  "team": { "size": 4, "members": [], "countries": ["UA"] },
+  "problem": "At planting, too little soil moisture kills germination and too much bogs down equipment; farmers rely on weather forecasts because field probes are costly and cannot forecast.",
+  "solution": "A pre-planting soil moisture service that fuses SMAP/AMSR2 surface moisture, evapotranspiration and forecast ensembles through a reformulated exponential filter into root-zone estimates with propagated uncertainty. It scores moisture sufficiency and saturation risk at 15 cm and rates each day poor, fair, good or best for planting, with a 'second opinion' tab showing raw moisture and uncertainty.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["smap", "modis-lst", "ecostress", "earthaccess", "meteomatics-api", "cloud-backend"], "ai_patterns": [] },
+  "domains": ["agriculture-food", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the most potential to improve life on Earth or in the universe.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Assessed planting conditions from surface soil moisture and evapotranspiration data and built an app that lets farmers manage planting risks.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Reports accuracy against ground truth: about 0.03 m³/m³ root-zone error, close to calibrated probes, and 0.64 mm daily ET error against flux towers, with literature citations.", "basis": "team-stated", "source": 2 },
+      { "claim": "Built on an existing company's science and 2023–2024 farm pilots, answering requests from its customers; the MVP premiered at Space Apps.", "basis": "team-stated", "source": 2 },
+      { "claim": "Two plain questions, one timeline of planting windows, and published error bars: impact judges could see both the benefit and why to trust it.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust", "expert-data-for-everyone", "one-sentence-clarity", "complete-submission-package"],
+    "judging_lens": ["scientific-validity", "impact", "business-potential"],
+    "lessons": [
+      "Publish your error against ground truth; it answers the validity criterion before judges ask.",
+      "Reduce a hard model to two farmer questions and a four-level daily rating.",
+      "The team brought prior company work and pilots; check the current edition's rules on pre-event work before copying this."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nvs-knot/?tab=project",
+    "demo": "https://nasa.nave-app.com/list-view",
+    "video": "https://drive.google.com/file/d/10u8i69xK-b9ojl3y89R0_faH5hKe8Mqu/view"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-international-space-apps-challenge-announces-2024-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nvs-knot/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written problem, method, accuracy figures with citations, pilot and pricing plans; AI used only for grammar and presentation cartoons." }
+  ]
+}

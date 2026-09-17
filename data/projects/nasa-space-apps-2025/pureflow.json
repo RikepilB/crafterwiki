@@ -1,0 +1,41 @@
+{
+  "slug": "pureflow",
+  "name": "PureFlow",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "A habitat layout tool that doubles as a survival simulator: model in 3D, compute crew needs live, and test the design against real solar-storm alerts.",
+  "placement": { "status": "track-winner", "awards": ["Best Mission Concept"], "track": "habitat-layout-creator" },
+  "team": { "size": 6, "members": [], "countries": ["BR"] },
+  "problem": "A habitat has to keep a crew alive — mass, power, life support, shielding — and survive space weather; a layout tool alone cannot tell you whether the crew would survive in it.",
+  "solution": "An interactive systems-engineering platform to design and model habitats in 3D that recalculates crew requirements (mass, power, life support) in real time from crew size and mission duration, checks shielding materials against destination hazards, and pulls live events from NASA's DONKI space-weather database to hit the design with current solar storms.",
+  "demo_moment": "Team-described: when a solar flare is recorded in NASA's DONKI feed, an alert appears and the habitat in the simulation takes the storm — is the shielding enough, is the storm shelter in the right place?",
+  "build_style": "software-only",
+  "tech": { "stack": ["3d-web", "nasa-donki-api", "github-pages"], "ai_patterns": [] },
+  "domains": ["space-operations", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the most plausible concept and design.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Considers the critical functions of living in space — waste management, power, life support, communications — and tests designs against real space-weather threats.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Goes past the brief's layout tool: live crew-requirement calculations turn it into a survival simulator ('not if a habitat can be built, but if its crew can survive in it').", "basis": "team-stated", "source": 2 },
+      { "claim": "A live link to NASA's DONKI database tests designs against the Sun as it is today rather than a historical model.", "basis": "team-stated", "source": 2 },
+      { "claim": "Adding a failure test with live data turns a drawing exercise into validation — which is what 'most plausible' rewards.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["live-real-world-proof", "visible-engineering-depth", "human-stakes"],
+    "judging_lens": ["scientific-validity", "challenge-relevance", "design-ux"],
+    "lessons": [
+      "Give any design tool a stress test with live, real data; judges reward designs that can fail.",
+      "Reframe the deliverable one level up (layout tool → survival simulator) and say it in one line.",
+      "LATAM precedent: a team from Brazil won Best Mission Concept."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/pureflow2/?tab=project",
+    "demo": "https://larasdiniz.github.io/PureFlow-2025/src/public/html/home/home.html",
+    "video": "https://youtu.be/hHUpo7bTVuc"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/pureflow2/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, features, DONKI integration, AI-use note (audio)." }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "gaia-leo",
+  "name": "Gaia+LEO",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "Optimization model that decides when and where orbital data centers beat terrestrial ones for AI and Earth-observation compute.",
+  "placement": { "status": "track-winner", "awards": ["Global Connection"], "track": "commercializing-leo" },
+  "team": { "size": 4, "members": [], "countries": ["US"] },
+  "problem": "Data-center growth for AI training and climate modeling keeps raising terrestrial power and water demand, and nobody can say when orbital compute would actually be cheaper or greener.",
+  "solution": "A mixed-integer optimization framework with an interactive Streamlit and Three.js interface that chooses which 40 MW solar-powered orbital compute modules to launch, which ground sites to activate and how to route workloads, minimizing capital and operating cost under latency, bandwidth, power and thermal limits, using NASA POWER and US energy-grid data.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "streamlit", "threejs", "mixed-integer-optimization", "nasa-power-api"], "ai_patterns": [] },
+  "domains": ["space-operations", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the project that best connects people around the world through technology.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Connects the AI compute boom and the orbital economy with the goal of cutting terrestrial power and water demand.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Quantifies when and where orbital compute becomes advantageous instead of asserting it, with interactive scenarios for policymakers and cloud providers.", "basis": "team-stated", "source": 2 },
+      { "claim": "Operations-research depth where most entries would draw a concept makes a speculative idea defensible.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "trend-wave-timing"],
+    "judging_lens": ["technical-depth", "originality", "impact"],
+    "lessons": [
+      "Back a speculative concept with a real quantitative model and let judges move the sliders.",
+      "Tie the space idea to an Earth problem judges already feel (data-center power and water)."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/gaialeo/?tab=project",
+    "repo": "https://github.com/stayingfoolish/gaia-LEO/blob/main/README.md",
+    "video": "https://drive.google.com/file/d/17eORY_V279WEXn_29pDwuUACGKpyKx6K/view"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/gaialeo/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, model, stack, AI-use disclosure and data." }
+  ]
+}

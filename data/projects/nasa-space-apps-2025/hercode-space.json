@@ -1,0 +1,42 @@
+{
+  "slug": "hercode-space",
+  "name": "A Solar Tale (HerCode Space)",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "A digital children's story narrated by the Sun that explains how space weather touches daily life, with science sourced from NASA and NOAA.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Storytelling"], "track": "stellar-stories-space-weather" },
+  "team": { "size": 4, "members": [], "countries": [], "note": "Universal Event (virtual)." },
+  "problem": "Space weather affects technology and daily life on Earth, but it is invisible and abstract, especially for children.",
+  "solution": "A scroll-driven, mobile-first web story in five poetic acts told by the Sun — from ancient myths and Galileo's telescope to modern solar flares and a curious girl — that introduces a space-weather concept in each act, for classrooms, libraries and outreach programs.",
+  "demo_moment": null,
+  "build_style": "media-story",
+  "tech": { "stack": ["react", "react-scrollama", "scss", "netlify"], "ai_patterns": ["generative-media"] },
+  "domains": ["education", "space-science", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the project that most creatively communicates the potential of open data through storytelling.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pairs real heliophysics with vibrant illustrations for a named audience (kids) and named channels (classrooms, libraries, outreach).", "basis": "organizer-stated", "source": 0 },
+      { "claim": "A clear narrative device — the Sun as narrator across five acts — carries science, history and myth in one arc.", "basis": "team-stated", "source": 2 },
+      { "claim": "Treats data trust as a design rule: every scientific reference comes from NASA or NOAA.", "basis": "team-stated", "source": 2 },
+      { "claim": "A storytelling challenge rewarded a media artifact built on data — a lane most developer teams skip.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "one-sentence-clarity", "cited-evidence-trust"],
+    "judging_lens": ["storytelling-pitch", "challenge-relevance", "design-ux"],
+    "lessons": [
+      "Storytelling challenges are winnable without heavy code: pick a named audience, a narrator and a channel.",
+      "Keep the science real and cite it; the story must rest on the actual data.",
+      "If generative tools make the illustrations or voice, disclose them as the rules require."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/hercode-space/?tab=project",
+    "demo": "https://a-solar-tale.netlify.app/",
+    "video": "https://youtu.be/1C9ueho9ero"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/hercode-space/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, structure, stack, AI tools list and data sources." }
+  ],
+  "curator_notes": "AI pattern generative-media inferred from the listed tools (image, video and voice generators); the page does not say which assets each produced."
+}

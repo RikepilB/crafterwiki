@@ -1,0 +1,28 @@
+{
+  "notes": "Events to index next, from primary sources only. 'reference_index' marks where we learned the event exists; it is a pointer, never a data source. Devpost URLs are unverified guesses until fetched.",
+  "retrieved_at": "2026-09-14",
+  "targets": [
+    { "event": "Hack the North 2025 (remaining 8 finalists + sponsor winners)", "primary": "https://hackthenorth2025.devpost.com/project-gallery", "priority": 1, "status": "partial" },
+    { "event": "Hack the Valley 10 (Oct 2025)", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 1, "why": "Prior for upcoming Hack the Valley 11 (Oct 16–18, 2026)." },
+    { "event": "Platanus Hack 26 Bogotá results", "primary": "https://hack.platan.us/26-co/vote/results", "priority": 1, "status": "results page errored 2026-09-14; project pages (e.g. /26-co/vote/woki) load; no organizer results post found",
+      "team_stated_leads": [
+        { "entry": "Roxy", "claim": "2nd place, AI Security track", "basis": "team-stated", "sources": [], "source_note": "Participants' personal social posts; URLs kept out of the public repo until names policy is decided (private/data/leads/).", "retrieved_at": "2026-09-14" }
+      ] },
+    { "event": "Platanus Hack 26 Buenos Aires results", "primary": "https://hack.platan.us/26-ar/vote/results", "priority": 1, "status": "results page errored 2026-09-14; /26-ar/live shows presentations only",
+      "team_stated_leads": [
+        { "entry": "Tranquera", "claim": "overall winner and AI Security track winner", "basis": "team-stated", "sources": ["https://hack.platan.us/26-ar/vote/tranquera"], "source_note": "Claim from a participant's personal social post; URL kept out of the public repo (private/data/leads/). The organizer page only confirms the project and track.", "retrieved_at": "2026-09-14", "note": "Promote as reported-winner only with an analysis record; confirm against official results." },
+        { "entry": "(side challenge) Gravity Duel", "claim": "Arcade Challenge winner", "basis": "team-stated, reshared by organizer", "sources": ["https://www.linkedin.com/posts/platanus_activity-7460320153478635520-e92D"], "retrieved_at": "2026-09-14" }
+      ] },
+    { "event": "Platanus Hack 26 Ciudad de México (Jun 19–21, 2026)", "primary": "https://hack.platan.us/", "priority": 2 },
+    { "event": "Platanus Hack 26 Caracas (Oct 23–25, 2026) and Santiago final (Nov 20–22, 2026)", "primary": "https://hack.platan.us/", "priority": 2, "status": "upcoming; dates from tour table, which was stale for Bogotá — verify" },
+    { "event": "UofTHacks 11 third place + sponsor winners", "primary": "https://uofthacks-11.devpost.com/project-gallery", "priority": 2 },
+    { "event": "UofTHacks 2026", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 2 },
+    { "event": "Cal Hacks 12.0 (Oct 2025)", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 2 },
+    { "event": "TreeHacks 2025 and 2026", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 2 },
+    { "event": "HackHarvard 2025, LA Hacks 2026, UC Berkeley AI Hackathon 2026, MHacks 2025, PennApps XXVI, HackGT 2025, DubHacks 2025", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 3 },
+    { "event": "QHacks, nwHacks, HooHacks, YHack, TAMUhack, ConUHacks, SwampHacks, Bitcamp, McHacks, Hack Western, VTHacks, HackPrinceton, StormHacks, DeltaHacks, Hack the 6ix, Call My Agent Hackathon", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 3 },
+    { "event": "LATAM hackathons in the hack0.dev index (32 historical)", "primary": "https://hack0.dev/", "priority": 2, "why": "LATAM coverage gap in existing indexes. Includes Cursor Hackathon Barranquilla and 'The Next Craft' full-day hackathons (Lima, Arequipa, El Salvador)." },
+    { "event": "SOON next edition", "primary": "https://www.soonhackathon.ca/", "priority": 3 },
+    { "event": "Awesome-list leads", "primary": "data/leads/awesome-hackathon-winners.json", "priority": 3 }
+  ]
+}

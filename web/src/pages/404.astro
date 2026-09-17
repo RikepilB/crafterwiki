@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/data.mjs';
+---
+<Layout title="Not found">
+  <p class="eyebrow">404</p>
+  <h1>That page did not make the finals.</h1>
+  <p class="lede">The record may have been renamed or removed.</p>
+  <div class="row">
+    <a class="btn primary" href={href('/projects/')}>Search projects</a>
+    <a class="btn" href={href('/hackathons/')}>Browse hackathons</a>
+  </div>
+</Layout>

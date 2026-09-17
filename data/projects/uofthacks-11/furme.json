@@ -1,0 +1,33 @@
+{
+  "slug": "furme",
+  "name": "FurMe",
+  "hackathon": "uofthacks-11",
+  "tagline": "A Furby-shaped desk assistant that follows your face, reads your mood and talks back.",
+  "placement": { "status": "grand-winner", "awards": ["Overall UofTHacks First Place Winner"], "track": null },
+  "team": { "size": 3, "members": ["James Yang", "Judy Z", "Trinity Ung"] },
+  "problem": "The event theme was nostalgia; the team wanted the companionship of a childhood toy to become useful today.",
+  "solution": "A physical Furby-like body that turns toward the user, detects emotion from the face to play mood-matched childhood songs, converses and tells jokes, with a web dashboard chatbot and a home-security camera view.",
+  "demo_moment": "A Furby turns to look at you, notices you look down, and plays a song from your childhood.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "javascript", "html", "css", "arduino", "servos", "camera", "cohere", "openai", "spotify-api", "google-text-to-speech", "agora-rtc"],
+    "ai_patterns": ["llm-api", "computer-vision", "voice-ai"]
+  },
+  "domains": ["productivity", "robotics-hardware", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Answered the nostalgia theme with the most recognizable toy of the judges' childhood rather than a literal 'retro' app.", "basis": "curator-inference" },
+      { "claim": "A living physical object on the table; most theme entries were web apps.", "basis": "curator-inference" },
+      { "claim": "Feature list is broad (chatbot, security, music, jokes) — a kitchen-sink risk the physical character carried.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["theme-native-twist", "cultural-reference-hook", "physical-artifact", "demo-first-wow", "one-sentence-clarity", "sponsor-platform-mastery"],
+    "judging_lens": ["wow-factor", "originality"],
+    "lessons": ["For a themed event, the winning move is the theme's most emotionally loaded object, made functional."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/furme", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/furme", "kind": "devpost-project", "retrieved_at": "2026-09-14" },
+    { "url": "https://uofthacks-11.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-09-14" }
+  ]
+}

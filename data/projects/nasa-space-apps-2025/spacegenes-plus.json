@@ -1,0 +1,41 @@
+{
+  "slug": "spacegenes-plus",
+  "name": "SpaceGenes+",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "Interactive dashboard showing how radiation and microgravity together affect astronaut health at the molecular level.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Science"], "track": "build-space-biology-knowledge-engine" },
+  "team": { "size": 1, "members": [], "countries": ["DE"] },
+  "problem": "Astronauts experience radiation and microgravity at the same time, but most space omics tools study each stressor in isolation, hiding interactions that matter for long-duration missions.",
+  "solution": "A web dashboard that ingests NASA GeneLab transcriptomic data (OSD-288, mouse spleen in spaceflight), computes synergy scores from fold changes across radiation-only, microgravity-only and combined conditions, and flags genes whose combined response exceeds the sum of the individual effects, for researchers, drug developers and mission planners.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["framer", "bolt-new", "python", "pandas", "numpy", "figma", "nasa-genelab"], "ai_patterns": [] },
+  "domains": ["space-science", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the best and most valid use of science and/or the scientific method.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Gives researchers and mission planners an easy way to identify important molecular changes for long-duration spaceflight protection.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Flips the usual framing: existing tools treat spaceflight stressors separately, while the product looks for non-additive effects of combined stress.", "basis": "team-stated", "source": 2 },
+      { "claim": "The science is explicit and checkable: one named GeneLab dataset and a stated synergy rule (combined effect greater than the sum of single effects).", "basis": "team-stated", "source": 2 },
+      { "claim": "A one-person entry used no-code and AI-assisted tools for speed while keeping dataset choice and synergy logic explicit, so tool leverage did not cost validity.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach", "expert-data-for-everyone", "human-stakes", "tight-scope-finished"],
+    "judging_lens": ["scientific-validity", "challenge-relevance", "impact"],
+    "lessons": [
+      "Narrow a broad challenge to the one question a named user (a mission planner) must answer.",
+      "State the dataset and the rule behind every result; validity judges reward science they can check.",
+      "No-code and AI tools are fine when the disclosure says exactly what each did."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/spacegenes/?tab=project",
+    "demo": "https://spacegenes-plus.framer.website/",
+    "video": "https://drive.google.com/file/d/1nUliPCPSrPXtbi7LartC2WfROIni7pFv/view?usp=sharing"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/spacegenes/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written summary, method, tools, AI-use disclosure and NASA data." }
+  ]
+}

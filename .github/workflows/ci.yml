@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  corpus-and-tools:
+    name: Validate corpus, run tests, build site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Node 22.12 is the floor for the Astro site; the CLI and MCP server need only Node 20.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.12'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Validate the corpus
+        run: node cli/crafterwiki.mjs validate
+
+      - name: Run tests
+        run: node --test
+
+      - name: Install site dependencies
+        run: npm ci --prefix web
+
+      - name: Build the site and static API
+        run: npm --prefix web run build

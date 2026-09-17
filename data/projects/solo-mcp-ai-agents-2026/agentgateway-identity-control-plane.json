@@ -1,0 +1,29 @@
+{
+  "slug": "agentgateway-identity-control-plane",
+  "name": "agentgateway identity-aware control plane (contributions)",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "Nine substantial pull requests turning agentgateway from a model proxy into an identity-aware control plane for agents.",
+  "placement": { "status": "track-winner", "awards": ["Open Source Contributions — winner"], "track": "open-source-contributions" },
+  "team": { "size": 3, "members": ["Kevin Cao", "Yitaek Hwang", "Jaden Lee"] },
+  "problem": "An agent gateway that only proxies model calls cannot enforce identity or explain agent execution.",
+  "solution": "Upstream PRs adding identity at the edge, OpenTelemetry-based observability of agent execution, and support for multiple model providers.",
+  "demo_moment": null,
+  "build_style": "open-source-contribution",
+  "tech": { "stack": ["agentgateway", "rust", "opentelemetry"], "ai_patterns": ["llm-api"] },
+  "domains": ["agent-infrastructure", "ai-security"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Nine substantial merged-quality PRs spanning identity, observability and multi-provider support.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Contribution moved the product's positioning (proxy → control plane), not just fixed bugs.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["open-source-contribution", "visible-engineering-depth", "trend-wave-timing"],
+    "judging_lens": ["technical-depth", "engineering-practice"],
+    "lessons": ["Frame contributions as a capability shift in the upstream project."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": null, "repo": "https://github.com/agentgateway/agentgateway", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ],
+  "curator_notes": "Rust in stack is an assumption about agentgateway (organizer blog describes it as Rust-powered in a related post); repo URL assumed canonical — verify."
+}

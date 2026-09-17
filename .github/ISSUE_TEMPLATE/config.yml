@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security or privacy report
+    url: https://github.com/RikepilB/crafterwiki/security/advisories/new
+    about: Report a vulnerability, or request a removal privately.
+  - name: How records are built
+    url: https://github.com/RikepilB/crafterwiki/blob/main/CONTRIBUTING.md
+    about: Sourcing rules, placement honesty and the privacy limits before you file a data issue.

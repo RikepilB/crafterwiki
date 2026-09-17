@@ -1,0 +1,34 @@
+{
+  "slug": "dum-e",
+  "name": "DUM-E",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Voice-commanded robotic arm that sees its workspace and acts on natural-language instructions.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": 4, "members": ["Jason Liu", "Eric Tao Xie", "Daniel Ganjali", "Chinmay Jindal"] },
+  "problem": "Hobby and lab robot arms run pre-programmed routines; they cannot understand a spoken request or reason about a cluttered table.",
+  "solution": "A 5-DOF servo arm driven by a vision + language pipeline: a webcam view is warped to a bird's-eye frame with homography, segmented, and sent with coordinates to a fast multimodal LLM that chooses actions; a Raspberry Pi relays them to an Arduino running inverse kinematics, with position feedback closing the loop.",
+  "demo_moment": "Say a command out loud and the arm sorts parts on a messy table, holds a tool, or waves back.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "opencv", "flask", "raspberry-pi", "arduino", "servos", "groq", "llama-4-maverick", "whisper-large-v3"],
+    "ai_patterns": ["computer-vision", "llm-api", "voice-ai"]
+  },
+  "domains": ["robotics-hardware", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Named and framed after Iron Man's robot helper, so the pitch needs no explanation.", "basis": "curator-inference" },
+      { "claim": "Chose homography + inverse kinematics + fast LLM inference over research-stage vision-language-action models, trading novelty for a demo that reliably works.", "basis": "team-stated", "source": 0 },
+      { "claim": "Visible engineering on the table: six servos, ~9A of current, full-rotation wiring and a closed feedback loop.", "basis": "team-stated", "source": 0 },
+      { "claim": "Organizer featured it on the next year's homepage as a showcase project.", "basis": "organizer-stated", "source": 1 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "physical-artifact", "demo-first-wow", "visible-engineering-depth", "one-sentence-clarity"],
+    "judging_lens": ["wow-factor", "technical-depth"],
+    "lessons": ["Pick the boring, reliable technique that makes the live demo work; save the research-grade approach for 'what's next'."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/dum-e-kgx6at", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/dum-e-kgx6at", "kind": "devpost-project", "retrieved_at": "2026-09-14" },
+    { "url": "https://hackthenorth.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14" }
+  ]
+}

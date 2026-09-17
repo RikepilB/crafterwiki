@@ -1,0 +1,40 @@
+{
+  "slug": "photonics-odyssey",
+  "name": "AakashNet (Photonics Odyssey)",
+  "hackathon": "nasa-space-apps-2025",
+  "tagline": "Satellite broadband for India designed as sovereign national infrastructure: low-cost phased-array terminals linked to a laser-meshed LEO constellation.",
+  "placement": { "status": "track-winner", "awards": ["Most Inspirational"], "track": "commercializing-leo" },
+  "team": { "size": 6, "members": [], "countries": ["IN"] },
+  "problem": "More than 700 million people in India are offline; fiber and towers are impractical in remote terrain, and relying on foreign satellite networks raises sovereignty and security concerns.",
+  "solution": "A concept for an indigenous LEO network with laser inter-satellite links and a mass-producible phased-array user terminal (about 1,280 elements, Ku/Ka band, electronic beam steering), with RF link budgets modeled in MATLAB and OpenEMS and a lightweight browser dashboard that visualizes coverage, beam switching and throughput.",
+  "demo_moment": null,
+  "build_style": "concept-design",
+  "tech": { "stack": ["html", "tailwind", "javascript", "matlab", "openems", "phased-array-antenna"], "ai_patterns": [] },
+  "domains": ["connectivity-telecom", "space-operations"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won the award for the project that 'captures our hearts'.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The stake is specific and enormous: helping connect more than 700 million people without broadband.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Designed around national constraints rather than a generic constellation: a terminal cost cap, local manufacturing and encrypted links for public services and defense.", "basis": "team-stated", "source": 2 },
+      { "claim": "Inverts the commercial framing of the LEO challenge (private service → public infrastructure), which makes a concept entry memorable without a working product.", "basis": "curator-inference" },
+      { "claim": "Its only listed NASA resource is the image and video library, so the award rewarded stakes and framing more than data depth.", "basis": "curator-inference", "source": 2 }
+    ],
+    "mechanisms": ["inverted-approach", "human-stakes", "place-based-specificity"],
+    "judging_lens": ["impact", "storytelling-pitch", "originality"],
+    "lessons": [
+      "A concept can win an inspiration award when the stake is huge, specific and tied to one country's constraints.",
+      "Flip the challenge's default framing to stand out in a popular challenge.",
+      "Inspiration lanes weigh stakes over data depth; data-heavy awards will not."
+    ],
+    "confidence": "high"
+  },
+  "links": {
+    "project_page": "https://www.spaceappschallenge.org/2025/find-a-team/photonic-force/?tab=project",
+    "project": "https://drive.google.com/drive/folders/17Sjo9YEayU1WuYzge4OO2uTpEkqAI4ms"
+  },
+  "sources": [
+    { "url": "https://www.nasa.gov/learning-resources/stem-engagement-at-nasa/nasa-announces-2025-international-space-apps-challenge-global-winners/", "kind": "official-results", "retrieved_at": "2026-09-14" },
+    { "url": "https://www.spaceappschallenge.org/2025/awards/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Award definition." },
+    { "url": "https://www.spaceappschallenge.org/2025/find-a-team/photonic-force/?tab=project", "kind": "project-page", "retrieved_at": "2026-09-14", "note": "Team-written concept, terminal design, constraints, tools, AI-use disclosure and data." }
+  ]
+}

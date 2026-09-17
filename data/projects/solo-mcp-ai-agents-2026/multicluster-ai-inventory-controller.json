@@ -1,0 +1,29 @@
+{
+  "slug": "multicluster-ai-inventory-controller",
+  "name": "Multi-cluster AI inventory controller",
+  "hackathon": "solo-mcp-ai-agents-2026",
+  "tagline": "Kubernetes-native controller that inventories AI infrastructure across clusters, inspired by agentregistry.",
+  "placement": { "status": "track-winner", "awards": ["Explore agentregistry — winner"], "track": "explore-agentregistry" },
+  "team": { "size": 1, "members": ["Denys Vasyliev"], "countries": ["GB"] },
+  "problem": "Enterprises lose track of which agents, MCP servers and AI resources run across many clusters.",
+  "solution": "A multi-cluster inventory controller modelled on agentregistry concepts.",
+  "demo_moment": null,
+  "build_style": "software-only",
+  "tech": { "stack": ["kubernetes", "agentregistry", "controller-runtime"], "ai_patterns": ["agent"] },
+  "domains": ["agent-infrastructure", "cloud-native-infra"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Strong thinking about scalable AI infrastructure management.", "basis": "organizer-stated", "source": 0 },
+      { "claim": "Author is a long-time contributor to the organizer's kagent project — deep familiarity with maintainers' priorities.", "basis": "organizer-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "visible-engineering-depth", "complete-submission-package"],
+    "judging_lens": ["technical-depth", "sponsor-api-use"],
+    "lessons": ["In open-source hackathons, prior contribution history is an advantage; newcomers should target the Starter track or contribute early."],
+    "confidence": "low"
+  },
+  "links": { "devpost": null, "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://www.solo.io/blog/celebrating-the-winners-of-the-2026-hackathon-for-mcp-ai-agents", "kind": "official-results", "retrieved_at": "2026-09-14" }
+  ],
+  "curator_notes": "Stack entry controller-runtime is an assumption from 'Kubernetes-native controller'; verify from repo."
+}
