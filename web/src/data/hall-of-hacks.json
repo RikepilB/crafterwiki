@@ -1,0 +1,1060 @@
+[
+  {
+    "slug": "rehabify-y2f5mu",
+    "name": "Rehabify",
+    "sourceUrl": "https://hallofhackss.com/project/rehabify-y2f5mu",
+    "imageSource": "https://i.ytimg.com/vi/gXh_Ct_AQGU/hqdefault.jpg",
+    "event": "nwHacks · Jan 2026 · Health",
+    "reportedAward": "1st out of 169 teams",
+    "summary": {
+      "en": "A webcam exercise companion gives spoken feedback when a user's movements depart from the intended form during physical therapy practice at home.",
+      "es": "Un asistente de ejercicios usa la cámara para ofrecer indicaciones habladas cuando los movimientos se apartan de la postura prevista durante la práctica de fisioterapia en casa."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: focus on the neglected period between appointments, using a concrete personal problem to define when assistance is most useful.",
+      "es": "Del relato de Hall of Hacks: centrarse en los días entre consultas: un problema personal concreto ayuda a definir cuándo el acompañamiento puede resultar más útil."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/rehabify-y2f5mu",
+      "video": "https://www.youtube.com/watch?v=gXh_Ct_AQGU",
+      "repo": "https://github.com/obro79/Rehabify"
+    }
+  },
+  {
+    "slug": "ted-ai-x8537t",
+    "name": "Ted.AI",
+    "sourceUrl": "https://hallofhackss.com/project/ted-ai-x8537t",
+    "imageSource": "https://i.ytimg.com/vi/3bj86ky1eAc/hqdefault.jpg",
+    "event": "Cal Hacks 12.0 · Oct 2025 · AI/ML",
+    "reportedAward": "2nd out of 699 teams",
+    "summary": {
+      "en": "A sensor-equipped teddy bear interprets heartbeat and hugging pressure to respond conversationally and offer calming activities through a familiar physical object.",
+      "es": "Un oso de peluche con sensores interpreta el pulso y la presión de los abrazos para conversar y proponer actividades tranquilizadoras mediante un objeto familiar."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: make the interaction match the audience: a familiar gesture can invite participation where a conventional application introduces friction.",
+      "es": "Del relato de Hall of Hacks: adaptar la interacción al público: un gesto familiar puede facilitar la participación donde una aplicación convencional añade dificultades."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/ted-ai-x8537t",
+      "video": "https://www.youtube.com/watch?v=3bj86ky1eAc"
+    }
+  },
+  {
+    "slug": "fable-br8e1d",
+    "name": "Fable",
+    "sourceUrl": "https://hallofhackss.com/project/fable-br8e1d",
+    "imageSource": "https://i.ytimg.com/vi/Q8udHqdKbKw/hqdefault.jpg",
+    "event": "TreeHacks · Feb 2025 · Health",
+    "reportedAward": "OpenAI: Most Creative (257 teams)",
+    "summary": {
+      "en": "An EEG headband supplies signals that adapt a story's narrative, visuals and audio, creating an experience responsive to the reader's changing attention.",
+      "es": "Una diadema EEG proporciona señales que adaptan la narrativa, las imágenes y el sonido de una historia a los cambios de atención de quien la lee."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: use sensor input to change the experience meaningfully, making participation influence the story rather than adding a decorative measurement.",
+      "es": "Del relato de Hall of Hacks: usar las señales del sensor para transformar la experiencia: la participación modifica la historia en vez de añadir una medición decorativa."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/fable-br8e1d",
+      "video": "https://www.youtube.com/watch?v=Q8udHqdKbKw",
+      "repo": "https://github.com/StiopaPopa/fable"
+    }
+  },
+  {
+    "slug": "digital-physical-darts-wii-darts",
+    "name": "Physical Digital Darts (Wii Darts)",
+    "sourceUrl": "https://hallofhackss.com/project/digital-physical-darts-wii-darts",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/887/567/datas/medium.jpg",
+    "event": "Cal Hacks 12.0 · Oct 2025 · Social Good",
+    "reportedAward": "Best Beginner Hack (699 teams)",
+    "summary": {
+      "en": "A motion sensor inside a dart translates a player's throwing gesture into a virtual dartboard result, combining physical movement with an on-screen game.",
+      "es": "Un sensor de movimiento dentro de un dardo convierte el gesto de lanzamiento en un resultado sobre una diana virtual, combinando movimiento físico y juego digital."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: the convincing link between wrist movement and simulated outcome matters more than novelty alone when building a physical game controller.",
+      "es": "Del relato de Hall of Hacks: la relación convincente entre el movimiento de la muñeca y el resultado simulado importa más que la novedad de un mando físico."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/digital-physical-darts-wii-darts",
+      "video": "https://www.youtube.com/watch?v=d-0ktDKMHS8",
+      "repo": "https://github.com/commonkestrel/physical-digital-darts"
+    }
+  },
+  {
+    "slug": "whalebeing-27sj0w",
+    "name": "WhaleBeing",
+    "sourceUrl": "https://hallofhackss.com/project/whalebeing-27sj0w",
+    "imageSource": "https://i.ytimg.com/vi/EwOxT8YSXnk/hqdefault.jpg",
+    "event": "DeltaHacks · Jan 2025 · Sustainability",
+    "reportedAward": "Winner (134 teams)",
+    "summary": {
+      "en": "A maritime routing concept uses predicted whale locations to propose changes to shipping paths, aiming to reduce collisions while limiting disruption to journeys.",
+      "es": "Una propuesta de rutas marítimas utiliza ubicaciones previstas de ballenas para modificar trayectos de barcos, buscando reducir colisiones sin alterar demasiado los viajes."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: turn environmental predictions into practical route decisions, so the proposed intervention fits the operational choices people already make.",
+      "es": "Del relato de Hall of Hacks: convertir predicciones ambientales en decisiones prácticas de rutas, para que la intervención encaje en las decisiones operativas que las personas ya toman."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/whalebeing-27sj0w",
+      "video": "https://www.youtube.com/watch?v=EwOxT8YSXnk",
+      "repo": "https://github.com/lucasliao0403/WhaleBeing"
+    }
+  },
+  {
+    "slug": "wordhawk",
+    "name": "Wordhawk",
+    "sourceUrl": "https://hallofhackss.com/project/wordhawk",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/786/182/datas/medium.jpg",
+    "event": "MHacks · Sep 2025 · AI/ML",
+    "reportedAward": "Best Use of MemryX Edge AI Accelerator (122 teams)",
+    "summary": {
+      "en": "A camera identifies letters in a phone word game while a repurposed robotic mechanism traces discovered words directly across the device's screen.",
+      "es": "Una cámara identifica letras en un juego del teléfono mientras un mecanismo robótico reutilizado traza las palabras encontradas directamente sobre la pantalla del dispositivo."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: connect sensing, local computation and physical action into one complete demonstration; repurposed hardware can provide the precision that integration requires.",
+      "es": "Del relato de Hall of Hacks: conectar percepción, cálculo local y acción física en una demostración completa; el hardware reutilizado puede aportar la precisión necesaria para esa integración."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/wordhawk",
+      "video": "https://www.youtube.com/watch?v=WktVaFtu6HE",
+      "repo": "https://github.com/TSKoduru/mhacks-gamehawk"
+    }
+  },
+  {
+    "slug": "the-unspillable",
+    "name": "The Unspillable",
+    "sourceUrl": "https://hallofhackss.com/project/the-unspillable",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/566/293/datas/medium.jpg",
+    "event": "Bitcamp · Apr 2026 · Health",
+    "reportedAward": "Best Hardware Hack (223 teams)",
+    "summary": {
+      "en": "A motorized spoon uses motion sensing to counter changes in its handle's angle, aiming to help people with tremors keep food balanced.",
+      "es": "Una cuchara motorizada utiliza sensores de movimiento para compensar cambios en el ángulo del mango y ayudar a mantener la comida estable ante temblores."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: combine accessible components around a specific everyday difficulty, with a feedback loop that directly addresses the movement causing the problem.",
+      "es": "Del relato de Hall of Hacks: combinar componentes accesibles alrededor de una dificultad cotidiana concreta, mediante un circuito de respuesta que actúe sobre el movimiento causante del problema."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/the-unspillable",
+      "video": "https://www.youtube.com/watch?v=7ixI50nMe54"
+    }
+  },
+  {
+    "slug": "vril",
+    "name": "Vril",
+    "sourceUrl": "https://hallofhackss.com/project/vril",
+    "imageSource": "https://i.ytimg.com/vi/pGwVC0TzbDQ/hqdefault.jpg",
+    "event": "Hack Western · Nov 2025 · AI/ML",
+    "reportedAward": "1st out of 82 teams",
+    "summary": {
+      "en": "A conversational design tool creates editable 3D objects from descriptions or reference images and supports continued changes before sending a model to print.",
+      "es": "Una herramienta de diseño conversacional crea objetos tridimensionales editables a partir de descripciones o imágenes y permite seguir modificándolos antes de enviarlos a imprimir."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: keep the same accessible interaction through refinement and output; do not abandon beginners at the moment a generated result needs editing.",
+      "es": "Del relato de Hall of Hacks: mantener una interacción accesible durante la revisión y la salida; no abandonar a principiantes cuando el resultado generado necesita modificaciones."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/vril",
+      "video": "https://www.youtube.com/watch?v=pGwVC0TzbDQ",
+      "repo": "https://github.com/akuwuh/Vril"
+    }
+  },
+  {
+    "slug": "project-lend",
+    "name": "Project Lend",
+    "sourceUrl": "https://hallofhackss.com/project/project-lend",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/337/075/datas/medium.jpg",
+    "event": "TreeHacks · Feb 2026 · AI/ML",
+    "reportedAward": "Anthropic Track Winner (378 teams)",
+    "summary": {
+      "en": "A food-donation workflow combines messages from donors, robotic sorting and automated pickup coordination, with the source describing deliveries to shelters during the event.",
+      "es": "Un flujo de donación de alimentos combina mensajes de donantes, clasificación robótica y coordinación de recogidas; la fuente describe entregas a refugios durante el evento."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: use direct operational experience to target paperwork and logistics, then demonstrate usefulness through a real delivery rather than interface screens alone.",
+      "es": "Del relato de Hall of Hacks: usar experiencia operativa para abordar trámites y logística, y demostrar utilidad mediante una entrega real además de las pantallas de la interfaz."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/project-lend",
+      "video": "https://www.youtube.com/watch?v=hBcCNg_U3t4",
+      "repo": "https://github.com/PranavViswanath/project-lend"
+    }
+  },
+  {
+    "slug": "theracat",
+    "name": "Theracat",
+    "sourceUrl": "https://hallofhackss.com/project/theracat",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/806/675/datas/medium.png",
+    "event": "UC Berkeley AI Hackathon · Jun 2026 · AI/ML",
+    "reportedAward": "Grand Prize (400 teams)",
+    "summary": {
+      "en": "A wristband and plush cat form a calming companion concept that responds to movement patterns the project associates with an approaching panic episode.",
+      "es": "Una pulsera y un gato de peluche forman una propuesta de acompañamiento que responde a patrones de movimiento asociados por el proyecto con episodios de pánico."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: timing is central to the proposed experience: domain experience shaped an intervention intended to respond before distress becomes more intense.",
+      "es": "Del relato de Hall of Hacks: el momento de respuesta es central: la experiencia del área orientó una intervención pensada para actuar antes de que el malestar aumente."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/theracat"
+    }
+  },
+  {
+    "slug": "temp-sqyptg",
+    "name": "Identity Matrix",
+    "sourceUrl": "https://hallofhackss.com/project/temp-sqyptg",
+    "imageSource": "https://i.ytimg.com/vi/AGGb7Qv4gY4/hqdefault.jpg",
+    "event": "UofTHacks · Jan 2026 · AI/ML",
+    "reportedAward": "1st out of 160 teams",
+    "summary": {
+      "en": "A multiplayer virtual world gives users persistent character counterparts that learn conversational habits and continue interacting with other players after the original user disconnects.",
+      "es": "Un mundo virtual multijugador ofrece personajes persistentes que aprenden hábitos conversacionales y siguen interactuando con otras personas después de que el usuario original se desconecta."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: persistent memory and a live social setting give personalization a concrete test, beyond attaching a user's name to a generic assistant.",
+      "es": "Del relato de Hall of Hacks: la memoria persistente y un entorno social activo permiten probar la personalización más allá de poner el nombre de alguien a un asistente genérico."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/temp-sqyptg",
+      "video": "https://www.youtube.com/watch?v=AGGb7Qv4gY4",
+      "repo": "https://github.com/qiuethan/UofTHacks-Project"
+    }
+  },
+  {
+    "slug": "viniclip",
+    "name": "ViniClip",
+    "sourceUrl": "https://hallofhackss.com/project/viniclip",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/219/172/datas/medium.png",
+    "event": "ConUHacks · Jan 2026 · AI/ML",
+    "reportedAward": "1st out of 260 teams",
+    "summary": {
+      "en": "A browser recording tool removes pauses and restarts while someone speaks, aiming to produce a shareable video immediately after the recording session ends.",
+      "es": "Una herramienta de grabación en el navegador elimina pausas y reinicios mientras alguien habla, buscando producir un video compartible al terminar la sesión."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: remove a burdensome workflow stage entirely when possible; integrating cleanup into capture can change the process more than a faster editor.",
+      "es": "Del relato de Hall of Hacks: eliminar una etapa costosa del flujo cuando sea posible; integrar la limpieza en la grabación puede transformar el proceso más que acelerar un editor."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/viniclip",
+      "video": "https://www.youtube.com/watch?v=qDyQIVBcPCs",
+      "repo": "https://github.com/mahutt/ViniClip"
+    }
+  },
+  {
+    "slug": "readable-ai-braille-printer",
+    "name": "BrailleBot",
+    "sourceUrl": "https://hallofhackss.com/project/readable-ai-braille-printer",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/270/209/datas/medium.png",
+    "event": "TreeHacks · Feb 2025 · AI/ML",
+    "reportedAward": "Best Hardware Hack (257 teams)",
+    "summary": {
+      "en": "A repurposed 3D printer embosses documents into braille, with the project also describing generated verbal explanations of pictures included in the input material.",
+      "es": "Una impresora 3D reutilizada imprime documentos en braille mediante relieve; el proyecto también describe explicaciones verbales generadas para imágenes incluidas en el material original."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: reframe an expensive specialist device as capabilities already available in cheaper hardware, starting from a specific accessibility need encountered firsthand.",
+      "es": "Del relato de Hall of Hacks: reinterpretar un dispositivo especializado costoso como capacidades presentes en hardware más económico, partiendo de una necesidad de accesibilidad encontrada de primera mano."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/readable-ai-braille-printer",
+      "video": "https://www.youtube.com/watch?v=atzED5lXhCE",
+      "repo": "https://github.com/cathyzbn/braille-printer"
+    }
+  },
+  {
+    "slug": "screwyouikea",
+    "name": "ScrewYouIKEA.com",
+    "sourceUrl": "https://hallofhackss.com/project/screwyouikea",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/815/644/datas/medium.png",
+    "event": "HackHarvard · Oct 2025 · AI/ML",
+    "reportedAward": "Winner (160 teams)",
+    "summary": {
+      "en": "A furniture assembly helper converts diagrams from uploaded instruction manuals into navigable 3D animations, letting users inspect how individual building steps fit together.",
+      "es": "Un asistente de montaje convierte diagramas de manuales cargados en animaciones tridimensionales explorables, permitiendo revisar cómo encajan los pasos de construcción de un mueble."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: automate the conversion from unfamiliar input to useful output; handling manuals beyond a prepared example is the important product distinction.",
+      "es": "Del relato de Hall of Hacks: automatizar la conversión de entradas desconocidas en resultados útiles; funcionar con manuales distintos del ejemplo preparado marca una diferencia importante para el producto."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/screwyouikea",
+      "repo": "https://github.com/donaragalstyan/ScrewYouIkea"
+    }
+  },
+  {
+    "slug": "freak-cha",
+    "name": "freak-cha",
+    "sourceUrl": "https://hallofhackss.com/project/freak-cha",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/814/028/datas/medium.png",
+    "event": "HackHarvard · Oct 2025 · AI/ML",
+    "reportedAward": "Winner (160 teams)",
+    "summary": {
+      "en": "A human-verification prototype asks users to move their tongues in different directions, exploring an alternative to conventional visual puzzle challenges used by websites.",
+      "es": "Un prototipo de verificación humana pide mover la lengua en distintas direcciones, explorando una alternativa a los desafíos visuales convencionales empleados por sitios web."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: look for interactions people can perform naturally that expose a model limitation; this is a design hypothesis, not established security assurance.",
+      "es": "Del relato de Hall of Hacks: buscar interacciones naturales para las personas que revelen una limitación del modelo; es una hipótesis de diseño y no una garantía de seguridad."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/freak-cha",
+      "video": "https://www.youtube.com/watch?v=wssGfKUIxzw",
+      "repo": "https://github.com/anselmlong/hackharvard"
+    }
+  },
+  {
+    "slug": "archemy",
+    "name": "ARchemy",
+    "sourceUrl": "https://hallofhackss.com/project/archemy",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/739/570/datas/medium.jpeg",
+    "event": "Hack the North · Sep 2025 · AI/ML",
+    "reportedAward": "Snap AR Winner (261 teams)",
+    "summary": {
+      "en": "An augmented-reality crafting game lets players combine virtual objects using hand gestures, with generated outcomes appearing in the physical space viewed through smart glasses.",
+      "es": "Un juego de creación en realidad aumentada permite combinar objetos virtuales mediante gestos, mostrando resultados generados en el espacio físico observado a través de gafas inteligentes."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: move a proven interaction into a new medium while making generation part of the playable loop, rather than a separate content tool.",
+      "es": "Del relato de Hall of Hacks: trasladar una interacción conocida a otro medio e incorporar la generación al ciclo de juego, en vez de tratarla como herramienta de contenido separada."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/archemy",
+      "video": "https://www.youtube.com/watch?v=-qdRSClgbJA",
+      "repo": "https://github.com/jasonnpan/ARchemy/"
+    }
+  },
+  {
+    "slug": "s-kbd67",
+    "name": "S-KBD67",
+    "sourceUrl": "https://hallofhackss.com/project/s-kbd67",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/742/523/datas/medium.jpg",
+    "event": "Hack the North · Sep 2025 · Games",
+    "reportedAward": "Finalists (261 teams)",
+    "summary": {
+      "en": "A modified toy blaster becomes a game controller, mapping its trigger, reload action, aiming motion and additional controls onto actions inside a shooter.",
+      "es": "Un lanzador de juguete modificado se convierte en mando de videojuego, vinculando gatillo, recarga, puntería y controles adicionales con acciones dentro de un juego."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: complete the physical interaction vocabulary and coordinate hardware with game integration so players can remain immersed without returning to a keyboard.",
+      "es": "Del relato de Hall of Hacks: completar las interacciones físicas y coordinar hardware e integración con el juego para mantener la inmersión sin obligar a volver al teclado."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/s-kbd67",
+      "video": "https://www.youtube.com/watch?v=6Td6KtRum8E",
+      "repo": "https://github.com/Amelia1110/Valorant-Nerf-Gun"
+    }
+  },
+  {
+    "slug": "jailcall",
+    "name": "JailCall",
+    "sourceUrl": "https://hallofhackss.com/project/jailcall",
+    "imageSource": "https://i.ytimg.com/vi/c1eKOdi0hDc/maxresdefault.jpg",
+    "event": "Call My Agent Hackathon · May 2026 · AI/ML",
+    "reportedAward": "2nd out of 91 teams",
+    "summary": {
+      "en": "A phone-based intake service gathers basic case information after an arrest, contacts nearby defense lawyers and makes their replies available through subsequent calls.",
+      "es": "Un servicio telefónico recoge información básica tras una detención, contacta con abogados defensores cercanos y permite consultar sus respuestas mediante llamadas posteriores."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: make an existing communication channel reliably useful at a critical moment, and preserve continuity so callers can return for an update.",
+      "es": "Del relato de Hall of Hacks: hacer útil un canal de comunicación existente en un momento crítico y conservar la continuidad para que quien llama pueda consultar novedades."
+    },
+    "links": {
+      "video": "https://www.youtube.com/watch?v=c1eKOdi0hDc",
+      "repo": "https://github.com/souvik1997/JailCall-call-my-agent-hackathon"
+    }
+  },
+  {
+    "slug": "turretguard",
+    "name": "TurretGuard",
+    "sourceUrl": "https://hallofhackss.com/project/turretguard",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/625/843/datas/medium.png",
+    "event": "Hack the 6ix · Jul 2025 · AI/ML",
+    "reportedAward": "1st out of 131 teams",
+    "summary": {
+      "en": "A robotic water-rescue concept detects a swimmer in difficulty and directs an inflatable flotation aid toward them while assistance is still being arranged.",
+      "es": "Una propuesta robótica de rescate acuático detecta a una persona con dificultades y dirige una ayuda inflable de flotación hacia ella mientras llega asistencia."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: connect detection to a tangible response under a clear time constraint; the source emphasizes integrating mechanical and electrical work during the demonstration.",
+      "es": "Del relato de Hall of Hacks: conectar la detección con una respuesta tangible bajo una restricción temporal clara; la fuente destaca la integración mecánica y eléctrica durante la demostración."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/turretguard",
+      "video": "https://www.youtube.com/watch?v=OiJvhyb4Yao",
+      "repo": "https://github.com/pekachoo/TurretGuard_hackthe6ix"
+    }
+  },
+  {
+    "slug": "interactive-grapher-thingy",
+    "name": "Math Sandbox",
+    "sourceUrl": "https://hallofhackss.com/project/interactive-grapher-thingy",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/860/332/datas/medium.jpg",
+    "event": "DubHacks · Oct 2025 · AI/ML",
+    "reportedAward": "INVENT Track Winner (247 teams)",
+    "summary": {
+      "en": "A camera and projector transform handwritten equations on ordinary paper into nearby graphs, turning a desk into a shared surface for mathematical exploration.",
+      "es": "Una cámara y un proyector convierten ecuaciones manuscritas en gráficos cercanos, transformando una mesa y papel corriente en una superficie para explorar matemáticas."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: alignment between sensing and projection is the enabling detail when the surrounding physical surface becomes the interface instead of a conventional screen.",
+      "es": "Del relato de Hall of Hacks: la alineación entre percepción y proyección es fundamental cuando la superficie física del entorno se convierte en interfaz en lugar de una pantalla convencional."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/interactive-grapher-thingy",
+      "video": "https://www.youtube.com/watch?v=OHMV5t6SwSU",
+      "repo": "https://github.com/lukasmwerner/desmos-in-the-world"
+    }
+  },
+  {
+    "slug": "lume-zrlypk",
+    "name": "Lume",
+    "sourceUrl": "https://hallofhackss.com/project/lume-zrlypk",
+    "imageSource": "https://i.ytimg.com/vi/o_BVDoVG3aI/hqdefault.jpg",
+    "event": "HackPrinceton · Nov 2025 · AI/ML",
+    "reportedAward": "Education Track Winner (195 teams)",
+    "summary": {
+      "en": "A voice assistant helps older computer users by inspecting their current screen and highlighting the next button to use, one action at a time.",
+      "es": "Un asistente de voz ayuda a personas mayores a usar el ordenador observando la pantalla actual y resaltando el siguiente botón, una acción cada vez."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: ground guidance in the user's actual screen and sequence it patiently, avoiding generic instructions that no longer match the interface.",
+      "es": "Del relato de Hall of Hacks: basar la ayuda en la pantalla real y avanzar con paciencia, evitando instrucciones genéricas que ya no coinciden con la interfaz."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/lume-zrlypk",
+      "video": "https://www.youtube.com/watch?v=o_BVDoVG3aI",
+      "repo": "https://github.com/parker-rho/lume/"
+    }
+  },
+  {
+    "slug": "blinkai",
+    "name": "BlinkAI",
+    "sourceUrl": "https://hallofhackss.com/project/blinkai",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/271/825/datas/medium.jpg",
+    "event": "TreeHacks · Feb 2025 · AI/ML",
+    "reportedAward": "Best Beginner Hack (257 teams)",
+    "summary": {
+      "en": "A webcam communication tool interprets short and long blinks as coded input, then turns the resulting messages into spoken sentences for the user.",
+      "es": "Una herramienta de comunicación interpreta parpadeos cortos y largos mediante la cámara y transforma los mensajes resultantes en frases habladas para la persona usuaria."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: reduce the equipment barrier for an assistive interaction by working with a commonplace webcam rather than requiring a dedicated device.",
+      "es": "Del relato de Hall of Hacks: reducir la barrera de equipamiento para una interacción de apoyo utilizando una cámara común en vez de exigir un dispositivo especializado."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/blinkai",
+      "video": "https://www.youtube.com/watch?v=wwaJdA6XVPk",
+      "repo": "https://github.com/FuzionEcho/BlinkAI"
+    }
+  },
+  {
+    "slug": "artificial-sandwich-intelligence",
+    "name": "Artificial Sandwich Intelligence",
+    "sourceUrl": "https://hallofhackss.com/project/artificial-sandwich-intelligence",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/794/185/datas/medium.jpeg",
+    "event": "MHacks · Sep 2025 · AI/ML",
+    "reportedAward": "Grand Award (122 teams)",
+    "summary": {
+      "en": "A robotic sandwich-making demonstration uses movements learned from people guiding its arms, exploring how a short demonstration dataset can teach a physical task.",
+      "es": "Una demostración robótica de preparación de sándwiches utiliza movimientos aprendidos al guiar sus brazos, explorando cómo pocas demostraciones pueden enseñar una tarea física."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: a bounded physical task and human demonstrations create a concrete way to show learning, instead of promising general-purpose robotic capability.",
+      "es": "Del relato de Hall of Hacks: una tarea física acotada y demostraciones humanas ofrecen una forma concreta de mostrar aprendizaje, sin prometer capacidades robóticas de propósito general."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/artificial-sandwich-intelligence",
+      "video": "https://www.youtube.com/watch?v=46MQk3qE6fI"
+    }
+  },
+  {
+    "slug": "resqme-jq52al",
+    "name": "ResQme",
+    "sourceUrl": "https://hallofhackss.com/project/resqme-jq52al",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/816/751/datas/medium.png",
+    "event": "HackHarvard · Oct 2025 · Social Good",
+    "reportedAward": "2nd out of 160 teams",
+    "summary": {
+      "en": "Small radio devices relay messages and locations through a local network when normal communications fail, with phones joining through a basic browser interface.",
+      "es": "Pequeños dispositivos de radio retransmiten mensajes y ubicaciones cuando fallan las comunicaciones habituales, permitiendo que los teléfonos se conecten mediante una interfaz sencilla en el navegador."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: make emergency participation possible with devices people already carry, removing installation and preparation requirements from the moment someone needs help.",
+      "es": "Del relato de Hall of Hacks: permitir la participación durante emergencias con dispositivos que las personas ya llevan, eliminando requisitos de instalación y preparación cuando necesitan ayuda."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/resqme-jq52al",
+      "video": "https://www.youtube.com/watch?v=KnAiHBRMZHo",
+      "repo": "https://github.com/lordoftheseas/ResQme"
+    }
+  },
+  {
+    "slug": "ross-42pnvi",
+    "name": "ROSS",
+    "sourceUrl": "https://hallofhackss.com/project/ross-42pnvi",
+    "imageSource": "https://i.ytimg.com/vi/FP0lBdZkyqI/hqdefault.jpg",
+    "event": "Hack the North · Sep 2025 · Social Good",
+    "reportedAward": "Finalist (261 teams)",
+    "summary": {
+      "en": "An art-accessibility robot translates photographed paintings into patterns traced on a person's palm, using temperature changes as another channel for representing visual information.",
+      "es": "Un robot de accesibilidad artística traduce pinturas fotografiadas en patrones trazados sobre la palma y utiliza cambios de temperatura para representar información visual adicional."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: choose a sensory translation that users can feel directly, and support unfamiliar artworks rather than relying entirely on preconfigured demonstrations.",
+      "es": "Del relato de Hall of Hacks: elegir una traducción sensorial perceptible directamente y admitir obras desconocidas, en lugar de depender por completo de demostraciones configuradas de antemano."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/ross-42pnvi",
+      "video": "https://www.youtube.com/watch?v=FP0lBdZkyqI",
+      "repo": "https://github.com/FowlFarmer/HTN2025"
+    }
+  },
+  {
+    "slug": "replay-wq5isz",
+    "name": "Replay",
+    "sourceUrl": "https://hallofhackss.com/project/replay-wq5isz",
+    "imageSource": "https://i.ytimg.com/vi/VxwPjytatZA/hqdefault.jpg",
+    "event": "Bitcamp · Apr 2026 · Games",
+    "reportedAward": "App Dev Track Winner (223 teams)",
+    "summary": {
+      "en": "A phone and small sensors capture a room for three-dimensional replay, allowing viewers to pause a recorded moment and explore it from different positions.",
+      "es": "Un teléfono y pequeños sensores capturan una habitación para reproducirla en tres dimensiones, permitiendo pausar un momento grabado y explorarlo desde distintas posiciones."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: borrow a familiar interaction from games and rebuild it around accessible capture hardware to make a complex experience approachable.",
+      "es": "Del relato de Hall of Hacks: tomar una interacción familiar de los videojuegos y reconstruirla alrededor de hardware de captura accesible para acercar una experiencia compleja."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/replay-wq5isz",
+      "video": "https://www.youtube.com/watch?v=VxwPjytatZA",
+      "repo": "https://github.com/priyam-k/replay"
+    }
+  },
+  {
+    "slug": "plant-hopper",
+    "name": "Plant Hopper",
+    "sourceUrl": "https://hallofhackss.com/project/plant-hopper",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/817/370/datas/medium.jpg",
+    "event": "Hack the Valley · Oct 2025 · AI/ML",
+    "reportedAward": "1st out of 124 teams",
+    "summary": {
+      "en": "A robotic plant-watering turret evaluates individual plants and aims water toward those needing it, combining visual inspection and soil information in its proposed routine.",
+      "es": "Una torreta robótica de riego evalúa plantas individuales y dirige agua hacia las que la necesitan, combinando inspección visual e información del suelo."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: use a playful physical demonstration to communicate selective resource use, while making expansion depend on configuration rather than additional plumbing.",
+      "es": "Del relato de Hall of Hacks: usar una demostración física lúdica para explicar el uso selectivo de recursos y permitir ampliar el sistema mediante configuración en vez de tuberías adicionales."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/plant-hopper",
+      "video": "https://www.youtube.com/watch?v=C8jYkJZJHcI",
+      "repo": "https://github.com/jello-2/PlantHopper"
+    }
+  },
+  {
+    "slug": "chessmate-nwygvq",
+    "name": "ChessMate",
+    "sourceUrl": "https://hallofhackss.com/project/chessmate-nwygvq",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/741/850/datas/medium.png",
+    "event": "Hack the North · Sep 2025 · Games",
+    "reportedAward": "Finalist (261 teams)",
+    "summary": {
+      "en": "A physical chessboard moves pieces with an underlying magnetic mechanism, reproducing a remote opponent's moves so distant players can share a tangible game.",
+      "es": "Un tablero físico mueve piezas mediante un mecanismo magnético inferior y reproduce las jugadas de un oponente remoto para compartir una partida tangible a distancia."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: keep physical and digital state synchronized reliably; that integration lets familiar objects carry the experience without requiring constant screen attention.",
+      "es": "Del relato de Hall of Hacks: mantener sincronizados los estados físico y digital; esa integración permite que objetos familiares sostengan la experiencia sin exigir atención constante a una pantalla."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/chessmate-nwygvq",
+      "video": "https://www.youtube.com/watch?v=JDlEdZKH69k",
+      "repo": "https://github.com/o-bm/ChessMate"
+    }
+  },
+  {
+    "slug": "signhero",
+    "name": "SignHero",
+    "sourceUrl": "https://hallofhackss.com/project/signhero",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/200/537/datas/medium.png",
+    "event": "SwampHacks · Jan 2026 · AI/ML",
+    "reportedAward": "Best Overall (112 teams)",
+    "summary": {
+      "en": "A webcam rhythm game asks players to make hand signs in time with falling prompts, combining sign-language practice with musical timing and scoring.",
+      "es": "Un juego rítmico con cámara pide realizar señas al ritmo de indicaciones descendentes, combinando práctica de lengua de señas, sincronización musical y puntuación."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: response latency is part of the learning experience: sufficiently quick recognition allows practice to adopt engaging rhythm-game mechanics.",
+      "es": "Del relato de Hall of Hacks: la latencia forma parte de la experiencia de aprendizaje: reconocer con suficiente rapidez permite aplicar mecánicas rítmicas atractivas a la práctica."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/signhero",
+      "video": "https://www.youtube.com/watch?v=ZX6OOWAt5-U",
+      "repo": "https://github.com/MsMarion/ASL-Fun-Training"
+    }
+  },
+  {
+    "slug": "shop-a-sketch",
+    "name": "Shop-A-Sketch",
+    "sourceUrl": "https://hallofhackss.com/project/shop-a-sketch",
+    "imageSource": "https://i.ytimg.com/vi/Rlop_MAxdIY/hqdefault.jpg",
+    "event": "UofTHacks · Jan 2026 · AI/ML",
+    "reportedAward": "3rd out of 160 teams",
+    "summary": {
+      "en": "A shopping search tool accepts drawings and retrieves matching product listings, giving users a visual route to items they cannot easily describe in words.",
+      "es": "Una herramienta de búsqueda comercial acepta dibujos y encuentra productos similares, ofreciendo una vía visual para localizar artículos difíciles de describir con palabras."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: finish the discovery workflow with actionable listings, prices and purchase links; visually similar pictures alone do not complete a shopping task.",
+      "es": "Del relato de Hall of Hacks: completar el descubrimiento con anuncios, precios y enlaces de compra; las imágenes visualmente parecidas por sí solas no resuelven una tarea comercial."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/shop-a-sketch",
+      "video": "https://www.youtube.com/watch?v=Rlop_MAxdIY",
+      "repo": "https://github.com/clairez308/uofthacks26"
+    }
+  },
+  {
+    "slug": "kinemo",
+    "name": "kinemo",
+    "sourceUrl": "https://hallofhackss.com/project/kinemo",
+    "imageSource": "https://i.ytimg.com/vi/JY9jn1HCboI/hqdefault.jpg",
+    "event": "PennApps XXVI · Sep 2025 · AI/ML",
+    "reportedAward": "1st out of 85 teams",
+    "summary": {
+      "en": "A webcam party-game system uses body movement instead of handheld controllers, with multiple games and gesture-based navigation for people playing together in one space.",
+      "es": "Un sistema de juegos de fiesta utiliza movimientos corporales captados por cámara, con varios juegos y navegación gestual para personas que comparten un mismo espacio."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: coherence across games and navigation can turn a single interaction experiment into a complete playable experience with a clear demonstration.",
+      "es": "Del relato de Hall of Hacks: la coherencia entre juegos y navegación puede convertir un experimento de interacción en una experiencia jugable completa con una demostración clara."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/kinemo",
+      "video": "https://www.youtube.com/watch?v=JY9jn1HCboI",
+      "repo": "https://github.com/arvinmefsha/kinemo"
+    }
+  },
+  {
+    "slug": "dial-4rqzc3",
+    "name": "DIAL(*)",
+    "sourceUrl": "https://hallofhackss.com/project/dial-4rqzc3",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/899/639/datas/medium.png",
+    "event": "Cal Hacks 12.0 · Oct 2025 · AI/ML",
+    "reportedAward": "Winner (699 teams)",
+    "summary": {
+      "en": "Phone agents contact hotels to negotiate accommodation, with the source describing a working booking outcome produced through live conversations during the hackathon.",
+      "es": "Agentes telefónicos contactan con hoteles para negociar alojamiento; la fuente describe una reserva obtenida mediante conversaciones reales durante el desarrollo del hackathon."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: test the system in a real interaction with unpredictable responses; the reported booking connects the technical demonstration to a completed user outcome.",
+      "es": "Del relato de Hall of Hacks: probar el sistema con interacciones reales y respuestas impredecibles; la reserva descrita vincula la demostración técnica con un resultado completo para el usuario."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/dial-4rqzc3",
+      "video": "https://www.youtube.com/watch?v=32DSdO1V-z0"
+    }
+  },
+  {
+    "slug": "taqr",
+    "name": "EcoTag",
+    "sourceUrl": "https://hallofhackss.com/project/taqr",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/820/916/datas/medium.png",
+    "event": "StormHacks · Oct 2025 · Health",
+    "reportedAward": "UN SDG Challenge Winner (217 teams)",
+    "summary": {
+      "en": "A park game uses collected litter as a replenishment mechanic: players scan waste with phones to earn resources and continue their competitive activity.",
+      "es": "Un juego para parques utiliza basura recogida como recurso: quienes participan escanean residuos con el teléfono para obtener recursos y continuar la actividad competitiva."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: embed the desired real-world behavior inside the game rules, making cleanup necessary to participation rather than adding a separate awareness message.",
+      "es": "Del relato de Hall of Hacks: integrar la conducta deseada en las reglas del juego, haciendo necesaria la limpieza para participar en vez de añadir un mensaje de concienciación separado."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/taqr",
+      "video": "https://www.youtube.com/watch?v=rpcqI7ap0XU",
+      "repo": "https://github.com/fesenjuniors/backend"
+    }
+  },
+  {
+    "slug": "facetime-macos-ai-agent",
+    "name": "FaceTimeOS",
+    "sourceUrl": "https://hallofhackss.com/project/facetime-macos-ai-agent",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/901/909/datas/medium.png",
+    "event": "Cal Hacks 12.0 · Oct 2025 · AI/ML",
+    "reportedAward": "1st out of 699 teams",
+    "summary": {
+      "en": "A remote computer-control concept uses a FaceTime call to receive spoken requests, execute tasks on a Mac and respond conversationally during the session.",
+      "es": "Una propuesta de control remoto utiliza una llamada de FaceTime para recibir peticiones habladas, ejecutar tareas en un Mac y responder durante la sesión."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: reuse an already familiar communication tool and replace precise remote-screen manipulation with conversational requests suited to the caller's device.",
+      "es": "Del relato de Hall of Hacks: reutilizar una herramienta de comunicación familiar y sustituir la manipulación precisa de una pantalla remota por peticiones conversacionales adaptadas al dispositivo de quien llama."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/facetime-macos-ai-agent",
+      "video": "https://www.youtube.com/watch?v=zN96RdE0OSg",
+      "repo": "https://github.com/ThePickleGawd/calhacks-25"
+    }
+  },
+  {
+    "slug": "ghostdiedie",
+    "name": "GhostDieDie",
+    "sourceUrl": "https://hallofhackss.com/project/ghostdiedie",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/553/227/datas/medium.png",
+    "event": "Bitcamp · Apr 2026 · Games",
+    "reportedAward": "Winner (223 teams)",
+    "summary": {
+      "en": "A webcam fighting game maps players' body movements onto three-dimensional fighters and displays their faces, creating a physical competitive interaction between two people.",
+      "es": "Un juego de lucha con cámara traslada movimientos corporales a personajes tridimensionales y muestra los rostros de quienes juegan, creando una interacción física competitiva."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: combine accessible motion capture with recognizable player identity, so technical tracking supports the personal feeling of a head-to-head match.",
+      "es": "Del relato de Hall of Hacks: combinar captura de movimiento accesible con identidad reconocible para que el seguimiento técnico refuerce la sensación personal de una partida entre dos personas."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/ghostdiedie",
+      "video": "https://www.youtube.com/watch?v=Ay273uz5BpE"
+    }
+  },
+  {
+    "slug": "haggle-admqhc",
+    "name": "Haggle",
+    "sourceUrl": "https://hallofhackss.com/project/haggle-admqhc",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/212/051/datas/medium.png",
+    "event": "TAMUhack · Jan 2026 · AI/ML",
+    "reportedAward": "3rd Overall Software (176 teams)",
+    "summary": {
+      "en": "A negotiation practice tool pairs a conversational opponent with camera-based estimates of physiological stress, adapting the simulated pressure during a salary discussion exercise.",
+      "es": "Una herramienta de práctica de negociación combina un interlocutor conversacional con estimaciones de estrés mediante cámara y adapta la presión simulada durante una conversación salarial."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: practice should address performance under pressure as well as knowledge; the source presents physiological feedback as its proposed differentiating mechanism.",
+      "es": "Del relato de Hall of Hacks: la práctica debe abordar el desempeño bajo presión además del conocimiento; la fuente presenta la respuesta fisiológica como mecanismo diferenciador propuesto."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/haggle-admqhc",
+      "video": "https://www.youtube.com/watch?v=bw98PyP5bnI",
+      "repo": "https://github.com/rtalla1/tamuhack26/tree/main"
+    }
+  },
+  {
+    "slug": "maestro-n0uqyz",
+    "name": "Maestro",
+    "sourceUrl": "https://hallofhackss.com/project/maestro-n0uqyz",
+    "imageSource": "https://i.ytimg.com/vi/7tlVRvY_3n8/hqdefault.jpg",
+    "event": "TreeHacks · Feb 2026 · AI/ML",
+    "reportedAward": "Best Musical Hack (378 teams)",
+    "summary": {
+      "en": "A camera-based instrument concept turns hand movements around household objects into musical notes and chords, with a companion phone contributing additional gesture sensing.",
+      "es": "Una propuesta de instrumento convierte movimientos de manos sobre objetos domésticos en notas y acordes mediante cámara, con un teléfono que aporta detección gestual adicional."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: start from a familiar pretend-play gesture and make it produce an immediate real response, preserving the accessibility of the original activity.",
+      "es": "Del relato de Hall of Hacks: partir de un gesto familiar de juego imaginativo y producir una respuesta real inmediata, conservando la accesibilidad de la actividad original."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/maestro-n0uqyz",
+      "video": "https://www.youtube.com/watch?v=7tlVRvY_3n8",
+      "repo": "https://github.com/markmusic27/treehacks"
+    }
+  },
+  {
+    "slug": "storyvue",
+    "name": "StoryVue",
+    "sourceUrl": "https://hallofhackss.com/project/storyvue",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/786/329/datas/medium.png",
+    "event": "VTHacks · Sep 2025 · AI/ML",
+    "reportedAward": "1st out of 112 teams",
+    "summary": {
+      "en": "A camera reading companion speaks printed books aloud and answers a child's verbal questions, offering an interaction designed to work without visual controls.",
+      "es": "Un acompañante de lectura usa una cámara para leer libros impresos en voz alta y responder preguntas infantiles mediante una interacción sin controles visuales."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: ground responses in the book actually present and make voice sufficient for the whole interaction, matching the intended audience's access needs.",
+      "es": "Del relato de Hall of Hacks: basar las respuestas en el libro presente y permitir completar toda la interacción por voz, respetando las necesidades de acceso del público previsto."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/storyvue",
+      "video": "https://www.youtube.com/watch?v=hsMLyRKSofI",
+      "repo": "https://github.com/JoshuaEssandoh/VTHacks13"
+    }
+  },
+  {
+    "slug": "dose-ebmo9z",
+    "name": "Dose",
+    "sourceUrl": "https://hallofhackss.com/project/dose-ebmo9z",
+    "imageSource": "https://i.ytimg.com/vi/j7cSnyq9Vn8/hqdefault.jpg",
+    "event": "HackGT · Sep 2025 · Health",
+    "reportedAward": "Best Overall (277 teams)",
+    "summary": {
+      "en": "A pill bottle estimates medication use from weight changes and sends a message to family when its monitoring routine indicates a potentially missed dose.",
+      "es": "Un frasco de pastillas estima el uso del medicamento mediante cambios de peso y avisa a familiares cuando detecta una posible dosis omitida."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: passive measurement can reduce the extra actions a monitoring system demands, making the everyday object itself the point of interaction.",
+      "es": "Del relato de Hall of Hacks: la medición pasiva puede reducir las acciones adicionales que exige un sistema de seguimiento, convirtiendo el objeto cotidiano en punto de interacción."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/dose-ebmo9z",
+      "video": "https://www.youtube.com/watch?v=j7cSnyq9Vn8",
+      "repo": "https://github.com/dawsonp2003/HackGT12-Dose"
+    }
+  },
+  {
+    "slug": "diffuji",
+    "name": "diffuji",
+    "sourceUrl": "https://hallofhackss.com/project/diffuji",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/332/642/datas/medium.gif",
+    "event": "TreeHacks · Feb 2026 · AI/ML",
+    "reportedAward": "Most Creative Hack (378 teams)",
+    "summary": {
+      "en": "An instant-camera concept transforms captured scenes into stylized generated images and prints them on receipt paper, providing a physical result during the interaction.",
+      "es": "Una propuesta de cámara instantánea transforma escenas capturadas en imágenes generadas con distintos estilos y las imprime en papel de recibos durante la interacción."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: choose an inexpensive output medium that makes the transformation tangible quickly; the physical takeaway gives a generative effect a complete experience.",
+      "es": "Del relato de Hall of Hacks: elegir un medio de salida económico que haga tangible la transformación rápidamente; llevarse un resultado físico completa la experiencia de un efecto generativo."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/diffuji",
+      "video": "https://www.youtube.com/watch?v=JiRth1HCIag"
+    }
+  },
+  {
+    "slug": "paper-cuts",
+    "name": "Paper Cuts",
+    "sourceUrl": "https://hallofhackss.com/project/paper-cuts",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/804/089/datas/medium.png",
+    "event": "UC Berkeley AI Hackathon · Jun 2026 · AI/ML",
+    "reportedAward": "Track Grand Prize (400 teams)",
+    "summary": {
+      "en": "A drawing-to-game tool converts sketches into playable worlds and uses phones as controllers, letting a group move from making a picture to playing together.",
+      "es": "Una herramienta convierte bocetos en mundos jugables y utiliza teléfonos como mandos, permitiendo que un grupo pase de dibujar una imagen a jugar conjuntamente."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: remove specialist-tool complexity from both creation and play, using a sketchbook and familiar phones to make participation immediately understandable.",
+      "es": "Del relato de Hall of Hacks: eliminar la complejidad de herramientas especializadas tanto al crear como al jugar, usando dibujos y teléfonos familiares para facilitar la participación."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/paper-cuts",
+      "repo": "https://github.com/Jeremyliu-621/paper-cuts"
+    }
+  },
+  {
+    "slug": "raising-cane",
+    "name": "Shepherd",
+    "sourceUrl": "https://hallofhackss.com/project/raising-cane",
+    "imageSource": "https://i.ytimg.com/vi/nJ5YjK1-0c0/hqdefault.jpg",
+    "event": "TreeHacks · Feb 2026 · Social Good",
+    "reportedAward": "Grand Prize (378 teams)",
+    "summary": {
+      "en": "A navigation cane combines environmental mapping with motorized directional feedback, offering a tactile indication of a proposed path while leaving attention available for surrounding sounds.",
+      "es": "Un bastón combina cartografía del entorno con indicaciones direccionales motorizadas, ofreciendo una señal táctil del recorrido propuesto y dejando atención disponible para sonidos cercanos."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: choose a feedback channel that respects the senses users already rely on; tactile guidance can complement rather than crowd out environmental hearing.",
+      "es": "Del relato de Hall of Hacks: elegir un canal de respuesta que respete los sentidos ya utilizados; las indicaciones táctiles pueden complementar la audición del entorno sin desplazarla."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/raising-cane",
+      "video": "https://www.youtube.com/watch?v=nJ5YjK1-0c0",
+      "repo": "https://github.com/tonywangs/shepherd"
+    }
+  },
+  {
+    "slug": "project-horizon-8iodp2",
+    "name": "Project Horizon",
+    "sourceUrl": "https://hallofhackss.com/project/project-horizon-8iodp2",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/173/314/datas/medium.png",
+    "event": "UofTHacks · Jan 2026 · AI/ML",
+    "reportedAward": "2nd out of 160 teams",
+    "summary": {
+      "en": "A sports-viewing concept reconstructs player perspectives from existing soccer broadcast footage, letting viewers explore an imagined viewpoint from someone participating in the match.",
+      "es": "Una propuesta de visualización deportiva reconstruye perspectivas de jugadores a partir de retransmisiones de fútbol, permitiendo explorar un punto de vista de quien participa en el partido."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: make existing media useful in a new way through viewpoint reconstruction; the central challenge is the believable angle absent from the recording.",
+      "es": "Del relato de Hall of Hacks: dar un nuevo uso a medios existentes mediante reconstrucción de perspectivas; el desafío central es crear un ángulo creíble ausente de la grabación."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/project-horizon-8iodp2",
+      "video": "https://www.youtube.com/watch?v=CGtGJQ4qxpc"
+    }
+  },
+  {
+    "slug": "orca-4po0nm",
+    "name": "Orca",
+    "sourceUrl": "https://hallofhackss.com/project/orca-4po0nm",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/262/015/datas/medium.png",
+    "event": "QHacks · Feb 2026 · AI/ML",
+    "reportedAward": "1st out of 77 teams",
+    "summary": {
+      "en": "A music creation tool takes humming or beatboxing as the starting melody, adds requested instruments and supports further edits without requiring conventional production software.",
+      "es": "Una herramienta musical parte de melodías tarareadas o ritmos vocales, añade instrumentos solicitados y admite modificaciones sin exigir software convencional de producción."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: preserve the user's original contribution through generation and revision, so assistance develops their idea rather than replacing it with a disconnected result.",
+      "es": "Del relato de Hall of Hacks: conservar la aportación original durante la generación y revisión, para que la asistencia desarrolle la idea en vez de sustituirla por un resultado desconectado."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/orca-4po0nm",
+      "repo": "https://github.com/Beebdoles/qhacks-2026/tree/main"
+    }
+  },
+  {
+    "slug": "scamshield-87rbxe",
+    "name": "ScamShield",
+    "sourceUrl": "https://hallofhackss.com/project/scamshield-87rbxe",
+    "imageSource": "https://i.ytimg.com/vi/z5F1gDdCr84/hqdefault.jpg",
+    "event": "HooHacks · Mar 2026 · AI/ML",
+    "reportedAward": "3rd out of 231 teams",
+    "summary": {
+      "en": "A nearby device monitors speakerphone conversations for patterns associated with scams, then gives local warnings and alerts family when the system flags concern.",
+      "es": "Un dispositivo cercano analiza conversaciones en altavoz buscando patrones asociados con estafas y emite avisos locales y a familiares cuando detecta una posible preocupación."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: design assistance to work during the risky interaction without demanding a new app or a complicated action from the intended user.",
+      "es": "Del relato de Hall of Hacks: diseñar ayuda que actúe durante la interacción de riesgo sin exigir una aplicación nueva ni una acción complicada a la persona destinataria."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/scamshield-87rbxe",
+      "video": "https://www.youtube.com/watch?v=z5F1gDdCr84",
+      "repo": "https://github.com/TristanGru/ScamShield"
+    }
+  },
+  {
+    "slug": "dance-cv",
+    "name": "Dance CV",
+    "sourceUrl": "https://hallofhackss.com/project/dance-cv",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/183/096/datas/medium.png",
+    "event": "nwHacks · Jan 2026 · AI/ML",
+    "reportedAward": "Best Game Project (169 teams)",
+    "summary": {
+      "en": "A webcam dance trainer compares a user's full-body movements with a selected dance video and combines scoring, spoken feedback and practice of shorter sections.",
+      "es": "Un entrenador de baile compara movimientos de todo el cuerpo con un video elegido y combina puntuación, indicaciones habladas y práctica de segmentos cortos."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: measure the behavior that actually matters and divide practice into manageable sections, connecting a game-like experience to deliberate skill improvement.",
+      "es": "Del relato de Hall of Hacks: medir la conducta que realmente importa y dividir la práctica en segmentos manejables, vinculando una experiencia de juego con la mejora deliberada de habilidades."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/dance-cv",
+      "video": "https://www.youtube.com/watch?v=AWBrBWU1IzA",
+      "repo": "https://github.com/douglasichen/DanceCV"
+    }
+  },
+  {
+    "slug": "lifesaver-lnm0tz",
+    "name": "LifeSaver",
+    "sourceUrl": "https://hallofhackss.com/project/lifesaver-lnm0tz",
+    "imageSource": "https://i.ytimg.com/vi/W6CaKOtUlmw/hqdefault.jpg",
+    "event": "YHack · Mar 2026 · AI/ML",
+    "reportedAward": "2nd out of 42 teams",
+    "summary": {
+      "en": "A laptop surgical-practice prototype tracks hand movements with a webcam and provides spoken steps and scoring in a simulated exercise without a patient.",
+      "es": "Un prototipo de práctica quirúrgica para portátil sigue movimientos de manos mediante cámara y ofrece pasos hablados y puntuación en una simulación sin paciente."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: reduce the equipment barrier to repeated rehearsal; the source frames accessible practice opportunities as the motivation, not demonstrated clinical effectiveness.",
+      "es": "Del relato de Hall of Hacks: reducir la barrera de equipamiento para ensayar repetidamente; la fuente presenta el acceso a la práctica como motivación, no como eficacia clínica demostrada."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/lifesaver-lnm0tz",
+      "video": "https://www.youtube.com/watch?v=W6CaKOtUlmw",
+      "repo": "https://github.com/akhilm2223/yale/"
+    }
+  },
+  {
+    "slug": "wateryourdoin",
+    "name": "WaterYouDoin",
+    "sourceUrl": "https://hallofhackss.com/project/wateryourdoin",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/177/928/datas/medium.png",
+    "event": "McHacks · Jan 2026 · AI/ML",
+    "reportedAward": "2nd out of 127 teams",
+    "summary": {
+      "en": "A browser extension identifies prompts that might be handled by ordinary search and visualizes estimated water savings when users choose an alternative to AI.",
+      "es": "Una extensión identifica consultas que podrían resolverse con búsquedas comunes y representa ahorros estimados de agua cuando se elige una alternativa a la IA."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: keep the choice with the user and make feedback engaging; the source also describes local prompt processing as part of the approach.",
+      "es": "Del relato de Hall of Hacks: dejar la decisión en manos del usuario y ofrecer una respuesta atractiva; la fuente también describe el procesamiento local de consultas como parte del enfoque."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/wateryourdoin",
+      "video": "https://www.youtube.com/watch?v=a59GGgiktuA",
+      "repo": "https://github.com/memoud0/WaterYouDoin"
+    }
+  },
+  {
+    "slug": "heartstart",
+    "name": "HeartStart",
+    "sourceUrl": "https://hallofhackss.com/project/heartstart",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/339/034/datas/medium.png",
+    "event": "TreeHacks · Feb 2026 · Health",
+    "reportedAward": "Best Beginner Hack (378 teams)",
+    "summary": {
+      "en": "A mobile emergency-response robot concept detects a suspected cardiac arrest, approaches the person and attempts chest compressions while external emergency assistance is being sought.",
+      "es": "Una propuesta de robot móvil detecta una posible parada cardíaca, se acerca a la persona e intenta realizar compresiones mientras se solicita asistencia de emergencia."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: organize a hardware demonstration around a clearly time-sensitive need; its reported ambition does not establish medical safety or deployment readiness.",
+      "es": "Del relato de Hall of Hacks: organizar una demostración de hardware alrededor de una necesidad temporal clara; la ambición descrita no establece seguridad médica ni preparación para despliegue."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/heartstart",
+      "video": "https://www.youtube.com/watch?v=8B98pMV5k1o",
+      "repo": "https://github.com/nicolewongbiz/cpr-robot.git"
+    }
+  },
+  {
+    "slug": "longshot",
+    "name": "Longshot",
+    "sourceUrl": "https://hallofhackss.com/project/longshot",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/325/504/datas/medium.png",
+    "event": "TreeHacks · Feb 2026 · AI/ML",
+    "reportedAward": "Modal Challenge Winner (378 teams)",
+    "summary": {
+      "en": "A multi-agent coding experiment coordinates many AI workers to recreate a game from a short description, using the resulting software as its demonstration.",
+      "es": "Un experimento de programación multiagente coordina numerosos trabajadores de IA para recrear un juego desde una descripción breve y utiliza el software resultante como demostración."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: coordination is the core technical contribution: parallel workers need a shared direction and integration discipline for their combined output to function.",
+      "es": "Del relato de Hall of Hacks: la coordinación es la contribución técnica central: los trabajadores paralelos necesitan una dirección compartida y disciplina de integración para producir un resultado funcional."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/longshot",
+      "video": "https://www.youtube.com/watch?v=5oxXfazBcaQ",
+      "repo": "https://github.com/andrewcai8/agentswarm"
+    }
+  },
+  {
+    "slug": "yes-or-yes",
+    "name": "YES? or YES!",
+    "sourceUrl": "https://hallofhackss.com/project/yes-or-yes",
+    "imageSource": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/004/615/217/datas/medium.jpg",
+    "event": "LA Hacks · Apr 2026 · AI/ML",
+    "reportedAward": "Winner (307 teams)",
+    "summary": {
+      "en": "A playful decision-making installation uses fish movement to select between presented options, then connects that selection to actions performed by a computer.",
+      "es": "Una instalación lúdica utiliza el movimiento de peces para elegir entre opciones presentadas y conecta la selección con acciones realizadas por un ordenador."
+    },
+    "lesson": {
+      "en": "From Hall of Hacks' account: commitment to an unusual physical interaction made the concept memorable; its deliberately uncontrolled execution is a spectacle, not a general safety pattern.",
+      "es": "Del relato de Hall of Hacks: el compromiso con una interacción física inusual hizo memorable la propuesta; su ejecución deliberadamente descontrolada es un espectáculo, no un patrón general de seguridad."
+    },
+    "links": {
+      "devpost": "https://devpost.com/software/yes-or-yes",
+      "video": "https://www.youtube.com/watch?v=v2X7dJ6E1E4",
+      "repo": "https://github.com/lukietee/YESorYES"
+    }
+  }
+]

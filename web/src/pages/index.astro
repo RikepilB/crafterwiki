@@ -1,104 +1,61 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Bars from '../components/Bars.astro';
-import { corpus, base, href, winners, analyzed, entries, patterns, weight, eventName } from '../lib/data.mjs';
-import { cardHTML, fmtRange } from '../lib/labels.mjs';
-
-// Newest events first, one winner per event per round, so the front page shows breadth.
-const byEvent = new Map();
-for (const it of [...winners].sort((a, b) => (b.year ?? 0) - (a.year ?? 0) || weight(b) - weight(a))) {
-  if (!byEvent.has(it.hackathon)) byEvent.set(it.hackathon, []);
-  byEvent.get(it.hackathon).push(it);
-}
-const featured = [];
-for (let round = 0; featured.length < 6 && round < 12; round++) {
-  for (const list of byEvent.values()) if (list[round] && featured.length < 6) featured.push(list[round]);
-}
-
-const overall = patterns(corpus);
-const kinds = new Set(winners.map((i) => i.event_kind));
-const upcoming = corpus.hackathons
-  .filter((h) => h.results_status === 'upcoming')
-  .sort((a, b) => (a.start_date ?? '').localeCompare(b.start_date ?? ''));
-const stats = [
-  [corpus.hackathons.length, 'hackathons indexed'],
-  [analyzed.length, 'projects analyzed'],
-  [winners.length, 'confirmed winners & finalists'],
-  [entries.length, 'other submissions tracked'],
-];
+import { corpus, base, href } from '../lib/data.mjs';
+import { cardHTML } from '../lib/labels.mjs';
+import { media } from '../lib/media.js';
+const picks = ['quenaris', 'pureflow', 'resonant-exoplanets'].map((slug) => corpus.items.find((p) => p.slug === slug)).filter(Boolean);
+const featured = corpus.items.find((p) => p.slug === 'connected-earth-museum');
+const preview = media[featured.slug];
 ---
 <Layout>
-  <section class="hero">
-    <p class="eyebrow">Open hackathon intelligence</p>
-    <h1>Know why projects win<br />before you pick your idea.</h1>
-    <p class="lede">
-      CrafterWIKI tracks hackathon winners <em>and</em> what everyone else built, tags each project by the
-      mechanisms that made it stand out and the judging lenses it played to, and turns that evidence into a
-      demo-first plan for your next event.
-    </p>
-    <div class="row">
-      <a class="btn primary" href={href('/similar/')}>Find a similar situation</a>
-      <a class="btn" href={href('/projects/')}>Explore projects</a>
-      <a class="btn" href={href('/guide/')}>Plan a hackathon</a>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title">Good ideas start with <span>better references.</span></h1>
+      <p class="hero-description">See what people built, why it stood out, and what you can learn for your next project.</p>
+      <form action={href('/projects/')} method="get" role="search">
+        <label class="search-label" for="reference-query">What are you exploring?</label>
+        <div class="search-line"><input id="reference-query" type="search" name="q" placeholder="Climate, agents, education…" /><button class="btn primary" type="submit">Explore →</button></div>
+      </form>
+      <a class="brief-link" href={href('/build/')}>Already have an idea? Write a builder brief →</a>
     </div>
-    <div class="stats">
-      {stats.map(([n, label]) => <div class="stat"><b>{n}</b><span>{label}</span></div>)}
-    </div>
+    <article class="hero-feature">
+      <a class="feature-image" href={preview.video} target="_blank" rel="noopener" aria-label="Watch Connected Earth Museum demo on YouTube">
+        <img src={href(preview.localPoster)} srcset={preview.variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 860px) calc(100vw - 40px), 480px" width="480" height="360" alt="Connected Earth Museum — original demo preview" loading="eager" fetchpriority="high" decoding="async" />
+        <span>▶ Watch the demo ↗</span>
+      </a>
+      <div class="feature-copy">
+        <p class="feature-label">Featured project · {featured.year}</p>
+        <h2><a href={href(`/projects/${featured.slug}/`)}>{featured.name} →</a></h2>
+        <p>{featured.tagline}</p>
+        <p class="meta">{featured.awards.join(' · ')} · NASA Space Apps</p>
+      </div>
+    </article>
   </section>
-
-  <h2>Recently analyzed winners</h2>
-  <div class="grid" set:html={featured.map((it) => cardHTML(it, base)).join('')} />
-
-  <div class="two-col">
-    <section>
-      <h2>What confirmed winners have in common</h2>
-      <p class="muted">
-        Across {overall.sample.analyzed_records} confirmed winners and finalists from {kinds.size} kinds of event.
-        Small and unstratified — <a href={href('/patterns/')}>compare by kind of event</a> before you draw conclusions.
-      </p>
-      <Bars rows={overall.mechanisms} facet="mechanisms" of={overall.sample.analyzed_records} limit={8} />
-    </section>
-    <section>
-      <h2>Coming up</h2>
-      <ul class="plain">
-        {upcoming.map((h) => (
-          <li><a href={href(`/hackathons/${h.slug}/`)}><b>{eventName(h)}</b></a><br /><span class="meta">{fmtRange(h.start_date, h.end_date)}</span></li>
-        ))}
-      </ul>
-      <p style="margin-top:14px"><a class="btn" href={href('/plans/nasa-space-apps-2026/')}>See a real plan: NASA Space Apps 2026</a></p>
-      <h2>How to read a card</h2>
-      <dl class="deflist">
-        <div><dt><span class="badge win">Finalist</span> <span class="badge win">Award winner</span></dt><dd>Organizer-confirmed placements. Only these count as wins.</dd></div>
-        <div><dt><span class="badge vote">Public vote</span> <span class="badge feat">Featured</span></dt><dd>A community ranking or an organizer showcase — not a jury result.</dd></div>
-        <div><dt><span class="badge warn">Reported · unverified</span></dt><dd>A claimed win without official results.</dd></div>
-        <div><dt><span class="badge neutral">Submitted</span></dt><dd>On the submission list. Used for base rates, never as a win.</dd></div>
-      </dl>
-    </section>
-  </div>
-
-  <h2 id="agents">Built for terminals and agents too</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>CLI</h3>
-      <pre>node cli/crafterwiki.mjs similar \
-  --mechanism expert-data-for-everyone \
-  --lens scientific-validity --json</pre>
-    </div>
-    <div class="card">
-      <h3>MCP server</h3>
-      <pre>claude mcp add crafterwiki -- \
-  node ./CrafterWIKI/mcp/server.mjs</pre>
-    </div>
-    <div class="card">
-      <h3>Static API</h3>
-      <pre>GET {href('/api/v0/index.json')}
-GET {href('/api/v0/projects/centinela.json')}</pre>
-    </div>
-  </div>
+  <section aria-labelledby="selected-heading">
+    <div class="section-heading"><h2 id="selected-heading">Selected references</h2><a href={href('/projects/')}>View all projects →</a></div>
+    <div class="grid" set:html={picks.map((p) => cardHTML(p, base)).join('')} />
+  </section>
 </Layout>
-
 <style>
-  .hero { padding-block: 18px 6px; }
-  .plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-  .deflist dt { display: flex; flex-wrap: wrap; gap: 6px; }
+  .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 64px; padding: 40px 0 72px; }
+  h1 { font-size: clamp(2.7rem, 5.2vw, 4.3rem); line-height: 1.12; letter-spacing: -.05em; margin: 0 0 28px; font-weight: 700; }
+  h1 span { color: var(--accent); }
+  .hero-description { font-size: 1.05rem; line-height: 1.7; max-width: 44ch; color: var(--muted); margin-bottom: 26px; }
+  .search-label { display: block; font-size: .82rem; margin-bottom: 8px; color: var(--muted); }
+  .search-line { display: flex; gap: 10px; } .search-line input { flex: 1; min-width: 0; background: var(--surface); }
+  .brief-link { display: inline-block; font-size: .82rem; margin-top: 20px; }
+  .hero-feature { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; box-shadow: 10px 12px 0 var(--surface-2); overflow: hidden; }
+  .feature-image { position: relative; display: block; aspect-ratio: 4/3; background: var(--bg); }
+  .feature-image img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .feature-image span { position: absolute; bottom: 14px; left: 18px; background: var(--bg); color: var(--ink); padding: 10px 12px; border-radius: 4px; font-size: .82rem; }
+  .feature-copy { padding: 24px; }
+  .feature-label { color: var(--accent); font-size: .75rem; margin-bottom: 10px; }
+  .feature-copy h2 { font-size: 1.35rem; line-height: 1.35; margin: 0 0 12px; }
+  .feature-copy h2 a { text-decoration: none; }
+  .feature-copy > p:not(.feature-label):not(.meta) { font-size: .9rem; }
+  .section-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-bottom: 24px; }
+  .section-heading h2 { font-size: 1.4rem; margin: 0; font-weight: 600; }
+  .section-heading a { font-size: .87rem; }
+  @media (max-width: 860px) { .hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 24px 0 52px; } .hero-copy { max-width: 620px; } .hero-feature { max-width: 600px; margin-right: 10px; } h1 { max-width: 13ch; } }
+  @media (max-width: 420px) { h1 { font-size: 2.7rem; } .search-line { gap: 8px; } .search-line .btn { padding-inline: 12px; font-size: .85rem; } }
 </style>

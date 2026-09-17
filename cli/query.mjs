@@ -35,6 +35,7 @@ export function buildItems(hackathons, projects) {
       domains: p.domains ?? [], mechanisms: a.mechanisms ?? [], lenses: a.judging_lens ?? [],
       ai: p.tech?.ai_patterns ?? [], stack: p.tech?.stack ?? [], build_style: p.build_style ?? null,
       confidence: a.confidence ?? null, analyzed: true,
+      links: p.links ?? {},
       text: [p.name, p.tagline, p.problem, p.solution, p.demo_moment,
         ...(a.why_it_stood_out ?? []).map((w) => w.claim), ...(a.lessons ?? [])].filter(Boolean).join(' '),
     };
@@ -49,6 +50,7 @@ export function buildItems(hackathons, projects) {
         rank: e.placement?.rank ?? null, votes: e.placement?.votes ?? null,
         awards: [], track: e.track ?? null, domains: e.domains ?? [], mechanisms: [], lenses: [],
         ai: [], stack: [], build_style: null, confidence: null, analyzed: false,
+        links: e.url ? { submission: e.url } : {},
         text: [e.name, e.tagline, e.note].filter(Boolean).join(' '),
       });
     }

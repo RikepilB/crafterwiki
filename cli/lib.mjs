@@ -48,7 +48,7 @@ export function build(corpus, outDir) {
   const api = join(outDir, 'api', 'v0');
   for (const d of [api, join(api, 'hackathons'), join(api, 'projects')]) mkdirSync(d, { recursive: true });
   const strip = ({ _file, _private, ...rest }) => rest;
-  const write = (p, data) => writeFileSync(p, `${JSON.stringify(data, null, 2)}\n`);
+  const write = (p, data) => writeFileSync(p, `${JSON.stringify(data)}\n`);
   const items = pub.items.map(({ text, ...rest }) => rest);
   write(join(api, 'index.json'), { generated_at: new Date().toISOString(), items });
   for (const h of pub.hackathons) write(join(api, 'hackathons', `${h.slug}.json`), strip(h));

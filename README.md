@@ -11,8 +11,12 @@ built, each project tagged by the mechanisms that made it stand out and the judg
 to. A demo-first planning harness turns that evidence into a plan for your next event:
 recon → patterns → angles → judge panel → demo script → *then* architecture.
 
-Status: **v0.2 MVP** (2026-09-14). 14 events, 36 analyzed projects, 88 roster entries. CLI, MCP
-server, static API, Astro site and Claude Code plugin. Not deployed yet.
+Live website: **[crafterwiki.vercel.app](https://crafterwiki.vercel.app)**.
+14 events, 36 analyzed projects and 88 additional roster entries. The site includes video
+previews, original resource links, event/year/placement filters and a downloadable builder brief.
+CLI, MCP server, static API and the existing Claude Code plugin remain available.
+
+Next coverage work: [project and media acquisition plan](docs/coverage-and-media-plan.md).
 
 ## Surfaces
 
@@ -51,6 +55,17 @@ node --test
 Every CLI command supports `--json`.
 
 ## A real harness run
+
+For a general builder workflow, start with the [builder harness plan and runbook](docs/builder-harness.md).
+It supports independent projects and any hackathon through editable local workspaces:
+
+```bash
+node cli/crafterwiki.mjs plan my-build --mode project
+node cli/crafterwiki.mjs plan my-event --mode hackathon
+```
+
+Open `builder-runs/<slug>/README.md`. Runs are gitignored and existing directories are never
+overwritten. This is a workspace generator; evidence retrieval and gate decisions are manual.
 
 `hack-plan/nasa-space-apps-2026/` is the `/hack-plan` output for NASA Space Apps 2026 (14–15 Nov 2026),
 also rendered at `/plans/nasa-space-apps-2026/` on the site. The five-minute product demo is scripted in
