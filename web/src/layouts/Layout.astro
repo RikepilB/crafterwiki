@@ -123,7 +123,8 @@ const icon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewB
 
 <style is:global>
 @font-face { font-family:Geologica; src:url(/fonts/geologica-latin.woff2)format("woff2"); font-style:normal; font-weight:100 900; font-display:swap}
-:root { --bg:#0f1115; --ink:#f0efea; --accent:#ff8845; --surface:color-mix(in srgb, var(--bg) 96%, var(--ink)); --surface-2:color-mix(in srgb, var(--bg) 92%, var(--ink)); --muted:color-mix(in srgb, var(--ink) 74%, var(--bg)); --line:color-mix(in srgb, var(--ink) 20%, transparent); --accent-ink:var(--bg); --accent-soft:var(--bg); --win:var(--ink); --win-soft:var(--bg); --vote:var(--ink); --vote-soft:var(--bg); --feat:var(--ink); --feat-soft:var(--bg); --warn:var(--ink); --warn-soft:var(--bg); --neutral:var(--ink); --neutral-soft:var(--bg); --radius:6px; --sans:"Geologica", sans-serif; --mono:var(--sans); color-scheme:dark}
+@font-face { font-family:"Space Grotesk"; src:url(/fonts/space-grotesk-latin.woff2)format("woff2"); font-style:normal; font-weight:300 700; font-display:swap}
+:root { --display:"Space Grotesk", "Geologica", sans-serif; --bg:#100e0b; --ink:#f0efea; --accent:#ff8845; --surface:color-mix(in srgb, var(--bg) 96%, var(--ink)); --surface-2:color-mix(in srgb, var(--bg) 92%, var(--ink)); --muted:color-mix(in srgb, var(--ink) 74%, var(--bg)); --line:color-mix(in srgb, var(--ink) 20%, transparent); --accent-ink:var(--bg); --accent-soft:var(--bg); --win:var(--ink); --win-soft:var(--bg); --vote:var(--ink); --vote-soft:var(--bg); --feat:var(--ink); --feat-soft:var(--bg); --warn:var(--ink); --warn-soft:var(--bg); --neutral:var(--ink); --neutral-soft:var(--bg); --radius:6px; --sans:"Geologica", sans-serif; --mono:var(--sans); color-scheme:dark}
 :root[data-theme=light] { --bg:#f6f4ee; --ink:#202420; --accent:#b44822; color-scheme:light}
 * { box-sizing:border-box}
 .display-controls { align-items:center; gap:4px; display:flex}
@@ -142,7 +143,7 @@ a { color:inherit; text-decoration-color:color-mix(in srgb, var(--accent) 70%, t
 a:hover { color:var(--accent)}
 :focus-visible { outline:2px solid var(--accent); outline-offset:2px; border-radius:4px}
 h1,h2,h3 { letter-spacing:-.018em; line-height:1.15}
-h1 { margin:.15em 0 .3em; font-size:clamp(2rem,4.6vw,3.3rem)}
+h1 { margin:.15em 0 .3em; font-size:clamp(2rem,4.6vw,3.3rem); font-family:var(--display); letter-spacing:-.035em}
 h2 { margin:2.4rem 0 .9rem; font-size:1.4rem}
 h3 { margin:0; font-size:1.05rem}
 p { margin:0 0 .9em}
@@ -154,8 +155,8 @@ p { margin:0 0 .9em}
 .skip:focus { z-index:30; background:var(--surface); padding:8px 12px; top:12px; left:12px}
 .site-header { background:var(--bg); border-bottom:1px solid var(--line); position:static}
 .bar { flex-wrap:wrap; align-items:center; gap:8px 18px; min-height:60px; padding-block:8px; display:flex}
-.brand { font:800 1.2rem/1 var(--sans); letter-spacing:-.03em; text-decoration:none}
-.brand span { color:var(--accent)}
+.brand { font:700 1.3rem/1 var(--display); letter-spacing:-.045em; color:var(--accent); text-decoration:none}
+.brand span { color:inherit}
 nav.primary { flex-wrap:wrap; gap:2px; margin-left:auto; display:flex}
 nav.primary a { color:var(--muted); border-radius:8px; padding:6px 10px; font-size:.9rem; text-decoration:none}
 nav.primary a:hover,nav.primary a[aria-current=page] { color:var(--ink); background:var(--surface-2)}

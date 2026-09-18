@@ -8,6 +8,9 @@ const featured = corpus.items.find((p) => p.slug === 'connected-earth-museum');
 const preview = media[featured.slug];
 ---
 <Layout>
+  <div class="hero-aura">
+  <div class="aura-layer aura-hard" aria-hidden="true"></div>
+  <div class="aura-layer aura-soft" aria-hidden="true"></div>
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-copy">
       <h1 id="hero-title">Good ideas start with <span>better references.</span></h1>
@@ -31,15 +34,32 @@ const preview = media[featured.slug];
       </div>
     </article>
   </section>
+  </div>
   <section aria-labelledby="selected-heading">
     <div class="section-heading"><h2 id="selected-heading">Selected references</h2><a href={href('/projects/')}>View all projects →</a></div>
     <div class="grid" set:html={picks.map((p) => cardHTML(p, base)).join('')} />
   </section>
 </Layout>
 <style>
+  /* "Crimson Veil" aura. The container has no background on purpose: the blend modes must
+     composite against the page background (#100e0b), not against the container. */
+  .hero-aura { position: relative; overflow: hidden; border-radius: 24px; margin-bottom: 48px; }
+  .hero-aura > .hero { position: relative; z-index: 1; padding-inline: clamp(20px, 4vw, 48px); padding-bottom: clamp(96px, 14vw, 180px); }
+  /* Layers start below the headline so the brightest bands sit in the open space under the copy. */
+  .aura-layer { position: absolute; inset: 22% 0 0 0; pointer-events: none; transform: translateZ(0); will-change: transform;
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(220,38,38,.9) 40%, rgb(255,255,255) 70%, rgb(251,146,60) 82%, rgb(250,204,21) 100%); }
+  .aura-hard { mix-blend-mode: hard-light; filter: blur(63px); opacity: .6; }
+  .aura-soft { mix-blend-mode: soft-light; filter: blur(88px); opacity: .9; }
+  @media (min-width: 861px) { .aura-hard { filter: blur(90px); } .aura-soft { filter: blur(126px); } }
+  /* hard-light and soft-light wash out over a light surface; multiply keeps the same hues. */
+  :global(:root[data-theme=light]) .aura-layer { mix-blend-mode: multiply; }
+  :global(:root[data-theme=light]) .aura-hard { opacity: .3; }
+  :global(:root[data-theme=light]) .aura-soft { opacity: .45; }
+  .section-heading h2, .feature-copy h2 { font-family: var(--display); letter-spacing: -.03em; }
   .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 64px; padding: 40px 0 72px; }
   h1 { font-size: clamp(2.7rem, 5.2vw, 4.3rem); line-height: 1.12; letter-spacing: -.05em; margin: 0 0 28px; font-weight: 700; }
-  h1 span { color: var(--accent); }
+  /* One colour for the whole headline; orange stays with the wordmark and actions. */
+  h1 span { color: inherit; }
   .hero-description { font-size: 1.05rem; line-height: 1.7; max-width: 44ch; color: var(--muted); margin-bottom: 26px; }
   .search-label { display: block; font-size: .82rem; margin-bottom: 8px; color: var(--muted); }
   .search-line { display: flex; gap: 10px; } .search-line input { flex: 1; min-width: 0; background: var(--surface); }

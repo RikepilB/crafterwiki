@@ -4,6 +4,7 @@ Newest first. Full records in `docs/adr/`.
 
 | Date | ADR | Decision |
 |---|---|---|
+| 2026-09-18 | — | Brand: Space Grotesk (self-hosted, OFL) for the wordmark and page titles; single-colour orange wordmark; warm black base `#100e0b` with the "Crimson Veil" aura behind the landing hero only. Deploys: the Vercel Git integration builds `web/` through `vercel.json` so pull requests get working previews; automatic production deploys from `main` stay off (`git.deploymentEnabled.main: false`) until `main` contains all live work, including the projects-explorer redesign. Production stays a manual `web/dist` deploy; `.vercelignore` guards the repository root. |
 | 2026-09-16 | — | Owner decisions: publish as a public repository at `github.com/RikepilB/crafterwiki`; MIT for code and CC BY 4.0 for the corpus (LICENSE, LICENSE-DATA); the NASA Space Apps 2026 harness run is published with it. |
 | 2026-09-14 | — | Harness validation: a pre-registered holdout backtest is the primary test of ADR-004; forward predictions are a secondary stability check. First run (NASA Space Apps 2024): patterns step partially held (margin from one challenge-driven mechanism), angle recommendation did not ([results](research/holdout-nasa-2024.md)). |
 | 2026-09-14 | [ADR-009](adr/ADR-009-zero-dependency-mcp-server.md) | Zero-dependency stdio MCP server over `cli/query.mjs`, declared in the plugin manifest. |

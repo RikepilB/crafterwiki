@@ -15,7 +15,10 @@ server or database — deliberately (ADR-001, ADR-005, ADR-007, ADR-008, ADR-009
 
 Audience: hackathon teams and independent builders choosing a useful, feasible idea.
 Primary journey: inspect references → compare approaches → write and download a builder brief.
-Retain the existing warm neutral palette, orange action color, system type and provenance labels.
+Brand (2026-09-18): Space Grotesk (self-hosted) for the wordmark and page titles, Geologica for
+body text; a single-colour orange wordmark; warm black base `#100e0b` with the "Crimson Veil" aura
+behind the landing hero only (layers switch to `multiply` in the light theme). Keep the orange
+action color and the provenance labels.
 Make the homepage a working index: compact search, evidence counts, varied real references and
 a clear planning entry point. No invented win-rate claims, testimonials or decorative imagery.
 The planner uses a focused two-column worksheet on desktop and a single column on mobile;
@@ -270,10 +273,20 @@ Bulk media coverage and fresh official results are pending per coverage-and-medi
 
 ### Deployment runbook
 
-Run validation and tests, then npm --prefix web run build. Link generated output with
-vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
+Pull requests get Vercel preview deployments from the Git integration (since 2026-09-18):
+`vercel.json` installs and builds `web/` and publishes `web/dist` only. Git builds see tracked files
+only, so private overlays and session files never reach Vercel.
+
+Automatic production deploys from `main` are **off** (`git.deploymentEnabled.main: false`) because
+live work is not all on `main` yet: the projects-explorer redesign is deployed from
+`codex/projects-explorer-redesign`. Deploying `main` as it stands would roll that page back. Turn it
+on only when `main` contains everything that is live.
+
+Production deploys are manual: run validation and tests, then npm --prefix web run build. Link generated output
+with vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
 with vercel deploy --prod --yes --cwd web/dist. Re-link after every build because dist is
-regenerated. Never deploy the repository root: private overlays and session files stay local.
+regenerated. Never CLI-deploy the repository root: private overlays and session files stay local
+(`.vercelignore` excludes them as a second guard).
 For an incident, inspect deployment in Vercel and restore the last verified deployment through
 Vercel rollback under owner authority. Recheck homepage, projects, builder and API afterward.
 
