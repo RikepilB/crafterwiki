@@ -1,0 +1,9 @@
+# Second guard for CLI uploads. Git-integrated builds only see tracked files, but a manual
+# `vercel deploy` from the repository root would upload local-only material otherwise.
+private/
+docs/handoff/
+builder-runs/
+handoff.md
+*.private.md
+.env*
+.playwright-mcp/

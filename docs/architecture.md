@@ -273,10 +273,15 @@ Bulk media coverage and fresh official results are pending per coverage-and-medi
 
 ### Deployment runbook
 
-Run validation and tests, then npm --prefix web run build. Link generated output with
-vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
+Merges to `main` deploy through the Vercel Git integration (since 2026-09-18): `vercel.json`
+installs and builds `web/` and publishes `web/dist` only. Git builds see tracked files only, so
+private overlays and session files never reach Vercel. Pull requests get preview deployments.
+
+Manual fallback: run validation and tests, then npm --prefix web run build. Link generated output
+with vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
 with vercel deploy --prod --yes --cwd web/dist. Re-link after every build because dist is
-regenerated. Never deploy the repository root: private overlays and session files stay local.
+regenerated. Never CLI-deploy the repository root: private overlays and session files stay local
+(`.vercelignore` excludes them as a second guard).
 For an incident, inspect deployment in Vercel and restore the last verified deployment through
 Vercel rollback under owner authority. Recheck homepage, projects, builder and API afterward.
 
