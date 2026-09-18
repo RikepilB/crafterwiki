@@ -1,49 +1,54 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { corpus, T, base, used } from '../../lib/data.mjs';
-import { cardHTML, humanize } from '../../lib/labels.mjs';
-import { search } from '../../../../cli/query.mjs';
-
-const initial = search(corpus, { analyzedOnly: true, limit: 1000 });
-const inUse = (facet, key) => T[facet].filter((v) => used(key).has(v.id));
-const selects = [
-  ['domain', 'Domain', inUse('domains', 'domains')],
-  ['mechanism', 'Mechanism', inUse('mechanisms', 'mechanisms')],
-  ['lens', 'Judging lens', inUse('judging_lenses', 'lenses')],
-  ['kind', 'Event kind', T.event_kinds.filter((k) => corpus.hackathons.some((h) => h.kind === k.id))],
-];
+import { corpus, href, T } from '../../lib/data.mjs';
+import { statusLabel, humanize } from '../../lib/labels.mjs';
+import { media } from '../../lib/media.js';
+import { translateInterface } from '../../scripts/language.js';
+import { mergeReferences } from '../../lib/references.mjs';
+import hall from '../../data/hall-of-hacks.json';
+import hallMedia from '../../data/hall-media.json';
+const records=mergeReferences(corpus,hall,media,hallMedia);
+const events=[...new Map(records.map(p=>[p.eventId,p.eventLabel])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
+const publicCount=records.filter(p=>!p.roster).length;
+const facets=[['status','Placement',T.placement_status],['year','Year',[...new Set(records.map(p=>p.year))].filter(Boolean).sort((a,b)=>b-a).map(y=>({id:String(y)}))],['domain','Domain',T.domains],['mechanism','Mechanism',T.mechanisms],['lens','Judging lens',T.judging_lenses],['kind','Event kind',T.event_kinds]];
 ---
-<Layout title="Projects" description="Search hackathon projects by text, domain, winning mechanism, judging lens and kind of event.">
-  <p class="eyebrow">Explore</p>
+<Layout title="Projects" description="Explore all CrafterWIKI and Hall of Hacks references in one collection, with demos, code, sources and lessons.">
   <h1>Projects</h1>
-  <p class="lede">
-    Analyzed projects from every indexed hackathon, winners first. Filters combine; include roster entries to
-    see what else was submitted.
-  </p>
+  <p class="lede" translate="no"><span lang="en">{publicCount} references to study, with demos, code and lessons for your next build.</span><span lang="es">{publicCount} referencias para estudiar, con demos, código y aprendizajes para tu próximo proyecto.</span></p>
+  <details class="coverage-details" translate="no"><summary><span lang="en">About this collection</span><span lang="es">Sobre esta colección</span></summary><p lang="en">CrafterWIKI analysis and 51 Hall of Hacks references, combined with duplicate submissions merged. Additional roster entries are optional. Hall of Hacks awards and lessons remain attributed reports, not independently verified organizer judgments. Source links and original project records are preserved.</p><p lang="es">Análisis de CrafterWIKI y 51 referencias de Hall of Hacks, reunidos sin duplicar propuestas. Puedes incluir otras propuestas del evento. Los premios y aprendizajes de Hall of Hacks son reportes atribuidos, no conclusiones verificadas con los organizadores. Se conservan las fuentes y las fichas originales.</p></details>
   <form id="explore" class="panel" role="search">
-    <div class="form-row">
-      <label class="field grow">Search
-        <input type="search" name="q" placeholder="lora, procurement, exoplanets, voice agent…" autocomplete="off" />
-      </label>
-      {selects.map(([name, label, opts]) => (
-        <label class="field">{label}
-          <select name={name}>
-            <option value="">Any</option>
-            {opts.map((o) => <option value={o.id}>{humanize(o.id)}</option>)}
-          </select>
-        </label>
-      ))}
-    </div>
-    <div class="form-row">
-      <label class="toggle"><input type="checkbox" name="winners" /> Winners &amp; finalists only</label>
-      <label class="toggle"><input type="checkbox" name="entries" /> Include roster entries</label>
-      <span id="count" class="meta" aria-live="polite">{initial.length} results</span>
-    </div>
+    <div class="form-row"><label class="field grow">Search<input name="q" type="search" placeholder="Search projects" /></label><label class="field">Event<select name="event"><option value="">Any</option>{events.map(([id,label])=><option value={id}>{label}</option>)}</select></label><button class="btn" type="reset">Clear filters</button></div>
+    <details class="group"><summary>More filters: domain, mechanism, judging lens</summary><div class="form-row advanced-filters">
+      {facets.map(([name,label,options])=><label class="field">{label}<select name={name}><option value="">Any</option>{options.map(o=><option value={o.id}>{o.label || humanize(o.id)}</option>)}</select></label>)}
+      <label class="toggle"><input type="checkbox" name="winners" />Winners &amp; finalists only</label><label class="toggle"><input type="checkbox" name="entries" />Include roster entries</label>
+    </div></details>
+    <p id="count" class="meta" aria-live="polite">{publicCount} results</p>
   </form>
-  <div id="results" class="grid" set:html={initial.map((it) => cardHTML(it, base)).join('')} />
+  <div class="grid" id="results">
+    {records.map(p=>{const preview=p.variants.at(-1);const local=p.origin==='corpus';const url=local?href(p.url):p.url;return <article class="card reference-card" data-roster={String(p.roster)} data-event={p.eventId} data-year={p.year} data-status={p.status} data-domain={p.domains.join(' ')} data-mechanism={p.mechanisms.join(' ')} data-lens={p.lenses.join(' ')} data-kind={p.event_kind} data-winner={String(local && !!T.placement_status.find(s=>s.id===p.status)?.counts_as_winner)} data-search={`${p.name} ${p.eventLabel} ${p.summary.en} ${p.summary.es || translateInterface(p.summary.en)} ${p.hall?.summary.es || ''} ${p.domains.join(' ')} ${p.mechanisms.join(' ')} ${p.reportedAward || ''}`.toLowerCase()}>
+      {preview && <a class="card-media" href={p.links.video || url} target={p.links.video || !local ? '_blank':undefined} rel="noopener"><img src={href(preview.src)} srcset={p.variants.map(v=>`${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 360px" alt={`${p.name} — original project preview`} width={preview.width} height={preview.height} loading="lazy" decoding="async" /><span>{p.links.video?'▶ Video':'View project ↗'}</span></a>}
+      <p class="meta" translate="no">{p.eventLabel}</p>
+      <h2><a href={url} target={!local?'_blank':undefined} rel="noopener" translate="no">{p.name}</a></h2>
+      {p.summary.es ? <p translate="no"><span lang="en">{p.summary.en}</span><span lang="es">{p.summary.es}</span></p> : <p>{p.summary.en}</p>}
+      <details class="lesson"><summary translate="no"><span lang="en">Recognition &amp; lesson</span><span lang="es">Reconocimiento y aprendizaje</span></summary>
+        {local ? <><p class="award">{statusLabel(p)}</p><p class="meta">CrafterWIKI analysis</p><p>{p.lesson || 'Roster entry · not analyzed'}</p><a href={url}>Read evidence →</a></> : <><p class="award" translate="no">{p.reportedAward}</p><p translate="no"><span lang="en">{p.lesson.en}</span><span lang="es">{p.lesson.es}</span></p></>}
+        {local && p.hall && <p><a href={p.hall.sourceUrl} target="_blank" rel="noopener">Hall of Hacks ↗</a></p>}
+      </details>
+      <div class="reference-actions">{p.links.video&&<a href={p.links.video} target="_blank" rel="noopener">Video ↗</a>}{(p.links.devpost||p.links.submission||p.links.project_page)&&<a href={p.links.devpost||p.links.submission||p.links.project_page} target="_blank" rel="noopener">Submission ↗</a>}{p.links.demo&&<a href={p.links.demo} target="_blank" rel="noopener">Live demo ↗</a>}{p.links.repo&&<a href={p.links.repo} target="_blank" rel="noopener">Code ↗</a>}{p.sourceUrl&&<a href={p.sourceUrl} target="_blank" rel="noopener">Source ↗</a>}{local&&<a href={url}>Read reference →</a>}</div>
+    </article>;})}
+  </div>
+  <p id="empty-results" hidden>No matches. Remove a filter or include roster entries.</p>
+  <button id="more-results" class="btn" type="button" hidden>Show 12 more references</button>
 </Layout>
-
 <script>
-  import { initExplore } from '../../scripts/explore.js';
-  initExplore();
+  import { initReferences } from '../../scripts/references.js';
+  initReferences();
 </script>
+<style>
+  h1 { margin-top:18px; } .coverage-details { font-size:.85rem; margin-block:18px; } summary { cursor:pointer; }
+  .reference-card h2 { font-size:1.15rem; margin:0; } .reference-card h2 a { text-decoration:none; }
+  .lesson { font-size:.82rem; } .lesson p { margin-top:10px; } .award { color:var(--accent); }
+  #more-results { margin-top:24px; } .coverage-details p { max-width:80ch; margin-top:12px; }
+  .advanced-filters { padding-top:14px; gap:14px; } .advanced-filters .field { flex:1 1 150px; }
+  :global(html[lang='en'] [translate='no'] [lang='es']), :global(html[lang='es'] [translate='no'] [lang='en']) { display:none; }
+</style>

@@ -9,6 +9,6 @@ export function corpus() {
   pending ??= fetch(`${BASE}data/corpus.json`).then((r) => {
     if (!r.ok) throw new Error(`corpus.json ${r.status}`);
     return r.json();
-  });
+  }).catch((error) => { pending = undefined; throw error; });
   return pending;
 }

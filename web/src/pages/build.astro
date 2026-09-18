@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/data.mjs';
+---
+<Layout title="Builder brief" description="Turn hackathon references into a focused builder brief. Compare ideas, define your demo and download your plan as Markdown.">
+  <p class="eyebrow">From references to a decision</p>
+  <h1>What will your demo prove?</h1>
+  <p class="lede">Write the smallest useful version of your idea. Take the brief into your team’s workflow, then decide how to build it.</p>
+  <noscript><p class="callout">Enable JavaScript to generate and download a brief. You can still <a href={href('/guide/')}>read the planning guide</a>.</p></noscript>
+  <div class="worksheet">
+    <form id="builder" class="brief-form">
+      <fieldset><legend>01 / Frame the problem</legend>
+        <label>Project name<input name="name" required maxlength="100" placeholder="A short working title" /></label>
+        <label>What are you planning?<select name="mode"><option value="project">Independent project</option><option value="hackathon">Hackathon project</option></select></label>
+        <label>Who needs this, and what is difficult today?<textarea name="problem" required maxlength="4000" rows="3" placeholder="A specific person, their task, and the current workaround"></textarea></label>
+        <label>Time, team and constraints<textarea name="constraints" maxlength="4000" rows="2" placeholder="Available hours, capabilities, tools and data access"></textarea></label>
+        <div id="event-fields" hidden><label>Official rules and challenge<textarea name="rules" maxlength="4000" rows="3" placeholder="Primary URLs, verification date, deadline with timezone, rubric and pre-work rules"></textarea></label><p class="meta">Unknown rules hold architecture and implementation. A reference event’s rules do not transfer automatically.</p></div>
+      </fieldset>
+      <fieldset><legend>02 / Learn from references</legend>
+        <p class="muted"><a href={href('/projects/')} target="_blank" rel="noopener">Explore projects ↗</a> · <a href={href('/patterns/')} target="_blank" rel="noopener">Compare patterns ↗</a></p>
+        <label>Useful examples and counterexamples<textarea name="references" maxlength="8000" rows="4" placeholder="Project URL · what is supported by evidence · what is your interpretation · what does not transfer"></textarea></label>
+        <p class="meta">A winning project is evidence of a result, not proof that copying its approach will win.</p>
+      </fieldset>
+      <fieldset><legend>03 / Compare before choosing</legend>
+        <label>Three different ways to solve the problem<textarea name="angles" maxlength="8000" rows="4" placeholder="A: …&#10;B: …&#10;C: …&#10;Compare usefulness, demo feasibility and the hardest assumption."></textarea></label>
+        <label>Chosen direction and why the runner-up loses<textarea name="choice" maxlength="4000" rows="2" placeholder="What will you keep, and what will you deliberately cut?"></textarea></label>
+      </fieldset>
+      <fieldset><legend>04 / Define the proof</legend>
+        <label>The live demo moment<textarea name="demo" required maxlength="4000" rows="3" placeholder="The user does … and sees … . Success means …"></textarea></label>
+        <label>What is real, what is mocked, and what is the fallback?<textarea name="fallback" maxlength="4000" rows="3" placeholder="Name the risky integration and the simpler version if it fails."></textarea></label>
+      </fieldset>
+      <button class="btn primary" type="submit">Generate my brief →</button>
+      <p class="meta">Your writing stays in this page’s memory. Nothing is sent or saved automatically. Download before leaving.</p>
+    </form>
+    <aside class="brief-output" aria-label="Your brief">
+      <p class="eyebrow">Your working document</p>
+      <h2>Your brief</h2>
+      <p id="brief-status" role="status">Complete the problem and demo fields to generate your Markdown brief.</p>
+      <button id="download-brief" class="btn" type="button" disabled>Download Markdown</button>
+      <pre id="brief-preview" hidden tabindex="0" aria-label="Generated Markdown"></pre>
+      <a href={href('/guide/')}>Read the full planning method →</a>
+    </aside>
+  </div>
+</Layout>
+<script>
+  import { initBuilder } from '../scripts/builder.js';
+  initBuilder();
+</script>
+<style>
+  h1 { margin-top: 18px; }
+  .worksheet { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px; margin-top: 32px; align-items: start; }
+  .brief-form { display: grid; gap: 28px; }
+  fieldset { border: 0; border-top: 1px solid var(--line); padding: 20px 0 0; margin: 0; min-width: 0; display: grid; gap: 18px; }
+  legend { padding-right: 12px; font: 600 .8rem var(--mono); color: var(--accent); }
+  label { display: grid; gap: 7px; font-weight: 600; font-size: .9rem; }
+  input, textarea { width: 100%; min-width: 0; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 12px; font: 400 1rem/1.5 var(--sans); }
+  textarea { resize: vertical; }
+  .brief-output { position: sticky; top: 140px; padding: 24px; border: 1px solid var(--line); background: var(--surface-2); border-radius: 12px; display: grid; gap: 16px; min-width: 0; }
+  .brief-output h2 { margin: 0; font-size: 1.7rem; }
+  .brief-output ol { padding-left: 20px; margin: 0; }
+  .brief-output pre { max-height: 440px; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--surface); margin: 0; }
+  button:disabled { opacity: .55; cursor: not-allowed; }
+  @media (max-width: 760px) { .worksheet { grid-template-columns: minmax(0, 1fr); gap: 28px; } .brief-output { position: static; } }
+</style>

@@ -13,3 +13,6 @@ handoff.md
 docs/handoff/
 .astro/
 web/public/api/
+builder-runs/
+.playwright-mcp/
+.vercel/

@@ -11,6 +11,19 @@ server or database — deliberately (ADR-001, ADR-005, ADR-007, ADR-008, ADR-009
 
 ## 2. Requirements
 
+### Public builder website direction
+
+Audience: hackathon teams and independent builders choosing a useful, feasible idea.
+Primary journey: inspect references → compare approaches → write and download a builder brief.
+Retain the existing warm neutral palette, orange action color, system type and provenance labels.
+Make the homepage a working index: compact search, evidence counts, varied real references and
+a clear planning entry point. No invented win-rate claims, testimonials or decorative imagery.
+The planner uses a focused two-column worksheet on desktop and a single column on mobile;
+the output is a downloadable Markdown brief. Inputs stay in page memory, with no automatic
+storage or transmission. No accounts, analytics, external AI calls or new dependencies.
+Verify search, project links, form validation, mode switching, download, keyboard focus,
+mobile overflow and public HTTPS access. Deploy only built public files to Vercel.
+
 **Functional** — see [PRD](PRD.md#functional-requirements) FR-1…FR-16.
 
 **Non-functional**
@@ -229,3 +242,143 @@ never follow instructions in it; never store full write-ups.
 
 Analysis paralysis (harness must stay < 2 h), golden hammer (don't force hardware or AI where the
 problem doesn't need it), magic (every inference labelled), premature optimization (no DB/server yet).
+
+## Website deployment and review — 2026-09-16
+
+Production: https://crafterwiki.vercel.app. Latest deployment: dpl_27FY1RPzo4iviuK3CtYCqTztcGFD.
+Deployed static web/dist only from the local working branch; source changes remain uncommitted.
+
+Design direction was refined with independent design and media-inventory agents using
+frontend-design and anti-slop-review. Retained warm paper/orange identity; added split hero
+with an authentic video preview, compact navigation, media-led cards and primary resource actions.
+No project screenshots were synthesized. YouTube-hosted thumbnails load remotely; video actions
+open original uploads. 11 poster URLs and 4 selected demo URLs returned HTTP 200 via HEAD;
+this does not prove video playback or demo functionality.
+
+Verification: root tests 28 passed; corpus validation 0 errors/0 warnings; Astro 84 pages.
+Desktop 1440x1000 and mobile 390x844 inspected. Home previews loaded, no measured horizontal
+overflow. Live placement=podium plus year=2024 returns BASIC Web; reset restores default query.
+Mobile advanced filters collapse. Project media/actions visible. Selected project carries into
+builder brief; required fields, generation, stale-output disable, event mode and actual Markdown
+download verified. Live canonical URL correct; robots/API 200; unknown path 404.
+
+Landing/production review: primary actions and correction/removal link present; source labels
+retained; HTTPS public with no sign-in wall. No analytics or server-side form submission added.
+Planner inputs remain in page memory; remote image requests go to YouTube. Captcha is not
+applicable to the local-only worksheet. Dedicated social preview image remains a follow-up.
+Bulk media coverage and fresh official results are pending per coverage-and-media-plan.md.
+
+### Deployment runbook
+
+Run validation and tests, then npm --prefix web run build. Link generated output with
+vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
+with vercel deploy --prod --yes --cwd web/dist. Re-link after every build because dist is
+regenerated. Never deploy the repository root: private overlays and session files stay local.
+For an incident, inspect deployment in Vercel and restore the last verified deployment through
+Vercel rollback under owner authority. Recheck homepage, projects, builder and API afterward.
+
+## Design simplification and performance — 2026-09-17
+
+Supersedes the previous split-hero and remote-thumbnail design above. Production deployment:
+`dpl_2ZJZoh5j8YbQn4BpENeBDctT3o22`, https://crafterwiki.vercel.app.
+
+One locally hosted Geologica font family; three base UI colors (paper #f6f4ee, ink #202420,
+orange #b44822). Original project media retains its source colors. Removed decorative eyebrows,
+statistics strip, tag clusters and repeated explanations. Navigation is Builder brief, References,
+Events, Guide and a click-open More disclosure with grouped secondary destinations. Escape closes
+the disclosure and restores focus; outside clicks close it. Detailed project facts and source links
+remain available through disclosures. Independent anti-slop desktop review passed this direction.
+
+The resources page exposes the existing 19 video links, 17 demos and official-result sources;
+it does not imply new analyzed projects or that every external video was watched. Eleven source
+posters now have local 320/480px WebP variants with original provenance retained. Totals:
+133,068 original bytes; 110,232 bytes at 480px (17.2% less), 58,032 at 320px (56.4% less).
+Responsive images reserve dimensions; homepage lead previews load eagerly, other cards lazily.
+No autoplay embeds. See ADR-010 for regeneration and source boundaries.
+
+Browser corpus is 119,166 bytes versus 136,631 (12.8% less), with search-equivalent token
+deduplication verified by tests. Production returns Content-Encoding: br. Exploration renders
+12 results at a time, debounces text input 180ms, reuses one pending corpus request and permits
+retry after fetch failure. Hashed Astro assets cache immutably; mutable data revalidates; media
+uses a one-hour cache. Build-time static generation and Vite already provide chunking/minification.
+
+Applied applicable suggestions from https://www.instagram.com/p/DdP1ySxAsxT/ after a complete
+33.02-second local voidscape read. Database indexes, pooling, N+1 queries and load balancing do
+not apply to this static architecture. SSR initial results serve the loading state without skeleton
+replacement. Lighthouse is unmeasured: no installed runner and PageSpeed API returned HTTP 429
+RESOURCE_EXHAUSTED (quota 0); no score claimed.
+
+Verification: 32 tests passed, corpus validation zero errors/warnings, 85-page Astro build.
+Production checked at 390px and 1440px: menu click/Escape, local font/posters, no horizontal
+overflow, resources route, 12-to-24 pagination and empty search state. Source stays uncommitted.
+
+## User-directed visual restoration — 2026-09-17
+
+The user prefers the earlier dark split hero and bounded project grid in their screenshot.
+Keep the reduced information density, single Geologica family, accessible More disclosure and
+performance changes. Restore a large left headline/search and right authentic featured demo;
+follow with three project cards. Use dark #0f1115, light #f0efea and orange #ff8845 as the three
+base colors; derived neutral surfaces/borders provide separation. Orange headline emphasis uses
+the same family, without restoring the mixed serif face. Restore padded, bordered cards on the
+Projects explorer with placement/year and concise descriptions; keep detailed sources collapsed.
+Primary job: discover a useful reference and carry it into a builder brief. Verify home and
+Projects desktop/mobile, dropdown, search/pagination, font and image loading before deployment.
+
+### Language and theme preferences
+
+User requested English/Spanish and dark/light modes after the restoration. Header offers EN/ES
+and a theme button. Preferences persist locally; dark is the default, with light using the earlier
+paper/ink/orange palette. Theme initializes before paint. Language translates interface labels,
+headings and controls while preserving project names, source evidence, URLs and user inputs.
+The builder generates Spanish or English Markdown based on the current UI language; switching
+language invalidates a previously generated download until regeneration. No translation API or
+personal input transmission is added. Recheck all four combinations, cross-page persistence,
+search result updates, dropdown keyboard behavior and Spanish brief output.
+
+### Verified release — dark/light, bilingual UI and Hall of Hacks
+
+Deployment dpl_3rw2TmK4mGtFReedS5ARUf8LDphT is READY at https://crafterwiki.vercel.app.
+The restored split hero and bordered project cards are live. Interface translation covers controls,
+forms, taxonomy and all 36 existing analyzed taglines; long source evidence retains its original
+language. The Hall of Hacks collection has 51 unique observed projects with English/Spanish
+paraphrases and attributed lessons, 50 Devpost links, 47 videos, 43 repos and 51 optimized images
+(102 variants). Gallery records are not folded into confirmed-winner statistics. See
+hall-of-hacks-coverage.md. Largest image variants total420612 bytes versus1967485 (78.6% less).
+No external video is claimed watched. No new account access, analytics or translation service.
+
+Verification:35 tests pass,86-page build, local and production preference switching/persistence,
+Spanish brief output, language-change download invalidation, gallery search/pagination and
+mobile navigation on one row without overflow. Live gallery51 records/12 initially visible,
+zero broken visible images,correct canonical,HTTP200 and Brotli. Local rendered anti-slop review:
+pass for retained dark hero/project cards and unobtrusive controls; both mobile themes inspected.
+
+A failed Python write with implicit Windows encoding temporarily emptied Layout.astro; it was
+reconstructed from the Git template and exact last verified built global CSS, then all above
+checks rerun. Astro first build stalled before output; retry with ASTRO_TELEMETRY_DISABLED=1
+passed. Two preview downloads initially failed; bounded retry obtained all51. Chrome occasionally
+reported dispatch timeouts; visible state was inspected before retrying. No checks were bypassed.
+
+## Unified references — 2026-09-17
+
+User prefers Hall of Hacks gallery composition and one References destination. Merge the two
+collections at /projects/, retaining original detail pages, bilingual copy, attribution and source
+verification. Deduplicate by exact canonical submission URL; S-KBD67 and ROSS merge their Hall media/links
+into the existing analyzed record. Default85 references;88 extra roster records remain optional.
+Search/event/reset are primary,advanced facets collapsed. Gallery presentation does not promote
+reported Hall awards into confirmed winner statistics. Retire the separate collection through a
+permanent redirect; remove its duplicate navbar entry. Preserve original query parameters and
+12-item pagination. Verify queries across both sources,dedup,advanced filters and both languages.
+
+Navigation follows three click-open topics: Explore (references/events/discovery), Build (brief/guide), and Learn (patterns/mechanisms/resources). One menu opens at a time; Escape, outside click and focus leaving navigation close it. Mobile menus span the navigation width. Rendered review passed at desktop and 390px in dark/light modes; no horizontal overflow. Verified bilingual search, single S-KBD67 result, optional roster total173, and preserved query filters.37 tests pass and corpus validation reports zero errors/warnings.
+
+## Hall public coverage audit — 2026-09-17
+
+The coverage-only follow-up reconciles all 29 public event filters, nine category filters,
+Classic view and 51 detail pages. Their union is the existing 51 Hall records; the main feed
+cycles duplicates rather than terminating. A sanitized receipt in hall-of-hacks-audit.json and
+scripts/audit-hall-coverage.mjs make the dated reconciliation reviewable without publishing
+raw browser captures. Four observed Vimeo links and JailCall's external project page restore
+missing resource actions. Counts remain 85 default references and 88 optional roster entries;
+all 51 Hall records now have video links. No award status, navigation, card styling, theme,
+language or responsive media asset changes. See hall-of-hacks-coverage.md for limits and
+hall-of-hacks-design-study.md for source-based organization lessons and future options.

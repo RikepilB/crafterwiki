@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { corpus, base, href, definition, hackathon, eventName, similar, sourceHref } from '../../lib/data.mjs';
 import { statusClass, statusLabel, humanize, cardHTML, fmtRange } from '../../lib/labels.mjs';
+import { media } from '../../lib/media.js';
 
 export function getStaticPaths() {
   return corpus.projects.map((p) => ({ params: { slug: p.slug }, props: { p } }));
@@ -38,15 +39,20 @@ const jsonld = {
   </div>
   <h1>{p.name}</h1>
   <p class="lede">{p.tagline}</p>
+  {media[p.slug] && <a class="project-video" href={media[p.slug].video} target="_blank" rel="noopener"><img src={href(media[p.slug].localPoster)} srcset={media[p.slug].variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 520px) calc(100vw - 40px), 850px" alt={`${p.name} — original video preview`} width="480" height="360" fetchpriority="high" decoding="async" /><span>▶ Watch the original demo on YouTube ↗</span></a>}
+  <div class="row project-actions">
+    {links.filter(([k]) => ['video', 'demo', 'repo', 'devpost', 'project_page'].includes(k)).map(([k,v]) => <a class="btn" href={v} target="_blank" rel="noopener">{({video:'Watch video',demo:'Open demo',repo:'View source',devpost:'Original submission',project_page:'Original submission'})[k]} ↗</a>)}
+    <a class="btn primary" href={href(`/build/?reference=${p.slug}`)}>Use as a reference →</a>
+  </div>
   {p.placement?.verification && <p class="callout"><b>Unverified placement.</b> {p.placement.verification}</p>}
 
-  <dl class="facts">
+  <details class="project-facts"><summary>Project facts</summary><dl class="facts">
     <div class="fact"><dt>Event</dt><dd><a href={href(`/hackathons/${h.slug}/`)}>{eventName(h)}</a><br /><span class="meta">{fmtRange(h.start_date, h.end_date)}</span></dd></div>
     {track && <div class="fact"><dt>Track / challenge</dt><dd>{track.name}</dd></div>}
     <div class="fact"><dt>Team</dt><dd>{team}</dd></div>
     <div class="fact"><dt>Build</dt><dd>{p.build_style ? humanize(p.build_style) : 'Unknown'}</dd></div>
     <div class="fact"><dt>AI</dt><dd>{(p.tech?.ai_patterns ?? []).length ? p.tech.ai_patterns.map(humanize).join(', ') : 'None stated'}</dd></div>
-  </dl>
+  </dl></details>
 
   <div class="two-col">
     <article>
@@ -77,7 +83,7 @@ const jsonld = {
         </>
       )}
     </article>
-    <aside>
+    <aside><details><summary>Mechanisms, technology &amp; links</summary>
       <h2>Winning mechanisms</h2>
       <dl class="deflist">
         {(a.mechanisms ?? []).map((m) => (
@@ -103,7 +109,7 @@ const jsonld = {
       <h2>Use this record</h2>
       <pre>crafterwiki similar --to {p.slug}</pre>
       <p class="meta"><a href={href(`/api/v0/projects/${p.slug}.json`)}>JSON record</a></p>
-    </aside>
+    </details></aside>
   </div>
 
   <h2>Similar situations</h2>
@@ -127,6 +133,12 @@ const jsonld = {
 </Layout>
 
 <style>
+  .project-video { display: block; position: relative; max-width: 720px; margin-block: 24px; background: var(--ink); aspect-ratio: 16/9; border-radius: 6px; overflow: hidden; }
+  .project-video img { width: 100%; height: 100%; object-fit: contain; }
+  .project-video span { position: absolute; bottom: 18px; left: 18px; right: 18px; width: fit-content; padding: 10px 14px; background: var(--ink); color: var(--bg); border-radius: 6px; }
+  .two-col { grid-template-columns: minmax(0, 1fr); max-width: 800px; gap: 30px; }
+  summary { cursor: pointer; font-size: .9rem; padding-block: 12px; }
+  .project-actions { margin-block: 20px; }
   .head-badges { margin-top: 12px; }
   .plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
 </style>

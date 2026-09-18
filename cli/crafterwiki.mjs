@@ -2,6 +2,7 @@
 // CrafterWIKI CLI. Every command accepts --json for agent use.
 import { parseArgs } from 'node:util';
 import { resolve } from 'node:path';
+import { createPlan } from './plan.mjs';
 import {
   ROOT, loadCorpus, validate, search, similar, patterns, eventBrief, deal, show, build,
 } from './lib.mjs';
@@ -21,6 +22,8 @@ Commands
   list [hackathons|projects]       List slugs
   facets [name]                    Allowed taxonomy values (placement_status, domains, mechanisms, ...)
   build [--out dist]               Emit static read API under <out>/api/v0
+  plan <slug> --mode <mode>        Create a builder workspace (project or hackathon)
+                                  --event <slug> optional; --out <parent> defaults to builder-runs/
 
 Filters (search, similar, deal, patterns)
   --domain a,b  --mechanism a,b  --lens a,b  --ai a,b  --tech a,b
@@ -40,6 +43,7 @@ const options = {
   'event-kind': { type: 'string' }, winners: { type: 'boolean' }, 'include-entries': { type: 'boolean' },
   'include-reported': { type: 'boolean' }, all: { type: 'boolean' }, limit: { type: 'string' },
   seed: { type: 'string' }, to: { type: 'string' }, out: { type: 'string' }, private: { type: 'boolean' },
+  mode: { type: 'string' },
 };
 
 function label(it) {
@@ -87,6 +91,14 @@ function main(argv) {
   };
 
   switch (command) {
+    case 'plan': {
+      if (rest.length !== 1) throw new Error('usage: crafterwiki plan <slug> --mode project|hackathon');
+      if (o.private) throw new Error('plan does not export private overlays');
+      if (o.event && !corpus.hackathons.some((h) => h.slug === o.event)) throw new Error(`unknown event "${o.event}"`);
+      const r = createPlan({ slug: rest[0], mode: o.mode, event: o.event, out: o.out ?? resolve(ROOT, 'builder-runs') });
+      out(r, (d) => `Created ${d.mode} workspace at ${d.directory}\nStatus: ${d.status}; complete README.md and the numbered stages.`);
+      return 0;
+    }
     case 'validate': {
       const r = validate(corpus);
       out({ ...r, counts: { hackathons: corpus.hackathons.length, projects: corpus.projects.length, items: corpus.items.length } }, (d) => [

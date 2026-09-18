@@ -5,6 +5,10 @@ Complexity). Status is tracked per step.
 
 ## Goal
 
+General builder extension: see [builder harness](builder-harness.md) for the scoped
+implementation, operating contract and follow-on acceptance gates. The local workspace
+generator supports both independent projects and hackathons; automated orchestration is pending.
+
 Build CrafterWIKI: a public, standalone, provenance-first wiki of hackathons, winners and submissions
 analyzed by winning mechanism and judging lens, and a demo-first planning harness (problem → solution →
 demo moment → pitch → *then* architecture) accessible through the web, CLI, MCP, static API and a

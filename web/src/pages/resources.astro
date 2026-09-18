@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { corpus, href } from '../lib/data.mjs';
+import { media } from '../lib/media.js';
+const videos = corpus.projects.filter((p) => /^https?:\/\//.test(p.links?.video ?? ''));
+const demos = corpus.projects.filter((p) => /^https?:\/\//.test(p.links?.demo ?? ''));
+const articles = new Map();
+for (const project of corpus.projects) for (const source of project.sources ?? []) {
+  if (source.kind !== 'official-results' || !/^https?:\/\//.test(source.url)) continue;
+  const event = corpus.hackathons.find((h) => h.slug === project.hackathon);
+  if (!articles.has(source.url)) articles.set(source.url, { source, title: `${event.name} ${event.year} — organizer results`, projects: [] });
+  articles.get(source.url).projects.push(project);
+}
+---
+<Layout title="Videos, demos & articles" description="Watch original project videos, try available demos, and read the primary sources behind CrafterWIKI's hackathon references.">
+  <p class="eyebrow">The source shelf</p><h1>Watch it. Try it. Read the evidence.</h1>
+  <p class="lede">Original resources from the indexed projects, collected in one place. Follow a demo back to its project analysis before applying the lesson.</p>
+  <p><a href={href('/projects/')}>View all projects →</a></p>
+  <nav class="row resource-nav" aria-label="Resource types"><a class="btn" href="#videos">{videos.length} videos</a><a class="btn" href="#demos">{demos.length} demos</a><a class="btn" href="#articles">{articles.size} organizer sources</a><a class="btn" href="#craft">Builder craft</a></nav>
+  <section id="videos"><h2>Project videos</h2><p class="muted">Original uploads open on YouTube or Google Drive. Availability and access rules can change; players load only after you follow the link.</p>
+    <div class="grid">{videos.map((p) => <article class="card">
+      {media[p.slug] && <a class="card-media" href={p.links.video} target="_blank" rel="noopener"><img src={href(media[p.slug].localPoster)} srcset={media[p.slug].variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 360px" alt={`${p.name} video preview`} width="480" height="360" loading="lazy" decoding="async" /><span>▶ Watch original ↗</span></a>}
+      <h3><a href={href(`/projects/${p.slug}/`)}>{p.name}</a></h3><p>{p.tagline}</p><div class="reference-actions"><a href={p.links.video} target="_blank" rel="noopener">Watch video ↗</a><a href={href(`/projects/${p.slug}/`)}>Read evidence →</a></div>
+    </article>)}</div>
+  </section>
+  <section id="demos"><h2>Open a project demo</h2><p class="muted">Team-published destinations, not a guarantee that a demo still works. Some point to presentation files.</p><ul class="resource-list">{demos.map((p) => <li><div><a href={p.links.demo} target="_blank" rel="noopener"><b>{p.name} ↗</b></a><p>{p.tagline}</p></div><a href={href(`/projects/${p.slug}/`)}>Project record →</a></li>)}</ul></section>
+  <section id="articles"><h2>Organizer articles & result sources</h2><p class="muted">Primary sources already cited in the corpus. Dates below are record retrieval dates, not new verification claims.</p><ul class="resource-list">{[...articles.values()].map(({source,title,projects}) => <li><div><a href={source.url} target="_blank" rel="noopener"><b>{title} ↗</b></a><p class="meta">Retrieved {source.retrieved_at} · {projects.length} associated project records</p><details><summary>Referenced projects</summary><ul>{projects.map((p) => <li><a href={href(`/projects/${p.slug}/`)}>{p.name}</a></li>)}</ul></details></div></li>)}</ul></section>
+  <section id="craft"><h2>Builder craft: performance</h2><ul class="resource-list">
+    <li><div><a href="https://www.instagram.com/p/DdP1ySxAsxT/" target="_blank" rel="noopener"><b>A quick website optimization checklist — video ↗</b></a><p>Compression, lazy loading, debouncing, pagination and measurement. Apply selectively: database advice does not apply to a static site.</p></div></li>
+    <li><div><a href="https://web.dev/articles/optimize-lcp" target="_blank" rel="noopener"><b>Google web.dev: optimize Largest Contentful Paint ↗</b></a><p>Prioritize the main content image; do not delay it with lazy loading.</p></div></li>
+    <li><div><a href="https://web.dev/articles/browser-level-image-lazy-loading" target="_blank" rel="noopener"><b>Google web.dev: browser-level image lazy loading ↗</b></a><p>Defer offscreen images, reserve their dimensions, and let the browser schedule requests.</p></div></li>
+  </ul></section>
+</Layout>
+<style>
+  h1 { margin-top: 16px; } .resource-nav { margin-block: 24px; }
+  section { scroll-margin-top: 140px; } .resource-list { list-style: none; padding: 0; margin: 0; }
+  .resource-list > li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px 30px; border-top: 1px solid var(--line); padding-block: 18px; }
+  .resource-list p { margin: 6px 0 0; max-width: 80ch; color: var(--muted); font-size: .9rem; }
+  summary { cursor: pointer; margin-top: 8px; font-size: .85rem; }
+</style>

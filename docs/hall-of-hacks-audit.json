@@ -1,0 +1,1018 @@
+{
+  "checkedAt": "2026-09-17",
+  "source": "https://hallofhackss.com/feed",
+  "scope": "All projects exposed by the audited public feed, 29 event filters, nine category filters, Classic listing and 51 detail-page recommendation lists at this visit; not a historical or hidden-record guarantee.",
+  "feed": {
+    "batches": [
+      12,
+      24,
+      36,
+      48,
+      60,
+      72,
+      84,
+      96,
+      108,
+      120
+    ],
+    "renderedCards": 120,
+    "uniqueProjects": 51,
+    "terminalState": "cycling-duplicates",
+    "exhausted": false,
+    "slugs": [
+      "archemy",
+      "artificial-sandwich-intelligence",
+      "blinkai",
+      "chessmate-nwygvq",
+      "dance-cv",
+      "dial-4rqzc3",
+      "diffuji",
+      "digital-physical-darts-wii-darts",
+      "dose-ebmo9z",
+      "fable-br8e1d",
+      "facetime-macos-ai-agent",
+      "freak-cha",
+      "ghostdiedie",
+      "haggle-admqhc",
+      "heartstart",
+      "interactive-grapher-thingy",
+      "jailcall",
+      "kinemo",
+      "lifesaver-lnm0tz",
+      "longshot",
+      "lume-zrlypk",
+      "maestro-n0uqyz",
+      "orca-4po0nm",
+      "paper-cuts",
+      "plant-hopper",
+      "project-horizon-8iodp2",
+      "project-lend",
+      "raising-cane",
+      "readable-ai-braille-printer",
+      "rehabify-y2f5mu",
+      "replay-wq5isz",
+      "resqme-jq52al",
+      "ross-42pnvi",
+      "s-kbd67",
+      "scamshield-87rbxe",
+      "screwyouikea",
+      "shop-a-sketch",
+      "signhero",
+      "storyvue",
+      "taqr",
+      "ted-ai-x8537t",
+      "temp-sqyptg",
+      "the-unspillable",
+      "theracat",
+      "turretguard",
+      "viniclip",
+      "vril",
+      "wateryourdoin",
+      "whalebeing-27sj0w",
+      "wordhawk",
+      "yes-or-yes"
+    ]
+  },
+  "classic": {
+    "url": "https://hallofhackss.com/classic",
+    "count": 51
+  },
+  "categoryDirectory": "https://hallofhackss.com/categories",
+  "listings": [
+    {
+      "url": "https://hallofhackss.com/feed?event=Cal%20Hacks%2012.0%202025",
+      "type": "event",
+      "count": 4,
+      "slugs": [
+        "dial-4rqzc3",
+        "digital-physical-darts-wii-darts",
+        "facetime-macos-ai-agent",
+        "ted-ai-x8537t"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=TreeHacks%202026",
+      "type": "event",
+      "count": 6,
+      "slugs": [
+        "diffuji",
+        "heartstart",
+        "longshot",
+        "maestro-n0uqyz",
+        "project-lend",
+        "raising-cane"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=UofTHacks%202026",
+      "type": "event",
+      "count": 3,
+      "slugs": [
+        "project-horizon-8iodp2",
+        "shop-a-sketch",
+        "temp-sqyptg"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=Hack%20the%20North%202025",
+      "type": "event",
+      "count": 4,
+      "slugs": [
+        "archemy",
+        "chessmate-nwygvq",
+        "ross-42pnvi",
+        "s-kbd67"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=QHacks%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "orca-4po0nm"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=nwHacks%202026",
+      "type": "event",
+      "count": 2,
+      "slugs": [
+        "dance-cv",
+        "rehabify-y2f5mu"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=LA%20Hacks%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "yes-or-yes"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=HackHarvard%202025",
+      "type": "event",
+      "count": 3,
+      "slugs": [
+        "freak-cha",
+        "resqme-jq52al",
+        "screwyouikea"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=UC%20Berkeley%20AI%20Hackathon%202026",
+      "type": "event",
+      "count": 2,
+      "slugs": [
+        "paper-cuts",
+        "theracat"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=HooHacks%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "scamshield-87rbxe"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=Call%20My%20Agent%20Hackathon%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "jailcall"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=MHacks%202025",
+      "type": "event",
+      "count": 2,
+      "slugs": [
+        "artificial-sandwich-intelligence",
+        "wordhawk"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=DubHacks%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "interactive-grapher-thingy"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=Hack%20the%206ix%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "turretguard"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=YHack%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "lifesaver-lnm0tz"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=TAMUhack%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "haggle-admqhc"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=PennApps%20XXVI%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "kinemo"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=ConUHacks%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "viniclip"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=Hack%20the%20Valley%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "plant-hopper"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=TreeHacks%202025",
+      "type": "event",
+      "count": 3,
+      "slugs": [
+        "blinkai",
+        "fable-br8e1d",
+        "readable-ai-braille-printer"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=SwampHacks%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "signhero"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=Bitcamp%202026",
+      "type": "event",
+      "count": 3,
+      "slugs": [
+        "ghostdiedie",
+        "replay-wq5isz",
+        "the-unspillable"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=McHacks%202026",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "wateryourdoin"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=Hack%20Western%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "vril"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=VTHacks%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "storyvue"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=HackPrinceton%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "lume-zrlypk"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=StormHacks%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "taqr"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=HackGT%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "dose-ebmo9z"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?event=DeltaHacks%202025",
+      "type": "event",
+      "count": 1,
+      "slugs": [
+        "whalebeing-27sj0w"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=games",
+      "type": "category",
+      "count": 15,
+      "slugs": [
+        "archemy",
+        "chessmate-nwygvq",
+        "ghostdiedie",
+        "kinemo",
+        "lifesaver-lnm0tz",
+        "longshot",
+        "paper-cuts",
+        "project-horizon-8iodp2",
+        "replay-wq5isz",
+        "s-kbd67",
+        "signhero",
+        "taqr",
+        "temp-sqyptg",
+        "wordhawk",
+        "yes-or-yes"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=ai-ml",
+      "type": "category",
+      "count": 38,
+      "slugs": [
+        "archemy",
+        "artificial-sandwich-intelligence",
+        "blinkai",
+        "dance-cv",
+        "dial-4rqzc3",
+        "diffuji",
+        "facetime-macos-ai-agent",
+        "freak-cha",
+        "haggle-admqhc",
+        "heartstart",
+        "interactive-grapher-thingy",
+        "jailcall",
+        "kinemo",
+        "lifesaver-lnm0tz",
+        "longshot",
+        "lume-zrlypk",
+        "maestro-n0uqyz",
+        "orca-4po0nm",
+        "paper-cuts",
+        "plant-hopper",
+        "project-horizon-8iodp2",
+        "project-lend",
+        "readable-ai-braille-printer",
+        "rehabify-y2f5mu",
+        "scamshield-87rbxe",
+        "screwyouikea",
+        "shop-a-sketch",
+        "signhero",
+        "storyvue",
+        "ted-ai-x8537t",
+        "temp-sqyptg",
+        "theracat",
+        "turretguard",
+        "viniclip",
+        "vril",
+        "wateryourdoin",
+        "wordhawk",
+        "yes-or-yes"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=health",
+      "type": "category",
+      "count": 14,
+      "slugs": [
+        "archemy",
+        "dose-ebmo9z",
+        "fable-br8e1d",
+        "heartstart",
+        "lifesaver-lnm0tz",
+        "lume-zrlypk",
+        "plant-hopper",
+        "raising-cane",
+        "rehabify-y2f5mu",
+        "signhero",
+        "taqr",
+        "ted-ai-x8537t",
+        "the-unspillable",
+        "theracat"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=social-good",
+      "type": "category",
+      "count": 12,
+      "slugs": [
+        "digital-physical-darts-wii-darts",
+        "freak-cha",
+        "jailcall",
+        "project-lend",
+        "raising-cane",
+        "readable-ai-braille-printer",
+        "resqme-jq52al",
+        "ross-42pnvi",
+        "signhero",
+        "storyvue",
+        "the-unspillable",
+        "turretguard"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=dev-tools",
+      "type": "category",
+      "count": 6,
+      "slugs": [
+        "facetime-macos-ai-agent",
+        "longshot",
+        "lume-zrlypk",
+        "project-lend",
+        "shop-a-sketch",
+        "wateryourdoin"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=ar-vr",
+      "type": "category",
+      "count": 4,
+      "slugs": [
+        "archemy",
+        "blinkai",
+        "fable-br8e1d",
+        "lume-zrlypk"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=sustainability",
+      "type": "category",
+      "count": 4,
+      "slugs": [
+        "plant-hopper",
+        "replay-wq5isz",
+        "taqr",
+        "whalebeing-27sj0w"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=software",
+      "type": "category",
+      "count": 29,
+      "slugs": [
+        "archemy",
+        "blinkai",
+        "dance-cv",
+        "dial-4rqzc3",
+        "fable-br8e1d",
+        "facetime-macos-ai-agent",
+        "freak-cha",
+        "haggle-admqhc",
+        "jailcall",
+        "kinemo",
+        "lifesaver-lnm0tz",
+        "longshot",
+        "lume-zrlypk",
+        "maestro-n0uqyz",
+        "orca-4po0nm",
+        "paper-cuts",
+        "project-horizon-8iodp2",
+        "ross-42pnvi",
+        "screwyouikea",
+        "shop-a-sketch",
+        "signhero",
+        "storyvue",
+        "taqr",
+        "temp-sqyptg",
+        "viniclip",
+        "vril",
+        "wateryourdoin",
+        "whalebeing-27sj0w",
+        "yes-or-yes"
+      ]
+    },
+    {
+      "url": "https://hallofhackss.com/feed?cat=hardware",
+      "type": "category",
+      "count": 22,
+      "slugs": [
+        "artificial-sandwich-intelligence",
+        "chessmate-nwygvq",
+        "diffuji",
+        "digital-physical-darts-wii-darts",
+        "dose-ebmo9z",
+        "ghostdiedie",
+        "heartstart",
+        "interactive-grapher-thingy",
+        "plant-hopper",
+        "project-lend",
+        "raising-cane",
+        "readable-ai-braille-printer",
+        "rehabify-y2f5mu",
+        "replay-wq5isz",
+        "resqme-jq52al",
+        "s-kbd67",
+        "scamshield-87rbxe",
+        "ted-ai-x8537t",
+        "the-unspillable",
+        "theracat",
+        "turretguard",
+        "wordhawk"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "archemy",
+      "links": [
+        "https://devpost.com/software/archemy",
+        "https://github.com/jasonnpan/ARchemy/",
+        "https://www.youtube.com/watch?v=-qdRSClgbJA"
+      ]
+    },
+    {
+      "slug": "artificial-sandwich-intelligence",
+      "links": [
+        "https://devpost.com/software/artificial-sandwich-intelligence",
+        "https://www.youtube.com/watch?v=46MQk3qE6fI"
+      ]
+    },
+    {
+      "slug": "blinkai",
+      "links": [
+        "https://devpost.com/software/blinkai",
+        "https://github.com/FuzionEcho/BlinkAI",
+        "https://www.youtube.com/watch?v=wwaJdA6XVPk"
+      ]
+    },
+    {
+      "slug": "chessmate-nwygvq",
+      "links": [
+        "https://devpost.com/software/chessmate-nwygvq",
+        "https://github.com/o-bm/ChessMate",
+        "https://www.youtube.com/watch?v=JDlEdZKH69k"
+      ]
+    },
+    {
+      "slug": "dance-cv",
+      "links": [
+        "https://devpost.com/software/dance-cv",
+        "https://github.com/douglasichen/DanceCV",
+        "https://www.youtube.com/watch?v=AWBrBWU1IzA"
+      ]
+    },
+    {
+      "slug": "dial-4rqzc3",
+      "links": [
+        "https://devpost.com/software/dial-4rqzc3",
+        "https://www.youtube.com/watch?v=32DSdO1V-z0"
+      ]
+    },
+    {
+      "slug": "diffuji",
+      "links": [
+        "https://devpost.com/software/diffuji",
+        "https://www.youtube.com/watch?v=JiRth1HCIag"
+      ]
+    },
+    {
+      "slug": "digital-physical-darts-wii-darts",
+      "links": [
+        "https://devpost.com/software/digital-physical-darts-wii-darts",
+        "https://github.com/commonkestrel/physical-digital-darts",
+        "https://www.youtube.com/watch?v=d-0ktDKMHS8"
+      ]
+    },
+    {
+      "slug": "dose-ebmo9z",
+      "links": [
+        "https://devpost.com/software/dose-ebmo9z",
+        "https://github.com/dawsonp2003/HackGT12-Dose",
+        "https://www.youtube.com/watch?v=j7cSnyq9Vn8"
+      ]
+    },
+    {
+      "slug": "fable-br8e1d",
+      "links": [
+        "https://devpost.com/software/fable-br8e1d",
+        "https://github.com/StiopaPopa/fable",
+        "https://www.youtube.com/watch?v=Q8udHqdKbKw"
+      ]
+    },
+    {
+      "slug": "facetime-macos-ai-agent",
+      "links": [
+        "https://devpost.com/software/facetime-macos-ai-agent",
+        "https://github.com/ThePickleGawd/calhacks-25",
+        "https://www.youtube.com/watch?v=zN96RdE0OSg"
+      ]
+    },
+    {
+      "slug": "freak-cha",
+      "links": [
+        "https://devpost.com/software/freak-cha",
+        "https://github.com/anselmlong/hackharvard",
+        "https://www.youtube.com/watch?v=wssGfKUIxzw"
+      ]
+    },
+    {
+      "slug": "ghostdiedie",
+      "links": [
+        "https://devpost.com/software/ghostdiedie",
+        "https://www.youtube.com/watch?v=Ay273uz5BpE"
+      ]
+    },
+    {
+      "slug": "haggle-admqhc",
+      "links": [
+        "https://devpost.com/software/haggle-admqhc",
+        "https://github.com/rtalla1/tamuhack26/tree/main",
+        "https://www.youtube.com/watch?v=bw98PyP5bnI"
+      ]
+    },
+    {
+      "slug": "heartstart",
+      "links": [
+        "https://devpost.com/software/heartstart",
+        "https://github.com/nicolewongbiz/cpr-robot.git",
+        "https://www.youtube.com/watch?v=8B98pMV5k1o"
+      ]
+    },
+    {
+      "slug": "interactive-grapher-thingy",
+      "links": [
+        "https://devpost.com/software/interactive-grapher-thingy",
+        "https://github.com/lukasmwerner/desmos-in-the-world",
+        "https://www.youtube.com/watch?v=OHMV5t6SwSU"
+      ]
+    },
+    {
+      "slug": "jailcall",
+      "links": [
+        "https://agentphone.ai/callmyagent",
+        "https://github.com/souvik1997/JailCall-call-my-agent-hackathon",
+        "https://www.youtube.com/watch?v=c1eKOdi0hDc"
+      ]
+    },
+    {
+      "slug": "kinemo",
+      "links": [
+        "https://devpost.com/software/kinemo",
+        "https://github.com/arvinmefsha/kinemo",
+        "https://www.youtube.com/watch?v=JY9jn1HCboI"
+      ]
+    },
+    {
+      "slug": "lifesaver-lnm0tz",
+      "links": [
+        "https://devpost.com/software/lifesaver-lnm0tz",
+        "https://github.com/akhilm2223/yale/",
+        "https://www.youtube.com/watch?v=W6CaKOtUlmw"
+      ]
+    },
+    {
+      "slug": "longshot",
+      "links": [
+        "https://devpost.com/software/longshot",
+        "https://github.com/andrewcai8/agentswarm",
+        "https://www.youtube.com/watch?v=5oxXfazBcaQ"
+      ]
+    },
+    {
+      "slug": "lume-zrlypk",
+      "links": [
+        "https://devpost.com/software/lume-zrlypk",
+        "https://github.com/parker-rho/lume/",
+        "https://www.youtube.com/watch?v=o_BVDoVG3aI"
+      ]
+    },
+    {
+      "slug": "maestro-n0uqyz",
+      "links": [
+        "https://devpost.com/software/maestro-n0uqyz",
+        "https://github.com/markmusic27/treehacks",
+        "https://www.youtube.com/watch?v=7tlVRvY_3n8"
+      ]
+    },
+    {
+      "slug": "orca-4po0nm",
+      "links": [
+        "https://devpost.com/software/orca-4po0nm",
+        "https://github.com/Beebdoles/qhacks-2026/tree/main",
+        "https://vimeo.com/1162996077"
+      ]
+    },
+    {
+      "slug": "paper-cuts",
+      "links": [
+        "https://devpost.com/software/paper-cuts",
+        "https://github.com/Jeremyliu-621/paper-cuts",
+        "https://vimeo.com/1203255539"
+      ]
+    },
+    {
+      "slug": "plant-hopper",
+      "links": [
+        "https://devpost.com/software/plant-hopper",
+        "https://github.com/jello-2/PlantHopper",
+        "https://www.youtube.com/watch?v=C8jYkJZJHcI"
+      ]
+    },
+    {
+      "slug": "project-horizon-8iodp2",
+      "links": [
+        "https://devpost.com/software/project-horizon-8iodp2",
+        "https://www.youtube.com/watch?v=CGtGJQ4qxpc"
+      ]
+    },
+    {
+      "slug": "project-lend",
+      "links": [
+        "https://devpost.com/software/project-lend",
+        "https://github.com/PranavViswanath/project-lend",
+        "https://www.youtube.com/watch?v=hBcCNg_U3t4"
+      ]
+    },
+    {
+      "slug": "raising-cane",
+      "links": [
+        "https://devpost.com/software/raising-cane",
+        "https://github.com/tonywangs/shepherd",
+        "https://www.youtube.com/watch?v=nJ5YjK1-0c0"
+      ]
+    },
+    {
+      "slug": "readable-ai-braille-printer",
+      "links": [
+        "https://devpost.com/software/readable-ai-braille-printer",
+        "https://github.com/cathyzbn/braille-printer",
+        "https://www.youtube.com/watch?v=atzED5lXhCE"
+      ]
+    },
+    {
+      "slug": "rehabify-y2f5mu",
+      "links": [
+        "https://devpost.com/software/rehabify-y2f5mu",
+        "https://github.com/obro79/Rehabify",
+        "https://www.youtube.com/watch?v=gXh_Ct_AQGU"
+      ]
+    },
+    {
+      "slug": "replay-wq5isz",
+      "links": [
+        "https://devpost.com/software/replay-wq5isz",
+        "https://github.com/priyam-k/replay",
+        "https://www.youtube.com/watch?v=VxwPjytatZA"
+      ]
+    },
+    {
+      "slug": "resqme-jq52al",
+      "links": [
+        "https://devpost.com/software/resqme-jq52al",
+        "https://github.com/lordoftheseas/ResQme",
+        "https://www.youtube.com/watch?v=KnAiHBRMZHo"
+      ]
+    },
+    {
+      "slug": "ross-42pnvi",
+      "links": [
+        "https://devpost.com/software/ross-42pnvi",
+        "https://github.com/FowlFarmer/HTN2025",
+        "https://www.youtube.com/watch?v=FP0lBdZkyqI"
+      ]
+    },
+    {
+      "slug": "s-kbd67",
+      "links": [
+        "https://devpost.com/software/s-kbd67",
+        "https://github.com/Amelia1110/Valorant-Nerf-Gun",
+        "https://www.youtube.com/watch?v=6Td6KtRum8E"
+      ]
+    },
+    {
+      "slug": "scamshield-87rbxe",
+      "links": [
+        "https://devpost.com/software/scamshield-87rbxe",
+        "https://github.com/TristanGru/ScamShield",
+        "https://www.youtube.com/watch?v=z5F1gDdCr84"
+      ]
+    },
+    {
+      "slug": "screwyouikea",
+      "links": [
+        "https://devpost.com/software/screwyouikea",
+        "https://github.com/donaragalstyan/ScrewYouIkea",
+        "https://vimeo.com/1124554736"
+      ]
+    },
+    {
+      "slug": "shop-a-sketch",
+      "links": [
+        "https://devpost.com/software/shop-a-sketch",
+        "https://github.com/clairez308/uofthacks26",
+        "https://www.youtube.com/watch?v=Rlop_MAxdIY"
+      ]
+    },
+    {
+      "slug": "signhero",
+      "links": [
+        "https://devpost.com/software/signhero",
+        "https://github.com/MsMarion/ASL-Fun-Training",
+        "https://www.youtube.com/watch?v=ZX6OOWAt5-U"
+      ]
+    },
+    {
+      "slug": "storyvue",
+      "links": [
+        "https://devpost.com/software/storyvue",
+        "https://github.com/JoshuaEssandoh/VTHacks13",
+        "https://www.youtube.com/watch?v=hsMLyRKSofI"
+      ]
+    },
+    {
+      "slug": "taqr",
+      "links": [
+        "https://devpost.com/software/taqr",
+        "https://github.com/fesenjuniors/backend",
+        "https://www.youtube.com/watch?v=rpcqI7ap0XU"
+      ]
+    },
+    {
+      "slug": "ted-ai-x8537t",
+      "links": [
+        "https://devpost.com/software/ted-ai-x8537t",
+        "https://www.youtube.com/watch?v=3bj86ky1eAc"
+      ]
+    },
+    {
+      "slug": "temp-sqyptg",
+      "links": [
+        "https://devpost.com/software/temp-sqyptg",
+        "https://github.com/qiuethan/UofTHacks-Project",
+        "https://www.youtube.com/watch?v=AGGb7Qv4gY4"
+      ]
+    },
+    {
+      "slug": "the-unspillable",
+      "links": [
+        "https://devpost.com/software/the-unspillable",
+        "https://www.youtube.com/watch?v=7ixI50nMe54"
+      ]
+    },
+    {
+      "slug": "theracat",
+      "links": [
+        "https://devpost.com/software/theracat",
+        "https://vimeo.com/1203255610"
+      ]
+    },
+    {
+      "slug": "turretguard",
+      "links": [
+        "https://devpost.com/software/turretguard",
+        "https://github.com/pekachoo/TurretGuard_hackthe6ix",
+        "https://www.youtube.com/watch?v=OiJvhyb4Yao"
+      ]
+    },
+    {
+      "slug": "viniclip",
+      "links": [
+        "https://devpost.com/software/viniclip",
+        "https://github.com/mahutt/ViniClip",
+        "https://www.youtube.com/watch?v=qDyQIVBcPCs"
+      ]
+    },
+    {
+      "slug": "vril",
+      "links": [
+        "https://devpost.com/software/vril",
+        "https://github.com/akuwuh/Vril",
+        "https://www.youtube.com/watch?v=pGwVC0TzbDQ"
+      ]
+    },
+    {
+      "slug": "wateryourdoin",
+      "links": [
+        "https://devpost.com/software/wateryourdoin",
+        "https://github.com/memoud0/WaterYouDoin",
+        "https://www.youtube.com/watch?v=a59GGgiktuA"
+      ]
+    },
+    {
+      "slug": "whalebeing-27sj0w",
+      "links": [
+        "https://devpost.com/software/whalebeing-27sj0w",
+        "https://github.com/lucasliao0403/WhaleBeing",
+        "https://www.youtube.com/watch?v=EwOxT8YSXnk"
+      ]
+    },
+    {
+      "slug": "wordhawk",
+      "links": [
+        "https://devpost.com/software/wordhawk",
+        "https://github.com/TSKoduru/mhacks-gamehawk",
+        "https://www.youtube.com/watch?v=WktVaFtu6HE"
+      ]
+    },
+    {
+      "slug": "yes-or-yes",
+      "links": [
+        "https://devpost.com/software/yes-or-yes",
+        "https://github.com/lukietee/YESorYES",
+        "https://www.youtube.com/watch?v=v2X7dJ6E1E4"
+      ]
+    }
+  ],
+  "recommendationSlugs": [
+    "archemy",
+    "artificial-sandwich-intelligence",
+    "blinkai",
+    "chessmate-nwygvq",
+    "dance-cv",
+    "dial-4rqzc3",
+    "diffuji",
+    "digital-physical-darts-wii-darts",
+    "dose-ebmo9z",
+    "fable-br8e1d",
+    "facetime-macos-ai-agent",
+    "freak-cha",
+    "ghostdiedie",
+    "haggle-admqhc",
+    "heartstart",
+    "interactive-grapher-thingy",
+    "jailcall",
+    "kinemo",
+    "lifesaver-lnm0tz",
+    "longshot",
+    "lume-zrlypk",
+    "maestro-n0uqyz",
+    "orca-4po0nm",
+    "paper-cuts",
+    "plant-hopper",
+    "project-horizon-8iodp2",
+    "project-lend",
+    "raising-cane",
+    "readable-ai-braille-printer",
+    "rehabify-y2f5mu",
+    "replay-wq5isz",
+    "resqme-jq52al",
+    "ross-42pnvi",
+    "s-kbd67",
+    "scamshield-87rbxe",
+    "screwyouikea",
+    "shop-a-sketch",
+    "signhero",
+    "storyvue",
+    "taqr",
+    "ted-ai-x8537t",
+    "temp-sqyptg",
+    "the-unspillable",
+    "theracat",
+    "turretguard",
+    "viniclip",
+    "vril",
+    "wateryourdoin",
+    "whalebeing-27sj0w",
+    "wordhawk",
+    "yes-or-yes"
+  ],
+  "inaccessibleProjectPages": [],
+  "missing": {
+    "video": [],
+    "repo": [
+      "ted-ai-x8537t",
+      "the-unspillable",
+      "theracat",
+      "artificial-sandwich-intelligence",
+      "dial-4rqzc3",
+      "ghostdiedie",
+      "diffuji",
+      "project-horizon-8iodp2"
+    ],
+    "devpost": [
+      "jailcall"
+    ]
+  },
+  "videoInspection": "Links only; no video content analyzed. Source pages may autoplay embedded players.",
+  "awards": "reported-unverified"
+}
