@@ -11,7 +11,7 @@ built, each project tagged by the mechanisms that made it stand out and the judg
 to. A demo-first planning harness turns that evidence into a plan for your next event:
 recon → patterns → angles → judge panel → demo script → *then* architecture.
 
-Live website: **[crafterwiki.vercel.app](https://crafterwiki.vercel.app)**.
+Live website: **[crafterwiki.com](https://crafterwiki.com)**.
 14 events, 36 analyzed projects and 88 additional roster entries. The site includes video
 previews, original resource links, event/year/placement filters and a downloadable builder brief.
 CLI, MCP server, static API and the existing Claude Code plugin remain available.
