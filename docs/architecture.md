@@ -382,3 +382,45 @@ missing resource actions. Counts remain 85 default references and 88 optional ro
 all 51 Hall records now have video links. No award status, navigation, card styling, theme,
 language or responsive media asset changes. See hall-of-hacks-coverage.md for limits and
 hall-of-hacks-design-study.md for source-based organization lessons and future options.
+
+## Projects explorer redesign — 2026-09-18
+
+Audience: builders scanning many hackathon references to choose what to watch and what pattern to
+study. Primary job: narrow the collection by a meaningful topic or event, compare media quickly,
+then open a video, submission or analyzed reference. Available proof is the existing 85-reference
+default collection, original preview media, direct resource links and evidence-labelled analysis.
+
+Direction: a compact research catalog. The memorable element is a persistent left-hand browse rail
+that switches between topic shelves and a visible hackathon index with counts. Search and quick
+media/evidence toggles sit in the rail; the content column prioritizes large preview frames and a
+clear result summary. The approved dark/light palette, Geologica family, EN/ES behavior and
+Explore/Build/Learn navigation remain. Avoid a horizontal wall of dropdowns, hidden event choices,
+decorative dashboard metrics, autoplay and invented source claims.
+
+Architecture: short page introduction; desktop sidebar with search, Topics/Hackathons switch,
+visible radio lists and stacked refinement controls; mobile disclosure using the same semantic
+form; result header with active filters; media-led responsive cards; explicit pagination. Topics
+are broad browsing groups derived from existing controlled domains and the source category. Event
+counts describe default references, not full-event rosters. Secondary-source branding is removed
+from public copy; its URL remains available through a generic Editorial source link for provenance.
+
+Verification: desktop and mobile layout, sidebar stickiness, topic/event selection, event search,
+active-filter removal, reset, quick toggles, URL persistence, pagination, both languages and themes,
+keyboard focus, image loading, empty state and horizontal overflow. Preserve source and submission
+URLs, ROSS/S-KBD67 deduplication, reported/unverified award semantics and all 173 optional records.
+
+### Rendered anti-slop review
+
+Verdict: pass after one interaction fix. The 1440px render has a clear catalog hierarchy: one short
+introduction, a compact persistent browse rail and a dense media-led grid. The rail uses visible
+choices and counts rather than dashboard decoration or a dropdown wall. Cards reuse authentic
+project media and preserve the existing orange accent instead of introducing generic gradients,
+glass panels or ornamental badges. The 390px render collapses the rail into one disclosure and has
+zero horizontal overflow; project media remains the first card element.
+
+Keep the topic/event switch, event search, three-column comparison grid, direct Watch demo action,
+short summaries and secondary Why study it disclosure. During review, active topic chips were found
+not to clear empty-valued radio groups; clearing now explicitly selects the All option and restores
+85 results. Rechecked topic selection/removal, event search, video filtering, URL state, Spanish
+headings/placeholders, closed mobile filters, desktop and mobile screenshots. Public built HTML has
+no source-brand wording; generic editorial provenance links remain available.
