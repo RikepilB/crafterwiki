@@ -273,11 +273,16 @@ Bulk media coverage and fresh official results are pending per coverage-and-medi
 
 ### Deployment runbook
 
-Merges to `main` deploy through the Vercel Git integration (since 2026-09-18): `vercel.json`
-installs and builds `web/` and publishes `web/dist` only. Git builds see tracked files only, so
-private overlays and session files never reach Vercel. Pull requests get preview deployments.
+Pull requests get Vercel preview deployments from the Git integration (since 2026-09-18):
+`vercel.json` installs and builds `web/` and publishes `web/dist` only. Git builds see tracked files
+only, so private overlays and session files never reach Vercel.
 
-Manual fallback: run validation and tests, then npm --prefix web run build. Link generated output
+Automatic production deploys from `main` are **off** (`git.deploymentEnabled.main: false`) because
+live work is not all on `main` yet: the projects-explorer redesign is deployed from
+`codex/projects-explorer-redesign`. Deploying `main` as it stands would roll that page back. Turn it
+on only when `main` contains everything that is live.
+
+Production deploys are manual: run validation and tests, then npm --prefix web run build. Link generated output
 with vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
 with vercel deploy --prod --yes --cwd web/dist. Re-link after every build because dist is
 regenerated. Never CLI-deploy the repository root: private overlays and session files stay local
