@@ -35,6 +35,10 @@ demo-first planning harness shipped as a Claude Code plugin from the repo root.
 - **Plugin placement:** do not enable this plugin globally; load it for CrafterWIKI sessions only.
 - Git: never commit/push unless asked. Public repo `RikepilB/crafterwiki`; default branch `main` —
   branch for changes. Code is MIT, the corpus is CC BY 4.0 (LICENSE, LICENSE-DATA).
+- **Never merge unless every check passed** (CI, Vercel, CodeRabbit — `main` is protected and enforces
+  it). Merging to `main` deploys production; do not deploy by hand what is not on `main`.
+- Other agents work in this repo at the same time: use your own `git worktree`, never switch branches
+  in a shared checkout, and never delete or discard someone else's files or worktrees.
 
 ## 4. Workflow
 

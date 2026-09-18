@@ -277,12 +277,12 @@ Pull requests get Vercel preview deployments from the Git integration (since 202
 `vercel.json` installs and builds `web/` and publishes `web/dist` only. Git builds see tracked files
 only, so private overlays and session files never reach Vercel.
 
-Automatic production deploys from `main` are **off** (`git.deploymentEnabled.main: false`) because
-live work is not all on `main` yet: the projects-explorer redesign is deployed from
-`codex/projects-explorer-redesign`. Deploying `main` as it stands would roll that page back. Turn it
-on only when `main` contains everything that is live.
+Production deploys automatically when a pull request merges into `main` (since 2026-09-18). `main` is
+protected: a merge needs the GitHub Actions CI, Vercel and CodeRabbit checks to pass on a branch that
+is up to date with `main`, and the rule applies to administrators too. So every production deploy is
+a build of reviewed, checked code — never ship by hand what is not on `main`.
 
-Production deploys are manual: run validation and tests, then npm --prefix web run build. Link generated output
+Manual fallback (incidents only): run validation and tests, then npm --prefix web run build. Link generated output
 with vercel link --yes --project crafterwiki --scope rikepilbs-projects --cwd web/dist, then deploy
 with vercel deploy --prod --yes --cwd web/dist. Re-link after every build because dist is
 regenerated. Never CLI-deploy the repository root: private overlays and session files stay local
