@@ -14,6 +14,8 @@ const nav = [
 const path = Astro.url.pathname;
 const fullTitle = title ? `${title} · CrafterWIKI` : 'CrafterWIKI — references for your next build';
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+// Link previews (WhatsApp, Slack, X, LinkedIn) need an absolute image URL.
+const ogImage = Astro.site ? new URL(href('/og.jpg'), Astro.site).href : undefined;
 const icon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff8845'/%3E%3Cpath d='M21 11.5a7 7 0 1 0 0 9' stroke='%230f1115' stroke-width='3.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E";
 ---
 <!doctype html>
@@ -31,6 +33,16 @@ const icon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewB
     <meta property="og:type" content="website" />
     {canonical && <link rel="canonical" href={canonical} />}
     {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:site_name" content="CrafterWIKI" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta property="og:image:width" content="1200" />}
+    {ogImage && <meta property="og:image:height" content="630" />}
+    {ogImage && <meta property="og:image:type" content="image/jpeg" />}
+    {ogImage && <meta property="og:image:alt" content="CrafterWIKI: hackathon winners and why they stood out, with an example reference card." />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
     <link rel="icon" href={icon} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   </head>
