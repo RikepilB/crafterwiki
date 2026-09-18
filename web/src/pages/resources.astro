@@ -1,40 +1,106 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { corpus, href } from '../lib/data.mjs';
-import { media } from '../lib/media.js';
-const videos = corpus.projects.filter((p) => /^https?:\/\//.test(p.links?.video ?? ''));
-const demos = corpus.projects.filter((p) => /^https?:\/\//.test(p.links?.demo ?? ''));
-const articles = new Map();
-for (const project of corpus.projects) for (const source of project.sources ?? []) {
-  if (source.kind !== 'official-results' || !/^https?:\/\//.test(source.url)) continue;
-  const event = corpus.hackathons.find((h) => h.slug === project.hackathon);
-  if (!articles.has(source.url)) articles.set(source.url, { source, title: `${event.name} ${event.year} — organizer results`, projects: [] });
-  articles.get(source.url).projects.push(project);
-}
+import { corpus, href, eventName } from '../lib/data.mjs';
+import { humanize } from '../lib/labels.mjs';
+
+// Project videos and demos live on each project card in /projects/; this page keeps only what the
+// explorer does not show: the organizers' own pages behind the collection, and outside reading.
+const OFFICIAL = {
+  'official-results': 'Official results',
+  'official-event-page': 'Official event page',
+  'devpost-gallery': 'Devpost gallery',
+  'voting-page': 'Public vote page — not results',
+};
+const KIND_ORDER = Object.keys(OFFICIAL);
+const host = (url) => new URL(url).hostname.replace(/^www\./, '');
+const events = corpus.hackathons
+  .map((h) => {
+    const seen = new Set();
+    const sources = [];
+    const add = (s) => {
+      if (!OFFICIAL[s.kind] || !/^https?:\/\//.test(s.url) || seen.has(s.url)) return;
+      seen.add(s.url);
+      sources.push(s);
+    };
+    (h.sources ?? []).forEach(add);
+    for (const p of corpus.projects.filter((p) => p.hackathon === h.slug)) (p.sources ?? []).filter((s) => s.kind === 'official-results').forEach(add);
+    sources.sort((a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind));
+    return { h, sources };
+  })
+  .filter((e) => e.sources.length)
+  .sort((a, b) => (b.h.year - a.h.year) || eventName(a.h).localeCompare(eventName(b.h)));
+const craft = [
+  ['https://github.com/RikepilB/crafterwiki/blob/main/docs/builder-harness.md', 'CrafterWIKI builder harness runbook', 'Generate an editable planning workspace from the command line for any hackathon or independent project.'],
+  ['https://www.instagram.com/p/DdP1ySxAsxT/', 'A quick website optimization checklist — video', 'Compression, lazy loading, debouncing, pagination and measurement. Apply selectively: database advice does not apply to a static site.'],
+  ['https://web.dev/articles/optimize-lcp', 'Google web.dev: optimize Largest Contentful Paint', 'Prioritize the main content image; do not delay it with lazy loading.'],
+  ['https://web.dev/articles/browser-level-image-lazy-loading', 'Google web.dev: browser-level image lazy loading', 'Defer offscreen images, reserve their dimensions, and let the browser schedule requests.'],
+];
 ---
-<Layout title="Videos, demos & articles" description="Watch original project videos, try available demos, and read the primary sources behind CrafterWIKI's hackathon references.">
-  <p class="eyebrow">The source shelf</p><h1>Watch it. Try it. Read the evidence.</h1>
-  <p class="lede">Original resources from the indexed projects, collected in one place. Follow a demo back to its project analysis before applying the lesson.</p>
-  <p><a href={href('/projects/')}>View all projects →</a></p>
-  <nav class="row resource-nav" aria-label="Resource types"><a class="btn" href="#videos">{videos.length} videos</a><a class="btn" href="#demos">{demos.length} demos</a><a class="btn" href="#articles">{articles.size} organizer sources</a><a class="btn" href="#craft">Builder craft</a></nav>
-  <section id="videos"><h2>Project videos</h2><p class="muted">Original uploads open on YouTube or Google Drive. Availability and access rules can change; players load only after you follow the link.</p>
-    <div class="grid">{videos.map((p) => <article class="card">
-      {media[p.slug] && <a class="card-media" href={p.links.video} target="_blank" rel="noopener"><img src={href(media[p.slug].localPoster)} srcset={media[p.slug].variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 360px" alt={`${p.name} video preview`} width="480" height="360" loading="lazy" decoding="async" /><span>▶ Watch original ↗</span></a>}
-      <h3><a href={href(`/projects/${p.slug}/`)}>{p.name}</a></h3><p>{p.tagline}</p><div class="reference-actions"><a href={p.links.video} target="_blank" rel="noopener">Watch video ↗</a><a href={href(`/projects/${p.slug}/`)}>Read evidence →</a></div>
-    </article>)}</div>
+<Layout title="Guides & sources" description="The organizers' own pages behind every CrafterWIKI reference, plus outside reading for building and shipping.">
+  <h1>Guides &amp; sources</h1>
+  <p class="lede">The official sources behind the collection, and outside reading for building well. Project videos and demos live on each project in the explorer.</p>
+  <nav class="row intro-actions" aria-label="Sections">
+    <a class="btn primary" href={href('/projects/?videos=1')}>Browse projects with video →</a>
+    <a class="btn" href="#sources">Official sources</a>
+    <a class="btn" href="#craft">Builder craft</a>
+  </nav>
+
+  <section id="sources" aria-labelledby="sources-heading">
+    <h2 id="sources-heading">Official sources by event</h2>
+    <p class="muted">Results announcements, rules and judging guides published by the organizers, as cited in the collection. The date is when each page was retrieved, not a new verification.</p>
+    <div class="event-sources">
+      {events.map(({ h, sources }) => (
+        <article class="event-card">
+          <header>
+            <h3><a href={href(`/hackathons/${h.slug}/`)} translate="no">{eventName(h)}</a></h3>
+            <p class="meta">{humanize(h.kind)}</p>
+          </header>
+          <ul class="resource-list">
+            {sources.map((s) => (
+              <li>
+                <div class="source-head">
+                  <a href={s.url} target="_blank" rel="noopener"><b translate="no">{host(s.url)}</b><span aria-hidden="true"> ↗</span></a>
+                  <span class="kind" data-kind={s.kind}>{OFFICIAL[s.kind]}</span>
+                </div>
+                {s.note && <p>{s.note}</p>}
+                <p class="meta"><span>Retrieved</span> <time datetime={s.retrieved_at}>{s.retrieved_at}</time></p>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
   </section>
-  <section id="demos"><h2>Open a project demo</h2><p class="muted">Team-published destinations, not a guarantee that a demo still works. Some point to presentation files.</p><ul class="resource-list">{demos.map((p) => <li><div><a href={p.links.demo} target="_blank" rel="noopener"><b>{p.name} ↗</b></a><p>{p.tagline}</p></div><a href={href(`/projects/${p.slug}/`)}>Project record →</a></li>)}</ul></section>
-  <section id="articles"><h2>Organizer articles & result sources</h2><p class="muted">Primary sources already cited in the corpus. Dates below are record retrieval dates, not new verification claims.</p><ul class="resource-list">{[...articles.values()].map(({source,title,projects}) => <li><div><a href={source.url} target="_blank" rel="noopener"><b>{title} ↗</b></a><p class="meta">Retrieved {source.retrieved_at} · {projects.length} associated project records</p><details><summary>Referenced projects</summary><ul>{projects.map((p) => <li><a href={href(`/projects/${p.slug}/`)}>{p.name}</a></li>)}</ul></details></div></li>)}</ul></section>
-  <section id="craft"><h2>Builder craft: performance</h2><ul class="resource-list">
-    <li><div><a href="https://www.instagram.com/p/DdP1ySxAsxT/" target="_blank" rel="noopener"><b>A quick website optimization checklist — video ↗</b></a><p>Compression, lazy loading, debouncing, pagination and measurement. Apply selectively: database advice does not apply to a static site.</p></div></li>
-    <li><div><a href="https://web.dev/articles/optimize-lcp" target="_blank" rel="noopener"><b>Google web.dev: optimize Largest Contentful Paint ↗</b></a><p>Prioritize the main content image; do not delay it with lazy loading.</p></div></li>
-    <li><div><a href="https://web.dev/articles/browser-level-image-lazy-loading" target="_blank" rel="noopener"><b>Google web.dev: browser-level image lazy loading ↗</b></a><p>Defer offscreen images, reserve their dimensions, and let the browser schedule requests.</p></div></li>
-  </ul></section>
+
+  <section id="craft" aria-labelledby="craft-heading">
+    <h2 id="craft-heading">Builder craft</h2>
+    <p class="muted">Outside reading on building and shipping. Apply what fits your project.</p>
+    <ul class="resource-list craft-list">
+      {craft.map(([url, title, note]) => (
+        <li>
+          <a href={url} target="_blank" rel="noopener"><b>{title}</b><span aria-hidden="true"> ↗</span></a>
+          <p>{note}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
 </Layout>
 <style>
-  h1 { margin-top: 16px; } .resource-nav { margin-block: 24px; }
-  section { scroll-margin-top: 140px; } .resource-list { list-style: none; padding: 0; margin: 0; }
-  .resource-list > li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px 30px; border-top: 1px solid var(--line); padding-block: 18px; }
-  .resource-list p { margin: 6px 0 0; max-width: 80ch; color: var(--muted); font-size: .9rem; }
-  summary { cursor: pointer; margin-top: 8px; font-size: .85rem; }
+  h1 { margin-top: 16px; }
+  .intro-actions { margin-block: 24px 8px; gap: 10px; flex-wrap: wrap; }
+  section { scroll-margin-top: 140px; }
+  .event-sources { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); margin-top: 18px; }
+  .event-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; min-width: 0; }
+  .event-card header { margin-bottom: 6px; }
+  .event-card h3 { font-size: 1.02rem; line-height: 1.3; }
+  .event-card h3 a { text-decoration: none; }
+  .resource-list { list-style: none; padding: 0; margin: 0; }
+  .resource-list > li { border-top: 1px solid var(--line); padding-block: 12px; }
+  .event-card .resource-list > li:first-child { border-top: 0; }
+  .source-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+  .kind { border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .72rem; padding: 2px 9px; }
+  .kind[data-kind="official-results"] { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); color: var(--ink); }
+  .resource-list p { margin: 6px 0 0; max-width: 80ch; color: var(--muted); font-size: .88rem; overflow-wrap: anywhere; }
+  .craft-list { margin-top: 12px; }
+  .craft-list > li { padding-block: 16px; }
 </style>
