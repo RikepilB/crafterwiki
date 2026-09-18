@@ -4,51 +4,208 @@ import { corpus, href, T } from '../../lib/data.mjs';
 import { statusLabel, humanize } from '../../lib/labels.mjs';
 import { media } from '../../lib/media.js';
 import { translateInterface } from '../../scripts/language.js';
-import { mergeReferences } from '../../lib/references.mjs';
-import hall from '../../data/hall-of-hacks.json';
-import hallMedia from '../../data/hall-media.json';
-const records=mergeReferences(corpus,hall,media,hallMedia);
-const events=[...new Map(records.map(p=>[p.eventId,p.eventLabel])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));
-const publicCount=records.filter(p=>!p.roster).length;
-const facets=[['status','Placement',T.placement_status],['year','Year',[...new Set(records.map(p=>p.year))].filter(Boolean).sort((a,b)=>b-a).map(y=>({id:String(y)}))],['domain','Domain',T.domains],['mechanism','Mechanism',T.mechanisms],['lens','Judging lens',T.judging_lenses],['kind','Event kind',T.event_kinds]];
+import { mergeReferences, referenceTopics } from '../../lib/references.mjs';
+import editorial from '../../data/hall-of-hacks.json';
+import editorialMedia from '../../data/hall-media.json';
+
+const records=mergeReferences(corpus,editorial,media,editorialMedia);
+const defaultRecords=records.filter(p=>!p.roster);
+const publicCount=defaultRecords.length;
+const topicLabels=new Map(referenceTopics.map(topic=>[topic.id,topic.label]));
+const topics=referenceTopics.map(topic=>({...topic,count:defaultRecords.filter(p=>p.topics.includes(topic.id)).length})).filter(topic=>topic.count);
+const eventMap=new Map();
+for(const record of defaultRecords){
+  const current=eventMap.get(record.eventId) || {id:record.eventId,label:record.eventLabel,year:record.year,count:0};
+  current.count+=1; eventMap.set(record.eventId,current);
+}
+const events=[...eventMap.values()].sort((a,b)=>b.year-a.year||a.label.localeCompare(b.label));
+const eventGroups=[...new Set(events.map(event=>event.year || 'Other'))].map(year=>({year,events:events.filter(event=>(event.year || 'Other')===year)}));
+const facets=[
+  ['year','Year',[...new Set(records.map(p=>p.year))].filter(Boolean).sort((a,b)=>b-a).map(y=>({id:String(y)}))],
+  ['status','Recognition',T.placement_status],
+  ['mechanism','Mechanism',T.mechanisms],
+  ['lens','Judging lens',T.judging_lenses],
+  ['kind','Event kind',T.event_kinds],
+];
 ---
-<Layout title="Projects" description="Explore all CrafterWIKI and Hall of Hacks references in one collection, with demos, code, sources and lessons.">
-  <h1>Projects</h1>
-  <p class="lede" translate="no"><span lang="en">{publicCount} references to study, with demos, code and lessons for your next build.</span><span lang="es">{publicCount} referencias para estudiar, con demos, código y aprendizajes para tu próximo proyecto.</span></p>
-  <details class="coverage-details" translate="no"><summary><span lang="en">About this collection</span><span lang="es">Sobre esta colección</span></summary><p lang="en">CrafterWIKI analysis and 51 Hall of Hacks references, combined with duplicate submissions merged. Additional roster entries are optional. Hall of Hacks awards and lessons remain attributed reports, not independently verified organizer judgments. Source links and original project records are preserved.</p><p lang="es">Análisis de CrafterWIKI y 51 referencias de Hall of Hacks, reunidos sin duplicar propuestas. Puedes incluir otras propuestas del evento. Los premios y aprendizajes de Hall of Hacks son reportes atribuidos, no conclusiones verificadas con los organizadores. Se conservan las fuentes y las fichas originales.</p></details>
-  <form id="explore" class="panel" role="search">
-    <div class="form-row"><label class="field grow">Search<input name="q" type="search" placeholder="Search projects" /></label><label class="field">Event<select name="event"><option value="">Any</option>{events.map(([id,label])=><option value={id}>{label}</option>)}</select></label><button class="btn" type="reset">Clear filters</button></div>
-    <details class="group"><summary>More filters: domain, mechanism, judging lens</summary><div class="form-row advanced-filters">
-      {facets.map(([name,label,options])=><label class="field">{label}<select name={name}><option value="">Any</option>{options.map(o=><option value={o.id}>{o.label || humanize(o.id)}</option>)}</select></label>)}
-      <label class="toggle"><input type="checkbox" name="winners" />Winners &amp; finalists only</label><label class="toggle"><input type="checkbox" name="entries" />Include roster entries</label>
-    </div></details>
-    <p id="count" class="meta" aria-live="polite">{publicCount} results</p>
-  </form>
-  <div class="grid" id="results">
-    {records.map(p=>{const preview=p.variants.at(-1);const local=p.origin==='corpus';const url=local?href(p.url):p.url;return <article class="card reference-card" data-roster={String(p.roster)} data-event={p.eventId} data-year={p.year} data-status={p.status} data-domain={p.domains.join(' ')} data-mechanism={p.mechanisms.join(' ')} data-lens={p.lenses.join(' ')} data-kind={p.event_kind} data-winner={String(local && !!T.placement_status.find(s=>s.id===p.status)?.counts_as_winner)} data-search={`${p.name} ${p.eventLabel} ${p.summary.en} ${p.summary.es || translateInterface(p.summary.en)} ${p.hall?.summary.es || ''} ${p.domains.join(' ')} ${p.mechanisms.join(' ')} ${p.reportedAward || ''}`.toLowerCase()}>
-      {preview && <a class="card-media" href={p.links.video || url} target={p.links.video || !local ? '_blank':undefined} rel="noopener"><img src={href(preview.src)} srcset={p.variants.map(v=>`${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 360px" alt={`${p.name} — original project preview`} width={preview.width} height={preview.height} loading="lazy" decoding="async" /><span>{p.links.video?'▶ Video':'View project ↗'}</span></a>}
-      <p class="meta" translate="no">{p.eventLabel}</p>
-      <h2><a href={url} target={!local?'_blank':undefined} rel="noopener" translate="no">{p.name}</a></h2>
-      {p.summary.es ? <p translate="no"><span lang="en">{p.summary.en}</span><span lang="es">{p.summary.es}</span></p> : <p>{p.summary.en}</p>}
-      <details class="lesson"><summary translate="no"><span lang="en">Recognition &amp; lesson</span><span lang="es">Reconocimiento y aprendizaje</span></summary>
-        {local ? <><p class="award">{statusLabel(p)}</p><p class="meta">CrafterWIKI analysis</p><p>{p.lesson || 'Roster entry · not analyzed'}</p><a href={url}>Read evidence →</a></> : <><p class="award" translate="no">{p.reportedAward}</p><p translate="no"><span lang="en">{p.lesson.en}</span><span lang="es">{p.lesson.es}</span></p></>}
-        {local && p.hall && <p><a href={p.hall.sourceUrl} target="_blank" rel="noopener">Hall of Hacks ↗</a></p>}
+<Layout title="Project explorer" description="Browse hackathon projects by topic or event, then watch demos and inspect the evidence behind each reference.">
+  <header class="projects-intro" translate="no">
+    <p class="catalog-label"><span lang="en">Project explorer</span><span lang="es">Explorador de proyectos</span></p>
+    <h1><span lang="en">Find a build worth studying.</span><span lang="es">Encuentra un proyecto que valga la pena estudiar.</span></h1>
+    <p class="lede"><span lang="en">Browse by topic or hackathon, watch the demos, and keep the useful patterns for your next build.</span><span lang="es">Explora por tema o hackatón, mira las demos y conserva los patrones útiles para tu próximo proyecto.</span></p>
+  </header>
+
+  <form id="explore" class="explorer-layout" role="search">
+    <aside class="explorer-sidebar" aria-label="Browse and filter projects">
+      <details class="filter-drawer" open>
+        <summary translate="no"><span lang="en">Browse &amp; filter</span><span lang="es">Explorar y filtrar</span><span class="filter-total">{publicCount}</span></summary>
+        <div class="drawer-content">
+          <label class="search-field" translate="no"><span lang="en">Search the collection</span><span lang="es">Buscar en la colección</span><input name="q" type="search" placeholder="Project, problem, technology…" /></label>
+
+          <div class="quick-filters" translate="no">
+            <label><input type="checkbox" name="videos" /><span lang="en">With video</span><span lang="es">Con video</span></label>
+            <label><input type="checkbox" name="analyzed" /><span lang="en">Analyzed</span><span lang="es">Analizados</span></label>
+          </div>
+
+          <div class="browse-switch" role="tablist" aria-label="Browse collection by" translate="no">
+            <button type="button" role="tab" aria-selected="true" data-browse-tab="topics"><span lang="en">Topics</span><span lang="es">Temas</span></button>
+            <button type="button" role="tab" aria-selected="false" data-browse-tab="events"><span lang="en">Hackathons</span><span lang="es">Hackatones</span></button>
+          </div>
+
+          <fieldset class="browse-panel" data-browse-panel="topics">
+            <legend class="sr-only">Topics</legend>
+            <label class="browse-option"><input type="radio" name="topic" value="" checked /><span translate="no"><span lang="en">All topics</span><span lang="es">Todos los temas</span></span><b>{publicCount}</b></label>
+            {topics.map(topic=><label class="browse-option"><input type="radio" name="topic" value={topic.id} /><span>{topic.label}</span><b>{topic.count}</b></label>)}
+          </fieldset>
+
+          <fieldset class="browse-panel" data-browse-panel="events" hidden>
+            <legend class="sr-only">Hackathons</legend>
+            <label class="event-search" translate="no"><span lang="en">Find a hackathon</span><span lang="es">Buscar un hackatón</span><input type="search" data-event-search placeholder="Type an event name…" /></label>
+            <div class="event-index">
+              <label class="browse-option"><input type="radio" name="event" value="" checked /><span translate="no"><span lang="en">All hackathons</span><span lang="es">Todos los hackatones</span></span><b>{publicCount}</b></label>
+              {eventGroups.map(group=><section class="event-year" data-event-year>
+                <h2>{group.year}</h2>
+                {group.events.map(event=><label class="browse-option event-option" data-event-label={event.label.toLowerCase()}><input type="radio" name="event" value={event.id} /><span>{event.label.replace(/\s20\d{2}$/,'')}</span><b>{event.count}</b></label>)}
+              </section>)}
+              <p class="event-empty" data-event-empty hidden translate="no"><span lang="en">No hackathon matches that search.</span><span lang="es">Ningún hackatón coincide con la búsqueda.</span></p>
+            </div>
+          </fieldset>
+
+          <details class="refine">
+            <summary translate="no"><span lang="en">Refine results</span><span lang="es">Afinar resultados</span></summary>
+            <div class="refine-fields">
+              {facets.map(([name,label,options])=><label class="field">{label}<select name={name}><option value="">Any</option>{options.map(o=><option value={o.id}>{o.label || humanize(o.id)}</option>)}</select></label>)}
+              <label class="toggle"><input type="checkbox" name="winners" />Winners &amp; finalists only</label>
+              <label class="toggle"><input type="checkbox" name="entries" />Include other submissions</label>
+            </div>
+          </details>
+
+          <button class="clear-sidebar" type="reset" translate="no"><span lang="en">Clear all filters</span><span lang="es">Limpiar todos los filtros</span></button>
+        </div>
       </details>
-      <div class="reference-actions">{p.links.video&&<a href={p.links.video} target="_blank" rel="noopener">Video ↗</a>}{(p.links.devpost||p.links.submission||p.links.project_page)&&<a href={p.links.devpost||p.links.submission||p.links.project_page} target="_blank" rel="noopener">Submission ↗</a>}{p.links.demo&&<a href={p.links.demo} target="_blank" rel="noopener">Live demo ↗</a>}{p.links.repo&&<a href={p.links.repo} target="_blank" rel="noopener">Code ↗</a>}{p.sourceUrl&&<a href={p.sourceUrl} target="_blank" rel="noopener">Source ↗</a>}{local&&<a href={url}>Read reference →</a>}</div>
-    </article>;})}
-  </div>
-  <p id="empty-results" hidden>No matches. Remove a filter or include roster entries.</p>
-  <button id="more-results" class="btn" type="button" hidden>Show 12 more references</button>
+    </aside>
+
+    <section class="results-column" aria-labelledby="results-heading">
+      <div class="results-toolbar">
+        <div>
+          <p class="catalog-label" id="results-heading" translate="no"><span lang="en">References</span><span lang="es">Referencias</span></p>
+          <p id="count" class="result-count" aria-live="polite">{publicCount} results</p>
+        </div>
+        <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+      </div>
+
+      <div class="reference-grid" id="results">
+        {records.map(p=>{const preview=p.variants.at(-1);const local=p.origin==='corpus';const url=local?href(p.url):p.url;return <article class="reference-card" data-roster={String(p.roster)} data-analyzed={String(p.analyzed)} data-video={String(!!p.links.video)} data-event={p.eventId} data-year={p.year} data-status={p.status} data-domain={p.domains.join(' ')} data-topic={p.topics.join(' ')} data-mechanism={p.mechanisms.join(' ')} data-lens={p.lenses.join(' ')} data-kind={p.event_kind} data-winner={String(local && !!T.placement_status.find(s=>s.id===p.status)?.counts_as_winner)} data-search={`${p.name} ${p.eventLabel} ${p.summary.en} ${p.summary.es || translateInterface(p.summary.en)} ${p.editorial?.summary.es || ''} ${p.domains.join(' ')} ${p.mechanisms.join(' ')} ${p.reportedAward || ''}`.toLowerCase()}>
+          {preview && <a class="reference-media" href={p.links.video || url} target={p.links.video || !local ? '_blank':undefined} rel="noopener"><img src={href(preview.src)} srcset={p.variants.map(v=>`${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 340px" alt={`${p.name} — original project preview`} width={preview.width} height={preview.height} loading="lazy" decoding="async" /><span class:list={{video:!!p.links.video}} translate="no">{p.links.video?<><span lang="en">▶ Watch demo</span><span lang="es">▶ Ver demo</span></>:<><span lang="en">Open project ↗</span><span lang="es">Abrir proyecto ↗</span></>}</span></a>}
+          <div class="reference-body">
+            <p class="event-line" translate="no">{p.eventLabel}</p>
+            <h2><a href={url} target={!local?'_blank':undefined} rel="noopener" translate="no">{p.name}</a></h2>
+            <div class="topic-row" aria-label="Topics">{p.topics.slice(0,2).map(topic=><span>{topicLabels.get(topic)}</span>)}</div>
+            {p.summary.es ? <p class="summary" translate="no"><span lang="en">{p.summary.en}</span><span lang="es">{p.summary.es}</span></p> : <p class="summary">{p.summary.en}</p>}
+            <details class="lesson"><summary translate="no"><span lang="en">Why study it</span><span lang="es">Por qué estudiarlo</span></summary>
+              {local ? <><p class="award">{statusLabel(p)}</p><p class="source-kind">CrafterWIKI analysis</p><p>{p.lesson || 'Roster entry · not analyzed'}</p><a href={url}>Read evidence →</a></> : <><p class="award" translate="no">{p.reportedAward}</p><p translate="no"><span lang="en">{p.lesson.en}</span><span lang="es">{p.lesson.es}</span></p></>}
+              {local && p.editorial && <p><a href={p.editorial.sourceUrl} target="_blank" rel="noopener" translate="no"><span lang="en">Editorial source ↗</span><span lang="es">Fuente editorial ↗</span></a></p>}
+            </details>
+            <div class="reference-actions">{p.links.video&&<a class="video-action" href={p.links.video} target="_blank" rel="noopener" translate="no"><span lang="en">Watch video ↗</span><span lang="es">Ver video ↗</span></a>}{(p.links.devpost||p.links.submission||p.links.project_page)&&<a href={p.links.devpost||p.links.submission||p.links.project_page} target="_blank" rel="noopener">Submission ↗</a>}{p.links.demo&&<a href={p.links.demo} target="_blank" rel="noopener">Live demo ↗</a>}{p.links.repo&&<a href={p.links.repo} target="_blank" rel="noopener">Code ↗</a>}{p.sourceUrl&&<a href={p.sourceUrl} target="_blank" rel="noopener">Source ↗</a>}{local&&<a href={url}>Read reference →</a>}</div>
+          </div>
+        </article>;})}
+      </div>
+      <div id="empty-results" class="empty-state" hidden translate="no"><p><span lang="en">No projects match those filters.</span><span lang="es">Ningún proyecto coincide con esos filtros.</span></p><button type="reset"><span lang="en">Start again</span><span lang="es">Empezar de nuevo</span></button></div>
+      <button id="more-results" class="load-more" type="button" hidden translate="no"><span lang="en">Show 18 more references</span><span lang="es">Mostrar 18 referencias más</span></button>
+    </section>
+  </form>
 </Layout>
 <script>
   import { initReferences } from '../../scripts/references.js';
   initReferences();
 </script>
 <style>
-  h1 { margin-top:18px; } .coverage-details { font-size:.85rem; margin-block:18px; } summary { cursor:pointer; }
-  .reference-card h2 { font-size:1.15rem; margin:0; } .reference-card h2 a { text-decoration:none; }
-  .lesson { font-size:.82rem; } .lesson p { margin-top:10px; } .award { color:var(--accent); }
-  #more-results { margin-top:24px; } .coverage-details p { max-width:80ch; margin-top:12px; }
-  .advanced-filters { padding-top:14px; gap:14px; } .advanced-filters .field { flex:1 1 150px; }
+  .projects-intro { max-width:760px; padding:18px 0 30px; }
+  .projects-intro h1 { max-width:14ch; margin:.08em 0 .28em; font-size:clamp(2.5rem,5.8vw,4.65rem); letter-spacing:-.055em; }
+  .catalog-label { color:var(--accent); font-size:.72rem; font-weight:700; letter-spacing:.08em; margin:0 0 8px; text-transform:uppercase; }
+  .explorer-layout { display:grid; grid-template-columns:250px minmax(0,1fr); gap:28px; align-items:start; }
+  .explorer-sidebar { min-width:0; }
+  .filter-drawer { position:sticky; top:18px; }
+  .filter-drawer > summary { display:none; }
+  .drawer-content { display:grid; gap:18px; }
+  .search-field,.event-search { color:var(--muted); display:grid; gap:7px; font-size:.76rem; }
+  .search-field input,.event-search input { min-width:0; background:var(--surface); }
+  .quick-filters { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+  .quick-filters label { border:1px solid var(--line); border-radius:7px; cursor:pointer; display:flex; gap:7px; align-items:center; min-height:38px; padding:7px 9px; font-size:.76rem; }
+  .quick-filters label:has(input:checked) { border-color:var(--accent); color:var(--accent); background:color-mix(in srgb,var(--accent) 8%,var(--surface)); }
+  .quick-filters input,.browse-option input { position:absolute; opacity:0; pointer-events:none; }
+  .browse-switch { background:var(--surface); border:1px solid var(--line); border-radius:8px; display:grid; grid-template-columns:1fr 1fr; padding:3px; }
+  .browse-switch button { background:transparent; border:0; border-radius:5px; color:var(--muted); cursor:pointer; font:600 .78rem var(--sans); min-height:36px; padding:6px; }
+  .browse-switch button[aria-selected=true] { background:var(--surface-2); color:var(--ink); }
+  .browse-panel { border:0; display:grid; gap:2px; margin:0; min-width:0; padding:0; }
+  .browse-option { align-items:center; border-radius:6px; color:var(--muted); cursor:pointer; display:grid; font-size:.78rem; gap:8px; grid-template-columns:minmax(0,1fr) auto; min-height:36px; padding:7px 9px; }
+  .browse-option:hover { background:var(--surface); color:var(--ink); }
+  .browse-option:has(input:checked) { background:var(--surface-2); color:var(--ink); font-weight:650; }
+  .browse-option:has(input:focus-visible) { outline:2px solid var(--accent); outline-offset:1px; }
+  .browse-option span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .browse-option b { color:var(--muted); font-size:.68rem; font-weight:500; }
+  .event-index { max-height:390px; overflow:auto; padding-right:4px; scrollbar-color:var(--line) transparent; }
+  .event-year { margin:15px 0 0; }
+  .event-year h2 { color:var(--muted); font-size:.66rem; letter-spacing:.08em; margin:0 8px 5px; text-transform:uppercase; }
+  .event-option span { white-space:normal; line-height:1.3; }
+  .event-empty { color:var(--muted); font-size:.76rem; padding:8px; }
+  .refine { border-top:1px solid var(--line); padding-top:14px; }
+  .refine > summary { color:var(--ink); cursor:pointer; font-size:.8rem; font-weight:650; }
+  .refine-fields { display:grid; gap:10px; padding-top:13px; }
+  .refine-fields .field { font-size:.7rem; }
+  .refine-fields select { min-width:0; font-size:.78rem; }
+  .refine-fields .toggle { align-items:flex-start; font-size:.76rem; line-height:1.35; }
+  .clear-sidebar { background:transparent; border:0; color:var(--muted); cursor:pointer; font:600 .76rem var(--sans); justify-self:start; padding:0; text-decoration:underline; text-underline-offset:3px; }
+  .results-column { min-width:0; }
+  .results-toolbar { align-items:flex-end; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; margin-bottom:18px; padding:0 2px 13px; }
+  .results-toolbar .catalog-label { margin-bottom:3px; }
+  .result-count { color:var(--muted); font-size:.88rem; margin:0; }
+  .active-filters { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
+  .active-filters button { background:var(--surface); border:1px solid var(--line); border-radius:99px; color:var(--ink); cursor:pointer; font:500 .7rem var(--sans); padding:6px 9px; }
+  .active-filters button:hover { border-color:var(--accent); }
+  .reference-grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(min(100%,255px),1fr)); }
+  .reference-card { background:var(--surface); border:1px solid var(--line); border-radius:10px; min-width:0; overflow:hidden; }
+  .reference-media { aspect-ratio:16/9; background:var(--bg); display:block; overflow:hidden; position:relative; }
+  .reference-media img { display:block; height:100%; object-fit:cover; transition:transform 180ms ease,opacity 180ms ease; width:100%; }
+  .reference-media:hover img { opacity:.88; transform:scale(1.015); }
+  .reference-media > span { background:color-mix(in srgb,var(--bg) 90%,transparent); border:1px solid var(--line); border-radius:5px; bottom:10px; color:var(--ink); font-size:.7rem; font-weight:700; left:10px; padding:6px 9px; position:absolute; }
+  .reference-media > span.video { background:var(--accent); border-color:var(--accent); color:var(--accent-ink); }
+  .reference-body { display:flex; flex-direction:column; gap:10px; min-height:255px; padding:15px; }
+  .event-line { color:var(--muted); font-size:.68rem; line-height:1.35; margin:0; }
+  .reference-card h2 { font-size:1.08rem; margin:0; }
+  .reference-card h2 a { text-decoration:none; }
+  .topic-row { display:flex; flex-wrap:wrap; gap:5px; }
+  .topic-row span { border:1px solid var(--line); border-radius:4px; color:var(--muted); font-size:.62rem; line-height:1; padding:4px 6px; }
+  .summary { display:-webkit-box; font-size:.8rem; line-height:1.52; margin:0; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
+  .lesson { font-size:.76rem; }
+  .lesson summary { color:var(--muted); cursor:pointer; font-weight:600; }
+  .lesson p { margin:8px 0; }
+  .award { color:var(--accent); font-weight:650; }
+  .source-kind { color:var(--muted); }
+  .reference-actions { border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:7px 12px; margin-top:auto; padding-top:11px; }
+  .reference-actions a { font-size:.7rem; font-weight:600; }
+  .reference-actions .video-action { color:var(--accent); }
+  .empty-state { border:1px solid var(--line); border-radius:10px; padding:44px 20px; text-align:center; }
+  .empty-state button,.load-more { background:var(--surface); border:1px solid var(--line); border-radius:8px; color:var(--ink); cursor:pointer; font:650 .82rem var(--sans); padding:10px 14px; }
+  .load-more { display:block; margin:24px auto 0; min-width:220px; }
+  .filter-total { color:var(--muted); margin-left:auto; }
+  .sr-only { height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; clip:rect(0,0,0,0); white-space:nowrap; }
   :global(html[lang='en'] [translate='no'] [lang='es']), :global(html[lang='es'] [translate='no'] [lang='en']) { display:none; }
+  @media (max-width:900px) {
+    .explorer-layout { grid-template-columns:minmax(0,1fr); }
+    .filter-drawer { position:static; }
+    .filter-drawer > summary { align-items:center; background:var(--surface); border:1px solid var(--line); border-radius:8px; cursor:pointer; display:flex; font-size:.84rem; font-weight:650; gap:8px; min-height:46px; padding:10px 13px; }
+    .filter-drawer[open] > summary { border-radius:8px 8px 0 0; }
+    .drawer-content { border:1px solid var(--line); border-top:0; border-radius:0 0 8px 8px; padding:14px; }
+    .event-index { max-height:310px; }
+  }
+  @media (max-width:560px) {
+    .projects-intro { padding-top:6px; }
+    .projects-intro h1 { font-size:2.55rem; }
+    .reference-grid { grid-template-columns:minmax(0,1fr); }
+    .reference-media { aspect-ratio:16/10; }
+    .results-toolbar { align-items:flex-start; }
+    .active-filters { justify-content:flex-start; width:100%; }
+  }
+  @media (prefers-reduced-motion:reduce) { .reference-media img { transition:none; } }
 </style>
