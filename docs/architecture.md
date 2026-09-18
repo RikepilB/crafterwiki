@@ -15,7 +15,10 @@ server or database — deliberately (ADR-001, ADR-005, ADR-007, ADR-008, ADR-009
 
 Audience: hackathon teams and independent builders choosing a useful, feasible idea.
 Primary journey: inspect references → compare approaches → write and download a builder brief.
-Retain the existing warm neutral palette, orange action color, system type and provenance labels.
+Brand (2026-09-18): Space Grotesk (self-hosted) for the wordmark and page titles, Geologica for
+body text; a single-colour orange wordmark; warm black base `#100e0b` with the "Crimson Veil" aura
+behind the landing hero only (layers switch to `multiply` in the light theme). Keep the orange
+action color and the provenance labels.
 Make the homepage a working index: compact search, evidence counts, varied real references and
 a clear planning entry point. No invented win-rate claims, testimonials or decorative imagery.
 The planner uses a focused two-column worksheet on desktop and a single column on mobile;
