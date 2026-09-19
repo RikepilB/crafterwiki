@@ -5,10 +5,10 @@ import { humanize } from '../lib/labels.mjs';
 
 const inUse = (facet, key) => T[facet].filter((v) => used(key).has(v.id));
 const groups = [
-  ['mechanism', 'Winning mechanisms you are betting on', inUse('mechanisms', 'mechanisms')],
-  ['lens', 'Judging lenses you expect', inUse('judging_lenses', 'lenses')],
+  ['mechanism', 'What you are betting on', inUse('mechanisms', 'mechanisms')],
+  ['lens', 'How you expect to be judged', inUse('judging_lenses', 'lenses')],
   ['domain', 'Domains', inUse('domains', 'domains')],
-  ['ai', 'AI patterns', inUse('ai_patterns', 'ai')],
+  ['ai', 'How you use AI', inUse('ai_patterns', 'ai')],
 ];
 const presets = [
   ['Govtech data, impact-minded judges', '?domain=govtech-transparency&lens=impact'],
@@ -21,22 +21,35 @@ const presets = [
 const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
 ---
 <Layout title="Similar situations" description="Find hackathon projects that share your situation — judges, mechanisms, domain, AI use — even with a different problem and stack.">
-  <p class="eyebrow">Pattern match</p>
   <h1>Similar situations</h1>
-  <p class="lede">
-    Different problem, different stack, same situation. Describe yours — the judging lenses you expect, the
-    mechanisms you are betting on, the domain — and see who has been there and how it went.
-  </p>
+  <p class="lede">Find projects that faced the same kind of challenge as yours — the same judges, the same bet, the same domain — even if they built something completely different.</p>
+
+  <section class="how" aria-labelledby="how-heading">
+    <h2 id="how-heading">How it works</h2>
+    <ol class="how-steps">
+      <li><b>Pick a starting point</b><span>Choose an example situation, or a project you already like.</span></li>
+      <li><b>Describe your situation</b><span>Tick the judging criteria you expect and the strategies you are betting on. Hover or tap an option to see what it means.</span></li>
+      <li><b>Read why they match</b><span>Each result lists what it shares with your situation. Open it to see what worked.</span></li>
+    </ol>
+    <div class="row how-actions">
+      <button type="button" class="btn primary" id="try-example">Try an example</button>
+      <button type="button" class="btn" id="start-tour">Take the tour</button>
+    </div>
+  </section>
+
+  <h2 class="step-heading" id="step-1"><span class="step-no" aria-hidden="true">1</span><span>Pick a starting point</span></h2>
   <ul class="chips presets" aria-label="Example situations">
     {presets.map(([label, query]) => <li><a class="chip" href={query}>{label}</a></li>)}
   </ul>
   <form id="similar" class="panel">
-    <label class="field">Start from a project (replaces the facets below)
+    <label class="field">…or start from a project you like
       <select name="to">
         <option value="">— build a profile instead —</option>
         {projects.map((i) => <option value={i.slug}>{i.name} · {i.event}</option>)}
       </select>
     </label>
+    <p class="hint">Choosing a project uses its profile and ignores the options below.</p>
+    <h2 class="step-heading in-form" id="step-2"><span class="step-no" aria-hidden="true">2</span><span>Describe your situation</span></h2>
     {groups.map(([key, label, values], idx) => (
       <details class="group" open={idx < 2}>
         <summary>{label}</summary>
@@ -50,7 +63,8 @@ const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
       <button class="btn primary" type="submit">Find similar situations</button>
     </div>
   </form>
-  <p id="similar-status" class="meta" aria-live="polite">Pick a project, or tick a few facets.</p>
+  <h2 class="step-heading" id="step-3"><span class="step-no" aria-hidden="true">3</span><span>Read why they match</span></h2>
+  <p id="similar-status" class="meta" aria-live="polite">Pick an example or a project, or tick a few options above.</p>
   <div id="similar-results" class="grid results"></div>
   <noscript><p class="callout">This page needs JavaScript. The same query runs offline: <code>crafterwiki similar --mechanism … --lens …</code></p></noscript>
 </Layout>
@@ -61,6 +75,47 @@ const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
 </script>
 
 <style>
-  .presets { margin: 4px 0 6px; }
+  .how { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; margin: 22px 0 8px; padding: 18px 20px; }
+  .how h2 { font-size: 1rem; margin: 0 0 12px; }
+  /* Own class: the global .steps rule (planning guide) positions its counter absolutely. */
+  .how-steps { counter-reset: how; display: grid; gap: 14px 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+  .how-steps li { counter-increment: how; display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: 10px; row-gap: 2px; align-content: start; }
+  .how-steps li::before { content: counter(how); grid-column: 1; grid-row: 1 / span 2; background: var(--accent); color: var(--accent-ink); border-radius: 999px; display: grid; place-items: center; font: 700 .85rem/1 var(--display); height: 26px; width: 26px; }
+  .how-steps b { grid-column: 2; font-size: .95rem; }
+  .how-steps span { grid-column: 2; color: var(--muted); font-size: .86rem; line-height: 1.5; }
+  .how-actions { gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+  .step-heading { align-items: center; display: flex; gap: 10px; font-size: 1.15rem; margin: 30px 0 12px; scroll-margin-top: 90px; }
+  .step-heading.in-form { margin-top: 22px; }
+  .step-no { background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; display: grid; place-items: center; font: 700 .85rem/1 var(--display); height: 28px; width: 28px; flex: none; }
+  .hint { color: var(--muted); font-size: .82rem; margin: 6px 0 0; }
+  .presets { margin: 4px 0 14px; }
   .results { margin-top: 12px; }
+  @media (max-width: 760px) { .how-steps { grid-template-columns: minmax(0, 1fr); } }
+</style>
+
+<style is:global>
+  /* Result explanations and the tour are created by script, so their styles are global. */
+  .sim-match { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+  .sim-match > .card { border-bottom-left-radius: 0; border-bottom-right-radius: 0; flex: 1; }
+  .sim-why { background: var(--surface-2); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 var(--radius) var(--radius); font-size: .82rem; padding: 10px 16px 12px; }
+  .sim-why-title { align-items: baseline; display: flex; flex-wrap: wrap; gap: 6px 12px; justify-content: space-between; margin: 0 0 6px; font-weight: 600; }
+  .sim-overlap { color: var(--muted); font-weight: 500; }
+  .sim-overlap b { color: var(--accent); }
+  .sim-why ul { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
+  .sim-why li { background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; }
+  .sim-facet { color: var(--muted); }
+  .sim-flash { animation: sim-flash 1.4s ease-out; border-radius: 12px; }
+  @keyframes sim-flash { from { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 70%, transparent); } to { box-shadow: 0 0 0 3px transparent; } }
+  @media (prefers-reduced-motion: reduce) { .sim-flash { animation: none; } }
+
+  .cw-tour { background: var(--surface); border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line)); border-radius: 12px; box-shadow: 0 18px 48px rgb(0 0 0 / .35); color: var(--ink); max-width: min(360px, calc(100vw - 24px)); padding: 16px 18px; position: absolute; z-index: 60; }
+  .cw-tour:focus { outline: none; }
+  .cw-tour.cw-tour-sheet { bottom: 12px; left: 12px; max-width: none; position: fixed; right: 12px; }
+  .cw-tour-count { color: var(--muted); font-size: .75rem; margin: 0 0 4px; }
+  .cw-tour-title { font-size: 1.05rem; margin: 0 0 6px; }
+  .cw-tour-body { color: var(--muted); font-size: .9rem; line-height: 1.55; margin: 0 0 14px; }
+  .cw-tour-actions { align-items: center; display: flex; gap: 10px; justify-content: space-between; }
+  .cw-tour-nav { display: flex; gap: 8px; }
+  .cw-tour-skip { background: none; border: 0; color: var(--muted); cursor: pointer; font: inherit; font-size: .85rem; min-height: 44px; padding: 0 4px; text-decoration: underline; }
+  .cw-tour-target { border-radius: 8px; box-shadow: 0 0 0 3px var(--accent); position: relative; z-index: 1; }
 </style>
