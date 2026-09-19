@@ -1,6 +1,6 @@
 // Build-time access to the public corpus for Astro pages (runs in Node during `astro build`).
 import { resolve } from 'node:path';
-import { loadCorpus, publicCorpus, patterns, eventBrief, similar, isWinner, count } from '../../../cli/lib.mjs';
+import { loadCorpus, publicCorpus, patterns, eventBrief, similar, isWinner, count, wilson } from '../../../cli/lib.mjs';
 
 // Resolved from the working directory (web/) because Vite bundles this module away from its source path.
 export const ROOT = resolve(process.cwd(), '..');
@@ -24,4 +24,4 @@ export const used = (key) => new Set(corpus.items.flatMap((i) => i[key] ?? []));
 
 export const sourceHref = (url) => (/^https?:\/\//.test(url) ? url : null);
 
-export { patterns, eventBrief, similar, isWinner, count };
+export { patterns, eventBrief, similar, isWinner, count, wilson };

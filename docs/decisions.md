@@ -4,6 +4,7 @@ Newest first. Full records in `docs/adr/`.
 
 | Date | ADR | Decision |
 |---|---|---|
+| 2026-09-18 | [ADR-011](adr/ADR-011-chartjs-for-patterns-charts.md) | Chart.js 4.5.1 (pinned, `web/` only) draws the `/patterns/` charts; numbers and Wilson 95% ranges are computed at build time; every chart has a table view. |
 | 2026-09-18 | — | Owner decisions: never merge unless every check passed. `main` is protected — CI, Vercel and CodeRabbit must pass on an up-to-date branch, enforced for administrators; no force pushes or deletion. With `main` now containing everything live, merges to `main` deploy production automatically. |
 | 2026-09-18 | — | Brand: Space Grotesk (self-hosted, OFL) for the wordmark and page titles; single-colour orange wordmark; warm black base `#100e0b` with the "Crimson Veil" aura behind the landing hero only. Deploys: the Vercel Git integration builds `web/` through `vercel.json` so pull requests get working previews; automatic production deploys from `main` stay off (`git.deploymentEnabled.main: false`) until `main` contains all live work, including the projects-explorer redesign. Production stays a manual `web/dist` deploy; `.vercelignore` guards the repository root. |
 | 2026-09-16 | — | Owner decisions: publish as a public repository at `github.com/RikepilB/crafterwiki`; MIT for code and CC BY 4.0 for the corpus (LICENSE, LICENSE-DATA); the NASA Space Apps 2026 harness run is published with it. |
