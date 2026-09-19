@@ -7,12 +7,13 @@ const FACETS = ['domain', 'mechanism', 'lens', 'ai'];
 const SHARED_LABEL = { domains: 'Domain', mechanisms: 'Mechanism', lenses: 'Judging lens', ai: 'AI', stack: 'Stack' };
 const EXAMPLE = 'mechanism=visible-engineering-depth&lens=technical-depth';
 
-// "Why it matches": the exact facets a result shares with the profile, plus its overlap score.
+// "Why it matches": the exact facets a result shares with the profile, plus its similarity score.
+// The score is facet overlap plus a small placement bonus, so it is labelled "Similarity", not overlap.
 function why(it) {
   const rows = Object.entries(it.shared ?? {}).flatMap(([facet, values]) =>
     values.map((v) => `<li><span class="sim-facet">${esc(SHARED_LABEL[facet] ?? humanize(facet))}</span> <span>${esc(humanize(v))}</span></li>`));
-  const overlap = Math.min(100, Math.round((it.score ?? 0) * 100));
-  return `<div class="sim-why"><p class="sim-why-title"><span>Why it matches</span> <span class="sim-overlap"><span>Overlap</span> <b>${overlap}%</b></span></p><ul>${rows.join('')}</ul></div>`;
+  const similarity = Math.min(100, Math.round((it.score ?? 0) * 100));
+  return `<div class="sim-why"><p class="sim-why-title"><span>Why it matches</span> <span class="sim-overlap"><span>Similarity</span> <b>${similarity}%</b></span></p><ul>${rows.join('')}</ul></div>`;
 }
 
 export async function initSimilar() {
@@ -27,7 +28,7 @@ export async function initSimilar() {
       { target: '.presets', title: 'Start from an example', body: 'These are common hackathon situations. Pick one to see how matching works.' },
       { target: 'select[name="to"]', title: 'Or start from a project', body: 'Choose a project you like, and CrafterWIKI uses its profile to find others like it.' },
       { target: '#similar .group', title: 'Describe your situation', body: 'Tick the judging criteria you expect and the strategies you are betting on. Hover or tap an option for its definition.' },
-      { target: '#step-3', title: 'Read why they match', body: 'Results are ranked by overlap with your situation, and each one lists exactly what it shares.' },
+      { target: '#step-3', title: 'Read why they match', body: 'Results are ranked by how similar they are to your situation, and each one lists exactly what it shares.' },
     ],
   });
   document.querySelector('#start-tour')?.addEventListener('click', () => tour.start());
