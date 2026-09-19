@@ -52,6 +52,7 @@ const ES = {
   'Bar chart: share of winners per kind of event for each category. The same numbers are in the table below.': 'Gráfico de barras: porcentaje de ganadores por tipo de evento en cada categoría. Las mismas cifras están en la tabla de abajo.',
   'Bar chart: share of winners per kind of event. The same numbers are in the table below.': 'Gráfico de barras: porcentaje de ganadores por tipo de evento. Las mismas cifras están en la tabla de abajo.',
   '— too few winners to chart; shown here only.': '— muy pocos ganadores para graficar; solo aparece aquí.',
+  '— the charts show the four kinds with the most winners; shown here only.': '— los gráficos muestran los cuatro tipos con más ganadores; solo aparece aquí.',
   'AI and hardware among winners': 'IA y hardware entre los ganadores', 'No AI in the product': 'Sin IA en el producto', 'Custom hardware': 'Hardware propio',
   'Does winning take AI or a physical build? It depends on the event.': '¿Hace falta IA o un objeto físico para ganar? Depende del evento.',
   "Share of the kind's winners": 'Porcentaje de ganadores del tipo',

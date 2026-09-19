@@ -20,11 +20,17 @@ const kinds = T.event_kinds
   .map((k) => ({ id: k.id, definition: k.definition, list: winners.filter((w) => w.event_kind === k.id), events: corpus.hackathons.filter((h) => h.kind === k.id) }))
   .filter((k) => k.events.length);
 const withWinners = kinds.filter((k) => k.list.length).sort((a, b) => b.list.length - a.list.length);
-const charted = withWinners.filter((k) => k.list.length >= MIN_N);
+// The styles below define four validated colours (--series-1…4). A fifth charted kind would need a new,
+// validated colour — never a generated one — so any kind past the fourth is tabled instead.
+const SLOTS = 4;
+const chartable = withWinners.filter((k) => k.list.length >= MIN_N);
+const charted = chartable.slice(0, SLOTS);
+const overflow = chartable.slice(SLOTS);
 const notCharted = withWinners.filter((k) => k.list.length < MIN_N);
 const without = kinds.filter((k) => !k.list.length);
-let nextSlot = Math.max(...Object.values(SLOT)) + 1;
-const slotOf = Object.fromEntries(charted.map((k) => [k.id, SLOT[k.id] ?? nextSlot++]));
+// Fixed kinds keep their colour; any other charted kind takes a colour no charted fixed kind uses.
+const free = Array.from({ length: SLOTS }, (_, i) => i + 1).filter((s) => !charted.some((k) => SLOT[k.id] === s));
+const slotOf = Object.fromEntries(charted.map((k) => [k.id, SLOT[k.id] ?? free.shift()]));
 
 // Categories: each charted kind's four most common values, ordered by how common they are overall.
 const categories = (key) => {
@@ -114,6 +120,7 @@ const HOLDOUT = 'https://github.com/RikepilB/crafterwiki/blob/main/docs/research
           </table>
         </div>
         {vi === 0 && notCharted.length > 0 && <p class="meta">{notCharted.map((k) => `${humanize(k.id)} (n = ${k.list.length})`).join(', ')} <span>— too few winners to chart; shown here only.</span></p>}
+        {vi === 0 && overflow.length > 0 && <p class="meta">{overflow.map((k) => `${humanize(k.id)} (n = ${k.list.length})`).join(', ')} <span>— the charts show the four kinds with the most winners; shown here only.</span></p>}
       </details>
     ))}
   </section>
