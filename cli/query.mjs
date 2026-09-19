@@ -269,6 +269,19 @@ export function similar(corpus, opts = {}) {
   return out.sort((a, b) => b.score - a.score || a.name.localeCompare(b.name)).slice(0, Number(opts.limit ?? 5));
 }
 
+// Wilson score interval (95% by default) for a share of a small sample: 4 winners of 6 is "67%, but
+// plausibly anywhere from 30% to 90%". Unlike the textbook interval it stays inside [0, 1] and is
+// usable at n < 10, which is most of this corpus.
+export function wilson(successes, n, z = 1.96) {
+  if (!n) return { p: 0, lo: 0, hi: 0 };
+  const p = successes / n;
+  const z2 = z * z;
+  const denom = 1 + z2 / n;
+  const centre = (p + z2 / (2 * n)) / denom;
+  const half = (z * Math.sqrt((p * (1 - p)) / n + z2 / (4 * n * n))) / denom;
+  return { p, lo: Math.max(0, centre - half), hi: Math.min(1, centre + half) };
+}
+
 export function count(values) {
   const m = new Map();
   for (const v of values) m.set(v, (m.get(v) ?? 0) + 1);

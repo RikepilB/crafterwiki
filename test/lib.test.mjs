@@ -4,7 +4,7 @@ import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
-  ROOT, loadCorpus, validate, search, similar, patterns, eventBrief, deal, build, isWinner, buildItems, publicCorpus,
+  ROOT, loadCorpus, validate, search, similar, patterns, eventBrief, deal, build, isWinner, buildItems, publicCorpus, wilson,
 } from '../cli/lib.mjs';
 
 const corpus = loadCorpus();
@@ -144,6 +144,21 @@ test('build emits a static API', () => {
     assert.equal(index.items.length, pub.items.length);
     assert.ok(!('text' in index.items[0]));
   });
+});
+
+test('wilson gives honest 95% bounds for small samples', () => {
+  const round = ({ p, lo, hi }) => [p, lo, hi].map((x) => Math.round(x * 1000) / 1000);
+  // 4 of 6: the worked example on /patterns/.
+  assert.deepEqual(round(wilson(4, 6)), [0.667, 0.3, 0.903]);
+  // Bounds stay inside [0, 1] at the extremes, where the normal approximation would not.
+  assert.deepEqual(round(wilson(0, 6)), [0, 0, 0.39]);
+  assert.deepEqual(round(wilson(6, 6)), [1, 0.61, 1]);
+  // Larger samples tighten the range around the same share.
+  const small = wilson(2, 4);
+  const large = wilson(50, 100);
+  assert.ok(large.hi - large.lo < small.hi - small.lo);
+  // No sample, no claim.
+  assert.deepEqual(wilson(0, 0), { p: 0, lo: 0, hi: 0 });
 });
 
 test('query module stays browser-safe (no Node built-ins)', () => {
