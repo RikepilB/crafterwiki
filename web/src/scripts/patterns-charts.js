@@ -21,6 +21,26 @@ const rgb = (hex) => {
 const mix = (a, b, weight) => `rgb(${rgb(a).map((x, i) => Math.round(x * weight + rgb(b)[i] * (1 - weight))).join(',')})`;
 const alpha = (a, value) => `rgba(${rgb(a).join(',')},${value})`;
 
+// Long category names (especially in Spanish) would be clipped at the left edge of a narrow canvas;
+// Chart.js draws an array label as several lines, so wrap them on small screens.
+const narrowChart = (canvas) => (canvas.parentElement?.clientWidth ?? 600) < 520;
+function wrap(text, max) {
+  if (text.length <= max) return text;
+  const lines = [];
+  let line = '';
+  for (const word of text.split(' ')) {
+    if (line && `${line} ${word}`.length > max) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = line ? `${line} ${word}` : word;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+const axisLabel = (canvas, text) => wrap(tr(text), narrowChart(canvas) ? 16 : 44);
+
 function palette(root) {
   const ink = cssVar(root, '--ink') || '#f0efea';
   const bg = cssVar(root, '--bg') || '#100e0b';
@@ -97,7 +117,7 @@ function winsChart(canvas, data, view, pal) {
   return new Chart(canvas, {
     type: 'bar',
     data: {
-      labels: rows.map((r) => tr(r.label)),
+      labels: rows.map((r) => axisLabel(canvas, r.label)),
       datasets: data.kinds.map((kind, k) => ({
         label: tr(kind.label),
         data: rows.map((r) => r.cells[k].p),
@@ -132,7 +152,7 @@ function traitChart(canvas, data, trait, pal) {
   return new Chart(canvas, {
     type: 'bar',
     data: {
-      labels: data.kinds.map((kind) => tr(kind.label)),
+      labels: data.kinds.map((kind) => axisLabel(canvas, kind.label)),
       datasets: [{
         data: trait.cells.map((c) => c.p),
         ranges: trait.cells.map((c) => [c.lo, c.hi]),
@@ -150,7 +170,8 @@ function traitChart(canvas, data, trait, pal) {
         ...base.plugins,
         tooltip: {
           callbacks: {
-            label: (ctx) => tooltipLine(ctx.label, {
+            // The axis label may be wrapped into lines; name the kind from the data instead.
+            label: (ctx) => tooltipLine(tr(data.kinds[ctx.dataIndex].label), {
               value: ctx.parsed.x, counts: ctx.dataset.counts[ctx.dataIndex], range: ctx.dataset.ranges[ctx.dataIndex],
             }),
           },
@@ -198,6 +219,16 @@ export function initPatternCharts() {
   showTable();
   render();
   document.fonts?.ready.then(render);
+  // Re-wrap axis labels only when the layout crosses the narrow breakpoint, not on every resize.
+  let narrow = narrowChart(document.querySelector('#chart-wins') ?? root);
+  let timer;
+  addEventListener('resize', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const now = narrowChart(document.querySelector('#chart-wins') ?? root);
+      if (now !== narrow) { narrow = now; render(); }
+    }, 150);
+  });
   new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   addEventListener('crafter-language-applied', render);
 }
