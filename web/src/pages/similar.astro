@@ -26,7 +26,7 @@ const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
 
   <section class="how" aria-labelledby="how-heading">
     <h2 id="how-heading">How it works</h2>
-    <ol class="steps">
+    <ol class="how-steps">
       <li><b>Pick a starting point</b><span>Choose an example situation, or a project you already like.</span></li>
       <li><b>Describe your situation</b><span>Tick the judging criteria you expect and the strategies you are betting on. Hover or tap an option to see what it means.</span></li>
       <li><b>Read why they match</b><span>Each result lists what it shares with your situation. Open it to see what worked.</span></li>
@@ -77,11 +77,12 @@ const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
 <style>
   .how { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; margin: 22px 0 8px; padding: 18px 20px; }
   .how h2 { font-size: 1rem; margin: 0 0 12px; }
-  .steps { counter-reset: step; display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
-  .steps li { counter-increment: step; display: grid; gap: 4px; grid-template-columns: auto 1fr; column-gap: 10px; }
-  .steps li::before { content: counter(step); grid-row: span 2; background: var(--accent); color: var(--accent-ink); border-radius: 999px; display: grid; place-items: center; font: 700 .85rem/1 var(--display); height: 26px; width: 26px; }
-  .steps b { font-size: .95rem; }
-  .steps span { color: var(--muted); font-size: .86rem; line-height: 1.5; }
+  /* Own class: the global .steps rule (planning guide) positions its counter absolutely. */
+  .how-steps { counter-reset: how; display: grid; gap: 14px 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+  .how-steps li { counter-increment: how; display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: 10px; row-gap: 2px; align-content: start; }
+  .how-steps li::before { content: counter(how); grid-column: 1; grid-row: 1 / span 2; background: var(--accent); color: var(--accent-ink); border-radius: 999px; display: grid; place-items: center; font: 700 .85rem/1 var(--display); height: 26px; width: 26px; }
+  .how-steps b { grid-column: 2; font-size: .95rem; }
+  .how-steps span { grid-column: 2; color: var(--muted); font-size: .86rem; line-height: 1.5; }
   .how-actions { gap: 10px; flex-wrap: wrap; margin-top: 16px; }
   .step-heading { align-items: center; display: flex; gap: 10px; font-size: 1.15rem; margin: 30px 0 12px; scroll-margin-top: 90px; }
   .step-heading.in-form { margin-top: 22px; }
@@ -89,7 +90,7 @@ const projects = [...analyzed].sort((a, b) => a.name.localeCompare(b.name));
   .hint { color: var(--muted); font-size: .82rem; margin: 6px 0 0; }
   .presets { margin: 4px 0 14px; }
   .results { margin-top: 12px; }
-  @media (max-width: 760px) { .steps { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 760px) { .how-steps { grid-template-columns: minmax(0, 1fr); } }
 </style>
 
 <style is:global>
