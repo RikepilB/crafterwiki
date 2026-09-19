@@ -60,7 +60,9 @@ export async function initSimilar() {
     history.replaceState(null, '', qs.toString() ? `?${qs}` : location.pathname);
     try {
       const results = similar(c, opts);
-      out.innerHTML = results.map((it) => `<div class="sim-match">${cardHTML(it, BASE)}${why(it)}</div>`).join('');
+      // cardHTML prints its own raw "Shared:" line when `shared` is present; the "Why it matches"
+      // panel shows the same facets translated and with the score, so the card gets it without them.
+      out.innerHTML = results.map((it) => `<div class="sim-match">${cardHTML({ ...it, shared: undefined }, BASE)}${why(it)}</div>`).join('');
       status.textContent = results.length
         ? `${results.length} similar situation${results.length === 1 ? '' : 's'}, ranked by weighted facet overlap (domains and mechanisms count most), then placement.`
         : 'Nothing in the corpus overlaps that profile yet.';
