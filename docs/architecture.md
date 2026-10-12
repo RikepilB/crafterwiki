@@ -21,13 +21,15 @@ reference titles; Source Sans 3 for reading, navigation and controls; a system m
 for code. Fonts, OFL licences, source URLs and SHA-256 hashes live in `web/public/fonts/`; the
 browser never calls a font service. A single-colour orange wordmark; orange stays with actions and
 provenance accents. The landing hero keeps its original 1140px frame (1.1:1 columns, search left,
-the Connected Earth Museum demo card right, three selected references below) over a black
-constellation sky: a decorative, `aria-hidden`, noninteractive SVG with fixed star positions, a
-glint that stops within four seconds and none under reduced motion. The hero stays dark in both
-themes; other surfaces follow the theme. Link previews use `/og-stellar-atlas-20260930.jpg`.
+the Connected Earth Museum demo card right) and combines two layers: the "Crimson Veil" aura
+(hard-light/soft-light on black, `multiply` on the light paper) and, above it, a constellation
+sky — a decorative, `aria-hidden`, noninteractive SVG with fixed star positions, a glint that stops
+within four seconds and none under reduced motion. The same sky, fainter, fills the page margins;
+stars turn dark in the light theme. Link previews use `/og-stellar-atlas-20260930.jpg`.
 Make the homepage a working index: compact search, evidence counts, varied real references and
-a clear planning entry point. No invented win-rate claims or testimonials; the star field is the
-only decoration.
+a clear planning entry point. The three selected references under the Space Apps feature come
+from other events, topics and kinds of build. No invented win-rate claims or testimonials.
+English is the default language for every visitor; Spanish applies only after someone picks it.
 The planner uses a focused two-column worksheet on desktop and a single column on mobile;
 the output is a downloadable Markdown brief. Inputs stay in page memory, with no automatic
 storage or transmission. No accounts, analytics, external AI calls or new dependencies.

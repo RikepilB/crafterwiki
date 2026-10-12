@@ -1,16 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ConstellationSky from '../components/ConstellationSky.astro';
-import { corpus, base, href } from '../lib/data.mjs';
-import { cardHTML } from '../lib/labels.mjs';
+import { corpus, href } from '../lib/data.mjs';
 import { media } from '../lib/media.js';
-const picks = ['quenaris', 'pureflow', 'resonant-exoplanets'].map((slug) => corpus.items.find((p) => p.slug === slug)).filter(Boolean);
+import editorial from '../data/hall-of-hacks.json';
+import editorialMedia from '../data/hall-media.json';
+// The feature above is a NASA Space Apps project; the picks below come from other events, topics
+// and kinds of build so the first screen does not read as a Space Apps site.
+const picks = ['dial-4rqzc3', 'raising-cane', 'rehabify-y2f5mu'].map((slug) => {
+  const p = editorial.find((e) => e.slug === slug);
+  const variants = editorialMedia[slug]?.variants ?? [];
+  return p && variants.length ? { ...p, variants, eventLabel: p.event.split(' · ').slice(0, 2).join(' · ') } : null;
+}).filter(Boolean);
 const featured = corpus.items.find((p) => p.slug === 'connected-earth-museum');
 const preview = media[featured.slug];
 ---
 <Layout bodyClass="home-sky">
   <ConstellationSky slot="background" />
   <div class="hero-shell">
+    <div class="aura-layer aura-hard" aria-hidden="true"></div>
+    <div class="aura-layer aura-soft" aria-hidden="true"></div>
     <ConstellationSky embedded />
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-copy">
@@ -38,18 +47,48 @@ const preview = media[featured.slug];
   </div>
   <section aria-labelledby="selected-heading">
     <div class="section-heading"><h2 id="selected-heading">Selected references</h2><a href={href('/projects/')}>View all projects →</a></div>
-    <div class="grid" set:html={picks.map((p) => cardHTML(p, base)).join('')} />
+    <div class="grid">
+      {picks.map((p) => (
+        <article class="card has-media">
+          <a class="card-media" href={p.links.video ?? p.links.devpost} target="_blank" rel="noopener" aria-label={`Watch ${p.name} demo`}>
+            <img src={href(p.variants.at(-1).src)} srcset={p.variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 360px" alt={`${p.name} — original project preview`} width={p.variants.at(-1).width} height={p.variants.at(-1).height} loading="lazy" decoding="async" />
+            <span>▶ Video</span>
+          </a>
+          <p class="meta">{p.reportedAward} · {p.eventLabel}</p>
+          <h3><a href={p.links.devpost} target="_blank" rel="noopener">{p.name} ↗</a></h3>
+          <p translate="no"><span lang="en">{p.summary.en}</span><span lang="es">{p.summary.es}</span></p>
+        </article>
+      ))}
+    </div>
   </section>
 </Layout>
 <style>
   :global(body.home-sky) { --bg: #060809; isolation: isolate; position: relative; }
   :global(:root[data-theme=light] body.home-sky) { --bg: #f8f5ef; }
+  :global(html[lang='en'] [translate='no'] [lang='es']), :global(html[lang='es'] [translate='no'] [lang='en']) { display: none; }
   .hero-shell {
     --bg: #060809; --ink: #f0efea; --muted: #c3c5c2; --accent: #ff8845; --accent-ink: #100e0b;
-    --surface: #141716; --surface-2: #1d211f; --line: #414540;
+    --surface: #141716; --surface-2: #1d211f; --line: #414540; --placeholder: #aeb4ae;
     position: relative; isolation: isolate; overflow: hidden; border-radius: 24px;
     margin-bottom: 48px; background: var(--bg); color: var(--ink); color-scheme: dark;
   }
+  :global(:root[data-theme=light]) .hero-shell {
+    --bg: #f6f4ee; --ink: #202420; --accent: #b44822; --accent-ink: #f6f4ee;
+    --muted: color-mix(in srgb, var(--ink) 74%, var(--bg)); --surface: color-mix(in srgb, var(--bg) 96%, var(--ink));
+    --surface-2: color-mix(in srgb, var(--bg) 92%, var(--ink)); --line: color-mix(in srgb, var(--ink) 20%, transparent);
+    --placeholder: var(--muted); color-scheme: light;
+  }
+  /* The "Crimson Veil" aura under the star field. Layers start below the headline so the brightest
+     bands sit in the open space under the copy; they blend against the hero backing, not the page. */
+  .aura-layer { position: absolute; inset: 22% 0 0 0; z-index: 0; pointer-events: none; transform: translateZ(0);
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(220,38,38,.9) 40%, rgb(255,255,255) 70%, rgb(251,146,60) 82%, rgb(250,204,21) 100%); }
+  .aura-hard { mix-blend-mode: hard-light; filter: blur(63px); opacity: .6; }
+  .aura-soft { mix-blend-mode: soft-light; filter: blur(88px); opacity: .9; }
+  @media (min-width: 861px) { .aura-hard { filter: blur(90px); } .aura-soft { filter: blur(126px); } }
+  /* hard-light and soft-light wash out over a light surface; multiply keeps the same hues. */
+  :global(:root[data-theme=light]) .aura-layer { mix-blend-mode: multiply; }
+  :global(:root[data-theme=light]) .aura-hard { opacity: .3; }
+  :global(:root[data-theme=light]) .aura-soft { opacity: .45; }
   .section-heading h2, .feature-copy h2 { font-family: var(--display); letter-spacing: -.03em; }
   .hero { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 64px; padding: 40px clamp(20px, 4vw, 48px) clamp(96px, 14vw, 180px); }
   .hero-copy { min-width: 0; }
@@ -59,11 +98,11 @@ const preview = media[featured.slug];
   .search-label { display: block; font-size: .82rem; margin-bottom: 8px; color: var(--muted); }
   .search-line { display: flex; gap: 10px; }
   .search-line input { flex: 1; min-width: 0; min-height: 44px; background: var(--surface); }
-  .search-line input::placeholder { color: #aeb4ae; opacity: 1; }
+  .search-line input::placeholder { color: var(--placeholder); opacity: 1; }
   .search-line .btn { min-height: 44px; }
   .brief-link { display: inline-block; font-size: .82rem; margin-top: 20px; }
   .hero-feature { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; box-shadow: 10px 12px 0 var(--surface-2); overflow: hidden; }
-  .feature-image { position: relative; display: block; aspect-ratio: 4/3; background: var(--bg); }
+  .feature-image { position: relative; display: block; aspect-ratio: 4/3; background: #000; }
   .feature-image img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .feature-image span { position: absolute; bottom: 14px; left: 18px; background: var(--bg); color: var(--ink); padding: 10px 12px; border-radius: 4px; font-size: .82rem; }
   .feature-copy { padding: 24px; }
@@ -74,6 +113,7 @@ const preview = media[featured.slug];
   .section-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-bottom: 24px; }
   .section-heading h2 { font-size: 1.4rem; margin: 0; font-weight: 600; }
   .section-heading a { font-size: .87rem; }
+  .card h3 a { text-decoration: none; }
   @media (max-width: 860px) {
     .hero-shell { margin-bottom: 36px; }
     .hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 28px 20px 52px; }

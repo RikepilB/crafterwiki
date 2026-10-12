@@ -48,12 +48,13 @@ const nodes = [[50, 230], [119, 175], [188, 254], [148, 353], [75, 415],
   .star-halo { opacity: .08; }
   .star-glints { fill: none; stroke: #fff0c9; stroke-width: .8; opacity: .65; animation: star-arrive 4s ease-in-out; }
   @keyframes star-arrive { 0%, 100% { opacity: .65; } 35% { opacity: .2; } 65% { opacity: 1; } }
+  /* Light theme: the page margins fade the sky; the hero is light too, so its stars turn dark. */
   :global(:root[data-theme=light]) .constellation-sky:not(.embedded) { opacity: .55; }
-  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .white { fill: #62584b; }
-  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .gold { fill: #9a6924; }
-  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .orange { fill: #b54b14; }
-  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .constellation-lines { stroke: #8c693a; opacity: .35; }
-  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .star-glints { stroke: #8c693a; }
+  :global(:root[data-theme=light]) .constellation-sky .white { fill: #62584b; }
+  :global(:root[data-theme=light]) .constellation-sky .gold { fill: #9a6924; }
+  :global(:root[data-theme=light]) .constellation-sky .orange { fill: #b54b14; }
+  :global(:root[data-theme=light]) .constellation-sky .constellation-lines { stroke: #8c693a; opacity: .35; }
+  :global(:root[data-theme=light]) .constellation-sky .star-glints { stroke: #8c693a; }
   @media (max-width: 860px) {
     .constellation-sky svg { min-width: 800px; transform: translateX(calc((100vw - 800px) / 2)); opacity: .7; }
     .embedded svg { min-width: 0; transform: none; opacity: 1; }

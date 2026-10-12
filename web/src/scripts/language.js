@@ -343,7 +343,8 @@ export function translateInterface(value) {
 export function initLanguage() {
   if (window.__crafterLanguageInitialized) return;
   window.__crafterLanguageInitialized = true;
-  let language = navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en';
+  // English is the default for every visitor; Spanish only once someone picks it in the switcher.
+  let language = 'en';
   try { const saved = localStorage.getItem('cw-language'); if (saved === 'en' || saved === 'es') language = saved; } catch { /* Private mode can disable storage. */ }
   const originals = new WeakMap();
   const attributes = new WeakMap();
