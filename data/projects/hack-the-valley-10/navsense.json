@@ -1,0 +1,34 @@
+{
+  "slug": "navsense",
+  "name": "NavSense",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Smart gloves that turn walking directions into vibration patterns, with a voice agent for planning and siren alerts.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["3rd Place Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Spoken directions compete with street noise and screens pull eyes off the path, which is risky for blind, low-vision, Deaf and hard-of-hearing pedestrians.",
+  "solution": "Two gloves with microcontrollers connect over Bluetooth Low Energy to a mobile app that fetches a route, splits it into steps and assigns each manoeuvre a distinct vibration pattern with consistent timing. A voice agent handles destination, travel mode and rerouting; an on-device audio model detects sirens and tells the wearer to pause.",
+  "demo_moment": "Team-described: a turn arrives as a vibration in the left or right hand, and a siren nearby makes both gloves signal stop.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["esp32", "ble", "react-native", "typescript", "google-maps-directions-api", "elevenlabs", "gemini", "tensorflow-lite"],
+    "ai_patterns": ["voice-ai", "llm-api", "ml-model"]
+  },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Took third place overall among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Serves two groups with one device: people who cannot rely on sight and people who cannot rely on sound.", "basis": "team-stated", "source": 0 },
+      { "claim": "Adds a safety layer beyond navigation: siren detection pauses the route.", "basis": "team-stated", "source": 0 },
+      { "claim": "Wearable hardware that judges can put on makes the accessibility claim tangible.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "dual-use-value", "visible-engineering-depth"],
+    "judging_lens": ["impact", "technical-depth", "design-ux"],
+    "lessons": ["An accessibility device that judges can wear turns empathy into a demo."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/navsense-jp2e7z", "repo": "https://github.com/Ibrahimkasiim1/HackthevalleyX", "demo": null, "video": "https://www.youtube.com/watch?v=W1nBMJ7L99Q" },
+  "sources": [
+    { "url": "https://devpost.com/software/navsense-jp2e7z", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}
