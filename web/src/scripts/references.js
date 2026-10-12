@@ -2,7 +2,8 @@ export function initReferences() {
   const form=document.querySelector('#explore');
   if (!(form instanceof HTMLFormElement)) return;
 
-  const cards=[...document.querySelectorAll('.reference-card')];
+  let cards=[...document.querySelectorAll('.reference-card')];
+  const grid=document.querySelector('#results');
   const count=document.querySelector('#count');
   const more=document.querySelector('#more-results');
   const empty=document.querySelector('#empty-results');
@@ -33,6 +34,21 @@ export function initReferences() {
   let limit=18;
   let timer;
 
+  // Roster cards are a separate static fragment, fetched the first time other submissions are included,
+  // then slotted back into explorer order.
+  let roster;
+  let rosterReady=false;
+  const loadRoster=()=>roster??=fetch(grid.dataset.rosterSrc).then(response=>{
+    if(!response.ok)throw new Error(`roster ${response.status}`);
+    return response.text();
+  }).then(html=>{
+    const extra=[...new DOMParser().parseFromString(html,'text/html').querySelectorAll('.reference-card')].map(card=>document.importNode(card,true));
+    extra.forEach(card=>card.hidden=true);
+    cards=[...cards,...extra].sort((a,b)=>Number(a.dataset.order)-Number(b.dataset.order));
+    grid.append(...cards);
+    rosterReady=true;
+  }).catch(error=>{roster=undefined;throw error;});
+
   const filterLabel=(key,value)=>{
     if(key==='q')return `“${value}”`;
     const item=control(key);
@@ -62,6 +78,7 @@ export function initReferences() {
 
   const render=()=>{
     const data=new FormData(form);
+    if(data.get('entries')&&!rosterReady&&grid?.dataset.rosterSrc)loadRoster().then(render,error=>console.error(error));
     const terms=normalize(data.get('q') || '').trim().split(/\s+/).filter(Boolean);
     const matches=cards.filter(card=>{
       if(card.dataset.roster==='true'&&!data.get('entries'))return false;

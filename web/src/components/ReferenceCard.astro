@@ -1,0 +1,51 @@
+---
+// One reference card for the project explorer. The explorer page and the on-demand roster fragment
+// both render it, so the two never drift apart.
+import { href, T } from '../lib/data.mjs';
+import { statusLabel } from '../lib/labels.mjs';
+import { translateInterface } from '../scripts/language.js';
+import { referenceTopics } from '../lib/references.mjs';
+
+const { p, order } = Astro.props;
+const topicLabels=new Map(referenceTopics.map(topic=>[topic.id,topic.label]));
+const preview=p.variants.at(-1);const local=p.origin==='corpus';const url=local?href(p.url):p.url;
+---
+<article class="reference-card" data-order={order} data-roster={String(p.roster)} data-analyzed={String(p.analyzed)} data-video={String(!!p.links.video)} data-event={p.eventId} data-year={p.year} data-status={p.status} data-domain={p.domains.join(' ')} data-topic={p.topics.join(' ')} data-mechanism={p.mechanisms.join(' ')} data-lens={p.lenses.join(' ')} data-kind={p.event_kind} data-winner={String(local && !!T.placement_status.find(s=>s.id===p.status)?.counts_as_winner)} data-search={`${p.name} ${p.eventLabel} ${p.summary.en} ${p.summary.es || translateInterface(p.summary.en)} ${p.editorial?.summary.es || ''} ${p.domains.join(' ')} ${p.mechanisms.join(' ')} ${p.reportedAward || ''}`.toLowerCase()}>
+  {preview && <a class="reference-media" href={p.links.video || url} target={p.links.video || !local ? '_blank':undefined} rel="noopener"><img src={href(preview.src)} srcset={p.variants.map(v=>`${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 680px) calc(100vw - 40px), 340px" alt={`${p.name} — original project preview`} width={preview.width} height={preview.height} loading="lazy" decoding="async" /><span class:list={{video:!!p.links.video}} translate="no">{p.links.video?<><span lang="en">▶ Watch demo</span><span lang="es">▶ Ver demo</span></>:<><span lang="en">Open project ↗</span><span lang="es">Abrir proyecto ↗</span></>}</span></a>}
+  <div class="reference-body">
+    <p class="event-line" translate="no">{p.eventLabel}</p>
+    <h2><a href={url} target={!local?'_blank':undefined} rel="noopener" translate="no">{p.name}</a></h2>
+    <div class="topic-row" aria-label="Topics">{p.topics.slice(0,2).map(topic=><span>{topicLabels.get(topic)}</span>)}</div>
+    {p.summary.es ? <p class="summary" translate="no"><span lang="en">{p.summary.en}</span><span lang="es">{p.summary.es}</span></p> : <p class="summary">{p.summary.en}</p>}
+    <details class="lesson"><summary translate="no"><span lang="en">Why study it</span><span lang="es">Por qué estudiarlo</span></summary>
+      {local ? <><p class="award">{statusLabel(p)}</p><p class="source-kind">CrafterWIKI analysis</p><p>{p.lesson || 'Roster entry · not analyzed'}</p><a href={url}>Read evidence →</a></> : <><p class="award" translate="no">{p.reportedAward}</p><p translate="no"><span lang="en">{p.lesson.en}</span><span lang="es">{p.lesson.es}</span></p></>}
+      {local && p.editorial && <p><a href={p.editorial.sourceUrl} target="_blank" rel="noopener" translate="no"><span lang="en">Editorial source ↗</span><span lang="es">Fuente editorial ↗</span></a></p>}
+    </details>
+    <div class="reference-actions">{p.links.video&&<a class="video-action" href={p.links.video} target="_blank" rel="noopener" translate="no"><span lang="en">Watch video ↗</span><span lang="es">Ver video ↗</span></a>}{(p.links.devpost||p.links.submission||p.links.project_page)&&<a href={p.links.devpost||p.links.submission||p.links.project_page} target="_blank" rel="noopener">Submission ↗</a>}{p.links.demo&&<a href={p.links.demo} target="_blank" rel="noopener">Live demo ↗</a>}{p.links.repo&&<a href={p.links.repo} target="_blank" rel="noopener">Code ↗</a>}{p.sourceUrl&&<a href={p.sourceUrl} target="_blank" rel="noopener">Source ↗</a>}{local&&<a href={url}>Read reference →</a>}</div>
+  </div>
+</article>
+<style>
+  .reference-card { background:var(--surface); border:1px solid var(--line); border-radius:10px; min-width:0; overflow:hidden; }
+  .reference-media { aspect-ratio:16/9; background:var(--bg); display:block; overflow:hidden; position:relative; }
+  .reference-media img { display:block; height:100%; object-fit:cover; transition:transform 180ms ease,opacity 180ms ease; width:100%; }
+  .reference-media:hover img { opacity:.88; transform:scale(1.015); }
+  .reference-media > span { background:color-mix(in srgb,var(--bg) 90%,transparent); border:1px solid var(--line); border-radius:5px; bottom:10px; color:var(--ink); font-size:.7rem; font-weight:700; left:10px; padding:6px 9px; position:absolute; }
+  .reference-media > span.video { background:var(--accent); border-color:var(--accent); color:var(--accent-ink); }
+  .reference-body { display:flex; flex-direction:column; gap:10px; min-height:255px; padding:15px; }
+  .event-line { color:var(--muted); font-size:.75rem; line-height:1.35; margin:0; }
+  .reference-card h2 { font-size:1.2rem; margin:0; }
+  .reference-card h2 a { text-decoration:none; }
+  .topic-row { display:flex; flex-wrap:wrap; gap:5px; }
+  .topic-row span { border:1px solid var(--line); border-radius:4px; color:var(--muted); font-size:.72rem; line-height:1; padding:4px 6px; }
+  .summary { display:-webkit-box; font-size:.9rem; line-height:1.52; margin:0; overflow:hidden; -webkit-box-orient:vertical; -webkit-line-clamp:3; }
+  .lesson { font-size:.875rem; }
+  .lesson summary { color:var(--muted); cursor:pointer; font-weight:600; }
+  .lesson p { margin:8px 0; }
+  .award { color:var(--accent); font-weight:650; }
+  .source-kind { color:var(--muted); }
+  .reference-actions { border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:7px 12px; margin-top:auto; padding-top:11px; }
+  .reference-actions a { font-size:.8rem; font-weight:600; }
+  .reference-actions .video-action { color:var(--accent); }
+  @media (max-width:560px) { .reference-media { aspect-ratio:16/10; } }
+  @media (prefers-reduced-motion:reduce) { .reference-media img { transition:none; } }
+</style>
