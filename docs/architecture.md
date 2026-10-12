@@ -15,12 +15,19 @@ server or database — deliberately (ADR-001, ADR-005, ADR-007, ADR-008, ADR-009
 
 Audience: hackathon teams and independent builders choosing a useful, feasible idea.
 Primary journey: inspect references → compare approaches → write and download a builder brief.
-Brand (2026-09-18): Space Grotesk (self-hosted) for the wordmark and page titles, Geologica for
-body text; a single-colour orange wordmark; warm black base `#100e0b` with the "Crimson Veil" aura
-behind the landing hero only (layers switch to `multiply` in the light theme). Keep the orange
-action color and the provenance labels.
+Brand (2026-10-01, replaces the 2026-09-18 Space Grotesk and "Crimson Veil" direction): a
+builder's reference book. Self-hosted Fraunces (soft, optical sizing) for the wordmark, page and
+reference titles; Source Sans 3 for reading, navigation and controls; a system monospace stack only
+for code. Fonts, OFL licences, source URLs and SHA-256 hashes live in `web/public/fonts/`; the
+browser never calls a font service. A single-colour orange wordmark; orange stays with actions and
+provenance accents. The landing hero keeps its original 1140px frame (1.1:1 columns, search left,
+the Connected Earth Museum demo card right, three selected references below) over a black
+constellation sky: a decorative, `aria-hidden`, noninteractive SVG with fixed star positions, a
+glint that stops within four seconds and none under reduced motion. The hero stays dark in both
+themes; other surfaces follow the theme. Link previews use `/og-stellar-atlas-20260930.jpg`.
 Make the homepage a working index: compact search, evidence counts, varied real references and
-a clear planning entry point. No invented win-rate claims, testimonials or decorative imagery.
+a clear planning entry point. No invented win-rate claims or testimonials; the star field is the
+only decoration.
 The planner uses a focused two-column worksheet on desktop and a single column on mobile;
 the output is a downloadable Markdown brief. Inputs stay in page memory, with no automatic
 storage or transmission. No accounts, analytics, external AI calls or new dependencies.

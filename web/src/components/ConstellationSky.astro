@@ -1,0 +1,62 @@
+---
+const { embedded = false } = Astro.props;
+// Fixed positions keep the sky stable across static builds and language changes.
+const stars = Array.from({ length: 104 }, (_, i) => ({
+  x: (i * 277 + 37) % 1600,
+  y: (i * 173 + 53) % 1000,
+  r: i % 13 === 0 ? 1.9 : i % 4 === 0 ? 1.2 : .7,
+  tone: i % 7 === 0 ? 'orange' : i % 3 === 0 ? 'gold' : 'white',
+}));
+const nodes = [[50, 230], [119, 175], [188, 254], [148, 353], [75, 415],
+  [1290, 112], [1380, 176], [1475, 132], [1530, 240], [1450, 325],
+  [333, 778], [461, 722], [548, 810], [698, 777], [811, 858], [1003, 811], [1133, 875]];
+---
+<div class:list={['constellation-sky', { embedded }]} aria-hidden="true">
+  <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMin slice" focusable="false">
+    <g class="distant-stars">
+      {stars.map(star => <circle cx={star.x} cy={star.y} r={star.r} class={star.tone} />)}
+    </g>
+    <g class="constellation-lines">
+      <path d="M50 230 119 175 188 254 148 353 75 415 M50 230 148 353" />
+      <path d="M1290 112 1380 176 1475 132 1530 240 1450 325 1380 176" />
+      <path d="M333 778 461 722 548 810 698 777 811 858 1003 811 1133 875" />
+    </g>
+    <g class="constellation-nodes">
+      {nodes.map(([x, y], i) => <g class={i % 3 === 0 ? 'orange' : 'gold'}>
+        <circle cx={x} cy={y} r="8" class="star-halo" />
+        <circle cx={x} cy={y} r="2" />
+      </g>)}
+    </g>
+    <g class="star-glints">
+      <path d="M119 168v14m-7-7h14 M1530 232v16m-8-8h16 M698 770v14m-7-7h14" />
+    </g>
+  </svg>
+</div>
+<style>
+  .constellation-sky { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; color: #f0f0e9; }
+  .constellation-sky svg { width: 100%; height: 100%; min-height: 880px; }
+  .embedded { position: absolute; z-index: 0; }
+  .embedded svg { min-height: 0; }
+  .embedded .distant-stars { opacity: .65; }
+  .embedded .constellation-lines { opacity: .35; }
+  .white { fill: #f0f0e9; }
+  .gold { fill: #f3ce78; }
+  .orange { fill: #ff914d; }
+  .distant-stars { opacity: .5; }
+  .constellation-lines { fill: none; stroke: #c9a66a; stroke-width: .8; opacity: .25; }
+  .constellation-nodes { opacity: .8; }
+  .star-halo { opacity: .08; }
+  .star-glints { fill: none; stroke: #fff0c9; stroke-width: .8; opacity: .65; animation: star-arrive 4s ease-in-out; }
+  @keyframes star-arrive { 0%, 100% { opacity: .65; } 35% { opacity: .2; } 65% { opacity: 1; } }
+  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) { opacity: .55; }
+  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .white { fill: #62584b; }
+  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .gold { fill: #9a6924; }
+  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .orange { fill: #b54b14; }
+  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .constellation-lines { stroke: #8c693a; opacity: .35; }
+  :global(:root[data-theme=light]) .constellation-sky:not(.embedded) .star-glints { stroke: #8c693a; }
+  @media (max-width: 860px) {
+    .constellation-sky svg { min-width: 800px; transform: translateX(calc((100vw - 800px) / 2)); opacity: .7; }
+    .embedded svg { min-width: 0; transform: none; opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) { .star-glints { animation: none; } }
+</style>

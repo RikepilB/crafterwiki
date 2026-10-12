@@ -1,0 +1,14 @@
+[
+  {
+    "file": "fraunces-latin-variable.woff2",
+    "source": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uMiIk_WBq8U_9v0c2WS01xC9TeA.woff2",
+    "sha256": "e7d14704a1d6d6f7220fcbf185ea563dcce3184864d07522f58da50f43c4d8c9",
+    "bytes": 66700
+  },
+  {
+    "file": "sourcesans3-latin-variable.woff2",
+    "source": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R3w8aZQ.woff2",
+    "sha256": "7a19a7027e125257d310c6dbd78ae3a30b5ea1e3794d60b12bb28227a003bfda",
+    "bytes": 28740
+  }
+]

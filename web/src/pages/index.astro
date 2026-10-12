@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ConstellationSky from '../components/ConstellationSky.astro';
 import { corpus, base, href } from '../lib/data.mjs';
 import { cardHTML } from '../lib/labels.mjs';
 import { media } from '../lib/media.js';
@@ -7,10 +8,10 @@ const picks = ['quenaris', 'pureflow', 'resonant-exoplanets'].map((slug) => corp
 const featured = corpus.items.find((p) => p.slug === 'connected-earth-museum');
 const preview = media[featured.slug];
 ---
-<Layout>
-  <div class="hero-aura">
-  <div class="aura-layer aura-hard" aria-hidden="true"></div>
-  <div class="aura-layer aura-soft" aria-hidden="true"></div>
+<Layout bodyClass="home-sky">
+  <ConstellationSky slot="background" />
+  <div class="hero-shell">
+    <ConstellationSky embedded />
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-copy">
       <h1 id="hero-title">Good ideas start with <span>better references.</span></h1>
@@ -23,7 +24,7 @@ const preview = media[featured.slug];
     </div>
     <article class="hero-feature">
       <a class="feature-image" href={preview.video} target="_blank" rel="noopener" aria-label="Watch Connected Earth Museum demo on YouTube">
-        <img src={href(preview.localPoster)} srcset={preview.variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 860px) calc(100vw - 40px), 480px" width="480" height="360" alt="Connected Earth Museum — original demo preview" loading="eager" fetchpriority="high" decoding="async" />
+        <img src={href(preview.localPoster)} srcset={preview.variants.map((v) => `${href(v.src)} ${v.width}w`).join(', ')} sizes="(max-width: 860px) calc(100vw - 80px), 480px" width="480" height="360" alt="Connected Earth Museum — original demo preview" loading="eager" fetchpriority="high" decoding="async" />
         <span>▶ Watch the demo ↗</span>
       </a>
       <div class="feature-copy">
@@ -41,28 +42,25 @@ const preview = media[featured.slug];
   </section>
 </Layout>
 <style>
-  /* "Crimson Veil" aura. The container has no background on purpose: the blend modes must
-     composite against the page background (#100e0b), not against the container. */
-  .hero-aura { position: relative; overflow: hidden; border-radius: 24px; margin-bottom: 48px; }
-  .hero-aura > .hero { position: relative; z-index: 1; padding-inline: clamp(20px, 4vw, 48px); padding-bottom: clamp(96px, 14vw, 180px); }
-  /* Layers start below the headline so the brightest bands sit in the open space under the copy. */
-  .aura-layer { position: absolute; inset: 22% 0 0 0; pointer-events: none; transform: translateZ(0); will-change: transform;
-    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(220,38,38,.9) 40%, rgb(255,255,255) 70%, rgb(251,146,60) 82%, rgb(250,204,21) 100%); }
-  .aura-hard { mix-blend-mode: hard-light; filter: blur(63px); opacity: .6; }
-  .aura-soft { mix-blend-mode: soft-light; filter: blur(88px); opacity: .9; }
-  @media (min-width: 861px) { .aura-hard { filter: blur(90px); } .aura-soft { filter: blur(126px); } }
-  /* hard-light and soft-light wash out over a light surface; multiply keeps the same hues. */
-  :global(:root[data-theme=light]) .aura-layer { mix-blend-mode: multiply; }
-  :global(:root[data-theme=light]) .aura-hard { opacity: .3; }
-  :global(:root[data-theme=light]) .aura-soft { opacity: .45; }
+  :global(body.home-sky) { --bg: #060809; isolation: isolate; position: relative; }
+  :global(:root[data-theme=light] body.home-sky) { --bg: #f8f5ef; }
+  .hero-shell {
+    --bg: #060809; --ink: #f0efea; --muted: #c3c5c2; --accent: #ff8845; --accent-ink: #100e0b;
+    --surface: #141716; --surface-2: #1d211f; --line: #414540;
+    position: relative; isolation: isolate; overflow: hidden; border-radius: 24px;
+    margin-bottom: 48px; background: var(--bg); color: var(--ink); color-scheme: dark;
+  }
   .section-heading h2, .feature-copy h2 { font-family: var(--display); letter-spacing: -.03em; }
-  .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 64px; padding: 40px 0 72px; }
-  h1 { font-size: clamp(2.7rem, 5.2vw, 4.3rem); line-height: 1.12; letter-spacing: -.05em; margin: 0 0 28px; font-weight: 700; }
-  /* One colour for the whole headline; orange stays with the wordmark and actions. */
+  .hero { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 64px; padding: 40px clamp(20px, 4vw, 48px) clamp(96px, 14vw, 180px); }
+  .hero-copy { min-width: 0; }
+  h1 { font-size: clamp(2.7rem, 5.2vw, 4.3rem); line-height: 1.08; letter-spacing: -.035em; margin: 0 0 28px; font-weight: 600; text-wrap: balance; }
   h1 span { color: inherit; }
-  .hero-description { font-size: 1.05rem; line-height: 1.7; max-width: 44ch; color: var(--muted); margin-bottom: 26px; }
+  .hero-description { font-size: 1.15rem; line-height: 1.6; max-width: 44ch; color: var(--muted); margin-bottom: 26px; }
   .search-label { display: block; font-size: .82rem; margin-bottom: 8px; color: var(--muted); }
-  .search-line { display: flex; gap: 10px; } .search-line input { flex: 1; min-width: 0; background: var(--surface); }
+  .search-line { display: flex; gap: 10px; }
+  .search-line input { flex: 1; min-width: 0; min-height: 44px; background: var(--surface); }
+  .search-line input::placeholder { color: #aeb4ae; opacity: 1; }
+  .search-line .btn { min-height: 44px; }
   .brief-link { display: inline-block; font-size: .82rem; margin-top: 20px; }
   .hero-feature { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; box-shadow: 10px 12px 0 var(--surface-2); overflow: hidden; }
   .feature-image { position: relative; display: block; aspect-ratio: 4/3; background: var(--bg); }
@@ -76,6 +74,17 @@ const preview = media[featured.slug];
   .section-heading { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-bottom: 24px; }
   .section-heading h2 { font-size: 1.4rem; margin: 0; font-weight: 600; }
   .section-heading a { font-size: .87rem; }
-  @media (max-width: 860px) { .hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 24px 0 52px; } .hero-copy { max-width: 620px; } .hero-feature { max-width: 600px; margin-right: 10px; } h1 { max-width: 13ch; } }
-  @media (max-width: 420px) { h1 { font-size: 2.7rem; } .search-line { gap: 8px; } .search-line .btn { padding-inline: 12px; font-size: .85rem; } }
+  @media (max-width: 860px) {
+    .hero-shell { margin-bottom: 36px; }
+    .hero { grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 28px 20px 52px; }
+    .hero-copy { max-width: 620px; }
+    .hero-feature { max-width: 600px; margin-right: 10px; }
+    h1 { max-width: 16ch; }
+  }
+  @media (max-width: 420px) {
+    h1 { font-size: clamp(2rem, 10.2vw, 2.7rem); }
+    .search-line { gap: 8px; }
+    .search-line .btn { padding-inline: 12px; font-size: .85rem; }
+    .feature-copy { padding: 20px; }
+  }
 </style>
