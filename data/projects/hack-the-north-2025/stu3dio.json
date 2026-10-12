@@ -1,0 +1,33 @@
+{
+  "slug": "stu3dio",
+  "name": "Stu3dio",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Make an AI film by talking to a director, a scriptwriter and a character artist inside a 3D studio.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Generating a coherent AI video means juggling separate tools for plot, script, characters, images and clips, and one change upstream breaks everything downstream.",
+  "solution": "Each film is a tree of nodes (logline, characters, objects, scenes, final film). Users walk a 3D studio and talk to AI roles that fill those nodes, scribble on images to edit them, and review a scene timeline before generating video. Editing a node marks its descendants stale so they regenerate with fresh context; every generation is a queued job with stored artifacts.",
+  "demo_moment": "Team-described: brainstorm with the director, refine the script, scribble a costume change onto a character, then generate the stitched film.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["nextjs", "react", "fastify", "supabase", "redis"],
+    "ai_patterns": ["llm-api", "generative-media"]
+  },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Selected by the organizer as one of 12 finalists among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Models the film as a dependency tree, so an edit regenerates only what it affects.", "basis": "team-stated", "source": 0 },
+      { "claim": "Turning a generation pipeline into a studio with staff to talk to makes an abstract workflow tangible.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "visible-engineering-depth", "demo-first-wow"],
+    "judging_lens": ["wow-factor", "design-ux", "technical-depth"],
+    "lessons": ["A multi-step AI pipeline demos better as characters in a place than as a form with steps."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/vibe-director", "repo": "https://github.com/Jeff15321/Stu3dio-HackTheNorth2025", "demo": null, "video": "https://www.youtube.com/watch?v=-zFjfA0N3Gs" },
+  "sources": [
+    { "url": "https://devpost.com/software/vibe-director", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

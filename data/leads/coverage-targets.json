@@ -2,7 +2,7 @@
   "notes": "Events to index next, from primary sources only. 'reference_index' marks where we learned the event exists; it is a pointer, never a data source. Devpost URLs are unverified guesses until fetched.",
   "retrieved_at": "2026-09-14",
   "targets": [
-    { "event": "Hack the North 2025 (remaining 8 finalists + sponsor winners)", "primary": "https://hackthenorth2025.devpost.com/project-gallery", "priority": 1, "status": "partial" },
+    { "event": "Hack the North 2025", "primary": "https://hackthenorth2025.devpost.com/project-gallery", "priority": 1, "status": "done 2026-10-12: full roster (260 of 261 public), all 54 prize winners from project pages, 12 finalists analyzed" },
     { "event": "Hack the Valley 10 (Oct 2025)", "primary": null, "reference_index": "hallofhackss.com/hackathons", "priority": 1, "why": "Prior for upcoming Hack the Valley 11 (Oct 16–18, 2026)." },
     { "event": "Platanus Hack 26 Bogotá results", "primary": "https://hack.platan.us/26-co/vote/results", "priority": 1, "status": "results page errored 2026-09-14; project pages (e.g. /26-co/vote/woki) load; no organizer results post found",
       "team_stated_leads": [

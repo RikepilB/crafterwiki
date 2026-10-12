@@ -1,0 +1,34 @@
+{
+  "slug": "puppeteer",
+  "name": "Puppeteer",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Probes a running program's variables and fakes data on the fly, so frontend work can continue without a backend.",
+  "placement": { "status": "track-winner", "awards": ["Hack the North 2025: Finalists", "Warp: Best Developer Tool by Warp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Frontend engineers stall when the backend they depend on is not ready, and testing at realistic traffic needs data that does not exist yet.",
+  "solution": "A terminal interface where an LLM chooses which runtime variables to probe. Once probes are attached, values can be changed on the fly to simulate a database or traffic, changes are reported back in plain language, and work is sent through a rule-based LLM router that picks cheaper or stronger text and image models.",
+  "demo_moment": "Team-described: a frontend behaves as if its database exists, because Puppeteer feeds it data from inside the runtime.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "react", "sqlite", "martian", "cohere", "gemini"],
+    "ai_patterns": ["llm-api", "agent"]
+  },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "One of 12 finalists among 261 submissions, and winner of the Warp developer-tool prize.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built from a pain the whole team had felt: being blocked by an unfinished backend.", "basis": "team-stated", "source": 0 },
+      { "claim": "Routes calls across text and image models by rule to keep costs down as the tool iterates.", "basis": "team-stated", "source": 0 },
+      { "claim": "A developer tool judged by a panel heavy with founders and engineers: the problem needs no setup for this audience.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "sponsor-platform-mastery"],
+    "judging_lens": ["technical-depth", "originality", "sponsor-api-use"],
+    "lessons": ["At a builder-heavy event, a tool for the judges' own daily pain can reach the finals without a consumer story."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/puppeteer-7429qv", "repo": "https://github.com/BrianLi23/puppeteer", "demo": null, "video": "https://www.youtube.com/watch?v=_AtQyyInhEY" },
+  "sources": [
+    { "url": "https://devpost.com/software/puppeteer-7429qv", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

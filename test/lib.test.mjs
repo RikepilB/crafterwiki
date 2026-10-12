@@ -81,7 +81,10 @@ test('event brief exposes rubric and saturation', () => {
   const bogota = eventBrief(corpus, 'platanus-hack-26-bogota');
   assert.equal(bogota.saturation.indexed, 24);
   assert.equal(bogota.saturation.base_rate_valid, true);
-  assert.equal(b.saturation.base_rate_valid, false, 'HTN 2025 is a partial roster, not a base rate');
+  assert.equal(b.saturation.indexed, 260);
+  assert.equal(b.saturation.base_rate_valid, true, 'HTN 2025 roster is full since the 2026-10-12 gallery capture');
+  const uoft = eventBrief(corpus, 'uofthacks-11');
+  assert.equal(uoft.saturation.base_rate_valid, false, 'UofTHacks 11 is a partial roster, not a base rate');
 });
 
 test('partial rosters are never reported as base rates', () => {
