@@ -1,0 +1,145 @@
+---
+// Event guide: how to prepare for one upcoming event, from its rules, rubric and the corpus.
+import Layout from '../../layouts/Layout.astro';
+import Bars from '../../components/Bars.astro';
+import TrackWeights from '../../components/TrackWeights.astro';
+import ChallengeList from '../../components/ChallengeList.astro';
+import { corpus, href, definition, eventName, eventBrief, isWinner, sourceHref } from '../../lib/data.mjs';
+import { humanize, fmtRange, fmtDate } from '../../lib/labels.mjs';
+import { HARNESS_PHASES } from '../../../../cli/query.mjs';
+
+export function getStaticPaths() {
+  return corpus.hackathons.filter((h) => h.guide).map((h) => ({ params: { slug: h.slug }, props: { h } }));
+}
+
+const { h } = Astro.props;
+const g = h.guide;
+const b = eventBrief(corpus, h.slug);
+const priors = b.prior_from_same_event_kind;
+const priorCount = corpus.items.filter((i) => i.analyzed && i.event_kind === h.kind && i.hackathon !== h.slug && isWinner(corpus, i)).length;
+// Earlier editions of the same series, newest first, with how much of each is indexed.
+const earlier = corpus.hackathons
+  .filter((x) => x.name === h.name && x.slug !== h.slug && (x.start_date ?? '') < (h.start_date ?? ''))
+  .sort((x, y) => (y.start_date ?? '').localeCompare(x.start_date ?? ''))
+  .map((x) => ({ x, winners: corpus.items.filter((i) => i.hackathon === x.slug && i.analyzed && isWinner(corpus, i)).length }));
+const phaseLabel = {
+  recon: 'Recon: rules, rubric, judges, prizes',
+  patterns: 'Patterns from past winners',
+  angles: 'Problems and angles',
+  'judge-gate': 'Gate 1: judge panel',
+  'demo-script': 'Demo script and pitch',
+  approval: 'Gate 2: team approval',
+  architecture: 'Architecture',
+  'build-plan': 'Build plan',
+};
+const stopAt = HARNESS_PHASES.indexOf(g.harness_stop ?? '');
+const phases = HARNESS_PHASES.map((id, i) => ({ id, label: phaseLabel[id], before: stopAt < 0 || i < stopAt }));
+const facts = [
+  ['Dates', fmtRange(h.start_date, h.end_date)],
+  ['Where', [h.venue, h.city].filter(Boolean).join(' · ') || humanize(h.region) || 'Not stated'],
+  ['Format', humanize(h.format)],
+  h.teams && ['Teams', String(h.teams)],
+  h.team_size && ['Team size', String(h.team_size)],
+].filter(Boolean);
+---
+<Layout title={`${eventName(h)} guide`} description={g.summary}>
+  <p class="meta crumbs"><a href={href('/events/')}>Event guides</a></p>
+  <p class="eyebrow">{humanize(h.kind)}</p>
+  <h1>{eventName(h)}</h1>
+  <p class="lede">{g.summary}</p>
+  <dl class="facts">{facts.map(([k, v]) => <div class="fact"><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+  <p class="meta">Organized by {h.organizer}. Full record: <a href={href(`/hackathons/${h.slug}/`)}>rubric, sources and results</a>.</p>
+
+  <h2>Before the event</h2>
+  {g.before_the_event && <p>{g.before_the_event}</p>}
+  {(h.timeline ?? []).length > 0 && (
+    <div class="table-wrap"><table><tbody>
+      {h.timeline.map((t) => <tr><td class="nowrap meta">{fmtDate(t.date)}</td><td>{t.what}</td></tr>)}
+    </tbody></table></div>
+  )}
+
+  {(g.rules ?? []).length > 0 && (
+    <>
+      <h2>Rules that change your plan</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Rule</th><th>What to do about it</th></tr></thead>
+        <tbody>{g.rules.map((r) => <tr><td>{r.rule}</td><td>{r.effect}</td></tr>)}</tbody>
+      </table></div>
+    </>
+  )}
+
+  <h2>How it is judged</h2>
+  {(h.tracks ?? []).some((t) => (t.criteria ?? []).length) ? (
+    <TrackWeights tracks={h.tracks} criteria={h.judging?.criteria} />
+  ) : (
+    <div class="table-wrap"><table>
+      <thead><tr><th>Criterion</th><th>What judges look for</th></tr></thead>
+      <tbody>{b.judging.criteria.map((c) => <tr><td><b>{c.label}</b></td><td>{c.description ?? definition('judging_lenses', c.lens)}</td></tr>)}</tbody>
+    </table></div>
+  )}
+  {b.judging.judge_profile && <p class="spaced"><b>Judges.</b> {b.judging.judge_profile}</p>}
+  {b.judging.notes && <p class="muted">{b.judging.notes}</p>}
+
+  {(h.challenges ?? []).length > 0 && (
+    <>
+      <h2>Challenges</h2>
+      <ChallengeList challenges={h.challenges} tracks={h.tracks} />
+    </>
+  )}
+
+  <h2>What to hand in</h2>
+  {b.required_tech.length > 0 && <p><b>Required:</b> {b.required_tech.join('; ')}</p>}
+  {b.submission_requirements.length ? <ul>{b.submission_requirements.map((s) => <li>{s}</li>)}</ul> : <p class="muted">No submission rules recorded yet.</p>}
+
+  <h2>What the corpus says</h2>
+  {earlier.length > 0 && (
+    <>
+      <p>Earlier editions indexed in CrafterWIKI:</p>
+      <ul>{earlier.map(({ x, winners }) => <li><a href={href(`/hackathons/${x.slug}/`)}>{eventName(x)}</a> — {winners} analyzed winner{winners === 1 ? '' : 's'}, {humanize(x.roster_coverage)} roster</li>)}</ul>
+    </>
+  )}
+  {priorCount ? (
+    <>
+      <p class="muted">Mechanisms and judging lenses among {priorCount} confirmed winners from {priors.events.length} other {humanize(h.kind)} event{priors.events.length === 1 ? '' : 's'}.</p>
+      <div class="two-col">
+        <section><h3>Mechanisms</h3><Bars rows={priors.mechanisms} facet="mechanisms" of={priorCount} /></section>
+        <section><h3>Judging lenses</h3><Bars rows={priors.lenses} of={priorCount} /></section>
+      </div>
+    </>
+  ) : (
+    <p class="muted">No confirmed winners from other {humanize(h.kind)} events yet. Treat <a href={href('/patterns/')}>patterns from other kinds of event</a> as weak priors.</p>
+  )}
+  {g.evidence_note && <p class="callout info"><b>Curator note.</b> {g.evidence_note}</p>}
+
+  <h2>Plan it with the harness</h2>
+  <p>CrafterWIKI's planner runs these steps in order. The event's rules decide how far you may go before it starts.</p>
+  <ol class="phases">
+    {phases.map((p) => <li class:list={{ held: !p.before }}><b>{p.label}</b> <span class="meta">{p.before ? 'before the event' : 'at the event'}</span></li>)}
+  </ol>
+  {g.harness_note && <p class="muted">{g.harness_note}</p>}
+  <pre>/hack-plan {h.slug}</pre>
+  <p class="meta"><a href={href('/guide/')}>How the planner works →</a></p>
+
+  {(g.ask_organizers ?? []).length > 0 && (
+    <>
+      <h2>Ask the organizers</h2>
+      <ul>{g.ask_organizers.map((q) => <li>{q}</li>)}</ul>
+    </>
+  )}
+
+  <h2>Sources</h2>
+  <ul class="sources">
+    {h.sources.map((s) => {
+      const url = sourceHref(s.url);
+      return <li>{url ? <a href={url} target="_blank" rel="noopener">{s.url}</a> : s.url} <span class="meta">· {humanize(s.kind)} · retrieved {s.retrieved_at}</span>{s.note && <> — {s.note}</>}</li>;
+    })}
+  </ul>
+</Layout>
+
+<style>
+  .nowrap { white-space:nowrap; }
+  .phases { display:grid; gap:6px; padding-left:22px; }
+  .phases li.held { color:var(--muted); }
+  .phases li.held b { font-weight:600; }
+  .sources { word-break:break-word; }
+</style>

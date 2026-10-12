@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Bars from '../../components/Bars.astro';
+import TrackWeights from '../../components/TrackWeights.astro';
+import ChallengeList from '../../components/ChallengeList.astro';
 import { corpus, base, href, definition, eventName, eventBrief, weight, sourceHref, isWinner } from '../../lib/data.mjs';
 import { statusClass, statusLabel, humanize, cardHTML, fmtRange, fmtDate } from '../../lib/labels.mjs';
 
@@ -49,7 +51,7 @@ const jsonld = {
   {h.results_status === 'upcoming' && (
     <p class="callout info">
       <b>Upcoming.</b> Plan with the rubric, constraints and priors below; results are added after the event.
-      <a href={href('/guide/')}>How to plan with CrafterWIKI →</a>
+      {h.guide ? <a href={href(`/events/${h.slug}/`)}>Read the event guide →</a> : <a href={href('/guide/')}>How to plan with CrafterWIKI →</a>}
     </p>
   )}
 
@@ -92,6 +94,20 @@ const jsonld = {
         : <p class="muted">No submission rules recorded.</p>}
     </aside>
   </div>
+
+  {(h.tracks ?? []).some((t) => (t.criteria ?? []).length) && (
+    <>
+      <h2>Weights by track</h2>
+      <TrackWeights tracks={h.tracks} criteria={h.judging?.criteria} />
+    </>
+  )}
+
+  {(h.challenges ?? []).length > 0 && (
+    <>
+      <h2>Challenges</h2>
+      <ChallengeList challenges={h.challenges} tracks={h.tracks} />
+    </>
+  )}
 
   {b.prizes.length > 0 && (
     <>
