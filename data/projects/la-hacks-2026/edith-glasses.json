@@ -1,0 +1,38 @@
+{
+  "slug": "edith-glasses",
+  "name": "Edith",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A smart-glasses assistant that sees what you see and routes requests to agent skills that act, with a spoken confirmation first.",
+  "placement": { "status": "track-winner", "awards": ["Fetch.ai: OmegaClaw Skill Forge powered by Agentverse"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "At conferences, pulling out a phone breaks the conversation and opportunities pass.",
+  "solution": "An iOS app streams glasses audio and frames to Gemini Live; requests route through OmegaClaw to Agentverse skills that identify a badge, send a follow-up email or book a table through browser automation.",
+  "demo_moment": "Team-described: look at a name badge, ask who it is, then ask to send a follow-up.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["swift", "python", "fastapi", "gemini", "agentverse", "omegaclaw", "playwright-mcp", "meta-wearables-dat"],
+    "ai_patterns": ["multi-agent", "voice-ai", "computer-vision", "computer-use"]
+  },
+  "domains": ["productivity", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Fetch.ai: OmegaClaw Skill Forge powered by Agentverse” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Previews actions aloud before executing them.", "basis": "team-stated", "source": 0 },
+      { "claim": "Named after a film assistant judges recognise.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "takes-action", "cultural-reference-hook"],
+    "judging_lens": ["sponsor-api-use", "wow-factor"],
+    "lessons": ["Wearables demo well when the action completes without the user looking down."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/edith-zbd6pg",
+    "repo": "https://github.com/rishi-golla/lahacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Be9H4JvpBDg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/edith-zbd6pg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

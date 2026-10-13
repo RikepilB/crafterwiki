@@ -1,0 +1,42 @@
+{
+  "slug": "dots",
+  "name": "Dots",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Turns a floor plan into a tactile-style map with a QR code that answers wayfinding questions by text or voice.",
+  "placement": { "status": "track-winner", "awards": ["Track: Catalyst For Care", "Track: Agentverse - Search & Discovery of Agents"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Floor plans are everywhere but give blind and low-vision visitors almost no usable orientation.",
+  "solution": "Gemini generates a high-contrast tactile-style map and a compliance summary from a floor plan; each map gets a QR link where ASI:One answers text questions and an ElevenLabs agent answers by voice, grounded in that map only.",
+  "demo_moment": "Team-described: upload a stadium plan, print the tactile map, scan the QR and ask where the exits are.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "gemini", "fetch-ai", "elevenlabs", "sqlite", "swift"],
+    "ai_patterns": ["llm-api", "voice-ai", "generative-media", "agent"]
+  },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Track: Catalyst For Care” and “Track: Agentverse - Search & Discovery of Agents” among 307 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Makes a physical accessibility artifact conversational through a QR code.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won a care track and the Agentverse prize with one product.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity", "zero-install-channel"],
+    "judging_lens": ["impact", "originality"],
+    "lessons": ["A QR code can turn a static accessibility artifact into a conversation."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dots-y5r21j",
+    "repo": "https://github.com/aryanmudgal-tech/dots",
+    "demo": "https://web-voice-lqe4nxs6s-aryans-projects-85b27c2b.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=gWNJgLeBlTY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dots-y5r21j", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

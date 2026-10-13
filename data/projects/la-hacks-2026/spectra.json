@@ -1,0 +1,35 @@
+{
+  "slug": "spectra",
+  "name": "SPECTRA",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Upsamples the iPhone's sparse LiDAR into dense metric depth in real time on the device.",
+  "placement": { "status": "track-winner", "awards": ["Track: Flicker To Flow", "Zetic Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Cheap phone LiDAR is too sparse to use directly, while industrial depth sensors cost thousands of dollars, the team says.",
+  "solution": "SPECTRANet, an RGB-guided depth upsampler trained on ARKitScenes, sharpens a 192×256 LiDAR map to 768×1024 along real surface edges; a SwiftUI/ARKit app runs it on-device or on a local server with A/B comparison.",
+  "demo_moment": "Team-described: switch between raw LiDAR and SPECTRANet depth live, side by side.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "pytorch", "swift", "arkit", "coreml", "fastapi", "asus-ascent-gx10"], "ai_patterns": ["ml-model", "computer-vision"] },
+  "domains": ["robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Flicker To Flow” and “Zetic Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Trains and ships a real model over the weekend with a visible before/after.", "basis": "team-stated", "source": 0 },
+      { "claim": "Frames phone hardware as a cheap substitute for expensive sensors.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cost-collapse", "demo-first-wow"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Show the model's output next to the raw input; the improvement sells itself."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/spectra-qbj2gf",
+    "repo": null,
+    "demo": "https://spectra-website-jade.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=M_QiPFWFkys"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/spectra-qbj2gf", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "sentinel-ai",
+  "name": "Sentinel.ai",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Watches live camera streams, flags notable events in one-line alerts and logs a verifiable record.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of Solana"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Security cameras record around the clock but people review only a small fraction.",
+  "solution": "Detection, a notability gate with a custom classifier, face recognition and an LLM summary turn frames into events with timestamps, media links and on-chain references, deployed on a cloud server.",
+  "demo_moment": "Team-described: a deployed run watching two streams that caught a snack thief.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "pytorch", "ultralytics", "opencv", "dlib", "gemini", "mongodb", "solana", "cloudinary", "vultr", "react", "typescript"],
+    "ai_patterns": ["computer-vision", "ml-model", "llm-api", "on-chain"]
+  },
+  "domains": ["security-networking", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of Solana” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Reports its own classifier accuracy (83% on notable events).", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["live-real-world-proof", "cited-evidence-trust"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Report your model's real accuracy; it builds more trust than a perfect demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sentinel-ai-ls7eq5",
+    "repo": null,
+    "demo": "http://www.stalkertalker.club",
+    "video": "https://www.youtube.com/watch?v=8iKrZ4sSS_I"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sentinel-ai-ls7eq5", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

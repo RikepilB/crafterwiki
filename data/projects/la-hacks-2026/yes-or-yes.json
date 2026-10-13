@@ -1,0 +1,38 @@
+{
+  "slug": "yes-or-yes",
+  "name": "YES? or YES!",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Call a phone number and real fish in a tank pick which bad decision a computer then carries out in your life.",
+  "placement": { "status": "track-winner", "awards": ["Most Questionable Use of 36 Hours"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Played for laughs: the team wanted the most absurd possible use of the weekend.",
+  "solution": "A Twilio voice agent (Deepgram, Claude Haiku, ElevenLabs) offers two bad options; camera blob detection reads where the guppies swim; a second laptop executes the winning action such as a message or a post.",
+  "demo_moment": "Team-described: a live call, the countdown on the TV behind the tank, and the action firing.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["next-js", "playwright", "pusher", "redis", "claude", "twilio", "deepgram", "elevenlabs", "opencv", "python"],
+    "ai_patterns": ["voice-ai", "computer-vision", "computer-use", "llm-api"]
+  },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Questionable Use of 36 Hours” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Commits fully to an absurd premise with real consequences.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won Most Questionable Use of 36 Hours.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "demo-first-wow", "takes-action"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Humour prizes reward commitment: real fish, a real call, a real action."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/yes-or-yes",
+    "repo": "https://github.com/lukietee/YESorYES",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=v2X7dJ6E1E4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/yes-or-yes", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

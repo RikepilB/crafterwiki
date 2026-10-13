@@ -1,0 +1,34 @@
+{
+  "slug": "pols-15",
+  "name": "Pols 15",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Upload a policy and twelve agents simulate how demographic groups react, map the impact and draft your public position.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Campaigns and advocates cannot cheaply test how a policy lands with different groups.",
+  "solution": "A Fetch.ai orchestrator runs entity-extraction, configuration and seven demographic-cluster agents that debate the policy, shows impact zones on a 3D globe, a stakeholder graph and in-character constituent chat, and drafts social posts.",
+  "demo_moment": "Team-described: upload a policy PDF, click a cluster on the globe and question its persona.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fetch-ai", "agentverse", "asi-one", "mapbox"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["govtech-transparency", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Agentverse - Search & Discovery of Agents” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Twelve cooperating agents built by a one-person team.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Simulated personas become useful when the user can question one directly."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pols-15",
+    "repo": "https://github.com/PranAD-dev/pols-15",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=pVwl8clqHy4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pols-15", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

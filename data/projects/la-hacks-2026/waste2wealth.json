@@ -1,0 +1,34 @@
+{
+  "slug": "waste2wealth",
+  "name": "Waste2Wealth",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Pays crypto to people who report, clean and verify litter, with photos checked by AI and one account per human.",
+  "placement": { "status": "track-winner", "awards": ["Cloudinary Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Litter reports go nowhere because nobody has an incentive to clean.",
+  "solution": "Photo report, claim and clean, community vote, automatic on-chain payout on a test network; Cloudinary vision prompts verify before and after photos and World ID gates accounts.",
+  "demo_moment": "Team-described: report a pile, mark it cleaned and see the payouts.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "expo", "cloudinary", "solana", "supabase", "world-id"], "ai_patterns": ["computer-vision", "on-chain"] },
+  "domains": ["climate-sustainability", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cloudinary Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines three sponsor platforms in one loop.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "takes-action"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["An incentive loop explains itself in one diagram."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/waste2wealth-0o4tah",
+    "repo": null,
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=D_P7spBpfyQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/waste2wealth-0o4tah", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

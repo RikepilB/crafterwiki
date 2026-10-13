@@ -1,0 +1,34 @@
+{
+  "slug": "webmedica",
+  "name": "WebMedica",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A browser side panel that reads health articles and explains what they mean for women like you.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Women are underrepresented in medical research and guidance, leaving them to interpret generic advice alone.",
+  "solution": "A Chrome side panel with a private health profile summarises the article on screen, highlights what it means for the user and flags gaps in women's data.",
+  "demo_moment": "Team-described: open a study and read the personalised summary beside it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "chrome-extension", "node-js", "express", "postgresql", "supabase", "gemma", "ollama", "vultr"], "ai_patterns": ["llm-api"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Sits beside existing pages instead of replacing them.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "zero-install-channel"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["A side panel meets users inside the content they already read."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/luma-ai-powered-personalized-health-context",
+    "repo": "https://github.com/LaurenMBell/lahacks",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=TyN5sk7KFns"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/luma-ai-powered-personalized-health-context", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

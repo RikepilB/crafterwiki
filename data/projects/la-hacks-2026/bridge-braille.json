@@ -1,0 +1,35 @@
+{
+  "slug": "bridge-braille",
+  "name": "Bridge",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A low-cost braille display that turns photos of notes and recorded lectures into raised pins.",
+  "placement": { "status": "track-winner", "awards": ["Best Hardware Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Deafblind students depend on interpreters, and commercial braille displays cost thousands of dollars, the team says.",
+  "solution": "Images or audio are transcribed and summarised (Whisper, Claude), converted to braille patterns and driven onto a 3D-printed pin display by a rotating cam cylinder, stepper motors and an ESP32.",
+  "demo_moment": "Team-described: photograph handwritten notes and feel the braille appear on the device.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "stepper-motors", "python", "fastapi", "whisper", "claude-api", "javascript"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["accessibility", "education", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Hardware Hack” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A physical device costs a fraction of existing displays, the team says.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won Best Hardware Hack.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse", "human-stakes"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Hardware that a judge can touch makes an accessibility claim concrete."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/bridge-4euwyt",
+    "repo": "https://github.com/lozlrc/Bridge/",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=KhX-RyJ66uE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/bridge-4euwyt", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

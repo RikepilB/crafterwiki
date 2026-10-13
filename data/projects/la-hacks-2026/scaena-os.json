@@ -1,0 +1,37 @@
+{
+  "slug": "scaena-os",
+  "name": "Scaena OS",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Four agents run an independent artist's booking pipeline: venue research, pitches, follow-ups and tracking.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Emerging artists lose hours to venue research and cold outreach that rarely gets replies.",
+  "solution": "Agents on Agentverse research venues and rates with grounded search, write personalised pitches sent from the artist's Gmail, then manage outreach and a pipeline view.",
+  "demo_moment": "Team-described: set up a profile and watch venue scores stream in a terminal-style log.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "react", "vite", "typescript", "mongodb", "sqlite", "uagents", "gemini", "gmail-api"],
+    "ai_patterns": ["multi-agent", "llm-api"]
+  },
+  "domains": ["creative-media", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Sends real outreach from the artist's own account.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["business-potential", "design-ux"],
+    "lessons": ["Agents earn their keep on repetitive outreach a user hates."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/scaena-os",
+    "repo": "https://github.com/RC3371/Scaena-LAHacks2026",
+    "demo": "https://agentverse.ai/agents/details/agent1qwy8600z8em8u2jazw3q9w9hsz552w970smyx3jl968cwwafk5gnsneheet/profile",
+    "video": "https://www.youtube.com/watch?v=DCTjE99embY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/scaena-os", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

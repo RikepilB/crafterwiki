@@ -1,0 +1,35 @@
+{
+  "slug": "hack-a-ton",
+  "name": "Hack-A-Ton",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A typing game where you play the hacker and learn that strong passwords are the hardest to type in time.",
+  "placement": { "status": "track-winner", "awards": ["ROBLOX Civility Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Password lessons are explicit and easy to ignore.",
+  "solution": "Waves of users approach; players type their passwords to win, so long, mixed passwords become memorable through difficulty.",
+  "demo_moment": "Team-described: race to type weak and strong passwords as enemies close in.",
+  "build_style": "software-only",
+  "tech": { "stack": ["roblox-studio", "lua"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ROBLOX Civility Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Teaches implicitly by flipping the player onto the attacker's side.", "basis": "team-stated", "source": 0 },
+      { "claim": "All three members were first-time Lua developers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "cultural-reference-hook"],
+    "judging_lens": ["originality"],
+    "lessons": ["Put the player in the attacker's seat and the lesson teaches itself."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hack-a-ton-829q1s",
+    "repo": null,
+    "demo": "https://www.roblox.com/games/109085872353421/Hack-a-ton",
+    "video": "https://www.youtube.com/watch?v=jMh-X4L-k2U"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/hack-a-ton-829q1s", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

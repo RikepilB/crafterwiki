@@ -1,0 +1,37 @@
+{
+  "slug": "standin",
+  "name": "StandIn",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Agents that stand in for each person at work, swap scoped updates and handle low-stakes coordination.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of Auth0 AI Agents"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Meetings and follow-ups consume time and attention even for interns, the team says.",
+  "solution": "An orchestrator agent classifies intent and routes to status, history or action agents over calendar, Jira and Slack; a local trust layer redacts sensitive content before anything leaves.",
+  "demo_moment": "Team-described: two agents negotiate a meeting slot and add it to both calendars.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "vite", "uagents", "gemini", "gemma", "ollama", "mongodb", "auth0", "asus-ascent-gx10"],
+    "ai_patterns": ["multi-agent", "llm-api"]
+  },
+  "domains": ["productivity", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of Auth0 AI Agents” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Raw workplace data stays behind a local redaction layer.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "dual-use-value"],
+    "judging_lens": ["sponsor-api-use", "human-oversight"],
+    "lessons": ["Agents that talk to each other need a boundary for what leaves each person."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/standin-skpgje",
+    "repo": "https://github.com/Boroshilov03/StandIn",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1186688249?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/standin-skpgje", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

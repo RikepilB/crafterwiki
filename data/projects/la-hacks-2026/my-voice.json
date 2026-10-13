@@ -1,0 +1,37 @@
+{
+  "slug": "my-voice",
+  "name": "My Voice",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Webcam eye tracking lets people who cannot speak or move build sentences and speak them in their own voice.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of Gemma"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Many stroke survivors lose speech and motor control but keep functional eye movement, the team says.",
+  "solution": "A 3D gaze-tracking pipeline built with MediaPipe and OpenCV drives dwell selection in an anticipatory interface; Gemma suggests phrases, ElevenLabs recreates the user's voice, and translation covers English, Mandarin and Spanish.",
+  "demo_moment": "Team-described: compose a request by gaze and hear it spoken.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "opencv", "mediapipe", "gemma", "elevenlabs", "whisper", "javascript"],
+    "ai_patterns": ["computer-vision", "llm-api", "voice-ai"]
+  },
+  "domains": ["accessibility", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of Gemma” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses an ordinary webcam instead of specialised hardware.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["impact"],
+    "lessons": ["Use the one ability the user reliably keeps as the whole interface."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/my-voice-w67t8v",
+    "repo": "https://github.com/chrisconnell7/My-Voice-LA-HACKS",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=IZJ1qQYpXeE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/my-voice-w67t8v", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

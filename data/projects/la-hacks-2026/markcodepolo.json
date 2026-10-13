@@ -1,0 +1,37 @@
+{
+  "slug": "markcodepolo",
+  "name": "MarkCodePolo by Freakmont Warriors",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Generates navigable diagrams of a codebase for both people and coding agents.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Large codebases intimidate new engineers and cost agents many tokens to read.",
+  "solution": "An orchestrator of uAgents indexes a repository's symbols, data flow and structure; Gemini produces an annotated graph served on a website, an MCP server and OmegaClaw.",
+  "demo_moment": "Team-described: point it at a repo and browse the generated graph.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "fastapi", "mongodb", "docker", "uagents", "gemini", "mcp", "figma-make"],
+    "ai_patterns": ["multi-agent", "mcp-server"]
+  },
+  "domains": ["dev-tools", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Domain Name from GoDaddy Registry” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "One index serves humans and agents.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Build once for both the human reader and the agent reader."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/markcodepolo-by-freakmont-warriors",
+    "repo": "https://github.com/michelllinstar/LAHacks2026",
+    "demo": "https://agentverse.ai/agents/details/agent1qdvwf5vs4nel8x9hqmzp62nlsjx4hxqdf3e604qg97s90fqcvfkt6dpdefn/profile",
+    "video": "https://www.youtube.com/watch?v=DNzF3zk9gi4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/markcodepolo-by-freakmont-warriors", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

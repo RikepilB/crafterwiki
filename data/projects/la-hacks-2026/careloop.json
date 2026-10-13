@@ -1,0 +1,34 @@
+{
+  "slug": "careloop",
+  "name": "CareLoop Agentverse Care Companion",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Agents coordinate care for older adults: booking, pharmacy, prescription explanations and caregiver updates from one plain request.",
+  "placement": { "status": "track-winner", "awards": ["Fetch.ai: OmegaClaw Skill Forge powered by Agentverse"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "A simple health need turns into several separate workflows for older adults and caregivers.",
+  "solution": "An orchestrator on ASI:One or Telegram routes to specialist uAgents for provider search and booking, over-the-counter medicine with a service fee, prescription explanation, caregiver notifications and emergency escalation.",
+  "demo_moment": "Team-described: say you have a cough and need help, then follow the care timeline.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "uagents", "agentverse", "asi-one", "telegram", "browser-use"], "ai_patterns": ["multi-agent", "llm-api", "computer-use"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Fetch.ai: OmegaClaw Skill Forge powered by Agentverse” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Each specialist agent runs and tests on its own, built by one person.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "sponsor-platform-mastery", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Meet older users in a channel they already use and hide the agent map behind it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/careloop-agentverse-care-companion",
+    "repo": null,
+    "demo": "https://asi1.ai/shared-chat/1848a0f6-b625-43d6-bab8-8f2061de1f6b",
+    "video": "https://www.youtube.com/watch?v=4RKYgNmFiSM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/careloop-agentverse-care-companion", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

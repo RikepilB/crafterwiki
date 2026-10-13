@@ -1,0 +1,37 @@
+{
+  "slug": "snitch",
+  "name": "Snitch",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Focus sessions with money on the line: lose focus and your stake goes to friends.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students skip work when nothing is at stake.",
+  "solution": "Timed sessions with a monetary stake; the webcam detects looking away or phone use, a Chrome extension logs distracting sites as strikes, and sessions run from Discord.",
+  "demo_moment": "Team-described: start a session from Discord, pick up a phone and see a strike.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "tailwind", "mediapipe", "python", "fastapi", "sqlite", "discord-py", "stripe", "gemini"],
+    "ai_patterns": ["computer-vision", "llm-api"]
+  },
+  "domains": ["productivity", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses social and financial stakes rather than blocking.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "zero-install-channel"],
+    "judging_lens": ["design-ux", "originality"],
+    "lessons": ["Stakes beat restrictions: let friends hold the consequence."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/snitch-ackp1s",
+    "repo": "https://github.com/EfinZhao/Snitch",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=vLm0LcqmDr0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/snitch-ackp1s", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

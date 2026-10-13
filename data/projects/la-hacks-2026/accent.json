@@ -1,0 +1,38 @@
+{
+  "slug": "accent",
+  "name": "Accent",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A macOS assistant that hears what you want to do, finds the right button on screen and highlights it with spoken directions.",
+  "placement": { "status": "track-winner", "awards": ["Track: Light The Way", "Figma Make Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Older users struggle with basic interface tasks such as unmuting or turning on captions, the team says.",
+  "solution": "A menu-bar app captures the request in any language, detects on-screen UI elements with an RF-DETR model, resolves the intent with an LLM and highlights the next element while speaking the instruction.",
+  "demo_moment": "Team-described: ask in Spanish for a cooking game or ask why nobody can hear you, and the right control lights up.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swift", "python", "pytorch", "rf-detr", "huggingface", "onnx", "tensorrt", "gemini", "elevenlabs", "ollama", "figma-make"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["accessibility", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Light The Way” and “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Guides the user to act rather than acting for them, so they learn the interface.", "basis": "team-stated", "source": 0 },
+      { "claim": "Trained detection turns screenshots into a structured action space.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "visible-engineering-depth", "one-sentence-clarity"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Point, don't do: highlighting the next click teaches instead of replacing the user."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/accent-cdw2qi",
+    "repo": "https://github.com/RyloRiz/accent",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=XmlBhFCtorw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/accent-cdw2qi", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

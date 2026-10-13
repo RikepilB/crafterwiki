@@ -1,0 +1,39 @@
+{
+  "slug": "nimbus",
+  "name": "Nimbus",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Open-source, EC2-style virtual machines on hardware you own, with HTTPS access and object storage in two clicks.",
+  "placement": { "status": "track-winner", "awards": ["Arista Networks: Connect the Dots Challenge", "High Quality Sponsormaxxing"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students and small teams need cloud-like infrastructure without cloud accounts, keys or egress costs.",
+  "solution": "A single Go binary with an embedded React console orchestrates Proxmox to provision VMs with static IPs, exposes them through the team's own reverse-tunnel gateway and provisions MinIO buckets.",
+  "demo_moment": "Team-described: provision a VM in about thirty seconds on a cluster of repurposed laptops brought to the event.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["go", "react", "vite", "proxmox", "minio", "caddy", "sqlite", "bash"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["cloud-native-infra"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Arista Networks: Connect the Dots Challenge” and “High Quality Sponsormaxxing” among 307 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Brought a physical cluster of repurposed laptops to demo on.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won a networking challenge and the sponsor-use prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "live-real-world-proof", "cost-collapse"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Bring the infrastructure into the room; a live provision beats a slide."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nimbus-q025jc",
+    "repo": "https://github.com/smalex-z/nimbus",
+    "demo": "https://nimbus.altsuite.co",
+    "video": "https://www.youtube.com/watch?v=mk75Ryr81Y8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nimbus-q025jc", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "obi",
+  "name": "Obi",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A local-first second brain that finds the right file content by asking, and feeds agents only what they need.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Context switching between folders and notes breaks focus.",
+  "solution": "Watches folders, indexes text and images with keyword and semantic search on-device, answers with a local Gemma model and serves narrowed context to AI agents to save tokens.",
+  "demo_moment": "Team-described: ask a question and get the passage from your own files without leaving the loop.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "react", "typescript", "sqlite", "sqlite-vec", "llama-cpp", "gemma", "nomic-embed"], "ai_patterns": ["ml-model"] },
+  "domains": ["productivity", "memory-journaling"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Runs entirely on the user's machine.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse", "dual-use-value"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["One local index can serve both the person and their agents."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/obi-mise-en-place-for-your-data",
+    "repo": "https://github.com/LAHacks2026/Obi_Laptop/tree/main/local-rag",
+    "demo": "https://sadly-camp-78163766.figma.site/",
+    "video": "https://www.youtube.com/watch?v=r7eSFDm4Wd4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/obi-mise-en-place-for-your-data", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
