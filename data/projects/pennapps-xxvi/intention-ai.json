@@ -1,0 +1,29 @@
+{
+  "slug": "intention-ai",
+  "name": "Intention.ai",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A browser extension that reads whether you look tired, focused or stressed and suggests how to structure study time.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack (>2 members first time)"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Students lose many hours to disruptions and lack of focus.",
+  "solution": "A computer-vision model classifies focus states from the webcam during study, tracks patterns and gives personalised recommendations.",
+  "demo_moment": "Team-described: study for a while and receive a suggestion based on your focus pattern.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "javascript", "typescript", "html"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["productivity", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Hack (>2 members first time)” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team picked a problem they live with.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished", "human-stakes"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["For a beginner prize, a working end-to-end loop beats an ambitious half-build."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/pennapps-f2k83a", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=jsRAAggCVww" },
+  "sources": [
+    { "url": "https://devpost.com/software/pennapps-f2k83a", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "simteach",
+  "name": "SimTeach",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "An AI classroom simulator where teachers practise lessons with simulated students and get feedback.",
+  "placement": { "status": "track-winner", "awards": ["Best use of AI"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Teachers learn on real students by trial and error, unlike pilots or doctors who train in simulators.",
+  "solution": "AI-simulated students respond to a teacher's lesson in real time, and the system gives feedback on clarity and engagement.",
+  "demo_moment": "Team-described: teach a short lesson and handle questions from AI students.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "typescript", "mongodb", "auth0", "gemini", "chatgpt"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of AI” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "High-school students building from their own experience of teachers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Borrow a training model from another profession (flight simulators) to explain the idea."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/edusim",
+    "repo": "https://github.com/chrisma71/SimTeach",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=DqrPQHyDddM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/edusim", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

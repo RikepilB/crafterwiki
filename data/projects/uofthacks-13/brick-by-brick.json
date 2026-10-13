@@ -1,0 +1,42 @@
+{
+  "slug": "brick-by-brick",
+  "name": "Brick by Brick",
+  "hackathon": "uofthacks-13",
+  "tagline": "Film your space and get a buildable LEGO set of it, with a parts list and instructions.",
+  "placement": { "status": "track-winner", "awards": ["TwelveLabs: Build The Future of Video Understanding with TwelveLabs", "Best Use of Solana"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted to rekindle childhood building as a way to reflect on identity.",
+  "solution": "Video understanding analyses the footage, a spatial-reasoning model maps it into a voxel grid, parts come from a LEGO parts database, and a memory layer switches between lighter and heavier models by complexity.",
+  "demo_moment": "Team-described: record an object and receive the LEGO pieces and steps to build it.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["twelvelabs", "gemini", "backboard", "rebrickable-api", "next.js", "python", "solana"],
+    "ai_patterns": ["computer-vision", "llm-api", "generative-media"]
+  },
+  "domains": ["games-entertainment", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “TwelveLabs: Build The Future of Video Understanding with TwelveLabs” and “Best Use of Solana” among 160 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Uses video understanding for something physical and playful.", "basis": "team-stated", "source": 0 },
+      { "claim": "Everyone recognises LEGO, so the output needs no explanation.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "sponsor-platform-mastery", "demo-first-wow"],
+    "judging_lens": ["sponsor-api-use", "originality"],
+    "lessons": ["Point a sponsor's model at something tangible and familiar."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lego-6928rf",
+    "repo": "https://github.com/GabrielAndrus/UofTHacks13",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=iyM0DXFlJSA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lego-6928rf", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

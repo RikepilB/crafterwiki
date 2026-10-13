@@ -1,0 +1,34 @@
+{
+  "slug": "charaides",
+  "name": "CharAIdes",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Act out a word on webcam and an AI guesses it, so charades works solo or online.",
+  "placement": { "status": "track-winner", "awards": ["Most Creative Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Charades needs a human judge in the room.",
+  "solution": "Captures webcam frames, has a vision model guess the action within a time limit, and keeps score across rounds.",
+  "demo_moment": "Team-described: mime a word and watch the AI guess.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "fastapi", "gemini"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Creative Hack” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a party game everyone knows into an AI demo.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "demo-first-wow", "tight-scope-finished"],
+    "judging_lens": ["originality"],
+    "lessons": ["A game everyone already knows needs no rules slide."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ai-charade",
+    "repo": "https://github.com/PennApps2025/FrontAiCharades",
+    "demo": "https://frontaicharades.onrender.com/",
+    "video": "https://www.youtube.com/watch?v=tWelkpG4g84"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ai-charade", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

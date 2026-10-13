@@ -1,0 +1,34 @@
+{
+  "slug": "red-lamp",
+  "name": "Red Lamp",
+  "hackathon": "uofthacks-13",
+  "tagline": "A robot desk lamp reworked into a companion you can talk to.",
+  "placement": { "status": "track-winner", "awards": ["LeLamp: Hack the Human-Robot Experience"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People alone want something present and responsive, not another chatbot window.",
+  "solution": "Built from a lamp-robot kit with 3D-printed parts and a Raspberry Pi, adapted for conversation and companionship.",
+  "demo_moment": "Team-described: talk to the lamp and it responds and moves.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["lelamp", "raspberry-pi", "servos", "opencv", "yolo", "python"], "ai_patterns": ["voice-ai", "computer-vision", "llm-api"] },
+  "domains": ["robotics-hardware", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “LeLamp: Hack the Human-Robot Experience” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Assembled and ran the robot from scratch within the event.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["In a hardware sponsor track, getting the kit fully working is most of the battle."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/red-lamp",
+    "repo": "https://github.com/Hackm0/lelampv3",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=gwU1twqMq40"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/red-lamp", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

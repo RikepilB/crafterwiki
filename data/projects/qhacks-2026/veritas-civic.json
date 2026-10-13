@@ -1,0 +1,34 @@
+{
+  "slug": "veritas-civic",
+  "name": "Veritas",
+  "hackathon": "qhacks-2026",
+  "tagline": "A bilingual civic assistant that answers municipal questions with sources and routes photo reports of street issues.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Solana"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "The team cites long 311 waits in Kingston and language barriers for Francophone residents.",
+  "solution": "Answers questions on bylaws and services with citations, classifies uploaded photos of potholes or broken lights and routes them to the right department, works in English and French, and logs reports on-chain for transparency.",
+  "demo_moment": "Team-described: photograph a pothole and see it identified and routed.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "gemini", "openstreetmap", "solana", "sqlite", "elevenlabs"], "ai_patterns": ["llm-api", "computer-vision", "on-chain"] },
+  "domains": ["govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Solana” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Every answer is backed by a source citation.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "place-based-specificity"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["Citations make a government chatbot defensible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/veritas-gbqc0h",
+    "repo": "https://github.com/armaansingla14/Veritas",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=lrAy4s7RAaw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/veritas-gbqc0h", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "big-bro",
+  "name": "Big Brother",
+  "hackathon": "uofthacks-13",
+  "tagline": "A browser extension that guides older users step by step through any website, or does the task for them.",
+  "placement": { "status": "track-winner", "awards": ["Best .Tech Domain Name"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Changing interfaces make older adults depend on others for everyday online tasks.",
+  "solution": "A Chrome extension takes plain-language or voice requests, highlights where to click and what to type on the page, and can act on the user's behalf, using retrieval, page-structure detection and memory.",
+  "demo_moment": "Team-described: ask how to do something and watch the page light up with the next step.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["chrome-extension", "react", "fastapi", "neo4j", "mongodb", "openai", "elevenlabs", "voyage"],
+    "ai_patterns": ["agent", "voice-ai", "computer-use"]
+  },
+  "domains": ["accessibility", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best .Tech Domain Name” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps the user in control by guiding first and acting only when needed.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "zero-install-channel", "takes-action"],
+    "judging_lens": ["impact"],
+    "lessons": ["Guiding before acting keeps an assistive agent trustworthy."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/big-bro-tsv0i9",
+    "repo": null,
+    "demo": "https://big-bro-please-help-me-with-this-new.tech/",
+    "video": "https://www.youtube.com/watch?v=Ix4LrNKMJEk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/big-bro-tsv0i9", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

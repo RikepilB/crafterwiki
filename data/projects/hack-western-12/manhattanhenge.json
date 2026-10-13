@@ -1,0 +1,35 @@
+{
+  "slug": "manhattanhenge",
+  "name": "Manhattanhenge",
+  "hackathon": "hack-western-12",
+  "tagline": "Finds when the sunset lines up with the street grid in any city, not just New York.",
+  "placement": { "status": "track-winner", "awards": ["Organizer's Choice Awards: Most Creative Impact"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "The famous New York sunset-alignment moment likely has equivalents in other grid cities that nobody knows about.",
+  "solution": "Search any city, see its street layout on a map, and compute the dates when the setting sun aligns with its streets.",
+  "demo_moment": "Team-described: type a city and see its own 'henge' dates on the map.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "typescript", "mapbox", "vercel"], "ai_patterns": ["none"] },
+  "domains": ["education", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Organizer's Choice Awards: Most Creative Impact” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Generalizes a well-known phenomenon to every city.", "basis": "team-stated", "source": 0 },
+      { "claim": "A solo, AI-free build won the organizers' creative award.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job", "tight-scope-finished"],
+    "judging_lens": ["originality"],
+    "lessons": ["A delightful question (\"is there a Torontohenge?\") can beat bigger builds."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/manhattanhenge",
+    "repo": "https://github.com/vinny-nguyen/manhattanhenge",
+    "demo": "https://manhattanhenge.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/manhattanhenge", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "sen-dex",
+  "name": "sen_dex",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A background browser extension that maps the concepts you study into a personal knowledge graph without asking you anything.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - EdTech"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Keeping up with research means absorbing more information than people can retain.",
+  "solution": "Collects and filters searches, screen captures and attention hotspots, embeds them and clusters concepts into a navigable map, and predicts papers to read.",
+  "demo_moment": "Team-described: browse papers and see your concept map grow.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["plasmo", "electron", "svelte", "react", "express", "python", "huggingface", "cerebras", "exa"],
+    "ai_patterns": ["ml-model", "llm-api"]
+  },
+  "domains": ["education", "memory-journaling"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - EdTech” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Builds the learning map passively.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Passive capture is powerful, but say how private data stays private."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/sen_dex", "repo": "http://github.com/AshOnDiscord/Serendity-PenappsXXVI", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/sen_dex", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

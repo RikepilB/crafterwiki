@@ -1,0 +1,34 @@
+{
+  "slug": "tab-it",
+  "name": "Tab-it",
+  "hackathon": "qhacks-2026",
+  "tagline": "Upload any song and get an editable guitar tab generated from the isolated guitar track.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Vultr"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Learning songs by ear is hard for beginners, and tabs for new or niche songs are often missing.",
+  "solution": "A cloud pipeline separates the guitar stem, converts audio to MIDI, maps notes onto the fretboard and renders an editable tab.",
+  "demo_moment": "Team-described: upload a song and play along with the generated tab.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "react", "audio-separator", "basic-pitch", "music21", "vultr"], "ai_patterns": ["ml-model"] },
+  "domains": ["creative-media", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Vultr” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Runs the heavy audio pipeline on the sponsor's cloud.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "tight-scope-finished", "one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Compute-heavy pipelines are a natural fit for cloud-sponsor prizes."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/tab-it",
+    "repo": "https://github.com/EvasiveJosh/Tab-It",
+    "demo": "http://107.191.42.145:8080/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/tab-it", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

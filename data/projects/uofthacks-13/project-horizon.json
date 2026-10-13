@@ -1,0 +1,33 @@
+{
+  "slug": "project-horizon",
+  "name": "Project Horizon",
+  "hackathon": "uofthacks-13",
+  "tagline": "Turns third-person sports video into a first-person view from any player you pick.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Overall 2nd place", "Backboard.io: Memory Lane: Adaptive AI Journeys", "TwelveLabs: Build The Future of Video Understanding with TwelveLabs"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Fans see a match from the broadcast camera, never from the perspective of the player making the decisions.",
+  "solution": "Scene understanding through video models identifies the subject; monocular depth estimation builds a coarse 3D scene and a rough first-person sketch video; an image-to-video diffusion model fine-tuned with LoRA on paired third- and first-person clips renders the final first-person footage on cloud GPUs.",
+  "demo_moment": "Team-described: pick a player in a soccer clip and watch the play from their eyes.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "react", "typescript", "backboard", "gemini", "twelvelabs", "wan-2.1", "lora", "modal", "h100"],
+    "ai_patterns": ["generative-media", "computer-vision", "ml-model"]
+  },
+  "domains": ["creative-media", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Took second place overall among 160 submissions and two sponsor prizes.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Fine-tuned a 14B video diffusion model on paired viewpoints during the event, with depth-based priors to keep camera motion plausible.", "basis": "team-stated", "source": 0 },
+      { "claim": "Seeing a famous player's point of view is an instant hook for any audience.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "visible-engineering-depth", "sponsor-platform-mastery", "cultural-reference-hook"],
+    "judging_lens": ["technical-depth", "originality", "sponsor-api-use"],
+    "lessons": ["Training a model in a weekend is credible when the output is something judges can watch and compare."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/project-horizon-8iodp2", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=CGtGJQ4qxpc" },
+  "sources": [
+    { "url": "https://devpost.com/software/project-horizon-8iodp2", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

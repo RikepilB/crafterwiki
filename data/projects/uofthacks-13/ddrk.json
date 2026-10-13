@@ -1,0 +1,35 @@
+{
+  "slug": "ddrk",
+  "name": "DDRK (Dance Dance Revolution Keyboard)",
+  "hackathon": "uofthacks-13",
+  "tagline": "A foot-operated keyboard: step dance-game patterns to type letters while staying active.",
+  "placement": { "status": "track-winner", "awards": ["Best Hardware Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students and workers sit for hours at keyboards; the team wanted typing that keeps the body moving.",
+  "solution": "A plywood pad with buttons on a microcontroller; step combinations map to characters, and a Python layer sends them to the computer as keystrokes.",
+  "demo_moment": "Team-described: type a word by stepping out patterns on the pad.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp8266", "c", "python", "plywood"], "ai_patterns": ["none"] },
+  "domains": ["robotics-hardware", "health", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Hardware Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a childhood rhythm game into an input device.", "basis": "team-stated", "source": 0 },
+      { "claim": "A physical pad judges can stand on is a strong hardware-prize demo.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "familiar-thing-new-job", "cultural-reference-hook", "tight-scope-finished"],
+    "judging_lens": ["originality", "wow-factor"],
+    "lessons": ["For a hardware prize, a sturdy device people can use in the room beats a complex one that wobbles."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ddrk-dance-dance-revolution-keyboard",
+    "repo": null,
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=DTe7KsN3Sbg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ddrk-dance-dance-revolution-keyboard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
