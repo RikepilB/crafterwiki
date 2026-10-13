@@ -24,10 +24,11 @@ const guided = corpus.hackathons
       </article>
     ))}
   </div>
-  <p class="muted spaced">Every other indexed event, past or upcoming, is in <a href={href('/hackathons/')}>Hackathons</a>.</p>
+  <p class="muted spaced" translate="no"><span lang="en">Every other indexed event, past or upcoming, is in <a href={href('/hackathons/')}>Hackathons</a>.</span><span lang="es">Los demás eventos indexados, pasados o próximos, están en <a href={href('/hackathons/')}>Hackathons</a>.</span></p>
 </Layout>
 
 <style>
+  :global(html[lang='en'] [translate='no'] [lang='es']), :global(html[lang='es'] [translate='no'] [lang='en']) { display:none; }
   .guide-list { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr)); }
   .guide-card { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px; }
   .guide-card h2 { font-size:1.3rem; margin:.2em 0 .4em; }

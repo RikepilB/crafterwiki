@@ -34,6 +34,8 @@ const phaseLabel = {
 };
 const stopAt = HARNESS_PHASES.indexOf(g.harness_stop ?? '');
 const phases = HARNESS_PHASES.map((id, i) => ({ id, label: phaseLabel[id], before: stopAt < 0 || i < stopAt }));
+const coverageEs = { full: 'completo', partial: 'parcial', 'winners-only': 'solo ganadores', none: 'sin entradas' };
+const plural = (n, one, many) => (n === 1 ? one : many);
 const facts = [
   ['Dates', fmtRange(h.start_date, h.end_date)],
   ['Where', [h.venue, h.city].filter(Boolean).join(' · ') || humanize(h.region) || 'Not stated'],
@@ -48,7 +50,7 @@ const facts = [
   <h1>{eventName(h)}</h1>
   <p class="lede">{g.summary}</p>
   <dl class="facts">{facts.map(([k, v]) => <div class="fact"><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
-  <p class="meta">Organized by {h.organizer}. Full record: <a href={href(`/hackathons/${h.slug}/`)}>rubric, sources and results</a>.</p>
+  <p class="meta" translate="no"><span lang="en">Organized by {h.organizer}. Full record: <a href={href(`/hackathons/${h.slug}/`)}>rubric, sources and results</a>.</span><span lang="es">Organizado por {h.organizer}. Registro completo: <a href={href(`/hackathons/${h.slug}/`)}>rúbrica, fuentes y resultados</a>.</span></p>
 
   <h2>Before the event</h2>
   {g.before_the_event && <p>{g.before_the_event}</p>}
@@ -89,32 +91,32 @@ const facts = [
 
   <h2>What to hand in</h2>
   {b.required_tech.length > 0 && <p><b>Required:</b> {b.required_tech.join('; ')}</p>}
-  {b.submission_requirements.length ? <ul>{b.submission_requirements.map((s) => <li>{s}</li>)}</ul> : <p class="muted">No submission rules recorded yet.</p>}
+  {b.submission_requirements.length ? <ul>{b.submission_requirements.map((s) => <li>{s}</li>)}</ul> : <p class="muted">No submission rules recorded.</p>}
 
   <h2>What the corpus says</h2>
   {earlier.length > 0 && (
     <>
       <p>Earlier editions indexed in CrafterWIKI:</p>
-      <ul>{earlier.map(({ x, winners }) => <li><a href={href(`/hackathons/${x.slug}/`)}>{eventName(x)}</a> — {winners} analyzed winner{winners === 1 ? '' : 's'}, {humanize(x.roster_coverage)} roster</li>)}</ul>
+      <ul>{earlier.map(({ x, winners }) => <li translate="no"><a href={href(`/hackathons/${x.slug}/`)}>{eventName(x)}</a> <span lang="en">— {winners} analyzed {plural(winners, 'winner', 'winners')}, {humanize(x.roster_coverage)} roster</span><span lang="es">— {winners} {plural(winners, 'ganador analizado', 'ganadores analizados')}, roster {coverageEs[x.roster_coverage] ?? x.roster_coverage}</span></li>)}</ul>
     </>
   )}
   {priorCount ? (
     <>
-      <p class="muted">Mechanisms and judging lenses among {priorCount} confirmed winners from {priors.events.length} other {humanize(h.kind)} event{priors.events.length === 1 ? '' : 's'}.</p>
+      <p class="muted" translate="no"><span lang="en">Mechanisms and judging lenses among {priorCount} confirmed winners from {priors.events.length} other {plural(priors.events.length, 'event', 'events')} of this kind.</span><span lang="es">Mecanismos y enfoques de evaluación entre {priorCount} ganadores confirmados de {priors.events.length} {plural(priors.events.length, 'otro evento', 'otros eventos')} de este tipo.</span></p>
       <div class="two-col">
         <section><h3>Mechanisms</h3><Bars rows={priors.mechanisms} facet="mechanisms" of={priorCount} /></section>
         <section><h3>Judging lenses</h3><Bars rows={priors.lenses} of={priorCount} /></section>
       </div>
     </>
   ) : (
-    <p class="muted">No confirmed winners from other {humanize(h.kind)} events yet. Treat <a href={href('/patterns/')}>patterns from other kinds of event</a> as weak priors.</p>
+    <p class="muted" translate="no"><span lang="en">No confirmed winners from other events of this kind yet. Treat <a href={href('/patterns/')}>patterns from other kinds of event</a> as weak priors.</span><span lang="es">Aún no hay ganadores confirmados de otros eventos de este tipo. Toma los <a href={href('/patterns/')}>patrones de otros tipos de evento</a> como referencias débiles.</span></p>
   )}
   {g.evidence_note && <p class="callout info"><b>Curator note.</b> {g.evidence_note}</p>}
 
   <h2>Plan it with the harness</h2>
   <p>CrafterWIKI's planner runs these steps in order. The event's rules decide how far you may go before it starts.</p>
   <ol class="phases">
-    {phases.map((p) => <li class:list={{ held: !p.before }}><b>{p.label}</b> <span class="meta">{p.before ? 'before the event' : 'at the event'}</span></li>)}
+    {phases.map((p) => <li class:list={{ held: !p.before }}><b>{p.label}</b> · <span class="meta">{p.before ? 'before the event' : 'at the event'}</span></li>)}
   </ol>
   {g.harness_note && <p class="muted">{g.harness_note}</p>}
   <pre>/hack-plan {h.slug}</pre>
@@ -131,12 +133,13 @@ const facts = [
   <ul class="sources">
     {h.sources.map((s) => {
       const url = sourceHref(s.url);
-      return <li>{url ? <a href={url} target="_blank" rel="noopener">{s.url}</a> : s.url} <span class="meta">· {humanize(s.kind)} · retrieved {s.retrieved_at}</span>{s.note && <> — {s.note}</>}</li>;
+      return <li>{url ? <a href={url} target="_blank" rel="noopener">{s.url}</a> : s.url} <span class="meta"> · {humanize(s.kind)} · retrieved {s.retrieved_at}</span>{s.note && <> — {s.note}</>}</li>;
     })}
   </ul>
 </Layout>
 
 <style>
+  :global(html[lang='en'] [translate='no'] [lang='es']), :global(html[lang='es'] [translate='no'] [lang='en']) { display:none; }
   .nowrap { white-space:nowrap; }
   .phases { display:grid; gap:6px; padding-left:22px; }
   .phases li.held { color:var(--muted); }

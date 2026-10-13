@@ -86,6 +86,7 @@
       "Does your Local Event run its own judging and awards, and when do teams present?",
       "What are the venue hours, and can teams work overnight?"
     ],
+    "evidence_note": "These priors come from 20 winners of the 2024 and 2025 editions. A pre-registered backtest on the 2024 winners (docs/research/holdout-nasa-2024.md) found them only partly predictive: the agency playbook beat chance mainly through expert data made usable for everyone, which the challenges themselves ask for. Use them to check an idea, not to choose one.",
     "harness_stop": "judge-gate",
     "harness_note": "Run recon and patterns fully, and angles only as problem families and angle shapes. Everything from the judge gate on waits until November 14. The repository keeps a worked example in hack-plan/nasa-space-apps-2026/."
   },
