@@ -344,7 +344,7 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://hackthenorth2025.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Dates, participants, prizes, judges, judging criteria." },
-    { "url": "https://hackthenorth2025.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "Team size: up to 4 members, all present in person." },
+    { "url": "https://hackthenorth2025.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-12", "note": "Team size: up to 4 members, all present in person." },
     { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12", "note": "All 11 pages captured: 261 submissions counted, 260 publicly listed. Winner ribbons mark every prize-winning project." },
     { "url": "https://hackthenorth.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "2026 site features S-KBD67, ROSS and DUM-E as past projects." }
   ],
