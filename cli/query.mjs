@@ -4,6 +4,8 @@
 
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
+// Demo-first harness phases in ADR-004 order; an event guide names the first one to hold until the event starts.
+export const HARNESS_PHASES = ['recon', 'patterns', 'angles', 'judge-gate', 'demo-script', 'approval', 'architecture', 'build-plan'];
 const STOP = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'to', 'in', 'for', 'with', 'on', 'de', 'la', 'el', 'y', 'en', 'que', 'is', 'it']);
 
 export function slugify(s) {
@@ -117,6 +119,26 @@ export function validate(corpus) {
     for (const c of h.judging?.criteria ?? []) checkEnum(f, 'judging.criteria.lens', c.lens, V.lenses);
     for (const p of h.prizes ?? []) checkEnumList(f, `prizes["${p.name}"].criteria`, p.criteria, V.lenses);
     const trackIds = new Set((h.tracks ?? []).map((tr) => tr.id));
+    for (const tr of h.tracks ?? []) {
+      for (const c of tr.criteria ?? []) checkEnum(f, `tracks["${tr.id}"].criteria.lens`, c.lens, V.lenses);
+      // Once a track weights any criterion, every criterion needs a finite weight, or the table shows gaps.
+      const weights = (tr.criteria ?? []).map((c) => c.weight);
+      if (weights.some((w) => w !== undefined) && (!weights.every((w) => Number.isFinite(w)) || weights.reduce((a, b) => a + b, 0) !== 100)) {
+        err(f, `tracks["${tr.id}"] criteria weights must be finite and sum to 100`);
+      }
+    }
+    const challengeIds = new Set();
+    for (const c of h.challenges ?? []) {
+      if (!c.id || !c.title) err(f, 'challenges need an id and a title');
+      if (challengeIds.has(c.id)) err(f, `duplicate challenge id ${c.id}`);
+      challengeIds.add(c.id);
+      if (c.track && !trackIds.has(c.track)) err(f, `challenge ${c.id} track "${c.track}" is not in tracks`);
+    }
+    if (h.guide) {
+      if (!h.guide.summary) err(f, 'guide.summary is required');
+      if (h.guide.harness_stop != null && !HARNESS_PHASES.includes(h.guide.harness_stop)) err(f, `guide.harness_stop "${h.guide.harness_stop}" is not a harness phase`);
+      (h.guide.rules ?? []).forEach((r, i) => { if (!r.rule || !r.effect) err(f, `guide.rules[${i}] needs rule and effect`); });
+    }
     (h.entries ?? []).forEach((e, i) => {
       if (!e.name) err(f, `entries[${i}] missing name`);
       if (e.project) return;

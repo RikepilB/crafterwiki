@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { corpus, href, eventName } from '../../lib/data.mjs';
+import { humanize, fmtRange } from '../../lib/labels.mjs';
+
+const guided = corpus.hackathons
+  // Finished events keep their guide page, but the index lists only what is still ahead.
+  .filter((h) => h.guide && h.results_status === 'upcoming')
+  .sort((a, b) => (a.start_date ?? '').localeCompare(b.start_date ?? ''));
+---
+<Layout title="Event guides" description="How to prepare for specific upcoming hackathons: the rules that change your plan, how judging is weighted, and what past winners did.">
+  <p class="eyebrow">Build</p>
+  <h1>Event guides</h1>
+  <p class="lede">
+    One page per upcoming event: what you may prepare before it starts, the rules that change your plan,
+    how judging is weighted and what the corpus knows about events like it.
+  </p>
+  <div class="guide-list">
+    {guided.map((h) => (
+      <article class="guide-card">
+        <p class="meta">{fmtRange(h.start_date, h.end_date)} · {[h.city, humanize(h.format)].filter(Boolean).join(' · ')} · {humanize(h.kind)}</p>
+        <h2><a href={href(`/events/${h.slug}/`)}>{eventName(h)}</a></h2>
+        <p>{h.guide.summary}</p>
+        <p class="meta"><a href={href(`/events/${h.slug}/`)}>Read the guide →</a></p>
+      </article>
+    ))}
+  </div>
+  <p class="muted spaced" translate="no"><span lang="en">Every other indexed event, past or upcoming, is in <a href={href('/hackathons/')}>Hackathons</a>.</span><span lang="es">Los demás eventos indexados, pasados o próximos, están en <a href={href('/hackathons/')}>Hackathons</a>.</span></p>
+</Layout>
+
+<style>
+  :global(html[lang='en'] [translate='no'] [lang='es']), :global(html[lang='es'] [translate='no'] [lang='en']) { display:none; }
+  .guide-list { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr)); }
+  .guide-card { background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px; }
+  .guide-card h2 { font-size:1.3rem; margin:.2em 0 .4em; }
+  .guide-card h2 a { text-decoration:none; }
+  .guide-card p { margin:.4em 0; }
+</style>

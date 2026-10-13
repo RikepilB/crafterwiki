@@ -1,0 +1,32 @@
+---
+// The organizer's challenge briefs, paraphrased, with each brief's deliverables folded away.
+import { humanize } from '../lib/labels.mjs';
+
+const { challenges = [], tracks = [] } = Astro.props;
+const trackName = new Map(tracks.map((t) => [t.id, t.name]));
+---
+{challenges.length > 0 && (
+  <div class="table-wrap"><table>
+    <thead><tr><th>Brief</th><th>Challenge</th><th>Track</th><th>Level</th></tr></thead>
+    <tbody>
+      {challenges.map((c) => (
+        <tr>
+          <td class="nowrap"><b>{c.id}</b></td>
+          <td>
+            <b>{c.title}</b><br /><span class="muted">{c.summary}</span>
+            {(c.deliverables ?? []).length > 0 && (
+              <details class="deliverables"><summary>Deliverables</summary><ul>{c.deliverables.map((d) => <li>{d}</li>)}</ul></details>
+            )}
+          </td>
+          <td>{c.track ? (trackName.get(c.track) ?? humanize(c.track)) : '—'}</td>
+          <td>{c.level ? humanize(c.level) : '—'}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+)}
+<style>
+  .deliverables { margin-top:6px; font-size:.9rem; }
+  .deliverables summary { cursor:pointer; color:var(--muted); font-weight:600; }
+  .deliverables ul { margin:6px 0 0; padding-left:18px; }
+</style>

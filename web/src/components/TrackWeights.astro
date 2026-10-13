@@ -1,0 +1,30 @@
+---
+// Judging weights per track as one matrix: criteria down, tracks across, the heaviest cell per track in bold.
+import { definition } from '../lib/data.mjs';
+
+const { tracks = [], criteria = [] } = Astro.props;
+const weighted = tracks.filter((t) => (t.criteria ?? []).some((c) => c.weight != null));
+const lenses = [...new Set(weighted.flatMap((t) => t.criteria.map((c) => c.lens)))];
+const labelFor = (lens) => criteria.find((c) => c.lens === lens)?.label ?? weighted.flatMap((t) => t.criteria).find((c) => c.lens === lens)?.label ?? lens;
+const cell = (t, lens) => t.criteria.find((c) => c.lens === lens);
+const top = new Map(weighted.map((t) => [t.id, Math.max(...t.criteria.map((c) => c.weight ?? 0))]));
+---
+{weighted.length > 0 && (
+  <div class="table-wrap"><table class="weights">
+    <thead><tr><th>Criterion</th>{weighted.map((t) => <th>{t.name}</th>)}</tr></thead>
+    <tbody>
+      {lenses.map((lens) => (
+        <tr>
+          <td><b>{labelFor(lens)}</b><br /><span class="muted">{definition('judging_lenses', lens)}</span></td>
+          {weighted.map((t) => {
+            const c = cell(t, lens);
+            return <td title={c?.description}>{c ? (c.weight === top.get(t.id) ? <b>{c.weight}%</b> : `${c.weight}%`) : '—'}</td>;
+          })}
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+)}
+<style>
+  .weights td:not(:first-child), .weights th:not(:first-child) { text-align:right; white-space:nowrap; }
+</style>

@@ -1,0 +1,131 @@
+{
+  "slug": "wateraid-water-challenge-2026",
+  "name": "The Water Challenge",
+  "edition": "2026",
+  "year": 2026,
+  "organizer": "WaterAid Canada × The AI Fellowship × SOON × TMU",
+  "kind": "nonprofit-challenge",
+  "format": "in-person",
+  "format_note": "The overview speaks of meeting the people beside you on the day; the challenge pages do not name a venue.",
+  "region": "North America",
+  "countries": ["CA"],
+  "city": "Toronto",
+  "venue": null,
+  "start_date": "2026-10-17",
+  "end_date": "2026-10-17",
+  "duration_hours": null,
+  "participants": null,
+  "teams": 11,
+  "team_size": null,
+  "theme": "Ten problems written by WaterAid Canada staff; each team picks one",
+  "tracks": [
+    {
+      "id": "a",
+      "name": "Track A · Organizational Capability",
+      "description": "Tools for WaterAid Canada's fundraising, finance, partnerships, knowledge, analysis and public engagement. The judges' recurring question: would the team actually use this three months from now?",
+      "criteria": [
+        { "lens": "impact", "label": "Mission Impact", "weight": 20, "description": "Whether the benefit reaches water and sanitation work instead of stopping at the office." },
+        { "lens": "technical-depth", "label": "Architectural Soundness", "weight": 20, "description": "A real system with data moving between real parts, not a prompt in a wrapper." },
+        { "lens": "challenge-relevance", "label": "Feasibility & Adoption", "weight": 25, "description": "Fits their systems, team size and budget. Highest weight in this track." },
+        { "lens": "human-oversight", "label": "Governance & Human-in-the-Loop", "weight": 15, "description": "Who decides, where a person checks the work, how mistakes get caught." },
+        { "lens": "cost-sustainability", "label": "Economic Durability", "weight": 15, "description": "Running cost against what it saves." },
+        { "lens": "storytelling-pitch", "label": "Craft & Communication", "weight": 5, "description": "A demo judges can follow and a story that lands in five minutes." }
+      ]
+    },
+    {
+      "id": "b",
+      "name": "Track B · Field Systems & Service Delivery",
+      "description": "Rural water services, explored through a fictional district case. The test: does it still work with patchy phone signal, few technicians and a tight budget?",
+      "criteria": [
+        { "lens": "impact", "label": "Mission Impact", "weight": 30, "description": "More water points working, more of the time. Highest weight in this track." },
+        { "lens": "technical-depth", "label": "Architectural Soundness", "weight": 15, "description": "What happens when the network drops." },
+        { "lens": "challenge-relevance", "label": "Feasibility in Low-Resource Settings", "weight": 25, "description": "Built for about 80% mobile coverage, few technicians and no data team." },
+        { "lens": "human-oversight", "label": "Governance & Human-in-the-Loop", "weight": 15, "description": "Supports local staff and community committees rather than replacing them." },
+        { "lens": "cost-sustainability", "label": "Economic Durability", "weight": 10, "description": "Cost per water point per year, and who pays when pilot money ends." },
+        { "lens": "storytelling-pitch", "label": "Craft & Communication", "weight": 5, "description": "A demo judges can follow and a story that lands in five minutes." }
+      ]
+    },
+    {
+      "id": "c",
+      "name": "Track C · Systems Blueprint",
+      "description": "The whole Canadian organization redesigned around AI, judged as a plan plus one component that actually works.",
+      "criteria": [
+        { "lens": "impact", "label": "Mission Impact", "weight": 25, "description": "How much more the organization can do without hiring more." },
+        { "lens": "technical-depth", "label": "Architectural Soundness", "weight": 30, "description": "One joined-up design, not a list of tools. Highest weight in this track." },
+        { "lens": "challenge-relevance", "label": "Feasibility", "weight": 10, "description": "Where to start and what comes next. Lowest weight on purpose: think big." },
+        { "lens": "human-oversight", "label": "Governance & Human-in-the-Loop", "weight": 15, "description": "Which decisions stay with people, and why." },
+        { "lens": "cost-sustainability", "label": "Economic Durability", "weight": 15, "description": "Build cost, running cost, and what a charity board would accept." },
+        { "lens": "storytelling-pitch", "label": "Craft & Communication", "weight": 5, "description": "Whether a CEO without technical background could follow it." }
+      ]
+    }
+  ],
+  "challenges": [
+    { "id": "A1", "track": "a", "level": "advanced", "title": "Donation Reconciliation Assistant", "summary": "Match donation records across payment, finance and bank systems, investigate the differences and draft reconciliation summaries for staff review.", "deliverables": ["Working demo on synthetic transactions with an answer key", "Data-flow diagram, review screen and a sample summary", "Matching accuracy, unresolved items and review effort", "Costs, volume assumptions and break-even point", "Five-minute presentation of the use and its limits"] },
+    { "id": "A2", "track": "a", "level": "foundation", "title": "Grant and Foundation Prospecting", "summary": "Spot new funding opportunities, score their fit with WaterAid Canada's priorities and flag deadlines.", "deliverables": ["Working demo on public funding information", "Explicit fit criteria and a ranked list with source-linked notes", "Staff feedback method, source-update plan and running costs", "Five-minute presentation of the quality and limits of the recommendations"] },
+    { "id": "A3", "track": "a", "level": "foundation", "title": "Intelligent Reporting and Dashboard Narratives", "summary": "Draft plain-language explanations of fundraising, donor and operating data for staff, leadership and the board.", "deliverables": ["Drafts for staff, leadership and board audiences", "Visible links from key statements to source data and calculations", "Examples of handling uncertainty and misleading trends", "Cost estimate and a five-minute presentation of the review workflow"] },
+    { "id": "A4", "track": "a", "level": "intermediate", "title": "Personalised Stewardship from CRM", "summary": "Surface relevant donor history and suggest the next step, so a small fundraising team can keep personal relationships at scale.", "deliverables": ["Demo on synthetic donor records with sample drafts", "Review workflow showing sources, preferences and follow-up tasks", "Privacy approach and a cost estimate that includes staff review", "Five-minute presentation of the benefit and limits"] },
+    { "id": "A5", "track": "a", "level": "advanced", "title": "Due Diligence Agent for Ethical Partnerships", "summary": "Research prospective partners from public sources, present the evidence clearly and raise questions for a human reviewer.", "deliverables": ["Demo across cases of varying evidence quality", "Sample assessment file linking findings to sources and criteria", "Review workflow, uncertainty approach and cost estimate", "Five-minute presentation of what the tool can and cannot establish"] },
+    { "id": "A6", "track": "a", "level": "advanced", "title": "Proposal and Grant Compliance Assistant", "summary": "Help staff meet funder requirements, strengthen proposal drafts and track obligations over the life of a grant.", "deliverables": ["Working demo for proposal support, grant management or a defined link between them", "Source-linked critique, obligation summary, schedule or compliance dashboard", "Staff review, test results and cost assumptions", "Five-minute presentation of the chosen scope and limits"] },
+    { "id": "A8", "track": "a", "level": "intermediate", "title": "Executive Intelligence and Thought Leadership Dashboard", "summary": "Produce a weekly briefing that ties outside developments to the organization's strategic and communications priorities.", "deliverables": ["A complete weekly briefing", "Source and prioritization criteria with included and excluded examples", "Sample communications drafts, a review process and costs", "Five-minute presentation of the intended reader and decisions"] },
+    { "id": "A9", "track": "a", "level": "advanced", "title": "Measuring Influence", "summary": "Track how policy conversations change, find openings, and assess the organization's contribution within collective efforts.", "deliverables": ["Demo on a defined historical or current policy question", "Sourced timeline, framing analysis or map of public actors", "Method, alternative explanations and limitations", "Forward-looking recommendation, cost estimate and five-minute presentation"] },
+    { "id": "B1", "track": "b", "level": "advanced", "title": "Kijana District: Rural Water Security", "summary": "Keep rural water services running in a fictional district, working through local institutions and community decision-making.", "deliverables": ["Working demo or simulation on the fictional scenario", "System map of users, responsibilities, data and links to existing functions", "Connectivity, equity, maintenance and financing approaches with costs", "Five-minute presentation of likely uses and what needs field validation"] },
+    { "id": "C1", "track": "c", "level": "advanced", "title": "Reimagining an AI-Enabled WaterAid Canada", "summary": "A practical five-to-ten-year vision of AI across the organization, with one component demonstrated.", "deliverables": ["Blueprint of functions, shared capabilities and human responsibilities", "Phased roadmap with dependencies, pilot criteria and investment assumptions", "One working component showing the user benefit", "Five-minute presentation leadership can assess without specialist knowledge"] }
+  ],
+  "timeline": [
+    { "date": "2026-10-08", "what": "Teams introduced; teammates meet to review the ten briefs" },
+    { "date": "2026-10-12", "what": "Each team submits its chosen challenge" },
+    { "date": "2026-10-17", "what": "Event day. Team Brief editable until 08:30 Toronto time" }
+  ],
+  "prizes": [],
+  "judging": {
+    "criteria": [
+      { "lens": "impact", "label": "Mission Impact", "description": "Weighted 20–30% depending on the track." },
+      { "lens": "technical-depth", "label": "Architectural Soundness", "description": "Weighted 15–30%." },
+      { "lens": "challenge-relevance", "label": "Feasibility", "description": "Weighted 10–25%; named Feasibility & Adoption in Track A and Feasibility in Low-Resource Settings in Track B." },
+      { "lens": "human-oversight", "label": "Governance & Human-in-the-Loop", "description": "Weighted 15% in every track." },
+      { "lens": "cost-sustainability", "label": "Economic Durability", "description": "Weighted 10–15%." },
+      { "lens": "storytelling-pitch", "label": "Craft & Communication", "description": "Weighted 5% in every track." }
+    ],
+    "judge_profile_summary": "The organizer says promising work will be reviewed by the WaterAid staff responsible for that area of work and its future direction.",
+    "judges": [],
+    "notes": "The six judging areas are the same for every track; each track weights them differently (see tracks). Presentation polish is worth 5% everywhere."
+  },
+  "required_tech": [],
+  "sponsors": [],
+  "submission_requirements": [
+    "One challenge per team, chosen from the ten briefs by Monday, October 12; several teams may take the same brief",
+    "Team Brief on the challenge page, editable until 08:30 Toronto time on October 17",
+    "Per-challenge deliverables listed in each brief; every brief ends with a five-minute presentation",
+    "A finished system is not expected: a prototype, a tested assumption or a new approach counts"
+  ],
+  "results_status": "upcoming",
+  "roster_coverage": "none",
+  "entries": [],
+  "organizer_takeaways": [],
+  "guide": {
+    "summary": "A one-day build for a real charity. Judges are asking whether WaterAid Canada could adopt the result, so feasibility, oversight and cost carry as much weight as the demo.",
+    "before_the_event": "Teams meet before the day to read all ten briefs and agree on one. Research, questions for the WaterAid mentor and the Team Brief can be prepared in advance.",
+    "rules": [
+      { "rule": "Each track weights the same six criteria differently.", "effect": "Read your track's weights first: Track A rewards adoption (25%), Track B mission impact (30%), Track C architecture (30%)." },
+      { "rule": "Craft & Communication is worth 5% in every track.", "effect": "Spend the day on the system, the review step and the cost case, not on slides." },
+      { "rule": "Governance & Human-in-the-Loop is 15% in every track.", "effect": "Show where a person reviews the output and how errors are caught, inside the demo." },
+      { "rule": "Every brief asks for costs and limits.", "effect": "Bring a running-cost estimate and say plainly what the tool cannot do." },
+      { "rule": "Track B assumes patchy connectivity and few technicians.", "effect": "Design for offline and low-skill use from the start." },
+      { "rule": "A finished system is not expected.", "effect": "A working slice plus tested assumptions beats a broad, untested mock-up." }
+    ],
+    "ask_organizers": [
+      "Is code written before the day allowed, or only research and planning?",
+      "Which sample or synthetic data will be provided on the day?",
+      "How long is each team's presentation slot, and who is in the room?"
+    ],
+    "harness_stop": "architecture",
+    "harness_note": "Run recon, patterns, angles, the judge gate and the demo script before the day. Leave architecture and building for the event unless the organizers confirm pre-written code is allowed."
+  },
+  "sources": [
+    { "url": "https://theaifellowship.ca/c/wateraid", "kind": "official-event-page", "retrieved_at": "2026-10-12", "note": "Date, the three tracks, ten challenges, team and choice timeline, what a good result looks like." },
+    { "url": "https://theaifellowship.ca/c/wateraid/deliverables-judging", "kind": "official-event-page", "retrieved_at": "2026-10-12", "note": "Six judging criteria and their weights per track." },
+    { "url": "https://theaifellowship.ca/c/wateraid/challenges", "kind": "official-event-page", "retrieved_at": "2026-10-12", "note": "The ten briefs: summaries, difficulty and deliverables." },
+    { "url": "https://theaifellowship.ca/c/wateraid/tracks", "kind": "official-event-page", "retrieved_at": "2026-10-12" }
+  ],
+  "curator_notes": "Paraphrased from the organizer's challenge site. Team names and which team chose which brief are left out on purpose. The first event of the nonprofit-challenge kind in the corpus, so there are no same-kind winners to learn from yet."
+}

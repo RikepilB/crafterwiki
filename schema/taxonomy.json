@@ -90,7 +90,9 @@
     { "id": "public-vote", "definition": "Decided by community voting; distribution and pitch reach matter." },
     { "id": "storytelling-pitch", "definition": "Narrative, pitch delivery and demo storyline." },
     { "id": "scientific-validity", "definition": "Scientifically sound; would do what it claims in the real world (NASA Space Apps 'Validity')." },
-    { "id": "challenge-relevance", "definition": "Answers the stated challenge; complete, feasible and usable (NASA Space Apps 'Relevance')." }
+    { "id": "challenge-relevance", "definition": "Answers the stated challenge; complete, feasible and usable (NASA Space Apps 'Relevance')." },
+    { "id": "human-oversight", "definition": "Shows which decisions stay with people, where a person checks the work and how mistakes get caught." },
+    { "id": "cost-sustainability", "definition": "What it costs to build and run, who pays after the pilot, and whether that is less than what it saves." }
   ],
   "ai_patterns": [
     { "id": "none", "definition": "No AI component." },
@@ -128,7 +130,8 @@
     { "id": "open-source-community", "definition": "Run around open-source projects; contributions count." },
     { "id": "invite-residential", "definition": "Small curated cohort, retreat style." },
     { "id": "community-meetup", "definition": "Short community hackathon or build night." },
-    { "id": "agency-open-data-challenge", "definition": "Run by a public agency around its open data: hundreds of local events, global multi-phase judging by subject-matter experts (e.g. NASA Space Apps)." }
+    { "id": "agency-open-data-challenge", "definition": "Run by a public agency around its open data: hundreds of local events, global multi-phase judging by subject-matter experts (e.g. NASA Space Apps)." },
+    { "id": "nonprofit-challenge", "definition": "Run with a nonprofit around problems its own staff wrote up; judged on whether the organization could adopt the result, not only on the demo (e.g. WaterAid Canada's Water Challenge)." }
   ],
   "results_status": [
     { "id": "complete", "definition": "All placements known." },
