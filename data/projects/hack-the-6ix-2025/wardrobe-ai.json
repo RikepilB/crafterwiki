@@ -1,0 +1,37 @@
+{
+  "slug": "wardrobe-ai",
+  "name": "wardrobe.ai",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Camera-based try-on that shows an online clothing item on your own body to cut returns.",
+  "placement": { "status": "track-winner", "awards": ["Ribbon: Build with Ribbon (Podium)"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Shoppers cannot picture clothes on their bodies, so they return a lot, which wastes resources.",
+  "solution": "Computer vision finds the best frame and body keypoints; a try-on model drapes the garment over the live user, with an agent workflow.",
+  "demo_moment": "Team-described: see a polo shirt mapped onto your live video.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "flask", "python", "opencv", "idm-vton", "gemini", "mongodb", "ribbon", "vellum"],
+    "ai_patterns": ["computer-vision", "generative-media"]
+  },
+  "domains": ["commerce-retail", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Ribbon: Build with Ribbon (Podium)” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Frames try-on as a sustainability lever.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "dual-use-value"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Tie a shopping feature to a waste number to widen its appeal."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/closetly-ai",
+    "repo": "https://github.com/PconnorsUWO/HT6-Team",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=pn47szAi0uw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/closetly-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

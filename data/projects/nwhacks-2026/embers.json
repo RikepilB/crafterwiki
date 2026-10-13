@@ -1,0 +1,35 @@
+{
+  "slug": "embers",
+  "name": "Embers",
+  "hackathon": "nwhacks-2026",
+  "tagline": "An offline mesh of cheap sensor and edge-AI nodes that detects wildfire conditions where there is no signal.",
+  "placement": { "status": "track-winner", "awards": ["Potential Community Impact"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Wildfire detection relies on satellites or cellular sensors that fail in dead zones; the team cites a town lost in 20 minutes.",
+  "solution": "Sentry nodes with environmental sensors and on-device vision detect pre-ignition conditions and smoke; low-cost relays pass alerts through a mesh to a base station dashboard without internet.",
+  "demo_moment": "Team-described: trigger a node and see the alert hop across the mesh to the dashboard.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "tensorflow-lite", "python", "node.js", "express", "mongodb", "react"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["emergencies-disaster", "climate-sustainability", "connectivity-telecom"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Potential Community Impact” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works without internet, which is the gap it targets.", "basis": "team-stated", "source": 0 },
+      { "claim": "Anchored in a specific local disaster.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity", "physical-artifact", "human-stakes", "cost-collapse"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Design for the failure condition (no signal) and show it in the demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/concord-d6txpr",
+    "repo": "https://github.com/Mesh-Forest-Fire/api-gateway",
+    "demo": "http://client-side-production.up.railway.app",
+    "video": "https://www.youtube.com/watch?v=cB8B8njMjTA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/concord-d6txpr", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

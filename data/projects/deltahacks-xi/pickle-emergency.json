@@ -1,0 +1,35 @@
+{
+  "slug": "pickle-emergency",
+  "name": "Pickle - Emergency Response",
+  "hackathon": "deltahacks-xi",
+  "tagline": "Emergency-only location sharing with friends, SMS updates and an AI survival assistant during disasters.",
+  "placement": { "status": "track-winner", "awards": ["Build an AI agent with Cohere"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "In disasters like the Los Angeles wildfires, people cannot share their status and responders lack a picture of need.",
+  "solution": "Location sharing that activates only in emergencies, anonymous heatmaps for responders, and an AI assistant reachable by SMS.",
+  "demo_moment": "Team-described: trigger an emergency and see friends' statuses and a heatmap.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "flask", "node.js", "mongodb", "cohere", "tavily", "twilio", "auth0"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Build an AI agent with Cohere” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Privacy-preserving: shares location only during emergencies.", "basis": "team-stated", "source": 0 },
+      { "claim": "Timely: built during an ongoing disaster.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "trend-wave-timing", "zero-install-channel"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["SMS reach plus privacy limits make an emergency tool believable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pickle-2sjc9y",
+    "repo": "https://github.com/PenguinPush/deltahacks-xi",
+    "demo": "https://www.picklehelp.us",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pickle-2sjc9y", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

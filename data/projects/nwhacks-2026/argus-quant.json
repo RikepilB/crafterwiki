@@ -1,0 +1,34 @@
+{
+  "slug": "argus-quant",
+  "name": "Argus",
+  "hackathon": "nwhacks-2026",
+  "tagline": "A terminal tool for quant researchers that tracks signal experiments and anchors their artifacts on-chain.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Solana"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Quant researchers juggle tools to track signal quality across changing datasets and models.",
+  "solution": "Logs information-coefficient metrics across runs with a terminal UI and records experiment artifacts on Solana for an auditable history.",
+  "demo_moment": "Team-described: run an experiment and browse the log history.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "rust", "textual", "solana", "gemini", "vultr"], "ai_patterns": ["llm-api", "on-chain"] },
+  "domains": ["fintech", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Solana” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Came from a sponsor's own panel describing the pain.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Listen to sponsor talks at the event for problems they actually have."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/argus-fgtsu5",
+    "repo": "https://github.com/JohnsonL111/argus",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=p849nn0xS1k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/argus-fgtsu5", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

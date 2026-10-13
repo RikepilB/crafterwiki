@@ -1,0 +1,42 @@
+{
+  "slug": "turretguard",
+  "name": "TurretGuard",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "An autonomous turret that detects drowning on camera and launches a buoy to the swimmer.",
+  "placement": { "status": "grand-winner", "awards": ["Hack the 6ix: 1st Place", "Hack the 6ix: Best Hardware Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Drowning kills many people within sight of help but too far for a fast rescue; the team cites a global annual figure.",
+  "solution": "A custom-trained model classifies drowning behaviour from a live camera; a PID controller aims a 3D-printed turret using projectile motion, and it fires an inflatable buoy.",
+  "demo_moment": "Team-described: simulate a struggling swimmer and watch the turret aim and launch.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["raspberry-pi", "arduino", "pytorch", "edge-impulse", "python", "c", "3d-printing", "tetrix"],
+    "ai_patterns": ["computer-vision", "ml-model"]
+  },
+  "domains": ["emergencies-disaster", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Hack the 6ix: 1st Place” and “Hack the 6ix: Best Hardware Hack” among 131 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Trained its own detection model and reported its confidence curve.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won first place and best hardware: a physical rescue device with life-or-death stakes.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "visible-engineering-depth", "demo-first-wow", "takes-action"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Pair a dramatic physical action with evidence the model works (metrics on screen)."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/turretguard",
+    "repo": "https://github.com/pekachoo/TurretGuard_hackthe6ix",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=OiJvhyb4Yao"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/turretguard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

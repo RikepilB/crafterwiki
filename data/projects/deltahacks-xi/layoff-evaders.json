@@ -1,0 +1,34 @@
+{
+  "slug": "layoff-evaders",
+  "name": "Layoff Evaders",
+  "hackathon": "deltahacks-xi",
+  "tagline": "A VR fitness game where you squat and jump to escape an evil boss through office obstacles.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Place: YUNZII AL66 Wireless Mechanical Keyboard"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Software engineers sit too long; the team plays on their fear of layoffs.",
+  "solution": "A Unity VR game uses controller motion to detect squats, lunges and jumps, with a dashboard tracking calories and activity.",
+  "demo_moment": "Team-described: dodge budget cuts by squatting in VR.",
+  "build_style": "software-only",
+  "tech": { "stack": ["unity", "c#", "meta-quest", "python", "streamlit", "firebase"], "ai_patterns": ["none"] },
+  "domains": ["health", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Place: YUNZII AL66 Wireless Mechanical Keyboard” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A topical joke as the game's premise.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "demo-first-wow", "physical-artifact"],
+    "judging_lens": ["originality", "storytelling-pitch"],
+    "lessons": ["Humour aimed at the room (tech layoffs) earns attention in judging."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/layoff-evaders",
+    "repo": "https://github.com/martin226/layoffevaders",
+    "demo": "http://layoffs.work",
+    "video": "https://www.youtube.com/watch?v=VG-6LGvBcf4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/layoff-evaders", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

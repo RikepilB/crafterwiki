@@ -1,0 +1,34 @@
+{
+  "slug": "polaris-fitness",
+  "name": "Polaris",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "A co-op fitness game: friends run, jump and crouch in the living room to steer polar bears.",
+  "placement": { "status": "track-winner", "awards": ["Hack the 6ix: Best Game Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Home workouts lack the social energy of exercising with friends.",
+  "solution": "Pose tracking from one camera classifies several players' movements and drives a pixel-art 3D game in the browser.",
+  "demo_moment": "Team-described: two players jump and crouch to keep their bears alive.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "three.js", "mediapipe", "opencv", "fastapi", "websockets"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hack the 6ix: Best Game Hack” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Tracks multiple players from a single camera.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "zero-install-channel"],
+    "judging_lens": ["design-ux", "originality"],
+    "lessons": ["Body-controlled games get judges moving, which wins game prizes."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/polaris-vlp1wm",
+    "repo": "https://github.com/qiuethan/Polaris",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=PGPgzu2f-0Y"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/polaris-vlp1wm", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

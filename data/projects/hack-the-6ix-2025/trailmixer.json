@@ -1,0 +1,34 @@
+{
+  "slug": "trailmixer",
+  "name": "TrailMixer",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Upload messy event footage and get an AI-edited trailer with matching music, then fine-tune it.",
+  "placement": { "status": "track-winner", "awards": ["TwelveLabs: Best Use of TwelveLabs API (Podium)"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Creators and events need recap videos fast.",
+  "solution": "Video understanding picks meaningful clips, stitches them to a chosen length, adds music matched by sentiment, and offers a simple editor.",
+  "demo_moment": "Team-described: upload a day of clips and get a 30-second trailer.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "fastapi", "python", "ffmpeg", "twelvelabs"], "ai_patterns": ["computer-vision", "generative-media"] },
+  "domains": ["creative-media", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “TwelveLabs: Best Use of TwelveLabs API (Podium)” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Made recaps for the hackathon itself.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Using the event's own footage in the demo makes it personal for judges."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/trailmixer",
+    "repo": "https://github.com/xrhuang10/trailmixer/",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=qRv1saaYI5Y"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/trailmixer", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

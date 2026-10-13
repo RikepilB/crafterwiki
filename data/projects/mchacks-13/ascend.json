@@ -1,0 +1,34 @@
+{
+  "slug": "ascend",
+  "name": "Ascend",
+  "hackathon": "mchacks-13",
+  "tagline": "An agent that watches how users interact with a site and redesigns the interface automatically.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of AI / AI Agents Sponsored by Botpress"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Big tech optimises interfaces with analytics, designers and engineers in a slow loop small companies cannot afford.",
+  "solution": "Tracks clicks, scroll depth and time on sections, proposes interface changes with an agent and renders them remotely, closing the loop without manual redeploys.",
+  "demo_moment": "Team-described: compare two UIs and see the agent pick and apply the better one.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "fastapi", "gemini"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["dev-tools", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of AI / AI Agents Sponsored by Botpress” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Automates a costly product loop for small teams.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "cost-collapse"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Agents that close a loop end to end impress agent-platform sponsors."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ascend-eaiqno",
+    "repo": "https://github.com/Swagat404/Ascend",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=4usJznBENis"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ascend-eaiqno", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

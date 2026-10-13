@@ -1,0 +1,34 @@
+{
+  "slug": "play-it-forward",
+  "name": "Play It Forward",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Matches families who need toys with households that have extras, by children's ages and interests.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best .Tech Domain Name"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Rising costs leave some families unable to celebrate holidays.",
+  "solution": "Listings and a matching algorithm pair donated toys with families at no cost.",
+  "demo_moment": "Team-described: list a toy and see it matched to a family.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "express", "firebase", "snowflake", "gemini", "lovable", "docker", "vultr"], "ai_patterns": ["llm-api"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best .Tech Domain Name” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A warm, timely social cause.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Even small domain-name prizes go to projects with a clear purpose."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/toyshare",
+    "repo": "https://github.com/vvictort/nwhacks-2026",
+    "demo": "https://pitch.com/v/playitfwd-iwd6wj",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/toyshare", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

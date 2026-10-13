@@ -1,0 +1,34 @@
+{
+  "slug": "synthframe",
+  "name": "Synthframe",
+  "hackathon": "mchacks-13",
+  "tagline": "Sketch a screen and get a wireframe generated from where you drew things, not just from text.",
+  "placement": { "status": "track-winner", "awards": ["Best Athena AI Agent for University Students"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Text-to-UI tools ignore the spatial intent in a designer's sketch.",
+  "solution": "A sketchpad plus prompts feed a multimodal model that generates wireframes honouring the drawn layout, with an assistant chatbot.",
+  "demo_moment": "Team-described: draw a login screen and get a matching wireframe.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "python", "mongodb", "gemini", "athena-ai", "figma"], "ai_patterns": ["llm-api", "computer-vision"] },
+  "domains": ["dev-tools", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Athena AI Agent for University Students” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets the 'spatial gap' in text-to-UI tools.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Name the gap in existing tools in two words."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/synthframe-3c9qkb",
+    "repo": "https://github.com/alyssayuan17/synthframe.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=7lTWboP8mPw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/synthframe-3c9qkb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

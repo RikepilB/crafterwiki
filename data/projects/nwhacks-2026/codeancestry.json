@@ -1,0 +1,33 @@
+{
+  "slug": "codeancestry",
+  "name": "CodeAncestry",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Explains undocumented legacy code at several levels so the 'why' survives after its authors leave.",
+  "placement": { "status": "track-winner", "awards": ["[Warp] Best Developer Tool", "[MLH] Best Use of Snowflake API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Developers spend much of their time reverse-engineering decisions in undocumented codebases.",
+  "solution": "Connects a GitHub repo, embeds it in a data platform, and generates layered explanations with an LLM, behind secure authentication.",
+  "demo_moment": "Team-described: open a legacy file and read why it was written that way.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "lovable", "fastapi", "python", "gemini", "snowflake-cortex", "1password"], "ai_patterns": ["llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[Warp] Best Developer Tool” and “[MLH] Best Use of Snowflake API” among 169 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won the developer-tool prize and a data-platform prize with one build.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Stack sponsors that naturally fit one pipeline."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/codeancestory", "repo": "https://github.com/OM200401/nwHacks-2026", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/codeancestory", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

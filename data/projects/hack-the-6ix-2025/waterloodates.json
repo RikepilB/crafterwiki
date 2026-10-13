@@ -1,0 +1,34 @@
+{
+  "slug": "waterloodates",
+  "name": "WaterlooDates",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "A dating app parody of the university co-op job board: write a 'rizz-umé', get ranked, and match.",
+  "placement": { "status": "track-winner", "awards": ["Vellum: Most Innovative Hack Build with Vellum"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students at Waterloo are great at applying for jobs and not at dating, the team jokes.",
+  "solution": "Recreates the job-board rank-and-match flow for dating, with AI wingmen, interview-style chats and an agent workflow built on the sponsor's tools.",
+  "demo_moment": "Team-described: submit a dating 'application' and get interviewed by a wingman bot.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "react", "flask", "mongodb", "vellum", "ribbon", "auth0"], "ai_patterns": ["agent", "voice-ai", "llm-api"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Vellum: Most Innovative Hack Build with Vellum” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Parodies a system every Waterloo student knows.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "originality"],
+    "lessons": ["Local in-jokes land hard with judges who share them."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/waterloodates",
+    "repo": "https://github.com/ericli3690/WaterlooDates",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=MUsUBQ6h1F4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/waterloodates", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

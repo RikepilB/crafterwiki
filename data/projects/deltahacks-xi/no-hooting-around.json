@@ -1,0 +1,29 @@
+{
+  "slug": "no-hooting-around",
+  "name": "No Hooting Around",
+  "hackathon": "deltahacks-xi",
+  "tagline": "A focus tool that blocks distracting content, not whole sites, for people with ADHD and everyone else.",
+  "placement": { "status": "track-winner", "awards": ["Best Accessibility Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Focus apps block whole apps or sites instead of specific distracting content; the team cites ADHD prevalence.",
+  "solution": "Analyses page content with an LLM and blocks distracting material while allowing the useful parts, with an owl mascot.",
+  "demo_moment": "Team-described: open a video site for a lecture and see recommendations hidden.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "javascript", "openai"], "ai_patterns": ["llm-api"] },
+  "domains": ["accessibility", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Accessibility Hack” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Blocks content, not sites.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "human-stakes"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["A precise improvement on an existing tool category can win accessibility."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/stop-hootin-around", "repo": "https://github.com/RohanT766/DeltaHacksXI", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/stop-hootin-around", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

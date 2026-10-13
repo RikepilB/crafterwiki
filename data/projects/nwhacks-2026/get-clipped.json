@@ -1,0 +1,30 @@
+{
+  "slug": "get-clipped",
+  "name": "Get Clipped!",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Study accountability by exposure: if you doomscroll, friends see a clip of you doing it.",
+  "placement": { "status": "track-winner", "awards": ["Best Design Project"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Willpower alone does not stop phone checking during study.",
+  "solution": "Detects distraction during study timers and shares a clip with friends, with a feed of friends' faces.",
+  "demo_moment": "Team-described: pick up your phone and watch your 'clip' appear in the friend feed.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "fastapi", "python", "firebase", "websockets"], "ai_patterns": ["computer-vision"] },
+  "domains": ["productivity", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Design Project” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses social fear as the motivator.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won best design.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach", "relatable-demo-wrapper"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A funny, slightly harsh mechanic is memorable if the design is polished."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/clipper-ph49un", "repo": "https://github.com/daniel-mwj/clipped", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/clipper-ph49un", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

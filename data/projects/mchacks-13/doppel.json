@@ -1,0 +1,29 @@
+{
+  "slug": "doppel",
+  "name": "Doppel",
+  "hackathon": "mchacks-13",
+  "tagline": "AI doubles talk to each other first to find people you would actually click with.",
+  "placement": { "status": "track-winner", "awards": ["Best Design"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Starting conversations with new people is exhausting and most go nowhere.",
+  "solution": "Each user gets an AI representation; the agents converse to test compatibility before people are introduced, through an AI workflow platform.",
+  "demo_moment": "Team-described: watch two AI doubles chat and decide whether to introduce you.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "react", "supabase", "gumloop", "vercel"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Design” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won best design.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "demo-first-wow"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Letting agents do the awkward part is an easy-to-grasp agent story."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/doppel", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=CUTW6pu4Yro" },
+  "sources": [
+    { "url": "https://devpost.com/software/doppel", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

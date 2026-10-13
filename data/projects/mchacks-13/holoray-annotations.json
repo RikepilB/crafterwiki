@@ -1,0 +1,39 @@
+{
+  "slug": "holoray-annotations",
+  "name": "Holoray Project",
+  "hackathon": "mchacks-13",
+  "tagline": "Draw annotations on medical video and they stay attached to the anatomy as it moves.",
+  "placement": { "status": "track-winner", "awards": ["Anchored Insight: Motion-Tracked Annotations for Live Medical Video by HoloRay"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The sponsor's challenge: annotations on live medical video must track moving features with low latency.",
+  "solution": "OpenCV tracking keeps polygons and freehand lines locked to features as the video plays, with arrows and text, in a Flask interface.",
+  "demo_moment": "Team-described: draw around a feature and watch the outline follow it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "opencv", "flask", "javascript"], "ai_patterns": ["computer-vision"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Anchored Insight: Motion-Tracked Annotations for Live Medical Video by HoloRay” among 127 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Tuned the speed–accuracy trade-off of tracking.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won a challenge many teams entered (see the roster).", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "tight-scope-finished"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["In a crowded sponsor challenge, tracking quality on the sponsor's footage decides it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/holoray-project",
+    "repo": "https://github.com/Ryan-C-Marshall/McHacks2026/tree/interface",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=cUBtlVA3w6Q"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/holoray-project", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

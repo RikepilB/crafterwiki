@@ -1,0 +1,34 @@
+{
+  "slug": "turingsketch",
+  "name": "TuringSketch",
+  "hackathon": "deltahacks-xi",
+  "tagline": "A drawing game where players and an AI sketch the same prompts and others guess which drawing is the machine's.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Streamlit"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "The Turing test is abstract; the team wanted a fun visual version.",
+  "solution": "Players draw prompts in 30 seconds while an AI draws too; everyone guesses which drawings are human.",
+  "demo_moment": "Team-described: spot the AI's sketch among the players'.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "streamlit", "azure", "mssql"], "ai_patterns": ["generative-media"] },
+  "domains": ["games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Streamlit” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a classic AI concept into a party game.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use", "originality"],
+    "lessons": ["A famous idea made playable is an instant hook."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/idkkkkkkk",
+    "repo": "https://github.com/oDragon/turingsketch",
+    "demo": "https://turingsketch.streamlit.app/",
+    "video": "https://www.youtube.com/watch?v=MhD8CQB7cm4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/idkkkkkkk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
