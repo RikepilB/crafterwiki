@@ -43,6 +43,17 @@ test('non-curator claims must cite a source', () => {
   assert.ok(validate(broken).errors.some((e) => e.includes('needs a source index')));
 });
 
+test('every searchable item has a unique slug, even same-name roster entries', () => {
+  const slugs = buildItems(corpus.hackathons, corpus.projects).map((i) => i.slug);
+  assert.equal(new Set(slugs).size, slugs.length);
+  const twins = { hackathons: [{ slug: 'h', name: 'H', entries: [
+    { name: 'Echo', url: 'https://devpost.com/software/echo' },
+    { name: 'Echo', url: 'https://devpost.com/software/echo-x1y2z3' },
+    { name: 'Echo' },
+  ] }], projects: [] };
+  assert.deepEqual(buildItems(twins.hackathons, twins.projects).map((i) => i.slug), ['h/echo', 'h/echo-x1y2z3', 'h/echo-2']);
+});
+
 test('submitted-only roster entries never count as winners', () => {
   const winners = search(corpus, { winnersOnly: true, limit: 1000 });
   assert.ok(winners.length > 0);
