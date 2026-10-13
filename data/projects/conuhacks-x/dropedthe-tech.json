@@ -1,0 +1,34 @@
+{
+  "slug": "dropedthe-tech",
+  "name": "Drop'edthe.tech",
+  "hackathon": "conuhacks-x",
+  "tagline": "A fast bot that completes a university drop-out on the sponsor's test portal by calling its backend directly.",
+  "placement": { "status": "track-winner", "awards": ["Deck - Sponsor Challenge // Deck - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The sponsor challenge asked for automation that reliably completes a bureaucratic web workflow.",
+  "solution": "A JavaScript bot that calls the portal's backend APIs for speed, with Puppeteer to show results, packaged as an Electron app with a download site.",
+  "demo_moment": "Team-described: run the bot and watch the drop-out complete.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "puppeteer", "electron", "react"], "ai_patterns": ["none"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Deck - Sponsor Challenge // Deck - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Optimised for speed by skipping the user interface.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "inverted-approach"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Sometimes the best agent is no agent: call the API."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/drop-edthe-tech",
+    "repo": "https://github.com/spilledthoughts/ConUHacks",
+    "demo": "https://www.dropedthe.tech/",
+    "video": "https://www.youtube.com/watch?v=PBIZbuYvHAw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/drop-edthe-tech", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

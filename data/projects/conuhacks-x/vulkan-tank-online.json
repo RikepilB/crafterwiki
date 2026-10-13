@@ -1,0 +1,34 @@
+{
+  "slug": "vulkan-tank-online",
+  "name": "Vulkan Tank Online",
+  "hackathon": "conuhacks-x",
+  "tagline": "A multiplayer tank game written directly on Vulkan, with no game engine.",
+  "placement": { "status": "track-winner", "awards": ["Beenox - Sponsor Challenge // Beenox - Défi commandité"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "The team wanted to build a networked game without an engine.",
+  "solution": "A C++ Vulkan renderer with shadow mapping and model loading plus Valve's networking library for multiplayer, with a virtual network to get around venue Wi-Fi isolation.",
+  "demo_moment": "Team-described: two players drive tanks across machines.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c++", "c", "vulkan", "gamenetworkingsockets"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Beenox - Sponsor Challenge // Beenox - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Took on low-level graphics and networking in 24 hours.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A games sponsor rewards engineering it recognises as hard."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/topdown-tank-online",
+    "repo": "https://github.com/benyoon1/conuhacksX",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=_hbtWb4gd7M"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/topdown-tank-online", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

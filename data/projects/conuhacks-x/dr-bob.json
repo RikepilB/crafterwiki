@@ -1,0 +1,29 @@
+{
+  "slug": "dr-bob",
+  "name": "Dr.Bob",
+  "hackathon": "conuhacks-x",
+  "tagline": "A chat-based triage assistant that finds nearby clinics and shares your medical profile when you request care.",
+  "placement": { "status": "track-winner", "awards": ["Dialogue - Sponsor Challenge // Dialogue - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "When sick, people do not want to navigate health portals or wait on hold.",
+  "solution": "Symptom triage chat, location-aware clinic search, a private medical profile to share with clinics, and a list of trusted clinics.",
+  "demo_moment": "Team-described: describe symptoms and send an appointment request.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "html", "css", "javascript", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Dialogue - Sponsor Challenge // Dialogue - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Designed to feel as easy as texting a friend.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A calm interface matters most for a user who feels unwell."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/dr-bob", "repo": "https://github.com/theganders/Dr.Bob.git", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/dr-bob", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "nursie",
+  "name": "Nursie",
+  "hackathon": "conuhacks-x",
+  "tagline": "An on-site AI nurse assistant for long-term care that detects falls with radar and a floor mat and talks to residents.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of ElevenLabs // [MLH] Meilleure utilisation de ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "In Québec long-term care, unwitnessed night falls and staff shortages leave residents on the floor too long, the team says.",
+  "solution": "mmWave radar and a vibration mat detect falls, door and presence sensors add context, a smartwatch tracks vitals, and a voice interface responds, all on a local network.",
+  "demo_moment": "Team-described: simulate a fall and see the alert and voice check-in.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "fastapi", "flask", "react", "javascript", "c++", "ros2", "mongodb", "elevenlabs"], "ai_patterns": ["voice-ai"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best Use of ElevenLabs // [MLH] Meilleure utilisation de ElevenLabs” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Uses sensing that does not rely on cameras.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "place-based-specificity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Name the place and the failure (night falls in care homes) to make the stakes concrete."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nursie",
+    "repo": "https://github.com/rappphg/Nursie",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=qt-mcW5dqKw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nursie", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

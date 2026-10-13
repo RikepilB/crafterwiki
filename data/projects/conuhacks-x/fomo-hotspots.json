@@ -1,0 +1,39 @@
+{
+  "slug": "fomo-hotspots",
+  "name": "FOMO",
+  "hackathon": "conuhacks-x",
+  "tagline": "A map of where people are gathering right now, with a way to ask the crowd there a question.",
+  "placement": {
+    "status": "track-winner",
+    "awards": [
+      "[HackConcordia] Best Beginner (All team members must be first-time hackers) // [HackConcordia] Meilleur projet débutant (Tous les membres de l'équipe doivent être des premiers hackeurs)"
+    ],
+    "track": null
+  },
+  "team": { "size": 3, "members": [] },
+  "problem": "People stay in small circles and miss what is happening nearby.",
+  "solution": "An iOS app shows busy hotspots on a map, what people there are discussing, and lets users post a question tied to that place.",
+  "demo_moment": "Team-described: tap a hotspot and ask the crowd a question.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "firebase", "firestore"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[HackConcordia] Best Beginner (All team members must be first-time hackers) // [HackConcordia] Meilleur projet débutant (Tous les membres de l'équipe doivent être des premiers hackeurs)” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Each member owned one feature before the team integrated and tested the full flow.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "tight-scope-finished"],
+    "judging_lens": ["impact"],
+    "lessons": ["Beginners win with one clear interaction that works end to end."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/fomo-91dnsu", "repo": "https://github.com/yansvassi/FOMO", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/fomo-91dnsu", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

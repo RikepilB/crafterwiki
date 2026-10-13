@@ -1,0 +1,38 @@
+{
+  "slug": "thegardens",
+  "name": "TheGardens",
+  "hackathon": "conuhacks-x",
+  "tagline": "A desktop game, a banking app that reacts to the game's weather, and a haptic glove that controls both.",
+  "placement": { "status": "track-winner", "awards": ["Desjardins - Sponsor Challenge // Desjardins - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The sponsor asked for a banking experience that adapts to its environment.",
+  "solution": "Four parts share one backend: a game with changing weather, a mobile banking app that mirrors that weather, and an ESP32 glove with motion sensing for gestures and voice navigation.",
+  "demo_moment": "Team-described: steer the game character with the glove while the banking app changes with the weather.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["flutter", "dart", "esp32", "c++", "python", "typescript", "sqlite"], "ai_patterns": ["voice-ai"] },
+  "domains": ["fintech", "games-entertainment", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Desjardins - Sponsor Challenge // Desjardins - Défi commandité” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Pivoted from an assistant idea to the sponsor challenge.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "theme-native-twist"],
+    "judging_lens": ["originality"],
+    "lessons": ["A physical controller makes an unusual sponsor brief memorable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/thegardens",
+    "repo": "https://github.com/MinhVo2005/ConuHack",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=2WpQ1QbhY8k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/thegardens", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "schooless",
+  "name": "Schooless",
+  "hackathon": "conuhacks-x",
+  "tagline": "A sponsor-challenge entry its team tags as a developer-tools network AI; the write-up gives few details.",
+  "placement": { "status": "track-winner", "awards": ["Deck - Sponsor Challenge // Deck - Défi commandité"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Not stated in the write-up.",
+  "solution": "A web app with a frontend for interaction and a backend for data, progress tracking and logic, according to the team.",
+  "demo_moment": "Not described.",
+  "build_style": "software-only",
+  "tech": { "stack": ["angular", "typescript", "python", "mongodb", "clip", "aws-ec2"], "ai_patterns": ["ml-model"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Deck - Sponsor Challenge // Deck - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The write-up gives few details.", "basis": "curator-inference" }
+    ],
+    "mechanisms": [],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A thin write-up limits what anyone can learn from a winning project."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/schooless",
+    "repo": "https://github.com/Luchiga19/conuhacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=0ftYc9-o2Rg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/schooless", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "donair",
+  "name": "Donair",
+  "hackathon": "conuhacks-x",
+  "tagline": "Agentic event fundraising: finds likely donors, runs a live donation portal and tracks results.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Talsom - Sponsor Challenge // Talsom - Défi commandité", "Front Row Ventures - Investor Pitch Award"],
+    "track": null
+  },
+  "team": { "size": 3, "members": [] },
+  "problem": "Event fundraising relies on slow donor research and big sponsors.",
+  "solution": "Describe the event and goal; Gemini with embeddings identifies target donors; a live portal takes payments including on-chain ones with live incentive trackers; analytics follow.",
+  "demo_moment": "Team-described: set up an event, go live and watch donations arrive.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "supabase", "gemini", "solana"], "ai_patterns": ["agent", "llm-api", "on-chain"] },
+  "domains": ["fintech", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Talsom - Sponsor Challenge // Talsom - Défi commandité” and “Front Row Ventures - Investor Pitch Award” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Also won a pitch meeting with a venture firm.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["Cover before, during and after the event to look like a product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/flowstate-7ihg10",
+    "repo": "https://github.com/forkiron/donair",
+    "demo": "https://donair.tech",
+    "video": "https://www.youtube.com/watch?v=HMhz8-ofYNk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/flowstate-7ihg10", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

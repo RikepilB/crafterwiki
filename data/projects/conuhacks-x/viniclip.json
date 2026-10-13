@@ -1,0 +1,35 @@
+{
+  "slug": "viniclip",
+  "name": "ViniClip",
+  "hackathon": "conuhacks-x",
+  "tagline": "Records video in the browser and cuts pauses, retakes and mistakes as you speak, ready to post.",
+  "placement": { "status": "grand-winner", "awards": ["1st Place - General Challenge // 1re place – Défi général"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Recording a clean video means retakes and hours of editing out pauses and mistakes.",
+  "solution": "Streams browser audio to a backend that transcribes it (Moonshine), lets an LLM with function calling decide what to cut, and trims and stitches the segments with ffmpeg; it can also publish to a short-video platform.",
+  "demo_moment": "Team-described: fumble a sentence, restart, and get a clean cut at the end of the recording.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "fastapi", "python", "ffmpeg", "moonshine", "openai"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “1st Place - General Challenge // 1re place – Défi général” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Edits during recording rather than after.", "basis": "team-stated", "source": 0 },
+      { "claim": "A problem every presenter knows, shown live in a 24-hour build.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["one-sentence-clarity", "demo-first-wow", "takes-action"],
+    "judging_lens": ["design-ux", "impact"],
+    "lessons": ["Remove a step people hate and show it happening live."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/viniclip",
+    "repo": "https://github.com/mahutt/ViniClip",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=qDyQIVBcPCs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/viniclip", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

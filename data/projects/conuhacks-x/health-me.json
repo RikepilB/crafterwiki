@@ -1,0 +1,41 @@
+{
+  "slug": "health-me",
+  "name": "HealthMe",
+  "hackathon": "conuhacks-x",
+  "tagline": "A voice health assistant that finds a nearby clinic and phones it to book for you.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Dialogue - Sponsor Challenge // Dialogue - Défi commandité", "MentorMates - Sponsor Challenge // MentorMates - Défi commandité"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Finding a clinic that can see you while sick takes call after call.",
+  "solution": "Gemini chat with health context, a clinic map, and an AI phone agent (ElevenLabs, Twilio) that talks to the receptionist, with a live transcript.",
+  "demo_moment": "Team-described: ask for care and watch the agent call the clinic.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "node-js", "express", "python", "flask", "firebase", "gemini", "elevenlabs", "twilio", "mapbox"],
+    "ai_patterns": ["voice-ai", "llm-api", "agent"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Dialogue - Sponsor Challenge // Dialogue - Défi commandité” and “MentorMates - Sponsor Challenge // MentorMates - Défi commandité” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "The agent makes the real phone call.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won two sponsor challenges.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["A live phone call is the demo; everything else supports it."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/healthme-cshbay", "repo": "https://github.com/thomasballarddev/ConUHacksX", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/healthme-cshbay", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

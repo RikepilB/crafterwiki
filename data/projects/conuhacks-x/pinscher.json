@@ -1,0 +1,34 @@
+{
+  "slug": "pinscher",
+  "name": "Pinscher",
+  "hackathon": "conuhacks-x",
+  "tagline": "Control a Mac hands-free with finger pinches, swipes and voice, and turn recorded sessions into slide decks.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["2nd Place - General Challenge // 2eme place – Défi général"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Computer use is a stream of manual clicks and keystrokes, and harder for people with limited mobility.",
+  "solution": "A multi-process app tracks hand gestures for clicking, dragging and tab switching, interprets spoken intents such as summarising a meeting into a PDF, and uses Gemini to build Marp slide decks with speaker notes; dwell-click and sticky-key modes aid accessibility.",
+  "demo_moment": "Team-described: pinch to click, swipe to switch tabs, then generate a deck from a recording.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "react", "javascript", "python", "opencv", "gemini", "marp"], "ai_patterns": ["computer-vision", "voice-ai", "llm-api"] },
+  "domains": ["productivity", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “2nd Place - General Challenge // 2eme place – Défi général” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines gesture, voice and generation in one controller.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "takes-action"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Gesture control demos well when each gesture maps to one obvious action."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pinscher",
+    "repo": "https://github.com/katkes/ConUHacksX",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=BCIwQRLcgfg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pinscher", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

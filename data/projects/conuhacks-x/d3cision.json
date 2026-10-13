@@ -1,0 +1,41 @@
+{
+  "slug": "d3cision",
+  "name": "D3CISION",
+  "hackathon": "conuhacks-x",
+  "tagline": "Turns thousands of security alerts into attack stories with a scored, explained priority for each.",
+  "placement": { "status": "track-winner", "awards": ["D3 Security - Sponsor Challenge // D3 Security - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Security teams cannot investigate every alert and must choose with little context.",
+  "solution": "Correlates events by entity and time into stories, scores threats with an XGBoost model on many features, and explains each score with SHAP.",
+  "demo_moment": "Team-described: twenty related events collapse into one story with an explanation.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "scikit-learn", "xgboost", "networkx", "next-js", "react", "typescript", "mongodb", "gemini"],
+    "ai_patterns": ["ml-model", "llm-api"]
+  },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “D3 Security - Sponsor Challenge // D3 Security - Défi commandité” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Reports model quality (98.9% AUC) and explains every score.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Explain each score; a number without a reason does not help an analyst."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/d3cision",
+    "repo": "https://github.com/SohaibDM/ConuHacks-X-D3-Challenge",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=_Es4jplLrJE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/d3cision", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

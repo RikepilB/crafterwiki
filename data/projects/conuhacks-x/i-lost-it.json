@@ -1,0 +1,37 @@
+{
+  "slug": "i-lost-it",
+  "name": "I LOST IT",
+  "hackathon": "conuhacks-x",
+  "tagline": "Lost-and-found search that matches photos and descriptions four ways at once.",
+  "placement": { "status": "track-winner", "awards": ["SAP - Sponsor Challenge // SAP - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Owners search lost-and-found bins by hand with vague descriptions.",
+  "solution": "Runs image-to-image, image-to-caption, text-to-image and text-to-text matching in parallel with DINOv2 and CLIP over a vector database, then asks follow-up questions with Gemini.",
+  "demo_moment": "Team-described: upload a photo and see matches from each method.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "fastapi", "python", "pytorch", "dinov2", "clip", "milvus", "supabase", "gemini"],
+    "ai_patterns": ["ml-model", "computer-vision", "llm-api"]
+  },
+  "domains": ["data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “SAP - Sponsor Challenge // SAP - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses several matching methods instead of one.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Show the ensemble; judges reward visible depth on a crowded brief."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/i-lost-it",
+    "repo": "https://github.com/ayoubm85/ilostit",
+    "demo": "https://conuhacks10.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/i-lost-it", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

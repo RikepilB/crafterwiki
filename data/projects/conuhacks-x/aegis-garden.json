@@ -1,0 +1,38 @@
+{
+  "slug": "aegis-garden",
+  "name": "AeroGuard.tech",
+  "hackathon": "conuhacks-x",
+  "tagline": "A real-time operations centre for cyber incidents and disasters: detect, triage, coordinate and audit.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Snowflake API // [MLH] Meilleure utilisation de Snowflake API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Response teams face too many alerts, unexplained urgency, slow coordination and low trust.",
+  "solution": "A FastAPI and React platform with WebSocket updates, schema-checked services and audit records for prioritising incidents.",
+  "demo_moment": "Team-described: incidents stream in and get triaged on the dashboard.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "react", "vite", "typescript", "websockets", "snowflake"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["security-networking", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best Use of Snowflake API // [MLH] Meilleure utilisation de Snowflake API” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Treats auditability as a core feature.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Audit trails make a dashboard feel operational rather than decorative."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aeroguard-tech",
+    "repo": "https://github.com/GautamTalksDev/aeroguard-tech",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=v50brOXF6v4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aeroguard-tech", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

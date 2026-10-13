@@ -1,0 +1,38 @@
+{
+  "slug": "socratic",
+  "name": "Socratic",
+  "hackathon": "conuhacks-x",
+  "tagline": "A VS Code mentor that guides you toward the answer instead of writing the code for you.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of MongoDB Atlas // [MLH] Meilleure utilisation de MongoDB Atlas"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "AI coding tools give answers and learners stop learning.",
+  "solution": "An extension with adaptive help levels, voiced mentor personas, skill tracking and context from your own materials.",
+  "demo_moment": "Team-described: ask for help and get a hint at your chosen level.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "vscode", "gemini", "elevenlabs", "mongodb"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["education", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best Use of MongoDB Atlas // [MLH] Meilleure utilisation de MongoDB Atlas” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Refuses to just give the answer.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Limiting what the AI does can be the feature."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/socratic-xu768i",
+    "repo": "https://github.com/GitExcited/Socratic",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=0tQSMk653oU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/socratic-xu768i", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

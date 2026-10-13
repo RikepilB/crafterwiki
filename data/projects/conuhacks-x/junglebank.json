@@ -1,0 +1,34 @@
+{
+  "slug": "junglebank",
+  "name": "JungleBank",
+  "hackathon": "conuhacks-x",
+  "tagline": "A jungle-themed banking game that teaches children and teens about spending, interest and stocks.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["3rd Place - General // 3eme place – Défi général"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Young people learn little about money before they need it, the team says.",
+  "solution": "A web platform where players track expenses, buy items to survive, learn interest and invest in stocks, earn coins in mini-games, talk to an AI banker and use voice control; scenes follow real day and night.",
+  "demo_moment": "Team-described: earn coins in the treasure game, then invest them.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "javascript", "godot", "gdscript", "gemini", "elevenlabs"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["fintech", "education", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “3rd Place - General // 3eme place – Défi général” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Started from a sponsor's banking challenge and placed in the general ranking.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["theme-native-twist", "familiar-thing-new-job"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["A sponsor brief can become an overall contender when framed for a wider audience."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/junglebank",
+    "repo": "https://github.com/afsans1/JungleBank",
+    "demo": "https://junglebank.onrender.com/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/junglebank", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

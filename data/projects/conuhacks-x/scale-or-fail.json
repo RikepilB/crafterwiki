@@ -1,0 +1,41 @@
+{
+  "slug": "scale-or-fail",
+  "name": "Scale Or Fail",
+  "hackathon": "conuhacks-x",
+  "tagline": "Voice-first system-design interview practice graded by AI agents against a rubric.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Vultr // [MLH] Meilleure utilisation de Vultr"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "System-design interviews are increasing and are hard to practise out loud.",
+  "solution": "Users explain an architecture aloud; real-time transcription feeds agents that analyse the reasoning and grade it.",
+  "demo_moment": "Team-described: answer a design prompt aloud and get a graded report.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["angular", "typescript", "c#", "python", "docker", "mongodb", "snowflake", "vultr"],
+    "ai_patterns": ["voice-ai", "multi-agent", "llm-scoring"]
+  },
+  "domains": ["careers-hr", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best Use of Vultr // [MLH] Meilleure utilisation de Vultr” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Practises defending a design, not just knowing it.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Train the format of the test, not only its content."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/system-design-90lx1y",
+    "repo": "https://github.com/nic5694/ScaleOrFail",
+    "demo": "https://conuhack.benmusicgeek.synology.me",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/system-design-90lx1y", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

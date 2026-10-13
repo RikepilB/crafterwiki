@@ -1,0 +1,35 @@
+{
+  "slug": "one-man-crew",
+  "name": "One-Man-Crew",
+  "hackathon": "conuhacks-x",
+  "tagline": "Lost-item matching by text and image similarity, with staff confirming ownership before anything is returned.",
+  "placement": { "status": "track-winner", "awards": ["SAP - Sponsor Challenge // SAP - Défi commandité"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Students struggle to recover lost items even when someone has found them; the builder lost a meaningful gift.",
+  "solution": "Text and image embeddings rank the five closest found items; staff review them, ask clarifying questions and confirm ownership manually.",
+  "demo_moment": "Team-described: file a report and review the ranked matches as staff.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "react", "gemini", "pandas"], "ai_patterns": ["llm-api", "ml-model"] },
+  "domains": ["identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “SAP - Sponsor Challenge // SAP - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps a person in the loop for the ownership decision.", "basis": "team-stated", "source": 0 },
+      { "claim": "Built by one person.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["human-oversight"],
+    "lessons": ["Let the model rank and the human decide."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/one-man-crew",
+    "repo": "https://github.com/NawarTurk/HACK_human-in-loop-lostfound",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=3FwclIJft1E"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/one-man-crew", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

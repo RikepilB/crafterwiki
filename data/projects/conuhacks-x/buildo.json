@@ -1,0 +1,38 @@
+{
+  "slug": "buildo",
+  "name": "Buildo",
+  "hackathon": "conuhacks-x",
+  "tagline": "Describe a hardware idea and get a render, a parts cart with prices, starter firmware and assembly steps.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API // [MLH] Meilleure utilisation de l’API Gemini"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Beginners do not know which parts to buy or how to start a hardware project.",
+  "solution": "Gemini turns an idea into a visualisation, a priced parts list, skeleton firmware and downloadable step-by-step instructions with a demo video.",
+  "demo_moment": "Team-described: ask for a soil sensor and get the full build package.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "flask", "python", "mongodb", "gemini", "snowflake-cortex"], "ai_patterns": ["llm-api", "generative-media"] },
+  "domains": ["robotics-hardware", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best Use of Gemini API // [MLH] Meilleure utilisation de l’API Gemini” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Outputs a complete build package, not just advice.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Return everything needed for the next step, including the shopping cart."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/product-creator-temp-name-conu-x",
+    "repo": "https://github.com/chantalzhang/conuhacks26",
+    "demo": "https://www.peter-griffin.tech/",
+    "video": "https://www.youtube.com/watch?v=GzHThTiV9rA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/product-creator-temp-name-conu-x", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

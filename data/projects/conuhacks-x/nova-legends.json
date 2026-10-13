@@ -1,0 +1,37 @@
+{
+  "slug": "nova-legends",
+  "name": "Nova Legends",
+  "hackathon": "conuhacks-x",
+  "tagline": "A multiplayer top-down knight shooter on a game engine the team built from scratch.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Druide – Best Use of Language (Presentation) // Druide – Meilleure utilisation de la langue (présentation)"],
+    "track": null
+  },
+  "team": { "size": 2, "members": [] },
+  "problem": "The team wanted to show that a custom engine can feel tighter than a generic one.",
+  "solution": "Custom physics, animation and dual-mode camera services, real-time chat and a map generator, with multiplayer over sockets.",
+  "demo_moment": "Team-described: two players duel in a generated arena.",
+  "build_style": "software-only",
+  "tech": { "stack": ["java", "sockets", "vultr"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Druide – Best Use of Language (Presentation) // Druide – Meilleure utilisation de la langue (présentation)” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Every core service is custom-built.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["storytelling-pitch", "technical-depth"],
+    "lessons": ["A two-person team can win on presentation by explaining hard engineering simply."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/nova-legends", "repo": "https://github.com/tahakhalfi/EHC-NOVA_LEGENDS", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/nova-legends", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

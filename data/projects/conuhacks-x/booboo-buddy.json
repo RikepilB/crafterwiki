@@ -1,0 +1,34 @@
+{
+  "slug": "booboo-buddy",
+  "name": "BooBoo Buddy",
+  "hackathon": "conuhacks-x",
+  "tagline": "Triages symptoms, flags emergencies, calls nearby clinics for openings and books the slot you pick.",
+  "placement": { "status": "track-winner", "awards": ["Dialogue - Sponsor Challenge // Dialogue - Défi commandité"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Sick people must make call after call to find a clinic that can see them.",
+  "solution": "Conversational triage that escalates emergencies to 911, finds clinics with Places data, calls them through Twilio to check availability, then books with a confirmation call.",
+  "demo_moment": "Team-described: chat about symptoms, watch the clinic calls, choose a time.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "twilio", "openrouter", "google-places", "vercel"], "ai_patterns": ["agent", "llm-api", "voice-ai"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Dialogue - Sponsor Challenge // Dialogue - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Includes a page disclosing its generative-AI use.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Know when not to help: an emergency check builds trust in the rest."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/booboo-buddy",
+    "repo": "https://github.com/mchoi-cs/BooBooBuddy",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=MM9-h7IDBh0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/booboo-buddy", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

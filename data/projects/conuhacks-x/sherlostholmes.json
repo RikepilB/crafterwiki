@@ -1,0 +1,34 @@
+{
+  "slug": "sherlostholmes",
+  "name": "SherLostHolmes",
+  "hackathon": "conuhacks-x",
+  "tagline": "A detective-themed lost-and-found with blind lineups, an AI interrogator and a decoy to catch false claims.",
+  "placement": { "status": "track-winner", "awards": ["SAP - Sponsor Challenge // SAP - Défi commandité"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Lost-and-found systems are slow and easy to game with false claims.",
+  "solution": "Semantic matching of descriptions, anonymised blurred lineups, an AI persona that asks ownership questions, a hidden decoy that flags fraud, plus lockers and a slot machine for unclaimed items.",
+  "demo_moment": "Team-described: describe a bottle, pick from the lineup and pass the interrogation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "react", "langchain", "mongodb", "cloudinary"], "ai_patterns": ["llm-api"] },
+  "domains": ["identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “SAP - Sponsor Challenge // SAP - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The decoy item turns fraud detection into a game mechanic.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "relatable-demo-wrapper"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["A theme can carry a security idea when every mechanic serves it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sherlostholmes",
+    "repo": "https://github.com/AndrewKaranu/SherLostHolmes",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=jJmLImAkxos"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sherlostholmes", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

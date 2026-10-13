@@ -1,0 +1,41 @@
+{
+  "slug": "love-at-first-bite",
+  "name": "Love At First Bite",
+  "hackathon": "conuhacks-x",
+  "tagline": "Describe what you want to eat in plain words, swipe on restaurant cards and let the group's matches decide.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best .Tech Domain Name // [MLH] Meilleur nom de domaine .Tech"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Groups waste time deciding where to eat; review apps overload them with information.",
+  "solution": "An LLM turns a plain request into restaurant search parameters; results appear as swipe cards; a ranking combines the group's likes.",
+  "demo_moment": "Team-described: ask for a cozy cheap Italian spot and swipe to a match.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "tailwind", "framer-motion", "openai", "openrouter", "yelp-api", "zod", "vercel"],
+    "ai_patterns": ["llm-api"]
+  },
+  "domains": ["social-connection", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best .Tech Domain Name // [MLH] Meilleur nom de domaine .Tech” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Optimises for decision speed over information.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Borrow a familiar gesture for a decision people dread."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/love-at-first-bite-kt3zca",
+    "repo": "https://github.com/Miro-vk/concordia-hackathon.git",
+    "demo": "http://loveatfirstbite.tech",
+    "video": "https://www.youtube.com/watch?v=bCMUuOefcCs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/love-at-first-bite-kt3zca", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "desjungles",
+  "name": "Desjungles",
+  "hackathon": "conuhacks-x",
+  "tagline": "A banking app that switches to private voice mode when a second face looks at the screen and themes itself from the room.",
+  "placement": { "status": "track-winner", "awards": ["Desjardins - Sponsor Challenge // Desjardins - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The sponsor challenge asked for a banking app that adapts to the user's surroundings.",
+  "solution": "Face detection triggers a spoken private mode when more than one person looks at the phone, ambient light sets the theme, and motion switches to a jungle scene, on top of transfers between accounts.",
+  "demo_moment": "Team-described: lean in with a second person and the screen hides behind voice.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "expo", "typescript", "node-js", "mongodb", "blazeface", "whisper"], "ai_patterns": ["computer-vision", "voice-ai"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Desjardins - Sponsor Challenge // Desjardins - Défi commandité” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Turns shoulder-surfing into a design trigger.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["theme-native-twist", "human-stakes"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["Tie each sensor to one visible change in the interface."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/desjungles",
+    "repo": "https://github.com/cristina-trofimov/desjungles/tree/master",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/desjungles", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

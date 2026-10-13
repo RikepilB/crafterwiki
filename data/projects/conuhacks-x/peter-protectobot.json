@@ -1,0 +1,39 @@
+{
+  "slug": "peter-protectobot",
+  "name": "PETER the ProtectoBot",
+  "hackathon": "conuhacks-x",
+  "tagline": "A home sentry robot that follows your finger, drives remotely and patrols on its own with a model that predicts a second ahead.",
+  "placement": { "status": "track-winner", "awards": ["[HackConcordia] Best Hardware // [HackConcordia] Meilleur Projet Hardware"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted to show full-stack robotics, from hardware to a trained model, in one weekend.",
+  "solution": "A two-wheel ESP32 robot with camera and custom speaker runs teleoperation, gesture following and an autonomous sentry mode whose model, trained on collected driving data, predicts the scene about one second ahead to hide camera lag.",
+  "demo_moment": "Team-described: drive the robot through a maze, then let sentry mode take over.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "c++", "python", "pytorch", "cuda", "fusion-360"], "ai_patterns": ["ml-model", "computer-vision"] },
+  "domains": ["robotics-hardware", "security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[HackConcordia] Best Hardware // [HackConcordia] Meilleur Projet Hardware” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Trained its own model on data it collected during the event.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won Best Hardware.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Collect your own data at the event; it proves the model is yours."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/peter-the-protecto-bot",
+    "repo": "https://github.com/aburiz/Conuhacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=vGJyEjWGcro"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/peter-the-protecto-bot", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "codemafia",
+  "name": "CodeMafia",
+  "hackathon": "conuhacks-x",
+  "tagline": "A multiplayer social-deduction game where players fix code together while a secret impostor sabotages it.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Druide – Best Use of Language (Presentation) // Druide – Meilleure utilisation de la langue (présentation)"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted to combine coding practice with a game they love.",
+  "solution": "Three to five players complete TODOs and pass tests in shared Python code running in the browser; one impostor secretly sabotages; players call meetings and vote.",
+  "demo_moment": "Team-described: a round where the impostor breaks a test and gets voted out.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "zustand", "framer-motion", "partykit", "pyodide", "python"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Druide – Best Use of Language (Presentation) // Druide – Meilleure utilisation de la langue (présentation)” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Borrows a game everyone in the room knows.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won the prize for best use of language in the presentation.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job"],
+    "judging_lens": ["storytelling-pitch", "originality"],
+    "lessons": ["A famous game's rules make a new idea instantly explainable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/codemafia",
+    "repo": "https://github.com/rayyankhan47/codemafia",
+    "demo": "https://codemafia.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=sFrKx15_XEM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/codemafia", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

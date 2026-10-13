@@ -1,0 +1,37 @@
+{
+  "slug": "llm-in-chrome",
+  "name": "llm in chrome",
+  "hackathon": "conuhacks-x",
+  "tagline": "An open-source browser agent like Claude in Chrome that works with any LLM.",
+  "placement": { "status": "track-winner", "awards": ["Deck - Sponsor Challenge // Deck - Défi commandité"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Browser agents are tied to one model provider.",
+  "solution": "A Chrome extension agent that operates web pages with a model of the user's choice.",
+  "demo_moment": "Not described; the team says Devpost blocked its text write-up.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "html", "css", "chrome-extension"], "ai_patterns": ["computer-use", "agent"] },
+  "domains": ["agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Deck - Sponsor Challenge // Deck - Défi commandité” among 260 submissions.", "basis": "organizer-stated", "source": 1 },
+      {
+        "claim": "The sponsor says its first place went to a solo participant, and this is the only one-person team among its winners.",
+        "basis": "curator-inference"
+      }
+    ],
+    "mechanisms": ["takes-action", "trend-wave-timing"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A general tool can beat narrow scripts on an automation challenge."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/test-mszpgt",
+    "repo": "https://github.com/hanzili/llm-in-chrome",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=cal0k351Rwo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/test-mszpgt", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

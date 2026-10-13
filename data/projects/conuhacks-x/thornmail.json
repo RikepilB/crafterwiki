@@ -1,0 +1,38 @@
+{
+  "slug": "thornmail",
+  "name": "Thornmail",
+  "hackathon": "conuhacks-x",
+  "tagline": "Groups security logs into explainable cases with rule-based risk scores and AI notes, leaving the decision to analysts.",
+  "placement": { "status": "track-winner", "awards": ["D3 Security - Sponsor Challenge // D3 Security - Défi commandité"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Real threats are buried under thousands of noisy alerts.",
+  "solution": "A pipeline ingests logs, clusters related activity into cases, scores risk with clear rules and uses a local LLM to surface key details and next steps.",
+  "demo_moment": "Team-described: a dashboard of cases ranked by risk with explanations.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "next-js", "react", "typescript", "tailwind", "ollama", "llama", "pandas", "numpy"], "ai_patterns": ["llm-api"] },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “D3 Security - Sponsor Challenge // D3 Security - Défi commandité” among 260 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Keeps the analyst as the final decision maker.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["human-oversight", "technical-depth"],
+    "lessons": ["In security, explainable and conservative beats clever."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sentinel-2sjz9f",
+    "repo": "https://github.com/meuhcow/Thornmail",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=JwxSYhdbk8o"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sentinel-2sjz9f", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://conuhacks-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
