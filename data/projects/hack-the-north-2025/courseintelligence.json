@@ -1,0 +1,34 @@
+{
+  "slug": "courseintelligence",
+  "name": "CourseIntelligence",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Turns student Reddit discussions and course catalogs into comparable course profiles: difficulty, workload, professors.",
+  "placement": { "status": "track-winner", "awards": ["Databricks: Best Use of Databricks"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Choosing courses means digging through scattered student opinions.",
+  "solution": "Scrapes university subreddits, joins them with catalog data, and uses AI in a data platform to standardize opinions into metrics per course.",
+  "demo_moment": "Team-described: look up a course and see its difficulty and workload from student posts.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "databricks", "sql", "llama", "openai", "praw"], "ai_patterns": ["llm-api"] },
+  "domains": ["education", "data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Databricks: Best Use of Databricks” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Processed a large scraped corpus inside the sponsor's platform.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Data-platform prizes reward a real pipeline over a pretty front end."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/courseinteligence",
+    "repo": "https://github.com/SultanAlzoghaibi/Hack-the-North-2025/tree/main",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/courseinteligence", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

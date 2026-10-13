@@ -1,0 +1,34 @@
+{
+  "slug": "reflexed",
+  "name": "ReflexED",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Teachers upload one lesson and every student gets it in the format that fits how they learn.",
+  "placement": { "status": "track-winner", "awards": ["Best Inclusive Innovation Hack (Dell Technologies)"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Teachers lack time to reformat material; students learn differently.",
+  "solution": "A learning environment that turns one upload into personalised formats such as narrated explainers and interactive versions.",
+  "demo_moment": "Team-described: upload a physics chapter and see versions for different learners.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "javascript", "claude"], "ai_patterns": ["llm-api", "generative-media"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Inclusive Innovation Hack (Dell Technologies)” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The builder advises a school board on innovation.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Serve both the teacher's time and the student's needs."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/reflexed",
+    "repo": "https://github.com/VynavinV/ReflexED",
+    "demo": "https://IBegforshorterlessonsformy.health",
+    "video": "https://www.youtube.com/watch?v=BnTCD3590SQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/reflexed", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

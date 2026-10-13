@@ -1,0 +1,34 @@
+{
+  "slug": "leafpilot",
+  "name": "LeafPilot",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "An AI LaTeX editor that turns notes or lecture audio into polished documents with embedded animations.",
+  "placement": { "status": "track-winner", "awards": ["Groq"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Students spend more time fighting LaTeX formatting than writing content.",
+  "solution": "Generate and compile LaTeX in the browser, embed math animations, and structure uploaded notes or audio into documents, using fast inference.",
+  "demo_moment": "Team-described: upload a lecture recording and get a typeset PDF with an animation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "fastapi", "python", "groq", "manim"], "ai_patterns": ["llm-api", "generative-media"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Groq” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pitched as a familiar pairing: an online LaTeX editor with a coding copilot.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["\"X with a copilot\" is a fast way to place a tool in judges' heads."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/leafpilot",
+    "repo": "https://github.com/jbauerko/htn-2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=NnTAQ1qyRsg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/leafpilot", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

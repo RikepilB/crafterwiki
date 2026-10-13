@@ -10,8 +10,8 @@ const images=JSON.parse(readFileSync(new URL('../web/src/data/hall-media.json',i
 const corpus=publicCorpus(loadCorpus(fileURLToPath(new URL('..',import.meta.url))));
 const merged=mergeReferences(corpus,hall,media,images);
 test('Unified references retain all records while merging matching submission URLs',()=>{
- assert.equal(merged.length,948);assert.equal(merged.filter(p=>!p.roster).length,162);
- assert.equal(merged.filter(p=>p.roster).length,786);
+ assert.equal(merged.length,948);assert.equal(merged.filter(p=>!p.roster).length,220);
+ assert.equal(merged.filter(p=>p.roster).length,728);
  const sk=merged.filter(p=>p.name==='S-KBD67');assert.equal(sk.length,1);
  assert.equal(sk[0].status,'finalist');assert.equal(sk[0].url,'/projects/s-kbd67/');
  assert.ok(sk[0].editorial);assert.ok(sk[0].variants.length);assert.ok(sk[0].links.video);

@@ -1,0 +1,29 @@
+{
+  "slug": "pew-pew",
+  "name": "Pew Pew",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Turns an intrusion-alert log into a network graph with simple anomaly scoring.",
+  "placement": { "status": "track-winner", "awards": ["CSE: Network Traffic Exploration"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Raw security alert files are hard to read.",
+  "solution": "Parses an intrusion-detection alert file, builds a force-directed graph of hosts and alert signatures, and flags anomalous sources with z-scores.",
+  "demo_moment": "Team-described: load an alert file and see the busiest attackers highlighted.",
+  "build_style": "software-only",
+  "tech": { "stack": ["fastapi", "python", "d3.js", "javascript"], "ai_patterns": ["none"] },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CSE: Network Traffic Exploration” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Kept the analysis simple and explainable.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["A sponsor data challenge can be won by a clear, small tool."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/pew-pew-9mi8pb", "repo": "https://github.com/stony-su/network-traffic-ai", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/pew-pew-9mi8pb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
