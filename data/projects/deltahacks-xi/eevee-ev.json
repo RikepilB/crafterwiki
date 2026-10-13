@@ -1,0 +1,29 @@
+{
+  "slug": "eevee-ev",
+  "name": "Eevee",
+  "hackathon": "deltahacks-xi",
+  "tagline": "An all-in-one EV charging app: compatible stations, availability, costs, trip planning and reports.",
+  "placement": { "status": "track-winner", "awards": ["Powering Tomorrow"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "EV charging information is scattered across apps.",
+  "solution": "Combines station data, compatibility, pricing, trip options and issue reporting in one iOS app.",
+  "demo_moment": "Team-described: plan a trip and see compatible stations along it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swiftui", "react", "plugshare-api", "google-maps", "verbwire"], "ai_patterns": ["none"] },
+  "domains": ["climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Powering Tomorrow” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Brings scattered data into one place.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Aggregation is enough when the data really is scattered."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/eevee-5mov04", "repo": "https://github.com/MarwanAliii/Delta-Hacks-11.git", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/eevee-5mov04", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

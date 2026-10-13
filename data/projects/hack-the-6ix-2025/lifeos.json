@@ -1,0 +1,35 @@
+{
+  "slug": "lifeos",
+  "name": "LifeOS",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Continuously records your day as video and turns it into searchable context an AI assistant can use.",
+  "placement": { "status": "track-winner", "awards": ["TwelveLabs: Best Use of TwelveLabs API (Podium)"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "AI assistants lack context about the user's life.",
+  "solution": "Captures continuous video, indexes it with video understanding and a vector database, and exposes it as context for an agent.",
+  "demo_moment": "Team-described: ask what you did this morning and get highlights.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "fastapi", "twelvelabs", "qdrant", "redis", "supabase", "openai"], "ai_patterns": ["agent", "computer-vision"] },
+  "domains": ["memory-journaling", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “TwelveLabs: Best Use of TwelveLabs API (Podium)” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Positions itself as context infrastructure, not an app.", "basis": "team-stated", "source": 0 },
+      { "claim": "Always-on recording raises consent questions for people around the user.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["Infrastructure pitches need one user story to be concrete."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lifeos-nbgl0r",
+    "repo": "https://github.com/owenguoo/LifeOS",
+    "demo": "https://life-os-iota.vercel.app",
+    "video": "https://www.youtube.com/watch?v=tiLoapebFfk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lifeos-nbgl0r", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

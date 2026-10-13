@@ -1,0 +1,35 @@
+{
+  "slug": "clip-glasses",
+  "name": "clip",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Say 'clip that' on smart glasses to save the last 30 seconds, and ask later what happened.",
+  "placement": { "status": "track-winner", "awards": ["nwHacks Team Choice Award"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Moments vanish before you reach your phone, and people with memory difficulties feel isolated.",
+  "solution": "A buffer on smart glasses saves recent video on a voice command; clips are embedded for semantic search and can be queried by voice.",
+  "demo_moment": "Team-described: say 'Hey Clip, what did she say about the trip?' and get the clip.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "fastapi", "gemini", "clip", "milvus", "elevenlabs", "cloudflare"], "ai_patterns": ["computer-vision", "voice-ai", "llm-api"] },
+  "domains": ["memory-journaling", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “nwHacks Team Choice Award” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Serves both fun moments and people with memory conditions.", "basis": "team-stated", "source": 0 },
+      { "claim": "Always-on capture of others raises consent issues.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["dual-use-value", "zero-install-channel", "demo-first-wow"],
+    "judging_lens": ["originality"],
+    "lessons": ["One voice command on a device people wear is an instant demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/clip-y8jugr",
+    "repo": "https://github.com/jaykbpark/giggles",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Ckgysg7V0so"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/clip-y8jugr", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

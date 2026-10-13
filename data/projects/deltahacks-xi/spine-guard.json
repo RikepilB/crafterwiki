@@ -1,0 +1,29 @@
+{
+  "slug": "spine-guard",
+  "name": "Spine Guard",
+  "hackathon": "deltahacks-xi",
+  "tagline": "A clip-on sensor that tracks your back angle and shames or praises your posture, with a live dashboard.",
+  "placement": { "status": "track-winner", "awards": ["Best Health Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Device use leaves people with poor posture and health problems.",
+  "solution": "An ESP32 with an IMU attached to clothing streams angles over Wi-Fi to a web app that scores posture, counts corrections and sitting time.",
+  "demo_moment": "Team-described: slouch and watch the score drop and the device scold you.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "mpu-6050", "c++", "python", "streamlit"], "ai_patterns": ["none"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Health Hack” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Humorous feedback ('shame or glaze') makes behaviour change fun.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "tight-scope-finished"],
+    "judging_lens": ["impact"],
+    "lessons": ["A small wearable with a personality beats a dashboard alone."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/spine-guard", "repo": "https://github.com/hiatus770/deltahacks25", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/spine-guard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

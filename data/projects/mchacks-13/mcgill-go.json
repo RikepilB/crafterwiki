@@ -1,0 +1,35 @@
+{
+  "slug": "mcgill-go",
+  "name": "McGill Go",
+  "hackathon": "mchacks-13",
+  "tagline": "Finds which courses at exchange universities count toward a McGill student's degree.",
+  "placement": { "status": "grand-winner", "awards": ["First Place"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Exchange planning is fragmented; course-equivalency information is scattered across systems and PDFs.",
+  "solution": "Gathers equivalency data from university sources with scraping and AI, and lets students search host-university courses that match their program requirements.",
+  "demo_moment": "Team-described: pick a host university and see which courses fit your degree.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "fastapi", "python", "mongodb", "selenium", "gemini", "claude"], "ai_patterns": ["llm-api"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The team was planning its own exchange.", "basis": "team-stated", "source": 0 },
+      { "claim": "A narrow, local problem every judge at McGill could recognise won first place.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "place-based-specificity", "tight-scope-finished"],
+    "judging_lens": ["impact", "challenge-relevance"],
+    "lessons": ["A painful, local, concrete problem can beat flashier projects."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/exchange-v1hmq8",
+    "repo": "https://github.com/yufei002/McHacks-13",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=w44MZycDyGc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/exchange-v1hmq8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

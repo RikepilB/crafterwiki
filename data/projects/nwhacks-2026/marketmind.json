@@ -1,0 +1,34 @@
+{
+  "slug": "marketmind",
+  "name": "MarketMind",
+  "hackathon": "nwhacks-2026",
+  "tagline": "A simulated market of AI trader agents to test your investment strategy before using real money.",
+  "placement": { "status": "track-winner", "awards": ["[Connor, Clark & Lunn] Best Financial Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Beginner investors follow unresearched tips; the team cites high retail trading losses.",
+  "solution": "An order-book simulation with price impact and volatility populated by LLM agents with distinct trading personalities; you add your strategy and watch it perform.",
+  "demo_moment": "Team-described: drop your strategy into the simulated market and see the P&L.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "react", "typescript", "websockets", "openrouter", "gemini"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["fintech", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[Connor, Clark & Lunn] Best Financial Hack” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses multiple agent personalities as the market.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "relatable-demo-wrapper"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Agent simulations fit finance sponsors who value backtesting."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/marketmind-vlobg1",
+    "repo": "https://github.com/dewgong5/nwhacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Qcazd8EwHQ0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/marketmind-vlobg1", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

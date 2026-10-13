@@ -1,0 +1,34 @@
+{
+  "slug": "siy-style-it-yourself",
+  "name": "SIY - Style It Yourself",
+  "hackathon": "mchacks-13",
+  "tagline": "Shows how a new piece works with clothes you already own before you buy it.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Shoppers buy items that match nothing they own, then buy more to match.",
+  "solution": "Users upload their wardrobe; the assistant builds outfits and checks how a prospective purchase fits with existing pieces.",
+  "demo_moment": "Team-described: add a jacket you are considering and see outfits from your own closet.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "fastapi", "python", "supabase", "gemini"], "ai_patterns": ["llm-api", "computer-vision"] },
+  "domains": ["commerce-retail", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Hack” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Frames intentional fashion around access, not owning less.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["A beginner team won by picking a habit they personally had."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/siy-style-it-yourself",
+    "repo": "https://github.com/Paullitsc/Style-It-Yourself",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=JjGNJ1kew_Q"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/siy-style-it-yourself", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

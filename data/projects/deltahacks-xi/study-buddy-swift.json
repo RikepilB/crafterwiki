@@ -1,0 +1,33 @@
+{
+  "slug": "study-buddy-swift",
+  "name": "StudyBuddy",
+  "hackathon": "deltahacks-xi",
+  "tagline": "An iOS study tracker that logs hours and suggests better study plans.",
+  "placement": { "status": "track-winner", "awards": ["Best Community Building Hack", "Swift Student Challenge from Apple"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students struggle to balance courses and use study time well.",
+  "solution": "A SwiftUI app logs study sessions and analyses them to optimize plans, with collaborative features.",
+  "demo_moment": "Team-described: log a session and see your plan update.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "swiftui", "xcode"], "ai_patterns": ["none"] },
+  "domains": ["education", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Community Building Hack” and “Swift Student Challenge from Apple” among 134 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "First-time hackathon team learned Swift at a workshop during the event.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["Learning the sponsor's stack at its own workshop can win its prize."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/study-buddy-klw9d1", "repo": "https://github.com/Madennetic/StudyBuddy", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/study-buddy-klw9d1", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
