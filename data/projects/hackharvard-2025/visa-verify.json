@@ -1,0 +1,29 @@
+{
+  "slug": "visa-verify",
+  "name": "Visa Verify",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A checkout widget that scores device, network and behaviour signals to flag card fraud without slowing honest buyers.",
+  "placement": { "status": "track-winner", "awards": ["Visa Truth and Trust Track Prize"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Card fraud costs billions and erodes trust in online payments.",
+  "solution": "A Chrome extension simulates a merchant checkout widget; a backend combines device, network and behavioural signals into a real-time risk score.",
+  "demo_moment": "Team-described: a normal purchase passes and a suspicious one is flagged.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "chrome-extension", "html", "css", "node-js", "express"], "ai_patterns": ["none"] },
+  "domains": ["fintech", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Visa Truth and Trust Track Prize” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps friction low for legitimate users.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["impact"],
+    "lessons": ["Fraud demos need two paths: the honest one must stay smooth."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/visa-verify", "repo": "https://github.com/HaoChiBao/hackharvard2025", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/visa-verify", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

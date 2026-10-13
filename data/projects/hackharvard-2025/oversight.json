@@ -1,0 +1,34 @@
+{
+  "slug": "oversight",
+  "name": "Oversight",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Tracks bills, votes, lobbying and campaign money, with AI summaries that show how funding meets legislation.",
+  "placement": { "status": "track-winner", "awards": ["Best Consumer Hack by Terac"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Government data is complex and money's influence is hard to see.",
+  "solution": "Combines bill updates, campaign-finance and lobbying data, maps and news; Gemini summarises bills, highlights contested parts and scores polarisation.",
+  "demo_moment": "Team-described: open a trending bill and see the money behind it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "typescript", "tailwind", "gemini", "llama", "elevenlabs", "cloudflare"], "ai_patterns": ["llm-api"] },
+  "domains": ["govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Consumer Hack by Terac” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses public finance data citizens rarely see together.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "cited-evidence-trust"],
+    "judging_lens": ["impact"],
+    "lessons": ["Join two public datasets nobody shows together."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/oversight-i3a2e9",
+    "repo": "https://github.com/dilzafer/oversightusa",
+    "demo": "https://www.oversightusa.com/",
+    "video": "https://www.youtube.com/watch?v=ZYPj0qvPgrA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/oversight-i3a2e9", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

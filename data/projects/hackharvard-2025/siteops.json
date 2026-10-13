@@ -1,0 +1,32 @@
+{
+  "slug": "siteops",
+  "name": "SiteOps",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Construction project management with live camera safety monitoring that spots falls and hazards.",
+  "placement": { "status": "track-winner", "awards": ["Aramco Power the Future Track Prize"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Construction deaths are high and safety monitoring sits outside project tools, the builder says.",
+  "solution": "Combines people, machine and ticket tracking with computer vision (detection, tracking, depth estimation) on site feeds and a Gemini agent for monitoring and questions.",
+  "demo_moment": "Team-described: the dashboard flags a fallen worker from video.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "fastapi", "opencv", "yolov8", "bytetrack", "midas", "tensorflow-js", "supabase", "gemini"],
+    "ai_patterns": ["computer-vision", "agent", "llm-api"]
+  },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Aramco Power the Future Track Prize” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo, with the idea taken from a video game's overview mode.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "cultural-reference-hook"],
+    "judging_lens": ["impact"],
+    "lessons": ["Put safety inside the tool managers already use."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/siteops", "repo": "https://github.com/rajvratzoom/siteops-final", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/siteops", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

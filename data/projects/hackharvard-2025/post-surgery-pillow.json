@@ -1,0 +1,35 @@
+{
+  "slug": "post-surgery-pillow",
+  "name": "Post Surgery Pillow (PSP)",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A sensor pillow that monitors patients' vitals and ranks who needs a nurse first, with AI-written interventions.",
+  "placement": { "status": "grand-winner", "awards": ["1st Best Overall Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Nurses juggle several critically ill patients and must decide quickly who needs help.",
+  "solution": "Pillow sensors track temperature, pressure, movement, heart rate and oxygen; a weighted score with edge-case overrides ranks patients by risk; Gemini writes a clinical summary with suggested nursing actions.",
+  "demo_moment": "Team-described: a simulated patient with one critical vital jumps to the top of the list with a suggested response.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "java", "node-js", "express", "python", "postgresql", "mongodb", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “1st Best Overall Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "An override catches one critical vital that an average would hide.", "basis": "team-stated", "source": 0 },
+      { "claim": "A physical object plus a ranked list gives judges an instant read.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "takes-action"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Show the edge case your scoring catches; it proves the logic matters."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/post-surgery-pillow-psp",
+    "repo": "https://github.com/quynhanh726/PSP-Post-Surgery-Pillow-",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/post-surgery-pillow-psp", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

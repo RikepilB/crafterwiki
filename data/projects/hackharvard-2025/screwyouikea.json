@@ -1,0 +1,37 @@
+{
+  "slug": "screwyouikea",
+  "name": "ScrewYouIKEA.com",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Turns flat-pack furniture manuals into animated 3D assembly steps you can ask questions by voice.",
+  "placement": { "status": "track-winner", "awards": ["Best First-Time Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Paper assembly manuals are hard to follow.",
+  "solution": "Gemini extracts parts and steps from a PDF manual, generates a scene description and step code, and renders labelled 3D animations with voice interaction.",
+  "demo_moment": "Team-described: upload a manual and step through the 3D build.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "three-js", "express", "gemini", "pdfjs", "web-speech-api", "vercel"],
+    "ai_patterns": ["llm-api", "generative-media", "voice-ai"]
+  },
+  "domains": ["commerce-retail", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best First-Time Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the first-time hack prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "one-sentence-clarity"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A universal frustration makes an instant pitch."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/screwyouikea",
+    "repo": "https://github.com/donaragalstyan/ScrewYouIkea",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1124554736?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/screwyouikea", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "carboncompass",
+  "name": "CarbonCompass",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Recommends city neighbourhoods for a new business, scored for sustainability on a 3D map.",
+  "placement": { "status": "track-winner", "awards": ["Coolant Climate Tech Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "New businesses choose locations without weighing environmental impact.",
+  "solution": "Describe the business; AI suggests two or three areas on a 3D map colour-coded by a green score covering energy, waste, transit and zoning, with an explanation.",
+  "demo_moment": "Team-described: type 'eco café' and see the scored neighbourhoods.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "mapbox", "cloudflare-workers", "cloudflare-d1", "gemini", "blender"], "ai_patterns": ["llm-api"] },
+  "domains": ["climate-sustainability", "real-estate"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Coolant Climate Tech Challenge” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Balances profit and environmental fit in one recommendation.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity", "expert-data-for-everyone"],
+    "judging_lens": ["impact"],
+    "lessons": ["Bring sustainability into a decision people are already making."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/carboncompass-hyqob0",
+    "repo": "https://github.com/PratGit1606/HackHarvardTTP",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=MVzm-lyhBgc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/carboncompass-hyqob0", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

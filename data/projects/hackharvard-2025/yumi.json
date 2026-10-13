@@ -1,0 +1,51 @@
+{
+  "slug": "yumi",
+  "name": "Yumi",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A social network that learns your taste from casual reviews and finds restaurants a whole group will like.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["3rd Best Overall Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Visitors and groups struggle to pick food beyond chain results.",
+  "solution": "Gemini extracts flavour, atmosphere and price preferences from natural-language reviews into taste profiles; tagging friends merges their profiles and function calling searches and ranks restaurants; voice queries work too.",
+  "demo_moment": "Team-described: tag two friends and get a ranked pick for all three.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": [
+      "swift",
+      "swiftui",
+      "next-js",
+      "react",
+      "typescript",
+      "fastapi",
+      "python",
+      "supabase",
+      "gemini",
+      "sentence-transformers",
+      "elevenlabs",
+      "twilio",
+      "google-places"
+    ],
+    "ai_patterns": ["agent", "llm-api", "voice-ai"]
+  },
+  "domains": ["social-connection", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “3rd Best Overall Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Solves the group decision, not one person's search.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "one-sentence-clarity"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["Pick the group version of a solo problem."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/yumi",
+    "repo": "https://github.com/scrappydevs/Yummy",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=-DW0JT6DHfY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/yumi", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

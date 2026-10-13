@@ -1,0 +1,37 @@
+{
+  "slug": "haloaudit",
+  "name": "HaloAudit",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A desktop and web tool that analyses data files to automate parts of an audit.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Gemini API"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Organisations spend heavily on manual audit review.",
+  "solution": "A cross-platform app (Electron, Swift, web) analyses uploaded data with Gemini and LangGraph and presents insights.",
+  "demo_moment": "Team-described: load a data file and read the audit findings.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "electron", "swift", "python", "langgraph", "gemini", "cloudflare"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["due-diligence-risk", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Gemini API” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Runs natively on desktop as well as the web.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Shipping on several platforms can carry an AI-API prize."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/haloaudit",
+    "repo": "https://github.com/Evandabest/Hackharvard2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WgSNcEAPhr8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/haloaudit", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

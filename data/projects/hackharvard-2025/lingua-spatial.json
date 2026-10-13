@@ -1,0 +1,34 @@
+{
+  "slug": "lingua-spatial",
+  "name": "Lingua Spatial",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A mixed-reality headset app that labels the objects around you in a language you are learning, with cultural facts.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Vocabulary drills feel random and disconnected from culture.",
+  "solution": "Object recognition on a headset labels surroundings in languages such as Nahuatl or Hausa, and spoken facts explain each object's cultural role.",
+  "demo_moment": "Team-described: look at an object and hear its name and story.",
+  "build_style": "software-only",
+  "tech": { "stack": ["visionos", "arkit", "create-ml", "flask", "gemini", "elevenlabs", "figma"], "ai_patterns": ["computer-vision", "voice-ai", "llm-api"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of ElevenLabs” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Includes less widely taught languages.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use", "originality"],
+    "lessons": ["Tie each word to an object and a cultural story to make it stick."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lingua-spatial",
+    "repo": "https://github.com/SaketR3/Vision-Pro-Language-Immersion",
+    "demo": "https://lingua-spatial-gemini-api.onrender.com/",
+    "video": "https://www.youtube.com/watch?v=FVoM-Fj_TL8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lingua-spatial", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

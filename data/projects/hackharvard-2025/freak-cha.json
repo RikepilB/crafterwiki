@@ -1,0 +1,34 @@
+{
+  "slug": "freak-cha",
+  "name": "freak-cha",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A CAPTCHA you answer by flicking your tongue, to prove you are not a deepfake.",
+  "placement": { "status": "track-winner", "awards": ["Funniest Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Deepfakes blur human and AI faces, making liveness checks harder.",
+  "solution": "True-or-false questions answered with tongue gestures detected in real time by computer vision.",
+  "demo_moment": "Team-described: answer a series of questions with tongue flicks.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "tailwind", "trpc", "python", "yolov8", "supabase"], "ai_patterns": ["computer-vision"] },
+  "domains": ["identity-provenance", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Funniest Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A gesture deepfakes struggle to fake, delivered as a joke.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "inverted-approach"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["A ridiculous demo can carry a real idea."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/freak-cha",
+    "repo": "https://github.com/anselmlong/hackharvard",
+    "demo": "http://freakcha.com",
+    "video": "https://www.youtube.com/watch?v=wssGfKUIxzw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/freak-cha", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

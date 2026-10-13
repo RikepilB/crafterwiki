@@ -1,0 +1,34 @@
+{
+  "slug": "item2art",
+  "name": "Item2Art (formerly Art2Life)",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Tap an NFC chip on an object to replay the memory it holds as generated music, an image or a voice conversation.",
+  "placement": { "status": "track-winner", "awards": ["Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "The team, travelling from Spain, wanted to keep memories attached to real objects.",
+  "solution": "Write a short story, choose music (Suno), an image (Gemini) or a voice conversation (ElevenLabs and Gemini), and link it to an NFC chip through a Flutter app.",
+  "demo_moment": "Team-described: tap an object and hear its song.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["flutter", "dart", "supabase", "gemini", "elevenlabs", "suno", "nfc"], "ai_patterns": ["generative-media", "voice-ai", "llm-api"] },
+  "domains": ["memory-journaling", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Domain Name from GoDaddy Registry” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Links generated media to physical keepsakes.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "familiar-thing-new-job"],
+    "judging_lens": ["originality"],
+    "lessons": ["Attach the digital to a physical object people already treasure."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/item2life",
+    "repo": "https://github.com/meulencv/item2art",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Rmd5dRmqMEw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/item2life", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

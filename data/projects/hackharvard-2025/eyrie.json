@@ -1,0 +1,34 @@
+{
+  "slug": "eyrie",
+  "name": "Eyrie",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Watches crowd camera feeds for dangerous density and movement and alerts staff before a crush.",
+  "placement": { "status": "track-winner", "awards": ["Best AI Application Built with Cloudflare"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Crowd crushes at festivals and events kill people before staff notice the build-up.",
+  "solution": "YOLO detection counts people, estimates density and tracks movement from video; alerts go to staff on sudden congestion or unusual flow.",
+  "demo_moment": "Team-described: a feed turns red as density rises and an alert fires.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "yolov8", "next-js", "typescript", "webrtc", "cloudflare", "gemini"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best AI Application Built with Cloudflare” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounded in real crowd-crush disasters.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Name a real tragedy the system would have warned about."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/eyrie-idxhj8",
+    "repo": "https://github.com/treehill05/eyrie",
+    "demo": "https://eyriesave.us",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/eyrie-idxhj8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

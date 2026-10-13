@@ -1,0 +1,34 @@
+{
+  "slug": "veritas-mfa",
+  "name": "Veritas",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Affordable payment verification for small merchants: email checks, device fingerprinting and a fraud dashboard.",
+  "placement": { "status": "track-winner", "awards": ["Visa Truth and Trust Track Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Chargebacks hurt small merchants who cannot afford enterprise fraud tools, the team says.",
+  "solution": "A script sits between checkout and the processor to verify customers by email and score device risk; merchants see patterns and set rules.",
+  "demo_moment": "Team-described: a demo store routes a risky payment through verification.",
+  "build_style": "software-only",
+  "tech": { "stack": ["node-js", "react"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["fintech", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Visa Truth and Trust Track Prize” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Integrates in minutes for small merchants.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse"],
+    "judging_lens": ["impact"],
+    "lessons": ["Name the customer who cannot afford the incumbent."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/veritas-2v5uxc",
+    "repo": "https://github.com/achneerov/HackHarvard",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=inDMZF5X79Q"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/veritas-2v5uxc", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

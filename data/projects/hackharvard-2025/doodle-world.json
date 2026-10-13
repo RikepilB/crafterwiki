@@ -1,0 +1,37 @@
+{
+  "slug": "doodle-world",
+  "name": "Doodle World",
+  "hackathon": "hackharvard-2025",
+  "tagline": "Generate a 3D world from a sketch, photo or prompt, then add and edit objects and characters by drawing or talking.",
+  "placement": { "status": "track-winner", "awards": ["Living Culture Track Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a creative playground where anyone can build and evolve worlds.",
+  "solution": "Generative 3D services build a world and models; a whiteboard and language input add objects and NPCs in a Three.js scene with physics.",
+  "demo_moment": "Team-described: sketch an object and see it appear in the world.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "three-js", "rapier", "tldraw", "python", "gemini", "elevenlabs", "docker", "google-cloud-run"],
+    "ai_patterns": ["generative-media", "llm-api", "voice-ai"]
+  },
+  "domains": ["creative-media", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Living Culture Track Prize” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Lets creation keep going after the first generation.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow"],
+    "judging_lens": ["originality"],
+    "lessons": ["Iteration, not one-shot generation, makes a creative tool feel like play."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/doodle-world",
+    "repo": "https://github.com/mongj/doodle-world",
+    "demo": "http://doodleworld.club",
+    "video": "https://www.youtube.com/watch?v=cWPIT-KAlgk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/doodle-world", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

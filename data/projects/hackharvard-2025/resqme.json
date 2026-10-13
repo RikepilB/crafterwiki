@@ -1,0 +1,37 @@
+{
+  "slug": "resqme",
+  "name": "ResQme",
+  "hackathon": "hackharvard-2025",
+  "tagline": "A mesh network of small radio devices that keeps people messaging when cell towers and internet fail.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["2nd Best Overall Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Communication fails first in disaster zones.",
+  "solution": "ESP32 nodes relay messages through each other on a mesh; a master node hosts a Wi-Fi page for messages and status, with GPS and small screens for field use and optional cloud mirroring.",
+  "demo_moment": "Team-described: send a message across several nodes with no internet.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["esp32", "c++", "platformio", "python", "next-js", "react", "node-js", "postgresql", "supabase", "leaflet", "expo"],
+    "ai_patterns": ["none"]
+  },
+  "domains": ["emergencies-disaster", "connectivity-telecom", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “2nd Best Overall Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works without any infrastructure.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "live-real-world-proof", "human-stakes"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Unplug the internet on stage to prove an offline claim."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/resqme-jq52al",
+    "repo": "https://github.com/lordoftheseas/ResQme",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=KnAiHBRMZHo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/resqme-jq52al", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackharvard-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
