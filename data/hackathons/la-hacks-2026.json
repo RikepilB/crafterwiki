@@ -69,7 +69,7 @@
   "sponsors": ["Fetch.ai", "Roblox", "Cognition", "Figma", "World", "Cloudinary", "ASUS", "Happy Hacking Keyboard", "ZETIC", "Arista Networks", "MLH"],
   "submission_requirements": ["Devpost submission", "Accepted participants only", "Teams of up to 4"],
   "results_status": "complete",
-  "roster_coverage": "full",
+  "roster_coverage": "partial",
   "entries": [
     { "name": "codebreaker", "project": "codebreaker" },
     { "name": "RIIS", "project": "riis" },
@@ -384,5 +384,5 @@
     { "url": "https://la-hacks-2026.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Team size, end time, pre-existing work rule." },
     { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 13 pages captured: Devpost counts 307 submissions and lists 306 publicly; prize names from each of the 65 winning project pages." }
   ],
-  "curator_notes": "All 65 prize winners are analyzed records. The overall top three are ranked; sponsor challenges with several winners are recorded as track-winner because project pages do not show the order. Taglines are CrafterWIKI paraphrases; domains assigned conservatively."
+  "curator_notes": "All 65 prize winners are analyzed records. The overall top three are ranked; sponsor challenges with several winners are recorded as track-winner because project pages do not show the order. Taglines are CrafterWIKI paraphrases; domains assigned conservatively. Coverage is recorded as partial because one of the 307 submissions is not public, so counts are not base rates."
 }
