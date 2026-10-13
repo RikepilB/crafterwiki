@@ -1,0 +1,34 @@
+{
+  "slug": "stowed",
+  "name": "Stowed",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Finds lost bags by image matching and shows when the cabin's overhead space is full.",
+  "placement": { "status": "track-winner", "rank": 3, "awards": ["Third Place for American Airlines Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Lost luggage and carry-on chaos stress travellers.",
+  "solution": "AI image matching identifies bags without tags, and carry-ons logged at check-in predict overhead capacity.",
+  "demo_moment": "Team-described: find a bag by photo and see cabin capacity.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "tailwind", "prisma", "openai"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Place for American Airlines Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A team member's own lost-luggage story.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["One personal travel mishap makes a sponsor pitch real."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/stowed",
+    "repo": "https://github.com/joshuale2007/STOWED-TAMUHACK-2026",
+    "demo": "https://stowed.vercel.app",
+    "video": "https://www.youtube.com/watch?v=-3pgYP_-WPQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/stowed", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

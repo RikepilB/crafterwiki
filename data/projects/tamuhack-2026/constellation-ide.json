@@ -1,0 +1,37 @@
+{
+  "slug": "constellation-ide",
+  "name": "Constellation",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A web IDE where you describe a research goal and an agent builds, runs and debugs parallel cloud workflows.",
+  "placement": { "status": "track-winner", "rank": 1, "awards": ["First Place for NorthMark Compute & Cloud Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Researchers need large-scale compute but lack the CS background.",
+  "solution": "Users upload data and describe goals; an agentic assistant builds a visual execution graph, deploys tasks to cloud batch services and debugs failures.",
+  "demo_moment": "Team-described: autopilot debugging of a failing parallel job.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "aws-batch", "aws-ec2", "aws-s3", "firebase", "gemini", "monaco"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["cloud-native-infra", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place for NorthMark Compute & Cloud Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "First in the HPC challenge.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Visualise the execution graph so non-experts trust the run."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/constellation-qcb483",
+    "repo": "https://github.com/aathul-raj/constellation",
+    "demo": "https://constellation-production-12bb.up.railway.app/",
+    "video": "https://www.youtube.com/watch?v=T-ptPqe-FVU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/constellation-qcb483", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "ir-vein-finder",
+  "name": "IR vein finder",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Infrared LEDs and a camera make veins visible on the skin for easier needle placement.",
+  "placement": { "status": "track-winner", "awards": ["Best Medical Device Hack (Hardware)"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Finding veins for injections or blood draws is often hard.",
+  "solution": "Six 850 nm IR LEDs light the arm; haemoglobin absorbs IR so veins appear dark, and OpenCV enhances the contrast.",
+  "demo_moment": "Team-described: images of a forearm with veins shown clearly.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "opencv"], "ai_patterns": ["computer-vision"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Medical Device Hack (Hardware)” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Explains the physics behind the design.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse"],
+    "judging_lens": ["impact"],
+    "lessons": ["Simple physics explained well can win a medical-device prize."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/ir-vein-finder", "repo": "https://github.com/RohanP1506/IR-Vein-Finder", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/ir-vein-finder", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

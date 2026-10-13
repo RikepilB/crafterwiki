@@ -1,0 +1,37 @@
+{
+  "slug": "cortex-travel",
+  "name": "cortex",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A travel assistant that remembers where you put things, tells you when your bag reaches the carousel and answers by voice.",
+  "placement": { "status": "grand-winner", "awards": ["First Overall Software Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Travellers lose items and wait at carousels, and airport voice assistants are slow and robotic, the team says.",
+  "solution": "An iOS app uses ARKit and vision to save where an item was set down and guide you back, detects your scanned bag on the carousel, searches nearby places and answers by voice.",
+  "demo_moment": "Team-described: put down a bottle, walk away, tap find and get guided back.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swift", "arkit", "opencv", "three-js", "gemini", "elevenlabs", "mongodb", "auth0", "solana", "vultr"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["productivity", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Overall Software Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works like a tracking tag without the tag.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "relatable-demo-wrapper", "demo-first-wow"],
+    "judging_lens": ["originality", "wow-factor"],
+    "lessons": ["Compare your feature to a product judges already own."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cortex-67ueyq",
+    "repo": "https://github.com/ryunzz/cortex",
+    "demo": "https://aa-cor.tech/",
+    "video": "https://www.youtube.com/watch?v=ax6c-Fya32A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cortex-67ueyq", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

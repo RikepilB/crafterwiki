@@ -1,0 +1,34 @@
+{
+  "slug": "carbaba",
+  "name": "CarBaba",
+  "hackathon": "tamuhack-2026",
+  "tagline": "AI car search with weighted preferences that personalise the ranking.",
+  "placement": { "status": "track-winner", "rank": 2, "awards": ["Second Place for Toyota Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Car sites do not help buyers decide between options.",
+  "solution": "Searches by features and lets users weight preferences, ranking cars with AI.",
+  "demo_moment": "Team-described: weight safety over price and see the ranking change.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "javascript", "python", "fastapi", "mongodb", "gemini", "google-cloud"], "ai_patterns": ["llm-api"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Place for Toyota Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "User-set weights make the ranking explainable.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["Let users steer the ranking."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/carbaba",
+    "repo": "https://github.com/exa2022/FINAL_HACK26/",
+    "demo": "https://my-react-app-wheat-two.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=VNfz9xy2kvU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/carbaba", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

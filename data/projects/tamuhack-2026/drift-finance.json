@@ -1,0 +1,37 @@
+{
+  "slug": "drift-finance",
+  "name": "Drift",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Runs thousands of simulated futures on your bank data to estimate whether you will reach a goal.",
+  "placement": { "status": "track-winner", "awards": ["Capital One Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People cannot tell whether their financial goals are realistic.",
+  "solution": "Ingests account data from the sponsor's API, parses goals with AI, runs Monte Carlo simulations and shows probabilities and what-if recommendations.",
+  "demo_moment": "Team-described: enter a goal and see its probability of success.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "typescript", "tailwind", "node-js", "express", "python", "numpy", "pandas", "gemini", "elevenlabs", "nessie-api"],
+    "ai_patterns": ["llm-api"]
+  },
+  "domains": ["fintech", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Capital One Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Gives a probability instead of a yes or no.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Uncertainty shown honestly is more useful than a single forecast."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pff",
+    "repo": "https://github.com/aadit2805/drift",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WNDUNSBSE9I"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pff", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

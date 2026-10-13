@@ -1,0 +1,34 @@
+{
+  "slug": "aisle0",
+  "name": "AIsle0",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Connects ground and flight crews by flight number with live task status during aircraft turnaround.",
+  "placement": { "status": "track-winner", "rank": 1, "awards": ["First Place for American Airlines Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Crews lack shared, real-time visibility into turnaround tasks.",
+  "solution": "Web and mobile apps share task status per flight (fuelling, completed, restricted), with role-specific inspections, AI hazard tags and an audit log.",
+  "demo_moment": "Team-described: a crew marks fuelling done and others see it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "expo", "javascript", "vite", "supabase"], "ai_patterns": ["llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place for American Airlines Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Answers the airline challenge on operations.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["Shared status removes the radio call."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/idk-yet-8ba2hz",
+    "repo": "https://github.com/sarvesh-tech/tamuhack26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=EQRr3HAQqEg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/idk-yet-8ba2hz", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

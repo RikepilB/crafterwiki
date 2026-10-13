@@ -1,0 +1,37 @@
+{
+  "slug": "sigma-predictor",
+  "name": "Sigma Predictor",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Shows how your balances and interest will grow and what moving money would change.",
+  "placement": { "status": "track-winner", "awards": ["USAA Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Budget tools show where money went, not what will happen next.",
+  "solution": "Checking and savings overview with forecasts, a what-if transfer simulator, goal tracking and deterministic tips such as overdraft risk.",
+  "demo_moment": "Team-described: simulate a transfer and see future interest.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "tailwind", "node-js", "express", "mongodb", "gemini", "elevenlabs", "vultr"],
+    "ai_patterns": ["llm-api"]
+  },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “USAA Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses deterministic rules for tips.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Forward-looking money views beat backward-looking budgets."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sigma-predictor",
+    "repo": "https://github.com/KoalaisMad/TAMUHACK2026",
+    "demo": "https://sigmapredictor.sophiaphu.com/",
+    "video": "https://www.youtube.com/watch?v=Yrfy1ytqos4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sigma-predictor", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

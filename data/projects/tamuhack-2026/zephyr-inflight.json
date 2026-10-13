@@ -1,0 +1,37 @@
+{
+  "slug": "zephyr-inflight",
+  "name": "zephyr",
+  "hackathon": "tamuhack-2026",
+  "tagline": "An in-flight companion that notices passenger stress, explains turbulence and alerts crew.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Flying is stressful during turbulence and delays.",
+  "solution": "Computer vision detects stress, a virtual avatar responds and explains flight phases, and a crew dashboard shows cabin-wide alerts.",
+  "demo_moment": "Team-described: a stressed passenger gets a calming explanation.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "typescript", "tailwind", "python", "three-js", "mongodb", "gemini", "auth0", "vultr"],
+    "ai_patterns": ["computer-vision", "llm-api"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Serves passengers and crew.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Give the crew a view, not just the passenger."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/zephyr-x0rwqc",
+    "repo": null,
+    "demo": "https://zephyr-air.tech/",
+    "video": "https://www.youtube.com/watch?v=nLZqstBv-2g"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/zephyr-x0rwqc", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

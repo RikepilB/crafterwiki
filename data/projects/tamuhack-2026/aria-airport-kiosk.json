@@ -1,0 +1,41 @@
+{
+  "slug": "aria-airport-kiosk",
+  "name": "Aria: The Multimodal AI Kiosk",
+  "hackathon": "tamuhack-2026",
+  "tagline": "An airport kiosk with a 3D voice assistant that answers questions, shows flight status and rebooks.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Vultr", "Second Place for American Airlines Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Airport help desks are crowded and information is scattered.",
+  "solution": "Face or QR login, a 3D animated assistant by voice or text, RAG answers on airport policies, flight and weather info and rebooking, orchestrated with LangGraph.",
+  "demo_moment": "Team-described: ask about a delayed flight and get rebooked.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "vite", "python", "langgraph", "mongodb", "elevenlabs", "vultr"],
+    "ai_patterns": ["agent", "voice-ai", "llm-api", "computer-vision"]
+  },
+  "domains": ["commerce-retail", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[MLH] Best Use of Vultr” and “Second Place for American Airlines Challenge” among 176 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Also placed in the airline challenge.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A kiosk demo is concrete: one screen, one traveller, one fix."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aria-the-multimodal-ai-kiosk",
+    "repo": "https://github.com/luvadlamudi/TAMUHack26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=lW3ZScAf5h0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aria-the-multimodal-ai-kiosk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

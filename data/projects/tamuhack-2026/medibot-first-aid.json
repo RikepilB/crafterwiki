@@ -1,0 +1,32 @@
+{
+  "slug": "medibot-first-aid",
+  "name": "MediBot",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A camera watches for falls, classifies the injury, and a robot arm hands over the right first-aid supplies.",
+  "placement": { "status": "grand-winner", "awards": ["First Overall Hardware Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Bystanders panic in emergencies and do not act effectively.",
+  "solution": "A Raspberry Pi camera builds a voxel map to detect falls, vision AI classifies burns, cuts or sprains, a robotic arm retrieves matching supplies and a voice guides treatment.",
+  "demo_moment": "Team-described: simulate a burn and the arm presents burn supplies.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "lerobot", "roboflow", "huggingface", "elevenlabs", "raspberry-pi"],
+    "ai_patterns": ["computer-vision", "voice-ai", "ml-model"]
+  },
+  "domains": ["health", "robotics-hardware", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Overall Hardware Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Goes from detection to physical action.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "takes-action", "human-stakes"],
+    "judging_lens": ["technical-depth", "wow-factor"],
+    "lessons": ["A robot that hands over the right thing completes the story."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/medibot-as2980", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=eLYQaMy-SHo" },
+  "sources": [
+    { "url": "https://devpost.com/software/medibot-as2980", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

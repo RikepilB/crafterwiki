@@ -1,0 +1,34 @@
+{
+  "slug": "waiterdock",
+  "name": "WaiterDock",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Restaurant operations for a local restaurant: seating, orders, kitchen updates, inventory and a customer call button.",
+  "placement": { "status": "track-winner", "awards": ["Mai Shan Yun Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The restaurant needed a modern system.",
+  "solution": "A table-grid dashboard, real-time order updates to the kitchen, a customer menu with a waiter button, management stats and inventory.",
+  "demo_moment": "Team-described: seat a party and send an order to the kitchen.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "tailwind", "node-js", "express", "websockets", "firebase", "aws"], "ai_patterns": ["none"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Mai Shan Yun Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Covers every function the restaurant asked for.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["place-based-specificity", "tight-scope-finished"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["A real local client's checklist is the rubric."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/waiterdock",
+    "repo": "https://github.com/ajari17/TamuHack2026",
+    "demo": "https://clap-ignite-29891828.figma.site",
+    "video": "https://www.youtube.com/watch?v=VJ7AGQ4WlFQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/waiterdock", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

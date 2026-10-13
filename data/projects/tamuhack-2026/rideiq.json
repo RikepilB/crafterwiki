@@ -1,0 +1,34 @@
+{
+  "slug": "rideiq",
+  "name": "RideIQ",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A car marketplace with semantic search that understands what a buyer means, not just filters.",
+  "placement": { "status": "track-winner", "rank": 1, "awards": ["First Place for Toyota Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Online car marketplaces rely on rigid filters.",
+  "solution": "Listings are embedded as vectors for semantic search and recommendations, with comparison charts.",
+  "demo_moment": "Team-described: search in plain words and compare matches.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "typescript", "tailwind", "supabase", "postgresql", "pgvector"], "ai_patterns": ["ml-model"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place for Toyota Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "First in the sponsor's recommendation challenge.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["Semantic search is the core of a recommendation brief."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/rideiq",
+    "repo": "https://github.com/joshuaraja1/HackTamu2026.git",
+    "demo": "https://us06web.zoom.us/meetings/83469380044/invitations?signature=nMC_Vt_GQzvNEVrKO2RAFHY7sqDvev-d0bS-8_0w1RM",
+    "video": "https://www.youtube.com/watch?v=yB1XXP8RGyg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/rideiq", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

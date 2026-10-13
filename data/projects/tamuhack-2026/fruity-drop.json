@@ -1,0 +1,34 @@
+{
+  "slug": "fruity-drop",
+  "name": "Fruity Drop",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A two-player webcam game where you catch falling fruit with your face and hands.",
+  "placement": { "status": "track-winner", "awards": ["Best Fruity Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted to combine face detection with a game.",
+  "solution": "Hand and face tracking from the webcam control catching in a Pygame game.",
+  "demo_moment": "Team-described: two players race to catch fruit.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "opencv", "cvzone", "mediapipe", "pygame"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Fruity Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Fits the event's fruit theme.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["theme-native-twist"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Theme prizes reward leaning in."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fruity-drop",
+    "repo": "https://github.com/joaquin822/Hackathon-26.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=hFp0P8vOQzk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fruity-drop", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

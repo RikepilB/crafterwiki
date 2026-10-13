@@ -1,0 +1,34 @@
+{
+  "slug": "nfticket",
+  "name": "NFTicket",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Event tickets minted as NFTs on Solana and verified by QR at the door.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Solana"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Scalping and fake tickets hurt concerts and student events.",
+  "solution": "Organisers mint tickets on-chain; attendees hold them in wallets; entry scans a QR that checks ownership in real time.",
+  "demo_moment": "Team-described: buy a ticket and scan in.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "mongodb", "solana", "auth0"], "ai_patterns": ["on-chain"] },
+  "domains": ["identity-provenance", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Solana” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uniqueness on-chain blocks duplicates.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Use a chain where uniqueness is the whole point."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nfticket-bvpq87",
+    "repo": "https://github.com/ShalyJay/TamuHack26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=3BYhW-lSaX4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nfticket-bvpq87", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

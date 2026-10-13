@@ -1,0 +1,34 @@
+{
+  "slug": "aeroassist",
+  "name": "AeroAssist",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Explains why your flight is delayed in plain language and offers rebooking and compensation options.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Auth0"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Delayed passengers get vague jargon and little guidance.",
+  "solution": "Translates operational delay data into human explanations, calms anxiety and proposes options by delay severity.",
+  "demo_moment": "Team-described: a long delay triggers compensation options.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "python", "postgresql", "docker", "auth0", "openrouteservice"], "ai_patterns": ["llm-api"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Auth0” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Proactive rather than reactive service.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Explain the why; uncertainty is what passengers hate."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/th26-aa",
+    "repo": "https://github.com/SaiNithin001/th26-aa-challenge",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=NWQNDqU63qY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/th26-aa", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

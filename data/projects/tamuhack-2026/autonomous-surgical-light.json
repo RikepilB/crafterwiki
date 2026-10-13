@@ -1,0 +1,34 @@
+{
+  "slug": "autonomous-surgical-light",
+  "name": "Autonomous Surgical Light",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A surgical light that follows where the surgeon looks, using head-pose tracking.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Overall Hardware Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Surgeons break focus and sterility to adjust lights.",
+  "solution": "Computer vision computes the user's gaze vector from head pose and servos tilt a 3D-printed light to that point, with a manual mode.",
+  "demo_moment": "Team-described: look at a spot and the light follows.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "python", "opencv", "mediapipe", "flask", "react", "socket-io", "solidworks"], "ai_patterns": ["computer-vision"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Overall Hardware Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hands-free control preserves sterility.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "one-sentence-clarity"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Remove a hand action from a sterile workflow and the value is obvious."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/autonomous-surgical-light",
+    "repo": null,
+    "demo": "https://prestonpro.github.io/autonomous-surgical-light-v2/",
+    "video": "https://www.youtube.com/watch?v=ANWeNuaij5A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/autonomous-surgical-light", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "mini-haptic-wheel",
+  "name": "Mini Haptic Steering Wheel Controller",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A small steering-wheel controller with force feedback from a racing game's telemetry.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack (Hardware)"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Force-feedback wheels are expensive.",
+  "solution": "A brushless motor controller and magnetic angle sensors drive a mini wheel that reads racing-game telemetry and pushes back.",
+  "demo_moment": "Team-described: drive in a racing game and feel the road.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "python", "stm32", "moteus", "vgamepad"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Hack (Hardware)” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team built a force-feedback controller.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["Beginner hardware prizes reward something you can touch and use."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/haptic",
+    "repo": "https://github.com/ANGELOREYES-afk/FFBwheelACtelemtry",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=qZ8-6floxKM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/haptic", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

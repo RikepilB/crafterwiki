@@ -1,0 +1,34 @@
+{
+  "slug": "maipos",
+  "name": "MaiPOS",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A point-of-sale system for a local restaurant with custom table layouts and editable orders.",
+  "placement": { "status": "track-winner", "awards": ["Figma Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "The restaurant's current system lacks flexible layouts and order edits.",
+  "solution": "Customisable table layouts, orders editable after placement, split checks and new kitchen tickets on every edit, designed in Figma.",
+  "demo_moment": "Team-described: edit an order and see a new kitchen ticket.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "figma"], "ai_patterns": ["none"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the design-tool prize for its Figma process.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["place-based-specificity"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Design-tool prizes reward showing the process."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mai-shan-yun-tabler",
+    "repo": null,
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=1z1KZ4DWAd0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mai-shan-yun-tabler", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

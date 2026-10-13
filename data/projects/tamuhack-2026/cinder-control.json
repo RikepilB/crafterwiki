@@ -1,0 +1,41 @@
+{
+  "slug": "cinder-control",
+  "name": "Cinder Control",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A wildfire-spread dashboard that predicts what a fire will reach and helps responders plan.",
+  "placement": { "status": "track-winner", "awards": ["Best Solo Hack", "Second Place for NorthMark Compute & Cloud Challenge"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "People in wildfire areas often do not understand fire spread, the builder says.",
+  "solution": "Models fire spread from environmental parameters set by form or voice, shows threatened landmarks on a map with weather data, and offers responder tools.",
+  "demo_moment": "Team-described: set wind and dryness and watch the predicted spread.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "tailwind", "python", "fastapi", "mapbox", "noaa", "gemini", "openai", "elevenlabs"],
+    "ai_patterns": ["llm-api", "voice-ai"]
+  },
+  "domains": ["emergencies-disaster", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Solo Hack” and “Second Place for NorthMark Compute & Cloud Challenge” among 176 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "A solo project that also placed in the HPC challenge.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Simulation plus a map makes risk visible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fsim",
+    "repo": "https://github.com/Tarunls/fire-sim",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=NebNnWuZCJo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fsim", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

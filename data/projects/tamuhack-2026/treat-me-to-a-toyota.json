@@ -1,0 +1,37 @@
+{
+  "slug": "treat-me-to-a-toyota",
+  "name": "Treat Me To A Toyota",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Describe your ideal car by voice and an AI asks follow-ups while matching listings update live.",
+  "placement": { "status": "track-winner", "rank": 3, "awards": ["Third Place for Toyota Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Buyers should not need to type exact specs.",
+  "solution": "A voice assistant using tool calling queries listings as you talk, with a live carousel of identified features.",
+  "demo_moment": "Team-described: talk through your needs and watch listings narrow.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "typescript", "tailwind", "supabase", "postgresql", "claude", "groq", "vapi"],
+    "ai_patterns": ["voice-ai", "agent", "llm-api"]
+  },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Place for Toyota Challenge” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns search into a conversation.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["Conversation handles vague intent better than filters."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/toyota-truefit",
+    "repo": "https://github.com/Lukeyp43/TamuHack-2026-Dream-Team",
+    "demo": "https://tamu-hack-2026-dream-team.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=KmUbYQfapMg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/toyota-truefit", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

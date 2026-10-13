@@ -1,0 +1,37 @@
+{
+  "slug": "hpc-runner",
+  "name": "HPC Runner",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Upload a zip of code and data and it runs on an HPC cluster, guessing the entry point and resources for you.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Overall Software Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Researchers and students are blocked by schedulers, scripts and cluster setup.",
+  "solution": "A web interface detects the program's entry point, estimates compute needs, submits to a Slurm cluster and streams progress and errors, with an MCP interface for agents.",
+  "demo_moment": "Team-described: upload a project, watch it run, see a failing job explained.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "flask", "slurm", "mongodb", "gemini", "mcp", "auth0"],
+    "ai_patterns": ["llm-api", "mcp-server"]
+  },
+  "domains": ["cloud-native-infra", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Overall Software Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Answers a sponsor's HPC-for-non-experts brief and placed overall.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "cost-collapse"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Hide the expert step entirely: guess the configuration for the user."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/slurmglue",
+    "repo": "https://github.com/Shlok-Bhakta/HPC-Runner",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=rlQeZ6KSMeQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/slurmglue", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

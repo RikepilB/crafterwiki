@@ -1,0 +1,29 @@
+{
+  "slug": "luma-fume",
+  "name": "Luma-Fume",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A soldering assistant that protects your lungs and eyes, built with a custom print.",
+  "placement": { "status": "track-winner", "awards": ["Best Custom Print"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Soldering fumes and close work strain the lungs and eyes.",
+  "solution": "A hand-built device, per its tagline; the write-up is a joke and gives no details.",
+  "demo_moment": "Not described.",
+  "build_style": "hardware-software",
+  "tech": { "stack": [], "ai_patterns": ["none"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Custom Print” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the custom-print prize; the write-up gives no information.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A joke write-up hides whatever made the build win."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/luma-fume", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=Iu7vw_BvVns" },
+  "sources": [
+    { "url": "https://devpost.com/software/luma-fume", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

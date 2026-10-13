@@ -1,0 +1,34 @@
+{
+  "slug": "helm-threat",
+  "name": "helm",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Live video threat detection combining body signals and behaviour into one risk score.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Presage"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a safety tool for threatening situations.",
+  "solution": "Captures video, estimates physiological signals with the sponsor's SDK and behavioural cues with vision, and combines them into a threat assessment.",
+  "demo_moment": "Team-described: the risk score rises as behaviour changes.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c++", "python", "opencv", "presage-sdk"], "ai_patterns": ["computer-vision"] },
+  "domains": ["security-networking", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Presage” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Got the sponsor SDK working despite setup problems.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Persisting with a hard sponsor SDK can be the win."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/helm-o7vdq6",
+    "repo": "https://github.com/Jurassic001/helm",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=StCAKLu5G2Y"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/helm-o7vdq6", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

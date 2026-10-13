@@ -1,0 +1,37 @@
+{
+  "slug": "haggle",
+  "name": "Haggle",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Practise salary negotiation against an AI with a hidden budget while your phone camera reads your stress.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Third Overall Software Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Most people never negotiate salary, and those who do often crack under pressure.",
+  "solution": "An AI negotiator trained on negotiation literature holds a hidden budget; the phone camera estimates heart rate and breathing to show when you are cracking.",
+  "demo_moment": "Team-described: negotiate live and see a stress spike when you concede.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swiftui", "next-js", "react", "typescript", "node-js", "socket-io", "gemini", "elevenlabs", "presage-sdk"],
+    "ai_patterns": ["llm-api", "voice-ai", "computer-vision"]
+  },
+  "domains": ["careers-hr", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Overall Software Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Adds physiological feedback to practice.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "demo-first-wow"],
+    "judging_lens": ["originality", "impact"],
+    "lessons": ["A second signal (the body) makes practice feel real."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/haggle-admqhc",
+    "repo": "https://github.com/rtalla1/tamuhack26/tree/main",
+    "demo": "https://haggle.up.railway.app/",
+    "video": "https://www.youtube.com/watch?v=bw98PyP5bnI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/haggle-admqhc", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

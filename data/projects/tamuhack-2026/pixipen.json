@@ -1,0 +1,29 @@
+{
+  "slug": "pixipen",
+  "name": "Celcii PixiPen",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A pen with custom electronics that lets you write in the air.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Third Overall Hardware Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted to write anywhere, without paper.",
+  "solution": "An ESP32 on a custom PCB inside a pen tracks motion and sends strokes for display.",
+  "demo_moment": "Team-described: write in the air and see the strokes.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "c++", "arduino", "python", "pcb"], "ai_patterns": ["none"] },
+  "domains": ["robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Overall Hardware Hack” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A custom PCB built during the event.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Custom electronics in a familiar object impress hardware judges."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/pixipen", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=hbPI5TUZnaw" },
+  "sources": [
+    { "url": "https://devpost.com/software/pixipen", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

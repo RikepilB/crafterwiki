@@ -1,0 +1,34 @@
+{
+  "slug": "vector-dispatch",
+  "name": "Dispatch",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Weighs the cost of finishing a minor aircraft repair against delaying departure and recommends when to abandon it.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of MongoDB Atlas"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Small repairs can delay a whole hub's schedule.",
+  "solution": "Links boarding progress and maintenance time with a vector database of equipment rules, and recommends abandoning repairs when delay costs exceed the fix's value.",
+  "demo_moment": "Team-described: a reading-light fix triggers an 'abandon repair' call.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "node-js", "python", "mongodb"], "ai_patterns": ["llm-api"] },
+  "domains": ["simulation-forecasting", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of MongoDB Atlas” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Quantifies a judgement call operators make by feel.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Put a number on a trade-off people argue about."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dispatch-z5wdxg",
+    "repo": "https://github.com/akshaygajjala1/TamuHack2026/",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=PYWbkHjMtng"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dispatch-z5wdxg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

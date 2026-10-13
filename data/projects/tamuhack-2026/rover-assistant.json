@@ -1,0 +1,37 @@
+{
+  "slug": "rover-assistant",
+  "name": "Rover: Intelligence, democratized.",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A voice and messaging assistant for visually impaired users that texts, calls businesses and automates the web.",
+  "placement": { "status": "track-winner", "awards": ["Best Devpost"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Accessibility tools for visually impaired people are split across platforms.",
+  "solution": "Integrates iMessage, two voice agents for incoming and outgoing calls, web automation and retrieval in one assistant.",
+  "demo_moment": "Team-described: ask it to call a business and book something.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "typescript", "swift", "supabase", "pinecone", "vapi", "elevenlabs", "gemini", "claude", "mcp"],
+    "ai_patterns": ["agent", "voice-ai", "computer-use", "llm-api"]
+  },
+  "domains": ["accessibility", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Devpost” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the prize for best Devpost write-up.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["complete-submission-package", "takes-action"],
+    "judging_lens": ["storytelling-pitch"],
+    "lessons": ["A thorough write-up is itself a prize category."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dinner-submission",
+    "repo": "https://github.com/actuallyarjun/rover.",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=0Kmk1DBqsIs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dinner-submission", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

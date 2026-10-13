@@ -1,0 +1,34 @@
+{
+  "slug": "fruitotype",
+  "name": "FruitoType",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Generates a unique procedural fruit illustration from your face and personality answers.",
+  "placement": { "status": "track-winner", "awards": ["Best Design (Software)"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "The builder wanted a playful mix of speculative biology and personal identity.",
+  "solution": "Webcam facial landmark analysis and a personality form feed a procedural SVG generator that designs a fruit for each person.",
+  "demo_moment": "Team-described: scan your face and watch your fruit appear.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "framer-motion", "gsap", "three-js", "python", "flask", "opencv", "numpy", "scipy"], "ai_patterns": ["computer-vision"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Design (Software)” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A solo build focused on visual craft.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A delightful personal output wins design judges."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fruitotype",
+    "repo": null,
+    "demo": "https://fruitotype.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=fyAi-gc7vrA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fruitotype", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

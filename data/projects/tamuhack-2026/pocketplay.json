@@ -1,0 +1,38 @@
+{
+  "slug": "pocketplay",
+  "name": "PocketPlay",
+  "hackathon": "tamuhack-2026",
+  "tagline": "Move players on a football field and an ML model predicts how the play turns out.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack (Software)", "Third Place for NorthMark Compute & Cloud Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Football play simulation tools are scarce.",
+  "solution": "Coach and NFL modes let users position offensive and defensive markers; a trained model predicts outcomes; sign-in via Auth0.",
+  "demo_moment": "Team-described: arrange a play and see the predicted result.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "python", "gemini", "auth0"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["games-entertainment", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Beginner Hack (Software)” and “Third Place for NorthMark Compute & Cloud Challenge” among 176 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "A beginner team that also placed in an HPC challenge.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["Beginners can win with a niche they care about."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pocketplay",
+    "repo": "https://github.com/Rishbhu/tamuhack26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=RvJmDyTstdk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pocketplay", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

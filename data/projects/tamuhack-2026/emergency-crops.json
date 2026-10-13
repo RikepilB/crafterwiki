@@ -1,0 +1,34 @@
+{
+  "slug": "emergency-crops",
+  "name": "Emergency Crops!",
+  "hackathon": "tamuhack-2026",
+  "tagline": "A farming game about financial literacy: crops need emergency funds when things go wrong.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Students learn money decisions through costly trial and error.",
+  "solution": "A Unity WebGL game where money, risk and stability are shown through farming events, with AI voice.",
+  "demo_moment": "Team-described: weather a crisis with your emergency fund.",
+  "build_style": "software-only",
+  "tech": { "stack": ["unity", "c#", "gemini", "elevenlabs", "vultr"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["games-entertainment", "fintech", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of ElevenLabs” among 176 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns an abstract concept into game state.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Make the abstract lesson the game's resource."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/emergency-crops",
+    "repo": "https://github.com/04kyeong/TAMUHack26",
+    "demo": "http://66.42.94.130",
+    "video": "https://www.youtube.com/watch?v=xcLJyYjJRiA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/emergency-crops", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://th26.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
