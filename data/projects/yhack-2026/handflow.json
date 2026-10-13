@@ -1,0 +1,34 @@
+{
+  "slug": "handflow",
+  "name": "HandFlow - Smart Glasses For Productivity",
+  "hackathon": "yhack-2026",
+  "tagline": "A glasses-mounted camera turns hand gestures and folded paper into programmable buttons.",
+  "placement": { "status": "track-winner", "awards": ["Best First Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Computer use is slowed by menus and switching.",
+  "solution": "Hand tracking shows an on-screen macro pad, and an origami-folded paper with 24 buttons becomes a physical macro pad seen by the camera.",
+  "demo_moment": "Team-described: tap a paper button to trigger a shortcut.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "mediapipe", "opencv", "tensorflow", "scikit-learn", "gemini", "docker"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["productivity", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best First Hack” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "First-hackathon team with a physical twist.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "physical-artifact"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["Paper prototypes can be the product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/handflow",
+    "repo": "https://github.com/AndyHuynh24/HandFlow_YHack",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=SUc0mCLL1VY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/handflow", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

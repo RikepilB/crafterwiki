@@ -1,0 +1,38 @@
+{
+  "slug": "citesite",
+  "name": "CiteSite",
+  "hackathon": "yhack-2026",
+  "tagline": "Checks a paper's citations and statistics against real sources to catch fabricated or misused references.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Hermes -- Nous Research", "Best use of Lava API"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Conferences are flooded with AI-generated submissions with fake citations.",
+  "solution": "Extracts citations, claims and statistics from a PDF and resolves each against scholarly databases to confirm existence and support.",
+  "demo_moment": "Team-described: upload a paper and see flagged citations.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "langgraph", "hermes", "semantic-scholar"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["identity-provenance", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Use of Hermes -- Nous Research” and “Best use of Lava API” among 212 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Verifies against several citation databases.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Verification tools gain value as generation gets cheaper."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/citesite-i80hlo",
+    "repo": "https://github.com/suryar2007/peer-review-system",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=am-y6yt0Ais"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/citesite-i80hlo", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

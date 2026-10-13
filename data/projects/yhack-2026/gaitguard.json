@@ -1,0 +1,34 @@
+{
+  "slug": "gaitguard",
+  "name": "GaitGuard",
+  "hackathon": "yhack-2026",
+  "tagline": "A wearable that learns a patient's correct movement from a therapist's demo and buzzes when reps drift.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Third Place Overall", "Built With Zed"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Rehab patients repeat exercises incorrectly at home without feedback.",
+  "solution": "Sensors capture a therapist-guided correct motion to build a personal model; later reps are compared and haptic feedback signals deviations, with mobile and desktop apps.",
+  "demo_moment": "Team-described: perform a rep wrongly and feel the buzz.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "python", "qnx", "claude", "zed"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Place Overall” and “Built With Zed” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Personal baseline instead of a generic model.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Calibrate to the individual for credible health feedback."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/gaitguard",
+    "repo": "https://github.com/TMulosmani/GaitGuard",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=VRsa9P1m8z0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/gaitguard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

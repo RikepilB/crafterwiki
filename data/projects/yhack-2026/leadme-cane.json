@@ -1,0 +1,34 @@
+{
+  "slug": "leadme-cane",
+  "name": "LeadMe",
+  "hackathon": "yhack-2026",
+  "tagline": "A white cane with a motorised tip that physically steers blind users around obstacles.",
+  "placement": { "status": "track-winner", "awards": ["Hardware"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "White canes detect obstacles only on contact.",
+  "solution": "A depth camera and YOLO detect obstacles and stairs; an omnidirectional motor at the tip tugs the user along a planned path, with voice guidance.",
+  "demo_moment": "Team-described: the cane pulls the user around an obstacle.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "python", "opencv", "yolo", "realsense", "elevenlabs"], "ai_patterns": ["computer-vision", "voice-ai"] },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hardware” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Guides physically, not just audibly.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Haptic guidance through a familiar tool beats new devices."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/leadme-89gtl6",
+    "repo": "https://github.com/Kapitar/yhack26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=9Jfd2hqdgIA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/leadme-89gtl6", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "omni-assist",
+  "name": "Omni-Assist",
+  "hackathon": "yhack-2026",
+  "tagline": "A kit that turns any chair into a voice-commanded, self-navigating vehicle for hospital hallways.",
+  "placement": { "status": "track-winner", "awards": ["Hardware", "Best Use of Viam"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Hospital corridors are tiring for patients with limited mobility.",
+  "solution": "A ratchet-mounted drive with LiDAR mapping and A* pathfinding takes voice commands like 'take me to room 204' and confirms aloud.",
+  "demo_moment": "Team-described: say a room number and ride there.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "python", "opencv", "numpy", "lidar", "viam", "elevenlabs", "foxglove"], "ai_patterns": ["voice-ai", "computer-vision"] },
+  "domains": ["accessibility", "health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hardware” and “Best Use of Viam” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Retrofits ordinary chairs rather than new vehicles.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse", "familiar-thing-new-job"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Retrofit existing objects to keep costs low."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/omni-assist",
+    "repo": "https://github.com/ryanli222/yHack",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=RzqbO86LRXQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/omni-assist", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

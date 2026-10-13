@@ -1,0 +1,32 @@
+{
+  "slug": "axiomatic",
+  "name": "Axiomatic",
+  "hackathon": "yhack-2026",
+  "tagline": "Turns one maths prompt into a lesson with narrated animations and interactive exploration.",
+  "placement": { "status": "track-winner", "awards": ["Entertainment"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Advanced maths is taught symbol-first before intuition.",
+  "solution": "Agents plan the lesson, generate narrated animations and build interactive environments for concepts like eigenvalues or Fourier transforms.",
+  "demo_moment": "Team-described: ask about eigenvalues and watch the animation.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "fastapi", "langgraph", "manim", "openai", "elevenlabs"],
+    "ai_patterns": ["multi-agent", "generative-media", "voice-ai"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Entertainment” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes structure visible before symbols.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow"],
+    "judging_lens": ["originality"],
+    "lessons": ["Generated animation is the wow for maths teaching."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/axiomatic", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=4ZLGUStFdYw" },
+  "sources": [
+    { "url": "https://devpost.com/software/axiomatic", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

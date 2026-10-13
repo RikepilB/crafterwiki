@@ -1,0 +1,34 @@
+{
+  "slug": "hiveops",
+  "name": "HiveOps",
+  "hackathon": "yhack-2026",
+  "tagline": "Agents triage incidents, find root causes, test fixes in a sandbox and wait for human approval.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Hex API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Incident resolution is slow and manual.",
+  "solution": "A coordinator splits incidents into subtasks for specialist agents, runs remediation in a sandbox and keeps a human approval step and audit log.",
+  "demo_moment": "Team-described: an incident flows to a proposed fix awaiting approval.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "python", "fastapi", "supabase", "anthropic", "gemini"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["dev-tools", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Hex API” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps a human approval before changes.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use", "human-oversight"],
+    "lessons": ["Sandbox plus approval makes agentic ops acceptable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hiveops",
+    "repo": "https://github.com/aumghelani/HiveOps-Yhack",
+    "demo": "https://hiveops.us/",
+    "video": "https://www.youtube.com/watch?v=Wgevevl1hTY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/hiveops", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

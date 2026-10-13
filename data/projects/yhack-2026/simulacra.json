@@ -1,0 +1,34 @@
+{
+  "slug": "simulacra",
+  "name": "Simulacra",
+  "hackathon": "yhack-2026",
+  "tagline": "Drop in a policy and watch 100 AI agents with personas react in a simulated town.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of K2 Think V2"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Policies fail through social contagion and irrational reactions models ignore.",
+  "solution": "A swarm of persona agents with memory, based on generative-agents research, reacts to a short policy in a game-engine world.",
+  "demo_moment": "Team-described: introduce a policy and watch reactions spread.",
+  "build_style": "software-only",
+  "tech": { "stack": ["fastapi", "bun", "langgraph", "phaser", "k2-think", "xai"], "ai_patterns": ["multi-agent"] },
+  "domains": ["simulation-forecasting", "govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of K2 Think V2” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounded in published agent-simulation research.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Visual agent towns make social simulation tangible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/simulacra-o1bih5",
+    "repo": "https://github.com/AdamPSU/simulacra",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=fPZQB1WaVC4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/simulacra-o1bih5", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

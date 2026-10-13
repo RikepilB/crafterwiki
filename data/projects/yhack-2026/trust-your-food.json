@@ -1,0 +1,37 @@
+{
+  "slug": "trust-your-food",
+  "name": "Trust Your Food",
+  "hackathon": "yhack-2026",
+  "tagline": "Farmers list produce by talking; consumers shop with AI; orders are delivered on optimised group routes.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Small farms struggle to reach customers directly, the builder says from experience.",
+  "solution": "A voice agent lets farmers list by phone; AI helps consumers shop; deliveries are batched through a delivery API.",
+  "demo_moment": "Team-described: a farmer lists eggs by voice and a buyer orders them.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "vite", "node-js", "express", "mongodb", "elevenlabs", "claude", "doordash-api"],
+    "ai_patterns": ["voice-ai", "agent", "llm-api"]
+  },
+  "domains": ["agriculture-food", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Domain Name from GoDaddy Registry” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Removes the tech barrier for farmers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "human-stakes", "dual-use-value"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Solve both sides of a marketplace differently."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/trust-your-food",
+    "repo": "https://github.com/alexanderlapratt/trust-your-food",
+    "demo": "http://trustyourfood.farm",
+    "video": "https://www.youtube.com/watch?v=srIbSfnjMU8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/trust-your-food", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

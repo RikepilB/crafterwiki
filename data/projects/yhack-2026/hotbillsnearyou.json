@@ -1,0 +1,34 @@
+{
+  "slug": "hotbillsnearyou",
+  "name": "HotBillsNearYou.com",
+  "hackathon": "yhack-2026",
+  "tagline": "Swipe on local legislation like a dating app, without seeing the sponsor's party.",
+  "placement": { "status": "track-winner", "awards": ["Best UI/UX"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Civic engagement with bills is dull and partisan.",
+  "solution": "Swipeable summaries of state bills with links; sponsor and party hidden to reduce bias.",
+  "demo_moment": "Team-described: swipe through bills and see your history.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "python", "supabase"], "ai_patterns": ["llm-api"] },
+  "domains": ["govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best UI/UX” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hides party to challenge bias.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "theme-native-twist"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A familiar gesture can carry a civic idea."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hotbillsnearyou",
+    "repo": "https://github.com/ethancedwards8/yhack-2026",
+    "demo": "http://hotbillsnearyou.com",
+    "video": "https://www.youtube.com/watch?v=WYHaK7lkFqg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/hotbillsnearyou", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

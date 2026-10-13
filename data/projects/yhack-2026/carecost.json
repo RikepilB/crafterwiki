@@ -1,0 +1,34 @@
+{
+  "slug": "carecost",
+  "name": "CareCost",
+  "hackathon": "yhack-2026",
+  "tagline": "Turns symptoms into the right procedure and shows nearby providers with out-of-pocket cost ranges.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Lava API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Healthcare costs are confusing when people are already worried.",
+  "solution": "AI maps symptoms to procedures; a map shows providers with realistic cost bands.",
+  "demo_moment": "Team-described: enter symptoms and compare provider costs.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "leaflet", "python", "fastapi", "mongodb", "auth0", "elevenlabs"], "ai_patterns": ["llm-api"] },
+  "domains": ["health", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Lava API” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Prices care before the visit.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Translate a medical concern into a price comparison."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/carecost-xgm6d2",
+    "repo": "https://github.com/Kedylind/yhack",
+    "demo": "https://carecost.up.railway.app/",
+    "video": "https://www.youtube.com/watch?v=UKChab_e1Hc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/carecost-xgm6d2", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "aegis-privacy",
+  "name": "Aegis",
+  "hackathon": "yhack-2026",
+  "tagline": "Scans your public footprint to show what personal data is exposed.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Hermes -- Nous Research"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Personal information is easily found online, the builder learned firsthand.",
+  "solution": "A solo-built dashboard analyses public profiles and images with OCR and ML to surface exposure risks.",
+  "demo_moment": "Team-described: run a scan and view the exposure telemetry.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "next-js", "typescript", "tailwind", "scikit-learn", "pytesseract", "hermes"],
+    "ai_patterns": ["llm-api", "ml-model"]
+  },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Hermes -- Nous Research” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Show people their own exposure to make privacy real."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aegis-68rmo0",
+    "repo": "https://github.com/danielkwan-dev/aegis.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Nf_50lff9Rc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aegis-68rmo0", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

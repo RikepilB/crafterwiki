@@ -1,0 +1,37 @@
+{
+  "slug": "helix-genomics",
+  "name": "Helix",
+  "hackathon": "yhack-2026",
+  "tagline": "A genomic IDE: paste DNA and see what it does, where to edit it and its predicted structure.",
+  "placement": { "status": "track-winner", "awards": ["Personal AI Agent"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Genomic foundation models are powerful but hard for non-biologists to use.",
+  "solution": "An eight-stage pipeline runs sequences through a DNA model and structure prediction on local hardware, with a 3D viewer and editing guidance.",
+  "demo_moment": "Team-described: paste a gene and step through the analysis.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "react-three-fiber", "python", "fastapi", "evo-2", "alphafold", "asus-ascent-gx10"],
+    "ai_patterns": ["ml-model", "agent"]
+  },
+  "domains": ["health", "data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Personal AI Agent” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built by computer-science students with no biology background.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["An IDE metaphor makes science tooling approachable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/helix-pz2n5k",
+    "repo": "https://github.com/Dawgsrlife/Helix",
+    "demo": "https://www.heeeeeeliiiiix.wiki/",
+    "video": "https://www.youtube.com/watch?v=4EkVdQm3SfE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/helix-pz2n5k", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

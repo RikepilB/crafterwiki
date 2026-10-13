@@ -1,0 +1,34 @@
+{
+  "slug": "forseen",
+  "name": "Forseen",
+  "hackathon": "yhack-2026",
+  "tagline": "Turns a company profile into live regulatory signals and actionable compliance insights.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Hermes -- Nous Research"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Regulatory compliance is complex, costly and opaque.",
+  "solution": "An onboarding wizard captures the business profile; topics pull live regulatory signals from official sources, analysed by an open model.",
+  "demo_moment": "Team-described: ask about health-data privacy and get tailored items.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "python", "fastapi", "mongodb", "hermes", "huggingface"], "ai_patterns": ["llm-api", "agent"] },
+  "domains": ["due-diligence-risk", "legal-access"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Hermes -- Nous Research” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounds advice in live regulatory sources.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Compliance tools win trust by citing sources."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/foreseen-swlmd5",
+    "repo": "https://github.com/xyaei/forseen",
+    "demo": "https://deepwiki.com/xyaei/forseen",
+    "video": "https://www.youtube.com/watch?v=S-HOp3EjmWo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/foreseen-swlmd5", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

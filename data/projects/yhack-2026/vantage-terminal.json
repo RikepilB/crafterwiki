@@ -1,0 +1,34 @@
+{
+  "slug": "vantage-terminal",
+  "name": "Vantage",
+  "hackathon": "yhack-2026",
+  "tagline": "A professional analytics terminal for prediction markets with trade theses and payoff curves.",
+  "placement": { "status": "track-winner", "awards": ["Best Solo Hack"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Prediction markets show a price and a buy button, little analysis.",
+  "solution": "Pulls market metadata, price history and order books for many markets and shows theses, charts and payoff curves.",
+  "demo_moment": "Team-described: select a market and read the thesis and payoff curve.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "tailwind", "express", "recharts", "zustand", "polymarket-api"], "ai_patterns": ["none"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Solo Hack” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Borrow professional tooling patterns for retail users."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/vantage-gnt2kb",
+    "repo": "https://github.com/sofiagrimm/vantage",
+    "demo": "https://vantageforpolymarket.up.railway.app/",
+    "video": "https://player.vimeo.com/video/1178101023?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/vantage-gnt2kb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

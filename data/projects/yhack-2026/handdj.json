@@ -1,0 +1,34 @@
+{
+  "slug": "handdj",
+  "name": "HandDJ",
+  "hackathon": "yhack-2026",
+  "tagline": "A Snapchat lens that turns finger movements into electronic music.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Snap Lens Studio"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Air-drumming at parties sounds great only in your head.",
+  "solution": "Hand tracking maps finger positions to live instruments and sounds within a lens.",
+  "demo_moment": "Team-described: wiggle fingers and hear the music change.",
+  "build_style": "software-only",
+  "tech": { "stack": ["lens-studio"], "ai_patterns": ["computer-vision"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Snap Lens Studio” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The demo video carries the idea.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A playful gesture-to-sound loop needs only a short video."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/handdj",
+    "repo": null,
+    "demo": "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=dce388ddaa7846a6bd2e87690964c0f8&metadata=01",
+    "video": "https://www.youtube.com/watch?v=cohE1Eti1dU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/handdj", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

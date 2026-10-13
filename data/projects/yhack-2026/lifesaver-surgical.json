@@ -1,0 +1,37 @@
+{
+  "slug": "lifesaver-surgical",
+  "name": "LifeSaver",
+  "hackathon": "yhack-2026",
+  "tagline": "A browser 3D operating room where students practise with webcam hand tracking and voice-guided anatomy.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Place Overall", "Most Creative Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Medical trainees spend years watching before doing, and simulators are expensive.",
+  "solution": "A Three.js operating room with instruments, MediaPipe hand tracking for interaction, voice guidance and a performance vector scoring technique, all in the browser.",
+  "demo_moment": "Team-described: pick up an instrument with your hand and get scored.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["typescript", "three-js", "webgl", "vite", "mediapipe", "node-js", "mongodb", "elevenlabs"],
+    "ai_patterns": ["computer-vision", "voice-ai"]
+  },
+  "domains": ["health", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Place Overall” and “Most Creative Hack” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "No downloads or special hardware: a laptop and webcam.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse", "demo-first-wow", "zero-install-channel"],
+    "judging_lens": ["originality", "wow-factor"],
+    "lessons": ["Put an expensive training experience in the browser."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lifesaver-lnm0tz",
+    "repo": "https://github.com/akhilm2223/yale/",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=W6CaKOtUlmw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lifesaver-lnm0tz", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

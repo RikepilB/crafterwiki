@@ -1,0 +1,34 @@
+{
+  "slug": "dumpster-fire",
+  "name": "Dumpster Fire!",
+  "hackathon": "yhack-2026",
+  "tagline": "A trash can that sorts waste with AI and rewards recycling with a Plinko game.",
+  "placement": { "status": "track-winner", "awards": ["Most Useless Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People sort waste poorly without incentive.",
+  "solution": "A camera detects items entering the bin; Gemini classifies recycling, compost or waste; a servo routes it; a game rewards value.",
+  "demo_moment": "Team-described: drop a bottle and play Plinko.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "servo", "python", "fastapi", "node-js", "react", "gemini"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Useless Hack” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built from cardboard and spare parts.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "relatable-demo-wrapper"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Low-fi materials do not hurt a fun hardware demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dumpster-fire",
+    "repo": "https://github.com/mhtruong1031/YHack",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=FfvkPDXfmHE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dumpster-fire", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

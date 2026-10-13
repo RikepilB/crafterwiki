@@ -1,0 +1,37 @@
+{
+  "slug": "neuro-trading",
+  "name": "neuro-trading.",
+  "hackathon": "yhack-2026",
+  "tagline": "Simulates public sentiment with agent swarms and predicted brain responses to forecast opinion-driven markets.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Hermes -- Nous Research"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Many prediction markets hinge on how public opinion cascades.",
+  "solution": "Builds a simulation graph of agents that post, like and comment, informed by predicted brain responses to content, to forecast sentiment-driven market outcomes.",
+  "demo_moment": "Team-described: scan bets, run the simulation, read the forecast.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "pytorch", "fastapi", "vue", "d3-js", "neo4j", "openai-agents-sdk", "polymarket-api"],
+    "ai_patterns": ["multi-agent", "ml-model"]
+  },
+  "domains": ["fintech", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Hermes -- Nous Research” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Models opinion contagion rather than polling.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Simulate the crowd when the outcome is a crowd's belief."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/neuro-trader",
+    "repo": "https://github.com/Matei-Coldea/YNeurotrading",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WmDdycsx_a0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/neuro-trader", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

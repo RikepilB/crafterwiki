@@ -1,0 +1,34 @@
+{
+  "slug": "wonder-landmarks",
+  "name": "Wonder - a new way to explore the world",
+  "hackathon": "yhack-2026",
+  "tagline": "Kids explore world landmarks in Street View and talk to AI historical figures, with themselves placed in the scene.",
+  "placement": { "status": "track-winner", "awards": ["Societal Impact"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "History feels distant for children.",
+  "solution": "Fifty landmarks on a map open Street View panoramas, an AR camera puts the child in the scene, and voiced historical figures explain the place.",
+  "demo_moment": "Team-described: visit a landmark and chat with a historical figure.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "javascript", "leaflet", "gemini", "elevenlabs", "snap-camera-kit"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Societal Impact” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes the child part of the scene.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["impact"],
+    "lessons": ["Put the learner inside the content."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/wonder-the-new-way-to-explore-the-world",
+    "repo": "https://github.com/jessie-qs-li/timefriends",
+    "demo": "http://www.yourwonder.us",
+    "video": "https://www.youtube.com/watch?v=lJdLAomGyzM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/wonder-the-new-way-to-explore-the-world", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

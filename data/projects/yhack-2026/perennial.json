@@ -1,0 +1,34 @@
+{
+  "slug": "perennial",
+  "name": "perennial",
+  "hackathon": "yhack-2026",
+  "tagline": "Tracks chronic pain from smartwatch data and a gentler visual scale, with ML insights.",
+  "placement": { "status": "track-winner", "awards": ["ActualFoods"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Logging pain is hard on high-pain days and clinical scales feel cold.",
+  "solution": "A Wear OS integration detects likely pain sessions from health data, a flower-based scale replaces pain faces, and ML finds patterns.",
+  "demo_moment": "Team-described: view peak pain by hour from watch data.",
+  "build_style": "software-only",
+  "tech": { "stack": ["kotlin", "android", "wear-os", "samsung-health-sdk", "python", "pytorch", "scikit-learn", "firebase"], "ai_patterns": ["ml-model"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ActualFoods” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Reduces logging effort on the worst days.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Design data entry for the user's worst day."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/perennial-t62nhb",
+    "repo": "https://github.com/ZacharyYW/pain_tracker",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=71_IR5COyFY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/perennial-t62nhb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

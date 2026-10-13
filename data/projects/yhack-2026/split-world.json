@@ -1,0 +1,34 @@
+{
+  "slug": "split-world",
+  "name": "Split World",
+  "hackathon": "yhack-2026",
+  "tagline": "Charades inside Snapchat: act a word as a stick figure and your friend guesses.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Snap Lens Studio"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a fast, shareable social game.",
+  "solution": "A Lens Studio lens records the hinter as a body-tracked stick figure; the other player guesses from the clip.",
+  "demo_moment": "Team-described: act out a word and send it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["lens-studio", "javascript", "typescript"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Snap Lens Studio” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built for sharing within the platform.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Design the game around the share."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/split-world",
+    "repo": null,
+    "demo": "https://www.snapchat.com/lens/cd87715a40ea42a8a54f5cf82fff87b3?type=SNAPCODE&metadata=01&",
+    "video": "https://www.youtube.com/watch?v=c4J5046t_68"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/split-world", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

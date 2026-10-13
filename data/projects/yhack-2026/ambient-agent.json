@@ -1,0 +1,34 @@
+{
+  "slug": "ambient-agent",
+  "name": "Ambient",
+  "hackathon": "yhack-2026",
+  "tagline": "A desktop agent that watches your screen and handles busywork before you ask.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Lava API"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "People repeat small tasks such as scheduling and drafting all day.",
+  "solution": "Captures the screen periodically to understand context and acts on opportunities, respecting focus periods.",
+  "demo_moment": "Team-described: it drafts an email it saw you about to write.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "react", "typescript", "node-js", "sqlite", "anthropic", "openai"], "ai_patterns": ["agent", "computer-vision", "llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Lava API” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built by one person.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Proactive agents must know when not to interrupt."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ambient-cvze2y",
+    "repo": "https://github.com/omarabdellall/Ambient",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=lX8BuX64JwI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ambient-cvze2y", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

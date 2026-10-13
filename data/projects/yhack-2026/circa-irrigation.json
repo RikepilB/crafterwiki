@@ -1,0 +1,35 @@
+{
+  "slug": "circa-irrigation",
+  "name": "Circa",
+  "hackathon": "yhack-2026",
+  "tagline": "Field sensor nodes and an irrigation controller that waters the corners centre-pivot systems miss and predicts needs ahead of time.",
+  "placement": { "status": "grand-winner", "awards": ["First Place Overall", "Societal Impact"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Centre-pivot irrigation leaves field corners dry and waters unevenly between inner and outer rings.",
+  "solution": "ESP32 field nodes report conditions to a dashboard; a turret controller targets unwatered areas; a prediction model plans irrigation; a chatbot answers questions.",
+  "demo_moment": "Team-described: create field nodes and steer the turret to a dry corner.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "arduino", "c", "python", "fastapi", "react", "socket"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["agriculture-food", "climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place Overall” and “Societal Impact” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets a concrete geometric flaw in existing irrigation.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won first overall and a societal-impact prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Name the specific inefficiency (dry corners) and show hardware fixing it."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/circa-u1fsx5",
+    "repo": null,
+    "demo": "https://circaorg.github.io/",
+    "video": "https://www.youtube.com/watch?v=zHJC03Ib8z0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/circa-u1fsx5", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

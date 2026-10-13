@@ -1,0 +1,38 @@
+{
+  "slug": "commons",
+  "name": "Commons",
+  "hackathon": "yhack-2026",
+  "tagline": "A map-first platform where residents report needs, AI scores urgency transparently and matches resources.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Hex API", "[MLH] Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Community organisations fail from fragmented signals, not lack of care.",
+  "solution": "Residents report issues on a map; urgency scoring shows weighted factors; needs are matched to nearby resources and volunteers.",
+  "demo_moment": "Team-described: report a need and see it matched.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "tailwind", "express", "sqlite", "maplibre", "solana", "k2-think"], "ai_patterns": ["llm-scoring"] },
+  "domains": ["social-connection", "govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best use of Hex API” and “[MLH] Best Domain Name from GoDaddy Registry” among 212 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Shows the reasoning behind each urgency score.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "place-based-specificity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Transparent scoring earns community trust."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/commune-1qpezk",
+    "repo": "https://github.com/candpixie/yhack-commons",
+    "demo": "https://app.hex.tech/019d3624-ae74-7887-895a-2e7a1fc17641/app/COMMONS-for-Crown-Heights-Brooklyn-032qGWp5t0aHGReKvKLCr0/latest",
+    "video": "https://www.youtube.com/watch?v=-yewvVRouq4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/commune-1qpezk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

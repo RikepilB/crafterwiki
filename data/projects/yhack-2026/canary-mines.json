@@ -1,0 +1,34 @@
+{
+  "slug": "canary-mines",
+  "name": "Canary",
+  "hackathon": "yhack-2026",
+  "tagline": "A 'digital canary' that detects dangerous gases in mines and maps their spread for evacuation.",
+  "placement": { "status": "track-winner", "awards": ["Societal Impact", "Hardware"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Mines in the Dominican Republic and elsewhere need early warning of toxic gases, the team says.",
+  "solution": "A Raspberry Pi with gas sensors monitors conditions, simulates and maps gas spread, and warns early.",
+  "demo_moment": "Team-described: introduce gas and see the danger zone map.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "python", "javascript", "html", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["emergencies-disaster", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Societal Impact” and “Hardware” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Anchored in a specific country's mining.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "place-based-specificity", "cultural-reference-hook"],
+    "judging_lens": ["impact"],
+    "lessons": ["Name the place and the miners at risk."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/canary-axf7o2",
+    "repo": "https://github.com/tastychez/Canary/tree/main",
+    "demo": "https://canary-dashboard.us/",
+    "video": "https://www.youtube.com/watch?v=_pQCWo37ChY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/canary-axf7o2", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

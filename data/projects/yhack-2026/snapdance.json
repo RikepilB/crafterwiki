@@ -1,0 +1,34 @@
+{
+  "slug": "snapdance",
+  "name": "SnapDance",
+  "hackathon": "yhack-2026",
+  "tagline": "A Snapchat lens that scores your dance against a reference in real time with full-body tracking.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Snap Lens Studio", "Entertainment"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Dance games need consoles; phones are everywhere.",
+  "solution": "Tracks 18 body landmarks in a Snapchat lens and scores the user against reference videos.",
+  "demo_moment": "Team-described: dance head-to-head and see the score.",
+  "build_style": "software-only",
+  "tech": { "stack": ["lens-studio", "snap-ml", "typescript"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Snap Lens Studio” and “Entertainment” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a social app into a game platform.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "zero-install-channel"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Ride a platform players already have open."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/snapdance",
+    "repo": "https://github.com/YHack-Project/dance",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=D44gx8M5m84"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/snapdance", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

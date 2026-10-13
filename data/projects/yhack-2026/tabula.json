@@ -1,0 +1,37 @@
+{
+  "slug": "tabula",
+  "name": "Tabula",
+  "hackathon": "yhack-2026",
+  "tagline": "An AI back office for small shops that watches inventory, supplier prices and demand and says what to restock.",
+  "placement": { "status": "track-winner", "awards": ["Personal AI Agent"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Small retailers make inventory decisions without full information.",
+  "solution": "Four Claude-based agents track trends, scout prices, monitor stock and plan restocks, using web data.",
+  "demo_moment": "Team-described: see a restock recommendation with reasons.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "react", "typescript", "vite", "tailwind", "mongodb", "playwright", "anthropic"],
+    "ai_patterns": ["multi-agent", "llm-api"]
+  },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Personal AI Agent” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Gives a small shop an operations team.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "expert-data-for-everyone"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["Name the team the agents replace."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/tabula-y7rtv6",
+    "repo": "https://github.com/ponita05/yhack",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=sNmu29CJM5U"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/tabula-y7rtv6", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

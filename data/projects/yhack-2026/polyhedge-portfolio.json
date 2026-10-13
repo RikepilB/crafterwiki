@@ -1,0 +1,34 @@
+{
+  "slug": "polyhedge-portfolio",
+  "name": "PolyHedge",
+  "hackathon": "yhack-2026",
+  "tagline": "Finds prediction markets related to your stocks and shows how to hedge with them.",
+  "placement": { "status": "track-winner", "awards": ["Prediction Markets"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Stock holders are exposed to events they cannot easily hedge.",
+  "solution": "Extracts keywords from company profiles, finds related prediction markets, and classifies each as a hedge or amplifier with a reasoning model.",
+  "demo_moment": "Team-described: enter holdings and get suggested market hedges.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "node-js", "express", "python", "fastapi", "polymarket-api", "k2-think"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Prediction Markets” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Treats stocks as implicit bets on events.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["originality"],
+    "lessons": ["Reframe a familiar asset as something new."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/polyhedge-6ameri",
+    "repo": "https://github.com/LouisY06/PolyHedge",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=7Bpi9FOZCKk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/polyhedge-6ameri", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

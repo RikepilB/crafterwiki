@@ -1,0 +1,34 @@
+{
+  "slug": "leaf-llm",
+  "name": "Leaf - A Modern, Sustainable LLM Interface",
+  "hackathon": "yhack-2026",
+  "tagline": "Routes each prompt to the smallest effective model to save energy and keep quality.",
+  "placement": { "status": "track-winner", "awards": ["Built With Zed"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Heavy AI agents are used for simple prompts, wasting energy.",
+  "solution": "Scores prompt difficulty, answers directly or breaks it into subtasks for smaller models, with environmental data.",
+  "demo_moment": "Team-described: a simple prompt avoids the large model.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "tailwind", "three-js", "mongodb", "railway"], "ai_patterns": ["llm-api"] },
+  "domains": ["climate-sustainability", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Built With Zed” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes efficiency a feature of the interface.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse"],
+    "judging_lens": ["engineering-practice"],
+    "lessons": ["Right-size the model to the task."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/leaf-10tjin",
+    "repo": "https://github.com/marotta-j/yhack2026",
+    "demo": "http://be-green.wiki",
+    "video": "https://www.youtube.com/watch?v=bwRvVmqe6zg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/leaf-10tjin", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

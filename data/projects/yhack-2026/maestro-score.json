@@ -1,0 +1,34 @@
+{
+  "slug": "maestro-score",
+  "name": "Maestro",
+  "hackathon": "yhack-2026",
+  "tagline": "Describe or hum a change and it is written into your music score in seconds.",
+  "placement": { "status": "track-winner", "awards": ["Entertainment"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Entering notes into notation software is slow.",
+  "solution": "Reads the open score for context, transcribes hummed audio with pitch detection and applies requested edits via an LLM.",
+  "demo_moment": "Team-described: hum a melody and see it appear in the score.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "javascript", "pyin", "openai"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Entertainment” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Cuts minutes of note entry to seconds.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "takes-action"],
+    "judging_lens": ["originality"],
+    "lessons": ["Edit inside the tool musicians already use."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/maestro-ef7jbn",
+    "repo": "https://github.com/TidalTunes/Maestro",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=0vIEznE4HGg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/maestro-ef7jbn", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

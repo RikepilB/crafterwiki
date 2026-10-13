@@ -1,0 +1,34 @@
+{
+  "slug": "sift-search",
+  "name": "Sift",
+  "hackathon": "yhack-2026",
+  "tagline": "Multimodal semantic search over all your files, with AI file actions.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of MongoDB Atlas"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Finding and organising files is tedious.",
+  "solution": "Indexes files into one embedding space for semantic search and plans file moves, edits and explanations.",
+  "demo_moment": "Team-described: search by meaning across images and documents.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "rust", "mongodb", "gemini"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of MongoDB Atlas” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "One embedding space for all file types.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Unified search beats per-type tools."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sift-b7ctar",
+    "repo": "https://github.com/whuang06/yhacks_s26.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=e-kfnXJfcwQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sift-b7ctar", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

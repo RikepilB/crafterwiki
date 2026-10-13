@@ -1,0 +1,37 @@
+{
+  "slug": "foodchain",
+  "name": "FoodChain",
+  "hackathon": "yhack-2026",
+  "tagline": "Watches public signals for food-security crises and plans responses for a food-bank network.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Hex API"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Food banks learn about crises only when lines grow.",
+  "solution": "Monitors news and social signals, computes supply gaps per site, searches for emergency sources and generates fastest, cheapest and balanced plans.",
+  "demo_moment": "Team-described: a detected crisis triggers three response plans.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "typescript", "python", "fastapi", "langgraph", "postgresql", "supabase", "claude", "mapbox"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["agriculture-food", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Hex API” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The team volunteered at food banks.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Offer several plans with clear trade-offs."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/foodchain-4sq9t7",
+    "repo": "https://github.com/richykim7/YHack2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=KBmjbQHAL_0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/foodchain-4sq9t7", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

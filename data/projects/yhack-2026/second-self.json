@@ -1,0 +1,54 @@
+{
+  "slug": "second-self",
+  "name": "Second Self",
+  "hackathon": "yhack-2026",
+  "tagline": "A digital twin that runs as a parallel user on your Mac, learns how you write and acts for you.",
+  "placement": { "status": "track-winner", "awards": ["Personal AI Agent", "Best Use of Hermes -- Nous Research"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted an agent that can be you while you are elsewhere.",
+  "solution": "Runs as a separate native macOS session with computer use, browser use and connectors, and a voice and writing profile learned from your emails, posts and files.",
+  "demo_moment": "Team-described: the twin answers an email in your style while you work.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": [
+      "swift",
+      "swiftui",
+      "python",
+      "fastapi",
+      "next-js",
+      "react",
+      "typescript",
+      "claude-agent-sdk",
+      "browser-use",
+      "elevenlabs",
+      "firebase",
+      "mongodb"
+    ],
+    "ai_patterns": ["agent", "computer-use", "voice-ai", "llm-api"]
+  },
+  "domains": ["productivity", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Personal AI Agent” and “Best Use of Hermes -- Nous Research” among 212 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Runs natively alongside you rather than in the cloud.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "demo-first-wow", "trend-wave-timing"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Isolating the agent in its own session makes delegation safe to demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/second-self-giwmxh",
+    "repo": "https://github.com/23jmo/second-self.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ZpCst-PS7t0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/second-self-giwmxh", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "imposture",
+  "name": "Imposture",
+  "hackathon": "yhack-2026",
+  "tagline": "A desk pet that sulks when you slouch and gets angry when you pick up your phone.",
+  "placement": { "status": "track-winner", "awards": ["Most Useless Hack", "[MLH] Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Hackers slouch and check phones, the team noticed.",
+  "solution": "A webcam tracks posture and phone use; an LCD face reacts emotionally and buzzes; it responds to voice.",
+  "demo_moment": "Team-described: pick up your phone and watch the pet get angry.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["raspberry-pi", "arduino", "python", "fastapi", "mediapipe", "opencv", "elevenlabs", "deepgram"],
+    "ai_patterns": ["computer-vision", "voice-ai"]
+  },
+  "domains": ["health", "games-entertainment", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Useless Hack” and “[MLH] Best Use of ElevenLabs” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Also won a joke prize for useless hacks.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "relatable-demo-wrapper"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Personality makes a utility device memorable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/imposture-krvg9h",
+    "repo": "https://github.com/argsdio/imposture/tree/master",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=plD5TCyZjgI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/imposture-krvg9h", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

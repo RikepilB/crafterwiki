@@ -1,0 +1,34 @@
+{
+  "slug": "dial-me-up",
+  "name": "Dial Me Up",
+  "hackathon": "yhack-2026",
+  "tagline": "Daily messages for long-distance partners: photos with AR lenses, audio, drawings or letters.",
+  "placement": { "status": "track-winner", "awards": ["Most on Theme Hack (Love)"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Long-distance relationships need small daily rituals.",
+  "solution": "Partners share a passcode, send a message for each day of the week in several formats, and request messages from each other.",
+  "demo_moment": "Team-described: request Thursday's message and open it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "javascript", "firebase", "snap-camera-kit", "gemini", "claude"], "ai_patterns": ["generative-media"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most on Theme Hack (Love)” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Fits the event's love theme directly.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["theme-native-twist", "human-stakes"],
+    "judging_lens": ["originality"],
+    "lessons": ["Theme prizes reward heartfelt literal answers."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dial-me-up",
+    "repo": null,
+    "demo": "https://dial-me-up-orpin.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=aVa3T4W1Ex8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dial-me-up", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

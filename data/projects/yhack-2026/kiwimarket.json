@@ -1,0 +1,34 @@
+{
+  "slug": "kiwimarket",
+  "name": "KiwiMarket",
+  "hackathon": "yhack-2026",
+  "tagline": "A prediction market for real-world bets, resolved by AI judging a photo.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Solana"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "On-chain prediction markets cannot resolve local physical events.",
+  "solution": "Users wager on Solana; outcomes are resolved by an AI vision model judging photo evidence.",
+  "demo_moment": "Team-described: bet on finding a charger and resolve it with a photo.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "python", "sqlite", "solana", "anthropic"], "ai_patterns": ["computer-vision", "on-chain"] },
+  "domains": ["fintech", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Solana” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses AI vision as the oracle.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["AI can be the oracle where no data feed exists."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/kiwimarket",
+    "repo": "https://github.com/darthmaulsw/KiwiMarket",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=fTe_Vp-uYDk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/kiwimarket", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

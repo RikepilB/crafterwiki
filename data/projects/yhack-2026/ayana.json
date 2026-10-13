@@ -1,0 +1,37 @@
+{
+  "slug": "ayana",
+  "name": "Ayana",
+  "hackathon": "yhack-2026",
+  "tagline": "A multimodal AI travel guide that plans itineraries by persona and narrates a 3D journey by voice.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Trip planning means dozens of tabs.",
+  "solution": "Gemini generates itineraries by persona, a live voice agent guides a cinematic 3D map experience, with hand-gesture control.",
+  "demo_moment": "Team-described: choose 'Romantic' and fly through the itinerary.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "typescript", "python", "fastapi", "gemini", "google-adk", "google-maps", "mediapipe", "lens-studio"],
+    "ai_patterns": ["agent", "voice-ai", "llm-api"]
+  },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses several Gemini capabilities together.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A cinematic flow makes an AI planner feel like a product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ayana-g0ys7f",
+    "repo": "https://github.com/prith27/Ayana.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=4lwFH0fWW0E"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ayana-g0ys7f", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

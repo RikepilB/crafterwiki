@@ -1,0 +1,34 @@
+{
+  "slug": "gubber",
+  "name": "Gubber",
+  "hackathon": "yhack-2026",
+  "tagline": "A cardboard robot that senses you and insults you via AI to discourage over-reliance on AI.",
+  "placement": { "status": "track-winner", "awards": ["Most Useless Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "The team thinks people are too optimistic about AI.",
+  "solution": "An ultrasonic sensor triggers a webcam capture sent to Gemini, which generates an insult.",
+  "demo_moment": "Team-described: approach the robot and get roasted.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino-nano", "c++", "python"], "ai_patterns": ["llm-api"] },
+  "domains": ["games-entertainment", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Useless Hack” among 212 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Self-aware satire for a useless-hack prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Satire works when the build commits."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/gubber",
+    "repo": "https://github.com/Jomcabe/HammerInABox",
+    "demo": "http://gubber.us",
+    "video": "https://player.vimeo.com/video/1178185383?byline=0&portrait=0&title=0#t=0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/gubber", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://yhack-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
