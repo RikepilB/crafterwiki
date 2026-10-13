@@ -43,6 +43,8 @@ export function mergeReferences(corpus, editorial, media, editorialMedia) {
     const duplicate = records.find(r=>canonical(r.links.devpost || r.links.submission) && canonical(r.links.devpost || r.links.submission)===canonical(p.links.devpost));
     if (duplicate) {
       duplicate.editorial={...p,lesson:editorialLesson(p.lesson)};
+      // A featured reference stays in the default view even after its roster entry is indexed.
+      duplicate.roster=false;
       duplicate.variants=duplicate.variants.length ? duplicate.variants : (editorialMedia[p.slug]?.variants || []);
       duplicate.links={...p.links,...duplicate.links};
       duplicate.topics=[...new Set([...duplicate.topics,...topicsFor([],p.event.split(' · ')[2] || '')])];

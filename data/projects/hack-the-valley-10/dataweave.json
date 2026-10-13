@@ -1,0 +1,29 @@
+{
+  "slug": "dataweave",
+  "name": "DataWeave",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Upload two databases and get AI-suggested field mappings with confidence scores you can adjust.",
+  "placement": { "status": "track-winner", "awards": ["EY Data Integration Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Data teams struggle with messy, disconnected sources, and ETL tools hide the human-in-the-loop step.",
+  "solution": "Visualizes detected schema relationships, suggests mappings between source and target with confidence scores, and lets analysts adjust them.",
+  "demo_moment": "Team-described: upload two schemas and review the suggested mappings.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "redux", "fastapi", "python", "pandas", "postgresql", "supabase", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["data-extraction", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “EY Data Integration Challenge” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Puts a human in the loop with confidence scores.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "sponsor-platform-mastery"],
+    "judging_lens": ["challenge-relevance", "design-ux", "originality", "engineering-practice"],
+    "lessons": ["Showing confidence and letting people correct it fits enterprise judges."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/dataweave-6p7dzb", "repo": "https://github.com/dhruvcharan13/DataWeave", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/dataweave-6p7dzb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

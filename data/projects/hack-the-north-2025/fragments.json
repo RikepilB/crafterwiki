@@ -1,0 +1,42 @@
+{
+  "slug": "fragments",
+  "name": "Fragments",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A second brain for video: clip, tag and organize the exact moments of online videos that inspire you.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Amazon: AWS Campus Champions - Best Use of DynamoDB Streams", "Cohere: Best Use of Cohere API"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Creators learn from moments buried in long videos and lose them.",
+  "solution": "A Chrome extension records and submits clips; AI generates tags and instructions, and a library organizes the saved fragments, on a cloud stack with change streams.",
+  "demo_moment": "Team-described: clip a moment from a tutorial and find it later with AI tags.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "python", "aws", "dynamodb", "cohere", "opencv", "chrome-extension"], "ai_patterns": ["llm-api", "computer-vision"] },
+  "domains": ["productivity", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Amazon: AWS Campus Champions - Best Use of DynamoDB Streams” and “Cohere: Best Use of Cohere API” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Frames consumption as the input to better creation.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "zero-install-channel"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Two sponsor prizes can come from one product that uses both platforms at its core."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fragments-gmleoj",
+    "repo": "https://github.com/charity-g/fragment-HTN2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=rs7uaWL67tQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fragments-gmleoj", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

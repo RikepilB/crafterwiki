@@ -1,0 +1,38 @@
+{
+  "slug": "lavoe",
+  "name": "Lavoe",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "An AI-augmented music workstation that generates beats and helps anyone produce tracks.",
+  "placement": { "status": "track-winner", "awards": ["Windsurf: Best Project built with Windsurf", "Rox: Best AI Agent"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Music production needs years of technical training.",
+  "solution": "A digital audio workstation interface with AI-generated beats and assisted production features.",
+  "demo_moment": "Team-described: generate a drum pattern and build a track around it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "python", "claude", "cohere", "ai-sdk", "vercel"], "ai_patterns": ["agent", "generative-media"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Windsurf: Best Project built with Windsurf” and “Rox: Best AI Agent” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Pitched as a coding copilot for music.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Analogies to tools judges use daily make new tools instantly legible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lavoe",
+    "repo": "https://github.com/Leonardomontesqui/Lavoe",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ISKuDB2s1jM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lavoe", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

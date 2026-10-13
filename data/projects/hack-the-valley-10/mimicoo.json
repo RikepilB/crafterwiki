@@ -1,0 +1,37 @@
+{
+  "slug": "mimicoo",
+  "name": "Mimicoo",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Detects toddlers' speech patterns and turns speech practice into games, to close gaps in access to therapy.",
+  "placement": { "status": "track-winner", "awards": ["JT Award for Future Impact"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Parents miss developmental speech issues, and many cannot afford speech therapy; the team was moved by a family friend's child.",
+  "solution": "Analyses recorded speech with acoustic features and a trained model plus an LLM, then gives gamified practice exercises.",
+  "demo_moment": "Team-described: a child repeats a word in a game and gets feedback.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "fastapi", "python", "librosa", "praat-parselmouth", "mediapipe", "gemini"],
+    "ai_patterns": ["ml-model", "llm-api", "voice-ai"]
+  },
+  "domains": ["health", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “JT Award for Future Impact” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounded in a specific child's story.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["impact"],
+    "lessons": ["Name the person you built it for."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mimicoo",
+    "repo": "https://github.com/Rahbir1518/HackTheValleyX.git",
+    "demo": "http://mimicoo.health",
+    "video": "https://www.youtube.com/watch?v=brFogpeUUQs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mimicoo", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

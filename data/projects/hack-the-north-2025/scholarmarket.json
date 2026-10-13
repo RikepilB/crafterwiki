@@ -1,0 +1,34 @@
+{
+  "slug": "scholarmarket",
+  "name": "ScholarMarket",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Students bet crypto on improving their own grades, with a model predicting outcomes.",
+  "placement": { "status": "track-winner", "awards": ["ETHGlobal: Ethereum's Infinite Garden"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Students lose motivation to distractions, including gambling-style apps.",
+  "solution": "Smart contracts let students stake on their academic performance, a grade-prediction model sets odds, and universities could fund 'probabilistic scholarships'.",
+  "demo_moment": "Team-described: place a bet on your next grade and track it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["solidity", "next.js", "express", "mongodb", "pytorch", "auth0"], "ai_patterns": ["ml-model", "on-chain"] },
+  "domains": ["education", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ETHGlobal: Ethereum's Infinite Garden” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a distraction (betting) into a motivator.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "originality"],
+    "lessons": ["Flipping a bad habit into a tool is memorable, but expect ethics questions."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/scholarmarket",
+    "repo": "https://github.com/joshua-z-zheng/hack-the-north-2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=a8MW0_Mg53o"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/scholarmarket", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

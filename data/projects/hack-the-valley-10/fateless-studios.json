@@ -1,0 +1,34 @@
+{
+  "slug": "fateless-studios",
+  "name": "FATELESS Studios",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Generates a brand-new, voice-accessible game every time a child plays.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Many children cannot afford games or interactive learning.",
+  "solution": "Each session generates a new game world and story, with dialogue read aloud and speech-to-text input for children who cannot read or type.",
+  "demo_moment": "Team-described: start a game and hear a story unique to that session.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "gemini", "elevenlabs", "mcp"], "ai_patterns": ["generative-media", "voice-ai"] },
+  "domains": ["games-entertainment", "education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of ElevenLabs” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Accessibility through voice is central, not an add-on.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Voice prizes favour uses where voice removes a barrier."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fateless-studios",
+    "repo": "https://github.com/WhyILived/HTV",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=A5_xIJWFuLg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fateless-studios", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

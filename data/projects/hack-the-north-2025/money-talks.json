@@ -1,0 +1,34 @@
+{
+  "slug": "money-talks",
+  "name": "Money Talks",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Turns a credit card statement into budgets, insights and investing roadmaps for students, with humour.",
+  "placement": { "status": "track-winner", "awards": ["RBC: RBC InvestEase - Investing for the Future"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Budgeting tools are either too basic or too complex for students.",
+  "solution": "Extracts insights from real spending data, builds budgets and roadmaps, and connects to the sponsor's investing API.",
+  "demo_moment": "Team-described: upload a statement and get a roast plus a plan.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "fastapi", "python", "investease-api", "martian"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “RBC: RBC InvestEase - Investing for the Future” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses humour to make finance approachable.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Tone is a feature in personal finance for young users."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/money-talks-d93izn",
+    "repo": "https://github.com/KadenDaya/Money-Talks",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Y2xe-7n20gI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/money-talks-d93izn", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

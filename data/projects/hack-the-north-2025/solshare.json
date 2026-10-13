@@ -1,0 +1,37 @@
+{
+  "slug": "solshare",
+  "name": "Solshare",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Scan a shared receipt, assign items to friends and settle instantly on Solana.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Cohere: Best Use of Cohere API", "Solana: Best Consumer Payment Experience with Solana Pay"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Splitting a big shared receipt fairly is a headache, and bank integrations for instant payment have not arrived.",
+  "solution": "Receipt scanning with AI, item assignment in an iOS app, and blockchain settlement between friends.",
+  "demo_moment": "Team-described: scan a warehouse-store receipt and settle everyone's share in seconds.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "swiftui", "firebase", "gcp", "cohere", "solana"], "ai_patterns": ["llm-api", "on-chain"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Cohere: Best Use of Cohere API” and “Solana: Best Consumer Payment Experience with Solana Pay” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Born from shared grocery runs on one membership.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "design-ux"],
+    "lessons": ["A specific student ritual makes a payments demo relatable."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/solshare-cmxous", "repo": "https://github.com/orgs/HTN-2025/repositories", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/solshare-cmxous", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

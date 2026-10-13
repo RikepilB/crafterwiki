@@ -1,0 +1,35 @@
+{
+  "slug": "shapeshift",
+  "name": "ShapeShift",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Sculpt 3D scenes in the browser with your hands, assisted by AI.",
+  "placement": { "status": "track-winner", "awards": ["Y Combinator: Unicorn Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "3D modelling software has a steep learning curve and clunky controls.",
+  "solution": "Hand tracking from a webcam selects, moves and edits objects in a browser 3D scene, with AI generation of models.",
+  "demo_moment": "Team-described: pinch an object and reshape it with gestures.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "express", "flask", "opencv", "martian", "fal", "rodin"], "ai_patterns": ["computer-vision", "generative-media"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Y Combinator: Unicorn Prize” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inspired by film interfaces.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won the startup-potential prize and opened a waitlist.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "demo-first-wow"],
+    "judging_lens": ["business-potential", "wow-factor"],
+    "lessons": ["A waitlist signals intent to continue, which startup-potential judges look for."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/shapeshift-kvhjxr",
+    "repo": "https://github.com/itsmarsss/shapeshift",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=X7lMr9bwjqM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/shapeshift-kvhjxr", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

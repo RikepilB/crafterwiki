@@ -1,0 +1,38 @@
+{
+  "slug": "tunnel",
+  "name": "Tunnel",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Simulates a target market with hundreds of AI agents you can interview, in seconds instead of months.",
+  "placement": { "status": "track-winner", "awards": ["VAPI: Best Voice AI Application", "MLH: Best Use of Auth0"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Founders build products nobody wants; traditional market research is slow and expensive, the team argues.",
+  "solution": "Generates hundreds of persona agents for a target market, simulates their reactions, visualizes the network, and lets founders talk to agents by voice.",
+  "demo_moment": "Team-described: describe your product and call a simulated customer.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "three.js", "mongodb", "cohere", "vapi", "auth0", "cloudflare"], "ai_patterns": ["multi-agent", "voice-ai"] },
+  "domains": ["marketing-growth", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “VAPI: Best Voice AI Application” and “MLH: Best Use of Auth0” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Lets founders speak to simulated customers by voice.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "business-potential"],
+    "lessons": ["Voice turns a simulation into a conversation judges can join."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/tunnel-dqv1k4",
+    "repo": "https://github.com/krish1905/tunnel",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=d6M5oSDxqxw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/tunnel-dqv1k4", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

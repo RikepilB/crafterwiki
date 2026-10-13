@@ -1,0 +1,37 @@
+{
+  "slug": "databridge",
+  "name": "DataBridge",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "AI agents that align schemas and merge data when two financial institutions combine.",
+  "placement": { "status": "track-winner", "awards": ["Best Finance AI Eval"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "In mergers, financial systems use different schemas and context gets lost.",
+  "solution": "Agents interpret schemas, align columns, resolve conflicts and check integrity, deployed on cloud-native infrastructure.",
+  "demo_moment": "Team-described: feed two bank datasets and get one reconciled set.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "react", "kubernetes", "helm", "postgresql", "snowflake", "gemini", "mcp"],
+    "ai_patterns": ["multi-agent", "llm-api"]
+  },
+  "domains": ["fintech", "data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Finance AI Eval” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Heavy infrastructure for a weekend: Kubernetes, CI and agent tooling.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Evaluation prizes reward a measurable pipeline."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/databridge-riu1ek",
+    "repo": "https://github.com/VarnitOS/DataBridge",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=RSs4k3QL_6c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/databridge-riu1ek", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

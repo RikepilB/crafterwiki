@@ -1,0 +1,37 @@
+{
+  "slug": "speakeasy-spectacles",
+  "name": "SpeakEasy",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "AR glasses that see the surroundings and offer nonverbal users phrases to speak aloud.",
+  "placement": { "status": "track-winner", "awards": ["Groq"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Assistive communication tools are bulky and pull users' eyes away from the people they talk with.",
+  "solution": "Object detection on smart glasses generates context-aware phrase suggestions on an interactive display and speaks the chosen one instantly.",
+  "demo_moment": "Team-described: look at a coffee cup and pick a suggested phrase to order.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["snap-spectacles", "lens-studio", "typescript", "gemini", "groq", "bluetooth"],
+    "ai_patterns": ["computer-vision", "llm-api", "voice-ai"]
+  },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Groq” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps the user facing the person they are talking to.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "physical-artifact"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Fast inference matters when a person is waiting mid-conversation."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/speakeasy-arzjmb",
+    "repo": "https://github.com/ammiellewb/SpeakEasy-public",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=8TX48L2IG18"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/speakeasy-arzjmb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
