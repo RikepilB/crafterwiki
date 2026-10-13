@@ -16,7 +16,7 @@
   "participants": 284,
   "participants_note": "Invite-only: accepted college students.",
   "teams": 82,
-  "team_size": null,
+  "team_size": "1-4",
   "theme": "The world is your canvas",
   "tracks": [],
   "prizes": [
@@ -133,6 +133,7 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://hack-western-12.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Theme, dates, place, participants, prizes, judging criteria." },
+    { "url": "https://hack-western-12.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Team size: up to 4 members." },
     { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 4 pages captured: 82 of 82 submissions; prize names from each of the 13 winning project pages." }
   ],
   "curator_notes": "All 13 prize winners are analyzed records. The Canada Life women's-investing challenge drew many similar submissions (see the roster). Taglines are CrafterWIKI paraphrases; domains assigned conservatively."
