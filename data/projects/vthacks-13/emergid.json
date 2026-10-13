@@ -1,0 +1,29 @@
+{
+  "slug": "emergid",
+  "name": "FaceAID",
+  "hackathon": "vthacks-13",
+  "tagline": "Lets first responders scan a patient's face or ID to see allergies, medications and emergency contacts.",
+  "placement": { "status": "track-winner", "awards": ["VTHacks - Best Hack Supporting Diversity & Inclusion"], "track": null },
+  "team": { "size": 5, "members": [] },
+  "problem": "Responders often treat unconscious patients with no medical information.",
+  "solution": "A mobile app authenticates a patient by face or ID scan and shows a prioritised summary of registered health data.",
+  "demo_moment": "Team-described: scan a face and see the allergy list.",
+  "build_style": "software-only",
+  "tech": { "stack": ["expo", "javascript", "python", "html"], "ai_patterns": ["computer-vision"] },
+  "domains": ["health", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - Best Hack Supporting Diversity & Inclusion” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Puts critical data in front of responders within seconds.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Show the one fact that changes treatment."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/finsite", "repo": "https://github.com/NathanAlukka/FACEAID", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/finsite", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

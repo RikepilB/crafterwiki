@@ -1,0 +1,34 @@
+{
+  "slug": "compliai",
+  "name": "CompliAI",
+  "hackathon": "vthacks-13",
+  "tagline": "Checks policy and configuration files against CMMC and NIST and produces a compliance scorecard.",
+  "placement": { "status": "track-winner", "awards": ["[AMERICAN SYSTEMS] iPad"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Companies spend heavy time checking policies line by line for compliance audits.",
+  "solution": "Parses PDFs and configs, maps evidence to controls, scores each as satisfied, partial or missing, and writes summaries of failures.",
+  "demo_moment": "Team-described: upload policies and read the scorecard.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "python", "fastapi", "recharts", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["due-diligence-risk", "security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[AMERICAN SYSTEMS] iPad” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Shaped by talking to the sponsor.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Ask the sponsor what wastes their time."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/compliai-xzo4bv",
+    "repo": "https://github.com/pujanpatel08/CompliAI.git",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1123315349?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/compliai-xzo4bv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

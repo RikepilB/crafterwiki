@@ -1,0 +1,29 @@
+{
+  "slug": "complyai",
+  "name": "ComplyAI",
+  "hackathon": "vthacks-13",
+  "tagline": "An assistant that helps companies check compliance with an AI audit checklist and chat.",
+  "placement": { "status": "track-winner", "awards": ["[Apex Center for Entrepreneurship] Best Startup Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Compliance in government and defence work is complex and manual, the team says.",
+  "solution": "A Next.js app with a persistent profile, an AI chat and a generated audit checklist.",
+  "demo_moment": "Team-described: create a profile and generate a checklist.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "javascript", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["due-diligence-risk"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[Apex Center for Entrepreneurship] Best Startup Hack” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Draws on the team's own industry experience.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["Domain experience gives a startup pitch credibility."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/complyai", "repo": "https://github.com/deesig/ComplyAI", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/complyai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

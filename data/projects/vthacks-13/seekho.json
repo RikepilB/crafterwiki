@@ -1,0 +1,34 @@
+{
+  "slug": "seekho",
+  "name": "Seekho (सीखो)",
+  "hackathon": "vthacks-13",
+  "tagline": "Turns any educational video into six personalised formats, including dyslexia-friendly and multilingual ones.",
+  "placement": { "status": "track-winner", "awards": ["[Peraton] Beats Headphones + Peraton swag"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "One video format does not suit every learner.",
+  "solution": "A seven-agent pipeline analyses the video and generates quizzes, flashcards, diagrams, explanations and examples adapted to level, language and accessibility needs.",
+  "demo_moment": "Team-described: paste a video and switch to dyslexia mode.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "python", "gemini"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[Peraton] Beats Headphones + Peraton swag” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the UX/UI design prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Personalisation is visible when you can toggle formats live."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/seekho",
+    "repo": "https://github.com/DHRUVvkdv/vthacks25-frontend",
+    "demo": "https://seekho.dhruvv.dev/",
+    "video": "https://www.youtube.com/watch?v=2IfLFKcDYzM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/seekho", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

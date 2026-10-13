@@ -1,0 +1,38 @@
+{
+  "slug": "moneylens",
+  "name": "MoneyLens",
+  "hackathon": "vthacks-13",
+  "tagline": "An AR budgeting assistant that warns you about a venue's cost to your budget as you walk in.",
+  "placement": { "status": "track-winner", "awards": ["[Warp] Expedited internship / full time interview process + Cash"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students overspend in the moment.",
+  "solution": "Connects bank data, learns spending habits and shows AR overlays at a venue with the expected impact on today's budget.",
+  "demo_moment": "Team-described: point the camera at a café and see the budget glow.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "node-js", "express", "prisma", "sqlite", "plaid", "mapbox"], "ai_patterns": ["agent"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[Warp] Expedited internship / full time interview process + Cash” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Intervenes at the point of spending.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Nudges work best at the moment of decision."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/moneylens",
+    "repo": "https://github.com/shlokeyk365/vthacksproject",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1122566528?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/moneylens", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "graphsense",
+  "name": "GraphSense",
+  "hackathon": "vthacks-13",
+  "tagline": "Upload a dataset and three agents analyse it, recommend charts and justify each choice.",
+  "placement": { "status": "track-winner", "awards": ["[Warp] Expedited internship / full time interview process + Cash"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Making good charts takes expertise and time.",
+  "solution": "A three-agent pipeline profiles the data, recommends from ten chart types with confidence scores and validates each with reasoning.",
+  "demo_moment": "Team-described: upload a CSV and get ranked chart suggestions.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "fastapi", "pandas", "scikit-learn", "gemini"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[Warp] Expedited internship / full time interview process + Cash” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Explains why each chart fits, as the sponsor asked.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Justify the recommendation; the reasoning is the product."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/graphsense", "repo": "https://github.com/calebyhan/vthacks25", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/graphsense", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

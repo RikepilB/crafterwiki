@@ -1,0 +1,38 @@
+{
+  "slug": "suitesync",
+  "name": "SuiteSync",
+  "hackathon": "vthacks-13",
+  "tagline": "Roommates search apartments together and rank them with quick pairwise choices.",
+  "placement": { "status": "track-winner", "awards": ["[CoStar Group] Sony WH-1000XM4 Wireless Noise Canceling Headphones​"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Group apartment hunting happens in messy chats and spreadsheets.",
+  "solution": "A shared real-time search where a pairwise ranking narrows options quickly and captures everyone's opinion.",
+  "demo_moment": "Team-described: compare two listings at a time until a winner emerges.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "typescript", "python", "supabase"], "ai_patterns": ["none"] },
+  "domains": ["real-estate", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[CoStar Group] Sony WH-1000XM4 Wireless Noise Canceling Headphones​” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Uses a simple algorithm to resolve indecision.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Pairwise choices break group indecision."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/suitesync",
+    "repo": "https://github.com/Stunned1/beli-apt",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WCybKUCnoj8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/suitesync", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

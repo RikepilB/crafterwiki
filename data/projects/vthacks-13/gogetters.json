@@ -1,0 +1,34 @@
+{
+  "slug": "gogetters",
+  "name": "GoGetters",
+  "hackathon": "vthacks-13",
+  "tagline": "Turns market signals into a low, medium or high risk score for retail investors.",
+  "placement": { "status": "track-winner", "awards": ["VTHacks - Best Accessibility"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Retail investors lack accessible risk signals.",
+  "solution": "Parses market data into a database, models risk into simple bands, and adds Gemini investment summaries in a React dashboard.",
+  "demo_moment": "Team-described: compare a stock's risk score and history.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "python", "aerospike", "gemini"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - Best Accessibility” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Simplifies signals into three levels.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["impact"],
+    "lessons": ["Reduce a complex signal to a few levels people can act on."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/gogetters",
+    "repo": "https://github.com/Mtrimble23/VTHacks26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ciT56y7TlGg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/gogetters", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

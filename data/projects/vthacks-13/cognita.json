@@ -1,0 +1,34 @@
+{
+  "slug": "cognita",
+  "name": "Cognita",
+  "hackathon": "vthacks-13",
+  "tagline": "Turns a company's onboarding PDFs into short interactive lessons that answer each new hire's questions.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["VTHacks - 2nd Place Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Interns are handed hundreds of pages of documents to absorb quickly.",
+  "solution": "A retrieval pipeline over company documents generates tailored lessons with quizzes, code examples and diagrams in answer to questions, and tracks progress.",
+  "demo_moment": "Team-described: ask about a process and get a lesson with a quiz.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "react", "typescript", "tailwind", "mongodb", "chromadb", "langchain", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["education", "careers-hr"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - 2nd Place Prize” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Lessons rather than chat answers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "one-sentence-clarity"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["Change the output format, not just the model: a lesson beats an answer."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cognito-at5gu8",
+    "repo": "https://github.com/Scotchex/Cognita",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=cDqjGunST0g"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cognito-at5gu8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

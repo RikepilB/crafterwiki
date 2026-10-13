@@ -1,0 +1,34 @@
+{
+  "slug": "affordly",
+  "name": "Affordly",
+  "hackathon": "vthacks-13",
+  "tagline": "Housing affordability by city with interactive charts and machine-learning price forecasts.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Housing affordability data is hard for ordinary people to read.",
+  "solution": "Combines income requirements, comparisons across metros and ML price forecasts in an interactive web app.",
+  "demo_moment": "Team-described: compare cities and see the forecast.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "javascript", "tailwind", "chart-js", "redfin-api"], "ai_patterns": ["ml-model"] },
+  "domains": ["real-estate"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Domain Name from GoDaddy Registry” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inspired by consumer finance apps that make data approachable.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Borrow the clarity of consumer finance apps for another dataset."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/affordly",
+    "repo": "https://github.com/rayanrehman4/Derc-VTHax2025",
+    "demo": "https://www.affordly.us/",
+    "video": "https://www.youtube.com/watch?v=YPL7rVKEDNY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/affordly", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

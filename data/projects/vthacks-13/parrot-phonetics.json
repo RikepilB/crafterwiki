@@ -1,0 +1,37 @@
+{
+  "slug": "parrot-phonetics",
+  "name": "Parrot: AI Phonetics Coach",
+  "hackathon": "vthacks-13",
+  "tagline": "Pronunciation training with per-sound feedback, lip tracking and AI-generated practice sentences.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Learners get little precise feedback on pronunciation.",
+  "solution": "Speech assessment scores accuracy, fluency and intonation by sound, face-mesh lip tracking guides mouth shape, and Gemini generates targeted sentences.",
+  "demo_moment": "Team-described: record a sentence and see sound-level scores.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "supabase", "azure-speech", "mediapipe", "gemini"],
+    "ai_patterns": ["voice-ai", "computer-vision", "llm-api"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Feedback down to the individual sound.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Granular feedback makes practice purposeful."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/parrot-l2ndya",
+    "repo": "https://github.com/aykk/parrotlanguagecoach",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=e_Gc4JFOKqA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/parrot-l2ndya", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

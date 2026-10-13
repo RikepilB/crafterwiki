@@ -1,0 +1,37 @@
+{
+  "slug": "cityroots",
+  "name": "CityRoots.ai",
+  "hackathon": "vthacks-13",
+  "tagline": "Lets residents see how park proposals change greenery and air quality, and vote on them with a wallet.",
+  "placement": { "status": "track-winner", "awards": ["VTHacks - Best Ut Prosim"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Cities lose parks and trees with little resident input.",
+  "solution": "Shows park proposals with satellite greenery (NDVI) and PM2.5 estimates computed by an AI agent, and records votes on a test blockchain to prevent duplicates.",
+  "demo_moment": "Team-described: open a proposal, see the impact, cast a vote.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["typescript", "fastapi", "postgresql", "postgis", "google-earth-engine", "gemini", "solidity", "ethereum", "mcp"],
+    "ai_patterns": ["agent", "llm-api", "on-chain"]
+  },
+  "domains": ["climate-sustainability", "govtech-transparency", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - Best Ut Prosim” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses satellite data to inform a civic vote.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "place-based-specificity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Put the evidence next to the vote."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cityroots",
+    "repo": "https://github.com/CityRoots-ai",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=_4xJQ4Jfv3c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cityroots", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

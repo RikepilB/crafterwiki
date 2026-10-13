@@ -1,0 +1,37 @@
+{
+  "slug": "storyvue",
+  "name": "StoryVue",
+  "hackathon": "vthacks-13",
+  "tagline": "A hands-free reading assistant that reads printed pages aloud to visually impaired children and explains them.",
+  "placement": { "status": "grand-winner", "awards": ["VTHacks - 1st Place Prize"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Visually impaired children struggle to read printed material independently.",
+  "solution": "OCR captures page text, a language model reads, summarises and explains it, and the whole interaction runs by voice with no buttons.",
+  "demo_moment": "Team-described: hold up a page and ask the app to explain it.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["javascript", "node-js", "express", "html", "css", "openai", "tensorflow", "tesseract"],
+    "ai_patterns": ["computer-vision", "llm-api", "voice-ai"]
+  },
+  "domains": ["accessibility", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - 1st Place Prize” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Fully voice-driven, so the child never needs to see the screen.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Design the whole interaction around the sense the user has."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/storyvue",
+    "repo": "https://github.com/JoshuaEssandoh/VTHacks13",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=hsMLyRKSofI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/storyvue", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

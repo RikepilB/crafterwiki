@@ -1,0 +1,38 @@
+{
+  "slug": "intrst",
+  "name": "intrst.",
+  "hackathon": "vthacks-13",
+  "tagline": "Personalised finance insights and AI-generated visualisations for young adults.",
+  "placement": { "status": "track-winner", "awards": ["[Warp] Expedited internship / full time interview process + Cash"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Young adults lack accessible financial literacy.",
+  "solution": "Connects accounts and uses Gemini to give advice and visualise plans from emergency funds to investing.",
+  "demo_moment": "Team-described: view a life-plan visualisation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "next-js", "node-js", "mongodb", "langchain", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[Warp] Expedited internship / full time interview process + Cash” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Visualises plans rather than listing numbers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A picture of the plan beats a table."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/intrst",
+    "repo": "https://github.com/bluescreenjay/intrst",
+    "demo": "https://intrst.onrender.com",
+    "video": "https://www.youtube.com/watch?v=CODWQcOBRhA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/intrst", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

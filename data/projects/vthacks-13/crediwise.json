@@ -1,0 +1,34 @@
+{
+  "slug": "crediwise",
+  "name": "CrediWise - Use the right card, every time.",
+  "hackathon": "vthacks-13",
+  "tagline": "A browser extension that picks the best credit card at checkout and tracks what you saved.",
+  "placement": { "status": "track-winner", "awards": ["[Capital One] $250 Amazon Gift Card"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People guess which card earns the most rewards at each checkout.",
+  "solution": "Detects checkout pages, recommends the card with the best rate and offers, and shows savings and AI insights.",
+  "demo_moment": "Team-described: reach a checkout and see the recommendation pop up.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "react", "vite", "python", "flask", "supabase", "gemini", "chrome-extension"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[Capital One] $250 Amazon Gift Card” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Acts in the checkout flow users already use.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Meet the decision where it happens: the checkout page."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/crediwise-use-the-right-card-every-time",
+    "repo": "https://github.com/adithyaharish/crediwise-vthacks",
+    "demo": "https://crediwise-weld.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=0xCX3dHWQfk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/crediwise-use-the-right-card-every-time", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

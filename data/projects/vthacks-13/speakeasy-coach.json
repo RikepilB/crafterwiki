@@ -1,0 +1,32 @@
+{
+  "slug": "speakeasy-coach",
+  "name": "SpeakEasy",
+  "hackathon": "vthacks-13",
+  "tagline": "Upload a short talk and get graded feedback with reference talks chosen for your topic.",
+  "placement": { "status": "track-winner", "awards": ["VTHacks - Best First Time Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Speakers get little specific feedback on their talks.",
+  "solution": "Transcribes the talk, grades clarity, structure, vocabulary, grammar and rhetoric with Gemini, and pulls short reference talks on the same topic for comparison.",
+  "demo_moment": "Team-described: upload a ramble and read the scored breakdown.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "flask", "react", "tailwind", "whisper", "gemini", "ffmpeg", "librosa", "pytorch", "yt-dlp"],
+    "ai_patterns": ["llm-scoring", "voice-ai"]
+  },
+  "domains": ["education", "careers-hr"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - Best First Time Hack” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A first-time team that built a full audio and text pipeline.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["Reference examples make feedback concrete."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/speakeasy-49nuf1", "repo": "https://github.com/dsahero/speak_easy", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/speakeasy-49nuf1", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

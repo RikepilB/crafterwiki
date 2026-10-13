@@ -1,0 +1,32 @@
+{
+  "slug": "fireguard-helmet",
+  "name": "Fire Guard",
+  "hackathon": "vthacks-13",
+  "tagline": "A helmet-mounted system that maps rooms through smoke with camera and LiDAR and relays it to command.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["VTHacks - 3rd Place Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Firefighters navigate smoke-filled buildings with poor visibility and communication, the team says.",
+  "solution": "YOLO detection fuses camera and LiDAR to find doors and obstacles, an LLM classifies rooms, radar and IMU sensors add tracking, and live data streams to a command dashboard.",
+  "demo_moment": "Team-described: walk a room and see detected objects on the command map.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "pytorch", "yolov5", "opencv", "jetson", "esp32", "arduino", "rplidar", "fastapi", "next-js", "react", "three-js", "whisper"],
+    "ai_patterns": ["computer-vision", "llm-api", "voice-ai"]
+  },
+  "domains": ["emergencies-disaster", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - 3rd Place Prize” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built from a past volunteer firefighter's experience.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "visible-engineering-depth", "human-stakes"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Sensor fusion shows depth when one sensor fails and another covers."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/fire-guard", "repo": "https://github.com/JohnRankin5/VTHack2025", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/fire-guard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

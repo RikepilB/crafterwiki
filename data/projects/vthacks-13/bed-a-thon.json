@@ -1,0 +1,38 @@
+{
+  "slug": "bed-a-thon",
+  "name": "Bed-A-Thon",
+  "hackathon": "vthacks-13",
+  "tagline": "Matches student roommates, recommends apartments for the group and has an agent call leasing offices.",
+  "placement": { "status": "track-winner", "awards": ["[Deloitte | Databricks] JBL Flip 5 Wireless Speaker + Deloitte/Databricks Swag"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Finding housing and roommates is one of the most stressful parts of college.",
+  "solution": "Collects preferences, matches compatible roommates, recommends apartments for the group and uses a voice agent to schedule tours and ask questions.",
+  "demo_moment": "Team-described: form a group and watch the agent call an office.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "python", "fastapi", "postgresql", "openai"], "ai_patterns": ["agent", "voice-ai", "llm-api"] },
+  "domains": ["real-estate"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “[Deloitte | Databricks] JBL Flip 5 Wireless Speaker + Deloitte/Databricks Swag” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Answers the sponsor's local housing brief end to end.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "place-based-specificity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Finish with an action, like booking the tour."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/bed-a-thon",
+    "repo": "https://github.com/Mishra-Manit/bedathon",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=YGM3SiJheYk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/bed-a-thon", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

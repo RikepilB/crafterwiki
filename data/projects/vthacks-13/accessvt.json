@@ -1,0 +1,34 @@
+{
+  "slug": "accessvt",
+  "name": "AccessVT",
+  "hackathon": "vthacks-13",
+  "tagline": "An updated, interactive campus accessibility map with route planning and AR guidance.",
+  "placement": { "status": "track-winner", "awards": ["VTHacks - Best Hack That Didn't Work"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "The campus accessibility map was years out of date.",
+  "solution": "A Mapbox map with custom accessible routes plans paths from your location, with an AR guide reached by QR code.",
+  "demo_moment": "Team-described: plan an accessible route between buildings.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "tailwind", "mapbox", "netlify"], "ai_patterns": ["none"] },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VTHacks - Best Hack That Didn't Work” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Replaces an outdated official map.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Fixing an outdated local resource is a credible pitch even when the demo falters."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/accessvt",
+    "repo": "https://github.com/riazahsan/Access-Path",
+    "demo": "http://accesspath.netlify.app",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/accessvt", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://vthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
