@@ -1,0 +1,34 @@
+{
+  "slug": "slopguard",
+  "name": "SlopGuard",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Detects whether a video or image in your feed is AI-generated.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Vibe Kanban by Vibe Kanban"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "AI-generated content floods social feeds and fools viewers.",
+  "solution": "A custom detection model plus a web interface to upload media and see results.",
+  "demo_moment": "Team-described: upload a viral clip and see whether it is AI-made.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "fastapi", "pytorch", "tensorflow", "opencv"], "ai_patterns": ["ml-model", "computer-vision"] },
+  "domains": ["identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Vibe Kanban by Vibe Kanban” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Trained its own detector.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["trend-wave-timing", "visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Detection tools need honest accuracy numbers."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/slopguard",
+    "repo": "https://github.com/defoae/HackPrinceton25",
+    "demo": "https://slopguard.tech/",
+    "video": "https://www.youtube.com/watch?v=p02C9IbJr0w"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/slopguard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

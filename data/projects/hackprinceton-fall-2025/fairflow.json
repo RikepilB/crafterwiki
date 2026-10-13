@@ -1,0 +1,34 @@
+{
+  "slug": "fairflow",
+  "name": "FairFlow",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Community lending where spending transparency, explained by AI, replaces credit scores.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Vibe Kanban by Vibe Kanban"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Neighbours are price-gouged by short-term credit even when their spending shows they are trustworthy.",
+  "solution": "Borrowers link transaction data; an AI explains a clarity score; lenders in the community fund loans with a shared feed.",
+  "demo_moment": "Team-described: request a loan and see a neighbour fund it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "xai", "x-api"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Vibe Kanban by Vibe Kanban” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes lending a community story.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Social proof can stand in for credit history in a pitch."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/symbio-g2craj",
+    "repo": "https://github.com/s-meher/fairflow",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=g4n81lx4V-o"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/symbio-g2craj", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

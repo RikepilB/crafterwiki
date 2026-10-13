@@ -1,0 +1,30 @@
+{
+  "slug": "dielectric",
+  "name": "Dielectric",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Designs PCBs from plain English using computational geometry plus AI reasoning, outputting KiCad files.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Grok for Real-Time Data/Signal Analysis by xAI"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "PCB design automation lacks good thermal and placement tooling, the solo builder found.",
+  "solution": "Voronoi diagrams, spanning trees and convex hulls analyse component layout and thermal hotspots while a multi-agent model reasons about placement, producing KiCad files.",
+  "demo_moment": "Team-described: describe an audio amplifier and get a laid-out board.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "kicad", "mcp", "xai"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["dev-tools", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Grok for Real-Time Data/Signal Analysis by xAI” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines classical algorithms with model reasoning.", "basis": "team-stated", "source": 0 },
+      { "claim": "A solo builder with prior research experience.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "sponsor-api-use"],
+    "lessons": ["Classical algorithms around an LLM make its output checkable."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/dielectric", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/dielectric", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

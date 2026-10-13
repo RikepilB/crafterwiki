@@ -1,0 +1,38 @@
+{
+  "slug": "jigsaw-pcb",
+  "name": "Jigsaw: Make your PCB boards click together",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Describe a circuit board and get compatible, in-stock parts instead of weeks of datasheet reading.",
+  "placement": { "status": "track-winner", "awards": ["Best Business + Enterprise Hack [Courtesy of Orcava AI, Eragon AI]"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Finding compatible PCB parts and buying them before stock runs out takes hardware students months.",
+  "solution": "A compatibility tool that turns a board description into a parts list checked against compatibility and availability.",
+  "demo_moment": "Team-described: describe a board and get a matched bill of materials.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "flask", "dedalus"], "ai_patterns": ["agent"] },
+  "domains": ["dev-tools", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Business + Enterprise Hack [Courtesy of Orcava AI, Eragon AI]” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Built from friends' real complaints in student engineering teams.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "cost-collapse"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["Interview the people complaining near you; their pain is a business brief."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/jigsaw-make-your-pcb-board-click",
+    "repo": "https://github.com/charlespers/Jigsaw",
+    "demo": "https://jigsaw-five.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=mqWAE7ZexAk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/jigsaw-make-your-pcb-board-click", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

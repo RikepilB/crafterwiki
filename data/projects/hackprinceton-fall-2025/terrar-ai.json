@@ -1,0 +1,34 @@
+{
+  "slug": "terrar-ai",
+  "name": "terrar.ai",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Agentic AI characters inside the game Terraria, spawning many agents at once.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Grok for Real-Time Data/Signal Analysis by xAI"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "AI agents had been added to games like chess and Minecraft but not to Terraria.",
+  "solution": "A game mod that connects AI agents through a model API so many characters act in the sandbox world.",
+  "demo_moment": "Team-described: spawn 50 agents and watch them fight a boss.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c#", "grok"], "ai_patterns": ["agent", "multi-agent"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Grok for Real-Time Data/Signal Analysis by xAI” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "First-time game modders.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "demo-first-wow"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Putting agents inside a beloved game is instantly watchable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/terrar-ai",
+    "repo": "https://github.com/SlothfulDreams/terrar.ai",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=vtlO4CAJrw0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/terrar-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

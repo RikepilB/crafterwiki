@@ -1,0 +1,38 @@
+{
+  "slug": "recall",
+  "name": "Recall",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "A wearable memory assistant that summarises your day and recognises the people you love.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Grok for Real-Time Data/Signal Analysis by xAI", "Best Use of Arm by MLH"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People with Alzheimer's or dementia lose track of daily events and faces.",
+  "solution": "A Raspberry Pi camera captures significant moments, an LLM summarises them into a daily timeline, and face recognition identifies loved ones.",
+  "demo_moment": "Team-described: review the day's timeline and see a recognised face labelled.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "opencv", "python", "nextjs", "grok", "openai"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["health", "memory-journaling"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Use of Grok for Real-Time Data/Signal Analysis by xAI” and “Best Use of Arm by MLH” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Aims at identity and independence for patients.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "physical-artifact"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["Wearable memory aids need consent design for bystanders."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/recall-cf0dp9",
+    "repo": "https://github.com/Christinetrr/tbd",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=fHIO8pLaHdE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/recall-cf0dp9", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "wings",
+  "name": "Wings",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Real-time credit and spending guidance based on current cash flow, for people without credit history.",
+  "placement": { "status": "track-winner", "awards": ["Exploring Hybrid Intelligence by Photon"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Traditional credit excludes newcomers and young earners with thin histories.",
+  "solution": "Aggregates transactions and bank statements into a dynamic credit model that adjusts limits and guides spending, via messaging.",
+  "demo_moment": "Team-described: see your credit capacity change as cash flow changes.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "node.js", "python", "snowflake", "knot", "nessie", "openai", "imessagekit"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Exploring Hybrid Intelligence by Photon” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets people traditional credit excludes.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "inverted-approach"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["Inclusive credit pitches need a named excluded group."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/wingpay", "repo": "https://github.com/leowang2004/hackprinceton2025", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/wingpay", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

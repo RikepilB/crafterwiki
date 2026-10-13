@@ -1,0 +1,45 @@
+{
+  "slug": "piggybank",
+  "name": "PiggyBank",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "An AI money companion over iMessage that predicts purchases, nudges you and suggests cheaper options.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Build on the Knot TransactionLink API by Knot API", "Exploring Hybrid Intelligence by Photon", "Best Use of DigitalOcean Gradient AI by MLH"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Everyday spending is invisible and stressful.",
+  "solution": "Links bank and merchant transactions, processes receipts, predicts upcoming purchases and messages nudges and deals over iMessage, with a knowledge graph of habits.",
+  "demo_moment": "Team-described: get an iMessage nudge before a predicted purchase.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "flask", "node.js", "snowflake", "digitalocean", "knot-api", "nessie-api", "photon", "gemini"],
+    "ai_patterns": ["agent", "ml-model"]
+  },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Build on the Knot TransactionLink API by Knot API” and “Exploring Hybrid Intelligence by Photon” and “Best Use of DigitalOcean Gradient AI by MLH” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Lives in the user's existing messaging app.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Meeting users in iMessage removes the app-install barrier."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/tbd-9clz1k",
+    "repo": "https://github.com/HackPrincetonQANT/backend-frontned-agent-alltogether",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=c8xawdDtn0c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/tbd-9clz1k", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
