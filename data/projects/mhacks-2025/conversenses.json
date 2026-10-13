@@ -1,0 +1,37 @@
+{
+  "slug": "conversenses",
+  "name": "Conversenses",
+  "hackathon": "mhacks-2025",
+  "tagline": "AR glasses that give live cues while you talk and an AI evaluation afterwards to improve conversations.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Snap AR"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People talk too fast, use fillers or interrupt without noticing.",
+  "solution": "Smart-glasses HUD shows cues and five indicators that turn from green to red; an LLM judge evaluates the conversation afterwards.",
+  "demo_moment": "Team-described: speak too quickly and see a 'pause' cue.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["lens-studio", "javascript", "python", "langchain", "gemini", "google-cloud", "mysql", "tailwind"],
+    "ai_patterns": ["voice-ai", "llm-scoring"]
+  },
+  "domains": ["social-connection", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Snap AR” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Feedback during the conversation, not only after.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Subtle real-time cues beat reports nobody reads."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/conversenses",
+    "repo": "https://github.com/MatchaOnMuffins/MHacks25/tree/main",
+    "demo": "https://drive.google.com/drive/folders/1qIddIKvbktwO_0F3O99UvQcxMuoR0lML?usp=sharing",
+    "video": "https://www.youtube.com/watch?v=YTZotjnA4ok"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/conversenses", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

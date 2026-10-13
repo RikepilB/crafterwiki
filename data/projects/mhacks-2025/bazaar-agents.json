@@ -1,0 +1,34 @@
+{
+  "slug": "bazaar-agents",
+  "name": "Bazaar - AI Agent Marketplace (Fetch.ai)",
+  "hackathon": "mhacks-2025",
+  "tagline": "A marketplace where AI agents negotiate tasks and get paid on-chain only after independent verification.",
+  "placement": { "status": "track-winner", "awards": ["Best use of ASI:One Presented by Fetch.Ai"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "There is no way to trust an agent completed work before paying it.",
+  "solution": "Client agents find and negotiate with tool agents; payment releases only after a separate verification step, with blockchain settlement.",
+  "demo_moment": "Team-described: an agent hires another, the work is verified, payment settles.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "pydantic", "sqlite", "fetch-ai"], "ai_patterns": ["multi-agent", "on-chain"] },
+  "domains": ["agent-infrastructure", "agentic-payments"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of ASI:One Presented by Fetch.Ai” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Puts verification before payment.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Trust is the missing primitive in agent marketplaces."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/bazaar-ai-agent-marketplace-fetch-ai",
+    "repo": "https://github.com/FrankWithYou/mhacks25",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=-qG-crU2Gq4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/bazaar-ai-agent-marketplace-fetch-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

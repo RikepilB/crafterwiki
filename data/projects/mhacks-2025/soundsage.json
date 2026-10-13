@@ -1,0 +1,29 @@
+{
+  "slug": "soundsage",
+  "name": "SoundSage",
+  "hackathon": "mhacks-2025",
+  "tagline": "Detects a song's genre and tunes the equaliser for it, entirely on a local AI accelerator.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of MemryX Edge AI Accelerator"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Generic EQ presets do not fit specific songs, and cloud analysis costs privacy.",
+  "solution": "One model classifies genre from audio features trained on about 22,000 clips; a second sets EQ for that genre, both running on an edge accelerator.",
+  "demo_moment": "Team-described: switch songs and hear the EQ adapt.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "pytorch", "onnx", "memryx"], "ai_patterns": ["ml-model"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of MemryX Edge AI Accelerator” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Trained its own models during the event.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["Use the sponsor's hardware for the job it is built for: local inference."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/soundsage", "repo": "https://github.com/Kart-ing/EQ_AI/tree/main", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/soundsage", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

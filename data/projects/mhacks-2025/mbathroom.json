@@ -1,0 +1,38 @@
+{
+  "slug": "mbathroom",
+  "name": "MBathroom",
+  "hackathon": "mhacks-2025",
+  "tagline": "Ratings and recommendations for campus bathrooms.",
+  "placement": { "status": "track-winner", "awards": ["MLH - Best AI Application presented by Cloudflare || Arduino Kit"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "On a big campus students cannot compare bathrooms.",
+  "solution": "A React site backed by a database on Cloudflare, using campus building data and maps for reviews and recommendations.",
+  "demo_moment": "Team-described: find the best-rated bathroom nearby.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "javascript", "python", "cloudflare", "google-maps"], "ai_patterns": ["llm-api"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “MLH - Best AI Application presented by Cloudflare || Arduino Kit” among 122 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "A humorous, local problem everyone has.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["place-based-specificity", "relatable-demo-wrapper"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A funny local problem wins attention and a sponsor prize."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mbathrooms",
+    "repo": null,
+    "demo": "https://flushfinder-ui.pages.dev/",
+    "video": "https://www.youtube.com/watch?v=-M6MWgq48NU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mbathrooms", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "ventura",
+  "name": "Ventura (I AM NOW AT TABLE 37)",
+  "hackathon": "mhacks-2025",
+  "tagline": "A forum where questions get AI answers and similar past posts surface first, to avoid repeat queries.",
+  "placement": { "status": "track-winner", "awards": ["MHacks Overdrive Winner"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "People ask chatbots the same questions repeatedly, wasting compute and missing shared knowledge.",
+  "solution": "Users post questions answered by AI and discussed by others; embeddings surface the three most similar existing posts first.",
+  "demo_moment": "Team-described: ask a question and see similar answered posts.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "react", "html", "css", "supabase", "fastembed"], "ai_patterns": ["llm-api", "ml-model"] },
+  "domains": ["social-connection", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MHacks Overdrive Winner” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["originality"],
+    "lessons": ["Reuse answers before generating new ones."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/ventura", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=pszyq4XWa0E" },
+  "sources": [
+    { "url": "https://devpost.com/software/ventura", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

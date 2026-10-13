@@ -1,0 +1,29 @@
+{
+  "slug": "ticketry-ai",
+  "name": "Ticketry.AI",
+  "hackathon": "mhacks-2025",
+  "tagline": "Email a feature request and get a complete, structured ticket for developers, with follow-up questions.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of AgentMail API"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Requests from business users arrive incomplete and slow to triage.",
+  "solution": "An inbound email agent turns messy requests into structured tickets, asks for missing details, and gives developers a board to claim and finish them.",
+  "demo_moment": "Team-described: send a vague request and receive a clarifying reply.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "mongodb", "gemini", "agentmail", "auth0"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["productivity", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of AgentMail API” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Business users need no new tool, only email.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Email as the interface removes onboarding entirely."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/ticketry-ai", "repo": "https://github.com/signal86/ticketry.ai", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/ticketry-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

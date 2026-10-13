@@ -1,0 +1,34 @@
+{
+  "slug": "concord-trips",
+  "name": "Concord",
+  "hackathon": "mhacks-2025",
+  "tagline": "Each group trip gets its own email address and AI assistant that coordinates everyone.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of AgentMail API"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Coordinating times and dropouts makes group trips hard to plan.",
+  "solution": "A per-trip AI assistant reachable by email or web remembers conversations and tracks dates, budget and participants.",
+  "demo_moment": "Team-described: email the trip address and see the itinerary update.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "chromadb", "gemini", "agentmail"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["social-connection", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of AgentMail API” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works through email, which every participant has.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Give each shared context its own address."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/concord-ha3jnv",
+    "repo": "https://github.com/ishaan-builds/concord",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=nLlxsbItr3U"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/concord-ha3jnv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

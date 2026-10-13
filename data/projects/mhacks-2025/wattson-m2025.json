@@ -1,0 +1,29 @@
+{
+  "slug": "wattson-m2025",
+  "name": "Wattson",
+  "hackathon": "mhacks-2025",
+  "tagline": "A virtual pet that sickens when you leave the lights on and thrives when you save power.",
+  "placement": { "status": "track-winner", "awards": ["MHacks Greenprint Winner", "Best Use of FREE-WiLi"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People waste electricity by leaving lights on.",
+  "solution": "A sensor board detects light; leaving lights on too long hurts the pet, saving power earns points for cosmetics in a shop.",
+  "demo_moment": "Team-described: leave the light on and watch the pet's health drop.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "opencv", "freewili"], "ai_patterns": ["computer-vision"] },
+  "domains": ["climate-sustainability", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MHacks Greenprint Winner” and “Best Use of FREE-WiLi” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a dull habit into care for a character.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "physical-artifact"],
+    "judging_lens": ["originality", "sponsor-api-use"],
+    "lessons": ["Attach a habit to a character people do not want to hurt."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/wattson-5btsyd", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=GzLRBSqCBSw" },
+  "sources": [
+    { "url": "https://devpost.com/software/wattson-5btsyd", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

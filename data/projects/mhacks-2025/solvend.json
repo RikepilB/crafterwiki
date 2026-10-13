@@ -1,0 +1,29 @@
+{
+  "slug": "solvend",
+  "name": "Solvend",
+  "hackathon": "mhacks-2025",
+  "tagline": "Personalised daily crypto briefings by email, with a chat for questions.",
+  "placement": { "status": "track-winner", "awards": ["Most Creative Solana MCP"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Crypto markets move constantly and following them is overwhelming.",
+  "solution": "Gemini summarises market trends and news based on interests and portfolio, delivered by email, with an interactive chat drawing on Solana APIs.",
+  "demo_moment": "Team-described: receive a briefing and ask a follow-up.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "tailwind", "python", "flask", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Creative Solana MCP” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Meets users in their inbox.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A daily digest beats another dashboard."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/solvend", "repo": "https://github.com/hyungminoh2/mhacks2025", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/solvend", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

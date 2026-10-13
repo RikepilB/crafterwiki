@@ -1,0 +1,29 @@
+{
+  "slug": "greenprint-iot",
+  "name": "GreenPrint",
+  "hackathon": "mhacks-2025",
+  "tagline": "A hub for IoT sensors with agent workflows that email alerts, for example when CO2 gets dangerous.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of AgentMail API"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Sustainability and safety data from sensors is scattered and passive.",
+  "solution": "Register a hub, link IoT data sources, view readings live and configure agent workflows that act and email when conditions trigger.",
+  "demo_moment": "Team-described: CO2 rises and an alert email arrives.",
+  "build_style": "software-only",
+  "tech": { "stack": ["elixir", "phoenix", "svelte", "typescript", "node-js", "mastra", "gemini", "agentmail", "aws"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of AgentMail API” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built by one person.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Agents add value when they act on sensor thresholds."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/greenprint-c2deb1", "repo": "https://github.com/greenprint-live", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/greenprint-c2deb1", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

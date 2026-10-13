@@ -1,0 +1,29 @@
+{
+  "slug": "dementia-assistant-ar",
+  "name": "Dementia Assistant",
+  "hackathon": "mhacks-2025",
+  "tagline": "AR glasses that show the name and relationship of the person you are talking to, with live captions, for people with dementia.",
+  "placement": { "status": "track-winner", "awards": ["MHacks Lifeline Winner"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People with dementia struggle to recognise faces and follow conversations.",
+  "solution": "A custom face-recognition model with an AR lens on smart glasses labels known people with their relationship, and live transcription supports short-term memory.",
+  "demo_moment": "Team-described: look at a family member and see their name and relationship.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["lens-studio", "snap-ml", "python"], "ai_patterns": ["computer-vision", "ml-model", "voice-ai"] },
+  "domains": ["health", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MHacks Lifeline Winner” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Trained its own face model because the platform lacked one.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "physical-artifact"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Wearables suit memory aids: the help appears where the person is looking."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/dementia-assistant", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/dementia-assistant", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "artificial-sandwich-intelligence",
+  "name": "Artificial Sandwich Intelligence",
+  "hackathon": "mhacks-2025",
+  "tagline": "A low-cost robot arm that learned to make a sandwich from teleoperated demonstrations.",
+  "placement": { "status": "grand-winner", "awards": ["MHacks Grand Award"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Sandwich shops depend on repetitive manual assembly, the builder says.",
+  "solution": "A transformer policy based on Action Chunking with Transformers, trained on about four hours of teleoperation data on one GPU, controls a roughly USD 200 open-source arm to assemble a sandwich, compared against a human benchmark.",
+  "demo_moment": "Team-described: the arm builds a sandwich on video alongside a human attempt.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "pytorch", "lerobot", "bash"], "ai_patterns": ["ml-model"] },
+  "domains": ["robotics-hardware", "agriculture-food"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MHacks Grand Award” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Cites the research method and compares against a human.", "basis": "team-stated", "source": 0 },
+      { "claim": "A solo builder won the grand award with a physical robot.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "visible-engineering-depth", "cost-collapse"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Reproduce a recent research result on cheap hardware and show it working."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/artificial-sandwich-intelligence",
+    "repo": null,
+    "demo": "https://huggingface.co/elvisxiang",
+    "video": "https://www.youtube.com/watch?v=46MQk3qE6fI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/artificial-sandwich-intelligence", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

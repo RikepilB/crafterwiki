@@ -1,0 +1,29 @@
+{
+  "slug": "mastermatch",
+  "name": "MasterMatch",
+  "hackathon": "mhacks-2025",
+  "tagline": "Real-time camera alignment checking for car-assembly stations, with a gauge for operators.",
+  "placement": { "status": "track-winner", "awards": ["Vision Alignment Tool presented by Ford"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Misaligned parts on an assembly line cause defects.",
+  "solution": "Industrial cameras and hybrid computer vision (feature matching and template matching) compare parts with a master template to fine angular and positional precision, showing a live gauge.",
+  "demo_moment": "Team-described: rotate a part and watch the gauge flag the deviation.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "opencv", "numpy", "fastapi", "react", "typescript", "vite", "pypylon"], "ai_patterns": ["computer-vision"] },
+  "domains": ["robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Vision Alignment Tool presented by Ford” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Reports measured precision across transformations.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Industrial sponsors reward measured accuracy."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/n-a-a1b2e9", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/n-a-a1b2e9", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

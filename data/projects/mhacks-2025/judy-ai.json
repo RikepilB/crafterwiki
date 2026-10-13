@@ -1,0 +1,29 @@
+{
+  "slug": "judy-ai",
+  "name": "Judy AI",
+  "hackathon": "mhacks-2025",
+  "tagline": "Animated AI companions in your code editor that chat, encourage and help you code.",
+  "placement": { "status": "track-winner", "awards": ["MHacks Brainrot Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Coding alone can be lonely and unmotivating.",
+  "solution": "A VS Code extension with animated companions that talk through Gemini with voice, express emotions and keep conversation context.",
+  "demo_moment": "Team-described: pet the companion and ask it for help.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "javascript", "vscode", "gemini", "elevenlabs"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["dev-tools", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MHacks Brainrot Prize” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grew from a team member's pet extension.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["originality"],
+    "lessons": ["A playful prize rewards personality over utility."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/judy-ai-4vc9ah", "repo": "https://github.com/kevinjin420/judy", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/judy-ai-4vc9ah", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

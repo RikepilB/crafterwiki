@@ -1,0 +1,38 @@
+{
+  "slug": "clai",
+  "name": "CLAI",
+  "hackathon": "mhacks-2025",
+  "tagline": "A remote shell that turns plain-language requests into command-line commands, with trusted device pairing.",
+  "placement": { "status": "track-winner", "awards": ["MLH - Best Use of Gemini API presented by Google Gemini || Mechanical Keyboards"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Deploying software and using the command line are hard for many developers.",
+  "solution": "An Electron app connects verified devices to a remote shell using HMAC trust; Gemini translates intent into commands.",
+  "demo_moment": "Team-described: type a goal and run the generated command remotely.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "react", "typescript", "python", "fastapi", "websockets", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “MLH - Best Use of Gemini API presented by Google Gemini || Mechanical Keyboards” among 122 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Adds device trust before execution.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Put a security step in front of any AI that runs commands."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/clai",
+    "repo": "https://github.com/Cryplo/MHacks25",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1122664326?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/clai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

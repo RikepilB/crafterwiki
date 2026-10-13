@@ -1,0 +1,34 @@
+{
+  "slug": "traders-co-pilot",
+  "name": "Trader's Co-Pilot",
+  "hackathon": "mhacks-2025",
+  "tagline": "An MCP server giving AI agents Solana trading tools with signals, risk scoring and front-running protection.",
+  "placement": { "status": "track-winner", "awards": ["Most Creative Solana MCP"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Retail crypto traders lose money and suffer front-running attacks, the team says.",
+  "solution": "Fourteen MCP tools for signals, portfolio health, sentiment, DeFi strategy and attack-pattern detection.",
+  "demo_moment": "Team-described: an agent requests a signal and a risk check.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "javascript", "mcp", "solana"], "ai_patterns": ["mcp-server", "agent"] },
+  "domains": ["fintech", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Creative Solana MCP” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Reports backtested signal accuracy.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Wrap a domain's tools for agents and the sponsor's platform becomes the backbone."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/trader-s-co-pilot",
+    "repo": "https://github.com/rajashekarcs2023/mhacks-solana",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=21jeXHPXkEw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/trader-s-co-pilot", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "gestura",
+  "name": "Gestura",
+  "hackathon": "mhacks-2025",
+  "tagline": "Move the mouse with hand gestures over a sensor board and click with voice commands.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of FREE-WiLi"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "People with limited mobility need touch-free computer control.",
+  "solution": "Hand gestures sensed by the sponsor's board move the cursor; voice commands handle clicks, scrolling and holds.",
+  "demo_moment": "Team-described: steer the cursor by hand and say 'left click'.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "freewili", "pynput", "sounddevice"], "ai_patterns": ["voice-ai"] },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of FREE-WiLi” among 122 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inspired by a demo at the sponsor's workshop.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Sponsor workshops are idea sources; build on what they show."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/gestura-9oaugq",
+    "repo": "https://github.com/imzaynb/MHacks2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=7x3D7nPJlRc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/gestura-9oaugq", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mhacks-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
