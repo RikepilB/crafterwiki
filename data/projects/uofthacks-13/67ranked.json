@@ -1,0 +1,35 @@
+{
+  "slug": "67ranked",
+  "name": "67Ranked",
+  "hackathon": "uofthacks-13",
+  "tagline": "A camera game where your body is the controller: race through meme hand-gesture reps and climb a global leaderboard.",
+  "placement": { "status": "track-winner", "awards": ["Ignobel Prize"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Short attention spans are a reality; the team wanted something instant and social instead of fighting it.",
+  "solution": "Browser pose tracking counts reps from wrist velocity peaks; scores go to a leaderboard with signed game sessions, rate limits and a profanity filter; friends can duel.",
+  "demo_moment": "Team-described: open the page, start moving, and see your rank and a share card.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "typescript", "mediapipe", "supabase", "vercel"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Ignobel Prize” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "No accounts, downloads or instructions: anyone can play at once.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won the event's humour prize with a solo build that leans into a meme.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "zero-install-channel", "tight-scope-finished", "trend-wave-timing"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["A joke prize rewards commitment to the bit plus a polished, instant experience."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/67-ranked",
+    "repo": null,
+    "demo": "http://67ranked.com",
+    "video": "https://www.youtube.com/watch?v=K9MtppuQD4k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/67-ranked", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

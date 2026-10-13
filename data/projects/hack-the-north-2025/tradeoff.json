@@ -1,0 +1,38 @@
+{
+  "slug": "tradeoff",
+  "name": "TradeOff",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A risk-free stock-market simulation game where young investors race to beat the market.",
+  "placement": { "status": "track-winner", "awards": ["Amazon: AWS Campus Champions - Best Use of DynamoDB Streams"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Financial literacy is a gap for young adults, and textbook learning feels abstract.",
+  "solution": "Gamified market simulation with real market dynamics and practice trading, without real money.",
+  "demo_moment": "Team-described: join a game and try to beat the market over simulated time.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "python", "dynamodb", "cerebras", "graphite"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "education", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Amazon: AWS Campus Champions - Best Use of DynamoDB Streams” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Practice without the fear of losing money.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Games make dry financial skills practicable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/tradeoff-c24mwv",
+    "repo": "https://github.com/redmac135/htn-2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=KtQ0IwOUMy4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/tradeoff-c24mwv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

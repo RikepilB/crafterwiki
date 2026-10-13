@@ -1,0 +1,35 @@
+{
+  "slug": "genui",
+  "name": "GenUI",
+  "hackathon": "uofthacks-13",
+  "tagline": "A storefront whose layout adapts in real time to how each shopper browses.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Stores personalize which products to show, but every shopper gets the same static interface whether they are hesitant or decisive.",
+  "solution": "Tracks behaviour signals (mouse movement, scrolling, hover time) to infer preferences such as density and decisiveness, then updates layout, component styles and density live, tests new modules safely and persists what it learns.",
+  "demo_moment": "Team-described: browse the store and watch the interface rearrange itself to your habits.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "fastapi", "langgraph", "mongodb", "redis", "sse"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["commerce-retail", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Personalizes the interface itself, not just the product list.", "basis": "team-stated", "source": 0 },
+      { "claim": "A beginner team shipping a live adaptive UI loop is a visible stretch.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach", "visible-engineering-depth"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["Personalizing something everyone assumes is fixed (the layout) reads as new."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/genui-dgk0ex",
+    "repo": "https://github.com/andrewwu13/uofthacks-13",
+    "demo": "http://trygetui.tech",
+    "video": "https://www.youtube.com/watch?v=KOY49p-vlf8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/genui-dgk0ex", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

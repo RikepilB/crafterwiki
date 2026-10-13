@@ -1,0 +1,37 @@
+{
+  "slug": "vraille",
+  "name": "Vraille",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Smart glasses plus a dynamic Braille display that describe surroundings and people to visually impaired users.",
+  "placement": { "status": "track-winner", "awards": ["VAPI: Best Voice AI Application"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Smart glasses target convenience features, not comprehensive systems for visually impaired people.",
+  "solution": "Glasses capture the scene; multimodal AI describes it and recognises faces; a custom dynamic Braille interface and voice agent deliver the information.",
+  "demo_moment": "Team-described: point the glasses at someone and feel their name in Braille.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["arduino", "c++", "solidworks", "python", "gemini", "cohere", "vapi", "supabase"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “VAPI: Best Voice AI Application” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built custom Braille hardware, designed in CAD.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Custom output hardware shows commitment to the user, not just to the model."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/vraille",
+    "repo": "https://github.com/KaivalSShah/vraille-htn2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=4gdPROUsaRw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/vraille", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

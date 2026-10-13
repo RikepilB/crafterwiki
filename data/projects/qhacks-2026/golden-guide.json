@@ -1,0 +1,35 @@
+{
+  "slug": "golden-guide",
+  "name": "Golden Guide",
+  "hackathon": "qhacks-2026",
+  "tagline": "Seniors describe their situation in one sentence and the assistant finds and acts on Kingston programs they qualify for.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Kingston's programs for older adults are scattered across websites, phone trees and PDF forms; the team cites over 20% of residents being 65 or older.",
+  "solution": "Scrapes and structures local programs, matches them to a spoken or typed situation, and takes action such as calling or emailing through telephony and email services.",
+  "demo_moment": "Team-described: say \"I'm 73 and I can't afford the dentist\" and the assistant starts the right application.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "fastapi", "gemini", "firecrawl", "twilio", "sendgrid", "elevenlabs"], "ai_patterns": ["agent", "llm-api", "voice-ai"] },
+  "domains": ["govtech-transparency", "accessibility", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Gemini API” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The team spoke with local seniors before building.", "basis": "team-stated", "source": 0 },
+      { "claim": "Acts on the request instead of only answering it.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "takes-action", "place-based-specificity", "theme-native-twist"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Interviews with real users in the host city give a theme answer credibility."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/golden-guide-ugoa6h",
+    "repo": "https://github.com/ManagementMO/GoldenGuide",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/golden-guide-ugoa6h", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

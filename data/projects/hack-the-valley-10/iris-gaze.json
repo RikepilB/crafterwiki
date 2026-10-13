@@ -1,0 +1,29 @@
+{
+  "slug": "iris-gaze",
+  "name": "Iris",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Control a computer with eyes and voice: gaze to point, speak to click, scroll and type.",
+  "placement": { "status": "track-winner", "awards": ["JT Award for Future Impact"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "People who cannot use their hands, or want hands-free use, lack simple control methods.",
+  "solution": "Webcam eye tracking moves the pointer and offline speech recognition handles commands for clicking, scrolling and typing.",
+  "demo_moment": "Team-described: look at a button and say \"click\".",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "opencv", "mediapipe", "vosk", "vite"], "ai_patterns": ["computer-vision", "voice-ai"] },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “JT Award for Future Impact” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works with a standard webcam.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Hands-free control with commodity hardware is a credible accessibility pitch."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/iris-fz4rad", "repo": "https://github.com/adamhjouj/Iris-Website", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/iris-fz4rad", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

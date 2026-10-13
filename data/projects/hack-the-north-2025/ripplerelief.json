@@ -1,0 +1,29 @@
+{
+  "slug": "ripplerelief",
+  "name": "RippleRelief",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Transparent disaster aid on XRPL: donors fund a pool, NGOs issue vouchers, recipients verify with their face.",
+  "placement": { "status": "track-winner", "awards": ["Ripple: Best in Ledger Award"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Aid is pledged but delayed, misused or lost before it reaches people.",
+  "solution": "Donors contribute to a pooled ledger wallet, NGOs issue on-ledger vouchers, recipients redeem with biometric checks at merchants, and every step is visible.",
+  "demo_moment": "Team-described: donate and follow the money to a recipient's purchase.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "react", "flask", "node.js", "xrpl", "stripe"], "ai_patterns": ["computer-vision", "on-chain"] },
+  "domains": ["fintech", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Ripple: Best in Ledger Award” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Covers donors, NGOs, recipients and merchants.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "human-stakes"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["Ledger transparency fits aid, where traceability is the core need."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/ripplerelief", "repo": "https://github.com/peterson-htn25/HTN252", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/ripplerelief", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

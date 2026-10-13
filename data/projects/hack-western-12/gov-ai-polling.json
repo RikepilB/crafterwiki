@@ -1,0 +1,34 @@
+{
+  "slug": "gov-ai-polling",
+  "name": "Gov AI: Decentralized Polling System",
+  "hackathon": "hack-western-12",
+  "tagline": "Wallet-verified polls on Solana with AI analysis of the results.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Solana"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Online polls are easy to manipulate and hard to trust.",
+  "solution": "Users authenticate with a Solana wallet signature, vote in cryptographically verified polls, and see AI-powered analysis of the outcomes.",
+  "demo_moment": "Team-described: connect a wallet, vote, and see the verified tally and analysis.",
+  "build_style": "software-only",
+  "tech": { "stack": ["solana", "anchor", "rust", "react", "typescript", "python"], "ai_patterns": ["llm-api", "on-chain"] },
+  "domains": ["govtech-transparency", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Solana” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Chose the sponsor with the steepest learning curve on purpose.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["Fewer teams attempt the hardest sponsor stack; finishing it can be enough."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/gov-ai-decentralized-polling-system",
+    "repo": "https://github.com/satvikgarimella/GovAI",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=DJBun_o0wPo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/gov-ai-decentralized-polling-system", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

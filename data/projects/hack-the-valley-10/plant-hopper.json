@@ -1,0 +1,34 @@
+{
+  "slug": "plant-hopper",
+  "name": "Plant Hopper",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "A turret that finds each plant with a camera and shoots it exactly the water it needs, controlled from a web app.",
+  "placement": { "status": "grand-winner", "awards": ["1st Place Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Sprinklers water every plant the same way on the same schedule, and the team cites up to half of that water being wasted.",
+  "solution": "A two-axis turret locates each plant by its fiducial tag, computes distance and offset, aligns with a PID loop and trigonometry, and fires a servo-controlled water gun. Soil-moisture readings and camera images go to a cloud database; a web app shows plant health and sends commands such as water now or scan, which a multithreaded Python controller executes on the hardware.",
+  "demo_moment": "Team-described: press water now in the web app and the turret turns to the right plant and waters it.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["arduino", "servos", "apriltag", "opencv", "python", "firebase", "nextjs", "react", "vercel"],
+    "ai_patterns": ["computer-vision"]
+  },
+  "domains": ["agriculture-food", "climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Took first place overall among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Opens with a single number about wasted water and promises a measurable fix.", "basis": "team-stated", "source": 0 },
+      { "claim": "Integrates custom CAD hardware, tag-based vision, PID aiming, a cloud database and a web app in one weekend.", "basis": "team-stated", "source": 0 },
+      { "claim": "A turret that shoots water at plants is a physical demo judges remember, and the web app shows it is more than a toy.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "demo-first-wow", "visible-engineering-depth", "one-sentence-clarity"],
+    "judging_lens": ["technical-depth", "wow-factor", "impact"],
+    "lessons": ["Pair a playful physical action with one hard number about the problem; the number makes the toy credible."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/plant-hopper", "repo": "https://github.com/jello-2/PlantHopper", "demo": null, "video": "https://www.youtube.com/watch?v=C8jYkJZJHcI" },
+  "sources": [
+    { "url": "https://devpost.com/software/plant-hopper", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

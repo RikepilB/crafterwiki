@@ -1,0 +1,34 @@
+{
+  "slug": "nexusfolio",
+  "name": "NexusFolio",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "An AI advisor that knows your actual holdings and gives portfolio-specific investment advice.",
+  "placement": { "status": "track-winner", "awards": ["Best Smart Economies Hack", "[MLH] Best Use of Auth0"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Financial advice is either expensive or generic and blind to what you own.",
+  "solution": "Tracks the user's real portfolio and uses retrieval over market information to give contextual recommendations, behind authentication.",
+  "demo_moment": "Team-described: ask whether to rebalance and get advice about your own stocks.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "mongodb-atlas", "gemini", "auth0"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Smart Economies Hack” and “[MLH] Best Use of Auth0” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Advice grounded in the user's portfolio.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use", "business-potential"],
+    "lessons": ["Personal context turns a generic chatbot into a product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nexusfolio",
+    "repo": "https://github.com/ForceDrift/nexusfolio",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=VxCGoeA4PEY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nexusfolio", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

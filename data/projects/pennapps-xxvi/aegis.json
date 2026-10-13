@@ -1,0 +1,35 @@
+{
+  "slug": "aegis",
+  "name": "Aegis",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A walking GPS that routes by safety, using live crime data and street lighting, and reroutes when danger appears.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Statistics"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Pedestrians in high-crime areas fear routine walks home.",
+  "solution": "Combines real-time police crime data and satellite street-lighting information into a heatmap and safety-optimised routes with alerts and rerouting.",
+  "demo_moment": "Team-described: plan a walk and watch it avoid an incident hotspot.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c++", "cython", "flask", "react", "typescript", "docker"], "ai_patterns": ["none"] },
+  "domains": ["emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Statistics” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The team comes from cities where this is a daily concern.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won the statistics prize: the routing rests on data, not an LLM.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "expert-data-for-everyone", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Fusing two public datasets can carry a project without any AI."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aegis-lxtqi3",
+    "repo": "https://github.com/aryans-15/pennapps-2025",
+    "demo": "https://aeg1s.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=vuSZNeVjZGE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aegis-lxtqi3", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

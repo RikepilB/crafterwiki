@@ -1,0 +1,34 @@
+{
+  "slug": "sandbox-edu",
+  "name": "Sandbox EDU",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Generates hands-on programming project courses with readings, videos, quizzes and an in-browser coding sandbox.",
+  "placement": { "status": "track-winner", "awards": ["Cerebus - Best use of Cerebras"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Beginner programming projects online are repetitive (notes apps, tic-tac-toe), and good project-based courses are scarce.",
+  "solution": "Generates a course for a chosen project with chapters, AI readings, matched videos, quizzes and a final project, plus a hosted code environment, using fast inference and retrieval.",
+  "demo_moment": "Team-described: ask for a project course and get chapters, quizzes and a live code editor.",
+  "build_style": "software-only",
+  "tech": { "stack": ["django", "python", "cerebras", "pinecone", "code-server", "docker", "youtube-api"], "ai_patterns": ["llm-api"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cerebus - Best use of Cerebras” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The team shared how each of them learned to code by building.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "tight-scope-finished"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Fast-inference sponsors reward experiences that need many generations quickly."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sandboxed",
+    "repo": "https://github.com/camelCasedAditya/PennApps",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=0yEQR8HrBoE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sandboxed", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

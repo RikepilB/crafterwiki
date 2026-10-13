@@ -1,0 +1,34 @@
+{
+  "slug": "continuum",
+  "name": "Continiuum",
+  "hackathon": "hack-western-12",
+  "tagline": "Watches your servers, phones you on a critical error, and explains the likely root cause and fix.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best .Tech Domain Name"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "When systems fail, logs explode and it takes too long to understand what broke.",
+  "solution": "A dashboard monitors containers in real time, calls developers by phone on critical errors, and generates a root-cause summary and suggested fixes.",
+  "demo_moment": "Team-described: break a service and get a phone call with an explanation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "typescript", "python", "docker", "twilio", "elevenlabs", "gemini"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["dev-tools", "cloud-native-infra"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best .Tech Domain Name” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Explains incidents instead of only alerting.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "live-real-world-proof"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A phone call during the demo makes an alerting tool tangible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/continuum-inta1o",
+    "repo": "https://github.com/sokosam/HW12",
+    "demo": "https://continiuumwith.tech/",
+    "video": "https://www.youtube.com/watch?v=2-8imxL70N0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/continuum-inta1o", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

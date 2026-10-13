@@ -1,0 +1,39 @@
+{
+  "slug": "vril",
+  "name": "Vril",
+  "hackathon": "hack-western-12",
+  "tagline": "Describe a physical product or upload a reference and get an editable 3D model plus print-ready packaging.",
+  "placement": { "status": "grand-winner", "awards": ["First Place Overall", "[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People with product ideas lack the 3D-modelling skills, time or budget to design even simple items and their packaging.",
+  "solution": "Generates editable 3D models from text or reference images, offers a prompt-driven editor for geometry and materials, and generates packaging with textures, dielines and artwork editable panel by panel, ready to export.",
+  "demo_moment": "Team-described: type a product idea and watch a 3D model and its box appear, then edit them by prompt.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "react", "three.js", "fastapi", "python", "gemini", "trellis", "redis", "docker"],
+    "ai_patterns": ["generative-media", "llm-api"]
+  },
+  "domains": ["creative-media", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place Overall” and “[MLH] Best Use of Gemini API” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pitched as making product design as accessible as AI app builders made coding.", "basis": "team-stated", "source": 0 },
+      { "claim": "Covers the product and its packaging, down to printable dielines.", "basis": "team-stated", "source": 0 },
+      { "claim": "Answers the 'world is your canvas' theme with a tool for making physical things.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "theme-native-twist", "one-sentence-clarity", "cost-collapse"],
+    "judging_lens": ["originality", "technical-depth", "design-ux"],
+    "lessons": ["A familiar comparison (\"like an AI app builder, for products\") explains a new tool in one breath."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/vril",
+    "repo": "https://github.com/akuwuh/Vril",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=pGwVC0TzbDQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/vril", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

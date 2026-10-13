@@ -43,6 +43,17 @@ test('non-curator claims must cite a source', () => {
   assert.ok(validate(broken).errors.some((e) => e.includes('needs a source index')));
 });
 
+test('every searchable item has a unique slug, even same-name roster entries', () => {
+  const slugs = buildItems(corpus.hackathons, corpus.projects).map((i) => i.slug);
+  assert.equal(new Set(slugs).size, slugs.length);
+  const twins = { hackathons: [{ slug: 'h', name: 'H', entries: [
+    { name: 'Echo', url: 'https://devpost.com/software/echo' },
+    { name: 'Echo', url: 'https://devpost.com/software/echo-x1y2z3' },
+    { name: 'Echo' },
+  ] }], projects: [] };
+  assert.deepEqual(buildItems(twins.hackathons, twins.projects).map((i) => i.slug), ['h/echo', 'h/echo-x1y2z3', 'h/echo-2']);
+});
+
 test('submitted-only roster entries never count as winners', () => {
   const winners = search(corpus, { winnersOnly: true, limit: 1000 });
   assert.ok(winners.length > 0);
@@ -81,7 +92,10 @@ test('event brief exposes rubric and saturation', () => {
   const bogota = eventBrief(corpus, 'platanus-hack-26-bogota');
   assert.equal(bogota.saturation.indexed, 24);
   assert.equal(bogota.saturation.base_rate_valid, true);
-  assert.equal(b.saturation.base_rate_valid, false, 'HTN 2025 is a partial roster, not a base rate');
+  assert.equal(b.saturation.indexed, 260);
+  assert.equal(b.saturation.base_rate_valid, false, 'HTN 2025 has 260 of 261 submissions public; the hidden one keeps it partial');
+  const uoft = eventBrief(corpus, 'uofthacks-11');
+  assert.equal(uoft.saturation.base_rate_valid, false, 'UofTHacks 11 is a partial roster, not a base rate');
 });
 
 test('partial rosters are never reported as base rates', () => {

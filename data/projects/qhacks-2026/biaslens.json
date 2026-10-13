@@ -1,0 +1,35 @@
+{
+  "slug": "biaslens",
+  "name": "BiasLens",
+  "hackathon": "qhacks-2026",
+  "tagline": "Upload a trade log to see scores for overtrading, loss aversion and revenge trading, with explanations and coaching.",
+  "placement": { "status": "track-winner", "awards": ["National Bank of Canada Prize Track"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Retail traders lose returns to cognitive biases they do not recognise in their own behaviour.",
+  "solution": "Computes behavioural features from a CSV of trades, scores three biases with a gradient-boosted model, explains each score with SHAP feature charts, flags the trades that triggered it and offers AI coaching.",
+  "demo_moment": "Team-described: upload trades and expand a bias card to see which behaviours drove it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "xgboost", "shap", "scikit-learn", "next.js", "gemini", "docker"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “National Bank of Canada Prize Track” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Explains predictions with feature attributions rather than only flagging trades.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won a crowded sponsor challenge: many teams built bias detectors for the same brief.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cited-evidence-trust", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "sponsor-api-use"],
+    "lessons": ["In a crowded sponsor brief, explainability is what separates near-identical detectors."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/biaslens-2yd3g9",
+    "repo": "https://github.com/AlpinSchool/QHacks_2026",
+    "demo": "https://frontend-two-red-5qyy3cnl69.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/biaslens-2yd3g9", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

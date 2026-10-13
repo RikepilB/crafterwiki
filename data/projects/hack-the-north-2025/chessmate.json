@@ -1,0 +1,34 @@
+{
+  "slug": "chessmate",
+  "name": "ChessMate",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A real chessboard whose pieces move by themselves, so a remote player can face someone at the board, with coaching and voice control.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Playing chess with family abroad means giving up the physical board, and moving pieces is hard for people with limited mobility or vision.",
+  "solution": "A two-axis gantry under the board moves magnetized pieces with an electromagnet. A Raspberry Pi watches the board through a webcam, runs a chess engine and a collision-free pathfinding routine, and sends moves to an Arduino driving stepper motors. A web app adds AI coaching and voice commands.",
+  "demo_moment": "Team-described: a move made in the web app or by voice slides the real piece across the board.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["raspberry-pi", "arduino", "stepper-motors", "electromagnet", "python", "nextjs", "react", "groq"],
+    "ai_patterns": ["computer-vision", "agent", "voice-ai"]
+  },
+  "domains": ["games-entertainment", "robotics-hardware", "accessibility", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Selected by the organizer as one of 12 finalists among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Motivated by the team's own families: playing chess across countries.", "basis": "team-stated", "source": 0 },
+      { "claim": "Combines a custom gantry, vision, a chess engine and pathfinding; the team says the second axis and piece detection took most of the weekend.", "basis": "team-stated", "source": 0 },
+      { "claim": "A board that moves on its own is a familiar object doing something surprising, which is easy to remember after a day of demos.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "visible-engineering-depth", "familiar-thing-new-job", "demo-first-wow"],
+    "judging_lens": ["wow-factor", "technical-depth", "impact"],
+    "lessons": ["Hardware takes longer than planned: two subsystems took most of the event, so schedule integration time first."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/chessmate-nwygvq", "repo": "https://github.com/o-bm/ChessMate", "demo": null, "video": "https://www.youtube.com/watch?v=JDlEdZKH69k" },
+  "sources": [
+    { "url": "https://devpost.com/software/chessmate-nwygvq", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

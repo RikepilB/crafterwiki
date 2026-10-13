@@ -1,0 +1,35 @@
+{
+  "slug": "pdf-filler",
+  "name": "PDF Filler",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Reads your email threads and fills any PDF form, even scanned ones, then checks its own work visually.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "People spend hours each week copying details from emails into PDF forms.",
+  "solution": "Detects field positions, extracts details from email context, fills the form and uses a vision model on screenshots of the result to verify and correct placement.",
+  "demo_moment": "Team-described: drop in a form and watch it fill from your inbox.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "pymupdf", "langgraph", "gemini-vision", "claude"], "ai_patterns": ["agent", "computer-vision", "llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Talked to people who fill forms all week.", "basis": "team-stated", "source": 0 },
+      { "claim": "A visual feedback loop checks the output.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Let the model check its own output with a different sense (vision)."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pdf-filler-2hvo03",
+    "repo": "https://github.com/adam-badar/HTV-25/tree/main/pdf-filler",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=cs6tPe0rstY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pdf-filler-2hvo03", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

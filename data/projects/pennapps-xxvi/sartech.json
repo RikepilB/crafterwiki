@@ -1,0 +1,30 @@
+{
+  "slug": "sartech",
+  "name": "SARTech",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Predicts where a lost person will move, using terrain and behaviour models, to guide search-and-rescue drones.",
+  "placement": { "status": "track-winner", "awards": ["Most Technically Complex Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Drone searches usually follow a lawnmower pattern that assumes the missing person stays still.",
+  "solution": "A Monte Carlo model that incorporates how lost people behave (for example, following a river) over real geographic data to produce a probability map that steers the drone.",
+  "demo_moment": "Team-described: run the simulation over a map and see the drone's search area shift.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "fastapi", "react", "google-earth", "yolo", "gemini"], "ai_patterns": ["ml-model", "computer-vision"] },
+  "domains": ["emergencies-disaster", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Technically Complex Hack” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Models human psychology instead of assuming a stationary target.", "basis": "team-stated", "source": 0 },
+      { "claim": "Drone hobbyists applied their own hardware experience.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "visible-engineering-depth", "human-stakes"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Challenge the default assumption of the existing method and show the difference."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/sartech", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=6qLmTkxwUps" },
+  "sources": [
+    { "url": "https://devpost.com/software/sartech", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "componion",
+  "name": "CompOnion",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A companion that answers viewers' questions about a movie in real time without spoilers or interruptions.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best AI Application Built with Cloudflare"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "People interrupt films to ask who someone is or what happened.",
+  "solution": "An AI companion with context of the film answers questions during viewing.",
+  "demo_moment": "Team-described: ask \"who's that guy again?\" mid-scene and get an answer.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "python", "javascript", "gemini", "cloudflare", "neon"], "ai_patterns": ["llm-api"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best AI Application Built with Cloudflare” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inspired by a viral video about a parent's questions during movies.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "one-sentence-clarity", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A relatable family moment is a strong opener for a consumer AI tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/componion-7bpaxc",
+    "repo": "https://github.com/taekwan-yoon/Componion-HackTheNorth2025",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/componion-7bpaxc", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

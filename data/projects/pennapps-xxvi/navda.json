@@ -1,0 +1,34 @@
+{
+  "slug": "navda",
+  "name": "Navda",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "2D and 3D situational maps and digital flight strips for air traffic controllers.",
+  "placement": { "status": "track-winner", "awards": ["Best AR/VR Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Control-tower systems are outdated, controllers are scarce and close calls are rising.",
+  "solution": "Interactive 2D and 3D maps of nearby aircraft and a digitised flight-strip system, designed to ingest federal air-traffic data.",
+  "demo_moment": "Team-described: select an airport and see live aircraft in 3D with their strips.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "cesium", "flask", "python", "langchain", "cerebras", "supabase", "auth0"], "ai_patterns": ["llm-api"] },
+  "domains": ["connectivity-telecom", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best AR/VR Hack” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Supports existing controllers rather than replacing them.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["design-ux", "technical-depth"],
+    "lessons": ["3D context for an expert user can win an AR/VR prize without a headset."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/navda",
+    "repo": "https://github.com/latenightsnackrun/navda",
+    "demo": "https://navdasystems.netlify.app/",
+    "video": "https://www.youtube.com/watch?v=z6dy9JJMr58"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/navda", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

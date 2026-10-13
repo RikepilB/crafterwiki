@@ -1,0 +1,38 @@
+{
+  "slug": "orca",
+  "name": "Orca",
+  "hackathon": "qhacks-2026",
+  "tagline": "Hum, sing or beatbox an idea, say how it should sound, and get back editable music.",
+  "placement": { "status": "grand-winner", "awards": ["First Place"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Many enthusiasts have melodies in their heads but no instrument or production skill to turn them into music.",
+  "solution": "One voice recording carries both the musical idea and spoken instructions (\"make this a piano\"); an agent pipeline transcribes the melody to MIDI, applies the instructions, adds backing parts and returns a track the artist can edit in a MIDI editor.",
+  "demo_moment": "Team-described: hum a melody, ask for a piano with a guitar backing, and play the result.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "fastapi", "python", "gemini", "huggingface", "elevenlabs", "mcp"],
+    "ai_patterns": ["agent", "voice-ai", "generative-media"]
+  },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “First Place” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps the artist in control: instructions and melody in the same recording, output editable.", "basis": "team-stated", "source": 0 },
+      { "claim": "Hum-to-song is a live moment judges can try themselves.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "one-sentence-clarity", "theme-native-twist"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["A demo the judges can perform with their own voice is hard to forget."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/orca-4po0nm",
+    "repo": "https://github.com/Beebdoles/qhacks-2026/tree/main",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1162996077?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/orca-4po0nm", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

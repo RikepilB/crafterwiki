@@ -1,0 +1,35 @@
+{
+  "slug": "aircraft-studio",
+  "name": "Aircraft Studio",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Design an aircraft on your phone with AI, turn it into 3D, then fly it in an AR mission with a leaderboard.",
+  "placement": { "status": "track-winner", "awards": ["Windsurf: Best Project built with Windsurf"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "3D design tools are desktop-first and heavy.",
+  "solution": "Text prompts generate concept images, converted to lightweight 3D models, then flown in a browser AR game.",
+  "demo_moment": "Team-described: describe a plane, preview it in 3D, and fly it in AR.",
+  "build_style": "software-only",
+  "tech": { "stack": ["webxr", "mongodb", "auth0", "groq", "flux", "stability"], "ai_patterns": ["generative-media", "llm-api"] },
+  "domains": ["games-entertainment", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Windsurf: Best Project built with Windsurf” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Phone-first, no workstation or headset.", "basis": "team-stated", "source": 0 },
+      { "claim": "Solo builder.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "demo-first-wow"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Phone-based AR lets every judge try the demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aircraft-studio",
+    "repo": "https://github.com/YehyunLee/aircraft-studio",
+    "demo": "https://aircraft-studio.netlify.app",
+    "video": "https://www.youtube.com/watch?v=QkZTAo8Ba2k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aircraft-studio", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

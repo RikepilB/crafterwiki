@@ -1,0 +1,35 @@
+{
+  "slug": "trasee",
+  "name": "Trasee",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Runs your Python code and draws the data structures it builds, such as linked lists and trees, step by step.",
+  "placement": { "status": "track-winner", "awards": ["Best Revolutionizing Learning Hack"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Code visualizers treat every variable alike, so linked lists and trees are hard to picture.",
+  "solution": "Executes Python in the browser and detects structures, rendering node chains and hierarchical trees with an editor and example problems.",
+  "demo_moment": "Team-described: step through a linked-list solution and watch nodes connect.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react-flow", "pyodide", "monaco-editor", "elk.js", "d3-hierarchy"], "ai_patterns": ["none"] },
+  "domains": ["education", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Revolutionizing Learning Hack” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Recognizes structures the way a learner thinks about them.", "basis": "team-stated", "source": 0 },
+      { "claim": "A solo, AI-free build won the learning category.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "tight-scope-finished"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["A precise improvement on a known tool can beat broad AI features."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/trasee",
+    "repo": "https://github.com/Ri-Hong/trasee",
+    "demo": "http://trasee.vercel.app",
+    "video": "https://www.youtube.com/watch?v=cEJb67Ul_dY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/trasee", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

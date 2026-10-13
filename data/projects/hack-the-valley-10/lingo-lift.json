@@ -1,0 +1,34 @@
+{
+  "slug": "lingo-lift",
+  "name": "Lingo Lift",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Live lecture translation, summaries and support for English-language learners.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "A friend new to Canada struggled to follow lectures in English.",
+  "solution": "Transcribes and translates lectures live into a chosen language, summarises them and offers learning support.",
+  "demo_moment": "Team-described: play a lecture and read it live in another language.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "supabase", "postgresql", "azure-speech", "gemini", "elevenlabs", "auth0"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Domain Name from GoDaddy Registry” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built for a specific friend's experience.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Domain-name prizes still go to projects with a clear story."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lingo-lift",
+    "repo": "https://github.com/Syed-Ahmed02/hack-the-valley-x/",
+    "demo": "https://drive.google.com/file/d/1fB13n2K49aCxcYGzh32ffx3VXGWAWVMn/view?usp=sharing",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lingo-lift", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

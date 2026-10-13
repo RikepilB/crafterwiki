@@ -1,0 +1,34 @@
+{
+  "slug": "langsketch",
+  "name": "LangSketch",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A desktop app for building agent workflows by drag and drop, with model routing and data-platform tools.",
+  "placement": { "status": "track-winner", "awards": ["Martian: LLM Routing with Martian"], "track": null },
+  "team": { "size": 5, "members": [] },
+  "problem": "Agent frameworks have a steep learning curve that excludes non-developers.",
+  "solution": "A visual editor for agents and tools with utility functions, provider keys and data-platform credentials, routing calls across models to control cost, packaged for all desktop systems.",
+  "demo_moment": "Team-described: drag nodes to build an agent and run it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "fastapi", "python", "langchain", "langgraph", "databricks", "martian"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["agent-infrastructure", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Martian: LLM Routing with Martian” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes routing a first-class part of agent design.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A five-person team can ship a cross-platform app if scope is a builder, not a product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/langsketch",
+    "repo": "https://github.com/rajshah6/langsketch",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=L6CZgvak0hQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/langsketch", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

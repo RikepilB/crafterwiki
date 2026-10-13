@@ -1,0 +1,39 @@
+{
+  "slug": "nutriscan-ai",
+  "name": "NutriScan AI",
+  "hackathon": "hack-western-12",
+  "tagline": "Face and fingernail scans plus a short form give students cheap, specific nutrition advice.",
+  "placement": { "status": "track-winner", "awards": ["Best Health Hack by Sun Life", "[MLH] Best Use of DigitalOcean Gradient AI"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students on tight budgets and schedules find healthy eating hard, and nutrition apps ignore cost and time.",
+  "solution": "Two quick camera scans are read by a multimodal model for visual cues, combined with a form, and turned into affordable food recommendations and goals.",
+  "demo_moment": "Team-described: scan your face and nails and get a budget meal plan.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "node.js", "gemini", "digitalocean"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Health Hack by Sun Life” and “[MLH] Best Use of DigitalOcean Gradient AI” among 82 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Built around students' budget and time limits.", "basis": "team-stated", "source": 0 },
+      { "claim": "Visual health cues from a phone camera are unvalidated; a judge could question the medical claims.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "human-stakes"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Health demos impress, but say plainly what the scan cannot diagnose."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nurtiscan",
+    "repo": "https://github.com/ZElnagar/HackWestern12",
+    "demo": "https://zelnagar.github.io/HackWestern12/?fbclid=PAVERFWATwFkdwZG9mAmZkaWQWUMrbCkh4_RVdU8fvsImLE9YjrUUi2GV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp2NsmzKhshNcxwVkjgYWXVBI4h1jMtytbWWQj8OB1Pa6Sxji-9PmprpmMwps_aem_hd9VHVgONlEgsKrXinp8Rg",
+    "video": "https://www.youtube.com/watch?v=VRBSDdESFvY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nurtiscan", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

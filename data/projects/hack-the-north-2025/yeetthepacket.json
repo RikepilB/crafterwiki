@@ -1,0 +1,30 @@
+{
+  "slug": "yeetthepacket",
+  "name": "YeetThePacket",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Turns packet captures into plain-English, evidence-backed security narratives.",
+  "placement": { "status": "track-winner", "awards": ["CSE: Network Traffic Exploration"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Analysts spend hours in packet captures and then struggle to explain findings to non-technical people.",
+  "solution": "Uploads large captures in chunks, ingests them with packet tools, detects events and generates narratives with evidence and metadata for each detection.",
+  "demo_moment": "Team-described: upload a capture and read the story of each detected event.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "streamlit", "docker", "tshark", "cohere"], "ai_patterns": ["llm-api"] },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CSE: Network Traffic Exploration” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Narratives cite the evidence behind each detection.", "basis": "team-stated", "source": 0 },
+      { "claim": "A solo builder shipped an end-to-end pipeline.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cited-evidence-trust", "expert-data-for-everyone"],
+    "judging_lens": ["challenge-relevance", "technical-depth"],
+    "lessons": ["Translate expert data for a non-expert reader and show your evidence."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/nocapnethack", "repo": "https://github.com/ashokcpg/YeetThePacket", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/nocapnethack", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

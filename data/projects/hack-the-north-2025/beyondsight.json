@@ -1,0 +1,34 @@
+{
+  "slug": "beyondsight",
+  "name": "BeyondSight",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A haptic vest and Braille gauntlet that guide DeafBlind people to objects and help them communicate.",
+  "placement": { "status": "track-winner", "awards": ["Genesys: Empathy in Action with Genesys Cloud APIs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "DeafBlind people have few tools for independent navigation and conversation.",
+  "solution": "A depth camera and four vest motors give direction cues; a Braille keypad on the gauntlet requests objects or destinations; haptic modes convey instructions and nearby presence; voice services bridge communication.",
+  "demo_moment": "Team-described: ask for a chair on the keypad and follow the vibrations to it.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "depth-camera", "haptic-motors", "slam", "elevenlabs", "genesys", "docker"], "ai_patterns": ["computer-vision", "voice-ai"] },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Genesys: Empathy in Action with Genesys Cloud APIs” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A full wearable system, not a single feature.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Designing for the hardest-to-serve user makes the engineering visible and meaningful."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/beyondsight-589mh7",
+    "repo": "https://github.com/WhyILived/HTN",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=tEvHlx3xCRA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/beyondsight-589mh7", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

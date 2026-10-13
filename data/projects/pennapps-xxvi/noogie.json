@@ -1,0 +1,34 @@
+{
+  "slug": "noogie",
+  "name": "noogie",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A news aggregator that summarizes stories from many outlets in a node map to show every side.",
+  "placement": { "status": "track-winner", "awards": ["Best Design"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Readers get trapped in bubbles that only confirm their views.",
+  "solution": "Collects articles from multiple sources, summarizes them with AI, and shows perspectives as an interactive cluster graph.",
+  "demo_moment": "Team-described: open a story cluster and compare how outlets frame it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "d3.js", "flask", "python", "supabase"], "ai_patterns": ["llm-api"] },
+  "domains": ["identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Design” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won best design with a node-cluster view of the news.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A distinctive visual metaphor can win a design prize on its own."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/noogie",
+    "repo": "https://github.com/ruslannnn2/PennApps",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=rZpY3STlQxs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/noogie", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

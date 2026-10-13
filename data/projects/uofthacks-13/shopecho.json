@@ -1,0 +1,41 @@
+{
+  "slug": "shopecho",
+  "name": "ShopEcho",
+  "hackathon": "uofthacks-13",
+  "tagline": "Helps small Shopify brands define their identity, check trends against it and draft campaigns.",
+  "placement": { "status": "track-winner", "awards": ["TwelveLabs: Build The Future of Video Understanding with TwelveLabs"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Small brands struggle to reach an audience before they understand their own identity.",
+  "solution": "Reads store data, keeps a brand manifesto up to date through an agent, analyses uploaded videos with video understanding against that manifesto, and drafts content ideas and email campaigns.",
+  "demo_moment": "Team-described: upload a trend video and see whether it fits your brand, then get a draft campaign.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["shopify-api", "twelvelabs", "backboard", "gemini", "claude", "elevenlabs", "remix", "fastapi"],
+    "ai_patterns": ["agent", "computer-vision", "llm-api"]
+  },
+  "domains": ["commerce-retail", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “TwelveLabs: Build The Future of Video Understanding with TwelveLabs” among 160 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Checks trends against a written brand identity before acting.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A brand 'manifesto' gives the AI a reference to judge against."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/rip-dom",
+    "repo": "https://github.com/andrearcaina/uofthacks-2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=uSNH7Pj9fHY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/rip-dom", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
