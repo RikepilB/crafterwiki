@@ -1,0 +1,34 @@
+{
+  "slug": "dance-cv",
+  "name": "Dance CV",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Upload any solo dance video and learn it move by move with a webcam coach that scores you.",
+  "placement": { "status": "track-winner", "awards": ["Best Game Project"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Dance games score only a remote's position and cannot teach your own choice of dances.",
+  "solution": "AI chunks the uploaded dance into learnable moves; pose tracking compares your movement and gives advice.",
+  "demo_moment": "Team-described: upload a dance, then dance in front of the webcam and get scored.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "mediapipe", "opencv", "gemini"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["games-entertainment", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Game Project” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Fixes two flaws of a well-known dance game.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job", "demo-first-wow"],
+    "judging_lens": ["design-ux", "originality"],
+    "lessons": ["Name the game everyone played and what it got wrong."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dance-cv",
+    "repo": "https://github.com/douglasichen/DanceCV",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=AWBrBWU1IzA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dance-cv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

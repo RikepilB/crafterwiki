@@ -1,0 +1,34 @@
+{
+  "slug": "beats-by-air",
+  "name": "Beats by Air",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Air drumming with motion sensors on a real-time OS: swing your hands and hear the kit.",
+  "placement": { "status": "track-winner", "awards": ["QNX: Best Use of QNX"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Drums are expensive and noisy.",
+  "solution": "IMU sensors detect swings over I2C; multithreaded C with real-time scheduling on a QNX device maps gestures to drum sounds with low latency.",
+  "demo_moment": "Team-described: drum in the air and hear snare and cymbals.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["qnx", "raspberry-pi", "c", "mpu6050", "i2c"], "ai_patterns": ["none"] },
+  "domains": ["creative-media", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “QNX: Best Use of QNX” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Used real-time scheduling priorities to keep latency low.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "visible-engineering-depth", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["Show what real-time guarantees buy you (latency) for an RTOS prize."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/beats-by-air",
+    "repo": "https://github.com/jkhangura26/beats-by-air/tree/main",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=6OCSvG9Qy9o"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/beats-by-air", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

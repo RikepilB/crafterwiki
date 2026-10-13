@@ -1,0 +1,34 @@
+{
+  "slug": "bizbot",
+  "name": "BizBot",
+  "hackathon": "nwhacks-2026",
+  "tagline": "A roaming robot event photographer that finds hot spots and only releases photos that pass an AI quality check.",
+  "placement": { "status": "track-winner", "awards": ["[Block] Best Real-World Ready AI Product"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Event photos are either missing or hundreds of low-quality shots.",
+  "solution": "A robot controlled from a web app detects activity hot spots, takes candid shots, and gates releases through a configurable quality model, with a gallery and admin dashboard.",
+  "demo_moment": "Team-described: the robot roams the room and only good photos appear in the gallery.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "opencv", "yolo", "pytorch", "fastapi", "supabase", "gemini"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["robotics-hardware", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[Block] Best Real-World Ready AI Product” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Designed for messy real environments, matching the 'real-world ready' prize.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "live-real-world-proof"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["A robot working the judging floor is its own demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/bizbot-1m45lk",
+    "repo": "https://github.com/elijahzhao24/BizBot",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=-nSwDxqMe5E"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/bizbot-1m45lk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

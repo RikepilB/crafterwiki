@@ -1,0 +1,34 @@
+{
+  "slug": "listenme",
+  "name": "ListenMe",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Listens to someone with aphasia describe a word they cannot find and offers it on screen.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Many stroke survivors have anomic aphasia; therapy still relies on picture boards.",
+  "solution": "Detects circumlocution in live speech with a multimodal model and suggests the intended word, logging struggles as clinical insight.",
+  "demo_moment": "Team-described: say 'it's a red fruit you crunch' and see 'apple' appear.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "fastapi", "gemini-live", "firebase", "web-audio-api"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["health", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets a specific, under-served condition.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity", "demo-first-wow"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["A precise clinical niche makes an LLM demo meaningful."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/anomiaaid",
+    "repo": "https://github.com/Bardia-Masudy/nwHacks-listen.me",
+    "demo": "https://nw-hacks-placeholder.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/anomiaaid", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "rubric-academic-hub",
+  "name": "Rubric",
+  "hackathon": "mchacks-13",
+  "tagline": "A student dashboard that unifies course platforms with an AI assistant that quizzes from your own PDFs.",
+  "placement": { "status": "track-winner", "awards": ["Best Athena AI Agent for University Students"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students juggle too many course platforms.",
+  "solution": "Connects the learning management system to one dashboard with a chatbot that generates quizzes from course files, scheduling and live group whiteboards, on cloud infrastructure.",
+  "demo_moment": "Team-described: open a course and generate a quiz from its slides.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "express", "athena-ai", "digitalocean"], "ai_patterns": ["llm-api"] },
+  "domains": ["education", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Athena AI Agent for University Students” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses the sponsor's agent as the study assistant.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Student-focused sponsor briefs favour one hub over another tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/herculesai",
+    "repo": "https://github.com/achneerov/mchacks13",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=HLzEqjZFRmY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/herculesai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "mtl-minted",
+  "name": "MTL Minted",
+  "hackathon": "mchacks-13",
+  "tagline": "Artists mint their creative identity on Solana and supporters receive badges or fractional tokens.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Solana"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Artists struggle to fund their work sustainably.",
+  "solution": "Mint creator tokens, issue supporter badges and fractional shares, and keep an on-chain history of support, positioned against speculation.",
+  "demo_moment": "Team-described: support an artist and receive a badge.",
+  "build_style": "software-only",
+  "tech": { "stack": ["rust", "anchor", "solana", "react", "vite", "typescript"], "ai_patterns": ["none"] },
+  "domains": ["fintech", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Solana” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Explicitly designed against pump-and-dump use.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Address the obvious misuse of your tokens in the pitch."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/black-beauty",
+    "repo": "https://github.com/zaifnatra/solana",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=UC4IrjAtEz4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/black-beauty", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

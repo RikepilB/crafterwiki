@@ -1,0 +1,34 @@
+{
+  "slug": "goaction",
+  "name": "GoAction",
+  "hackathon": "mchacks-13",
+  "tagline": "Listens to conversations and turns them into drafted emails, to-dos and calendar meetings.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Follow-ups and action items from conversations get lost.",
+  "solution": "Transcribes speech, summarises it and has an agent create email drafts, tasks and meetings.",
+  "demo_moment": "Team-described: after a talk, see the follow-up email already drafted.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "typescript", "gemini", "gumloop", "elevenlabs", "auth0"], "ai_patterns": ["agent", "voice-ai"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of ElevenLabs” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Acts on conversations instead of only summarising them.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Agents that finish the task beat agents that summarise it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/goaction",
+    "repo": "https://github.com/GeorgesAbiChahine/goaction",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=3Ckqs0Iq-tc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/goaction", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

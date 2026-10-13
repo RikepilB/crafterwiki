@@ -1,0 +1,38 @@
+{
+  "slug": "loominal",
+  "name": "Loominal",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Answers a new engineer's 'why' questions with sources from Slack, GitHub, Linear and Notion.",
+  "placement": { "status": "track-winner", "awards": ["Linear: Best Agents of Linear"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "New engineers drown in scattered tribal knowledge across tools.",
+  "solution": "Integrates workplace tools, indexes them with embeddings in Postgres, and answers questions with cited sources through an agent.",
+  "demo_moment": "Team-described: ask why a PR was reverted and get the thread and ticket.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "react", "flask", "postgresql", "pgvector", "neon", "gemini", "vellum", "linear-api", "slack-api", "notion-api", "auth0"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["dev-tools", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Linear: Best Agents of Linear” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Tells the story through a named persona.", "basis": "team-stated", "source": 0 },
+      { "claim": "Every answer lists its sources.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A persona with a specific first week makes a knowledge tool concrete."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/loominal",
+    "repo": "https://github.com/code-like-crazy/ht6",
+    "demo": "http://loominal.codelikecrazy.dev/",
+    "video": "https://www.youtube.com/watch?v=S5SUY8sWJQI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/loominal", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "aily",
+  "name": "AIly",
+  "hackathon": "mchacks-13",
+  "tagline": "A back-office command centre for small businesses: jobs, expenses, clients and invoices with voice.",
+  "placement": { "status": "track-winner", "awards": ["Best AI project that uses the Gumloop API"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Small-business owners spend evenings sorting receipts and schedules with outdated tools.",
+  "solution": "Manages jobs, expenses, clients and invoices in one place with AI workflows and voice.",
+  "demo_moment": "Team-described: speak a new job and see it scheduled and invoiced.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "fastapi", "python", "mongodb", "aws", "gumloop", "elevenlabs", "auth0"], "ai_patterns": ["agent", "voice-ai"] },
+  "domains": ["productivity", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best AI project that uses the Gumloop API” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built for the team's own parents' businesses.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Building for family members gives a pitch real stakes."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/personalcfo",
+    "repo": "https://github.com/Lstl04/AIly",
+    "demo": "https://main.d2607r98kov957.amplifyapp.com/",
+    "video": "https://www.youtube.com/watch?v=Ln1-V754rl0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/personalcfo", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

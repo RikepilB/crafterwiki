@@ -1,0 +1,39 @@
+{
+  "slug": "market-wizard",
+  "name": "Market Wizard",
+  "hackathon": "mchacks-13",
+  "tagline": "Detects market regimes from order-book microstructure and switches trading strategy before instability hits.",
+  "placement": { "status": "track-winner", "awards": ["National Bank High-Frequency Trading Strategy Development Competition"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Trading strategies fail when market conditions change faster than they react.",
+  "solution": "Classifies hidden states (normal, stressed, high-frequency-dominated, flash events) from bid–ask data with gradient boosting and activates a strategy per regime.",
+  "demo_moment": "Team-described: replay a flash crash and see the bot change behaviour.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "xgboost", "node.js", "react"], "ai_patterns": ["ml-model"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “National Bank High-Frequency Trading Strategy Development Competition” among 127 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Adapts before volatility rather than after.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won a trading competition entered by many teams.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Quant challenges are scored on behaviour under stress; show the crash scenario."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/market-wizard",
+    "repo": "https://github.com/carterj-c/mchacks13",
+    "demo": "https://mchacks13-7gvi.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=TlB_nPBZFoM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/market-wizard", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

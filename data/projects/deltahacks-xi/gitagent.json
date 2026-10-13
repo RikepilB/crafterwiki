@@ -1,0 +1,43 @@
+{
+  "slug": "gitagent",
+  "name": "GitAgent",
+  "hackathon": "deltahacks-xi",
+  "tagline": "An agent that searches, refactors, comments and documents a GitHub repository and writes its Dockerfile.",
+  "placement": {
+    "status": "podium",
+    "rank": 3,
+    "awards": ["Third Place: Digital Camera", "[MLH] Best Use of GenAI", "Build an AI agent with Cohere"],
+    "track": null
+  },
+  "team": { "size": 1, "members": [] },
+  "problem": "Code-maintenance chores eat team time.",
+  "solution": "An agent with semantic code search automates refactoring, commenting, README and Dockerfile generation on a connected repository.",
+  "demo_moment": "Team-described: ask where a feature lives, then generate its README.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "streamlit", "cohere", "github-api"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Third Place: Digital Camera” and “[MLH] Best Use of GenAI” and “Build an AI agent with Cohere” among 134 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "A solo builder placed third and won two AI prizes.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "sponsor-platform-mastery"],
+    "judging_lens": ["technical-depth", "sponsor-api-use"],
+    "lessons": ["One agent, several concrete chores, shown on a real repository."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/gitagent",
+    "repo": "https://github.com/SuperMK15/GitAgent",
+    "demo": "https://gitagent.streamlit.app/",
+    "video": "https://www.youtube.com/watch?v=hnR85fXqZ28"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/gitagent", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "hudson",
+  "name": "HUDson",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Wearables that show deaf users the direction and type of sounds around them, like a game HUD.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Elevenlabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Losing hearing removes cues about what is happening around you, as playing a game muted shows.",
+  "solution": "A 3D-printed neckband senses audio direction and type; wrist modules and glasses display or vibrate the cues.",
+  "demo_moment": "Team-described: a sound behind you lights the matching direction on your wrist.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "c++", "python", "kotlin", "3d-printing", "elevenlabs"], "ai_patterns": ["ml-model", "voice-ai"] },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Elevenlabs” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Borrows a game interface idea for real life.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "physical-artifact", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Game interfaces offer ready-made accessibility metaphors."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hudson-uw5kn7",
+    "repo": "https://github.com/iancdev/hudglasses",
+    "demo": "https://wearhudson.tech",
+    "video": "https://www.youtube.com/watch?v=4YbXLKoHIKk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/hudson-uw5kn7", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

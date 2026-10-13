@@ -1,0 +1,35 @@
+{
+  "slug": "deskbuddy",
+  "name": "DeskBuddy",
+  "hackathon": "mchacks-13",
+  "tagline": "A desktop companion that shows friends studying together in a calm, consent-based virtual study room.",
+  "placement": { "status": "public-vote-ranked", "rank": 1, "awards": ["People's Choice"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Studying alone is isolating, but social study tools are intrusive.",
+  "solution": "An avatar in the corner of the screen reflects whether you are studying, scrolling or on break; friends can sit at the same virtual table and optionally peek at approved apps.",
+  "demo_moment": "Team-described: your avatar slumps onto its phone when you open social media.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "react", "typescript", "ruby-on-rails"], "ai_patterns": ["none"] },
+  "domains": ["productivity", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “People's Choice” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Everything is opt-in and low-distraction.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won the attendees' vote.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "human-stakes"],
+    "judging_lens": ["public-vote", "design-ux"],
+    "lessons": ["Peer-voted prizes favour cute, relatable everyday tools."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/skibidi-y1fbqp",
+    "repo": "https://github.com/ChrisYx511/mchacks13-desktop-companion",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=l1cOG2ADHeY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/skibidi-y1fbqp", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

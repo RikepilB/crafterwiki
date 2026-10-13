@@ -1,0 +1,34 @@
+{
+  "slug": "orbit-corporate-graph",
+  "name": "ORBIT",
+  "hackathon": "mchacks-13",
+  "tagline": "A navigable graph of corporate ownership and supply links to spot hidden systemic risk.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Financial tools show data in isolation and hide the interconnections that amplify crises.",
+  "solution": "Builds a graph of companies and their links, with path finding between entities and a watchlist.",
+  "demo_moment": "Team-described: find the path connecting two companies through suppliers and owners.",
+  "build_style": "software-only",
+  "tech": { "stack": ["node.js", "typescript", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "due-diligence-risk"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Gemini API” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Motivated by how hidden links spread the 2008 crisis.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A historical crisis is a strong hook for a risk tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/orbit-b1t3np",
+    "repo": "https://github.com/shanvinluo/orbit",
+    "demo": "https://orbitfinancial.vercel.app",
+    "video": "https://www.youtube.com/watch?v=2m81LMbuq2c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/orbit-b1t3np", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

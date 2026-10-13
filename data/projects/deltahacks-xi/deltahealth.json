@@ -1,0 +1,34 @@
+{
+  "slug": "deltahealth",
+  "name": "DeltaHealth",
+  "hackathon": "deltahacks-xi",
+  "tagline": "Preliminary symptom guidance and a disease catalogue while you wait for medical care.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Long healthcare wait times in Canada leave people anxious and uninformed.",
+  "solution": "Symptom analysis with ML and an LLM, emergency contacts and a catalogue of conditions and treatments.",
+  "demo_moment": "Team-described: enter symptoms and get preliminary advice.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "cohere", "scikit-learn", "pandas"], "ai_patterns": ["llm-api", "ml-model"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Domain Name from GoDaddy Registry” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Positions itself between symptom onset and a doctor.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Health advice tools need explicit limits to stay credible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/deltahealth",
+    "repo": "https://github.com/jasooh/deltahealth",
+    "demo": "http://deltahealth.work",
+    "video": "https://www.youtube.com/watch?v=SSvVJ4bAd1Y"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/deltahealth", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

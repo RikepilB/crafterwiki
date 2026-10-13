@@ -1,0 +1,34 @@
+{
+  "slug": "commonroom",
+  "name": "CommonRoom",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Replaces status meetings with AI-led voice check-ins routed by role and summarised for managers.",
+  "placement": { "status": "track-winner", "awards": ["Ribbon: Build with Ribbon (Podium)"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Status meetings waste time.",
+  "solution": "Managers create AI interviewers; team members answer role-based questions by voice; responses are summarised.",
+  "demo_moment": "Team-described: answer a check-in by voice and see the manager's summary.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "mongodb", "gemini", "auth0", "ribbon"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Ribbon: Build with Ribbon (Podium)” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Async replaces synchronous meetings.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Sponsor prizes reward the sponsor's tool as the core interaction."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/t-2cd1hn",
+    "repo": "https://github.com/Edison611/hackthe6ix-2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=YpB2ebDG4hk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/t-2cd1hn", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
