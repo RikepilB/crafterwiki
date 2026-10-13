@@ -31,7 +31,7 @@
     { "name": "Best Beginner Hack", "winners_count": 1, "reward": "Plush toy", "criteria": [], "notes": "At least half of the team must be first-time hackers." },
     { "name": "Best Solo Hack", "winners_count": 1, "reward": "Appliance prize", "criteria": [] },
     { "name": "Best UI Hack Sponsored By Conrad Mo", "winners_count": 1, "reward": "Mystery prize", "criteria": ["design-ux"] },
-    { "name": "EY Data Integration Challenge", "winners_count": 1, "reward": "Interview with a banking team plus swag", "criteria": ["technical-depth", "design-ux", "originality"], "notes": "Map one dataset onto another without losing data; judged on functionality, usability, innovation and documentation." },
+    { "name": "EY Data Integration Challenge", "winners_count": 1, "reward": "Interview with a banking team plus swag", "criteria": ["challenge-relevance", "design-ux", "originality", "engineering-practice"], "notes": "Map one dataset onto another without losing data; judged on functionality, usability, innovation and documentation." },
     { "name": "SDGs@UofT AI for Inclusive Futures Challenge", "winners_count": 1, "reward": "CAD 1,000", "criteria": ["originality", "technical-depth", "storytelling-pitch"], "notes": "No winning project page names this prize; it may not have been awarded on Devpost." },
     { "name": "CSE CI/CD Pipeline Challenge", "winners_count": 1, "reward": "Swag bag", "criteria": ["engineering-practice"], "notes": "A complete, secure build-and-deploy pipeline." },
     { "name": "Best Finance AI Eval", "winners_count": 1, "reward": "Software licences", "criteria": [] },

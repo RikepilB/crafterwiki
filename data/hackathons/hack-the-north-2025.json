@@ -78,7 +78,7 @@
   "sponsors": ["Amazon AWS", "Cerebras", "Cohere", "CSE", "Cua", "Databricks", "ETHGlobal", "Federato", "Genesys", "Graphite", "Groq", "Martian", "QNX", "RBC", "Ripple/XRPL", "Shopify", "Snap Spectacles", "Solana", "Vapi", "Warp", "Windsurf", "Y Combinator", "Google Gemini", "MLH"],
   "submission_requirements": ["Devpost submission", "Accepted participants only"],
   "results_status": "complete",
-  "roster_coverage": "full",
+  "roster_coverage": "partial",
   "entries": [
     { "name": "DUM-E", "project": "dum-e" },
     { "name": "SpeakEasy", "project": "speakeasy" },
@@ -348,5 +348,5 @@
     { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12", "note": "All 11 pages captured: 261 submissions counted, 260 publicly listed. Winner ribbons mark every prize-winning project." },
     { "url": "https://hackthenorth.com/", "kind": "official-event-page", "retrieved_at": "2026-09-14", "note": "2026 site features S-KBD67, ROSS and DUM-E as past projects." }
   ],
-  "curator_notes": "Roster captured from the Devpost gallery on 2026-10-12: Devpost counts 261 submissions and lists 260 publicly (page 3 shows 23 items on repeated fetches). Prize names come from each winning project page (54 projects carry a Winner ribbon: the 12 finalists and 42 sponsor-prize winners). Projects holding both a finalist spot and a sponsor prize take the higher-weight status (track-winner) with both awards listed. All 54 prize winners are analyzed records (2026-10-13). Taglines are CrafterWIKI paraphrases; domains were assigned conservatively and left empty for 25 entries whose gallery text does not say what they do. Sponsor prizes with 1st/2nd/3rd tiers (e.g. Cohere) do not show the tier on project pages, so ranks are not recorded."
+  "curator_notes": "Roster captured from the Devpost gallery on 2026-10-12: Devpost counts 261 submissions and lists 260 publicly (page 3 shows 23 items on repeated fetches). Prize names come from each winning project page (54 projects carry a Winner ribbon: the 12 finalists and 42 sponsor-prize winners). Projects holding both a finalist spot and a sponsor prize take the higher-weight status (track-winner) with both awards listed. All 54 prize winners are analyzed records (2026-10-13). Taglines are CrafterWIKI paraphrases; domains were assigned conservatively and left empty for 25 entries whose gallery text does not say what they do. Sponsor prizes with 1st/2nd/3rd tiers (e.g. Cohere) do not show the tier on project pages, so ranks are not recorded. Coverage is recorded as partial because one of the 261 submissions is not public, so counts are not base rates."
 }
