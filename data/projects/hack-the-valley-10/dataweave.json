@@ -17,7 +17,7 @@
       { "claim": "Puts a human in the loop with confidence scores.", "basis": "team-stated", "source": 0 }
     ],
     "mechanisms": ["cited-evidence-trust", "sponsor-platform-mastery"],
-    "judging_lens": ["technical-depth", "design-ux", "originality"],
+    "judging_lens": ["challenge-relevance", "design-ux", "originality", "engineering-practice"],
     "lessons": ["Showing confidence and letting people correct it fits enterprise judges."],
     "confidence": "low"
   },

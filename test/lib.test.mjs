@@ -82,7 +82,7 @@ test('event brief exposes rubric and saturation', () => {
   assert.equal(bogota.saturation.indexed, 24);
   assert.equal(bogota.saturation.base_rate_valid, true);
   assert.equal(b.saturation.indexed, 260);
-  assert.equal(b.saturation.base_rate_valid, true, 'HTN 2025 roster is full since the 2026-10-12 gallery capture');
+  assert.equal(b.saturation.base_rate_valid, false, 'HTN 2025 has 260 of 261 submissions public; the hidden one keeps it partial');
   const uoft = eventBrief(corpus, 'uofthacks-11');
   assert.equal(uoft.saturation.base_rate_valid, false, 'UofTHacks 11 is a partial roster, not a base rate');
 });
