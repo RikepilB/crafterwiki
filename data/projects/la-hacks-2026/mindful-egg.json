@@ -1,0 +1,34 @@
+{
+  "slug": "mindful-egg",
+  "name": "Mindful Egg",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A cosy Roblox game where journaling, breathing and stretching help an egg and its world grow.",
+  "placement": { "status": "track-winner", "awards": ["ROBLOX Civility Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Self-care is talked about but rarely practised consistently, especially by students.",
+  "solution": "Habit actions feed a growth loop for an egg and its environment, with simple UI and progression.",
+  "demo_moment": "Team-described: complete a breathing exercise and watch the egg grow.",
+  "build_style": "software-only",
+  "tech": { "stack": ["roblox-studio", "luau"], "ai_patterns": ["none"] },
+  "domains": ["health", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ROBLOX Civility Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Gives an abstract habit immediate visible feedback.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished"],
+    "judging_lens": ["impact"],
+    "lessons": ["Visible progress turns a habit into a game loop."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mindful-egg-uhfbac",
+    "repo": "https://github.com/mishphantom/Mindful-Egg/tree/main",
+    "demo": "https://www.roblox.com/games/92340071719899/Mindful-Egg",
+    "video": "https://www.youtube.com/watch?v=DLuGDKtVvls"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mindful-egg-uhfbac", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

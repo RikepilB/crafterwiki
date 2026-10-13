@@ -1,0 +1,34 @@
+{
+  "slug": "overseer-exe",
+  "name": "Overseer.exe",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A Roblox gatekeeper game: spot disguised impostors and remove anyone asking for codes or private chats.",
+  "placement": { "status": "track-winner", "awards": ["ROBLOX Civility Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Safety education for young players relies on static warnings and quizzes.",
+  "solution": "Players inspect visitors at a gate, then watch LLM-generated NPC conversations for unsafe requests such as secret codes or moving off-platform; protected NPCs return as allies in a boss fight.",
+  "demo_moment": "Team-described: catch an impostor at the gate and eject a player asking to chat elsewhere.",
+  "build_style": "software-only",
+  "tech": { "stack": ["roblox-studio", "luau", "gemini", "openrouter"], "ai_patterns": ["llm-api"] },
+  "domains": ["games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ROBLOX Civility Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Disguises safety lessons as survival decisions.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["theme-native-twist", "familiar-thing-new-job"],
+    "judging_lens": ["originality", "impact"],
+    "lessons": ["Make recognising manipulation the way to win, not a quiz afterwards."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/entelecheia",
+    "repo": "https://github.com/Anthony-Yangg/overseer/tree/main",
+    "demo": "https://www.roblox.com/games/91202831657925/OVERSEER-EXE",
+    "video": "https://www.youtube.com/watch?v=aoXezdkHLYc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/entelecheia", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

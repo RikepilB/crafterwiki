@@ -1,0 +1,37 @@
+{
+  "slug": "impulse-response",
+  "name": "IMPULSE",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Turns an iPhone into a smart bodycam and gives dispatchers a live, AI-annotated picture of an incident.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Dispatchers juggle separate screens for radio, maps and cameras and cannot ask what just happened.",
+  "solution": "The iOS app runs object detection on-device through ZETIC Melange and audio understanding, streams video over WebRTC to a command dashboard with live views and scene reconstruction.",
+  "demo_moment": "Team-described: the responder walks a scene while the dispatcher sees detections and audio summaries.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swift", "zetic-melange", "next-js", "react", "typescript", "python", "docker", "webrtc", "colmap", "cloudinary"],
+    "ai_patterns": ["computer-vision", "ml-model", "agent"]
+  },
+  "domains": ["emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Detection runs on the phone with no server round-trip.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "human-stakes"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A phone the responder already carries becomes the sensor."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/erewhon",
+    "repo": "https://github.com/MarcDasilva/LAHacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=FwS_lDUnjMY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/erewhon", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

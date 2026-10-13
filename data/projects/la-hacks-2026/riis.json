@@ -1,0 +1,38 @@
+{
+  "slug": "riis",
+  "name": "RIIS",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A rover enters collapsed buildings, spots survivors on video and starts AI triage before responders can go in.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["2nd Overall", "Fetch.ai: Best Use of ASI:One"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "After a structural collapse, survivors die waiting for care that cannot reach them safely, the team says.",
+  "solution": "A Raspberry Pi rover streams video to a command interface running YOLOv8-pose; four Fetch.ai agents then assess the patient (SBAR via ASI-1 Mini), place a multilingual voice call (ElevenLabs) and build a Gaussian-splat 3D scene viewable in a VR headset.",
+  "demo_moment": "Team-described: drive the rover to a person, see the skeleton overlay, the triage note and the VR walk-through.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "fastapi", "pytorch", "raspberry-pi", "react", "javascript", "fetch-ai"],
+    "ai_patterns": ["multi-agent", "computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["emergencies-disaster", "robotics-hardware", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “2nd Overall” and “Fetch.ai: Best Use of ASI:One” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Moves the start of care to the moment of detection, before anyone enters.", "basis": "team-stated", "source": 0 },
+      { "claim": "A physical robot plus VR reconstruction gives judges a multi-layer live demo.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "demo-first-wow", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "impact", "wow-factor"],
+    "lessons": ["Put a physical robot on the table and let the AI handle the minutes after detection."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/riis",
+    "repo": "https://github.com/srinisriram/RIIS",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=juhHSR9_-UE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/riis", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

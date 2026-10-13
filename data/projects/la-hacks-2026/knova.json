@@ -1,0 +1,34 @@
+{
+  "slug": "knova",
+  "name": "Knova",
+  "hackathon": "la-hacks-2026",
+  "tagline": "An offline AI tutor for elementary students that builds lessons from photos of their materials.",
+  "placement": { "status": "track-winner", "awards": ["Zetic Company Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Many students lose access to learning when internet or power drops, the team says.",
+  "solution": "Gemma runs on the device through ZETIC to generate structured lessons from photos or text, Bayesian knowledge tracing adapts content, and native text-to-speech works offline.",
+  "demo_moment": "Team-described: in airplane mode, photograph a worksheet and get a lesson.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "gemma", "zetic-melange", "elevenlabs", "gemini"], "ai_patterns": ["ml-model", "voice-ai"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Zetic Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Runs in airplane mode.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "live-real-world-proof"],
+    "judging_lens": ["impact"],
+    "lessons": ["Turning off the network on stage proves an on-device claim."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/knova-ekxagv",
+    "repo": "https://github.com/JacobScheff/LA-Hacks.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Tn3k2QwK0Hk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/knova-ekxagv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "aegis-edge",
+  "name": "Aegis Edge",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Air-gapped defence for embedded devices: detects sensor tampering and has a local LLM write and flash a firmware patch.",
+  "placement": { "status": "track-winner", "awards": ["ASUS Company Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Hospitals, bases and plants cannot send sensor data to the cloud, so tampering on the wire goes unseen.",
+  "solution": "A Python bridge reads ventilator-rig telemetry, detects anomalies from a Flipper Zero attack, asks a local 70B model to write a virtual-sensor patch in Arduino C++ and reflashes the board over USB.",
+  "demo_moment": "Team-described: red-team attack on the ventilator rig, then the automatic patch and recovery.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c", "python", "ollama", "flipper-zero", "javascript"], "ai_patterns": ["agent"] },
+  "domains": ["security-networking", "health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ASUS Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Attack and defence happen live on hardware in the room.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "live-real-world-proof", "takes-action"],
+    "judging_lens": ["technical-depth", "wow-factor"],
+    "lessons": ["Stage the attack live; a recovery is only convincing after a visible failure."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aegis-edge",
+    "repo": "https://github.com/jackdeye/LAHACKS2026/",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=v-JXrRFZ2OM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aegis-edge", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

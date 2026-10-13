@@ -1,0 +1,37 @@
+{
+  "slug": "conjure",
+  "name": "Conjure",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Turns a sentence into a walkable 3D interior through a pipeline of coordinated agents.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People can describe a space but few can model it in 3D.",
+  "solution": "A staged agent pipeline on Fetch.ai Agentverse plans rooms, lighting and furniture into a shared world spec, builds in parallel, validates, and streams progress to a React Three Fiber scene that stays editable.",
+  "demo_moment": "Team-described: type a cabin prompt and walk through the result in the browser while watching agents work.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "next-js", "react", "react-three-fiber", "three-js", "typescript", "fetch-ai", "gemini", "websockets"],
+    "ai_patterns": ["multi-agent", "generative-media"]
+  },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Agentverse - Search & Discovery of Agents” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Shows the agents' work live instead of a black box.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "sponsor-platform-mastery"],
+    "judging_lens": ["wow-factor", "sponsor-api-use"],
+    "lessons": ["Make the agents' progress visible; it turns waiting into part of the demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/conjure-m960jz",
+    "repo": "https://github.com/pauligwe/WorldEdit",
+    "demo": "https://agentverse.ai/agents/details/agent1q2nehsygyq37c4hwej0w4xzkxqkrxdjlw3gkjnpnts0q8ufq9a7sulp5wsr/profile",
+    "video": "https://www.youtube.com/watch?v=x404jLbdaVs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/conjure-m960jz", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

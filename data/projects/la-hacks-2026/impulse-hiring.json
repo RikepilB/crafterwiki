@@ -1,0 +1,29 @@
+{
+  "slug": "impulse-hiring",
+  "name": "Impulse",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A trust-first hiring platform where verified human candidates and recruiters interact with agent help.",
+  "placement": { "status": "track-winner", "awards": ["World U: Build for the future of the internet with World"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students applying for internships send many applications and get little signal back.",
+  "solution": "Applicant and recruiter portals with job postings, application history, messaging and agent interactions, with World ID to verify that candidates are real.",
+  "demo_moment": "Team-described: an applicant applies and a recruiter replies in the verified pipeline.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "node-js", "express", "gcp", "gemini", "world-id"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["careers-hr", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “World U: Build for the future of the internet with World” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Shaped by interviews with students and recruiters before coding.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["impact"],
+    "lessons": ["Interview both sides first; trust problems show up on both."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/impulse-khf8l4", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=avU8l6qmFD4" },
+  "sources": [
+    { "url": "https://devpost.com/software/impulse-khf8l4", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

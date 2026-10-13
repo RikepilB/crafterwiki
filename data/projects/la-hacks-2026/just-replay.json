@@ -1,0 +1,29 @@
+{
+  "slug": "just-replay",
+  "name": "Just Replay",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Gentle exercise sessions for people with limited mobility, with pose tracking against a guiding avatar.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of Vultr"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Grandparents with limited mobility struggle to stay active, the team says.",
+  "solution": "An intake on age and mobility creates a safe session; pose tracking compares the user's joints with a pre-recorded trainer and an AI coach guides by text and voice.",
+  "demo_moment": "Team-described: follow the avatar while the app scores the match.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "javascript", "mediapipe", "html", "css"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of Vultr” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Adapts intensity to a stated mobility limit.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Start from a named user's limits, not from the exercise."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/just-replay", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=EXR-oseYXUs" },
+  "sources": [
+    { "url": "https://devpost.com/software/just-replay", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

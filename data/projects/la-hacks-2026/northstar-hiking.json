@@ -1,0 +1,39 @@
+{
+  "slug": "northstar-hiking",
+  "name": "Northstar",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Detects a fall on the trail, triages offline with an on-device model and reads vital signs through the phone camera.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents", "Zetic Company Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Many hiking injuries are falls, and trails often lack data coverage for getting help.",
+  "solution": "Accelerometer fall detection triggers voice triage on an on-device model via ZETIC Melange, photoplethysmography estimates heart rate from the camera and flash, and Fetch.ai agents find the nearest care.",
+  "demo_moment": "Team-described: simulate a fall, speak to the offline triage and take a camera pulse reading.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "expo", "zetic-melange", "fetch-ai", "elevenlabs", "twilio"], "ai_patterns": ["ml-model", "voice-ai", "multi-agent"] },
+  "domains": ["health", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Track: Agentverse - Search & Discovery of Agents” and “Zetic Company Challenge” among 307 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Works where it is needed most: without a connection.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won both the Agentverse and on-device AI prizes.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "familiar-thing-new-job", "sponsor-platform-mastery"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Design for the place the user actually is; offline is the feature."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/northstar-7lcg45",
+    "repo": "https://github.com/continuitylabs/lahacks26",
+    "demo": "https://agentverse.ai/agents/details/agent1qww33mncvj0f0ewujh38t8yhny08pxf6v8tee9658x47knw6hf9hum7f8sq/profile",
+    "video": "https://www.youtube.com/watch?v=UO3zezz21EY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/northstar-7lcg45", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

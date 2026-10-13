@@ -1,0 +1,37 @@
+{
+  "slug": "neurallens",
+  "name": "NeuralLens",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Predicts how a viewer's brain and eyes respond to a marketing asset and iterates the image and copy to improve it.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Neuromarketing research is priced for the largest brands; small businesses guess what works.",
+  "solution": "Captures the asset as a viewer would, predicts gaze with DeepGaze and brain response with a research model, then regenerates image and copy until predicted engagement improves.",
+  "demo_moment": "Team-described: upload a menu or flyer and watch scores rise across optimisation rounds.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "react", "playwright", "replicate", "runpod", "fetch-ai", "stripe", "cloudinary"],
+    "ai_patterns": ["ml-model", "generative-media", "agent"]
+  },
+  "domains": ["marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Agentverse - Search & Discovery of Agents” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Brings an expensive research method to small businesses.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "cost-collapse"],
+    "judging_lens": ["business-potential", "sponsor-api-use"],
+    "lessons": ["Turn a research model into one number a small business owner wants to raise."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/neurolens-2qgdm8",
+    "repo": "https://github.com/anirudhmazumder/NeuralLens",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Bf8ngLD5BEY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/neurolens-2qgdm8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

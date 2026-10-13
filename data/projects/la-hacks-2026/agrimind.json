@@ -1,0 +1,37 @@
+{
+  "slug": "agrimind",
+  "name": "AgriMind",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A sensor robot and media pipelines monitor farm zones for problems, water loss and carbon impact.",
+  "placement": { "status": "track-winner", "awards": ["Cloudinary Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Agriculture loses value to problems detected too late.",
+  "solution": "A field robot streams temperature, moisture, air-quality and light readings to a dashboard; video and photo pipelines on TwelveLabs and Cloudinary flag equipment failures and risks; chat agents answer questions.",
+  "demo_moment": "Team-described: live sensor readings from the robot and an annotated farm photo.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "fastapi", "react", "typescript", "node-js", "opencv", "langgraph", "fetch-ai", "twelvelabs", "cloudinary", "gemma", "raspberry-pi"],
+    "ai_patterns": ["multi-agent", "computer-vision", "llm-api"]
+  },
+  "domains": ["agriculture-food", "climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cloudinary Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines a physical sensor robot with several sponsor platforms.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["A physical sensor feed makes a dashboard demo real."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/agrimind-97zntd",
+    "repo": "https://github.com/ClosetCoderSad/AgriMind-LAHacks/tree/Final_branch_v1",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Y-L3LzDw2ig"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/agrimind-97zntd", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

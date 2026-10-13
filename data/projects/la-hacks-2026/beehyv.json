@@ -1,0 +1,37 @@
+{
+  "slug": "beehyv",
+  "name": "beehyv",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Maps about 100,000 arXiv papers by meaning and finds empty regions that point to research gaps.",
+  "placement": { "status": "track-winner", "awards": ["Organizers' Choice"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "AI research is expanding quickly with shallow and hard-to-replicate work, the team says.",
+  "solution": "Clusters paper embeddings, projects them to a 2D map, finds voids with Voronoi diagrams and alpha shapes, and sends a local agent swarm to propose cross-pollinated ideas for a selected gap.",
+  "demo_moment": "Team-described: select a void on the semantic map and see neighbouring work combined into a proposal.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "pytorch", "typescript", "react", "webgl", "sqlite", "ollama", "cuda", "fastmcp"],
+    "ai_patterns": ["multi-agent", "mcp-server", "ml-model"]
+  },
+  "domains": ["data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Organizers' Choice” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses geometry, not an LLM's guess, to locate gaps.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "expert-data-for-everyone"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["A clear computational idea (empty space on a map) beats another chat interface."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/beehyv",
+    "repo": "https://github.com/justanotherinternetguy/Beehyv",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=vaoXDTu0BjM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/beehyv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

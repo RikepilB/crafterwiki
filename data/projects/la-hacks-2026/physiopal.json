@@ -1,0 +1,34 @@
+{
+  "slug": "physiopal",
+  "name": "PhysioPal",
+  "hackathon": "la-hacks-2026",
+  "tagline": "An on-device physiotherapy app that adapts exercises to your health data, checks your form and calls your therapist if needed.",
+  "placement": { "status": "track-winner", "awards": ["Zetic Company Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Patients do home exercises wrong and unsupervised; cloud cameras raise privacy worries.",
+  "solution": "Reads Apple Health to adjust the routine, runs pose estimation on the phone to count reps and correct form, and escalates to the physiotherapist by phone call.",
+  "demo_moment": "Team-described: a poor night's sleep turns squats into chair squats; a form error gets spoken feedback.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "swiftui", "healthkit", "zetic-melange", "mediapipe", "twilio"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Zetic Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The camera feed never leaves the phone.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "takes-action"],
+    "judging_lens": ["impact"],
+    "lessons": ["Privacy is a feature when the user is elderly and the camera is pointed at them."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/physiopal-r148d6",
+    "repo": "https://github.com/rutujanemane/PhysioPal",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=4mJqV782Fp0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/physiopal-r148d6", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

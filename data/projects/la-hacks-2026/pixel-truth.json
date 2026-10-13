@@ -1,0 +1,34 @@
+{
+  "slug": "pixel-truth",
+  "name": "Pixel Truth",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A Roblox city whose trust meter rises or collapses with the information players choose to believe.",
+  "placement": { "status": "track-winner", "awards": ["ROBLOX Civility Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "It has never been easier to make credible-looking false information, the team says.",
+  "solution": "Players talk to characters and judge headlines and posts; accurate choices raise a city-wide trust meter, misinformation lowers it until the city visibly falls apart.",
+  "demo_moment": "Team-described: let misinformation spread and watch the skyline darken and burn.",
+  "build_style": "software-only",
+  "tech": { "stack": ["roblox-studio", "luau"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ROBLOX Civility Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes the abstract idea of trust in information visible.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "theme-native-twist"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["Give an abstract value a visible meter and a dramatic failure state."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pixel-truth",
+    "repo": "https://github.com/s9kt/LA-HACKS-2026-PIXEL-TRUTH",
+    "demo": "https://www.roblox.com/games/125886114689038/LA-Hacks-PRANAV-DEVIN-LEONA",
+    "video": "https://www.youtube.com/watch?v=D64lghRLjOw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pixel-truth", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

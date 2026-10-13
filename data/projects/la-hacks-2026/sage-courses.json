@@ -1,0 +1,37 @@
+{
+  "slug": "sage-courses",
+  "name": "Sage",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Teachers build courses through staged AI drafting and review; students learn in the same system with 3D simulations.",
+  "placement": { "status": "track-winner", "awards": ["Cloudinary Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Teachers and students now use separate systems, so teachers cannot see how students learn with AI.",
+  "solution": "A staged creation pipeline (outline, drafting, enrichment, quality review) keeps teachers in control before publishing learning paths that students use with interactive simulations.",
+  "demo_moment": "Team-described: draft a course, review a weak section, publish and open a simulation as a student.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "tailwind", "fastapi", "python", "sqlite", "supabase", "cloudinary", "groq", "react-three-fiber"],
+    "ai_patterns": ["agent", "llm-api", "generative-media"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cloudinary Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps a review stage before anything reaches students.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["impact", "human-oversight"],
+    "lessons": ["Put the human review step in the product, not in the pitch."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sage-yvlpqb",
+    "repo": "https://github.com/Preet37/SAGE",
+    "demo": "http://sageinc.us/",
+    "video": "https://www.youtube.com/watch?v=Zubxeygcx_E"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sage-yvlpqb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

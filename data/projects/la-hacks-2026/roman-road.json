@@ -1,0 +1,38 @@
+{
+  "slug": "roman-road",
+  "name": "Roman Road",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A typing tutor that tracks your slowest words and letter pairs and drills them.",
+  "placement": { "status": "track-winner", "awards": ["Happy Hacking Keyboard: Type Beyond - Rethinking Interaction Through the Keyboard"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Popular typing tests use easy word lists that inflate speed and do not build real-world skill, the team says.",
+  "solution": "Measures per-word errors and bigram latency across diagnostics and system-wide free writing, generates targeted drills and shows progress graphs, with AI feedback on written diagnostics.",
+  "demo_moment": "Team-described: take a diagnostic, then a drill built from your weakest bigrams.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "next-js", "react", "node-js", "python", "claude"], "ai_patterns": ["llm-api"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Happy Hacking Keyboard: Type Beyond - Rethinking Interaction Through the Keyboard” among 307 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Measures fine-grained weaknesses competitors ignore.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished", "visible-engineering-depth"],
+    "judging_lens": ["originality"],
+    "lessons": ["Win a hardware sponsor's prize by making their device the centre of the experience."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/roman-road",
+    "repo": "https://github.com/eedwardkim/Roman-Road",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/roman-road", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

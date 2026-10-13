@@ -1,0 +1,34 @@
+{
+  "slug": "cloudcam",
+  "name": "Cloudcam",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Browser video messages you can draw on and remix with effects while recording, published instantly.",
+  "placement": { "status": "track-winner", "awards": ["Cloudinary Company Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Social video tools give you a filter and a record button, not room to play.",
+  "solution": "A single composited canvas records webcam, drawings and switchable effects with audio-reactive visuals, then uploads to Cloudinary for instant sharing and a gallery.",
+  "demo_moment": "Team-described: doodle mid-recording, switch to an ASCII effect and share a link.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "three-js", "mediarecorder", "cloudinary"], "ai_patterns": ["none"] },
+  "domains": ["social-connection", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cloudinary Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Everything runs in the browser with nothing to install.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "demo-first-wow"],
+    "judging_lens": ["design-ux", "sponsor-api-use"],
+    "lessons": ["A playful live demo can win a media-platform prize without any AI."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cloudcam",
+    "repo": "https://github.com/qwertyblurby/cloudcam/tree/main",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=l77n1NEQqxI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cloudcam", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

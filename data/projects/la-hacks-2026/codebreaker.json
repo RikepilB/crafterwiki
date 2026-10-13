@@ -1,0 +1,35 @@
+{
+  "slug": "codebreaker",
+  "name": "codebreaker",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A vulnerability benchmark across modern CVE classes, plus an agent harness and loop that patch what the agents find.",
+  "placement": { "status": "grand-winner", "awards": ["1st Overall", "Cognition Company Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Software supply-chain attacks are rising, the team says, and existing AI security benchmarks cover mostly memory-safety bugs in C/C++.",
+  "solution": "ECVE-Bench draws cases from the GitHub Advisory Database across the CWE Top 25; an agent harness runs models against it in sandboxes and an autonomous loop validates and patches findings through GitHub workflows.",
+  "demo_moment": "Team-described: a leaderboard of models on the benchmark and an agent run that finds and patches a vulnerability.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "react", "cloudflare", "modal", "devin", "github"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["ai-security", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “1st Overall” and “Cognition Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pairs a broader benchmark with an agent that acts on its own findings.", "basis": "team-stated", "source": 0 },
+      { "claim": "A measured leaderboard backs the claim, which fits the Technical Depth criterion.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "takes-action", "trend-wave-timing"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Ship the benchmark with the agent: a measured result makes an agent claim credible."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/codebreaker-la",
+    "repo": "https://github.com/KevinWu098/codebreaker",
+    "demo": "https://codebreaker-landing.kevinwu098.workers.dev",
+    "video": "https://www.youtube.com/watch?v=CIyWH6rkN9c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/codebreaker-la", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

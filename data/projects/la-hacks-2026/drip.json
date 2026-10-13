@@ -1,0 +1,38 @@
+{
+  "slug": "drip",
+  "name": "Drip",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Uses waste heat from AI compute to desalinate water in a custom membrane-distillation chamber.",
+  "placement": { "status": "track-winner", "awards": ["Track: Sustain The Spark"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Data-center cooling consumes and wastes fresh water while AI demand grows; the team cites drought at home.",
+  "solution": "A liquid-cooled Raspberry Pi 5 stands in for a data center running agent containers backed by a local Gemma server; its heat drives a custom membrane-distillation chamber, with live telemetry on a dashboard.",
+  "demo_moment": "Team-described: the physical chamber, live telemetry readings and a data-center map simulation.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["raspberry-pi", "asus-ascent-gx10", "gemma", "go", "python", "next-js", "react", "typescript", "tailscale", "cloudinary"],
+    "ai_patterns": ["agent"]
+  },
+  "domains": ["climate-sustainability", "robotics-hardware", "cloud-native-infra"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Sustain The Spark” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inverts AI's water cost: compute waste heat becomes the input for clean water.", "basis": "team-stated", "source": 0 },
+      { "claim": "A built chamber on the table makes the sustainability claim physical.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach", "physical-artifact", "theme-native-twist"],
+    "judging_lens": ["impact", "originality"],
+    "lessons": ["Answer the critique of your own technology by turning its waste into the resource."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/drip-6ao9m2",
+    "repo": "https://github.com/Lewin-B/lahacks2026",
+    "demo": "https://lahacks2026-mu.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=DB41xmDUDtY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/drip-6ao9m2", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

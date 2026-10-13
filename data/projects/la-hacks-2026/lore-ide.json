@@ -1,0 +1,34 @@
+{
+  "slug": "lore-ide",
+  "name": "Lore IDE - The First IDE for Agentic Code",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Captures the reasons behind team decisions from agent sessions and gives humans a canvas to verify agent work against them.",
+  "placement": { "status": "track-winner", "awards": ["Cognition Company Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Agent memory tools need humans to write rules into them, and IDEs are built for writing code, not verifying it.",
+  "solution": "A watcher reads coding-agent session logs and extracts typed decisions and constraints into a time-aware graph; an MCP server retrieves them for agents; a canvas shows each flow so reviewers can check decisions.",
+  "demo_moment": "Team-described: the same task with and without Lore, and a canvas that surfaces implicit decisions.",
+  "build_style": "software-only",
+  "tech": { "stack": ["tauri", "rust", "sqlite", "claude", "gemma", "mcp"], "ai_patterns": ["mcp-server", "llm-api"] },
+  "domains": ["dev-tools", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cognition Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Moves the IDE's job from implementing to verifying.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "visible-engineering-depth"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["Find the new bottleneck the trend creates and build for it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lore-ide-the-first-ide-for-agentic-code",
+    "repo": null,
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=8-gmVsRSW2c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lore-ide-the-first-ide-for-agentic-code", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

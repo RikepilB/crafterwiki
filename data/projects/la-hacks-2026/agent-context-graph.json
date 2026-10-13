@@ -1,0 +1,29 @@
+{
+  "slug": "agent-context-graph",
+  "name": "ACG",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Predicts which files each coding task will touch so parallel agents can work without colliding.",
+  "placement": { "status": "track-winner", "awards": ["Cognition Company Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Parallel agents fight over files, pay for too much context and break merges.",
+  "solution": "Static graph analysis of routes, imports and symbols predicts each task's write-set, plans tasks as a DAG and writes a lock file agents follow, served by a local MCP server.",
+  "demo_moment": "Team-described benchmark: prompt tokens down from 3,721 to 1,700 and 7 of 7 tasks completed across up to five parallel agents.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "typescript", "mcp"], "ai_patterns": ["mcp-server", "multi-agent"] },
+  "domains": ["dev-tools", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cognition Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Reports measured token and completion results.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A small benchmark with real numbers carries an infrastructure pitch."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/acg", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=eoTO5TZJbNQ" },
+  "sources": [
+    { "url": "https://devpost.com/software/acg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

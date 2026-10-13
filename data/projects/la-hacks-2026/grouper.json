@@ -1,0 +1,34 @@
+{
+  "slug": "grouper",
+  "name": "Grouper",
+  "hackathon": "la-hacks-2026",
+  "tagline": "One hub for a friend group or club: who owes what, who drives whom and the itinerary.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Groups juggle payments, rides and plans across spreadsheets and chat apps.",
+  "solution": "A group-centred web app with debt tracking and split bills, car assignments and an itinerary map.",
+  "demo_moment": "Team-described: split a dinner bill and assign riders to cars for an outing.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "supabase", "vercel", "figma", "framer"], "ai_patterns": ["none"] },
+  "domains": ["social-connection", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A designer and a full-stack developer built it for their own group.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished", "relatable-demo-wrapper"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A problem the team lives every week gives a design prize an honest story."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/grouper-fr2h1q",
+    "repo": "https://github.com/YKawesome/grouper",
+    "demo": "https://www.grouper.design/",
+    "video": "https://www.youtube.com/watch?v=mNkgHS3Sgk0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/grouper-fr2h1q", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

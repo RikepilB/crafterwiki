@@ -1,0 +1,34 @@
+{
+  "slug": "residue",
+  "name": "Residue",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Learns which sound environments help you focus and builds a personal study profile.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Study tools time sessions but do not learn how a student studies best, such as the right noise level.",
+  "solution": "Analyses ambient sound during study sessions alongside privacy-preserving productivity signals, builds a focus profile, suggests soundscapes and tracks phone distraction.",
+  "demo_moment": "Team-described: start a Focus session and see whether the room is mismatched for the goal.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "tailwind"], "ai_patterns": ["agent"] },
+  "domains": ["productivity", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Agentverse - Search & Discovery of Agents” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Measures how you study, not just how long.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Reframe a familiar tool around the variable nobody measures."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/residue",
+    "repo": "https://github.com/MaanPatel2005/Residue",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=dgqo7zdmHD0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/residue", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

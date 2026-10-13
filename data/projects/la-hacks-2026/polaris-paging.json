@@ -1,0 +1,38 @@
+{
+  "slug": "polaris-paging",
+  "name": "Polaris",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A hospital paging system that classifies alerts, routes them to the right clinician in seconds and hands off a short SBAR brief.",
+  "placement": { "status": "track-winner", "awards": ["Best Social Impact Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Nurses still guess who is on call and available, losing minutes in emergencies, the team says.",
+  "solution": "Fetch.ai agents classify a plain-English or voice alert by priority, extract room and specialty, pull the patient record, page a clinician, escalate on decline or timeout, and generate a sub-100-word SBAR brief on accept.",
+  "demo_moment": "Team-described: submit a chest-pain alert and watch the dispatch, the page and the brief.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "flask", "uagents", "next-js", "react", "typescript", "tailwind", "nginx", "aws"],
+    "ai_patterns": ["multi-agent", "llm-api", "voice-ai"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Social Impact Hack” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets a concrete hospital bottleneck rather than diagnosis.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won Best Social Impact Hack.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "takes-action", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Pick the operational step around the clinical decision, not the decision itself."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/polaris-mh7rd8",
+    "repo": "https://github.com/angelinawwu/lahacks26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=VHT0fZ5_gTo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/polaris-mh7rd8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

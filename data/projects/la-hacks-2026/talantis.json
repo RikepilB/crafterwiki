@@ -1,0 +1,37 @@
+{
+  "slug": "talantis",
+  "name": "Talantis",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Maps internship pipelines between universities and companies, with an AI guide to unexplored talent pools.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Internship outcomes are scattered across posts and group chats, so the patterns stay hidden.",
+  "solution": "A map of school-to-company pipelines with Atlas, a tool-using agent that compares hiring patterns; the agent is also registered on Agentverse.",
+  "demo_moment": "Team-described: ask which schools feed a company and find overlooked ones.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "tailwind", "fastapi", "supabase", "claude", "uagents", "vercel", "render", "figma-make"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["careers-hr"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Used Figma Make to explore hero, analytics and form designs.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Aggregated data becomes a product when an agent can answer comparative questions over it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/talantis",
+    "repo": null,
+    "demo": "http://talantis.vercel.app",
+    "video": "https://www.youtube.com/watch?v=2_2BNhwoFno"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/talantis", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "veritas-fact-check",
+  "name": "Veritas",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A Chrome extension that fact-checks YouTube videos as they play, with cited verdicts.",
+  "placement": { "status": "track-winner", "awards": ["Arista Networks: Connect the Dots Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Misinformation spreads fastest through video and viewers cannot check claims in real time.",
+  "solution": "Streams captions to a backend where Gemma extracts claims; a Fetch.ai agent checks a semantic cache, gathers evidence from Wikipedia and fact-check databases and returns a verdict with confidence and citations.",
+  "demo_moment": "Team-described: play a video and see claims flagged true, false or misleading beside it.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["javascript", "chrome-extension", "python", "fastapi", "websockets", "gemma", "uagents", "sqlite"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["identity-provenance", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Arista Networks: Connect the Dots Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Every verdict carries citations.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "zero-install-channel"],
+    "judging_lens": ["impact"],
+    "lessons": ["Fact-checking is only trusted when the sources are on screen."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/veritas-98njsx",
+    "repo": "https://github.com/riteshkasa/veritas",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=CuinBraRAlk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/veritas-98njsx", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

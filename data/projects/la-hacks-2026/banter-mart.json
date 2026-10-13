@@ -1,0 +1,34 @@
+{
+  "slug": "banter-mart",
+  "name": "Banter Mart",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A marketplace where verified humans swipe on products and their agents negotiate the price, with final approval by people.",
+  "placement": { "status": "track-winner", "awards": ["World U: Build for the future of the internet with World"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Online marketplaces are full of bots and haggling is slow.",
+  "solution": "A World mini app: buyers swipe right, human-backed agents negotiate using anchors and market comparisons, and both sides approve or decline the proposed deal in one click.",
+  "demo_moment": "Team-described: swipe on an item and watch two agents settle on a price.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "supabase", "gemini", "viem", "world-minikit", "world-id"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["commerce-retail", "agentic-payments", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “World U: Build for the future of the internet with World” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "No money moves without an explicit human decision.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use", "human-oversight"],
+    "lessons": ["Let agents haggle, but keep the approval click human."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/banter-mart",
+    "repo": "https://github.com/aryank09/banter-mart",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=hn_EWcW0pX0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/banter-mart", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

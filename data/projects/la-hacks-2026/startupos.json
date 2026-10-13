@@ -1,0 +1,34 @@
+{
+  "slug": "startupos",
+  "name": "startupOS",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A workspace where small businesses post work and World-verified people apply, complete tasks and chat.",
+  "placement": { "status": "track-winner", "awards": ["World U: Build for the future of the internet with World"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Small businesses need reliable, low-cost labour without heavy overhead.",
+  "solution": "Organisations create jobs, campaigns and projects by form or agent; verified users in a World mini app browse, auto-apply through a browser agent and complete tasks.",
+  "demo_moment": "Team-described: an organisation posts a job and a verified user applies from the mini app.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "express", "prisma", "postgresql", "supabase", "world-minikit"], "ai_patterns": ["agent", "computer-use"] },
+  "domains": ["careers-hr", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “World U: Build for the future of the internet with World” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built by one person across both sides of the marketplace.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Proof of personhood is strongest where fake accounts break a marketplace."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/startupos",
+    "repo": null,
+    "demo": "https://signaldesk-rust.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=baX5qnjcYcc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/startupos", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

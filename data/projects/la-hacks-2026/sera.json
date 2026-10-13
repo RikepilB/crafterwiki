@@ -1,0 +1,29 @@
+{
+  "slug": "sera",
+  "name": "Sera",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Recommends music by predicted brain-response similarity instead of what other listeners clicked.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Recommendations based on others' clicks miss what music actually does to a listener.",
+  "solution": "Runs tracks through a brain-response research model to get cortical fingerprints, shows them on a 3D brain mesh and recommends songs whose fingerprints are close; listeners can compare taste shapes.",
+  "demo_moment": "Team-described: add a few songs, see the predicted brain response and get matches.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "typescript", "next-js", "three-js", "supabase", "spotify-api"], "ai_patterns": ["ml-model"] },
+  "domains": ["creative-media", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built on a recently released research model.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "trend-wave-timing"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["A fresh research model can anchor a consumer idea if the visual makes it legible."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/sera-lvthzo", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=M60_I4LMtPM" },
+  "sources": [
+    { "url": "https://devpost.com/software/sera-lvthzo", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

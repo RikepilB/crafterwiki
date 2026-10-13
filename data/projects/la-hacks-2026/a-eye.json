@@ -1,0 +1,37 @@
+{
+  "slug": "a-eye",
+  "name": "A-Eye",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Camera glasses that track obstacles and give blind users spoken directions indoors and out.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Everyday navigation cues are visual and unavailable to blind people.",
+  "solution": "YOLOv8 with persistent tracking finds obstacles, a focal-length formula estimates distance, and a server streams audio guidance to the wearer.",
+  "demo_moment": "Team-described: walk toward a chair and a door handle while the glasses describe them.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "opencv", "ultralytics", "fastapi", "mongodb", "elevenlabs", "typescript", "cloudflare"],
+    "ai_patterns": ["computer-vision", "voice-ai"]
+  },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of ElevenLabs” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Tracking IDs suppress flicker before anything is spoken.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Stabilise detections before speaking; silence is better than a wrong warning."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/a-eye-pk9sdw",
+    "repo": "https://github.com/AK20202007/A-Eye",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=m7Ee3nlPFwQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/a-eye-pk9sdw", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

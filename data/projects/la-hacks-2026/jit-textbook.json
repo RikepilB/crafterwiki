@@ -1,0 +1,34 @@
+{
+  "slug": "jit-textbook",
+  "name": "J.I.T.",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Scan a textbook's barcode and talk to a 3D avatar on top of it that answers from that book.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of MongoDB Atlas"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Textbooks are static and intimidating for many students.",
+  "solution": "An AR iOS app spawns an avatar on the scanned book; voice conversation is grounded with retrieval on that textbook's content.",
+  "demo_moment": "Team-described: scan the ISBN, summon the avatar and ask about a chapter.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "arkit", "python", "fastapi", "elevenlabs", "embeddinggemma", "upstash-redis"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of MongoDB Atlas” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The frontend team learned Swift during the event.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "demo-first-wow"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["A physical object that talks back is a memorable demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/j-i-t",
+    "repo": "https://github.com/AntonK0/lahacks26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=5XL32aCzCJg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/j-i-t", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

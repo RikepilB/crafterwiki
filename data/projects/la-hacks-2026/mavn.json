@@ -1,0 +1,32 @@
+{
+  "slug": "mavn",
+  "name": "MAVN",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A voice assistant that finds an in-network doctor and books the appointment by filling the clinic's web form.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Finding and booking a doctor is hard, especially for people with limited mobility or who cannot easily phone clinics.",
+  "solution": "A Tavily-powered provider search ranks options; a headless Playwright agent fills real clinic booking forms; an ElevenLabs voice agent runs the conversation in a mobile app.",
+  "demo_moment": "Team-described: ask by voice for a nearby specialist and watch the booking request submit.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "playwright", "react-native", "expo", "elevenlabs", "tavily", "railway"],
+    "ai_patterns": ["voice-ai", "computer-use", "agent"]
+  },
+  "domains": ["health", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Completes the booking instead of listing options.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Close the loop: the last form fill is the step users want removed."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/mavn", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=rHKdiMtREt0" },
+  "sources": [
+    { "url": "https://devpost.com/software/mavn", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

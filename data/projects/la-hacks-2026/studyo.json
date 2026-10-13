@@ -1,0 +1,37 @@
+{
+  "slug": "studyo",
+  "name": "StudyO",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Turns open tabs, PDFs, lectures and videos into flashcards, quizzes, concept maps and summaries.",
+  "placement": { "status": "track-winner", "awards": ["Cloudinary Company Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Students collect sources in dozens of tabs but rarely turn them into learning.",
+  "solution": "Ingests PDFs, YouTube, web pages, audio and open tabs through an extension, then generates study material, with media handled by Cloudinary.",
+  "demo_moment": "Team-described: ingest a set of tabs and generate a quiz from them.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "clerk", "cloudinary", "mongodb", "elevenlabs", "chrome-extension"],
+    "ai_patterns": ["llm-api", "generative-media", "voice-ai"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cloudinary Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Starts from the tabs students already have open.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "zero-install-channel"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Start from the mess users already have, not a blank workspace."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/studyo-mju34e",
+    "repo": "https://github.com/sudarshan-krishnan/StudyO_LAHacks_2026.git",
+    "demo": "http://studystudio.us",
+    "video": "https://www.youtube.com/watch?v=jQ3Fq21-e_k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/studyo-mju34e", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

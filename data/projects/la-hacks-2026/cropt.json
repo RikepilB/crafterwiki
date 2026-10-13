@@ -1,0 +1,37 @@
+{
+  "slug": "cropt",
+  "name": "Cropt",
+  "hackathon": "la-hacks-2026",
+  "tagline": "An offline, voice-first crop-disease diagnosis app that alerts neighbouring farmers in one tap.",
+  "placement": { "status": "track-winner", "awards": ["Zetic Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Crop disease spreads faster than advice reaches smallholders with low connectivity and literacy.",
+  "solution": "On-device diagnosis from a photo with spoken treatment steps, one-tap alerts to neighbours or WhatsApp groups, a multilingual agent when online and a shared outbreak dashboard.",
+  "demo_moment": "Team-described: photograph a sick leaf offline, hear the treatment and send an alert.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react-native", "expo", "react", "typescript", "supabase", "gemma", "zetic-melange", "elevenlabs", "twilio", "whatsapp"],
+    "ai_patterns": ["computer-vision", "voice-ai", "ml-model"]
+  },
+  "domains": ["agriculture-food", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Zetic Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Designed around low connectivity, literacy and education together.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "zero-install-channel"],
+    "judging_lens": ["impact"],
+    "lessons": ["Audio-first design reaches users text interfaces miss."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/croppers",
+    "repo": "https://github.com/Camillalalala/Cropt",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=2VeyoazaKkI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/croppers", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "autopsy",
+  "name": "Autopsy",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A one-line install that records coding-agent sessions, diagnoses rejected runs and warns the agent before it repeats a mistake.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["3rd Overall", "Cognition Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Coding agents start every run from a clean slate and repeat the same mistakes, such as skipped migrations or drifted types.",
+  "solution": "Records every opencode event into Postgres, classifies rejected runs with deterministic rules, builds a failure graph with vector embeddings and serves a preflight retrieval step to the next run.",
+  "demo_moment": "Team-described: an agent run is rejected, Autopsy explains why, and the next run avoids the mistake.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "sqlalchemy", "postgresql", "pgvector", "next-js", "react", "typescript", "docker", "opencode"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["dev-tools", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “3rd Overall” and “Cognition Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns an agent's rejected runs into memory it consults before the next run.", "basis": "team-stated", "source": 0 },
+      { "claim": "About 165 tests sit behind the one-line installer.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "visible-engineering-depth", "tight-scope-finished"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Give agents a feedback loop from their own failures; judges who use agents recognise the pain at once."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/autopsy-zq5d84",
+    "repo": "https://github.com/balebbae/Autopsy",
+    "demo": "https://autopsy.surf",
+    "video": "https://www.youtube.com/watch?v=2bgq8hvJ32s"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/autopsy-zq5d84", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

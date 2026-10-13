@@ -1,0 +1,32 @@
+{
+  "slug": "gotrail",
+  "name": "GoTrail",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A hiking app that identifies plants offline with an on-device model and turns each hike into a collection.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People prescribed hiking find it boring or intimidating, and trails often lack service.",
+  "solution": "A native iOS app runs a plant-identification model on the phone through ZETIC Melange, logs hikes with stats and a map, and builds a collectible species log.",
+  "demo_moment": "Team-described: point the camera at a plant with no signal and add it to the collection.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swift", "swiftui", "mapkit", "core-location", "onnx", "zetic-melange", "supabase", "sqlite", "figma-make"],
+    "ai_patterns": ["ml-model", "computer-vision"]
+  },
+  "domains": ["health", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works exactly where hikers lose signal.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A collection mechanic everyone knows makes a health habit stick."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/gotrail", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=0ANuoizXoxE" },
+  "sources": [
+    { "url": "https://devpost.com/software/gotrail", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

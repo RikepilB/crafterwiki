@@ -1,0 +1,35 @@
+{
+  "slug": "neighborfridge",
+  "name": "NeighborFridge",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Tracks groceries from receipts, reminds you before they expire and lets neighbours claim the extras.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge", "Best UI/UX"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Groceries spoil in student fridges, wasting money and resources.",
+  "solution": "Receipt OCR lists items and estimates expiry dates, email reminders fire before spoilage, and a local marketplace lets neighbours claim or buy surplus food.",
+  "demo_moment": "Team-described: scan a receipt, get expiry estimates, then post an item to the marketplace.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "tailwind", "django", "python", "sqlite", "aws", "figma-make"], "ai_patterns": ["computer-vision"] },
+  "domains": ["agriculture-food", "climate-sustainability", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” and “Best UI/UX” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Used Figma Make for moodboards and UI planning before coding.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won Best UI/UX as well as the Figma Make prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["tight-scope-finished", "relatable-demo-wrapper"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A coherent visual identity can win design prizes for a simple product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/neighborfridge",
+    "repo": "https://www.github.com/sinaghadimi9081/LaHacks2026",
+    "demo": "https://www.neighborfridge.com/",
+    "video": "https://www.youtube.com/watch?v=NNhaTmYLjwI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/neighborfridge", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

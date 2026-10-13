@@ -1,0 +1,37 @@
+{
+  "slug": "jarvis-proactive",
+  "name": "Jarvis",
+  "hackathon": "la-hacks-2026",
+  "tagline": "A proactive browser extension that briefs you on your inbox, handles meeting requests and acts before you ask.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "AI tools wait to be asked; the team wanted an assistant that already knows the user and acts.",
+  "solution": "A Chrome extension overlay reads Gmail and Calendar, gives briefings, answers or declines meeting requests and writes to the calendar, coordinated by a Python orchestrator of agents on Agentverse.",
+  "demo_moment": "Team-described: open Gmail and get a briefing; a meeting request appears with accept and decline buttons inline.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["javascript", "chrome-extension", "python", "fastapi", "fetch-ai", "agentverse", "gmail-api", "google-calendar-api"],
+    "ai_patterns": ["multi-agent", "llm-api"]
+  },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Track: Agentverse - Search & Discovery of Agents” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Runs in the browser the user already has open.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "zero-install-channel", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["An assistant that acts in the user's existing tools demos better than a new chat window."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/jarvis-eifsyq",
+    "repo": "https://github.com/saigudisa6/jarvis/tree/restaurant-agent",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=cpjTxFlSH58"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/jarvis-eifsyq", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

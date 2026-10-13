@@ -1,0 +1,34 @@
+{
+  "slug": "scrubs",
+  "name": "Scrubs",
+  "hackathon": "la-hacks-2026",
+  "tagline": "An iPhone app that finds and masks patient identifiers in clinical photos before they are shared.",
+  "placement": { "status": "track-winner", "awards": ["Zetic Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Clinicians share photos that contain protected health information, and redacting by hand is tedious.",
+  "solution": "On-device OCR, a PHI classifier and face detection mask names, record numbers, birth dates and faces, then export a clean copy.",
+  "demo_moment": "Team-described: import a photo of a chart and get a redacted version in seconds.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "swiftui", "coreml", "vision"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Zetic Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "No patient data leaves the device.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "tight-scope-finished"],
+    "judging_lens": ["impact"],
+    "lessons": ["A narrow, compliance-driven task makes a crisp on-device demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/scrubs",
+    "repo": "https://github.com/Dvlta/medimask",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=L_9q2m4YNkE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/scrubs", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

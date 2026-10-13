@@ -1,0 +1,37 @@
+{
+  "slug": "autogear",
+  "name": "autoGear",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Recommends the next office-equipment upgrade with an explainable score and live prices.",
+  "placement": { "status": "track-winner", "awards": ["Figma Make Challenge"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "People on a budget upgrade the wrong thing first or face too many options.",
+  "solution": "Captures a desk inventory by lookup or a browser video scan, ranks upgrades with a deterministic formula, explains each with Gemma and pulls current retail prices.",
+  "demo_moment": "Team-described: scan a desk and see ranked upgrades with explanations.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "mongodb", "prisma", "tensorflow-js", "gemma", "clerk"],
+    "ai_patterns": ["computer-vision", "llm-api"]
+  },
+  "domains": ["commerce-retail", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Figma Make Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps ranking deterministic and uses the model only to explain.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "tight-scope-finished"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Separate the scoring from the explanation so the advice is checkable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/autogear",
+    "repo": "https://github.com/Dirtblob/AutoGear",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=RYnkUSRhRUk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/autogear", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

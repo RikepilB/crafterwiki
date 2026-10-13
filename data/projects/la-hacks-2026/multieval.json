@@ -1,0 +1,42 @@
+{
+  "slug": "multieval",
+  "name": "MultiEval",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Measures, compares, debugs and automatically evolves multi-agent orchestration patterns.",
+  "placement": { "status": "track-winner", "awards": ["Track: Agentverse - Search & Discovery of Agents", "Cognition Company Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Multi-agent systems fail through coordination, and tracing tools built for single agents cannot show it.",
+  "solution": "Built on Inspect AI and OpenHands: a graph and Gantt trace viewer for delegation, statistically bounded A/B comparison of harnesses, and a meta-agent loop that proposes, benchmarks and iterates harness variants under a budget.",
+  "demo_moment": "Team-described: a structured-delegation harness lifts pass rate from 0.79 to 0.87 against a baseline, with the lift shown as significant.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "typescript", "react", "vite", "inspect-ai", "openhands", "fetch-ai", "claude", "gemini", "mcp", "pytest"],
+    "ai_patterns": ["multi-agent", "agent", "llm-api"]
+  },
+  "domains": ["agent-infrastructure", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Track: Agentverse - Search & Discovery of Agents” and “Cognition Company Challenge” among 307 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Treats orchestration patterns as something to measure, like model architectures.", "basis": "team-stated", "source": 0 },
+      { "claim": "Reports confidence bounds instead of a single score.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust", "trend-wave-timing"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Statistics on your own eval make an infrastructure demo believable."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/multival",
+    "repo": "https://github.com/AlfredSjoqvist/multieval",
+    "demo": "https://alfredsjoqvist.com/multieval",
+    "video": "https://www.youtube.com/watch?v=__OU7Ftl4EM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/multival", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

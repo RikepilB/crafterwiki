@@ -1,0 +1,37 @@
+{
+  "slug": "oceanops",
+  "name": "OceanOps",
+  "hackathon": "la-hacks-2026",
+  "tagline": "Offline mission control for ocean alkalinity enhancement: plan, simulate and run deployments without unsafe pH spikes.",
+  "placement": { "status": "track-winner", "awards": ["ASUS Company Challenge"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Alkalinity deployments fail and harm marine life if a ship discharges too fast, and ships at sea cannot rely on cloud servers, the team says.",
+  "solution": "Runs locally on edge hardware: ship-traffic and ocean data feed a fluid simulation and route planner, with a local language model and risk analysis in a globe-based mission control.",
+  "demo_moment": "Team-described: plan a route, adjust discharge parameters and see the risk analysis.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "julia", "oceananigans-jl", "react", "typescript", "vite", "mapbox-gl-js", "three-js", "ollama", "gemma", "google-adk"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["climate-sustainability", "earth-observation", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ASUS Company Challenge” among 307 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses a real ocean-physics solver, not only an LLM.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "expert-data-for-everyone"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Pair the local model with real domain physics to make an edge-AI story credible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/oceanops",
+    "repo": "https://github.com/A-Choudhari/LaHacks26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=gyvOeVgc2KM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/oceanops", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://la-hacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
