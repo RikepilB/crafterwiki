@@ -42,11 +42,22 @@ export function buildItems(hackathons, projects) {
         ...(a.why_it_stood_out ?? []).map((w) => w.claim), ...(a.lessons ?? [])].filter(Boolean).join(' '),
     };
   });
+  // Rosters can hold two submissions with the same name; the later one takes its submission URL's last
+  // segment (or a counter) so slug lookups and `similar --to` never resolve to the wrong entry.
+  const used = new Set(items.map((it) => it.slug));
   for (const h of hackathons) {
     for (const e of h.entries ?? []) {
       if (e.project) continue;
+      let slug = `${h.slug}/${slugify(e.name)}`;
+      if (used.has(slug)) {
+        const tail = e.url ? slugify(e.url.split('/').filter(Boolean).pop()) : '';
+        const base = tail ? `${h.slug}/${tail}` : slug;
+        slug = base;
+        for (let n = 2; used.has(slug); n++) slug = `${base}-${n}`;
+      }
+      used.add(slug);
       items.push({
-        kind: 'entry', slug: `${h.slug}/${slugify(e.name)}`, name: e.name, hackathon: h.slug, event: eventLabel(h),
+        kind: 'entry', slug, name: e.name, hackathon: h.slug, event: eventLabel(h),
         year: h.year ?? null, event_kind: h.kind ?? null,
         tagline: e.tagline ?? '', status: e.placement?.status ?? 'unknown',
         rank: e.placement?.rank ?? null, votes: e.placement?.votes ?? null,
