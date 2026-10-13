@@ -1,0 +1,35 @@
+{
+  "slug": "synovia",
+  "name": "Synovia",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Predicts the neurological effects of removing a given brain region before surgery.",
+  "placement": { "status": "track-winner", "awards": ["Best Healthcare Hack [Courtesy of Daylight Health]"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Brain-tumor surgeries have unexpected complications because tissue behaviour is hard to predict, the team says.",
+  "solution": "Given region, coordinates, volume and age, an AI predicts deficits, recovery and risk, with a 3D brain simulation for what-if scenarios.",
+  "demo_moment": "Team-described: select a region and see predicted deficits on a 3D brain.",
+  "build_style": "software-only",
+  "tech": { "stack": ["fastapi", "python", "typescript", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Healthcare Hack [Courtesy of Daylight Health]” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "High-stakes medical framing with a simple input form.", "basis": "team-stated", "source": 0 },
+      { "claim": "Clinical predictions from a weekend model need validation the summary does not show.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "demo-first-wow"],
+    "judging_lens": ["impact"],
+    "lessons": ["Medical what-if tools must state what they cannot predict."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/presurg",
+    "repo": "https://github.com/arishs24/HackPrinceton2025",
+    "demo": "https://synovia.tech/",
+    "video": "https://www.youtube.com/watch?v=ULLWf2mwuHs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/presurg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

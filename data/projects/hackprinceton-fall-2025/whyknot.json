@@ -1,0 +1,34 @@
+{
+  "slug": "whyknot",
+  "name": "WhyKnot",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Shows restaurant owners what dishes sell and at what price near a location, from delivery data.",
+  "placement": { "status": "track-winner", "awards": ["Best .Tech Domain Name by MLH"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Restaurants guess menus and prices when opening or expanding.",
+  "solution": "Transaction data from delivery orders becomes heatmaps and analysis by location, with an AI advisor for menus.",
+  "demo_moment": "Team-described: search a neighbourhood and see top-selling dishes and prices.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "fastapi", "python", "mongodb", "openai", "knot-api"], "ai_patterns": ["llm-api"] },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best .Tech Domain Name by MLH” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns consumer transaction data into owner insight.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["Data-access sponsors reward a clear buyer for the data."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/whyknot",
+    "repo": "https://github.com/shivvyas2/WHYKNOT",
+    "demo": "https://api.why-knot.tech/",
+    "video": "https://www.youtube.com/watch?v=k9Om6UzmQh0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/whyknot", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

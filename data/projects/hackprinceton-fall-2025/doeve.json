@@ -1,0 +1,37 @@
+{
+  "slug": "doeve",
+  "name": "doeve",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Text or voice-message your computer from your phone and an agent does the task, sending progress photos.",
+  "placement": { "status": "track-winner", "awards": ["Exploring Hybrid Intelligence by Photon"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Away from your desk you cannot quickly fetch a file, push a commit or run a script.",
+  "solution": "An iMessage bridge to an orchestration layer that controls the desktop, reports progress with screenshots and accepts interruptions.",
+  "demo_moment": "Team-described: text 'push my latest commit' and receive confirmation.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "node.js", "langgraph", "claude", "elevenlabs", "imessage-sdk", "pyautogui"],
+    "ai_patterns": ["computer-use", "agent", "voice-ai"]
+  },
+  "domains": ["productivity", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Exploring Hybrid Intelligence by Photon” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses the phone's native messaging as the interface.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Remote computer control over chat is a compelling agent demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/do-eve",
+    "repo": "https://github.com/adhvaidhsunny/doeve",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=CKeglGj4Q8A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/do-eve", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "viralwave-ai",
+  "name": "ViralWave.ai",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Finds what is trending across platforms and produces content to ride it.",
+  "placement": { "status": "track-winner", "awards": ["Best Practical AI Innovation by Amazon", "Most Impactful Use of the X API by X"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Creators spend most of their time on trend research and production logistics.",
+  "solution": "Trend intelligence across social platforms feeds AI content generation, including music.",
+  "demo_moment": "Team-described: pick a trend and get a ready-to-post piece.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "python", "typescript", "amazon-nova", "gemini", "grok", "suno", "x-api"], "ai_patterns": ["agent", "generative-media"] },
+  "domains": ["marketing-growth", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Practical AI Innovation by Amazon” and “Most Impactful Use of the X API by X” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Combines several sponsor models in one pipeline.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A creator-economy pitch lands with platform sponsors."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/viralwave-ai",
+    "repo": "https://github.com/rajashekarcs2023/hack-princeton",
+    "demo": "https://x.com/rajashekarphy/status/1987534061749895600?s=20",
+    "video": "https://www.youtube.com/watch?v=leqthTeR-KA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/viralwave-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

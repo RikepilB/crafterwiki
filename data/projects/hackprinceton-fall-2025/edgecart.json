@@ -1,0 +1,43 @@
+{
+  "slug": "edgecart",
+  "name": "edgecart.",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Predicts produce ripeness on store shelves and prices it dynamically to cut food waste.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Best Financial Hack by Capital One", "YC x HackPrinceton Challenge by Y Combinator", "Build on the Knot TransactionLink API by Knot API"],
+    "track": null
+  },
+  "team": { "size": 3, "members": [] },
+  "problem": "Grocery stores waste large amounts of produce with blanket discounts that come too late or too early.",
+  "solution": "Vision models assess ripeness from shelf images and drive personalised discounts at the right moment, with transaction data linking purchases.",
+  "demo_moment": "Team-described: point a camera at bananas and see their discount change.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "flask", "python", "pytorch", "yolov8", "resnet18", "knot-api"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["commerce-retail", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Financial Hack by Capital One” and “YC x HackPrinceton Challenge by Y Combinator” and “Build on the Knot TransactionLink API by Knot API” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won three sponsor prizes including the YC challenge.", "basis": "curator-inference" },
+      { "claim": "Starts small: one produce shelf.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value", "visible-engineering-depth", "tight-scope-finished"],
+    "judging_lens": ["business-potential", "sponsor-api-use"],
+    "lessons": ["Scope to one shelf and show the money saved."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/edgecart",
+    "repo": "https://github.com/AntoDono/edgecart",
+    "demo": "https://edgecart.tech",
+    "video": "https://www.youtube.com/watch?v=BCz4gTGpFI8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/edgecart", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

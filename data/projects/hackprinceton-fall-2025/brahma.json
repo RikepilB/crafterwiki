@@ -1,0 +1,35 @@
+{
+  "slug": "brahma",
+  "name": "Brahma",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Generates genetically accurate synthetic mice as digital twins to reduce animal testing.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Vibe Kanban by Vibe Kanban"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Animal testing in preclinical research is slow, costly and ethically fraught.",
+  "solution": "Links synthetic genomes, predicted phenotypes and simulations into on-demand digital mouse models for researchers and agents, via tool protocols.",
+  "demo_moment": "Team-described: generate a synthetic mouse and run a simulation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "mcp", "dedalus"], "ai_patterns": ["agent", "ml-model"] },
+  "domains": ["health", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Vibe Kanban by Vibe Kanban” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets an ethical problem in research.", "basis": "team-stated", "source": 0 },
+      { "claim": "Biological accuracy of the synthetic data is unverified in the summary.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Ambitious science claims need evidence on the slide."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/brahma",
+    "repo": "https://github.com/mihirchanduka/PrincetonHacks",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=lJFYpb2j-rI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/brahma", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

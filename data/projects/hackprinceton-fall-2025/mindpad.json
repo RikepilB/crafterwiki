@@ -1,0 +1,43 @@
+{
+  "slug": "mindpad",
+  "name": "MindPad",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "A gesture-controlled AI learning canvas that builds flashcards and diagrams as you ask questions.",
+  "placement": {
+    "status": "podium",
+    "awards": ["Best Overall Hack [Courtesy of Amplitude, Anthropic, OpenAI]", "Best Practical AI Innovation by Amazon", "Best Use of Gemini API by MLH"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students juggle slides, notes, videos and AI tabs; passive screen learning fails many, including neurodiverse or physically limited learners.",
+  "solution": "A canvas controlled by hand gestures tracked from the webcam, with agents that generate flashcards, diagrams and explanations from questions.",
+  "demo_moment": "Team-described: gesture to create a diagram and turn it into flashcards.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "typescript", "mediapipe", "opencv", "openai-agents-sdk", "gemini"], "ai_patterns": ["agent", "computer-vision", "llm-api"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Overall Hack [Courtesy of Amplitude, Anthropic, OpenAI]” and “Best Practical AI Innovation by Amazon” and “Best Use of Gemini API by MLH” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Frames learning around asking good questions.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won Best Overall plus two AI prizes.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "human-stakes"],
+    "judging_lens": ["originality", "challenge-relevance"],
+    "lessons": ["Gesture input makes an AI study tool feel new in the room."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mindpad",
+    "repo": "https://github.com/krishgolcha/MindPad",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=guNkt8rV9Ao"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mindpad", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

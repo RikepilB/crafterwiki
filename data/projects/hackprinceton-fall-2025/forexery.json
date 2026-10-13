@@ -1,0 +1,29 @@
+{
+  "slug": "forexery",
+  "name": "Forexery",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "A reinforcement-learning agent that trades USD/JPY using news sentiment plus technical signals.",
+  "placement": { "status": "track-winner", "awards": ["Best Predictive Intelligence by Chestnut Forty"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Most retail forex traders lose money; technical indicators miss why markets move.",
+  "solution": "Trains an RL agent in a trading environment combining sentiment from news with technical features.",
+  "demo_moment": "Team-described: compare the agent's returns against buy-and-hold.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "gymnasium", "pandas", "numpy", "tensorboard", "dedalus"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Predictive Intelligence by Chestnut Forty” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines why (news) and what (price) in one model.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Show training curves and a baseline when claiming trading results."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/forexery", "repo": "https://github.com/codejvn/forexery", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/forexery", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
