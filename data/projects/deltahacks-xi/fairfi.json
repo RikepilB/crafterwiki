@@ -1,0 +1,29 @@
+{
+  "slug": "fairfi",
+  "name": "FairFi - A tool to reduce bias in financial services",
+  "hackathon": "deltahacks-xi",
+  "tagline": "Lets financial companies test their decisions for racial bias.",
+  "placement": { "status": "track-winner", "awards": ["NSBE X P&G Equity Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Racial bias in lending and credit decisions limits financial inclusion for Black communities, the team argues.",
+  "solution": "A dashboard for companies to test operations for bias, with AI analysis and alerts.",
+  "demo_moment": "Team-described: run a lending dataset through the bias check.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next", "react", "node.js", "express", "cohere", "twilio"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "legal-access"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “NSBE X P&G Equity Challenge” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets institutions rather than individuals.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Equity challenges reward tools aimed at the system that causes harm."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/fairfi", "repo": "https://github.com/fujacob/fairfi", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/fairfi", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

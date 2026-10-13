@@ -1,0 +1,38 @@
+{
+  "slug": "consensus-capital",
+  "name": "Consensus Capital",
+  "hackathon": "mchacks-13",
+  "tagline": "Links prediction-market probabilities to your stock portfolio so you see event risk.",
+  "placement": { "status": "track-winner", "awards": ["Best AI project that uses the Gumloop API", "Best Use of Auth0"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Traders watch charts and earnings but miss probabilistic signals from prediction markets.",
+  "solution": "Ingests the most active prediction markets and maps their probabilities to the assets in a portfolio.",
+  "demo_moment": "Team-described: open your portfolio and see which events it is exposed to.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "fastapi", "springboot", "mongodb", "gemini", "gumloop", "auth0", "docker"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best AI project that uses the Gumloop API” and “Best Use of Auth0” among 127 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Connects two data worlds traders keep separate.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Bridging two familiar data sources can be novel enough."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/consensuscapital",
+    "repo": "https://github.com/nic5694/ConsensusCapital",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ZAkV4nfzjxg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/consensuscapital", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "melanone",
+  "name": "MelaNone",
+  "hackathon": "nwhacks-2026",
+  "tagline": "A limb-scanning chamber that builds a 3D model of arm or leg skin and flags spots that may be melanoma.",
+  "placement": { "status": "track-winner", "awards": ["[Telus] The Edge of Innovation"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Melanoma is caught late; the team asked why airport-scanner-style imaging is not used for skin.",
+  "solution": "Cameras capture a limb from many angles, stitch a 3D model, and a trained model classifies detected spots as likely benign or concerning, with a summary interface.",
+  "demo_moment": "Team-described: place an arm in the chamber and see flagged spots on the 3D model.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "pytorch", "c", "flask", "react", "solidworks"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[Telus] The Edge of Innovation” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Borrowed the idea from an airport body scanner.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "physical-artifact", "visible-engineering-depth"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["Medical demos need clear limits: screening support, not diagnosis."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/melanone",
+    "repo": "https://github.com/jasonkwok475/MelaNone",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=z7EJEKKdNtc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/melanone", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

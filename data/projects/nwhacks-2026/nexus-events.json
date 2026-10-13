@@ -1,0 +1,34 @@
+{
+  "slug": "nexus-events",
+  "name": "Nexus",
+  "hackathon": "nwhacks-2026",
+  "tagline": "One agent workflow that plans and runs every part of a student club event.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Vultr"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Running events spans departments, apps and asynchronous tasks.",
+  "solution": "An AI workflow that understands event components, timelines and responsibilities and acts on them, with a dashboard and chat.",
+  "demo_moment": "Team-described: ask for an event plan and see tasks assigned across teams.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "fastapi", "langchain", "langgraph", "mongodb", "redis", "vultr"], "ai_patterns": ["agent"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Vultr” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built by members of the club it serves, with their testimonials.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Real users' quotes from your own community add credibility."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nexus-g349ko",
+    "repo": null,
+    "demo": "https://nexusapp.tech/",
+    "video": "https://www.youtube.com/watch?v=TmAf5cKU6G4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nexus-g349ko", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

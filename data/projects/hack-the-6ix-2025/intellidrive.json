@@ -1,0 +1,34 @@
+{
+  "slug": "intellidrive",
+  "name": "IntelliDrive",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Lets an LLM drive any hardware through a few exposed endpoints, shown with an RC car.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Hack the 6ix: 2nd Place"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Building autonomous devices needs custom vision models and domain-specific training, which blocks beginners.",
+  "solution": "Exposes simple movement endpoints and camera input to an LLM through a tool protocol; you state a goal in plain language and the model drives the car toward it, on a real-time OS.",
+  "demo_moment": "Team-described: ask the car to find something healthy to eat and watch it drive there.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "flask", "nextjs", "gemini", "mcp", "qnx"], "ai_patterns": ["agent", "llm-api", "computer-vision"] },
+  "domains": ["robotics-hardware", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hack the 6ix: 2nd Place” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Replaces custom computer-vision training with a general model and tools.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "physical-artifact", "demo-first-wow", "trend-wave-timing"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Expose a robot as tools and let the model plan; the demo shows agents in the physical world."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/intelli-drive",
+    "repo": "https://github.com/jindal013/intellisense",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=VSkgZd0razA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/intelli-drive", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

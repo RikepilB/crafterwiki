@@ -1,0 +1,35 @@
+{
+  "slug": "wateryourdoin",
+  "name": "WaterYouDoin",
+  "hackathon": "mchacks-13",
+  "tagline": "A browser extension that checks prompts locally and redirects, blocks or nudges low-value AI requests.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Place"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Developers send AI assistants requests that do not need AI, such as definitions or repeated prompts.",
+  "solution": "Classifies prompts on the device before sending: factual ones go to a normal search engine, low-value ones are blocked, and reasoning-heavy ones get a nudge to think first, with a visual summary.",
+  "demo_moment": "Team-described: ask a definition and get sent to a search engine instead.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "javascript", "node.js", "vite", "vitest"], "ai_patterns": ["ml-model"] },
+  "domains": ["climate-sustainability", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Place” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "All decisions happen locally, without judging the user.", "basis": "team-stated", "source": 0 },
+      { "claim": "Placed second with no LLM in the loop.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach", "tight-scope-finished", "trend-wave-timing"],
+    "judging_lens": ["originality", "impact"],
+    "lessons": ["An anti-AI-waste tool that itself avoids AI is a memorable twist."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/wateryourdoin",
+    "repo": "https://github.com/memoud0/WaterYouDoin",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=a59GGgiktuA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/wateryourdoin", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

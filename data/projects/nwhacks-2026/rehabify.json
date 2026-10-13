@@ -1,0 +1,43 @@
+{
+  "slug": "rehabify",
+  "name": "Rehabify",
+  "hackathon": "nwhacks-2026",
+  "tagline": "A webcam physiotherapy coach that corrects exercise form by voice between appointments and reports to the therapist.",
+  "placement": { "status": "finalist", "awards": ["nwHacks 2026 Finalists"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Patients do home exercises unsupervised and unsure of their form, and therapists cannot see whether they are done; the builder's own herniated disc meant high bills and long waits.",
+  "solution": "Pose tracking checks form in real time, a voice agent gives corrections, and a dashboard shares progress, built with attention to security and privacy.",
+  "demo_moment": "Team-described: do a squat wrong and hear a correction; do it right and hear it affirmed.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "mediapipe", "vapi", "deepgram", "elevenlabs", "neon", "vercel"],
+    "ai_patterns": ["computer-vision", "voice-ai"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “nwHacks 2026 Finalists” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      {
+        "claim": "The team's page states it placed first overall; the organizer lists it among three finalists.",
+        "basis": "team-stated",
+        "source": 0
+      },
+      { "claim": "A first-person story with real costs and wait times.", "basis": "team-stated", "source": 0 },
+      { "claim": "Focuses on the neglected time between appointments.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity", "live-real-world-proof"],
+    "judging_lens": ["impact", "challenge-relevance"],
+    "lessons": ["Target the gap between professional visits, where patients are alone."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/rehabify-y2f5mu",
+    "repo": "https://github.com/obro79/Rehabify",
+    "demo": "http://rehabify.tech",
+    "video": "https://www.youtube.com/watch?v=gXh_Ct_AQGU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/rehabify-y2f5mu", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

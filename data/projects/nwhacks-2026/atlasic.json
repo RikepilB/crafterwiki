@@ -1,0 +1,34 @@
+{
+  "slug": "atlasic",
+  "name": "Atlasic",
+  "hackathon": "nwhacks-2026",
+  "tagline": "A VS Code extension that maps a codebase's dependencies as a navigable graph with heatmaps, search and ticket context.",
+  "placement": { "status": "finalist", "awards": ["nwHacks 2026 Finalists"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "New developers struggle to track a codebase's dependencies.",
+  "solution": "Builds a dependency graph inside the editor, highlights the most depended-on files, searches nodes, reviews diffs and pulls context from tickets for debugging.",
+  "demo_moment": "Team-described: open the graph, search a module and see what depends on it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["rust", "typescript", "gemini", "vscode-api"], "ai_patterns": ["llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “nwHacks 2026 Finalists” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A two-person team reached the finals with a Rust-backed developer tool.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "expert-data-for-everyone"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Developer tools shine when the demo makes structure visible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/atlasic",
+    "repo": null,
+    "demo": "https://marketplace.visualstudio.com/items?itemName=atlasic.atlasic",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/atlasic", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

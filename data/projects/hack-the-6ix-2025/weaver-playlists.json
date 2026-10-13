@@ -1,0 +1,34 @@
+{
+  "slug": "weaver-playlists",
+  "name": "Weaver",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Analyses your videos and builds a matching Spotify playlist for each moment of your day.",
+  "placement": { "status": "track-winner", "awards": ["Hack the 6ix x TKS: Best Beginner Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People want soundtracks that fit the mood of their moments.",
+  "solution": "Reads uploaded videos for mood and setting and curates a linked playlist.",
+  "demo_moment": "Team-described: upload a park walk and get a playlist that fits it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "typescript", "tailwind"], "ai_patterns": ["llm-api"] },
+  "domains": ["creative-media", "memory-journaling"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hack the 6ix x TKS: Best Beginner Hack” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team finished a clear upload-to-playlist flow.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["one-sentence-clarity", "tight-scope-finished"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["One input, one delightful output is a strong beginner scope."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/weaver-91liha",
+    "repo": "https://github.com/anthonytoyco/weaver",
+    "demo": "https://weaver-psi.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=4Rr-jFURoUA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/weaver-91liha", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

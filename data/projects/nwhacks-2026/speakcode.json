@@ -1,0 +1,29 @@
+{
+  "slug": "speakcode",
+  "name": "SpeakCode",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Interview practice that scores how you explain your code, not just whether it passes.",
+  "placement": { "status": "finalist", "awards": ["nwHacks 2026 Finalists"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Coding-practice platforms ignore the verbal reasoning that interviews actually assess.",
+  "solution": "A multimodal practice platform that records your explanation while you code and evaluates logic articulation and technical clarity alongside the solution.",
+  "demo_moment": "Team-described: solve a problem aloud and get feedback on your explanation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["node.js", "passport-js"], "ai_patterns": ["voice-ai", "llm-scoring"] },
+  "domains": ["careers-hr", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “nwHacks 2026 Finalists” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Names a specific gap ('communication gap') in practice platforms.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "one-sentence-clarity"],
+    "judging_lens": ["challenge-relevance"],
+    "lessons": ["Find the part of a familiar task that existing tools ignore."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/speakcode-mxv98c", "repo": "https://github.com/armanchinai/nwHacks2026", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/speakcode-mxv98c", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "lookback",
+  "name": "LookBack",
+  "hackathon": "mchacks-13",
+  "tagline": "Smart glasses that recognise people you meet and whisper context to start a conversation.",
+  "placement": { "status": "track-winner", "awards": ["Chaotic Evil"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "In social settings the hard part is not knowing anything about the person in front of you.",
+  "solution": "Glasses connected to an app identify people in real time and summarise names, shared interests and mutual connections.",
+  "demo_moment": "Team-described: look at someone and see a summary of who they are.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["swift", "flask", "python", "gemini"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Chaotic Evil” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the 'Chaotic Evil' prize, which suits face recognition of strangers.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "physical-artifact"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Joke categories can reward projects that are deliberately unsettling."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lookback-n8eap4",
+    "repo": "https://github.com/vladmateirusu/McHacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=9kfAJCEl5Mo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lookback-n8eap4", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
