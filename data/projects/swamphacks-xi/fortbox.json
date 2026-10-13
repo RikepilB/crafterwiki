@@ -1,0 +1,34 @@
+{
+  "slug": "fortbox",
+  "name": "FortBox",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A competitive 1v1 Roblox building-battle game with ranked matchmaking.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of MongoDB Atlas"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "The team wanted a fast building-combat game on Roblox.",
+  "solution": "Grid building with three materials, editing, turbo placement and ELO-ranked matchmaking with stored player data.",
+  "demo_moment": "Team-described: build a fort and battle an opponent.",
+  "build_style": "software-only",
+  "tech": { "stack": ["lua", "roblox", "mongodb", "gemini", "elevenlabs", "digitalocean"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of MongoDB Atlas” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Stores ranking data in the sponsor's database.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A familiar game mechanic needs depth (ranking, materials) to stand out."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fortbox",
+    "repo": "https://github.com/matheusmaldaner/FortBox",
+    "demo": "https://www.roblox.com/games/103903599302811/Swamp-Duels#!/about",
+    "video": "https://www.youtube.com/watch?v=CsLv9LyKwVI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fortbox", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

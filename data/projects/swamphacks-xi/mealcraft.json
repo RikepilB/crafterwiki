@@ -1,0 +1,38 @@
+{
+  "slug": "mealcraft",
+  "name": "MEALCRAFT",
+  "hackathon": "swamphacks-xi",
+  "tagline": "Photograph your fridge and get five recipes with nutrition, in a blocky game-style interface.",
+  "placement": { "status": "track-winner", "awards": ["Best Everyday Life & Wellbeing [Human-Centered Design] Project"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People give up on cooking with what they have and waste food.",
+  "solution": "Gemini vision identifies ingredients and generates recipes with steps and nutrition, presented in a game-inspired UI.",
+  "demo_moment": "Team-described: upload a fridge photo and watch recipes get 'crafted'.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "tailwind", "node-js", "gemini", "openrouter"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["agriculture-food", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Everyday Life & Wellbeing [Human-Centered Design] Project” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "The game styling makes planning feel playful.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A familiar visual style turns a chore into play."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mealcraft",
+    "repo": "https://github.com/Eric-Zhang-Developer/mealcraft",
+    "demo": "https://mealcraftai.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=cwvz4r_jgLA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mealcraft", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

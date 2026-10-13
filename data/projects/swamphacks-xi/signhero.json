@@ -1,0 +1,39 @@
+{
+  "slug": "signhero",
+  "name": "SignHero",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A rhythm game that teaches ASL fingerspelling: sign the letters on the beat and the webcam scores you.",
+  "placement": { "status": "podium", "awards": ["Best Overall Sponsored By Vobile (1st, 2nd, & 3rd Place)", "Best Game Design Project"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Millions of people are deaf or hard of hearing, yet few hearing people learn sign language, the team says.",
+  "solution": "MediaPipe hand tracking recognises fingerspelled letters in real time across a music-highway mode, training and timed tests and an arcade reflex game.",
+  "demo_moment": "Team-described: sign letters along a scrolling song chart.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "tailwind", "mongodb", "mediapipe", "opencv"], "ai_patterns": ["computer-vision"] },
+  "domains": ["accessibility", "education", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Overall Sponsored By Vobile (1st, 2nd, & 3rd Place)” and “Best Game Design Project” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Borrows a famous rhythm-game format to make practice fun.", "basis": "team-stated", "source": 0 },
+      { "claim": "Placed in Best Overall and won Best Game Design.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job", "demo-first-wow"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["A game loop people already love makes repetitive practice stick."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/signhero",
+    "repo": "https://github.com/MsMarion/ASL-Fun-Training",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ZX6OOWAt5-U"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/signhero", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

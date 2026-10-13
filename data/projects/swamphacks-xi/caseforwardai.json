@@ -1,0 +1,34 @@
+{
+  "slug": "caseforwardai",
+  "name": "CaseForwardAI",
+  "hackathon": "swamphacks-xi",
+  "tagline": "Organises personal-injury case documents, tracks deadlines and drafts client updates for human approval.",
+  "placement": { "status": "track-winner", "awards": ["Tender for Lawyers Sponsored By Morgan & Morgan"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Attorneys handle hundreds of records per case with scattered details and strict deadlines.",
+  "solution": "Analyses case documents into a dashboard, flags deadlines and gaps, and an assistant drafts emails that a person confirms before sending.",
+  "demo_moment": "Team-described: open a case and approve a drafted client update.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "tailwind", "mongodb", "gemini", "auth0", "cloudflare"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["legal-access"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Tender for Lawyers Sponsored By Morgan & Morgan” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps a human confirmation before actions.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use", "human-oversight"],
+    "lessons": ["Answer the sponsor's workflow brief and keep the lawyer in control."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/caseforwardai",
+    "repo": "https://github.com/kofki/CaseForwardAI",
+    "demo": "https://case-forward-ai.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/caseforwardai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

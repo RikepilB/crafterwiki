@@ -1,0 +1,37 @@
+{
+  "slug": "restory",
+  "name": "ReStory",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A wearable that recognises the people you talk to by face and voice and remembers what each conversation was about.",
+  "placement": { "status": "podium", "awards": ["Best Overall Sponsored By Vobile (1st, 2nd, & 3rd Place)"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People forget who they met and what was said.",
+  "solution": "Captures face and voice embeddings to identify each contact, separates speakers in real time while isolating the wearer's voice, transcribes, and stores memories per person.",
+  "demo_moment": "Team-described: the wearable identifies a returning contact and recalls the last talk.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["python", "pytorch", "raspberry-pi", "fastapi", "whisperx", "speechbrain", "opencv", "chromadb", "gemini", "openrouter"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api", "ml-model"]
+  },
+  "domains": ["memory-journaling", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Overall Sponsored By Vobile (1st, 2nd, & 3rd Place)” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Fuses face and voice signatures instead of relying on one.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Combining two weak signals makes identification robust enough to demo."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/restory",
+    "repo": "https://github.com/retromonos/SwampHacks11FIH",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=en1dfKUXFkk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/restory", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

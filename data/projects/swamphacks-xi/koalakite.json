@@ -1,0 +1,34 @@
+{
+  "slug": "koalakite",
+  "name": "KoalaKite",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A browser extension that screenshots periodically and alerts parents when AI classifies content as harmful.",
+  "placement": { "status": "track-winner", "awards": ["GitHub: “Ship It” — Best Use of GitHub"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Young people are increasingly exposed to harmful content online.",
+  "solution": "Captures the active tab every few seconds and classifies it with Gemini vision into safety categories, notifying parents.",
+  "demo_moment": "Team-described: open an unsafe page and see a parent alert.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "html", "css", "gemini", "chrome-extension"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["security-networking", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “GitHub: “Ship It” — Best Use of GitHub” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won by showing disciplined GitHub practice.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["complete-submission-package"],
+    "judging_lens": ["engineering-practice"],
+    "lessons": ["Process prizes reward issues, pull requests and releases, not features."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/koalakite",
+    "repo": "https://github.com/RJ-Tabelon/SwamphacksXI",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=_xC7PKQ3snE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/koalakite", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

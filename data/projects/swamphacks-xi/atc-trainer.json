@@ -1,0 +1,34 @@
+{
+  "slug": "atc-trainer",
+  "name": "ATC-Trainer",
+  "hackathon": "swamphacks-xi",
+  "tagline": "An air-traffic-control game where you direct aircraft by voice and AI pilots answer.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Aviation careers have high costs to entry; radio practice is hard to get.",
+  "solution": "A Godot simulation of an airport where the player issues official voice commands from gate to takeoff and landing, with AI-generated pilot replies.",
+  "demo_moment": "Team-described: clear a plane for takeoff by voice.",
+  "build_style": "software-only",
+  "tech": { "stack": ["godot", "gdscript", "python", "websockets", "gemini", "elevenlabs"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["education", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of ElevenLabs” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Free practice for an expensive skill.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse", "familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Voice AI fits simulations of jobs done by voice."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/atc-trainer",
+    "repo": "https://github.com/lucasmcclean/atc-view",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=itYhjP4_7xo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/atc-trainer", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

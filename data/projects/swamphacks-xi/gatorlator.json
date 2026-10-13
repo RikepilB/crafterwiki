@@ -1,0 +1,34 @@
+{
+  "slug": "gatorlator",
+  "name": "gatorlator",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A browser extension that translates lecture audio live with subtitles and spoken output.",
+  "placement": { "status": "track-winner", "awards": ["Best Education, Accessibility, & Social Impact Project"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "International students struggle with lectures and documents in a second language.",
+  "solution": "Captures browser audio, translates it in real time, and plays it back as subtitles and synthetic speech.",
+  "demo_moment": "Team-described: play a lecture and read translated subtitles.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "html", "css", "deepl", "gemini", "elevenlabs", "chrome-extension"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Education, Accessibility, & Social Impact Project” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built for friends who rely on chatbots to translate course material.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Live beats after-the-fact: translate while the lecture plays."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/live-translation-extension",
+    "repo": "https://github.com/suupreme/gatorlator",
+    "demo": "https://suupreme.github.io/gatorlator/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/live-translation-extension", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

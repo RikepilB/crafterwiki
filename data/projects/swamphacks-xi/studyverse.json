@@ -1,0 +1,34 @@
+{
+  "slug": "studyverse",
+  "name": "StudyVerse",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A multiplayer pixel campus where students walk around, enter buildings and study together over voice.",
+  "placement": { "status": "track-winner", "awards": ["Best Creative Media"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Remote studying is isolating.",
+  "solution": "A real-time multiplayer world modelled on the campus with chat, location-based voice rooms in buildings, character choice and an in-game phone.",
+  "demo_moment": "Team-described: walk into a building and join its voice room.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "tailwind", "supabase"], "ai_patterns": ["none"] },
+  "domains": ["education", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Creative Media” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hand-drawn map art of the real campus.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Hand-made art wins creative-media prizes."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/studyverse-mxbws8",
+    "repo": "https://github.com/dshal20/StudyVerse",
+    "demo": "https://swamphacks-xi-project.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=IeFr21esCQA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/studyverse-mxbws8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

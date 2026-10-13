@@ -1,0 +1,35 @@
+{
+  "slug": "offtrails",
+  "name": "OffTrails",
+  "hackathon": "swamphacks-xi",
+  "tagline": "Plans off-trail hiking routes from elevation and satellite data and exports them as GPX.",
+  "placement": { "status": "podium", "awards": ["Best Overall Sponsored By Vobile (1st, 2nd, & 3rd Place)"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Cross-country hiking needs careful planning; one miscalculation can be dangerous.",
+  "solution": "Combines USGS topography with Sentinel-2 water and vegetation data and runs a modified A* search between chosen points, showing the route and exporting it.",
+  "demo_moment": "Team-described: pick two points and get a downloadable route.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "rasterio", "javascript", "leaflet", "openstreetmap"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Overall Sponsored By Vobile (1st, 2nd, & 3rd Place)” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses public scientific datasets for a personal plan.", "basis": "team-stated", "source": 0 },
+      { "claim": "A two-person team placed in Best Overall.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Classic algorithms on real public data can beat an AI wrapper."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/offtrails",
+    "repo": "https://github.com/blohse8/OffTrails",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=tSBi2MmT3mo"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/offtrails", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "pocket-money",
+  "name": "Pocket Money",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A budgeting app with saving goals and product scanning to log spending.",
+  "placement": { "status": "track-winner", "awards": ["Hidden Challenge: Least Vibecoded Project - By CISE Professor"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Young adults buy on impulse.",
+  "solution": "A React Native app with a finance questionnaire, editable budget dashboard and barcode scanning for groceries.",
+  "demo_moment": "Team-described: scan an item and see it added to the budget.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "typescript", "supabase", "gemini", "figma"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Hidden Challenge: Least Vibecoded Project - By CISE Professor” among 112 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won a professor's prize for least AI-generated code.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["tight-scope-finished"],
+    "judging_lens": ["engineering-practice"],
+    "lessons": ["Hand-written, clean code can be its own award."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pocket-money-bhrtio",
+    "repo": "https://github.com/anduytran/pocketmoney",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=6WEqFkGyyqc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pocket-money-bhrtio", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

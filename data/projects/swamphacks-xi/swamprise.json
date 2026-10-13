@@ -1,0 +1,34 @@
+{
+  "slug": "swamprise",
+  "name": "SwampRise (Bus Alarm)",
+  "hackathon": "swamphacks-xi",
+  "tagline": "An alarm clock that watches live bus tracking and moves your wake-up time when the bus runs late.",
+  "placement": { "status": "track-winner", "awards": ["Best Integration of Hardware"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Buses are early or late, so people either rush or wait.",
+  "solution": "An ESP32 clock with a display syncs with the city's live bus data and adjusts the alarm from your stop, destination and arrival time.",
+  "demo_moment": "Team-described: a delayed bus pushes the alarm later.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "c++", "freertos", "esp-idf", "html", "javascript"], "ai_patterns": ["none"] },
+  "domains": ["robotics-hardware", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Integration of Hardware” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "One goal: maximise sleep without missing the bus.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "place-based-specificity", "one-sentence-clarity"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Local live data plus a simple device makes a sharp hardware hack."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/swamp-rise",
+    "repo": "https://github.com/ethantayl/SwampRise",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=9dNYDrCkIwc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/swamp-rise", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

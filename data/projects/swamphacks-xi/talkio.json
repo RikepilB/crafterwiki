@@ -1,0 +1,37 @@
+{
+  "slug": "talkio",
+  "name": "Talkio",
+  "hackathon": "swamphacks-xi",
+  "tagline": "Analyses recorded sales calls after they end and turns them into structured insights and coaching.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of DigitalOcean"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Firms review sales calls one at a time.",
+  "solution": "Calls run through Twilio; recordings and transcripts reach a backend by webhook for AI analysis; a dashboard and training playground follow.",
+  "demo_moment": "Team-described: finish a call and see the analysis appear.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "tailwind", "mongodb", "twilio", "gemini", "elevenlabs", "digitalocean"],
+    "ai_patterns": ["llm-api", "voice-ai"]
+  },
+  "domains": ["marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of DigitalOcean” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Deployed on the sponsor's cloud.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Infrastructure prizes reward a real deployment."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/talkio",
+    "repo": "https://github.com/Ackberry/swamp-hacks",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=mKsc13_PEfc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/talkio", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

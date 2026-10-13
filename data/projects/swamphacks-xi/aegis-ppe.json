@@ -1,0 +1,32 @@
+{
+  "slug": "aegis-ppe",
+  "name": "Aegis",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A badge-and-camera checkpoint that checks workers are wearing required safety gear before entry.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Managers and teaching assistants must check safety equipment by hand.",
+  "solution": "Workers scan a badge or enter a PIN; the camera checks for glasses, gloves or helmets and logs compliance on an admin dashboard.",
+  "demo_moment": "Team-described: step up without gloves and get flagged.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "node-js", "express", "flask", "python", "opencv", "mongodb", "gemini"],
+    "ai_patterns": ["computer-vision", "llm-api"]
+  },
+  "domains": ["robotics-hardware", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Hack” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team built hardware and software together.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "one-sentence-clarity"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["A clear physical checkpoint is an easy demo for a first hackathon."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/aegis-axf8et", "repo": "https://github.com/AndrewFesenko/SwampHacksXI", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/aegis-axf8et", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

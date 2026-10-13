@@ -1,0 +1,29 @@
+{
+  "slug": "nova-crypto-payments",
+  "name": "Nova",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A simple dashboard for businesses to invoice and accept cryptocurrency payments.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Solana"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Crypto payment tools are expensive and complicated for businesses.",
+  "solution": "A full-stack app for invoices, payment tracking and transaction history on Solana.",
+  "demo_moment": "Team-described: create an invoice and watch its status update.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "node-js", "express", "mongodb", "solana"], "ai_patterns": ["none"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Solana” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hides blockchain complexity behind familiar invoicing.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Wrap new rails in an old workflow."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/nova-ody7lm", "repo": null, "demo": "https://nova-sand-iota.vercel.app/", "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/nova-ody7lm", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

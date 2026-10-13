@@ -1,0 +1,34 @@
+{
+  "slug": "explainable",
+  "name": "Explainable",
+  "hackathon": "swamphacks-xi",
+  "tagline": "Voiced AI tutors for younger and older students that talk through problems conversationally.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Gemini API"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Two online tutors could not be everywhere their students needed them.",
+  "solution": "Two assistants named after the university mascots tutor different age groups, streaming Gemini explanations with ElevenLabs voices.",
+  "demo_moment": "Team-described: ask a question and hear the tutor explain.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "flask", "python", "gemini", "elevenlabs", "redis", "twilio"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Gemini API” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Separates tutors by age so tone fits the learner.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Fit the voice and tone to the learner's age."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/explainable",
+    "repo": "https://github.com/eren-s-chang/explainable",
+    "demo": "https://explainable-mu.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=ybkRKNvf2_A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/explainable", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

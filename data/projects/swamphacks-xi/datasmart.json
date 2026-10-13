@@ -1,0 +1,37 @@
+{
+  "slug": "datasmart",
+  "name": "DataSmart",
+  "hackathon": "swamphacks-xi",
+  "tagline": "A dataset marketplace where buyers query a small sample before paying for the full data.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Snowflake API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Data buyers cannot judge a dataset's usefulness before purchase.",
+  "solution": "Producers list datasets with quality scores; consumers run cheap queries on a 5% sample, with RAG search and AI query chat, before buying.",
+  "demo_moment": "Team-described: search for a dataset and test it with a query.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "react", "typescript", "tailwind", "duckdb", "polars", "snowflake", "gemini", "solana"],
+    "ai_patterns": ["llm-api"]
+  },
+  "domains": ["data-extraction", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Snowflake API” among 112 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Try-before-you-buy for data.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Lower the buyer's risk with a sample."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/datamart-c0j52n",
+    "repo": "https://github.com/NSang22/swamphacks26",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=UByUTFP-0zY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/datamart-c0j52n", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://swamphacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
