@@ -4,6 +4,7 @@ Newest first. Full records in `docs/adr/`.
 
 | Date | ADR | Decision |
 |---|---|---|
+| 2026-10-13 | [ADR-012](adr/ADR-012-roster-cards-on-demand.md) | `/projects/` ships default references only; roster cards load on demand from a static `/projects/roster/` fragment, with a visible incomplete or retry state if it fails. |
 | 2026-10-13 | — | Event guides at `/events/` for upcoming events with a `guide` block (WaterAid Water Challenge, NASA Space Apps 2026). New event kind `nonprofit-challenge` and lenses `human-oversight`, `cost-sustainability`; per-track criteria weights and challenge briefs are validated. Team identities stay out of public event data. |
 | 2026-10-12 | — | Owner decisions: Fraunces and Source Sans 3 (self-hosted, OFL) replace Space Grotesk and Geologica; the landing hero keeps its layout and the "Crimson Veil" aura colours (dark and light) with a constellation sky on top; the selected references under the Space Apps feature come from other events; English is the default language (Spanish only when chosen). |
 | 2026-09-18 | [ADR-011](adr/ADR-011-chartjs-for-patterns-charts.md) | Chart.js 4.5.1 (pinned, `web/` only) draws the `/patterns/` charts; numbers and Wilson 95% ranges are computed at build time; every chart has a table view. |
