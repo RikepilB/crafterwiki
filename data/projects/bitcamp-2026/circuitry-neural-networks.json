@@ -1,0 +1,34 @@
+{
+  "slug": "circuitry-neural-networks",
+  "name": "Circuitry with Neural Networks",
+  "hackathon": "bitcamp-2026",
+  "tagline": "An LED neural network that lights up neurons as it classifies a drawn digit.",
+  "placement": { "status": "track-winner", "awards": ["Most LIT Hack - Alumni Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Neural networks are hard to picture for beginners.",
+  "solution": "Arduino-driven LEDs show activated neurons by layer for a digit drawn on screen, with hover tracing between layers.",
+  "demo_moment": "Team-described: draw a 7 and watch the LEDs light.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "javascript", "html", "css"], "ai_patterns": ["ml-model"] },
+  "domains": ["education", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most LIT Hack - Alumni Prize” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the prize for most LEDs.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "expert-data-for-everyone"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Make an invisible process physical."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/circuitry-with-neural-networks",
+    "repo": "https://github.com/ahamme2330/Neural-Number-Recognizer",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/circuitry-with-neural-networks", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

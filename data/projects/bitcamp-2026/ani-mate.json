@@ -1,0 +1,37 @@
+{
+  "slug": "ani-mate",
+  "name": "ani.mate",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Turns uploaded study documents into narrated explainer animations with subagents.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Static documents are hard to learn from.",
+  "solution": "Subagents parse the document, outline it, write narration and generate Manim animations with voice.",
+  "demo_moment": "Team-described: upload slides and get an explainer video.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "gemini", "claude", "elevenlabs", "firebase", "auth0"],
+    "ai_patterns": ["multi-agent", "generative-media", "voice-ai"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses subagents with distinct roles.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Split generation into roles for quality."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ani-mate",
+    "repo": "https://github.com/zlyuan9/ani.mate/tree/main",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=hPwpqFpdsEk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ani-mate", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

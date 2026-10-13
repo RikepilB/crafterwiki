@@ -1,0 +1,34 @@
+{
+  "slug": "recall-dementia",
+  "name": "Recall",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Helps people with dementia recognise faces, recall conversations and practise memory games.",
+  "placement": { "status": "track-winner", "awards": ["Most Philanthropic Hack - Bloomberg"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People with dementia lose confidence when they cannot recognise loved ones.",
+  "solution": "On-device face recognition identifies familiar people with relationship context and past conversations, plus recall games.",
+  "demo_moment": "Team-described: point the phone at a relative and see who they are.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "python", "flask", "insightface", "ollama"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Philanthropic Hack - Bloomberg” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Restores dignity, not just information.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Frame assistive tech around dignity."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/recall-1wr8y9",
+    "repo": "https://github.com/akhilapnuri/RecallMobileApp",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WDXfbc8DIpw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/recall-1wr8y9", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

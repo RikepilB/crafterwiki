@@ -1,0 +1,37 @@
+{
+  "slug": "agastia",
+  "name": "AGastIa",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Decodes medical reports for patients and clinicians with medical models and explanations.",
+  "placement": { "status": "track-winner", "awards": ["Best Champion of Open Source w/ Featherless - Featherless"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Medical reports are hard for patients to understand.",
+  "solution": "OCR extracts report text; clinical language models and medical segmentation analyse it; explanations are presented for patients and clinicians.",
+  "demo_moment": "Team-described: upload a report and read the plain-language summary.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "python", "fastapi", "pytorch", "paddleocr", "medgemma", "postgresql", "redis", "auth0"],
+    "ai_patterns": ["ml-model", "computer-vision", "llm-api"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Champion of Open Source w/ Featherless - Featherless” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses open medical models.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Open specialist models suit an open-source prize."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/agastiya",
+    "repo": "https://github.com/SriRammSS/AGastIa",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WyRockA-COA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/agastiya", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

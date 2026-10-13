@@ -1,0 +1,34 @@
+{
+  "slug": "mindmirror",
+  "name": "MindMirror",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Analyses your AI chat exports to show your thinking patterns, blind spots and dependence.",
+  "placement": { "status": "track-winner", "awards": ["Best Advanced Data Science Track Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People do not see what their AI use reveals about how they think.",
+  "solution": "Parses chat exports and scores cognitive dimensions with Gemini, plus predicted brain responses.",
+  "demo_moment": "Team-described: upload an export and see your cognitive fingerprint.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "python", "fastapi", "pytorch", "gemini", "claude"], "ai_patterns": ["llm-scoring", "ml-model"] },
+  "domains": ["health", "data-extraction"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Advanced Data Science Track Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses data people already have.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["originality"],
+    "lessons": ["Personal data exports make instant demos."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mindmirror-2aizuh",
+    "repo": "https://github.com/Raghav-Chakravarthy/MindMirror",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=txlD-qUcC50"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mindmirror-2aizuh", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

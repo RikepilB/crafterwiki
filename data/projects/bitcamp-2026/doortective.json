@@ -1,0 +1,41 @@
+{
+  "slug": "doortective",
+  "name": "DoortectiveAI",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A smart doorbell that sees, recognises and talks with visitors in any language, verifying guests by code.",
+  "placement": { "status": "track-winner", "awards": ["People's Choice Hack - Bitcamp", "[MLH] Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Doorbells only ring; they do not handle visitors.",
+  "solution": "A Raspberry Pi camera detects and recognises visitors, converses through voice AI, verifies guests with codes and handles deliveries.",
+  "demo_moment": "Team-described: a delivery driver is greeted and guided.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["raspberry-pi", "python", "fastapi", "next-js", "opencv", "yolo", "gemini", "elevenlabs"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["security-networking", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “People's Choice Hack - Bitcamp” and “[MLH] Best Use of ElevenLabs” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won the hackers' vote and a voice AI prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "demo-first-wow"],
+    "judging_lens": ["wow-factor", "sponsor-api-use"],
+    "lessons": ["Personality in a device wins the crowd vote."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/doortective",
+    "repo": "https://github.com/orgs/Doortective/repositories",
+    "demo": "https://www.doortective.us/",
+    "video": "https://www.youtube.com/watch?v=S6FTw6NNaa4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/doortective", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

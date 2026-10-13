@@ -1,0 +1,37 @@
+{
+  "slug": "furrow",
+  "name": "Furrow",
+  "hackathon": "bitcamp-2026",
+  "tagline": "An AI farm advisor in your messaging app that turns voice notes and photos into structured logs and advice.",
+  "placement": { "status": "podium", "awards": ["Best Bitcamp Hack - Bitcamp"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Farm record-keeping and compliance are messy and time-consuming.",
+  "solution": "Farmers send text, voice or photos by message; the system transcribes, logs entries with chemical-safety checks and returns actionable advice, using several model providers.",
+  "demo_moment": "Team-described: send a voice note and receive a structured log entry.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "postgresql", "sqlalchemy", "gemini", "openai", "groq", "sendblue", "railway"],
+    "ai_patterns": ["agent", "voice-ai", "llm-api"]
+  },
+  "domains": ["agriculture-food"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Bitcamp Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Lives in a channel farmers already use.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "takes-action"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["Meet field workers in their messaging app."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/furrow",
+    "repo": "https://github.com/IshaanKalra2103/Furrow/tree/main",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=vhvkrNTlWko"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/furrow", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

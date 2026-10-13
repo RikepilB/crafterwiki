@@ -1,0 +1,34 @@
+{
+  "slug": "still-here",
+  "name": "Still Here",
+  "hackathon": "bitcamp-2026",
+  "tagline": "One tap a day; miss it and an escalation chain alerts your contacts and, finally, a wellness check.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Netcore - Netcore"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Millions of people live alone, and nobody notices if something happens to them.",
+  "solution": "A daily check-in; missing it triggers push and email, a configurable grace period, texts to contacts and a non-emergency wellness request.",
+  "demo_moment": "Team-described: skip a check-in and watch the escalation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "celery", "redis", "docker", "supabase", "aws-sns", "firebase"], "ai_patterns": ["none"] },
+  "domains": ["health", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Netcore - Netcore” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The whole product is one action.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "tight-scope-finished", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A one-action product is easy to trust and explain."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/still-here",
+    "repo": null,
+    "demo": "https://stillherehq.com/demo",
+    "video": "https://player.vimeo.com/video/1182382881?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/still-here", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

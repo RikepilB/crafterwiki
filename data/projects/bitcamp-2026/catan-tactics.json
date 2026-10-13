@@ -1,0 +1,34 @@
+{
+  "slug": "catan-tactics",
+  "name": "Catan Tactics",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Four AI agents with personalities play Catan, negotiating and betraying, trained by self-play.",
+  "placement": { "status": "track-winner", "awards": ["Neelbauer Agentic Revolution Award (NARA) - Alumni Prize"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "The builder wanted agents that strategise and negotiate.",
+  "solution": "Each agent combines a self-play value network, tool-calling and a local LLM for negotiation in a full Catan game.",
+  "demo_moment": "Team-described: watch agents trade and betray.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "pytorch", "flask", "react", "postgresql", "ollama", "docker"], "ai_patterns": ["multi-agent", "ml-model"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Neelbauer Agentic Revolution Award (NARA) - Alumni Prize” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo with custom RL.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A familiar board game is a clear arena for agent behaviour."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/catan-tactics",
+    "repo": "https://github.com/DarekYu/Catanatron",
+    "demo": "https://canva.link/0eju9rl94fzbbgj",
+    "video": "https://www.youtube.com/watch?v=s8OhIH4xZ68"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/catan-tactics", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

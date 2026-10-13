@@ -1,0 +1,37 @@
+{
+  "slug": "terpwallet",
+  "name": "TerpWallet AI",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Watches a student's spending and connects them to free campus resources like the food pantry and safe rides.",
+  "placement": { "status": "track-winner", "awards": ["TerpAI Ultimate Agent Showdown - Cloudforce/Microsoft"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Students pay for things the university already provides free.",
+  "solution": "Analyses bank transactions via a mock banking API and recommends campus resources through an agent on the campus AI platform.",
+  "demo_moment": "Team-described: a food purchase triggers a pantry suggestion.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "tailwind", "node-js", "azure", "terpai", "nessie-api", "auth0"],
+    "ai_patterns": ["agent", "llm-api"]
+  },
+  "domains": ["fintech", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “TerpAI Ultimate Agent Showdown - Cloudforce/Microsoft” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo around real campus services.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Local resources make an agent indispensable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/terpwallet-ai",
+    "repo": "https://github.com/rishikathakre/terpwallet-ai",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=vD4VIui3jSs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/terpwallet-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

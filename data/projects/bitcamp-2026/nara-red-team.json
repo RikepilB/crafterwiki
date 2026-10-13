@@ -1,0 +1,42 @@
+{
+  "slug": "nara-red-team",
+  "name": "Nara - Autonomous Red Teaming Agent",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Four AI agents scan, plan and exploit vulnerabilities in a codebase inside an isolated container.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Best Champion of Open Source w/ Featherless - Featherless", "Neelbauer Agentic Revolution Award (NARA) - Alumni Prize"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Manual penetration testing is slow.",
+  "solution": "A CLI orchestrates scanner, planner, exploiter and reporter agents using static analysers and local and hosted models against a sandboxed target.",
+  "demo_moment": "Team-described: point it at a repo and watch an exploit succeed in the sandbox.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "docker", "semgrep", "bandit", "ollama", "claude", "featherless"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["security-networking", "ai-security"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Champion of Open Source w/ Featherless - Featherless” and “Neelbauer Agentic Revolution Award (NARA) - Alumni Prize” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Runs attacks only in an isolated target.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Agentic offence needs a sandbox to be demo-safe."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/nara-autonomous-red-teaming-agent",
+    "repo": "https://github.com/HackedRico/obv-nara-box",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=a8ESQUSft0c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/nara-autonomous-red-teaming-agent", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

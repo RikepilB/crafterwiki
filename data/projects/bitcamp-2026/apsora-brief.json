@@ -1,0 +1,34 @@
+{
+  "slug": "apsora-brief",
+  "name": "Apsora Brief",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Ranks live satellite close-approach events by real danger and writes plain-language briefs.",
+  "placement": { "status": "track-winner", "awards": ["Best Data Visualization Experience - Peraton"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Conjunction data is technical and hard to triage.",
+  "solution": "Pulls live screening data, ranks events by miss distance, probability, speed and data freshness, shows them on a 3D globe and generates briefs with Claude.",
+  "demo_moment": "Team-described: open the top-risk event and read its brief.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "tailwind", "python", "fastapi", "cesium", "sgp4", "claude"], "ai_patterns": ["llm-api"] },
+  "domains": ["space-operations"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Data Visualization Experience - Peraton” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses the same data space operators use.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "cited-evidence-trust"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Visualisation prizes reward ranking plus explanation."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/oribital-breif",
+    "repo": "https://github.com/po-aditya/Apsora-Brief",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=OPAUEUN1UG4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/oribital-breif", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

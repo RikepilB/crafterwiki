@@ -1,0 +1,38 @@
+{
+  "slug": "proof-of-code",
+  "name": "Proof of Code",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Records a coder's edits in real time so organisers can replay them and flag suspicious pastes.",
+  "placement": { "status": "track-winner", "awards": ["Davis Prize for Human Ingenuity in Computing - Alumni Prize"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Organisers cannot tell whether hackathon code was written by AI.",
+  "solution": "A VS Code extension streams edits to a server; large sudden additions are flagged and histories can be replayed.",
+  "demo_moment": "Team-described: replay a session and see a flagged paste.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "vscode", "rust", "monaco"], "ai_patterns": ["none"] },
+  "domains": ["dev-tools", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Davis Prize for Human Ingenuity in Computing - Alumni Prize” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Answers a prize asking for AI-use detection tools.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["originality"],
+    "lessons": ["Provenance by recording beats detection by guessing."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/proof-of-code",
+    "repo": null,
+    "demo": "https://marketplace.visualstudio.com/items?itemName=ash-computer.proof-of-code",
+    "video": "https://www.youtube.com/watch?v=nARn5TFyOkw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/proof-of-code", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

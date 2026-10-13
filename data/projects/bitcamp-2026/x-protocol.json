@@ -1,0 +1,34 @@
+{
+  "slug": "x-protocol",
+  "name": "X - Protocol",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A consent-first proximity social network that senses nearby devices and sends AI-written invitations.",
+  "placement": { "status": "track-winner", "awards": ["Bitcamp Unwrapped - Bitcamp"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Social networks map followers, not who is physically near you.",
+  "solution": "Passively senses nearby Bluetooth devices with consent and uses AI to compose handwritten-style invitations to meet.",
+  "demo_moment": "Team-described: a nearby person receives a generated invitation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "bleak", "react", "vite", "openai", "gemini", "cloudflare"], "ai_patterns": ["llm-api"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Bitcamp Unwrapped - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Not an AI wrapper: the core is Bluetooth sensing.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["originality"],
+    "lessons": ["Win the 'not a wrapper' prize with a real systems core."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/x-ai",
+    "repo": null,
+    "demo": "https://xprotocol.us/",
+    "video": "https://www.youtube.com/watch?v=XeTwTwPWS7w"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/x-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

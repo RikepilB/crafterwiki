@@ -1,0 +1,34 @@
+{
+  "slug": "crystal-forge",
+  "name": "Crystal Forge",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Decides when a lattice simulation needs quantum computing and spends scarce measurements where they matter.",
+  "placement": { "status": "track-winner", "awards": ["Best Computational Quantum Track Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Quantum measurements are scarce and expensive.",
+  "solution": "Routes simulations between classical and quantum, and allocates measurements to the observables most relevant to superconductivity.",
+  "demo_moment": "Team-described: run a lattice problem and see the routing decision.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "react", "vite"], "ai_patterns": ["ml-model"] },
+  "domains": ["simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Computational Quantum Track Hack” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Optimises a scarce resource.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cost-collapse"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Allocation is a strong angle on scarce compute."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/crystal-forge",
+    "repo": "https://github.com/Pvphantom/bitcamp2026-crystal-forge",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/crystal-forge", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "ghostdiedie",
+  "name": "GhostDieDie",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A browser fighting game where your webcam-tracked body is the controller.",
+  "placement": { "status": "track-winner", "awards": ["Best Razzle Dazzle Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Motion fighting games need VR headsets or sensors.",
+  "solution": "Pose tracking maps punches, kicks and jumps to a 3D character fighting another player online in real time.",
+  "demo_moment": "Team-described: punch at the webcam and your character punches.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "react-three-fiber", "three-js", "rapier", "mediapipe", "opencv", "python", "fastapi", "webrtc", "supabase"],
+    "ai_patterns": ["computer-vision"]
+  },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Razzle Dazzle Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "No headset, sensor or download.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "zero-install-channel"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Full-body play in a browser tab is an instant crowd-pleaser."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ghostdiedie",
+    "repo": null,
+    "demo": "https://ghostdiedie.surf/",
+    "video": "https://www.youtube.com/watch?v=Ay273uz5BpE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ghostdiedie", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

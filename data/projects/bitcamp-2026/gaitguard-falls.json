@@ -1,0 +1,29 @@
+{
+  "slug": "gaitguard-falls",
+  "name": "GaitGuard",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A sensor wearable that predicts falls from posture deviation and motion patterns.",
+  "placement": { "status": "track-winner", "awards": ["Most Philanthropic Hack - Bloomberg"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Falls in people living alone can go unnoticed.",
+  "solution": "An ESP32 tracks posture against a calibrated baseline over a rolling window and a logistic model estimates fall probability, with a dashboard.",
+  "demo_moment": "Team-described: simulate a stumble and see the risk rise.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "arduino", "c++", "python", "flask", "javascript"], "ai_patterns": ["ml-model"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Philanthropic Hack - Bloomberg” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses a personal baseline instead of fixed thresholds.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Personal calibration beats generic thresholds."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/gaitguard-fk2tb7", "repo": "https://github.com/Schugh26/GaitGuard", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/gaitguard-fk2tb7", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "aether-academic",
+  "name": "Aether",
+  "hackathon": "bitcamp-2026",
+  "tagline": "An autonomous command centre for student life: morning briefs, deadline triage and cross-course insights.",
+  "placement": { "status": "podium", "awards": ["Best Bitcamp Hack - Bitcamp", "TerpAI Ultimate Agent Showdown - Cloudforce/Microsoft"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students juggle scattered academic systems and deadlines.",
+  "solution": "Pulls from the academic ecosystem with browser automation, triages tasks with Gemini and the campus AI platform, and shows a knowledge graph and daily brief with voice.",
+  "demo_moment": "Team-described: open the morning brief and see triaged deadlines.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "three-js", "python", "fastapi", "playwright", "gemini", "elevenlabs", "terpai"],
+    "ai_patterns": ["agent", "llm-api", "computer-use", "voice-ai"]
+  },
+  "domains": ["education", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Bitcamp Hack - Bitcamp” and “TerpAI Ultimate Agent Showdown - Cloudforce/Microsoft” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won a top Bitcamp prize and the campus AI agent showdown.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "place-based-specificity"],
+    "judging_lens": ["technical-depth", "design-ux"],
+    "lessons": ["An agent that triages for you beats another dashboard."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aether-d4v6sb",
+    "repo": "https://github.com/purabshah12/bitcamp2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=eRcqv4_pCCQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aether-d4v6sb", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

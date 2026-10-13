@@ -1,0 +1,34 @@
+{
+  "slug": "fundingflow",
+  "name": "fundingflow",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Finds government funding programmes for farmers and fills the application forms.",
+  "placement": { "status": "track-winner", "awards": ["Real World Prize - Ambrook"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Farmers miss funding they qualify for because programmes are scattered.",
+  "solution": "Scrapes government programme pages, matches farmers by plain-language description using an open model, and generates plans with auto-filled PDFs.",
+  "demo_moment": "Team-described: describe the farm and receive a filled application.",
+  "build_style": "software-only",
+  "tech": { "stack": ["node-js", "express", "javascript", "cheerio", "pdf-lib", "featherless", "qwen"], "ai_patterns": ["llm-api", "agent"] },
+  "domains": ["agriculture-food", "govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Real World Prize - Ambrook” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Goes from discovery to filled forms.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["impact"],
+    "lessons": ["Fill the form, not just find it."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fundingflow",
+    "repo": "https://github.com/xROBERTINOx/bitcamp2026",
+    "demo": "https://fundingflow.work/app/funding",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fundingflow", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

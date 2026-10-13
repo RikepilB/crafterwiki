@@ -1,0 +1,42 @@
+{
+  "slug": "terrametric",
+  "name": "Terrametric",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Live crop-stress scores, a two-week yield forecast and a prescription for each field.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Real World Prize - Ambrook", "Best Champion of Open Source w/ Featherless - Featherless", "Best Intermediate Data Science Track Hack - Bitcamp"],
+    "track": null
+  },
+  "team": { "size": 3, "members": [] },
+  "problem": "Farm managers lack actionable, current field-stress insight.",
+  "solution": "Scores field stress with gradient-boosted models, forecasts yield over 14 days and prescribes actions, shown on a 3D globe and mobile app.",
+  "demo_moment": "Team-described: fields light up by stress and a prescription appears.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "xgboost", "next-js", "react-native", "typescript", "glsl", "sqlite"], "ai_patterns": ["ml-model"] },
+  "domains": ["agriculture-food", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Real World Prize - Ambrook” and “Best Champion of Open Source w/ Featherless - Featherless” and “Best Intermediate Data Science Track Hack - Bitcamp” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won three prizes including a real-world award.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "takes-action"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Score, forecast and prescribe in one view."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/terrametric",
+    "repo": null,
+    "demo": "https://terrametric-delta.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=qjTX93HKRNE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/terrametric", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

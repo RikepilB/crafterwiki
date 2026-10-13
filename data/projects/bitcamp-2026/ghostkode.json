@@ -1,0 +1,34 @@
+{
+  "slug": "ghostkode",
+  "name": "GhostKode",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Finds the most unstable lines in a codebase from Git history.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Auth0 AI Agents"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Developers cannot see which lines keep breaking.",
+  "solution": "Pulls blame and commit history and scores each line by semantic churn with embeddings, highlighting the 'ghosts'.",
+  "demo_moment": "Team-described: summon ghosts on a file and see risky lines.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "tailwind", "openai", "gemini", "github"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Auth0 AI Agents” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["History reveals risk better than static analysis alone."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ghostkode",
+    "repo": "https://github.com/bbmullen72/ghostkode",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=H6tUjbQjOkg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ghostkode", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "extract-vanilla",
+  "name": "Extract",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Every vanilla supply-chain handoff is signed by both sides on-chain to stop fraud.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Solana"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The vanilla supply chain is opaque; farmers are exploited and labels misleading.",
+  "solution": "Sender and receiver both sign each handoff on Solana, with a map and audit trail from farm to shelf.",
+  "demo_moment": "Team-described: trace a batch from farm to store.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "rust", "solana", "postgresql", "mapbox"], "ai_patterns": ["on-chain"] },
+  "domains": ["agriculture-food", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Solana” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Two-party signing prevents one-sided fraud.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "place-based-specificity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Use a ledger where two parties must agree."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/vanillatrail",
+    "repo": "https://github.com/YetiClimber/Extract",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=AUpQ-0V719o"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/vanillatrail", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

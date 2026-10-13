@@ -1,0 +1,34 @@
+{
+  "slug": "docket-commits",
+  "name": "Docket",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A visual, AI-summarised history of your GitHub repositories.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Auth0"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Commit histories are hard to read.",
+  "solution": "Sign in with GitHub via Auth0 and see summarised repository timelines.",
+  "demo_moment": "Team-described: open a repo and read its summarised history.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "typescript", "supabase", "gemini", "auth0", "terpai"], "ai_patterns": ["llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Auth0” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Secure access to private repos through the sponsor.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Use the sponsor for the trust-critical step."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/docket-2r9wke",
+    "repo": null,
+    "demo": "http://trydocket.us",
+    "video": "https://www.youtube.com/watch?v=coq8SSweYCs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/docket-2r9wke", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

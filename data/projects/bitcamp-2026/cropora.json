@@ -1,0 +1,34 @@
+{
+  "slug": "cropora",
+  "name": "Cropora - Field Intelligence Platform",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Satellite-based field intelligence for Iowa cropland: rotation patterns, crop health and soil moisture.",
+  "placement": { "status": "track-winner", "awards": ["Best Sustainability Hack - Bitcamp"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Farmers lack accessible multi-year field insight before a season.",
+  "solution": "Analyses NASA vegetation and soil-moisture datasets and USDA crop maps from 2013–2023 to classify rotation, track phenology and flag risks.",
+  "demo_moment": "Team-described: view a field's rotation history and health curve.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "rasterio", "numpy", "pandas", "scikit-learn", "streamlit", "plotly"], "ai_patterns": ["ml-model"] },
+  "domains": ["agriculture-food", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Sustainability Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built solo on public satellite data.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "place-based-specificity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Scope to one state's cropland to go deep."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cropora-field-intelligence-platform",
+    "repo": null,
+    "demo": "https://cropora-field-intelligence-faepehbnofpmzqvwv633sq.streamlit.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cropora-field-intelligence-platform", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

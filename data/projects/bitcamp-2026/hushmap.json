@@ -1,0 +1,34 @@
+{
+  "slug": "hushmap",
+  "name": "HushMap",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A live noise map of campus study spots with voice answers about the quietest place.",
+  "placement": { "status": "track-winner", "awards": ["Best UI/UX Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students waste trips to loud study spots; noise overwhelms neurodivergent students.",
+  "solution": "Sensor devices report decibel levels to an interactive map with history; a voice assistant answers where it is quiet.",
+  "demo_moment": "Team-described: ask for the quietest spot and get a spoken answer.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["svelte", "mapbox", "mongodb", "m5stack", "elevenlabs", "terpai"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["accessibility", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best UI/UX Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Real sensor data rather than estimates.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity", "physical-artifact"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Live local data makes a map worth opening."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hushmap-193nia",
+    "repo": "https://github.com/SirBlobby/BitCamp-2026",
+    "demo": "http://hushmap.study",
+    "video": "https://www.youtube.com/watch?v=NAVREyJwKOc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/hushmap-193nia", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "helix-quantum-drugs",
+  "name": "Helix",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Screens thousands of compounds against a cancer protein target and adds a quantum stability signal for the top ten.",
+  "placement": { "status": "track-winner", "awards": ["Most Philanthropic Hack - Bloomberg"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Drug screening is slow and lacks quantum-chemistry signals.",
+  "solution": "Filters candidate compounds for a chosen cancer and target, ranks them, then runs a VQE quantum algorithm on the top ten for molecular stability.",
+  "demo_moment": "Team-described: pick a target and see ranked candidates.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "qiskit", "react"], "ai_patterns": ["ml-model"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Philanthropic Hack - Bloomberg” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Adds a signal standard tools do not produce.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["impact"],
+    "lessons": ["Use a new method only where it adds a distinct signal."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/helix-yp73wi",
+    "repo": "https://github.com/Reyzz00/helix",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=VqTClY4_A5k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/helix-yp73wi", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

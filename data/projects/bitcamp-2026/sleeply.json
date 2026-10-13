@@ -1,0 +1,34 @@
+{
+  "slug": "sleeply",
+  "name": "Sleeply",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Simulates and visualises what your brain does through a night's sleep from your habits.",
+  "placement": { "status": "track-winner", "awards": ["Best First Time Hack - Bitcamp"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "People do not understand how habits affect their sleep.",
+  "solution": "Builds a sleep profile from duration, stress, caffeine and alcohol, then models sleep stages and shows them as timelines and 3D brain activity.",
+  "demo_moment": "Team-described: add caffeine and see deep sleep shrink.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "three-js"], "ai_patterns": ["none"] },
+  "domains": ["health", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best First Time Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A solo first-time hacker's polished build.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["Visualise the cause and effect of a habit."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sleeply",
+    "repo": null,
+    "demo": "https://sleeply-five.vercel.app",
+    "video": "https://www.youtube.com/watch?v=UAVtyrTWnRA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sleeply", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

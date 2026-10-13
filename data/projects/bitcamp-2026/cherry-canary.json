@@ -1,0 +1,34 @@
+{
+  "slug": "cherry-canary",
+  "name": "Cherry Canary",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A chest wearable that tracks breathing, heart rate and oxygen to warn before levels become dangerous.",
+  "placement": { "status": "track-winner", "awards": ["Best Social Good Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Consumer devices alert only after blood oxygen has already dropped, the team says.",
+  "solution": "An ESP32 wearable with pulse-oximetry and motion sensors streams to an app, and AI looks for early warning patterns.",
+  "demo_moment": "Team-described: wear the device and watch live readings.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "arduino", "max30102", "python", "react", "mongodb", "gemini", "3d-printing"], "ai_patterns": ["llm-api"] },
+  "domains": ["health", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Social Good Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Targets leading rather than lagging indicators.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Argue why your signal arrives earlier than the incumbent's."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cherry-canary",
+    "repo": "https://github.com/ShreeyaG3/Cherry_Canary.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=0NKBgB3Bd7Q"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cherry-canary", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

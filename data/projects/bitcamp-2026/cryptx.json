@@ -1,0 +1,38 @@
+{
+  "slug": "cryptx",
+  "name": "cryptX by Moonshot",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A low-cost hardware wallet for Solana with PIN and seed-phrase security and physical approval.",
+  "placement": { "status": "track-winner", "awards": ["Best Financial Hack - Capital One", "Best App Dev Track Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Hardware wallets cost around USD 150, the team says.",
+  "solution": "An Arduino device signs Solana testnet transactions only with physical approval, with PIN and seed authentication and balance monitoring.",
+  "demo_moment": "Team-described: approve a transfer on the device.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "next-js", "react", "typescript", "tailwind", "mongodb", "solana", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Financial Hack - Capital One” and “Best App Dev Track Hack - Bitcamp” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Brings a physical security step to a cheap device.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Rebuild a costly device cheaply and show it works."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cryptx-zceo69",
+    "repo": "https://github.com/navincodesalot/cryptx/",
+    "demo": "https://cryptx.work/",
+    "video": "https://www.youtube.com/watch?v=ckU2XB6r1WQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cryptx-zceo69", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

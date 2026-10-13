@@ -1,0 +1,34 @@
+{
+  "slug": "thats-my-echo",
+  "name": "Thats My Echo",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A platformer where you leave echoes that replay your moves, and the enemy hunts only the echoes.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Domain Name from GoDaddy Registry"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a fresh puzzle mechanic.",
+  "solution": "A Unity game where recorded echoes interact with the level and lure a listening enemy.",
+  "demo_moment": "Team-described: use an echo to distract the enemy.",
+  "build_style": "software-only",
+  "tech": { "stack": ["unity", "c#"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Domain Name from GoDaddy Registry” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hand-made art.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach"],
+    "judging_lens": ["originality"],
+    "lessons": ["One clever mechanic carries a game."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/thatsmyecho",
+    "repo": "https://github.com/Parth12358/ThatsMyEcho",
+    "demo": "https://catecholl.us/",
+    "video": "https://www.youtube.com/watch?v=OGyCVrdRYaw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/thatsmyecho", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

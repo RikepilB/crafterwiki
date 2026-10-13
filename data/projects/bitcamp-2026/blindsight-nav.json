@@ -1,0 +1,37 @@
+{
+  "slug": "blindsight-nav",
+  "name": "BlindSight",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A navigation assistant for blind users that reasons step by step about space from LiDAR and camera.",
+  "placement": { "status": "track-winner", "awards": ["Best App Dev Track Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Navigation aids give obstacle warnings, not reasoning about routes.",
+  "solution": "ARKit maps space; YOLOE detects objects and Gemini reasons about multi-step routes, with on-device obstacle avoidance and haptics.",
+  "demo_moment": "Team-described: ask for the door and be guided around obstacles.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swift", "swiftui", "arkit", "coreml", "corehaptics", "pytorch", "yoloe", "gemini"],
+    "ai_patterns": ["computer-vision", "llm-api", "ml-model"]
+  },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best App Dev Track Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines fast local safety with slower reasoning.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Layer reflex and reasoning systems."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/blindnav-yzd8fh",
+    "repo": "https://github.com/aidenjcheng/blindsight",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=NW5YI0TpCqQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/blindnav-yzd8fh", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

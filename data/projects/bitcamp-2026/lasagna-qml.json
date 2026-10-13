@@ -1,0 +1,34 @@
+{
+  "slug": "lasagna-qml",
+  "name": "Lasagna",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A drag-and-drop editor for building, training and testing hybrid classical and quantum neural networks.",
+  "placement": { "status": "track-winner", "awards": ["Best Moonshot Hack - Bitcamp"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Hybrid quantum-classical ML is hard to prototype.",
+  "solution": "Drag PyTorch and PennyLane layers onto a canvas with real-time validation; the editor generates working code and trains it.",
+  "demo_moment": "Team-described: assemble a hybrid model and train it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "python", "fastapi", "pytorch", "pennylane", "gemini"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["dev-tools", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Moonshot Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Brings block-based building to quantum ML.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "expert-data-for-everyone"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["Visual editors lower the barrier to frontier tools."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lasagna-hongpv",
+    "repo": "https://github.com/EnspikondPlusPlus/bitcamp",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=WIZUFZdRAQU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lasagna-hongpv", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

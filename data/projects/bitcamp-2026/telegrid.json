@@ -1,0 +1,34 @@
+{
+  "slug": "telegrid",
+  "name": "TeleGrid",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Listens for corona discharge on power lines to catch faults early, with a remote dashboard.",
+  "placement": { "status": "track-winner", "awards": ["Real World Prize - Ambrook"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Power line faults go undetected until they escalate.",
+  "solution": "A low-cost acoustic sensor detects the sound signature of electrical discharge and streams to a dashboard with alerts.",
+  "demo_moment": "Team-described: simulated discharge triggers an alert.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["c++", "python", "node-js", "react", "typescript", "mongodb", "socket-io", "three-js"], "ai_patterns": ["ml-model"] },
+  "domains": ["climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Real World Prize - Ambrook” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Affordable continuous monitoring.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse"],
+    "judging_lens": ["impact"],
+    "lessons": ["Listen for a physical signature others ignore."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/linewatch",
+    "repo": "https://github.com/Snek3471/VoltVigil",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=JhbR0K8B5p8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/linewatch", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

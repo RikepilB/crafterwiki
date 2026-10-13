@@ -1,0 +1,33 @@
+{
+  "slug": "clarify-forensics",
+  "name": "Clarify",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A digital-forensics tool built on a new way to model evidence data; the write-up gives few details.",
+  "placement": { "status": "track-winner", "awards": ["Best Digital Forensics Related Hack - Cipher Tech Solutions"], "track": null },
+  "team": { "size": 5, "members": [] },
+  "problem": "Not stated in detail.",
+  "solution": "A Next.js and FastAPI application for forensic data modelling, per its tagline.",
+  "demo_moment": "Not described.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "fastapi"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Digital Forensics Related Hack - Cipher Tech Solutions” among 223 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "The write-up is too brief to explain the win.", "basis": "curator-inference" }
+    ],
+    "mechanisms": [],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Winners with thin write-ups teach little."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/clarify-ztm49p", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/clarify-ztm49p", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

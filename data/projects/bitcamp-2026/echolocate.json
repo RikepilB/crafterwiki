@@ -1,0 +1,34 @@
+{
+  "slug": "echolocate",
+  "name": "EchoLocate",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A digital-forensics game where players direct AI investigator agents to contain cyberattacks in a lunar city.",
+  "placement": { "status": "track-winner", "awards": ["Best Moonshot Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Digital forensics is hard to learn and rarely fun.",
+  "solution": "A pixel-art strategy game in which sectors suffer attacks and players deploy specialist agents that investigate and report.",
+  "demo_moment": "Team-described: dispatch an agent to a compromised datacentre.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "phaser", "python", "fastapi", "gemini", "openai", "elevenlabs"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["games-entertainment", "education", "security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Moonshot Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns an expert field into a game.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "theme-native-twist"],
+    "judging_lens": ["originality"],
+    "lessons": ["Agents make good game characters with real jobs."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/echolocate-e4k3dg",
+    "repo": "https://github.com/SujayCh07/bitcamp",
+    "demo": "https://www.echolocate.us/",
+    "video": "https://www.youtube.com/watch?v=7GeVlWojdWs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/echolocate-e4k3dg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "quantumquest-qcnn",
+  "name": "QuantumQuest QCNN",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A quantum convolutional neural network that maps the ANNNI phase diagram under noise.",
+  "placement": { "status": "track-winner", "awards": ["Best Scientific Quantum Track Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Classifying quantum phases under noise is hard.",
+  "solution": "Trains a QCNN in PennyLane and JAX to map parameters to phase classes.",
+  "demo_moment": "Not described.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "pennylane", "jax", "optax", "jupyter", "matplotlib"], "ai_patterns": ["ml-model"] },
+  "domains": ["simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Scientific Quantum Track Hack” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Tested under noise.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["scientific-validity"],
+    "lessons": ["Scientific tracks reward a clean experiment."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/quantumquest-qcnn",
+    "repo": null,
+    "demo": "https://codeberg.org/sadorrab/quantumquest-bitcamp2026",
+    "video": "https://www.youtube.com/watch?v=LM38oVk9v30"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/quantumquest-qcnn", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "jib-camp",
+  "name": "Jib Camp",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A shared pixel world where your customised character wanders and hangs out on its own.",
+  "placement": { "status": "track-winner", "awards": ["Best Friendship Hack - Alumni Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a light way to share a space with friends.",
+  "solution": "Create a character from parts; it explores, fishes and picnics autonomously in a real-time shared world.",
+  "demo_moment": "Team-described: drop your character in and watch it roam.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "javascript", "express", "socket-io"], "ai_patterns": ["none"] },
+  "domains": ["social-connection", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Friendship Hack - Alumni Prize” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the friendship prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Small shared worlds create connection."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/jib-camp",
+    "repo": null,
+    "demo": "https://jibcamp.wiki/",
+    "video": "https://www.youtube.com/watch?v=nNuZjpt79AQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/jib-camp", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

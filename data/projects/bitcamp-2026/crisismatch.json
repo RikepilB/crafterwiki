@@ -1,0 +1,37 @@
+{
+  "slug": "crisismatch",
+  "name": "CrisisMatch",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Tracks ships and planes near disasters and matches the right volunteers to the need.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Data Science Track Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Responders struggle to match help to crises in time.",
+  "solution": "Real-time ship and flight tracking, weather and market data; three AI models debate severity, then volunteers are matched automatically.",
+  "demo_moment": "Team-described: a disaster appears and volunteers are matched.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "node-js", "express", "leaflet", "claude", "gemini", "auth0"],
+    "ai_patterns": ["multi-agent", "llm-api"]
+  },
+  "domains": ["emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Data Science Track Hack” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Multiple models debate before deciding.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["impact"],
+    "lessons": ["Cross-checking models suits high-stakes calls."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/crisismatch",
+    "repo": "https://github.com/Bharathisthe/habibi/tree/crisis-match",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/crisismatch", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

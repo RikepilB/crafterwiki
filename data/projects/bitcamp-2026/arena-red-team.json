@@ -1,0 +1,29 @@
+{
+  "slug": "arena-red-team",
+  "name": "arena",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A continuous red-team versus blue-team simulation against a live vulnerable server, with verified patches.",
+  "placement": { "status": "track-winner", "awards": ["Neelbauer Agentic Revolution Award (NARA) - Alumni Prize"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Security testing needs adversaries that adapt without retraining.",
+  "solution": "A local LLM red team chooses attacks, a rule-based blue team mitigates, and Gemini writes reports and patches that are verified each episode.",
+  "demo_moment": "Team-described: watch an attack, mitigation and patch cycle.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "react", "typescript", "langgraph", "networkx", "ollama", "gemini"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["security-networking", "ai-security"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Neelbauer Agentic Revolution Award (NARA) - Alumni Prize” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Verifies every generated patch.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Close the loop: attack, fix, verify."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/arena-o718na", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/arena-o718na", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

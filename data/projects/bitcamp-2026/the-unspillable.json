@@ -1,0 +1,29 @@
+{
+  "slug": "the-unspillable",
+  "name": "The Unspillable",
+  "hackathon": "bitcamp-2026",
+  "tagline": "A low-cost self-levelling spoon that counteracts hand tremors with two servos.",
+  "placement": { "status": "track-winner", "awards": ["Best Hardware Hack - Bitcamp"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "People with Parkinson's and tremors spill food; stabilising spoons are expensive.",
+  "solution": "An Arduino reads a motion sensor and drives two servos to keep the spoon bowl level, in a 3D-printed body.",
+  "demo_moment": "Team-described: shake the handle and the bowl stays level.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "mpu6050", "servo", "solidworks", "3d-printing"], "ai_patterns": ["none"] },
+  "domains": ["health", "accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Hardware Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "An affordable version of a costly assistive device.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse", "human-stakes"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["A cheap physical fix for a daily problem demos itself."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/the-unspillable", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=7ixI50nMe54" },
+  "sources": [
+    { "url": "https://devpost.com/software/the-unspillable", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "tseda",
+  "name": "Tseda",
+  "hackathon": "bitcamp-2026",
+  "tagline": "Describe a disease or draw a molecule and get generated drug candidates to explore.",
+  "placement": { "status": "track-winner", "awards": ["Best Machine Learning Track Hack - Bitcamp"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Early drug ideation is slow.",
+  "solution": "A language model proposes candidate compounds, a chemistry model evaluates them, and a drawing tool lets users edit structures.",
+  "demo_moment": "Team-described: request candidates for a disease and refine one.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "python", "chemberta", "gemini", "claude"],
+    "ai_patterns": ["ml-model", "llm-api", "generative-media"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Machine Learning Track Hack - Bitcamp” among 223 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines generation with a chemistry model.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Pair a generator with a domain evaluator."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/tseda",
+    "repo": "https://github.com/LittleWhole/Tseda",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=DORyw4sBhBw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/tseda", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://bitcamp-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
