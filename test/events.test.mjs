@@ -31,7 +31,12 @@ test('every WaterAid track weights the six shared criteria to 100', () => {
 
 test('track weights that do not sum to 100 are rejected', () => {
   const errors = withEvent((h) => { h.tracks[0].criteria[0].weight += 5; });
-  assert.ok(errors.some((e) => e.includes('weights must sum to 100')));
+  assert.ok(errors.some((e) => e.includes('weights must be finite and sum to 100')));
+});
+
+test('a weighted track cannot leave one criterion without a weight', () => {
+  const errors = withEvent((h) => { h.tracks[0].criteria[0].weight = null; h.tracks[0].criteria[1].weight += 20; });
+  assert.ok(errors.some((e) => e.includes('tracks["a"] criteria weights must be finite')));
 });
 
 test('a challenge must point at a declared track', () => {

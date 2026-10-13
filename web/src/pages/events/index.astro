@@ -4,7 +4,8 @@ import { corpus, href, eventName } from '../../lib/data.mjs';
 import { humanize, fmtRange } from '../../lib/labels.mjs';
 
 const guided = corpus.hackathons
-  .filter((h) => h.guide)
+  // Finished events keep their guide page, but the index lists only what is still ahead.
+  .filter((h) => h.guide && h.results_status === 'upcoming')
   .sort((a, b) => (a.start_date ?? '').localeCompare(b.start_date ?? ''));
 ---
 <Layout title="Event guides" description="How to prepare for specific upcoming hackathons: the rules that change your plan, how judging is weighted, and what past winners did.">

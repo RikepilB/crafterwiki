@@ -121,8 +121,11 @@ export function validate(corpus) {
     const trackIds = new Set((h.tracks ?? []).map((tr) => tr.id));
     for (const tr of h.tracks ?? []) {
       for (const c of tr.criteria ?? []) checkEnum(f, `tracks["${tr.id}"].criteria.lens`, c.lens, V.lenses);
-      const weights = (tr.criteria ?? []).map((c) => c.weight).filter((w) => w !== undefined);
-      if (weights.length && weights.reduce((a, b) => a + b, 0) !== 100) err(f, `tracks["${tr.id}"] criteria weights must sum to 100`);
+      // Once a track weights any criterion, every criterion needs a finite weight, or the table shows gaps.
+      const weights = (tr.criteria ?? []).map((c) => c.weight);
+      if (weights.some((w) => w !== undefined) && (!weights.every((w) => Number.isFinite(w)) || weights.reduce((a, b) => a + b, 0) !== 100)) {
+        err(f, `tracks["${tr.id}"] criteria weights must be finite and sum to 100`);
+      }
     }
     const challengeIds = new Set();
     for (const c of h.challenges ?? []) {
