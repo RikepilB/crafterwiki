@@ -1,0 +1,42 @@
+{
+  "slug": "track2give",
+  "name": "Track2Give",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Tracks food expiry dates, warns before items spoil and suggests where to donate them.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Best Beginner", "United Nations Sustainable Development Goals Enactus Challenge", "Most Likely to Become a Startup"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Food expires unnoticed at home and goes to waste.",
+  "solution": "Users add food items with expiry dates; the app counts down, sends alerts and suggests donation options, with an AI chat and receipt scanning.",
+  "demo_moment": "Team-described: scan a receipt and see an item flagged for donation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["node-js", "express", "ejs", "mongodb", "mongoose", "passport", "gemini", "cloudinary"], "ai_patterns": ["llm-api"] },
+  "domains": ["agriculture-food", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Beginner” and “United Nations Sustainable Development Goals Enactus Challenge” and “Most Likely to Become a Startup” among 217 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "A beginner team that won three prizes, including startup potential.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["tight-scope-finished", "one-sentence-clarity"],
+    "judging_lens": ["business-potential", "impact"],
+    "lessons": ["Beginners can win broadly with a complete, simple loop."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/track2give",
+    "repo": "https://github.com/abdullahmohammed1234/StormHacks2025",
+    "demo": "https://track2give.onrender.com/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/track2give", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

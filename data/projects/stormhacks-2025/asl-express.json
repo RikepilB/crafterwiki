@@ -1,0 +1,34 @@
+{
+  "slug": "asl-express",
+  "name": "ASL Express – Touchless AI Food Ordering Assistant",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Order food in sign language: a camera reads the signs and a counter device confirms the order with lights and sound.",
+  "placement": { "status": "track-winner", "awards": ["Best Hardware"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Drive-thrus and counters are frustrating for deaf and mute customers, the team says.",
+  "solution": "MediaPipe recognises signed letters mapped to menu items, repetitions set quantity, a thumbs-up confirms, and an ESP32 shows the order on an LCD with LEDs and a buzzer.",
+  "demo_moment": "Team-described: sign B twice and thumbs-up to order two fries.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "opencv", "mediapipe", "gemini", "elevenlabs", "esp32", "c++"], "ai_patterns": ["computer-vision", "llm-api", "voice-ai"] },
+  "domains": ["accessibility", "commerce-retail", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Hardware” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Closes the loop with a physical confirmation at the counter.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["A small fixed vocabulary makes a sign-recognition demo reliable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sign2order-touchless-ai-food-ordering-assistant",
+    "repo": "https://github.com/KashfiRashid/ASL_Express",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sign2order-touchless-ai-food-ordering-assistant", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

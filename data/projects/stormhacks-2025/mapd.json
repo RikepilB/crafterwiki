@@ -1,0 +1,46 @@
+{
+  "slug": "mapd",
+  "name": "Mapd",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Drop a pin on a new development and get permits, zoning, transit and service data summarised as likely local impacts.",
+  "placement": {
+    "status": "track-winner",
+    "awards": ["Finalists", "United Nations Sustainable Development Goals Enactus Challenge", "Best Design"],
+    "track": null
+  },
+  "team": { "size": 4, "members": [] },
+  "problem": "Residents see new construction but the facts are scattered across open-data portals.",
+  "solution": "Aggregates permits, zoning, transit and 311 records for a place and time window, links them, and summarises likely traffic, noise and amenity impacts on a minimal map.",
+  "demo_moment": "Team-described: paste a permit address and read the plain-language impact summary.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "vite", "tailwind", "fastapi", "python", "mongodb", "openai", "docker", "digitalocean", "cloudflare"],
+    "ai_patterns": ["llm-api"]
+  },
+  "domains": ["govtech-transparency", "real-estate"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Finalists” and “United Nations Sustainable Development Goals Enactus Challenge” and “Best Design” among 217 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Shipped a deployed product within 24 hours, by design.", "basis": "team-stated", "source": 0 },
+      { "claim": "A finalist that also won the design and SDG prizes.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "place-based-specificity", "one-sentence-clarity"],
+    "judging_lens": ["design-ux", "impact"],
+    "lessons": ["Open data becomes compelling when one pin answers a resident's question."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mapd-urban-development-intelligence",
+    "repo": "https://github.com/LMSAIH/StormHacks2025",
+    "demo": "https://mapd.tech",
+    "video": "https://player.vimeo.com/video/1124641474?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mapd-urban-development-intelligence", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

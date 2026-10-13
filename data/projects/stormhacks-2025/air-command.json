@@ -1,0 +1,29 @@
+{
+  "slug": "air-command",
+  "name": "Air Command",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A sip-and-puff sensor that works as a Bluetooth keyboard and mouse for people with limited mobility.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Snowflake API"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Computer access is hard for people with limited mobility.",
+  "solution": "An air-pressure sensor on a single-board computer feeds a state machine that classifies sips and puffs and emulates a Bluetooth keyboard and mouse.",
+  "demo_moment": "Team-described: type and click on a computer by sipping and puffing.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["c", "python", "beagley-ai", "bluez", "snowflake"], "ai_patterns": ["none"] },
+  "domains": ["accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Snowflake API” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Emulates a standard input device, so it works with any computer.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["Pretending to be a standard device removes every integration problem."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/air-command-smu9t0", "repo": "https://github.com/bsbhakti/stormhacks", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/air-command-smu9t0", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

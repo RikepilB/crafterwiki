@@ -1,0 +1,34 @@
+{
+  "slug": "connectsfu",
+  "name": "ConnectSFU",
+  "hackathon": "stormhacks-2025",
+  "tagline": "One hub for campus club events, with buddy matching for students and attendance stats for clubs.",
+  "placement": { "status": "track-winner", "awards": ["Software Systems Prize"], "track": null },
+  "team": { "size": 5, "members": [] },
+  "problem": "Club events are scattered across social media, chat and email, so students miss them.",
+  "solution": "Students browse featured events, find a buddy to go with and explore clubs; club admins create events and see sign-up stats; Gemini powers descriptive search.",
+  "demo_moment": "Team-described: search for an event by description and find a buddy.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "supabase", "gemini", "tailwind", "vercel", "figma"], "ai_patterns": ["llm-api"] },
+  "domains": ["social-connection", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Software Systems Prize” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Serves both students and club organisers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Two-sided campus tools win when both sides get something on day one."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/connectsfu",
+    "repo": "https://github.com/avkap007/stormhacks-connectsfu",
+    "demo": "https://stormhacks-connectsfu.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/connectsfu", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

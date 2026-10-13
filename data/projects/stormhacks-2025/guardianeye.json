@@ -1,0 +1,32 @@
+{
+  "slug": "guardianeye",
+  "name": "GuardianEye",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A dashboard that watches live camera feeds for falls, fire or distress and alerts family members.",
+  "placement": { "status": "track-winner", "awards": ["BluePrint Social Good Track"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Older relatives with dementia fall at home and are not always found quickly, the team says.",
+  "solution": "Computer vision on phone or body-cam feeds detects falls, smoke and inactivity; an agent layer raises alerts by phone message.",
+  "demo_moment": "Team-described: a simulated fall triggers an alert on the dashboard.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "fastapi", "python", "yolov8", "mediapipe", "gemini", "strands-agents", "mcp", "twilio"],
+    "ai_patterns": ["computer-vision", "agent", "llm-api"]
+  },
+  "domains": ["health", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “BluePrint Social Good Track” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grew out of team members' grandparents' falls.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "takes-action"],
+    "judging_lens": ["impact"],
+    "lessons": ["Personal stakes make a monitoring demo land with social-good judges."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/guardianeye", "repo": "https://github.com/ryanraen/GuardianEye", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/guardianeye", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

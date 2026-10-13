@@ -1,0 +1,32 @@
+{
+  "slug": "mira-companion",
+  "name": "M.I.R.A",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A background work companion that builds a timeline of your day and answers questions about it by voice.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People spend hours at screens without a clear record of what they actually did.",
+  "solution": "Observes app usage and focus, captures screenshots for recall, and offers speech or text conversation about your work and the current screen via a global shortcut.",
+  "demo_moment": "Team-described: ask what you worked on earlier and get a summary.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["electron", "react", "typescript", "python", "django", "c++", "gemini", "elevenlabs"],
+    "ai_patterns": ["llm-api", "voice-ai", "computer-vision"]
+  },
+  "domains": ["productivity", "memory-journaling"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Gemini API” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Works from passive observation rather than manual logging.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Passive capture removes the logging step users skip."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/m-i-r-a", "repo": "https://github.com/irvincardoza/stormhacks2025", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/m-i-r-a", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

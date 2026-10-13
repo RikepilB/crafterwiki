@@ -1,0 +1,34 @@
+{
+  "slug": "gemidice",
+  "name": "GemiDice",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A text adventure where Gemini runs the story as dungeon master and dice rolls decide your fate.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of .Tech"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted to combine tabletop role-play and early text adventures.",
+  "solution": "Gemini sets the scene and asks for dice rolls; failures cost health; themes change the look and mood; ElevenLabs adds voice and sound.",
+  "demo_moment": "Team-described: propose a risky action and roll for it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "javascript", "html", "css", "gemini", "elevenlabs"], "ai_patterns": ["llm-api", "voice-ai", "generative-media"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of .Tech” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Mixes two classic game formats.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A dice roll gives an LLM game stakes and structure."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/anything-pxw2f5",
+    "repo": "https://github.com/roilee1101/stormhacks2025",
+    "demo": "http://links.gemidice.tech",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/anything-pxw2f5", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

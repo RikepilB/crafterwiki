@@ -1,0 +1,29 @@
+{
+  "slug": "rehabit",
+  "name": "Rehabit",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Turns a webcam into a home rehab coach that measures symmetry, range of motion and rep quality.",
+  "placement": { "status": "track-winner", "awards": ["Most Likely to Become a Startup"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Rehab after stroke or injury is hard to access and to measure at home.",
+  "solution": "Guided drills tracked by joint angles produce a symmetry score, range of motion and rep quality; Gemini writes a plain-English progress report.",
+  "demo_moment": "Team-described: do sit-to-stand reps and read the symmetry score.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "html", "css", "gemini", "elevenlabs"], "ai_patterns": ["computer-vision", "llm-api", "voice-ai"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Likely to Become a Startup” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Objective numbers instead of 'how did it feel'.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "cost-collapse"],
+    "judging_lens": ["business-potential", "impact"],
+    "lessons": ["Measurement is the product when the alternative is self-report."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/rehabit-c093se", "repo": "https://github.com/KR13H/Rehabit.git", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/rehabit-c093se", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

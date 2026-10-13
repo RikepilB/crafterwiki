@@ -1,0 +1,34 @@
+{
+  "slug": "survivalchess",
+  "name": "SurvivalChess",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A timed chess puzzle: move marked pieces off doomed squares using chess moves, plus two invented pieces.",
+  "placement": { "status": "track-winner", "awards": ["Finalists", "Best Game"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a fast, replayable game built on rules players already know.",
+  "solution": "Each endless round marks pieces for destruction; the player has limited time to move them to safety on a small board, with new Stag and Trident pieces adding movement options.",
+  "demo_moment": "Team-described: rescue pieces under a countdown across rounds.",
+  "build_style": "software-only",
+  "tech": { "stack": ["node-js", "typescript", "pixijs", "vite"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Finalists” and “Best Game” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grew from a team member's earlier chess-arrangement game.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "tight-scope-finished"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["Familiar rules plus a timer make a game judges understand in seconds."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/survivalchess",
+    "repo": "https://github.com/jpg157/SurvivalChess_Stormhacks_2025",
+    "demo": "https://stormhacks-2025-survival-chess.vercel.app/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/survivalchess", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

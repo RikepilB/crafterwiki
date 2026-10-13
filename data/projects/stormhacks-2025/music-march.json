@@ -1,0 +1,34 @@
+{
+  "slug": "music-march",
+  "name": "Music March",
+  "hackathon": "stormhacks-2025",
+  "tagline": "An audio visualiser that raises ray-marched infinite terrain to the bass, mids and treble.",
+  "placement": { "status": "track-winner", "awards": ["Huawei Custom Challenge #1: Interactive Landscape Graphics"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "The team wanted to extend the sponsor's terrain-rendering challenge into something interactive.",
+  "solution": "Frequency analysis of incoming audio drives the height map of procedurally generated hills in a rewritten fragment shader; users can fly through the scene.",
+  "demo_moment": "Team-described: play music and watch the landscape pulse.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c++", "glsl", "sdl"], "ai_patterns": ["none"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Huawei Custom Challenge #1: Interactive Landscape Graphics” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Rewrote the provided shader rather than tuning it.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "demo-first-wow"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Add a sensory hook to a technical challenge so judges feel the result."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/the-ray-marching-band",
+    "repo": "https://github.com/ErykHalicki/ray_marcher",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/the-ray-marching-band", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

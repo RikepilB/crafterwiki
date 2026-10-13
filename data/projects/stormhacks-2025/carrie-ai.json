@@ -1,0 +1,37 @@
+{
+  "slug": "carrie-ai",
+  "name": "Carrie - AI Therapy In Your Pocket",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A video-call AI companion that reads facial emotion and adjusts how it talks to you.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Therapy is expensive and scarce while burnout grows, the team says.",
+  "solution": "Webcam frames every two seconds feed a vision-transformer emotion classifier; the conversation adapts its tone; voice runs through ElevenLabs over a live video call.",
+  "demo_moment": "Team-described: look sad and hear the companion respond gently.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "node-js", "express", "python", "flask", "pytorch", "transformers", "livekit", "elevenlabs", "mongodb"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of ElevenLabs” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Adapts to detected emotion, not only to words.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A second signal beyond text makes a companion demo feel attentive."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/carrie-ai-therapy-in-your-pocket",
+    "repo": "https://github.com/TimSeah/StormHacks_LumberLoons",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/carrie-ai-therapy-in-your-pocket", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

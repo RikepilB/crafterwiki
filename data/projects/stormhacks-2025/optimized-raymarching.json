@@ -1,0 +1,34 @@
+{
+  "slug": "optimized-raymarching",
+  "name": "Optimized Ray-marching algorithm",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Faster ray-marched terrain using distance-based detail and bounded sphere tracing.",
+  "placement": { "status": "track-winner", "awards": ["Huawei Custom Challenge #1: Interactive Landscape Graphics"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "The sponsor's baseline ray-marcher rendered procedural terrain too slowly.",
+  "solution": "Level-of-detail noise that drops fine detail with distance and Lipschitz-bounded sphere tracing to take larger safe steps.",
+  "demo_moment": "Team-described: real-time terrain with the optimisations applied.",
+  "build_style": "software-only",
+  "tech": { "stack": ["glsl"], "ai_patterns": ["none"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Huawei Custom Challenge #1: Interactive Landscape Graphics” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A solo entry focused purely on the algorithm.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["On an algorithm challenge, explain each optimisation and its effect."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/optimized-procedural-heightfield-rendering",
+    "repo": "https://github.com/markharmon868/SphericalTrace.git",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/optimized-procedural-heightfield-rendering", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "lockedin-focus",
+  "name": "LockedIn",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Set one goal; AI watches your screen and webcam and steps in when you drift.",
+  "placement": { "status": "track-winner", "awards": ["Charles Chang Institute of Entrepreneurship Prize Track"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Timers and to-do lists do not provide real-time accountability, especially for people with attention difficulties.",
+  "solution": "The user states an intention; Gemini compares desktop activity with it and the webcam checks attention, intervening when they do not match.",
+  "demo_moment": "Team-described: open a distracting site and get called out.",
+  "build_style": "software-only",
+  "tech": { "stack": ["electron", "react", "typescript", "vite", "gemini", "streamlit"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Charles Chang Institute of Entrepreneurship Prize Track” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pitched as accountability for attention difficulties.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "takes-action"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["An entrepreneurship prize rewards a sharp user and a clear habit loop."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lockedin-09v51s",
+    "repo": "https://github.com/yood2/lockedin",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Hex0aBMCKRM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lockedin-09v51s", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

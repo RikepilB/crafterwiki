@@ -1,0 +1,37 @@
+{
+  "slug": "ecodepot",
+  "name": "EcoDepot",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A smart bin that recognises what you throw in, rotates to the right compartment and rewards students for recycling.",
+  "placement": { "status": "track-winner", "awards": ["Surge Choice Award", "SEE Sustainable Engineering Track"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People are unsure which bin an item belongs in and have little reason to care.",
+  "solution": "Computer vision classifies the item on the chute and the bin rotates to the matching compartment; scanning a student ID logs the user in to an account with rewards.",
+  "demo_moment": "Team-described: drop a can and watch the bin sort it.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["arduino", "c++", "python", "tensorflow", "next-js", "react", "supabase", "fusion-360"],
+    "ai_patterns": ["computer-vision", "ml-model"]
+  },
+  "domains": ["climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Surge Choice Award” and “SEE Sustainable Engineering Track” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Adds an incentive for people who are not eco-minded.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "familiar-thing-new-job"],
+    "judging_lens": ["impact", "originality"],
+    "lessons": ["A moving physical object makes a sorting model visible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ecodepot",
+    "repo": "https://github.com/iancdev/recycle-sorter",
+    "demo": "https://a360.co/3VR1WNQ",
+    "video": "https://www.youtube.com/watch?v=TfPV9RVL9NI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ecodepot", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

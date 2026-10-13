@@ -1,0 +1,34 @@
+{
+  "slug": "fretnot",
+  "name": "FretNot",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A clip-on that projects lasers onto a guitar's fretboard to show where each chord's fingers go.",
+  "placement": { "status": "track-winner", "awards": ["IEEE SFU Prize Track"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Beginner guitarists struggle to learn finger positions for chords.",
+  "solution": "An ESP32 with lasers clips on the guitar; a web app parses song lyrics and chords over Bluetooth and steps through them automatically.",
+  "demo_moment": "Team-described: load a song and follow the projected chord shapes.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["esp32", "arduino", "typescript", "react", "tesseract", "onshape"], "ai_patterns": ["computer-vision"] },
+  "domains": ["education", "creative-media", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “IEEE SFU Prize Track” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Acts as training wheels until muscle memory takes over.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "familiar-thing-new-job"],
+    "judging_lens": ["originality"],
+    "lessons": ["Put the guidance on the instrument, not on a screen."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fretnot",
+    "repo": "https://github.com/doruphin/fretnot",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=7EEcIjLjUPI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fretnot", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

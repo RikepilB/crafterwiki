@@ -1,0 +1,37 @@
+{
+  "slug": "intervu",
+  "name": "IntervU",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Interview practice tailored to your resume and the job, with runnable coding questions, hints and a final report.",
+  "placement": { "status": "finalist", "awards": ["Finalists"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Two team members had co-op interviews go badly and had no easy way to practise.",
+  "solution": "Gemini reads the resume and job description to generate behavioural and coding questions; code runs against test cases in the browser; hints avoid spoilers; feedback and a report follow, with voice.",
+  "demo_moment": "Team-described: upload a resume, solve a coding question and read the report.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "go", "piston", "mongodb", "gemini", "openai", "elevenlabs", "vercel", "render"],
+    "ai_patterns": ["llm-api", "voice-ai"]
+  },
+  "domains": ["careers-hr", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Finalists” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Started from the team's own failed interviews that week.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "tight-scope-finished"],
+    "judging_lens": ["technical-depth", "design-ux"],
+    "lessons": ["A problem the team hit days earlier gives the pitch an honest opening."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/intervu-852wre",
+    "repo": null,
+    "demo": "https://www.intervuai.tech",
+    "video": "https://www.youtube.com/watch?v=bAr8cUOxdAA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/intervu-852wre", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

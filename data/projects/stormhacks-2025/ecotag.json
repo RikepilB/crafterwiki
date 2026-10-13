@@ -1,0 +1,38 @@
+{
+  "slug": "ecotag",
+  "name": "EcoTag",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Phone laser tag with QR tags that also rewards players for scanning and binning real litter.",
+  "placement": { "status": "track-winner", "awards": ["United Nations Sustainable Development Goals Enactus Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Laser tag is fun but needs equipment, and gatherings leave litter behind.",
+  "solution": "Players scan QR tags on each other to score; scanning litter classifies it, estimates the CO2 saved and gives bonus points for correct disposal.",
+  "demo_moment": "Team-described: tag a player, then scan a bottle and bin it for points.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "websockets"], "ai_patterns": ["computer-vision"] },
+  "domains": ["climate-sustainability", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “United Nations Sustainable Development Goals Enactus Challenge” among 217 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Makes cleanup part of the game.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "theme-native-twist"],
+    "judging_lens": ["originality"],
+    "lessons": ["Attach a chore to a game people already want to play."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/taqr",
+    "repo": "https://github.com/fesenjuniors/backend",
+    "demo": "https://qr-tag-arena.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=rpcqI7ap0XU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/taqr", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

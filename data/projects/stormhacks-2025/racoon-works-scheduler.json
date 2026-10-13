@@ -1,0 +1,38 @@
+{
+  "slug": "racoon-works-scheduler",
+  "name": "Racoon Works Hua Wei CC 2",
+  "hackathon": "stormhacks-2025",
+  "tagline": "Compares several scheduling algorithms to order AI operators under memory limits, recomputing results to cut peaks.",
+  "placement": { "status": "track-winner", "awards": ["Huawei Custom Challenge #2: Automatic Decision for Re-computation"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The sponsor asked for an execution order that minimises compute time under a memory cap.",
+  "solution": "Implements naive, greedy, heuristic, beam-search and branch-and-bound schedulers, freeing intermediates aggressively and recomputing nodes to lower the memory peak.",
+  "demo_moment": "Not described beyond algorithm results.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c++"], "ai_patterns": ["none"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Huawei Custom Challenge #2: Automatic Decision for Re-computation” among 217 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Took a multi-algorithm approach drawn from recent research.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Comparing several algorithms shows judges you understand the problem."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/racoon-works-hua-wei-cc-2",
+    "repo": "https://github.com/notwinston/Racoon_Works_Storm_Hacks2025",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/racoon-works-hua-wei-cc-2", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

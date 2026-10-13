@@ -1,0 +1,29 @@
+{
+  "slug": "ganpi",
+  "name": "GANPI",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A web assistant built on Gemini that generates and explains code.",
+  "placement": { "status": "track-winner", "awards": ["Safe Software Best Modern C++"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The team wanted a fast, clean way to get coding help from an AI model.",
+  "solution": "A Next.js interface over Gemini for code generation, explanations and problem solving, with C++ in the build.",
+  "demo_moment": "Team-described: ask for code and get an explanation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["c++", "cmake", "next-js", "node-js", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Safe Software Best Modern C++” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the prize for modern C++, judged on interfaces, safety and performance.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["tight-scope-finished"],
+    "judging_lens": ["engineering-practice"],
+    "lessons": ["Language-specific prizes reward code quality more than the idea."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/ganpi", "repo": "https://github.com/chdrPE/GANPI", "demo": "https://ganpi.vercel.app", "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/ganpi", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

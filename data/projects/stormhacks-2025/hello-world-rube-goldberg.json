@@ -1,0 +1,38 @@
+{
+  "slug": "hello-world-rube-goldberg",
+  "name": "Hello World Rube Goldberg (The StormHacks Experience)",
+  "hackathon": "stormhacks-2025",
+  "tagline": "A chain-reaction machine that prints 'hello world' the hard way.",
+  "placement": { "status": "track-winner", "awards": ["CSSS Rube Goldberg Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "The challenge asked for a simple task made hilariously complex.",
+  "solution": "An Arduino-controlled Rube Goldberg machine built from cans and tape that ends by printing hello world.",
+  "demo_moment": "Team-described: the full chain reaction on video.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++"], "ai_patterns": ["none"] },
+  "domains": ["robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CSSS Rube Goldberg Challenge” among 217 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Celebrates the event itself.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact"],
+    "judging_lens": ["wow-factor"],
+    "lessons": ["Novelty challenges reward commitment to the bit."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hello-world-rube-goldberg-the-stormhacks-experience",
+    "repo": null,
+    "demo": "https://drive.google.com/drive/folders/1129XpmvNNBxQNOSpPVJGA-Zu1v5WHNFb?usp=sharing",
+    "video": "https://www.youtube.com/watch?v=m9-ijF0UQzw"
+  },
+  "sources": [
+    {
+      "url": "https://devpost.com/software/hello-world-rube-goldberg-the-stormhacks-experience",
+      "kind": "devpost-project",
+      "retrieved_at": "2026-10-13"
+    },
+    { "url": "https://stormhacks2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
