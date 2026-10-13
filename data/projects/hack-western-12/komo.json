@@ -1,0 +1,34 @@
+{
+  "slug": "komo",
+  "name": "komo",
+  "hackathon": "hack-western-12",
+  "tagline": "One search across Slack, Notion, files and screenshots at work.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Third Place Overall"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Work information is scattered across long chat threads, documents and buried images, which wastes time.",
+  "solution": "A unified workspace that connects workplace apps and returns related documents, messages and media for a single query.",
+  "demo_moment": "Team-described: search once and get the Slack thread, the Notion page and the screenshot together.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "node.js", "express", "sqlite", "gemini", "slack-api", "notion-api"], "ai_patterns": ["llm-api"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Place Overall” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounded in a teammate's daily pain at a startup.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "tight-scope-finished"],
+    "judging_lens": ["design-ux", "challenge-relevance"],
+    "lessons": ["A complete, polished take on a common pain can place well under completeness-heavy criteria."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/komo-4lrjdg",
+    "repo": "https://github.com/aircon2/komo",
+    "demo": "http://www.komosearch.tech",
+    "video": "https://www.youtube.com/watch?v=HhyZFVlZhQg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/komo-4lrjdg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "willow",
+  "name": "Willow",
+  "hackathon": "qhacks-2026",
+  "tagline": "A voice interface that lets seniors use a computer without mouse or keyboard, installed from a USB stick.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Third Place"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Older adults, including people with arthritis, struggle with mouse-and-keyboard interfaces built for other generations.",
+  "solution": "Plug in a USB drive to install; the user speaks requests and the system operates the computer and web for them, such as navigating maps, with spoken feedback.",
+  "demo_moment": "Team-described: ask out loud for directions and watch Willow operate Google Maps.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "c++", "javascript", "elevenlabs", "pyinstaller"], "ai_patterns": ["voice-ai", "computer-use", "agent"] },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Third Place” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Frames the problem as an interface generation gap, not user failure.", "basis": "team-stated", "source": 0 },
+      { "claim": "Setup is a USB stick: no installer for the user to manage.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "zero-install-channel", "theme-native-twist", "takes-action"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["Remove setup friction for the exact user you serve; it is part of the product."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/willow-8f5wqn",
+    "repo": "https://github.com/regularpooria/willow_qhacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=LXjQ0rMj7Ig"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/willow-8f5wqn", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

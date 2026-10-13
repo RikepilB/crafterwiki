@@ -1,0 +1,35 @@
+{
+  "slug": "squill",
+  "name": "Squill | Write Freely",
+  "hackathon": "uofthacks-13",
+  "tagline": "A writing assistant that helps students draft scholarship and statement-of-purpose essays without writing them for them.",
+  "placement": { "status": "track-winner", "awards": ["Foresters: The Multi-Agent Mind"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Personal statements are the most daunting part of scholarship applications, and the team cites large sums of aid going unclaimed.",
+  "solution": "Multi-agent questioning helps students discover what to say, with live tracking, personal-data redaction and verification steps, then exports to a word processor.",
+  "demo_moment": "Team-described: answer guided questions and see your own ideas shaped into a draft outline.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "flask", "langgraph", "cohere", "figma"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["education", "careers-hr"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Foresters: The Multi-Agent Mind” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Positions AI as a thinking partner, not a ghostwriter.", "basis": "team-stated", "source": 0 },
+      { "claim": "Adds redaction and verification steps for responsible use.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "cited-evidence-trust", "inverted-approach"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["Saying what the AI will not do can be the differentiator."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/squill-write-freely",
+    "repo": "http://github.com/replicant005/SOPcopilot",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=OgVhrRd_cm8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/squill-write-freely", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "blitz-fps",
+  "name": "Blitz",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A first-person shooter controlled by a cardboard gun with a printed marker and a webcam.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - Entertainment"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "VR gear is expensive or unavailable, especially for kids.",
+  "solution": "The webcam tracks a printed fiducial marker on a cardboard gun in six degrees of freedom to aim; a recoil gesture fires and a fist gesture reloads, in a 3D game.",
+  "demo_moment": "Team-described: aim the cardboard gun and shoot targets on screen.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["python", "opencv", "mediapipe", "opengl", "pygltflib"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - Entertainment” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Constraint-driven: no VR gear on the trip, so they built with cardboard.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse", "familiar-thing-new-job"],
+    "judging_lens": ["technical-depth", "wow-factor"],
+    "lessons": ["A cheap physical prop plus solid tracking delivers most of the VR feeling."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cv-fps",
+    "repo": "https://github.com/Daniel-1-2-3/BlitzCV",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=Cz4N3sxjJOc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cv-fps", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

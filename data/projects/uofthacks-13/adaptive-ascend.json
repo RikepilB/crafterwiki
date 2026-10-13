@@ -1,0 +1,39 @@
+{
+  "slug": "adaptive-ascend",
+  "name": "Adaptive Ascend",
+  "hackathon": "uofthacks-13",
+  "tagline": "A space shooter that studies how you play and adapts enemies, a boss fight and help to you.",
+  "placement": { "status": "track-winner", "awards": ["Amplitute: Build Self-Improving Products"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Games rarely learn a player's weaknesses and adjust to them.",
+  "solution": "Tracks accuracy, reaction time and damage to tune enemies between levels; a final boss uses three AI strategies; webcam hand gestures control shield and shooting; struggling players get features turned on through analytics flags.",
+  "demo_moment": "Team-described: play with hand gestures and watch the next level change to target your weaknesses.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "react", "tensorflow.js", "mediapipe", "amplitude", "claude"], "ai_patterns": ["computer-vision", "llm-api", "ml-model"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Amplitute: Build Self-Improving Products” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      {
+        "claim": "Uses product analytics as the adaptation engine, matching the sponsor's 'self-improving products' brief.",
+        "basis": "team-stated",
+        "source": 0
+      },
+      { "claim": "A solo builder hit a sponsor brief closely.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "theme-native-twist"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Answer the sponsor's brief literally, with their tool doing the core job."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/amplitude-project",
+    "repo": "https://github.com/MrFibonacc1/amplitudeHackathon",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=lt0g1y64r9U"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/amplitude-project", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

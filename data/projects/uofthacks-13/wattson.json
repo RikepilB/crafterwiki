@@ -1,0 +1,34 @@
+{
+  "slug": "wattson",
+  "name": "Wattson",
+  "hackathon": "uofthacks-13",
+  "tagline": "A desk-lamp robot companion that reacts to your mood with gestures, conversation and small games.",
+  "placement": { "status": "track-winner", "awards": ["LeLamp: Hack the Human-Robot Experience"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Long solo study sessions feel isolating.",
+  "solution": "A five-axis lamp arm on a Raspberry Pi reads voice tone, answers with expressive gestures and speech, and plays games such as coin flips and rock-paper-scissors.",
+  "demo_moment": "Team-described: Wattson recognises you and cheers you on with gestures.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["lelamp", "raspberry-pi-5", "servos", "python"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["robotics-hardware", "social-connection", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “LeLamp: Hack the Human-Robot Experience” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Focuses on presence and personality rather than utility.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "familiar-thing-new-job", "human-stakes"],
+    "judging_lens": ["wow-factor", "design-ux"],
+    "lessons": ["Give an everyday object a personality and the demo becomes memorable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/wattson-r7wxug",
+    "repo": "https://github.com/cindyyzhu/wattson",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=N4BSvWPPaJE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/wattson-r7wxug", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

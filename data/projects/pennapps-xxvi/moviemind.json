@@ -1,0 +1,34 @@
+{
+  "slug": "moviemind",
+  "name": "MovieMind",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Recommends films for the reasons you like a movie, by matching your review to others' reviews.",
+  "placement": { "status": "track-winner", "awards": ["MLH - Best use of MongoDB Atlas"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Recommendation algorithms optimise watch time, not why people enjoy films.",
+  "solution": "Embeds user reviews, finds semantically similar reviews in a vector database, takes the most positive matches as recommendations, and has an LLM explain the reasoning.",
+  "demo_moment": "Team-described: write why you loved a movie and get explained recommendations.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "node.js", "mongodb", "gemini", "cerebras", "vercel"], "ai_patterns": ["llm-api", "ml-model"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH - Best use of MongoDB Atlas” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses the sponsor's vector search as the core of the product.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "cited-evidence-trust"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Explaining a recommendation is a cheap way to make it feel human."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/moviemind-85pfcw",
+    "repo": "https://github.com/amheuer/moviemind",
+    "demo": "https://moviemind-alpha.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=etUSOAJqu00"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/moviemind-85pfcw", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

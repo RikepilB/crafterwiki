@@ -1,0 +1,34 @@
+{
+  "slug": "freebie",
+  "name": "Freebie",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "An iOS map of free stuff nearby, with a bathroom cleanliness mode.",
+  "placement": { "status": "track-winner", "awards": ["Most Useless Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Students hunt for free food and clean restrooms.",
+  "solution": "A shared map with pins, reviews, filters and a joke 'poop mode' showing bathroom cleanliness ratings.",
+  "demo_moment": "Team-described: switch to the bathroom mode and find the cleanest one nearby.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "xcode", "mapkit", "firebase"], "ai_patterns": ["none"] },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Useless Hack” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Embraced the joke category with a fully working app.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "tight-scope-finished"],
+    "judging_lens": ["originality"],
+    "lessons": ["Joke categories still reward a finished, polished app."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/freebie-cv6zks",
+    "repo": "https://github.com/Oreo-999/pennApps2",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ylxZ4jlEo0E"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/freebie-cv6zks", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

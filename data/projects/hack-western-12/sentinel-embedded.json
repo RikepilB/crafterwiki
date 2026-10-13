@@ -1,0 +1,29 @@
+{
+  "slug": "sentinel-embedded",
+  "name": "Sentinel",
+  "hackathon": "hack-western-12",
+  "tagline": "A VS Code extension that catches embedded-hardware bugs such as wrong pins or memory overflow as you type.",
+  "placement": { "status": "track-winner", "awards": ["Best Developer Tool by Warp"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "In embedded development, errors like invalid pins, bad I2C addresses or RAM overflow show up only after flashing the board.",
+  "solution": "A hardware-aware language-server extension that checks firmware against the target board's constraints in real time, moving error detection from after compilation to while typing.",
+  "demo_moment": "Team-described: type a misconfigured pin and see the warning before compiling.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "node.js", "vscode-api", "lsp", "esp32", "arduino"], "ai_patterns": ["none"] },
+  "domains": ["dev-tools", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Developer Tool by Warp” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Brings type-checking-style feedback to a field still debugging by trial and error.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "inverted-approach"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["A developer-tool prize favours a precise fix for a pain the judges know."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/sentinel-nyx3lz", "repo": "https://github.com/RishiShah99/Sentinel", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/sentinel-nyx3lz", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

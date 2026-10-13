@@ -1,0 +1,34 @@
+{
+  "slug": "exposed-tech",
+  "name": "exposed.tech",
+  "hackathon": "hack-western-12",
+  "tagline": "Scan a food label and meet each ingredient as a character, with pros, cons and dangerous combinations.",
+  "placement": { "status": "track-winner", "awards": ["Hack with the Best Startup Potential by Morrissette"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Nutrition labels are technical and hard to understand.",
+  "solution": "A mobile app extracts compounds from a label photo, explains each one's health effects, flags bad combinations and allergens, and presents ingredients as visual personalities.",
+  "demo_moment": "Team-described: scan a drink can and see its ingredients 'exposed'.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "javascript", "python", "gemini", "cloudflare"], "ai_patterns": ["computer-vision", "llm-api"] },
+  "domains": ["health", "commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hack with the Best Startup Potential by Morrissette” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes ingredient analysis playful rather than dry.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["one-sentence-clarity", "relatable-demo-wrapper"],
+    "judging_lens": ["business-potential", "design-ux"],
+    "lessons": ["Personality and play can turn a utility into something people want to open."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/exposed-tech",
+    "repo": "https://github.com/PconnorsUWO/HW-12/tree/newCubed",
+    "demo": "https://exposed.tech",
+    "video": "https://www.youtube.com/watch?v=fB2axB4Ec0g"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/exposed-tech", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

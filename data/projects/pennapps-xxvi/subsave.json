@@ -1,0 +1,34 @@
+{
+  "slug": "subsave",
+  "name": "Subsave",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Prepay a year of subscriptions into a yield vault so they get cheaper, while keeping monthly cancellation.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - Finance (Capital One)"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Subscriptions drain money every month, and prepaying usually locks you in.",
+  "solution": "Users prepay; funds sit in a DeFi yield vault that offsets the cost, with monthly cancellation kept and the blockchain hidden behind a simple mobile dashboard.",
+  "demo_moment": "Team-described: add subscriptions and see the effective monthly price drop.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "expo", "typescript", "mongodb-atlas", "auth0", "gemini"], "ai_patterns": ["llm-api", "on-chain"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - Finance (Capital One)” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hides the crypto entirely from the user.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "one-sentence-clarity"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["Lead with the money saved; keep the mechanism invisible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/subsave",
+    "repo": "https://github.com/adlonymous/subsave",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=FC3KWH5CUpk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/subsave", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

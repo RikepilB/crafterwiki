@@ -1,0 +1,35 @@
+{
+  "slug": "dispatch-ai",
+  "name": "Dispatch",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A live copilot for 911 dispatchers: transcribes calls, scores urgency, drafts incident briefs and suggests protocol questions.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["2nd Place Overall"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Dispatchers must listen, type and recall protocols at once under stress, which slows response; the story starts from a teammate's delayed police response after a robbery.",
+  "solution": "Live transcription, urgency detection, structured incident briefs, protocol-based question prompts, translation and stress detection, with a triage queue that moves high-risk calls to the top, using locally run models.",
+  "demo_moment": "Team-described: play a call and watch the brief and priority fill in as the caller speaks.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "tailwind", "ollama"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “2nd Place Overall” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Opens with a personal emergency that went badly.", "basis": "team-stated", "source": 0 },
+      { "claim": "Targets the multitasking bottleneck rather than replacing the dispatcher.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity", "takes-action"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["Assist the human in a high-stakes loop instead of replacing them; it is easier to believe."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dispatch-evf2sq",
+    "repo": "https://github.com/us-abdullah/dispatch10",
+    "demo": "https://v0-dispatch-delta.vercel.app/landing.html",
+    "video": "https://www.youtube.com/watch?v=daPom7Yfg8Y"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dispatch-evf2sq", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

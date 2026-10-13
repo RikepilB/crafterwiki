@@ -1,0 +1,34 @@
+{
+  "slug": "terminator-agents",
+  "name": "Terminator",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A game where an AI overlord coordinates shooting, strategy and scoring agents fast enough to fight you in real time.",
+  "placement": { "status": "track-winner", "awards": ["Cerebus - Best use of Cerebras"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Many multi-agent applications are impractical because LLM inference is too slow.",
+  "solution": "A browser game in which specialised agents run on very fast inference and an orchestrator directs them live over websockets.",
+  "demo_moment": "Team-described: play against agents that react to you in real time.",
+  "build_style": "software-only",
+  "tech": { "stack": ["javascript", "express", "websockets", "cerebras", "openai"], "ai_patterns": ["multi-agent"] },
+  "domains": ["games-entertainment", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cerebus - Best use of Cerebras” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built to show something only fast inference makes possible.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "relatable-demo-wrapper"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Show a sponsor's speed advantage as gameplay people can feel."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/terminator-g02u6t",
+    "repo": "https://github.com/V-prajit/Terminator",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=5CZHU31kQrs"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/terminator-g02u6t", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
