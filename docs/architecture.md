@@ -431,6 +431,14 @@ active-filter removal, reset, quick toggles, URL persistence, pagination, both l
 keyboard focus, image loading, empty state and horizontal overflow. Preserve source and submission
 URLs, ROSS/S-KBD67 deduplication, reported/unverified award semantics and all 173 optional records.
 
+Roster on demand (2026-10-12): full event rosters make the optional records grow by hundreds per
+event, so `/projects/` ships only the default references. Roster cards render into a static
+fragment, `/projects/roster/` (noindex), from the same `ReferenceCard` component; the explorer
+fetches it the first time "Include other submissions" is on (toggle or `?entries=1`) and slots the
+cards back into merged order. Search never matches roster cards while the toggle is off, so the
+default view is unchanged. While the fragment loads, or if it fails, the explorer says the results are
+incomplete and offers a retry. Decision record: [ADR-012](adr/ADR-012-roster-cards-on-demand.md).
+
 ### Rendered anti-slop review
 
 Verdict: pass after one interaction fix. The 1440px render has a clear catalog hierarchy: one short

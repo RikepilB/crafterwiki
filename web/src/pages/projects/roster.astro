@@ -1,0 +1,8 @@
+---
+// Roster cards for the project explorer, fetched only when someone includes other submissions.
+// Keeping them out of /projects/ keeps that page small as full event rosters are indexed.
+import ReferenceCard from '../../components/ReferenceCard.astro';
+import { records, orderOf } from '../../lib/explorer.mjs';
+---
+<meta name="robots" content="noindex" />
+{records.filter(p=>p.roster).map(p=><ReferenceCard p={p} order={orderOf.get(p)} />)}
