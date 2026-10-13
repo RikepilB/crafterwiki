@@ -1,0 +1,34 @@
+{
+  "slug": "memory-of-the-sun",
+  "name": "Memory of the Sun",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A solar panel that tracks the sun without motors, to recover morning and evening power at low cost.",
+  "placement": { "status": "track-winner", "awards": ["Wolfram Award Winners (Opt-in)"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Fixed panels lose much power at low sun angles, and motorised trackers are costly.",
+  "solution": "A CAD-designed passive mechanism tracks the sun, with a Raspberry Pi and modelling in Wolfram tools.",
+  "demo_moment": "Team-described: the built prototype tilting through the day.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "python", "c++", "wolfram"], "ai_patterns": ["none"] },
+  "domains": ["climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Wolfram Award Winners (Opt-in)” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Removes motors to cut cost and maintenance.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "cost-collapse"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Subtract a costly part and explain the trade."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/extra-sensational-solar-panels",
+    "repo": "https://github.com/cloudzia/Solar-Tracker-Hoo-Hacks",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=mCB4suhdVNk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/extra-sensational-solar-panels", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

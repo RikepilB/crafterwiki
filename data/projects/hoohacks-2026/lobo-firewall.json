@@ -1,0 +1,38 @@
+{
+  "slug": "lobo-firewall",
+  "name": "Lobo",
+  "hackathon": "hoohacks-2026",
+  "tagline": "An inference firewall that steers an LLM's internal activations away from harmful concepts during generation.",
+  "placement": { "status": "track-winner", "awards": ["Best AI Safety & Alignment Evaluations - Sponsored by Virginia AI Security Initiative"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Prompt-based safety is fragile against jailbreaks.",
+  "solution": "Precomputes activation-space directions for seven harmful concepts and intervenes inside the model during generation, with an admin dashboard.",
+  "demo_moment": "Team-described: adjust concept sliders and see a jailbreak fail.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "pytorch", "transformer-lens", "fastapi", "next-js", "react", "modal"], "ai_patterns": ["ml-model"] },
+  "domains": ["ai-security"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best AI Safety & Alignment Evaluations - Sponsored by Virginia AI Security Initiative” among 231 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Works inside the model rather than on prompts.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "originality"],
+    "lessons": ["Intervene where the behaviour is computed."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lobo-zs3cdw",
+    "repo": "https://github.com/amey-gupt/Lobo",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=4ry5j7n6wbY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lobo-zs3cdw", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

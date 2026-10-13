@@ -1,0 +1,34 @@
+{
+  "slug": "seedengine",
+  "name": "SeedEngine",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Suggests which crop genes are best to edit for a trait and outputs a short lab report.",
+  "placement": { "status": "track-winner", "awards": ["MLH || Best Use of Gemini API || Google Swag Kits"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Gene-editing strategy for crops needs specialist analysis.",
+  "solution": "A pipeline pulls genomic and protein data, predicts structures and ranks editable genes for traits such as drought resistance, summarised by Gemini.",
+  "demo_moment": "Team-described: request drought-resistant soybeans and read the report.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "fastapi", "sqlite", "gemini", "esmfold", "ensembl", "uniprot"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["agriculture-food"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH || Best Use of Gemini API || Google Swag Kits” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A solo build over real biology databases.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Condense expert analysis into a one-page report."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/seedengine",
+    "repo": "https://github.com/zcr3hd/seedengine",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=pv1usSx8dcw"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/seedengine", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

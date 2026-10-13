@@ -1,0 +1,34 @@
+{
+  "slug": "search-and-rescue-sim",
+  "name": "Search and Rescue",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Design a multi-floor building, place responders and victims, and simulate an optimised rescue.",
+  "placement": { "status": "grand-winner", "awards": ["Best Overall - 1st Place"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Emergency response in complex buildings is hard to plan when every second counts.",
+  "solution": "Users build floor plans in 2D and 3D, define scenarios and run simulations that assign responders and route them with optimisation and pathfinding under changing conditions.",
+  "demo_moment": "Team-described: run a rescue scenario and watch responders' routes.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "react", "three-js", "html"], "ai_patterns": ["ai-unspecified"] },
+  "domains": ["emergencies-disaster", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Overall - 1st Place” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Goes beyond visualisation to optimised assignment.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["visible-engineering-depth", "human-stakes"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Simulation lets judges see a plan, not just a map."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/search-and-rescue-2pwlkf",
+    "repo": "https://github.com/Imranbilal268/Search_and_Rescue",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=8cjidhWx0-A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/search-and-rescue-2pwlkf", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

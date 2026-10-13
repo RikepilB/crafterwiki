@@ -1,0 +1,34 @@
+{
+  "slug": "foregast",
+  "name": "foreGASt",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Forecasts agricultural price swings so farmers can hedge before they happen.",
+  "placement": { "status": "track-winner", "awards": ["Best Financial Hack - Sponsored by Capital One"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Farmers have few protections against seasonal price swings.",
+  "solution": "An XGBoost model on public economic and energy data predicts price movements, shown in a dashboard.",
+  "demo_moment": "Team-described: view a forecasted price spike.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "xgboost", "pandas", "numpy", "plotly", "streamlit", "sqlite", "docker"], "ai_patterns": ["ml-model"] },
+  "domains": ["agriculture-food", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Financial Hack - Sponsored by Capital One” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Inspired by a book on price hedging.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone"],
+    "judging_lens": ["impact"],
+    "lessons": ["Bring financial tools to a group without them."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/hoohacks-submission",
+    "repo": "https://github.com/bob3457/HooHacks26",
+    "demo": "https://foregast-production.up.railway.app/",
+    "video": "https://www.youtube.com/watch?v=BymezzLZJfM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/hoohacks-submission", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

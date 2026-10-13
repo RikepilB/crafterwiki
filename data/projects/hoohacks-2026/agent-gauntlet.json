@@ -1,0 +1,37 @@
+{
+  "slug": "agent-gauntlet",
+  "name": "Agent Gauntlet",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A live benchmark where a red-team agent attacks a browser agent's task in real time.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Best Overall - 2nd Place"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Browser agents are getting capable but are exposed to malicious page content.",
+  "solution": "Runs a task agent and a red-team agent side by side; the attacker injects hidden prompts and other content attacks; results are charted.",
+  "demo_moment": "Team-described: watch an injection derail a shopping task.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "react", "typescript", "tailwind", "convex", "playwright", "openai", "anthropic", "vitest"],
+    "ai_patterns": ["multi-agent", "computer-use", "llm-api"]
+  },
+  "domains": ["ai-security", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Overall - 2nd Place” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes agent safety watchable as a duel.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "trend-wave-timing", "visible-engineering-depth"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["Turn an abstract risk into a live contest."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/agent-gauntlet",
+    "repo": "https://github.com/abhimaddi/agent-gauntlet",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=wku8NOyvt9A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/agent-gauntlet", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

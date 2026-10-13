@@ -1,0 +1,37 @@
+{
+  "slug": "sprynt",
+  "name": "Sprynt",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A bot that joins incident calls, transcribes with speakers, tracks action items and answers when called.",
+  "placement": { "status": "track-winner", "awards": ["MLH || Best Use of Auth0 || Wireless Headphones"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Incident calls lose track of who owns what.",
+  "solution": "Transcribes in real time with speaker labels, pulls action items to a live board, catches verbal reassignments and responds by chat and voice when addressed.",
+  "demo_moment": "Team-described: say 'give that to Sarah' and see the board update.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next-js", "typescript", "python", "fastapi", "postgresql", "deepgram", "anthropic", "elevenlabs", "aws", "auth0"],
+    "ai_patterns": ["voice-ai", "agent", "llm-api"]
+  },
+  "domains": ["dev-tools", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH || Best Use of Auth0 || Wireless Headphones” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "From the team's internship incident calls.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Catching a spoken reassignment is the magic moment."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sprynt",
+    "repo": "https://github.com/kanisiva2/Sprynt",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=uhJaWv66z4A"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sprynt", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

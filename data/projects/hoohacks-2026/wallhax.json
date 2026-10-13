@@ -1,0 +1,34 @@
+{
+  "slug": "wallhax",
+  "name": "WallHax",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Shared AR for responders: see teammates through walls, drop threat pins and map floors together.",
+  "placement": { "status": "track-winner", "awards": ["Best AI & Data Science"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Teams clearing buildings lose track of each other and of hazards.",
+  "solution": "iOS devices stream positions and LiDAR-detected walls; teammates appear as avatars and pins sync across devices, with Gaussian-splat reconstruction.",
+  "demo_moment": "Team-described: walk a floor while a teammate's avatar shows behind a wall.",
+  "build_style": "software-only",
+  "tech": { "stack": ["swift", "arkit", "python", "javascript"], "ai_patterns": ["computer-vision"] },
+  "domains": ["emergencies-disaster", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best AI & Data Science” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Shares the map across the team in real time.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Multi-device sync is the impressive part of AR."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/wallhax-896ck3",
+    "repo": "https://github.com/HyunLee8/wallhax",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=II26dfXLtV0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/wallhax-896ck3", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

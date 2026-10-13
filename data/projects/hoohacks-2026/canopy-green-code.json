@@ -1,0 +1,34 @@
+{
+  "slug": "canopy-green-code",
+  "name": "Canopy",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A code-editor extension that flags energy-wasteful patterns and translates the cost into everyday terms.",
+  "placement": { "status": "track-winner", "awards": ["Best Sustainability - Sponsored by SustainableIT"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Developers do not see the environmental cost of inefficient code.",
+  "solution": "Analyses code for patterns like excessive polling or N+1 queries and expresses the energy as equivalents such as homes powered.",
+  "demo_moment": "Team-described: open a file and see a wasteful query flagged.",
+  "build_style": "software-only",
+  "tech": { "stack": ["typescript", "react", "node-js", "express"], "ai_patterns": ["none"] },
+  "domains": ["climate-sustainability", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Sustainability - Sponsored by SustainableIT” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes kilowatt-hours relatable.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper"],
+    "judging_lens": ["impact"],
+    "lessons": ["Translate units into things people picture."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/canopy-8lsrmx",
+    "repo": "https://github.com/Asyboi/canopy",
+    "demo": "http://cleancanopy.us",
+    "video": "https://www.youtube.com/watch?v=bqkjJq-5y4g"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/canopy-8lsrmx", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

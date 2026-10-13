@@ -1,0 +1,41 @@
+{
+  "slug": "clara-presentations",
+  "name": "Clara",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Listens to you present over your slides and gives a per-slide breakdown of your speaking.",
+  "placement": { "status": "track-winner", "awards": ["MLH || Best Domain Name from GoDaddy Registry || Digital Gift Card"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Students rehearse presentations without useful feedback.",
+  "solution": "Upload slides and context, present naturally; word-level timestamps are analysed per slide and overall.",
+  "demo_moment": "Team-described: present and read slide-by-slide feedback.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "vite", "tailwind", "python", "fastapi", "openai", "pymupdf", "snowflake"],
+    "ai_patterns": ["voice-ai", "llm-scoring"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “MLH || Best Domain Name from GoDaddy Registry || Digital Gift Card” among 231 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Ties feedback to specific slides.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Anchor feedback to the artefact the user can change."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/clara-ke9ahg",
+    "repo": "https://github.com/LoganBradley787/Clara",
+    "demo": "http://www.tryclara.us",
+    "video": "https://www.youtube.com/watch?v=ElaNwViUtOM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/clara-ke9ahg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

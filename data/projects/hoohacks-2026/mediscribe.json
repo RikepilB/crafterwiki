@@ -1,0 +1,37 @@
+{
+  "slug": "mediscribe",
+  "name": "MediScribe",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A buttonless two-way medical interpreter that also simplifies the doctor's jargon.",
+  "placement": { "status": "track-winner", "awards": ["MLH || Best Use of Snowflake API || Raspberry Pi 4"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Patients with limited English struggle in medical visits, the builders say from experience.",
+  "solution": "Translates patient speech into clinical English with symptom and urgency flags, and simplifies and translates the doctor's replies back, with voice activity detection.",
+  "demo_moment": "Team-described: a patient speaks in Vietnamese and the doctor hears English.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "vite", "tailwind", "django", "python", "gemini", "elevenlabs", "snowflake", "onnxruntime-web"],
+    "ai_patterns": ["voice-ai", "llm-api"]
+  },
+  "domains": ["health", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH || Best Use of Snowflake API || Raspberry Pi 4” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Simplifies as well as translates.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["Translation plus simplification serves both sides."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/aura-1b4gyk",
+    "repo": "https://github.com/Sabalpp/MediScribe",
+    "demo": "http://mediscribe-cyan.vercel.app",
+    "video": "https://player.vimeo.com/video/1175939326?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/aura-1b4gyk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

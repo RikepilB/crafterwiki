@@ -1,0 +1,37 @@
+{
+  "slug": "frontier-finance",
+  "name": "Frontier Finance",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A gamified finance app with ML stock charts and AI suggestions, built solo on many sponsor tools.",
+  "placement": { "status": "track-winner", "awards": ["MLH || Best Use of Solana || Ledger Nano S Plus"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "The builder wanted to learn production-grade architecture while making finance engaging.",
+  "solution": "Combines a portfolio view, ML predictions, AI financial suggestions, on-chain payments and checkout in one containerised stack.",
+  "demo_moment": "Team-described: view predictions and buy through checkout.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "fastapi", "mongodb", "tensorflow", "scikit-learn", "typescript", "solana", "stripe", "snowflake", "gemini", "docker"],
+    "ai_patterns": ["ml-model", "llm-api", "on-chain"]
+  },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH || Best Use of Solana || Ledger Nano S Plus” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A solo stretch across many unfamiliar technologies.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "learning-stretch"],
+    "lessons": ["Breadth can win a single-sponsor prize when that sponsor is used well."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/frontier-funds",
+    "repo": "https://github.com/TheeGreenGenie/HooHacks",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1175931130?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/frontier-funds", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

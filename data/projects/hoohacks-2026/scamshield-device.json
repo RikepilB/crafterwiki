@@ -1,0 +1,37 @@
+{
+  "slug": "scamshield-device",
+  "name": "ScamShield",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A small device that listens to speakerphone calls, detects scams and alerts the caller and their family.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Best Overall - 3rd Place"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Phone scams target isolated older adults.",
+  "solution": "A Raspberry Pi with sensors listens to the call, detects scam patterns with AI, plays a spoken warning on a smart speaker and texts family; no app needed.",
+  "demo_moment": "Team-described: a scripted scam call triggers the warning and family alert.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["raspberry-pi", "python", "fastapi", "next-js", "typescript", "gemini", "elevenlabs", "twilio", "sqlite", "auth0"],
+    "ai_patterns": ["voice-ai", "llm-api"]
+  },
+  "domains": ["security-networking", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Overall - 3rd Place” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "No behaviour change: just put the phone on speaker.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "zero-install-channel"],
+    "judging_lens": ["impact"],
+    "lessons": ["Fit protection into what vulnerable users already do."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/scamshield-87rbxe",
+    "repo": "https://github.com/TristanGru/ScamShield",
+    "demo": "https://scamshield.beer",
+    "video": "https://www.youtube.com/watch?v=z5F1gDdCr84"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/scamshield-87rbxe", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

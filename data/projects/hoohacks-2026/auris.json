@@ -1,0 +1,33 @@
+{
+  "slug": "auris",
+  "name": "Auris",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Tracks PTSD symptoms between therapy sessions with clinical scales and camera-based vitals.",
+  "placement": { "status": "track-winner", "awards": ["Best Health & Wellness", "MLH || Best Use of Presage || Fitbit Inspire & Presage Perks"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Therapists cannot see physiological responses between sessions.",
+  "solution": "An Android app pairs clinical questionnaires with contactless vitals from the camera, tags responses to triggers and builds embeddings for therapists.",
+  "demo_moment": "Team-described: answer a scale while vitals are recorded.",
+  "build_style": "software-only",
+  "tech": { "stack": ["kotlin", "android", "presage-sdk", "fastapi", "snowflake", "auth0"], "ai_patterns": ["computer-vision", "ml-model"] },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Health & Wellness” and “MLH || Best Use of Presage || Fitbit Inspire & Presage Perks” among 231 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Bridges the gap between sessions.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["Show clinicians the moments they never see."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/cadence-r6is0f", "repo": "https://github.com/vishnu-kalaparty/hoohacks", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/cadence-r6is0f", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

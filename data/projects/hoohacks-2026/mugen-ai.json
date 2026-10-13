@@ -1,0 +1,34 @@
+{
+  "slug": "mugen-ai",
+  "name": "Mugen AI",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A Notion-like workspace where AI builds apps on top of your own databases.",
+  "placement": { "status": "track-winner", "awards": ["MLH || Best Use of ElevenLabs || Wireless Earbuds"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "People's data sits in tools that cannot become apps easily.",
+  "solution": "Users create data sources by hand, AI or upload; prompts generate frontends that read and modify them, and new apps create their own data sources.",
+  "demo_moment": "Team-described: generate a homework tracker from uploaded notes.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "python", "fastapi", "supabase", "claude", "elevenlabs"], "ai_patterns": ["llm-api", "generative-media"] },
+  "domains": ["productivity", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH || Best Use of ElevenLabs || Wireless Earbuds” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Data and generated apps stay linked.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Generated apps are useful when they sit on real data."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/mugen-ai",
+    "repo": "https://github.com/torrinconrath/hoohacks-2026",
+    "demo": "https://mugenai.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=IWGsVBW25Lc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/mugen-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

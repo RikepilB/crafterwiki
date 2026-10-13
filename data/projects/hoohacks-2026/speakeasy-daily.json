@@ -1,0 +1,37 @@
+{
+  "slug": "speakeasy-daily",
+  "name": "Speakeasy",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A daily speaking coach: record short videos and get scored feedback, streaks and challenges.",
+  "placement": { "status": "track-winner", "awards": ["Best Education"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People want to speak better but lack feedback and habit.",
+  "solution": "Analyses clarity, pace, filler words, confidence and energy from recorded videos, with streaks, weekly scores and collectibles.",
+  "demo_moment": "Team-described: record a prompt and read the feedback.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react-native", "expo", "python", "fastapi", "supabase", "gemini", "assemblyai", "hume-ai", "google-cloud-run"],
+    "ai_patterns": ["voice-ai", "llm-scoring"]
+  },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Education” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pairs feedback with habit mechanics.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Feedback without a habit loop does not stick."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/speakeasy-ag93bl",
+    "repo": "https://github.com/RishiKandimalla/speakeasy",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=JJBpDtHl8aE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/speakeasy-ag93bl", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

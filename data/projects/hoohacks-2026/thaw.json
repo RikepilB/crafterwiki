@@ -1,0 +1,34 @@
+{
+  "slug": "thaw",
+  "name": "Thaw",
+  "hackathon": "hoohacks-2026",
+  "tagline": "Matches companies and startups by stated intent and drafts the first message.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Startups struggle to find investors and partners without warm introductions.",
+  "solution": "Verified profiles declare intent; AI matching pairs businesses and Gemini suggests opening messages.",
+  "demo_moment": "Team-described: set intent and receive matches.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next-js", "react", "typescript", "postgresql", "supabase", "gemini"], "ai_patterns": ["llm-api"] },
+  "domains": ["marketing-growth", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team shipped matching and messaging.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["one-sentence-clarity"],
+    "judging_lens": ["learning-stretch"],
+    "lessons": ["A clear matching loop is achievable in a first hackathon."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/thaw",
+    "repo": "https://github.com/sambriggs262/thaw",
+    "demo": "https://thaw-ai.app/",
+    "video": "https://www.youtube.com/watch?v=-S7NV_zc-2I"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/thaw", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

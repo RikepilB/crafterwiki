@@ -1,0 +1,34 @@
+{
+  "slug": "dead-not-alive",
+  "name": "Dead... Not Alive!",
+  "hackathon": "hoohacks-2026",
+  "tagline": "A Wild West bounty-hunter game over LAN where players chase targets and each other.",
+  "placement": { "status": "track-winner", "awards": ["Best Wild West (Opt-in)"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "The team wanted its own social-deduction game in a western setting.",
+  "solution": "A Unity game for up to four players on a local network, hunting criminals while eliminating rivals.",
+  "demo_moment": "Team-described: a four-player round in a western town.",
+  "build_style": "software-only",
+  "tech": { "stack": ["unity", "c#"], "ai_patterns": ["none"] },
+  "domains": ["games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Wild West (Opt-in)” among 231 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Matches the opt-in theme prize exactly.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["theme-native-twist", "cultural-reference-hook"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Theme prizes reward full commitment."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/dead-not-alive",
+    "repo": "https://github.com/binh3huynh/HooHack_2026_Sub",
+    "demo": "https://brodrago147.itch.io/hoohacks-2026-submission",
+    "video": "https://www.youtube.com/watch?v=p5qleZmT5D8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/dead-not-alive", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hoohacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
