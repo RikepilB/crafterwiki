@@ -1,0 +1,34 @@
+{
+  "slug": "trojan",
+  "name": "Trojan",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Scans a vibe-coded repository for critical vulnerabilities and opens fix pull requests.",
+  "placement": { "status": "track-winner", "awards": ["[1Password] Best Security Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Fast AI-assisted development often skips security review.",
+  "solution": "An agent scans the codebase, flags vulnerabilities with explanations, and generates fix PRs.",
+  "demo_moment": "Team-described: scan a repo, open a vulnerability and merge the fix.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "python", "langgraph", "openai", "supabase", "websockets"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["ai-security", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[1Password] Best Security Hack” among 169 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounds the pitch in cited industry statistics.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["Security agents that ship the fix beat ones that file a report."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/trojan",
+    "repo": "https://github.com/jkuo630/Trojan",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=4-LN6P5TIFk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/trojan", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

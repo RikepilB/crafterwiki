@@ -1,0 +1,34 @@
+{
+  "slug": "ecolog",
+  "name": "EcoLog: Your Pocket AI Field Guide",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Photograph plants and insects and get illustrated field-guide entries for your own nature log.",
+  "placement": { "status": "track-winner", "awards": ["Hack the 6ix x TKS: Best Beginner Hack"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "People notice species on walks but have no easy way to identify and remember them.",
+  "solution": "Identifies organisms from photos with AI and generates illustrated field-guide pages in a personal log.",
+  "demo_moment": "Team-described: snap a flower and get a field-guide page about it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["flask", "gemini", "dall-e-3", "html", "css", "figma"], "ai_patterns": ["computer-vision", "generative-media"] },
+  "domains": ["education", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hack the 6ix x TKS: Best Beginner Hack” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team built a complete, charming flow.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["tight-scope-finished", "familiar-thing-new-job"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Beginner prizes reward a small, delightful, finished idea."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/biobook-your-pocket-ai-field-guide",
+    "repo": null,
+    "demo": "https://ecolog-xe5k.onrender.com/",
+    "video": "https://player.vimeo.com/video/1102861433?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/biobook-your-pocket-ai-field-guide", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

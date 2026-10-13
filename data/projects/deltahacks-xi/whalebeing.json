@@ -1,0 +1,39 @@
+{
+  "slug": "whalebeing",
+  "name": "WhaleBeing",
+  "hackathon": "deltahacks-xi",
+  "tagline": "Predicts blue-whale habitat day by day and shows where shipping routes cross it, to cut ship strikes.",
+  "placement": { "status": "grand-winner", "awards": ["First Place: Nintendo Switch + Nord Securities Bundle", "Dyson Innovation Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Ships kill many whales each year, though slowing down or rerouting costs operators little; the team cites a global figure.",
+  "solution": "A habitat-suitability model based on a published 2019 study predicts daily blue-whale presence off California; a web app overlays real shipping routes to flag high-risk crossings.",
+  "demo_moment": "Team-described: pick a date and see where routes intersect predicted whale habitat.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "flask", "react", "node.js", "azure", "searoutes-api"], "ai_patterns": ["ml-model"] },
+  "domains": ["climate-sustainability", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “First Place: Nintendo Switch + Nord Securities Bundle” and “Dyson Innovation Challenge” among 134 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Built on a cited, peer-reviewed habitat model.", "basis": "team-stated", "source": 0 },
+      { "claim": "Won first place and an innovation challenge with a narrow, well-evidenced problem.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cited-evidence-trust", "expert-data-for-everyone", "place-based-specificity", "human-stakes"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Standing on a published model makes a weekend prediction credible."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/whalebeing-27sj0w",
+    "repo": "https://github.com/lucasliao0403/WhaleBeing",
+    "demo": "http://whalebeing.co/",
+    "video": "https://www.youtube.com/watch?v=EwOxT8YSXnk"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/whalebeing-27sj0w", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

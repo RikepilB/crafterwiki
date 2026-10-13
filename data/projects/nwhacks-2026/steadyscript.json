@@ -1,0 +1,39 @@
+{
+  "slug": "steadyscript",
+  "name": "SteadyScript",
+  "hackathon": "nwhacks-2026",
+  "tagline": "Fine-motor therapy with a smart pen and camera that measure tremor and stability as you practise writing.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Project", "[PCCA] Best Wellness Related Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People with Parkinson's, stroke or brain injury need guided fine-motor practice, and access to therapy is uneven.",
+  "solution": "An Arduino-based device and computer vision stream stability data in real time to a web app with hand-gesture controls and session statistics.",
+  "demo_moment": "Team-described: trace a pattern and watch the live stability graph.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "opencv", "python", "fastapi", "react", "websockets"], "ai_patterns": ["computer-vision"] },
+  "domains": ["health", "accessibility", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Beginner Project” and “[PCCA] Best Wellness Related Hack” among 169 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "A beginner team built hardware plus a real-time dashboard.", "basis": "curator-inference" },
+      { "claim": "Frames a broad group of users beyond Parkinson's.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes"],
+    "judging_lens": ["impact"],
+    "lessons": ["Beginner teams can win with hardware if the loop is simple and live."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/steadyscript",
+    "repo": "https://github.com/SteadyScript/SteadyScript",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=QCpoyvr15rE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/steadyscript", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

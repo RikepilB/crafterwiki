@@ -1,0 +1,29 @@
+{
+  "slug": "hermes-calls",
+  "name": "hermes",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "An assistant that phones businesses for you to book appointments or order food.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Hack the 6ix: 3rd Place"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Booking calls interrupt work, involve hold times and phone menus.",
+  "solution": "Takes a plain-language request, searches and evaluates local businesses, and places the call with a voice agent to complete the booking or order.",
+  "demo_moment": "Team-described: ask for a haircut tomorrow afternoon and hear the agent book it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "python", "typescript", "openai", "claude"], "ai_patterns": ["agent", "voice-ai"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Hack the 6ix: 3rd Place” among 131 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Does a real-world phone task end to end.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "live-real-world-proof", "one-sentence-clarity"],
+    "judging_lens": ["originality", "challenge-relevance"],
+    "lessons": ["A live call to a real business is a demo nobody forgets."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/hermes-vfeob3", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=QSlBJOja-wM" },
+  "sources": [
+    { "url": "https://devpost.com/software/hermes-vfeob3", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

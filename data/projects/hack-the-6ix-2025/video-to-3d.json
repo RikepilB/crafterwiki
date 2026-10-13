@@ -1,0 +1,41 @@
+{
+  "slug": "video-to-3d",
+  "name": "Video ➡️ 3D by 13Labs (Best Dev Tool & TwelveLabs API @ HT6)",
+  "hackathon": "hack-the-6ix-2025",
+  "tagline": "Turns a video, even from a Raspberry Pi feed, into an interactive animated 3D scene in the browser.",
+  "placement": { "status": "track-winner", "awards": ["TwelveLabs: Best Use of TwelveLabs API (Podium)", "Warp: Best Developer Tool"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "AI can describe video but not rebuild it as something you can interact with.",
+  "solution": "A pipeline detects key objects, their motion and geometry from video and reconstructs an explorable, animated 3D scene.",
+  "demo_moment": "Team-described: record a scene and walk around it in 3D.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["next.js", "react", "fastapi", "python", "ffmpeg", "raspberry-pi", "qnx", "twelvelabs"],
+    "ai_patterns": ["computer-vision", "generative-media"]
+  },
+  "domains": ["creative-media", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “TwelveLabs: Best Use of TwelveLabs API (Podium)” and “Warp: Best Developer Tool” among 131 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Won a video-API podium and the developer-tool prize.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "visible-engineering-depth"],
+    "judging_lens": ["technical-depth", "sponsor-api-use"],
+    "lessons": ["Video-to-something-interactive is a striking use of video APIs."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/video-3d-game-by-thirteen-labs",
+    "repo": "https://github.com/Marcus990/Thirteen-Labs",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=aazbH6jsu_s"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/video-3d-game-by-thirteen-labs", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthe6ix2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

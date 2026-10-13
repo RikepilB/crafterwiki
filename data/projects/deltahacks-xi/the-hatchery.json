@@ -1,0 +1,34 @@
+{
+  "slug": "the-hatchery",
+  "name": "The Hatchery",
+  "hackathon": "deltahacks-xi",
+  "tagline": "A game-like virtual incubator where AI crews build your startup idea in front of you.",
+  "placement": { "status": "track-winner", "awards": ["Build an AI agent with Cohere"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Good ideas stall without technical or marketing skills.",
+  "solution": "A 3D lobby where crews of agents for software and marketing work on your idea in real time, with an embedded IDE.",
+  "demo_moment": "Team-described: drop in an idea and watch the AI crew build it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-three-fiber", "python", "crewai", "langchain", "cohere", "openai", "socket.io"], "ai_patterns": ["multi-agent"] },
+  "domains": ["agent-infrastructure", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Build an AI agent with Cohere” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes multi-agent work visible as a game.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "cultural-reference-hook"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Visualising agents as characters makes orchestration legible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/the-hatchery",
+    "repo": "https://github.com/shaansuthar/hatchery",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=ytOrZurGb1k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/the-hatchery", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

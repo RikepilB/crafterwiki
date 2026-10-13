@@ -1,0 +1,37 @@
+{
+  "slug": "mirr-ai",
+  "name": "MIRR.AI",
+  "hackathon": "mchacks-13",
+  "tagline": "A virtual wardrobe and try-on browser extension inspired by the computer closet in a 1990s film.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of MongoDB Atlas"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Online clothing has high return rates and costs, much of it from fit, the team cites.",
+  "solution": "A browser extension and app that manages your wardrobe and lets you try products on virtually before buying.",
+  "demo_moment": "Team-described: try on a product page item over your own photo.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "plasmo", "flask", "node.js", "mongodb", "vertex-ai", "gemini"],
+    "ai_patterns": ["generative-media", "computer-vision"]
+  },
+  "domains": ["commerce-retail", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of MongoDB Atlas” among 127 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Names a beloved film scene as the product.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A shared pop-culture image explains the product before the demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/fashion-mxr7e3",
+    "repo": "https://github.com/AntoDono/McHacks2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=_ZOgubU104I"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/fashion-mxr7e3", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

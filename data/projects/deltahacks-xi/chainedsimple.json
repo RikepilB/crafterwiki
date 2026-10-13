@@ -1,0 +1,38 @@
+{
+  "slug": "chainedsimple",
+  "name": "ChainedSimple",
+  "hackathon": "deltahacks-xi",
+  "tagline": "Verifies financial documents on a blockchain to speed up KYC between banks.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of AI & Verbwire API", "Most Innovative Use Of Verbwire API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Verifying financial statements for KYC is slow, insecure and repeated across banks, the team saw while working at banks.",
+  "solution": "Users upload documents that are verified and anchored on-chain as NFTs, with a wallet and AI checks.",
+  "demo_moment": "Team-described: upload a statement and share a verifiable proof.",
+  "build_style": "software-only",
+  "tech": { "stack": ["flask", "python", "cohere", "verbwire"], "ai_patterns": ["llm-api", "on-chain"] },
+  "domains": ["fintech", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Use of AI & Verbwire API” and “Most Innovative Use Of Verbwire API” among 134 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Grounded in the team's bank internships.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "human-stakes"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Industry experience makes a compliance pitch credible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/chainedsimple",
+    "repo": "https://github.com/zayedu/ChainedSimple",
+    "demo": "https://www.blockitlikeitshot.us/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/chainedsimple", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

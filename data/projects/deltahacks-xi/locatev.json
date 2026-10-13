@@ -1,0 +1,29 @@
+{
+  "slug": "locatev",
+  "name": "LocatEV",
+  "hackathon": "deltahacks-xi",
+  "tagline": "Find nearby EV chargers and pay for a session in one app.",
+  "placement": { "status": "track-winner", "awards": ["Powering Tomorrow"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Charging stations are not user-friendly and need several apps.",
+  "solution": "One app for finding stations, choosing a dock and paying securely.",
+  "demo_moment": "Team-described: pick a destination, choose a dock and pay.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "tailwind", "google-maps"], "ai_patterns": ["none"] },
+  "domains": ["climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Powering Tomorrow” among 134 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built directly for the sponsor's EV challenge.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["tight-scope-finished"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["In a crowded sponsor challenge, a polished end-to-end flow helps."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/locatev", "repo": "https://github.com/saampaark/DeltaHacks", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/locatev", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://deltahacks-xi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "bloomscroll",
+  "name": "Bloomscroll",
+  "hackathon": "mchacks-13",
+  "tagline": "Turns course material into a vertical feed of short teaching and quiz reels, so scrolling becomes studying.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Third Place", "Best AI project that uses the Gumloop API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Students want to doomscroll but need to study.",
+  "solution": "Upload course content to generate theory reels and test reels in a scrolling feed, with progress tracking that responds to right and wrong answers, built with an AI workflow platform.",
+  "demo_moment": "Team-described: scroll through reels for a course and watch the progress bar move as you answer.",
+  "build_style": "software-only",
+  "tech": { "stack": ["svelte", "javascript", "mongodb", "gumloop", "tailwind"], "ai_patterns": ["llm-api", "generative-media"] },
+  "domains": ["education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Third Place” and “Best AI project that uses the Gumloop API” among 127 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Embraces the habit instead of fighting it.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["inverted-approach", "familiar-thing-new-job", "one-sentence-clarity"],
+    "judging_lens": ["originality", "sponsor-api-use"],
+    "lessons": ["Use the behaviour you are worried about as the delivery channel."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/brain-rejuvenate",
+    "repo": "https://github.com/jackolsen0171/mchacks_13",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=H17lZRTbcXM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/brain-rejuvenate", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://mchacks13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
