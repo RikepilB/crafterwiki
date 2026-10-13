@@ -16,11 +16,7 @@
   "participants": 404,
   "participants_note": "404 registered on Devpost; the organizer planned for about 500 builders.",
   "teams": 124,
-<<<<<<< HEAD
-  "team_size": null,
-=======
   "team_size": "1-4",
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
   "theme": null,
   "tracks": [],
   "prizes": [
@@ -205,10 +201,7 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://hack-the-valley-x.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-12", "note": "Dates, venue, participants, prizes, judges, judging criteria, pitch format." },
-<<<<<<< HEAD
-=======
     { "url": "https://hack-the-valley-x.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-12", "note": "Team size: up to 4 members; a Best Solo Hack prize confirms solo entries." },
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
     { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12", "note": "All 6 pages captured: 124 of 124 submissions; prize names read from each winning project page." }
   ],
   "curator_notes": "Indexed as the prior edition for Hack the Valley 11 (Oct 16–18, 2026). Taglines are CrafterWIKI paraphrases; domains assigned conservatively. All 20 prize winners are analyzed records (2026-10-13)."

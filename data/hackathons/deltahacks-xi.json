@@ -16,11 +16,7 @@
   "participants": 493,
   "participants_note": "Invite-only: hackers accepted through the organizer's portal.",
   "teams": 134,
-<<<<<<< HEAD
-  "team_size": null,
-=======
   "team_size": "1-4",
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
   "theme": null,
   "tracks": [],
   "prizes": [

@@ -16,11 +16,7 @@
   "participants": 520,
   "participants_note": "520 registered on Devpost; the organizer describes over 550 participants from January 16 to 18.",
   "teams": 160,
-<<<<<<< HEAD
-  "team_size": null,
-=======
   "team_size": "1-4",
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
   "theme": null,
   "tracks": [],
   "prizes": [
@@ -226,10 +222,7 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://uofthacks-13.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Dates, venue, participants, prizes, judges, judging criteria, pitch time limits." },
-<<<<<<< HEAD
-=======
     { "url": "https://uofthacks-13.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Team size: up to four registered participants." },
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
     { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 7 pages captured: 160 of 160 submissions; prize names from each of the 21 winning project pages." }
   ],
   "curator_notes": "The Devpost page asks teams to relate projects to a theme without naming it; many submissions frame themselves around identity, which suggests the theme (curator inference, unconfirmed). Taglines are CrafterWIKI paraphrases; domains assigned conservatively. The top three overall are analyzed records."

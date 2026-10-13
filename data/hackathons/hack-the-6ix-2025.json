@@ -15,11 +15,7 @@
   "duration_hours": 36,
   "participants": 394,
   "teams": 131,
-<<<<<<< HEAD
-  "team_size": null,
-=======
   "team_size": "1-4",
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
   "theme": null,
   "tracks": [],
   "prizes": [

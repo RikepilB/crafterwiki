@@ -17,11 +17,7 @@
       { "claim": "Puts a human in the loop with confidence scores.", "basis": "team-stated", "source": 0 }
     ],
     "mechanisms": ["cited-evidence-trust", "sponsor-platform-mastery"],
-<<<<<<< HEAD
-    "judging_lens": ["sponsor-api-use", "design-ux"],
-=======
     "judging_lens": ["technical-depth", "design-ux", "originality"],
->>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
     "lessons": ["Showing confidence and letting people correct it fits enterprise judges."],
     "confidence": "low"
   },
