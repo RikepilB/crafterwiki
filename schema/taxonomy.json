@@ -86,7 +86,7 @@
     { "id": "impact", "definition": "Real-world or social impact, practical utility." },
     { "id": "business-potential", "definition": "Growth potential, unique insight, could become a company." },
     { "id": "sponsor-api-use", "definition": "Creative and effective use of a sponsor's platform." },
-    { "id": "engineering-practice", "definition": "Team development practices, code quality, incremental delivery." },
+    { "id": "engineering-practice", "definition": "Team development practices, code quality, documentation, incremental delivery." },
     { "id": "public-vote", "definition": "Decided by community voting; distribution and pitch reach matter." },
     { "id": "storytelling-pitch", "definition": "Narrative, pitch delivery and demo storyline." },
     { "id": "scientific-validity", "definition": "Scientifically sound; would do what it claims in the real world (NASA Space Apps 'Validity')." },
