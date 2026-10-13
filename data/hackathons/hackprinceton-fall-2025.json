@@ -15,7 +15,7 @@
   "duration_hours": 36,
   "participants": 596,
   "teams": 195,
-  "team_size": null,
+  "team_size": "1-4",
   "theme": null,
   "tracks": [],
   "prizes": [
@@ -254,6 +254,7 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://hackprinceton-fall-2025.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Dates, venue, participants, prizes, judging criteria." },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Team size: up to 4 members; individuals may also enter." },
     { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 9 pages captured: Devpost counts 195 submissions and lists 194 publicly; prize names from each of the 37 winning project pages." }
   ],
   "curator_notes": "All 37 prize winners are analyzed records. The three Best Overall winners are recorded as podium without rank because the project pages do not say which placed first. Taglines are CrafterWIKI paraphrases; domains assigned conservatively."

@@ -16,7 +16,11 @@
   "participants": 631,
   "participants_note": "Attendance required admission through the organizer's application process.",
   "teams": 169,
+<<<<<<< HEAD
   "team_size": null,
+=======
+  "team_size": "1-4",
+>>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
   "theme": null,
   "tracks": [],
   "prizes": [
@@ -222,6 +226,10 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://nwhacks-2026.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Dates, venue, participants, prizes, judging criterion." },
+<<<<<<< HEAD
+=======
+    { "url": "https://nwhacks-2026.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Team size: up to 4 registered hackers, present at the event." },
+>>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
     { "url": "https://nwhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 8 pages captured: 169 of 169 submissions; prize names from each of the 20 winning project pages." }
   ],
   "curator_notes": "All 20 prize winners are analyzed records. The three finalists share one prize line; Rehabify's own page claims first place overall (team-stated, kept as a claim, placement recorded as finalist). Taglines are CrafterWIKI paraphrases; domains assigned conservatively."

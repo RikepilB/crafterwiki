@@ -142,7 +142,14 @@
   "organizer_takeaways": [],
   "sources": [
     { "url": "https://pennapps-xxvi.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Dates, venue, participants, submission timeline, judging criteria." },
+<<<<<<< HEAD
     { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 4 pages captured: 85 of 85 submissions; prize names from each of the 25 winning project pages." }
   ],
   "curator_notes": "All 25 prize winners are analyzed records. 'Learning' is a judging criterion here, which favours visible stretch over polish. Taglines are CrafterWIKI paraphrases; domains assigned conservatively."
+=======
+    { "url": "https://pennapps-xxvi.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Says there is no minimum or maximum team size, unlike the event page." },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 4 pages captured: 85 of 85 submissions; prize names from each of the 25 winning project pages." }
+  ],
+  "curator_notes": "All 25 prize winners are analyzed records. 'Learning' is a judging criterion here, which favours visible stretch over polish. Taglines are CrafterWIKI paraphrases; domains assigned conservatively. Team size follows Devpost's eligibility box (teams of 2 to 4); the rules page says there is no minimum or maximum."
+>>>>>>> feat/ingest-mchacks-6ix-deltahacks-nwhacks
 }
