@@ -436,7 +436,8 @@ event, so `/projects/` ships only the default references. Roster cards render in
 fragment, `/projects/roster/` (noindex), from the same `ReferenceCard` component; the explorer
 fetches it the first time "Include other submissions" is on (toggle or `?entries=1`) and slots the
 cards back into merged order. Search never matches roster cards while the toggle is off, so the
-default view is unchanged.
+default view is unchanged. While the fragment loads, or if it fails, the explorer says the results are
+incomplete and offers a retry. Decision record: [ADR-012](adr/ADR-012-roster-cards-on-demand.md).
 
 ### Rendered anti-slop review
 

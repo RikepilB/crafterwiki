@@ -90,6 +90,10 @@ const facets=[
         <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
       </div>
 
+      <div id="roster-status" class="roster-status" hidden translate="no" role="status">
+        <p data-roster-loading><span lang="en">Loading the other submissions…</span><span lang="es">Cargando las demás propuestas…</span></p>
+        <p data-roster-error hidden><span lang="en">The other submissions could not be loaded, so these results are incomplete.</span><span lang="es">No se pudieron cargar las demás propuestas, así que estos resultados están incompletos.</span> <button type="button" data-roster-retry><span lang="en">Try again</span><span lang="es">Reintentar</span></button></p>
+      </div>
       <div class="reference-grid" id="results" data-roster-src={href('/projects/roster/')}>
         {defaultRecords.map(p=><ReferenceCard p={p} order={orderOf.get(p)} />)}
       </div>
@@ -148,7 +152,9 @@ const facets=[
   .active-filters button:hover { border-color:var(--accent); }
   .reference-grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(min(100%,255px),1fr)); }
   .empty-state { border:1px solid var(--line); border-radius:10px; padding:44px 20px; text-align:center; }
-  .empty-state button,.load-more { background:var(--surface); border:1px solid var(--line); border-radius:8px; color:var(--ink); cursor:pointer; font:650 .82rem var(--sans); padding:10px 14px; }
+  .roster-status { border:1px solid var(--line); border-radius:10px; margin:0 0 16px; padding:12px 16px; }
+  .roster-status p { margin:0; }
+  .empty-state button,.load-more,.roster-status button {background:var(--surface); border:1px solid var(--line); border-radius:8px; color:var(--ink); cursor:pointer; font:650 .82rem var(--sans); padding:10px 14px; }
   .load-more { display:block; margin:24px auto 0; min-width:220px; }
   .filter-total { color:var(--muted); margin-left:auto; }
   .sr-only { height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; clip:rect(0,0,0,0); white-space:nowrap; }

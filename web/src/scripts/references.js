@@ -35,9 +35,12 @@ export function initReferences() {
   let timer;
 
   // Roster cards are a separate static fragment, fetched the first time other submissions are included,
-  // then slotted back into explorer order.
+  // then slotted back into explorer order. Until it arrives (or if it fails) the results are incomplete,
+  // so the page says so instead of reporting a partial count or "no matches".
   let roster;
   let rosterReady=false;
+  let rosterState='idle';
+  const rosterStatus=document.querySelector('#roster-status');
   const loadRoster=()=>roster??=fetch(grid.dataset.rosterSrc).then(response=>{
     if(!response.ok)throw new Error(`roster ${response.status}`);
     return response.text();
@@ -78,7 +81,16 @@ export function initReferences() {
 
   const render=()=>{
     const data=new FormData(form);
-    if(data.get('entries')&&!rosterReady&&grid?.dataset.rosterSrc)loadRoster().then(render,error=>console.error(error));
+    if(data.get('entries')&&rosterState==='idle'&&grid?.dataset.rosterSrc){
+      rosterState='loading';
+      loadRoster().then(()=>{rosterState='ready';render();},error=>{console.error(error);rosterState='error';render();});
+    }
+    const incomplete=Boolean(data.get('entries'))&&!rosterReady&&Boolean(grid?.dataset.rosterSrc);
+    if(rosterStatus){
+      rosterStatus.hidden=!incomplete;
+      rosterStatus.querySelector('[data-roster-loading]').hidden=rosterState==='error';
+      rosterStatus.querySelector('[data-roster-error]').hidden=rosterState!=='error';
+    }
     const terms=normalize(data.get('q') || '').trim().split(/\s+/).filter(Boolean);
     const matches=cards.filter(card=>{
       if(card.dataset.roster==='true'&&!data.get('entries'))return false;
@@ -99,7 +111,7 @@ export function initReferences() {
     matches.slice(0,limit).forEach(card=>card.hidden=false);
     if(count)count.textContent=`${matches.length} result${matches.length===1?'':'s'} · showing ${Math.min(limit,matches.length)}`;
     if(more)more.hidden=limit>=matches.length;
-    if(empty)empty.hidden=matches.length>0;
+    if(empty)empty.hidden=matches.length>0||incomplete;
     renderActiveFilters(data);
 
     const qs=new URLSearchParams();
@@ -153,6 +165,7 @@ export function initReferences() {
     setTimeout(()=>{filterEvents();render();},0);
   });
   more?.addEventListener('click',()=>{if(timer){clearTimeout(timer);limit=18;}else limit+=18;render();});
+  rosterStatus?.querySelector('[data-roster-retry]')?.addEventListener('click',()=>{rosterState='idle';render();});
   window.addEventListener('crafter-language-applied',()=>{localizeInputs();render();});
   localizeInputs();filterEvents();render();
 }
