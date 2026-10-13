@@ -1,0 +1,36 @@
+{
+  "slug": "kinemo",
+  "name": "kinemo",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A webcam-only motion game console: two players box, slice flying fruit or race reaction tests with their bodies.",
+  "placement": { "status": "grand-winner", "awards": ["1st Place Overall"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Active games usually need consoles, controllers or VR gear.",
+  "solution": "Pose tracking from a single webcam drives a gesture-controlled menu and three two-player games, with physics such as projectile modelling and interpolation for smooth motion, and match statistics.",
+  "demo_moment": "Team-described: two people step in front of a laptop and box each other on screen.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "mediapipe", "opencv", "pygame", "numpy"], "ai_patterns": ["computer-vision"] },
+  "domains": ["games-entertainment", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “1st Place Overall” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grew from a boxing tracker into a multi-game console once they saw people enjoy it.", "basis": "team-stated", "source": 0 },
+      { "claim": "Visitors lined up to play during the event, as the team's photos show.", "basis": "team-stated", "source": 0 },
+      { "claim": "A demo the judges can physically play beats one they watch.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "live-real-world-proof", "zero-install-channel", "cost-collapse"],
+    "judging_lens": ["technical-depth", "design-ux"],
+    "lessons": ["If people keep coming back to play your prototype during the event, follow that and make it the product."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/kinemo",
+    "repo": "https://github.com/arvinmefsha/kinemo",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=JY9jn1HCboI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/kinemo", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

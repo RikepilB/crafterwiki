@@ -1,0 +1,34 @@
+{
+  "slug": "kpark",
+  "name": "KPark",
+  "hackathon": "qhacks-2026",
+  "tagline": "An assistant that shows live free parking in Kingston from street sensors and guides you to it.",
+  "placement": { "status": "track-winner", "awards": ["City of Kingston Prize Track"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Drivers circle full lots near campus and arrive late.",
+  "solution": "Pulls real sensor updates on free spots, prices and locations, filters for accessibility, EV charging and vehicle height, and answers chat requests for the best spot near a destination.",
+  "demo_moment": "Team-described: ask where to park near a venue and get a route to a free spot.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "react", "typescript", "leaflet"], "ai_patterns": ["llm-api"] },
+  "domains": ["govtech-transparency", "productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “City of Kingston Prize Track” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Born from the team's own late arrivals to games.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity", "human-stakes", "physical-artifact"],
+    "judging_lens": ["impact"],
+    "lessons": ["A small, personal annoyance shared by a whole city makes a credible civic pitch."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/kpark",
+    "repo": "https://github.com/NathanielCheung/QHacks_Meter.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=_IGPEslg7DU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/kpark", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

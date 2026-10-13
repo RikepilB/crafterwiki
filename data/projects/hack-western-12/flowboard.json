@@ -1,0 +1,35 @@
+{
+  "slug": "flowboard",
+  "name": "FlowBoard",
+  "hackathon": "hack-western-12",
+  "tagline": "Sketch storyboard frames, add prompts, link them with arrows, and get one continuous AI-generated video.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Place Overall"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Traditional animation means redrawing every frame and refining motion by hand.",
+  "solution": "An infinite canvas of 16:9 frames; each sketch can be enhanced by AI and turned into a clip from a prompt, frames connected by arrows become a sequence, and clips merge into a single output of any length.",
+  "demo_moment": "Team-described: draw two frames, connect them, and play the generated sequence.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "tldraw", "tailwind", "python", "redis", "gemini", "indexeddb"], "ai_patterns": ["generative-media"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Place Overall” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Keeps context between connected clips so sequences stay coherent.", "basis": "team-stated", "source": 0 },
+      { "claim": "The canvas is the theme made literal.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "theme-native-twist", "relatable-demo-wrapper"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["Wrapping generative video in a storyboard metaphor gives users control they understand."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/flowboard-bdpqzg",
+    "repo": "https://github.com/austinjiann/FlowBoard",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=HGY6VDGjD7U"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/flowboard-bdpqzg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

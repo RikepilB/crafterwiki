@@ -1,0 +1,34 @@
+{
+  "slug": "pinpoint",
+  "name": "Pinpoint",
+  "hackathon": "qhacks-2026",
+  "tagline": "A map-first student housing platform where listings and roommate seekers share one view, with AI search.",
+  "placement": { "status": "track-winner", "awards": ["City of Kingston Prize Track"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Student housing in Kingston is scattered across groups and classifieds, roommates are found elsewhere, and nothing is organised by location.",
+  "solution": "Listings and people looking for roommates appear as pins on one map, with filters for budget, dates and lifestyle, and an AI search that matches plain-language requests.",
+  "demo_moment": "Team-described: describe the place you want and see matching pins on the map.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "leaflet", "supabase", "postgresql", "gemini", "vercel"], "ai_patterns": ["llm-api"] },
+  "domains": ["real-estate", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “City of Kingston Prize Track” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A local problem every Queen's student recognises.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["place-based-specificity", "human-stakes", "one-sentence-clarity"],
+    "judging_lens": ["impact", "design-ux"],
+    "lessons": ["A city-sponsored track rewards problems residents of that city feel today."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/pinpoint-t1zdc7",
+    "repo": "https://github.com/FarhaanAli05/pinpoint",
+    "demo": "https://usepinpoint.ca/",
+    "video": "https://www.youtube.com/watch?v=bdDlp8-cUnI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/pinpoint-t1zdc7", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

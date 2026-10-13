@@ -1,0 +1,38 @@
+{
+  "slug": "atlas-qhacks",
+  "name": "Atlas",
+  "hackathon": "qhacks-2026",
+  "tagline": "Pick a place and a year on a 3D globe, and step into a generated 3D world of that moment with a voice guide.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["Second Place"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "People can read history but rarely feel what a place and time were like.",
+  "solution": "A 3D globe for choosing a location, a voice guide for choosing the year, a generated 3D world for those coordinates and era with period music during loading, and narration that explains what you see, all inside the app.",
+  "demo_moment": "Team-described: choose a city and a century, warp in, and walk around while the guide explains.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "three.js", "spark.js", "globe.gl", "fastapi", "gemini", "world-labs", "gradium"],
+    "ai_patterns": ["generative-media", "voice-ai", "llm-api"]
+  },
+  "domains": ["education", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Second Place” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes history immersive rather than read.", "basis": "team-stated", "source": 0 },
+      { "claim": "A two-person team chained 3D world generation, voice and a globe into one flow.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "expert-data-for-everyone", "theme-native-twist"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["Turn the theme (a golden age) into a place the judges can visit."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/atlas-m8yot1",
+    "repo": "https://github.com/MatthewLones/QHacks-2026",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=iQmTq0zAGz8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/atlas-m8yot1", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

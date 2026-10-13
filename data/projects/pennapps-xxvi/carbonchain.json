@@ -1,0 +1,29 @@
+{
+  "slug": "carbonchain",
+  "name": "CarbonChain",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A transparent marketplace to fund verified carbon-credit projects in small amounts and trace where money goes.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - Sustainability (Bloomberg)"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Consumer carbon offsets hide which credits are bought, risk double counting and greenwashing, and make small reliable purchases hard.",
+  "solution": "Search verified projects, learn about each, and place traceable orders for carbon credits.",
+  "demo_moment": "Team-described: find a verified project and buy a small amount of credits.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "javascript", "python"], "ai_patterns": ["none"] },
+  "domains": ["climate-sustainability", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - Sustainability (Bloomberg)” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Lays out the trust problem in offsets point by point.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust"],
+    "judging_lens": ["impact"],
+    "lessons": ["In sustainability finance, traceability is the feature."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/carbonchain-m2hxz4", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=F-6xvtqcJH4" },
+  "sources": [
+    { "url": "https://devpost.com/software/carbonchain-m2hxz4", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

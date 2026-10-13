@@ -1,0 +1,34 @@
+{
+  "slug": "wavelength",
+  "name": "Wavelength",
+  "hackathon": "uofthacks-13",
+  "tagline": "A hiring flow that matches candidates to company values through an AI-led video interview.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Vultr"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Applications reduce people to checklists and miss fit with the organization.",
+  "solution": "Builds a profile from a resume or LinkedIn, enriches it from the web, runs a live interview with a voice model, and scores the recorded interview with video understanding.",
+  "demo_moment": "Team-described: apply with a link and complete a short AI interview.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "flask", "gemini", "twelvelabs", "postgresql", "vultr"], "ai_patterns": ["voice-ai", "llm-api", "computer-vision"] },
+  "domains": ["careers-hr"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Vultr” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Ran the full pipeline on the sponsor's cloud.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Infrastructure prizes reward a complete deployed flow on their platform."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/wavelength-5iacbt",
+    "repo": "https://github.com/Badbird5907/uofthacks-2026",
+    "demo": "http://usewavelength.tech",
+    "video": "https://www.youtube.com/watch?v=kJud-XmnYaU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/wavelength-5iacbt", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

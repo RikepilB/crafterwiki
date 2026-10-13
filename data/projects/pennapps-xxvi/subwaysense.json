@@ -1,0 +1,34 @@
+{
+  "slug": "subwaysense",
+  "name": "SubwaySense",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Uses New York open data on ridership and incidents to help riders choose safer, less crowded subway trips.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - Transit"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Subway riders face delays, crowding and safety worries.",
+  "solution": "Combines state open data on ridership and police incident reports with AI to estimate safety and crowding for trips, in a mobile app.",
+  "demo_moment": "Team-described: plan a trip and see safety and crowding for each option.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react-native", "swift", "flask", "python", "gemini", "cerebras", "exa", "ny-open-data"], "ai_patterns": ["llm-api"] },
+  "domains": ["govtech-transparency", "emergencies-disaster"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - Transit” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Found and used public open data to back the idea.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "place-based-specificity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Search for public data first; it can turn a worry into a product."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/subwaysense",
+    "repo": "https://github.com/varcitiez/SubwaySense.git",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=CoMcJBNlDLg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/subwaysense", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

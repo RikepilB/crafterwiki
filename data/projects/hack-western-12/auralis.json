@@ -1,0 +1,37 @@
+{
+  "slug": "auralis",
+  "name": "Auralis",
+  "hackathon": "hack-western-12",
+  "tagline": "A virtual doctor avatar that holds a video consultation, reads your emotions and writes a report.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best AI Application Built with Cloudflare"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Medical consultations are hard to access and often lack empathy.",
+  "solution": "A lip-synced 3D doctor avatar talks with the patient by voice, detects emotion and estimated age from the webcam, adapts its responses, and exports a structured summary and PDF report.",
+  "demo_moment": "Team-described: video-call the avatar and receive a professional report at the end.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "three.js", "fastapi", "gemini", "elevenlabs", "face-api.js", "cloudflare"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best AI Application Built with Cloudflare” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Combines a 3D avatar, emotion detection and voice in one call.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "wow-factor"],
+    "lessons": ["An avatar demo wins attention; medical claims need clear limits."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/docai-evq74t",
+    "repo": "https://github.com/rickytang666/auralis",
+    "demo": "https://stop-googling-symptoms.tech/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/docai-evq74t", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "sustain-a-prompt",
+  "name": "Sustain-A-Prompt",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Estimates a prompt's energy, CO2 and water footprint and rewrites it to use fewer tokens.",
+  "placement": { "status": "track-winner", "awards": ["MLH - Best use of Auth0"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Generative AI is energy-intensive and users cannot see the impact of their prompts.",
+  "solution": "Analyses a prompt's footprint at scale with relatable equivalents, optimises it and shows token savings side by side, model-aware.",
+  "demo_moment": "Team-described: paste a prompt and see its footprint shrink after optimisation.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "typescript", "three.js", "gemini", "cerebras", "auth0"], "ai_patterns": ["llm-api"] },
+  "domains": ["climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH - Best use of Auth0” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses everyday equivalents to make the numbers meaningful.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use", "design-ux"],
+    "lessons": ["Translate abstract units into everyday equivalents."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/sustain-a-prompt",
+    "repo": null,
+    "demo": "https://sustain-a-prompt.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=mIMQKbmX5O4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/sustain-a-prompt", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

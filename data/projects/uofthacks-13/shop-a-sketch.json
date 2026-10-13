@@ -1,0 +1,33 @@
+{
+  "slug": "shop-a-sketch",
+  "name": "Shop-A-Sketch",
+  "hackathon": "uofthacks-13",
+  "tagline": "Draw the thing you want to buy and get matching real products with prices and store links.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["Overall 3rd place"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Shopping search is text-first, but people often picture a product they cannot describe in words.",
+  "solution": "A drawing canvas sends the sketch to a multimodal model that extracts what was drawn; a layer applies the shopper's declared preferences, and live product search returns items with prices, ratings and merchant links, filterable by price.",
+  "demo_moment": "Team-described: sketch an object and see purchasable matches seconds later.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "tailwind", "python", "gemini", "google-shopping-api", "docker", "figma"],
+    "ai_patterns": ["llm-api", "computer-vision"]
+  },
+  "domains": ["commerce-retail"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Took third place overall among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built an end-to-end flow from a rough drawing to real products in seconds.", "basis": "team-stated", "source": 0 },
+      { "claim": "Draw-to-shop is one sentence and a five-second demo anyone in the room can try.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["one-sentence-clarity", "tight-scope-finished", "familiar-thing-new-job", "demo-first-wow"],
+    "judging_lens": ["originality", "design-ux"],
+    "lessons": ["A narrow flow that finishes end to end can place against far heavier engineering."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/shop-a-sketch", "repo": "https://github.com/clairez308/uofthacks26", "demo": "https://shop-a-sketch.tech/", "video": "https://www.youtube.com/watch?v=Rlop_MAxdIY" },
+  "sources": [
+    { "url": "https://devpost.com/software/shop-a-sketch", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

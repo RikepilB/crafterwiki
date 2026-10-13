@@ -1,0 +1,38 @@
+{
+  "slug": "predictify",
+  "name": "Predictify",
+  "hackathon": "uofthacks-13",
+  "tagline": "Turns prediction-market odds into daily tasks and hedges for Shopify merchants.",
+  "placement": { "status": "track-winner", "awards": ["Shopify: Hack Shopping with AI"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Merchants react to news after it hits; the team argues prediction markets see disruptions earlier.",
+  "solution": "Agents read prediction-market probabilities and translate them into store actions, delivered as a morning audio briefing; merchant approvals refine the agents, and on-chain hedging can lock margins.",
+  "demo_moment": "Team-described: a 60-second audio brief tells a merchant what to change in the store today.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["gemini", "polymarket-api", "shopify-api", "elevenlabs", "solana", "react", "node.js"],
+    "ai_patterns": ["multi-agent", "voice-ai", "on-chain"]
+  },
+  "domains": ["commerce-retail", "fintech", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Shopify: Hack Shopping with AI” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Connects prediction-market signals to concrete merchant actions.", "basis": "team-stated", "source": 0 },
+      { "claim": "Stacks several sponsor technologies around one merchant story.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "sponsor-platform-mastery", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use", "business-potential"],
+    "lessons": ["A sponsor prize favours a clear user (the merchant) with the sponsor's platform at the centre."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/oracle-news-project",
+    "repo": "https://github.com/TejasviniChawla/predictify",
+    "demo": "https://shopify-topaz-rho.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=AFgiUH1wmYY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/oracle-news-project", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
