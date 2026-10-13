@@ -1,0 +1,34 @@
+{
+  "slug": "honkanomics",
+  "name": "Honkanomics",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A mobile investing course with AI-personalized lessons, portfolio simulators and a goose-themed economy.",
+  "placement": { "status": "track-winner", "awards": ["RBC: RBC InvestEase - Investing for the Future"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Beginners lack confidence to start investing.",
+  "solution": "Combines language-app habit mechanics with paper-trading sandboxes and a link to the sponsor's investing product.",
+  "demo_moment": "Team-described: finish a lesson and practise in the simulator.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "supabase", "gemini", "openai", "investease-api"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “RBC: RBC InvestEase - Investing for the Future” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Borrows proven habit mechanics from language apps.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Reuse engagement mechanics people already know."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/honkanomics",
+    "repo": "https://github.com/svn05/v2webhonkonomics",
+    "demo": "https://www.honkanomics.com/",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/honkanomics", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

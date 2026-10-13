@@ -1,0 +1,34 @@
+{
+  "slug": "storybites",
+  "name": "StoryBites",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Personalised, dyslexia-friendly audiobooks built from a child's interests and reading level.",
+  "placement": { "status": "track-winner", "awards": ["Best Beginner Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Accessible reading tools for children with dyslexia are rare and expensive; a friend had to move abroad for help.",
+  "solution": "Parents enter interests and level; the app generates bite-sized stories with natural narration and an in-story dictionary.",
+  "demo_moment": "Team-described: enter a child's interests and play a story made for them.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "express", "gemini", "elevenlabs", "snowflake", "auth0"], "ai_patterns": ["llm-api", "voice-ai", "generative-media"] },
+  "domains": ["education", "accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Beginner Hack” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "A beginner team building for a friend's experience.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Beginner prizes reward a clear user and a finished flow."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/storybites",
+    "repo": "https://github.com/VainerAriel/HackTheValley2025",
+    "demo": "http://www.storybites.vip",
+    "video": "https://www.youtube.com/watch?v=-FeeGBtbKr8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/storybites", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

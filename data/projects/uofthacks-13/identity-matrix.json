@@ -1,0 +1,33 @@
+{
+  "slug": "identity-matrix",
+  "name": "Identity Matrix",
+  "hackathon": "uofthacks-13",
+  "tagline": "A shared virtual world where your avatar becomes an AI agent that keeps living as you after you log off.",
+  "placement": { "status": "grand-winner", "awards": ["Overall 1st place", "Best \"UofT\" Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Online presence stops the moment you close the laptop; nothing carries your way of talking and your relationships forward.",
+  "solution": "A real-time multiplayer world drawn during the event. Each player's avatar becomes a stateful agent that learns their mannerisms and memories through a continual-learning loop and a custom memory bank; after logout it keeps moving, meeting others, managing needs and replying in the player's style. A server-authoritative simulation ticks ten times a second, and a spectator mode shows friendships and feuds forming.",
+  "demo_moment": "Team-described: log back in and discover your agent joined a study group, argued with someone else's agent and became the unofficial mayor of the library.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "phaser", "node.js", "websockets", "fastapi", "supabase", "gemini", "openrouter"],
+    "ai_patterns": ["agent", "multi-agent", "llm-api"]
+  },
+  "domains": ["social-connection", "games-entertainment", "simulation-forecasting"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Took first place overall among 160 submissions, plus the UofT-themed prize.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Hand-built the world, a 10 Hz authoritative server and a memory system for agents that keep running offline.", "basis": "team-stated", "source": 0 },
+      { "claim": "The pitch is a funny story about what your agent did while you were away, which is easy to retell.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "visible-engineering-depth", "theme-native-twist", "one-sentence-clarity"],
+    "judging_lens": ["originality", "technical-depth", "wow-factor"],
+    "lessons": ["Show the agent's behaviour as a story the room can laugh at; it carries the engineering behind it."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/temp-sqyptg", "repo": "https://github.com/qiuethan/UofTHacks-Project", "demo": null, "video": "https://www.youtube.com/watch?v=AGGb7Qv4gY4" },
+  "sources": [
+    { "url": "https://devpost.com/software/temp-sqyptg", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

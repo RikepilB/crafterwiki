@@ -1,0 +1,38 @@
+{
+  "slug": "sematic",
+  "name": "Sematic",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A collaborative whiteboard that turns spoken commands, text or images into structured diagrams live.",
+  "placement": { "status": "track-winner", "awards": ["Amazon: AWS Campus Champions - Best Use of DynamoDB Streams"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Drawing diagrams by hand during a discussion kills momentum.",
+  "solution": "A spatially aware whiteboard executes commands such as adding a database connected to a service or deleting nodes on one side, from voice, text or uploaded images, collaboratively.",
+  "demo_moment": "Team-described: say \"add a user database connected to the auth service\" and watch it appear.",
+  "build_style": "software-only",
+  "tech": { "stack": ["reactflow", "gemini", "aws", "dynamodb", "amplify", "auth0"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["productivity", "dev-tools"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Amazon: AWS Campus Champions - Best Use of DynamoDB Streams” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Understands spatial references, not just commands.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["demo-first-wow", "one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use", "design-ux"],
+    "lessons": ["Voice-to-diagram demos well because the change is instant and visible."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/diaframe",
+    "repo": "https://github.com/koralkulacoglu/sematic",
+    "demo": "https://sematic.ca",
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/diaframe", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "deepsint",
+  "name": "Deepsint",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Enter one username and get an explainable profile card built from open-source intelligence.",
+  "placement": { "status": "track-winner", "awards": ["Cohere: Best Use of Cohere API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "OSINT tools are powerful but slow and spread across many tabs.",
+  "solution": "Scans the open web for matching accounts, scrapes public data from each, and uses embeddings and an LLM to reason which hits belong to the same person and summarize them.",
+  "demo_moment": "Team-described: type a username and get one profile card with evidence.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "streamlit", "sqlite", "cohere", "blackbird"], "ai_patterns": ["llm-api"] },
+  "domains": ["security-networking", "due-diligence-risk"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cohere: Best Use of Cohere API” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "One click replaces a fragmented workflow.", "basis": "team-stated", "source": 0 },
+      { "claim": "The same capability enables doxxing; the pitch does not address misuse.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cited-evidence-trust", "one-sentence-clarity"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["For dual-use tools, show safeguards before judges ask."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/deepsint", "repo": "https://github.com/Sai-sys-cmd/Deepsint", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/deepsint", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

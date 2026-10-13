@@ -1,0 +1,37 @@
+{
+  "slug": "introspect",
+  "name": "IntroSpect",
+  "hackathon": "hack-western-12",
+  "tagline": "An iOS assistant that turns non-verbal cues in a conversation into audio or text for neurodivergent and visually impaired users.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Presage"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Neurodivergent and visually impaired people can miss emotional and non-verbal signals, which narrows their career options.",
+  "solution": "Reads facial expression and physiological signals with a sensing SDK and describes the other person's emotional state through audio or text during a conversation.",
+  "demo_moment": "Team-described: during a conversation, hear a cue when the other person's expression changes.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["swift", "swiftui", "ios", "presage-sdk", "gemini", "elevenlabs", "cloudflare"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["accessibility"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Presage” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Started from a parent's experience working with youth.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["A sensing SDK prize goes to the team that gives the signal a human purpose."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/introspect-svotqk",
+    "repo": "https://github.com/nathanaelfoster/introspect",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=RWReOJqGrOM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/introspect-svotqk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

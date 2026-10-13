@@ -1,0 +1,34 @@
+{
+  "slug": "cryptolab",
+  "name": "CryptoLab",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A physical low-power blockchain whose nodes agree on blocks through light signals instead of mining.",
+  "placement": { "status": "track-winner", "awards": ["Best use of Blockchain"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Proof-of-work blockchains burn huge amounts of energy on puzzles that exist only to make consensus costly.",
+  "solution": "Microcontroller nodes with LEDs and light sensors: a leader emits a seed-derived blink pattern, neighbours sample it as an attestation step, and blocks finalize without mining.",
+  "demo_moment": "Team-described: watch the nodes blink and a block finalize.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["arduino", "c++", "python", "pyserial", "nextjs"], "ai_patterns": ["none"] },
+  "domains": ["climate-sustainability", "robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of Blockchain” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Rethinks consensus physically rather than in software alone.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "inverted-approach", "visible-engineering-depth"],
+    "judging_lens": ["originality", "technical-depth"],
+    "lessons": ["Making an abstract protocol physical makes it demonstrable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cryptolab-pgh2jx",
+    "repo": null,
+    "demo": "https://cryptolab0921.vercel.app",
+    "video": "https://www.youtube.com/watch?v=sIoJBT90FAM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cryptolab-pgh2jx", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

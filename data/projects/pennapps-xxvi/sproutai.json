@@ -1,0 +1,29 @@
+{
+  "slug": "sproutai",
+  "name": "SproutAI",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Forecasts retail demand to keep shelves stocked while cutting food and product waste.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - Finance (Capital One)"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Stores mis-predict demand, losing sales and wasting food.",
+  "solution": "Machine-learning demand forecasts with sustainability tracking and stocking recommendations.",
+  "demo_moment": "Team-described: see forecast demand and suggested stock levels with waste saved.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "react", "java", "gemini", "cerebras"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["commerce-retail", "climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - Finance (Capital One)” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pairs profit (stock) with sustainability (waste).", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["dual-use-value"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["A finance prize likes a pitch where saving money and doing good are the same lever."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/sproutai-9vil8w", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=7kS-5tsI1Ac" },
+  "sources": [
+    { "url": "https://devpost.com/software/sproutai-9vil8w", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

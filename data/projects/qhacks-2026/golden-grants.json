@@ -1,0 +1,34 @@
+{
+  "slug": "golden-grants",
+  "name": "Golden Grants",
+  "hackathon": "qhacks-2026",
+  "tagline": "A Chrome extension that checks a nonprofit's eligibility for a grant page and drafts its application sections.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Snowflake API"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Small nonprofits without grant writers lose hours to bureaucratic grant pages and sometimes do not apply.",
+  "solution": "Builds an organisation profile, checks eligibility against live grant-page text, summarises requirements, extracts deadlines and documents, drafts common sections, and keeps an exportable history.",
+  "demo_moment": "Team-described: open a grant page and see eligibility, deadlines and a draft response.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "node.js", "express", "postgresql", "snowflake"], "ai_patterns": ["llm-api"] },
+  "domains": ["productivity", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Snowflake API” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Analysis happens on the grant page itself, with no copy-pasting.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Meet users inside the page they already work on."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/golden-grants",
+    "repo": "https://github.com/mohammedz06/GoldenGrants",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=FWaPOm9_VPc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/golden-grants", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

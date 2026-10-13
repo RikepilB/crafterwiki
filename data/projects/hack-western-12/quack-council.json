@@ -1,0 +1,37 @@
+{
+  "slug": "quack-council",
+  "name": "The Quack Council",
+  "hackathon": "hack-western-12",
+  "tagline": "A council of five rubber ducks with distinct voices gives advice, tuned by your heart rate and blood pressure.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Talking problems through out loud helps, as rubber-duck debugging shows, but people lack a patient listener.",
+  "solution": "Users speak or type their worries; a sensing SDK estimates heart rate and blood pressure to set the tone, and five duck personas answer in their own voices.",
+  "demo_moment": "Team-described: vent to the council and hear five ducks respond in turn.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "fastapi", "node.js", "gemini", "elevenlabs", "presage", "cloudflare"],
+    "ai_patterns": ["multi-agent", "voice-ai", "llm-api"]
+  },
+  "domains": ["health", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of ElevenLabs” among 82 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Extends a known engineering ritual (rubber-duck debugging) to emotional support.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "familiar-thing-new-job", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "originality"],
+    "lessons": ["Distinct voices for each agent make a multi-agent demo legible and fun."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/the-quack-council",
+    "repo": "https://github.com/emma-x1/hack-western",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=1Ao76gDAiU0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/the-quack-council", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-western-12.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

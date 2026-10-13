@@ -1,0 +1,34 @@
+{
+  "slug": "jarvis-hologram",
+  "name": "Jarvis",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Reach into the screen to grab, scale and rotate 3D models with your hands, and ask a voice assistant about them.",
+  "placement": { "status": "track-winner", "awards": ["Best use of CV"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Spatial interaction usually needs a headset or special controllers.",
+  "solution": "A webcam tracks hands to pinch, spread and rotate meshes in a custom 3D pipeline, while a live voice model answers questions about the object on screen.",
+  "demo_moment": "Team-described: pinch a model, spin it, and ask the assistant what it is.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "mediapipe", "opencv", "flask", "gemini-live"], "ai_patterns": ["computer-vision", "voice-ai"] },
+  "domains": ["creative-media", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best use of CV” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Recreates a famous film scene with a plain webcam.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "demo-first-wow", "cost-collapse"],
+    "judging_lens": ["technical-depth", "wow-factor"],
+    "lessons": ["Name the movie moment you are recreating; the judges fill in the rest."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/jarvis-wn0e48",
+    "repo": "https://github.com/yuvvantalreja/penn_apps",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=b_FiCWloLUg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/jarvis-wn0e48", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

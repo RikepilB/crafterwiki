@@ -1,0 +1,29 @@
+{
+  "slug": "carbonsight",
+  "name": "CarbonSight",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Agents that pick the most energy-efficient model for each LLM request and show companies the carbon cost.",
+  "placement": { "status": "track-winner", "awards": ["MLH - Best use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Enterprises cannot see how much energy and carbon their LLM usage costs.",
+  "solution": "A parent-and-child agent structure with embeddings routes each request to the most efficient adequate model and visualises the energy network.",
+  "demo_moment": "Team-described: send prompts and see the green model chosen and the footprint saved.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "node.js", "fastapi", "python", "gemini", "adk", "supabase", "polygon"], "ai_patterns": ["multi-agent", "llm-api"] },
+  "domains": ["climate-sustainability", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH - Best use of Gemini API” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Makes AI's own footprint visible and actionable.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "takes-action"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["AI-for-AI-efficiency is a sponsor-friendly sustainability angle."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/carbonsight", "repo": null, "demo": null, "video": "https://www.youtube.com/watch?v=b30umZp1RZU" },
+  "sources": [
+    { "url": "https://devpost.com/software/carbonsight", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

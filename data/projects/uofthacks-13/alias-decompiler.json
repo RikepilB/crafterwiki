@@ -1,0 +1,35 @@
+{
+  "slug": "alias-decompiler",
+  "name": "Alias",
+  "hackathon": "uofthacks-13",
+  "tagline": "Upload an executable and get readable code, its behaviours and a safety verdict before you run it.",
+  "placement": { "status": "track-winner", "awards": ["1Password: Best Security Hack"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Antivirus warnings say a file may be unsafe but not what it does, so users cannot judge them.",
+  "solution": "Decompiles the binary, converts pseudo-C to readable C with a specialised model, cleans it with an LLM, extracts strings and behaviours such as network or file access, and explains them with a safe, suspicious or unsafe verdict in a browser extension.",
+  "demo_moment": "Team-described: drop in an .exe and read what it would do.",
+  "build_style": "software-only",
+  "tech": { "stack": ["ghidra", "pyghidra", "llm4decompile", "gemini", "next.js", "python"], "ai_patterns": ["llm-api", "ml-model"] },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “1Password: Best Security Hack” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Explains behaviour instead of only labelling files.", "basis": "team-stated", "source": 0 },
+      { "claim": "Decompilation plus explanation is real security depth for a student build.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["visible-engineering-depth", "cited-evidence-trust"],
+    "judging_lens": ["technical-depth", "impact"],
+    "lessons": ["In security, an explanation users can check beats a bare verdict."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/decompiler",
+    "repo": "https://github.com/Leo-Zh9/uofthacks13",
+    "demo": "https://4lias.tech",
+    "video": "https://www.youtube.com/watch?v=a5CEuy4ONhI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/decompiler", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

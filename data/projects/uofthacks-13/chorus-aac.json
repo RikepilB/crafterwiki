@@ -1,0 +1,37 @@
+{
+  "slug": "chorus-aac",
+  "name": "Chorus",
+  "hackathon": "uofthacks-13",
+  "tagline": "An AAC system that helps people who cannot speak easily compose and start conversations faster.",
+  "placement": { "status": "track-winner", "awards": ["Backboard.io: Humanity Award"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Assistive communication users type far slower than people speak, which keeps them reacting instead of initiating; the team cites roughly 15 versus 150 words per minute.",
+  "solution": "An active augmentative communication system with text, picture and suggestion modes, AI highlighting, icon generation and scheduling to shorten the path from thought to speech.",
+  "demo_moment": "Team-described: switch modes and see a full sentence ready in a few selections.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "typescript", "gemini", "openai", "whisper", "dall-e", "elevenlabs", "mongodb", "backboard"],
+    "ai_patterns": ["llm-api", "voice-ai", "generative-media"]
+  },
+  "domains": ["accessibility", "health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Backboard.io: Humanity Award” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built from friends and community members who live with the problem.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["A measurable gap (words per minute) frames an accessibility pitch better than adjectives."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/chorus-wx1l79",
+    "repo": "https://github.com/samtjhia/uofthacks",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=eq16xFEY26I"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/chorus-wx1l79", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "superhuman-cctv",
+  "name": "Superhuman",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "A swarm of AI agents searches CCTV footage in parallel, restores damaged frames and matches suspects from text descriptions.",
+  "placement": { "status": "track-winner", "awards": ["CATEGORY - Privacy / Security"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Investigators review surveillance footage clip by clip, too slowly for urgent cases.",
+  "solution": "Over twenty agents analyse feeds in parallel; video inpainting restores occluded frames; vision-language models and face re-identification match natural-language descriptions; a generative layer predicts trajectories.",
+  "demo_moment": "Team-described: describe a person and see matching clips across cameras.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "next.js", "opencv", "lama", "llava", "openai-agents-sdk", "cerebras", "runway"],
+    "ai_patterns": ["multi-agent", "computer-vision", "generative-media"]
+  },
+  "domains": ["security-networking"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CATEGORY - Privacy / Security” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Stacks many techniques (inpainting, re-identification, VLM retrieval) in one pipeline.", "basis": "team-stated", "source": 0 },
+      {
+        "claim": "Won the privacy and security category while being a surveillance tool; the civil-liberties trade-off is not addressed in its summary.",
+        "basis": "curator-inference"
+      }
+    ],
+    "mechanisms": ["visible-engineering-depth", "demo-first-wow"],
+    "judging_lens": ["technical-depth"],
+    "lessons": ["Technical depth can win a security category, but expect hard questions on misuse."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/superhuman",
+    "repo": "https://github.com/Harpith2/superhuman",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=VQMPn5WmAOI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/superhuman", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

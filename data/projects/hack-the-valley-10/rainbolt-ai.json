@@ -1,0 +1,38 @@
+{
+  "slug": "rainbolt-ai",
+  "name": "rainbolt.ai",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Upload a photo of a place and get its likely location with street views, map link and cultural facts.",
+  "placement": { "status": "track-winner", "awards": ["Best UI Hack Sponsored By Conrad Mo"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Finding where a photo was taken is hard.",
+  "solution": "Image embeddings matched against a vector index plus an LLM identify the location with confidence, show nearby street-view images, link coordinates and explain the reasoning.",
+  "demo_moment": "Team-described: drop in a holiday photo and see where it was taken.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "react", "fastapi", "python", "clip", "pinecone", "gemini", "langchain", "firebase"],
+    "ai_patterns": ["computer-vision", "llm-api"]
+  },
+  "domains": ["games-entertainment", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best UI Hack Sponsored By Conrad Mo” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Named after a well-known geography-guessing player.", "basis": "team-stated", "source": 0 },
+      { "claim": "Shows its reasoning, not just an answer.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "cited-evidence-trust"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["A polished interface with visible reasoning wins UI prizes."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/rainbolt-ai",
+    "repo": "https://github.com/danielp1218/rainbolt.ai",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=LCDrIKaTTIE"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/rainbolt-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

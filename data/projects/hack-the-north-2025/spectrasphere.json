@@ -1,0 +1,34 @@
+{
+  "slug": "spectrasphere",
+  "name": "SpectraSphere",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Turns shared memories and photos into story panels you can walk through in AR glasses.",
+  "placement": { "status": "track-winner", "awards": ["Snap: Spectacles AR Hackathon: Game On!"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Friends reconnect through retelling stories, but photos stay flat.",
+  "solution": "Uploaded memories become living story panels in AR, with style filters, using cloud AI behind the glasses.",
+  "demo_moment": "Team-described: enter story mode and see memories unfold around you.",
+  "build_style": "software-only",
+  "tech": { "stack": ["snap-spectacles", "lens-studio", "typescript", "gemini", "cohere", "google-cloud"], "ai_patterns": ["generative-media", "llm-api"] },
+  "domains": ["memory-journaling", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Snap: Spectacles AR Hackathon: Game On!” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built by old friends reconnecting at the event.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["AR prizes favour experiences that feel personal."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/htn-zq6138",
+    "repo": "https://github.com/tyseer2335/SpectraSphere",
+    "demo": null,
+    "video": "https://player.vimeo.com/video/1118489387?byline=0&portrait=0&title=0#t="
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/htn-zq6138", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

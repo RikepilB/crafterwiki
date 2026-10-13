@@ -1,0 +1,34 @@
+{
+  "slug": "ecotoken",
+  "name": "EcoToken",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "A Chrome extension that trims bloated AI prompts and chat history to cut energy and emissions.",
+  "placement": { "status": "track-winner", "awards": ["[MLH] Best Use of Snowflake API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Over-long prompts and chat histories waste energy, water and CO2.",
+  "solution": "Optimises prompts with one click and estimates emissions from token use, with data stored in a cloud data platform.",
+  "demo_moment": "Team-described: click once and see a shorter prompt with the emissions saved.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "node.js", "python", "snowflake", "chrome-extension"], "ai_patterns": ["llm-api"] },
+  "domains": ["climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “[MLH] Best Use of Snowflake API” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Plays on a widely shared meme about thanking chatbots.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cultural-reference-hook", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A trending conversation can be the hook for a sustainability tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/ecotoken-gb0ecp",
+    "repo": "https://github.com/likhithak10/hackthevalley/tree/main/ecotoken-extension",
+    "demo": "https://drive.google.com/file/d/1YhY_BYD9q-H2jox3Zfwrtgf80to2lW1N/view?usp=sharing",
+    "video": "https://www.youtube.com/watch?v=n58qXSid4ZA"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/ecotoken-gb0ecp", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

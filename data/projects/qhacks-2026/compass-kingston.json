@@ -1,0 +1,37 @@
+{
+  "slug": "compass-kingston",
+  "name": "Compass",
+  "hackathon": "qhacks-2026",
+  "tagline": "An agent-driven dashboard that turns years of Kingston resident complaints into insight for citizens and the city.",
+  "placement": { "status": "track-winner", "awards": ["Gradium Prize Track"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "An open archive of community complaints exists, but residents and leaders lack tools to use it.",
+  "solution": "A dashboard with an autonomous research agent that analyses the complaint dataset, clusters concerns and reports trends and priorities.",
+  "demo_moment": "Team-described: ask the agent about a neighbourhood and get the top concerns with charts.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "fastapi", "postgresql", "pgvector", "supabase", "gemini", "sentence-transformers", "scikit-learn", "vultr"],
+    "ai_patterns": ["agent", "llm-api", "ml-model"]
+  },
+  "domains": ["govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Gradium Prize Track” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Started from research into what Kingston residents actually complain about.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "place-based-specificity"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Find the city's own open data before choosing the problem."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/compass-w5iugc",
+    "repo": "https://github.com/MarcDasilva/QHacks2026",
+    "demo": "https://compass-queens.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=8mgrn5Bgtu4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/compass-w5iugc", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

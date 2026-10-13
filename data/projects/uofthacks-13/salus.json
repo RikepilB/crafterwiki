@@ -1,0 +1,30 @@
+{
+  "slug": "salus",
+  "name": "Salus",
+  "hackathon": "uofthacks-13",
+  "tagline": "Combines insurance, public aid and hospital assistance to cut a patient's medical bill, keeping data private.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of MongoDB Atlas"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Coverage exists but is split across insurers, public programs and hospital aid that do not talk to each other, leaving patients with surprise bills.",
+  "solution": "A coordination-of-benefits engine with agents that check a bill against private insurance, public aid and hospital assistance, under a zero-trust design where patient data stays local.",
+  "demo_moment": "Team-described: upload a bill and see how much each program covers.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "fastapi", "langgraph", "gemini", "mongodb", "1password"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["health", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of MongoDB Atlas” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Opens with a personal pharmacy story.", "basis": "team-stated", "source": 0 },
+      { "claim": "Privacy-first design fits a health-data problem.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "one-sentence-clarity"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["A first-person story of being turned away at the counter makes the stakes concrete."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/salus-9javs3", "repo": "https://github.com/mricardo888/salus", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/salus-9javs3", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "vibemovie",
+  "name": "VibeMovie",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "An AI-native video editor where you describe edits instead of hunting through menus.",
+  "placement": { "status": "track-winner", "awards": ["MLH: Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Professional editors are powerful but complex.",
+  "solution": "Conversational editing over a programmatic video renderer: ask for fades, cuts or text and the edit is applied.",
+  "demo_moment": "Team-described: ask to fade in the title and see it rendered.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "vite", "node.js", "express", "remotion", "gemini", "docker"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “MLH: Best Use of Gemini API” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Removes the timeline as a barrier.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Programmatic video makes AI edits reliable."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/promptmotion",
+    "repo": "https://github.com/EvanJYHe/vibe-movie",
+    "demo": "https://vibe-movie-six.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=CYJZUQVHnmU"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/promptmotion", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

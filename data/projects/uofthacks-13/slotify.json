@@ -1,0 +1,34 @@
+{
+  "slug": "slotify",
+  "name": "Slotify",
+  "hackathon": "uofthacks-13",
+  "tagline": "Inserts a sponsor read into a podcast at the best moment, in a matching voice, in one click.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of ElevenLabs"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Manual ad insertion in podcasts is slow and risks breaking the listener's flow.",
+  "solution": "Finds the top three insertion points from pauses, topic shifts and pacing, generates a voice-consistent sponsor read, lets the creator preview each slot and exports the blended episode.",
+  "demo_moment": "Team-described: preview three seconds before, the ad, and three seconds after for each slot.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "node.js", "express", "elevenlabs", "openai", "ffmpeg", "librosa"], "ai_patterns": ["voice-ai", "llm-api"] },
+  "domains": ["creative-media", "marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of ElevenLabs” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Turns a tedious creator chore into one click.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "tight-scope-finished", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "business-potential"],
+    "lessons": ["A narrow, money-adjacent creator workflow is a strong voice-AI demo."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/slotify-avmxe8",
+    "repo": "https://github.com/jweng121/slotify",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=S4m1lpipni0"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/slotify-avmxe8", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

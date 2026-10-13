@@ -1,0 +1,34 @@
+{
+  "slug": "oversea",
+  "name": "OverSEA",
+  "hackathon": "pennapps-xxvi",
+  "tagline": "Helps coast guards spot likely illegal fishing vessels across vast patrol zones.",
+  "placement": { "status": "podium", "rank": 3, "awards": ["3rd Place Overall"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Overfishing threatens species and many industrial fishing vessels are not publicly tracked, while coast guards patrol huge zones with limited resources; the team cites research figures.",
+  "solution": "An intelligence console that combines vessel data, maps and AI search to flag suspicious activity, with access control for sensitive data.",
+  "demo_moment": "Team-described: open the console and see flagged vessels on a map with the reasons.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "python", "gemini", "exa", "mapbox", "mongodb", "auth0"], "ai_patterns": ["llm-api"] },
+  "domains": ["climate-sustainability", "earth-observation", "govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “3rd Place Overall” among 85 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grounds the problem in cited research on overfishing.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["cited-evidence-trust", "human-stakes", "expert-data-for-everyone"],
+    "judging_lens": ["impact", "technical-depth"],
+    "lessons": ["Citing sources in the pitch itself builds trust for an enforcement tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/oversear",
+    "repo": "https://github.com/spicybigmac/pennapps",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=n2oYC2W7ASQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/oversear", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://pennapps-xxvi.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

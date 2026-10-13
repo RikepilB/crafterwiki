@@ -1,0 +1,34 @@
+{
+  "slug": "odysseywalk",
+  "name": "OdysseyWalk",
+  "hackathon": "qhacks-2026",
+  "tagline": "Generates a themed walking tour from where you stand and narrates each stop as you reach it.",
+  "placement": { "status": "track-winner", "awards": ["Gradium Prize Track"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Walking-tour apps are either rigid audio guides or bare maps.",
+  "solution": "An LLM generates a structured route of five to eight stops for a chosen theme, validated and routed with mapping APIs; narration triggers by location and you can ask spoken questions on the spot.",
+  "demo_moment": "Team-described: pick a theme, start walking, and hear the story of each stop.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "openrouter", "google-maps-api", "gradium", "web-speech"], "ai_patterns": ["llm-api", "voice-ai"] },
+  "domains": ["education", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Gradium Prize Track” among 77 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Validates generated tours before routing them.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "design-ux"],
+    "lessons": ["Validate generated content before it reaches the user, and say so."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/odysseywalk",
+    "repo": null,
+    "demo": "https://odyssey-walk.vercel.app/",
+    "video": "https://www.youtube.com/watch?v=akx0V0j7zLc"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/odysseywalk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://qhacks-2026.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

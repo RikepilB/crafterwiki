@@ -1,0 +1,38 @@
+{
+  "slug": "orbit-networking",
+  "name": "Orbit",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Live face recognition that recalls who someone is, transcribes your talk and maps your professional network.",
+  "placement": { "status": "track-winner", "awards": ["Windsurf: Best Project built with Windsurf", "Groq"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Networking starts with guesswork and the context is forgotten afterwards.",
+  "solution": "Recognizes faces and pulls public profiles, indexes identities across sessions with conversation history, transcribes live with follow-up suggestions, and maps relationships.",
+  "demo_moment": "Team-described: look at someone and see who they are and what you last discussed.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "react", "fastapi", "deepface", "opencv", "whisper", "langchain", "groq", "cerebras"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["social-connection", "careers-hr"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Windsurf: Best Project built with Windsurf” and “Groq” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Covers before, during and after a conversation.", "basis": "team-stated", "source": 0 },
+      { "claim": "Real-time face recognition of strangers raises consent issues the summary does not address.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "wow-factor"],
+    "lessons": ["Face-recognition demos impress, and invite privacy questions."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/orbit-59jths",
+    "repo": "https://github.com/qiuethan/Orbit",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=-XV-iJZak3I"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/orbit-59jths", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

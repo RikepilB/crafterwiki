@@ -1,0 +1,34 @@
+{
+  "slug": "badge",
+  "name": "Badge",
+  "hackathon": "uofthacks-13",
+  "tagline": "A personal networking badge that matches students with sponsors and people who share their career interests.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Snowflake API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "At hackathons and career fairs, students approach sponsors blind with generic questions.",
+  "solution": "Builds each user's professional profile and matches them to sponsors and peers, highlighting what about each company relates to them.",
+  "demo_moment": "Team-described: open your badge and see which sponsors to talk to and why.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "convex", "clerk", "gemini", "snowflake", "elevenlabs"], "ai_patterns": ["llm-api"] },
+  "domains": ["careers-hr", "social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Snowflake API” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Solves a problem the team saw at the event itself.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "theme-native-twist"],
+    "judging_lens": ["sponsor-api-use", "impact"],
+    "lessons": ["A problem the judges are watching happen in the room needs no persuasion."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/badge",
+    "repo": "https://github.com/RajanChavada/Badge",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=LNbBaZ9Qs3c"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/badge", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

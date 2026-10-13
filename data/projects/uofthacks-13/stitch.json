@@ -1,0 +1,37 @@
+{
+  "slug": "stitch",
+  "name": "Stitch",
+  "hackathon": "uofthacks-13",
+  "tagline": "A web video editor where you edit the timeline by hand or by describing changes to an AI agent.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Gemini API"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Timeline editors intimidate beginners and interrupt experienced creators.",
+  "solution": "A full-stack editor with a familiar timeline plus an agent that trims, rearranges, adds audio and generates transitions directly on the timeline while respecting its structure.",
+  "demo_moment": "Team-described: ask for an edit in plain words and watch the timeline change.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "react", "typescript", "gemini", "veo", "elevenlabs", "twelvelabs", "ffmpeg", "supabase"],
+    "ai_patterns": ["agent", "generative-media"]
+  },
+  "domains": ["creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Gemini API” among 160 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "The agent edits the real timeline rather than suggesting changes.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use", "technical-depth"],
+    "lessons": ["An agent that acts inside a familiar tool is easier to trust than a separate chat."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/stitch-30p6ly",
+    "repo": "https://github.com/Phalanyx/stitch",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=W8hKYKRYeJ4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/stitch-30p6ly", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://uofthacks-13.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

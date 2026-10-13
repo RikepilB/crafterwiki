@@ -1,0 +1,29 @@
+{
+  "slug": "qnxmobility",
+  "name": "QNXMobility",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A swerve-drive chair you steer by leaning, running on a real-time OS.",
+  "placement": { "status": "track-winner", "awards": ["QNX: Best Use of QNX: Hardware and Software Prizes"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "The team had hub motors and wanted to rethink moving around a workspace without standing up.",
+  "solution": "A swerve-drive base under a chair reads the rider's posture from an IMU: leaning sets direction and speed, controlled on a real-time OS.",
+  "demo_moment": "Team-described: sit, lean forward and glide across the room.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["qnx", "python", "imu", "hub-motors", "odrive"], "ai_patterns": ["none"] },
+  "domains": ["robotics-hardware"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “QNX: Best Use of QNX: Hardware and Software Prizes” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Built a rideable robot during the event.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "demo-first-wow"],
+    "judging_lens": ["technical-depth", "wow-factor"],
+    "lessons": ["A rideable demo is unforgettable; plan safety for the judging floor."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/canqnx", "repo": null, "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/canqnx", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

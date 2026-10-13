@@ -1,0 +1,29 @@
+{
+  "slug": "socialcrm",
+  "name": "socialCRM",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A CRM for creators: an agent researches their audience and suggests campaigns.",
+  "placement": { "status": "track-winner", "awards": ["Rox: Best AI Agent"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Creators can see follower counts but not who their audience is or why.",
+  "solution": "Ingests messy social data, resolves identities across platforms, researches profiles with an agent, suggests content and tracks campaigns.",
+  "demo_moment": "Team-described: ask the agent who your top followers are and get a campaign idea.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "node.js", "prisma", "openai"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["marketing-growth"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Rox: Best AI Agent” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Brings business tooling to individual creators.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Agent prizes reward agents that act on messy real data."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/socialcrm", "repo": "https://github.com/ochen1/creator-intelligence/", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/socialcrm", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
