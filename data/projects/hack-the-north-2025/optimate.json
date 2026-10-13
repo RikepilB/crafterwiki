@@ -1,0 +1,39 @@
+{
+  "slug": "optimate",
+  "name": "Optimate",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "An underwriting dashboard that surfaces the submissions that best fit an insurer's appetite, using reinforcement learning.",
+  "placement": { "status": "track-winner", "awards": ["Federato: Best RiskOps Solution for Underwriters", "Y Combinator: Unicorn Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Underwriters sift large volumes of policy data to make high-stakes decisions under time pressure.",
+  "solution": "Answers the sponsor's brief directly: on login, an RL and retrieval-backed model prioritizes in-appetite submissions, shown with heatmaps, search and plots.",
+  "demo_moment": "Team-described: log in and see the top-priority submissions ranked.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "python", "dynamodb", "cohere", "federato-api", "d3.js", "auth0"], "ai_patterns": ["ml-model", "llm-api"] },
+  "domains": ["fintech", "due-diligence-risk"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Federato: Best RiskOps Solution for Underwriters” and “Y Combinator: Unicorn Prize” among 261 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Built against the sponsor's exact challenge statement.", "basis": "team-stated", "source": 0 },
+      { "claim": "Also won the startup-potential prize, so it read as a business.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "dual-use-value"],
+    "judging_lens": ["business-potential", "sponsor-api-use"],
+    "lessons": ["Quote the sponsor's problem statement and answer it literally."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/optimate",
+    "repo": "https://github.com/jruttan1/Optimate",
+    "demo": "https://optimate-two.vercel.app/auth",
+    "video": "https://www.youtube.com/watch?v=R8M0fgPcW_Y"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/optimate", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

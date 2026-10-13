@@ -1,0 +1,34 @@
+{
+  "slug": "repostory",
+  "name": "RepoStory",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Turns any public GitHub repository's history into a readable timeline of milestones and technologies.",
+  "placement": { "status": "track-winner", "awards": ["Cerebras: Best Use of Cerebras"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Learning how someone built a project means wading through files and commits.",
+  "solution": "Agents split commit history into milestones and explain what was built, how and with what, using fast inference.",
+  "demo_moment": "Team-described: paste a repo URL and read its build story milestone by milestone.",
+  "build_style": "software-only",
+  "tech": { "stack": ["nextjs", "fastapi", "python", "cerebras", "openai-agents"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["dev-tools", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Cerebras: Best Use of Cerebras” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses fast inference to process whole histories quickly.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["sponsor-platform-mastery", "expert-data-for-everyone"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Fast-inference prizes suit jobs that read a lot of text at once."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/placeholder-it3zq7",
+    "repo": "https://github.com/SubwayMan/HTN2025",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=PFAQEJIiuBQ"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/placeholder-it3zq7", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -92,7 +92,8 @@
     { "id": "scientific-validity", "definition": "Scientifically sound; would do what it claims in the real world (NASA Space Apps 'Validity')." },
     { "id": "challenge-relevance", "definition": "Answers the stated challenge; complete, feasible and usable (NASA Space Apps 'Relevance')." },
     { "id": "human-oversight", "definition": "Shows which decisions stay with people, where a person checks the work and how mistakes get caught." },
-    { "id": "cost-sustainability", "definition": "What it costs to build and run, who pays after the pilot, and whether that is less than what it saves." }
+    { "id": "cost-sustainability", "definition": "What it costs to build and run, who pays after the pilot, and whether that is less than what it saves." },
+    { "id": "learning-stretch", "definition": "How far the team stretched beyond what it already knew during the event (e.g. PennApps 'Learning')." }
   ],
   "ai_patterns": [
     { "id": "none", "definition": "No AI component." },

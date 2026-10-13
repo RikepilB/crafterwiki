@@ -1,0 +1,33 @@
+{
+  "slug": "dream-house",
+  "name": "Dream House",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Turns a rough floor-plan sketch into a furnished, editable 3D interior in minutes.",
+  "placement": { "status": "podium", "rank": 2, "awards": ["2nd Place Prize"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Interior designers spend hours turning 2D floor plans into 3D visualizations, and doing it requires CAD or 3D-modelling skills.",
+  "solution": "An image model cleans a sketched plan into a formal layout; a segmentation model extracts furniture positions and sizes, a floor-plan model detects walls, and each piece is matched to a generated 3D asset and rendered with the walls in a game engine.",
+  "demo_moment": "Team-described: sketch a floor plan, adjust the cleaned layout, and press a button to get a furnished 3D room.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["nextjs", "fastapi", "gemini", "nano-banana", "segment-anything", "cubicasa5k", "trellis", "unity"],
+    "ai_patterns": ["computer-vision", "generative-media"]
+  },
+  "domains": ["real-estate", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Took second place overall among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Chains several vision and generative models; the team tried other detection approaches before settling on a hybrid that worked reliably.", "basis": "team-stated", "source": 0 },
+      { "claim": "Sketch in, 3D room out is a before-and-after that needs no explanation.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["demo-first-wow", "visible-engineering-depth", "one-sentence-clarity", "trend-wave-timing"],
+    "judging_lens": ["technical-depth", "design-ux", "wow-factor"],
+    "lessons": ["When one model is unreliable, combine specialised models per sub-task and show the end-to-end result."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/dreamhouse-vp4cfn", "repo": "https://github.com/willzeng274/dreamhouse", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/dreamhouse-vp4cfn", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

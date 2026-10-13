@@ -1,0 +1,34 @@
+{
+  "slug": "truecount",
+  "name": "TrueCount",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Commit-reveal voting on Ethereum so no moderator can quietly change results.",
+  "placement": { "status": "track-winner", "awards": ["ETHGlobal: Ethereum's Infinite Garden"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "In student government, one moderator's judgment halved a candidate's votes, undermining trust.",
+  "solution": "Voters commit private votes, reveal them later, and results stay permanently auditable on-chain.",
+  "demo_moment": "Team-described: cast, reveal and audit a vote.",
+  "build_style": "software-only",
+  "tech": { "stack": ["solidity", "hardhat", "react", "typescript", "wagmi", "rainbowkit"], "ai_patterns": ["none"] },
+  "domains": ["govtech-transparency", "identity-provenance"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “ETHGlobal: Ethereum's Infinite Garden” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Started from a real election incident.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["A concrete incident beats an abstract appeal to decentralization."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/truecount",
+    "repo": "https://github.com/MartinPatr/TrueCount",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=DhhBWVDUrU4"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/truecount", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

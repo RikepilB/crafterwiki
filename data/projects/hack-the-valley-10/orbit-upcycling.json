@@ -1,0 +1,34 @@
+{
+  "slug": "orbit-upcycling",
+  "name": "Orbit",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "Turns any waste material into three product ideas with build instructions, 3D previews and impact estimates.",
+  "placement": { "status": "track-winner", "awards": ["Best Future of our Planet Hack"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Most waste is never recycled, and upcycling is hard to start; the team cites a 6.9% recycling figure.",
+  "solution": "The user names a material; the system proposes three concepts with materials, tools and feasibility, then generates instructions, an editable 3D model and an environmental impact wireframe.",
+  "demo_moment": "Team-described: enter old jeans and get a buildable product with a 3D preview.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "fastapi", "python", "gemini", "figma"], "ai_patterns": ["llm-api", "generative-media"] },
+  "domains": ["climate-sustainability"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Future of our Planet Hack” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Goes from idea to instructions and impact numbers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["takes-action", "expert-data-for-everyone"],
+    "judging_lens": ["impact"],
+    "lessons": ["Make a sustainability tool end in something the user can actually build."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/orbit-ja26qm",
+    "repo": "https://github.com/stanleypangg/Orbit",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=YheB8MwZDT8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/orbit-ja26qm", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

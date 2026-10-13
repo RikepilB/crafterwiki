@@ -1,0 +1,34 @@
+{
+  "slug": "roboguitar",
+  "name": "RoboGuitar",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "A guitar whose chords are set by servos turning the tuning pegs, built from popsicle sticks and hot glue.",
+  "placement": { "status": "track-winner", "awards": ["Best Solo Hack"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Fretting chords is hard for people with small hands or cheap guitars.",
+  "solution": "Servo motors controlled by a Raspberry Pi retune strings to produce chords instead of pressing frets.",
+  "demo_moment": "Team-described: select a chord and hear the guitar retune itself.",
+  "build_style": "hardware-software",
+  "tech": { "stack": ["raspberry-pi", "python", "servos"], "ai_patterns": ["none"] },
+  "domains": ["robotics-hardware", "creative-media"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Solo Hack” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Solo build that fuses music and engineering.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["physical-artifact", "inverted-approach", "cost-collapse"],
+    "judging_lens": ["originality"],
+    "lessons": ["A scrappy physical build can win a solo prize on character alone."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/roboguitar",
+    "repo": "https://github.com/JerryCodeGrind/RoboGuitar/tree/main",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/roboguitar", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "evident-ai",
+  "name": "Evident AI",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Agents turn body-camera video into a review-ready evidence report in minutes, with tamper-evident proofs.",
+  "placement": { "status": "track-winner", "awards": ["Y Combinator: Unicorn Prize"], "track": null },
+  "team": { "size": 1, "members": [] },
+  "problem": "Officers spend hours transcribing body-camera footage; vendors are slow and expensive.",
+  "solution": "Specialised agents transcribe speech with speaker tagging, analyse key frames, assemble a report, and anchor proofs on a blockchain.",
+  "demo_moment": "Team-described: upload footage and receive a structured report.",
+  "build_style": "software-only",
+  "tech": { "stack": ["django", "python", "openai", "openai-agents-sdk", "whisper"], "ai_patterns": ["multi-agent", "computer-vision", "voice-ai"] },
+  "domains": ["legal-access", "govtech-transparency"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Y Combinator: Unicorn Prize” among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Preserves legal standards while automating the grind.", "basis": "team-stated", "source": 0 },
+      { "claim": "A solo builder won startup potential.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["takes-action", "cited-evidence-trust"],
+    "judging_lens": ["business-potential"],
+    "lessons": ["A painful, expensive workflow with a clear buyer reads as a startup."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/evident-ai",
+    "repo": "https://github.com/asalsali/evidentai-main",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=q6GD46dyJok"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/evident-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

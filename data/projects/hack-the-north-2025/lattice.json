@@ -1,0 +1,34 @@
+{
+  "slug": "lattice",
+  "name": "Lattice",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "Live 3D capture of people from three old Kinect sensors, merged into one hologram you can view in a headset.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Remote communication is still flat video; live 3D capture usually needs expensive studio equipment.",
+  "solution": "Three Kinect v2 depth sensors, each on its own laptop, stream to a central server that synchronizes and merges them into one 3D point cloud at more than 20 frames per second; the reconstruction is viewed live on a HoloLens.",
+  "demo_moment": "Team-described: a person standing among the sensors appears as a live hologram in the headset.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["kinect-v2", "hololens", "c++", "c#", "opencv"],
+    "ai_patterns": ["none"]
+  },
+  "domains": ["social-connection"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Selected by the organizer as one of 12 finalists among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Worked around a one-sensor-per-PC SDK limit, interference between depth sensors, and a headset limited to an old Wi-Fi standard.", "basis": "team-stated", "source": 0 },
+      { "claim": "Pitched as the science-fiction hologram call, built from cheap discontinued hardware.", "basis": "team-stated", "source": 0 },
+      { "claim": "A finalist with no AI component at an event full of AI projects: hard real-time systems work stood out on its own.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "cultural-reference-hook", "visible-engineering-depth", "cost-collapse", "demo-first-wow"],
+    "judging_lens": ["wow-factor", "technical-depth"],
+    "lessons": ["In an AI-heavy field, a visibly hard non-AI build can be the differentiator."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/lattice-flck7q", "repo": "https://github.com/KenC2006/Lattice", "demo": null, "video": "https://www.youtube.com/watch?v=e4iVnLWC02I" },
+  "sources": [
+    { "url": "https://devpost.com/software/lattice-flck7q", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

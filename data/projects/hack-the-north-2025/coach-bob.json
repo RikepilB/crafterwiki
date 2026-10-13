@@ -1,0 +1,34 @@
+{
+  "slug": "coach-bob",
+  "name": "Coach Bob!",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "An AR warm-up game on a punching dummy: glasses show where to strike, a voice coach heckles you, and a motion sensor scores each hit.",
+  "placement": { "status": "finalist", "awards": ["Hack the North 2025: Finalists"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Athletes skip or rush warm-ups because they are boring, and that leads to strains and lost training time.",
+  "solution": "AR glasses project coloured targets onto a freestanding punching dummy to call kicks, knees and punches; a voice coach built on an LLM and a speech service eggs the athlete on; a motion sensor reads the dummy's wobble after impact to register hits and estimate force, and a dashboard shows speed, force and time after the session.",
+  "demo_moment": "Team-described: put on the glasses, the dummy lights up with the next strike, the coach shouts, and every hit shows up on the dashboard.",
+  "build_style": "hardware-software",
+  "tech": {
+    "stack": ["xreal-glasses", "oak-camera", "opencv", "mpu-6050", "gemini", "elevenlabs", "python", "c++"],
+    "ai_patterns": ["computer-vision", "voice-ai", "llm-api"]
+  },
+  "domains": ["health", "games-entertainment"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Selected by the organizer as one of 12 finalists among 261 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Grew from a teammate missing a national Taekwondo competition after a strain blamed on a rushed warm-up.", "basis": "team-stated", "source": 0 },
+      { "claim": "Without a force sensor, the team measured hits from the dummy's wobble with a cheap motion sensor.", "basis": "team-stated", "source": 0 },
+      { "claim": "A physical dummy that people can hit puts the judges inside the demo rather than in front of a screen.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["physical-artifact", "human-stakes", "familiar-thing-new-job", "demo-first-wow", "cost-collapse"],
+    "judging_lens": ["wow-factor", "originality"],
+    "lessons": ["When a sensor is missing, measure the effect it would detect (here, the wobble) with what you have."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/coach-bob", "repo": "https://github.com/ultratrikx/oak_camera_project", "demo": null, "video": "https://www.youtube.com/watch?v=6tv8J0Tt-6o" },
+  "sources": [
+    { "url": "https://devpost.com/software/coach-bob", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}

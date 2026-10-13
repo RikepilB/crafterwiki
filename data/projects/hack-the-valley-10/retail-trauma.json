@@ -1,0 +1,34 @@
+{
+  "slug": "retail-trauma",
+  "name": "Retail Trauma",
+  "hackathon": "hack-the-valley-10",
+  "tagline": "A browser extension that blocks checkout and roasts your purchase against your savings goals.",
+  "placement": { "status": "track-winner", "awards": ["CSE CI/CD Pipeline Challenge"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Impulse online shopping blows budgets.",
+  "solution": "At checkout, an overlay judges the cart against the user's goals and budget, then records purchases in a dashboard; built with a full CI/CD pipeline.",
+  "demo_moment": "Team-described: try to buy something and get roasted by the mascot.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "node.js", "express", "mongodb", "gemini", "github-actions"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “CSE CI/CD Pipeline Challenge” among 124 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Won the CI/CD challenge, so the pipeline mattered as much as the app.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["cultural-reference-hook", "tight-scope-finished"],
+    "judging_lens": ["engineering-practice"],
+    "lessons": ["Engineering-practice prizes reward the pipeline; build it from hour one."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/placeholder-cit17r",
+    "repo": "https://github.com/KlausMikhaelson/hackthevalley-webapp",
+    "demo": "https://brokeahh.us/",
+    "video": "https://www.youtube.com/watch?v=UQ8Tn1WowR8"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/placeholder-cit17r", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hack-the-valley-x.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

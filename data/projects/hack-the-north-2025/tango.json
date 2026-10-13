@@ -1,0 +1,34 @@
+{
+  "slug": "tango",
+  "name": "Tango",
+  "hackathon": "hack-the-north-2025",
+  "tagline": "A voice agent for the Mac that acts on whatever is on your clipboard: caption a meme, explain code, turn a page into a CSV.",
+  "placement": { "status": "track-winner", "awards": ["Hack the North 2025: Finalists", "Graphite: Engineering Dream Team"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Using an LLM mid-task means copying text into a chat, waiting, and pasting the answer back, which breaks focus.",
+  "solution": "A native macOS app hooked into the clipboard and notifications. Low-power voice-activity and wake-word detection listen for a request; the request and clipboard content go to fast LLM providers, and the result returns to the clipboard ready to paste.",
+  "demo_moment": "Team-described: copy a screenshot, say a caption, and paste a finished meme; copy a word, ask for a synonym, paste.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["python", "macos", "webrtc-vad", "groq", "gemini", "openai", "graphite"],
+    "ai_patterns": ["voice-ai", "llm-api", "agent"]
+  },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "One of 12 finalists among 261 submissions, and winner of Graphite's engineering-team prize.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Pitched as an assistant that does what people wish their built-in voice assistant did, which anyone can repeat.", "basis": "team-stated", "source": 0 },
+      { "claim": "Tuned wake-word and end-of-sentence detection so responses feel instant.", "basis": "team-stated", "source": 0 },
+      { "claim": "A two-person team reached the finals with a narrow scope that worked end to end.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["one-sentence-clarity", "familiar-thing-new-job", "tight-scope-finished", "zero-install-channel"],
+    "judging_lens": ["wow-factor", "design-ux", "engineering-practice"],
+    "lessons": ["Comparing your product to a familiar assistant that disappoints people gives judges the pitch in five words."],
+    "confidence": "medium"
+  },
+  "links": { "devpost": "https://devpost.com/software/tango-q37d4z", "repo": "https://github.com/demanr/tango", "demo": null, "video": "https://www.youtube.com/watch?v=sK-WvZZubcc" },
+  "sources": [
+    { "url": "https://devpost.com/software/tango-q37d4z", "kind": "devpost-project", "retrieved_at": "2026-10-12" },
+    { "url": "https://hackthenorth2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-12" }
+  ]
+}
