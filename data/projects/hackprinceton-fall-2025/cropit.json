@@ -1,0 +1,37 @@
+{
+  "slug": "cropit",
+  "name": "Cropit",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Regenerative-farming insights with financing, pricing and spending analytics for farmers.",
+  "placement": { "status": "track-winner", "awards": ["Best Practical AI Innovation by Amazon"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Farmers lack accessible tools that connect regenerative practices to profit.",
+  "solution": "A dashboard combining soil and market data with sustainability metrics, irrigation maps, loan applications and transaction analytics through financial APIs.",
+  "demo_moment": "Team-described: open a field map and see recommendations with loan options.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["next.js", "react", "gemini", "elevenlabs", "knot-api", "capital-one-api", "usda-data", "amazon-nova"],
+    "ai_patterns": ["llm-api", "voice-ai"]
+  },
+  "domains": ["agriculture-food", "climate-sustainability", "fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Practical AI Innovation by Amazon” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses public USDA soil and market datasets.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "dual-use-value"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Linking sustainability to profit widens the audience."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/cropit",
+    "repo": "https://github.com/swetha-ganeshbabu/crop",
+    "demo": "https://cropit.tech/",
+    "video": "https://www.youtube.com/watch?v=HrpdoehIaiY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/cropit", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

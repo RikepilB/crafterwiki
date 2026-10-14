@@ -1,0 +1,43 @@
+{
+  "slug": "terralink",
+  "name": "TerraLink",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "An agent that finds credible solar, wind, hydro and geothermal sites from free satellite data in minutes.",
+  "placement": {
+    "status": "podium",
+    "awards": ["Best Overall Hack [Courtesy of Amplitude, Anthropic, OpenAI]", "Best Sustainability Hack [Courtesy of EaglePlan]"],
+    "track": null
+  },
+  "team": { "size": 2, "members": [] },
+  "problem": "Renewable site selection takes analysts 6–18 months and consultant fees, the team says, slowing the energy transition.",
+  "solution": "An agentic system queries satellite and geospatial data through Earth Engine, scores candidate sites for each energy type and explains them on a map.",
+  "demo_moment": "Team-described: ask for wind sites in Utah and get ranked candidates on a map.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "flask", "python", "google-earth-engine", "gemini", "geojson"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["climate-sustainability", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Overall Hack [Courtesy of Amplitude, Anthropic, OpenAI]” and “Best Sustainability Hack [Courtesy of EaglePlan]” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Turns expert geospatial work into a minutes-long query.", "basis": "team-stated", "source": 0 },
+      { "claim": "A two-person team won Best Overall and sustainability.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "cost-collapse", "one-sentence-clarity"],
+    "judging_lens": ["impact", "originality"],
+    "lessons": ["Compress an expensive expert workflow into a demo that runs in the room."],
+    "confidence": "medium"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/terralink-h5vuel",
+    "repo": "https://github.com/valeriacartagena/terralink-ai",
+    "demo": null,
+    "video": null
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/terralink-h5vuel", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

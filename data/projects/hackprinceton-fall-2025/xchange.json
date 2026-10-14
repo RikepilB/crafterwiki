@@ -1,0 +1,34 @@
+{
+  "slug": "xchange",
+  "name": "XChange - Where Market Chatter Becomes Market Insight",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Turns market chatter on X into ranked trading signals with paper trading.",
+  "placement": { "status": "track-winner", "awards": ["Most Impactful Use of the X API by X"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Social hype moves stocks but the volume of chatter hides the signal.",
+  "solution": "AI sentiment and trend analysis of posts feeds a dashboard with watchlists, unusual-flow alerts, chat and paper trading.",
+  "demo_moment": "Team-described: see a stock trending and why, then paper-trade it.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "vite", "sql", "x-api", "xai"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Most Impactful Use of the X API by X” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Uses the sponsor's own data as the product.", "basis": "curator-inference" }
+    ],
+    "mechanisms": ["sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Platform-data prizes reward signal over noise."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/xchange-34cvdw",
+    "repo": "https://github.com/BinayakJha/Xchange",
+    "demo": "http://x-change.tech",
+    "video": "https://www.youtube.com/watch?v=RtujehxKcOg"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/xchange-34cvdw", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "messenger-ai",
+  "name": "Messenger AI",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "An AI agent added to group chats that reads texts, PDFs and images to answer, summarise and make memes.",
+  "placement": { "status": "track-winner", "awards": ["Exploring Hybrid Intelligence by Photon"], "track": null },
+  "team": { "size": 3, "members": [] },
+  "problem": "Group study chats lack an assistant that sees the whole conversation.",
+  "solution": "An agent joins iMessage group conversations as a contact and uses their content as context.",
+  "demo_moment": "Team-described: ask the group's AI for a summary of the PDF someone shared.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "typescript", "photon", "dedalus"], "ai_patterns": ["agent", "llm-api"] },
+  "domains": ["social-connection", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Exploring Hybrid Intelligence by Photon” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Solved adding an agent as a group-chat participant.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "sponsor-platform-mastery"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Agents in group chats are a natural home for shared context."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/messenger-ai",
+    "repo": null,
+    "demo": "https://www.messengerai.tech/",
+    "video": "https://www.youtube.com/watch?v=3j3CDy7ee3k"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/messenger-ai", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

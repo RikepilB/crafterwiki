@@ -1,0 +1,38 @@
+{
+  "slug": "textfly",
+  "name": "TextFly",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "Text a number to get flight-delay predictions and travel answers, with no app.",
+  "placement": { "status": "track-winner", "awards": ["Exploring Hybrid Intelligence by Photon", "Best Use of Vibe Kanban by Vibe Kanban"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Flight delays surged during a government shutdown, and travellers lacked quick answers.",
+  "solution": "A multi-agent pipeline answers travel questions by text, predicting delays from social data and checking weather.",
+  "demo_moment": "Team-described: text your flight number and get a delay prediction.",
+  "build_style": "software-only",
+  "tech": { "stack": ["python", "typescript", "openai", "anthropic", "photon", "x-api"], "ai_patterns": ["multi-agent"] },
+  "domains": ["productivity"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Exploring Hybrid Intelligence by Photon” and “Best Use of Vibe Kanban by Vibe Kanban” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Timely: built during a real disruption.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["zero-install-channel", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["SMS-only tools demo instantly on anyone's phone."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/textfly",
+    "repo": "https://github.com/TextFly",
+    "demo": "http://textfly.tech",
+    "video": "https://www.youtube.com/watch?v=8-xfKgbZ4iI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/textfly", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

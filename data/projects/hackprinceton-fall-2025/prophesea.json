@@ -1,0 +1,34 @@
+{
+  "slug": "prophesea",
+  "name": "PropheSea",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "A swipeable card feed of data-backed prediction-market trades matched to your interests.",
+  "placement": { "status": "track-winner", "awards": ["Best Predictive Intelligence by Chestnut Forty"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Prediction markets overwhelm newcomers with options and information.",
+  "solution": "Personalised, data-backed trade suggestions in a swipeable card interface.",
+  "demo_moment": "Team-described: swipe through trade cards and bet on one.",
+  "build_style": "software-only",
+  "tech": { "stack": ["next.js", "react", "node.js", "python", "sql"], "ai_patterns": ["llm-api"] },
+  "domains": ["fintech"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Predictive Intelligence by Chestnut Forty” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Borrows a social-media interaction pattern.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["familiar-thing-new-job"],
+    "judging_lens": ["design-ux"],
+    "lessons": ["Familiar interaction patterns lower the entry barrier for complex markets."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/prophesea",
+    "repo": "https://github.com/maalin2/hackprinceton",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=tXKqWvGdW4E"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/prophesea", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

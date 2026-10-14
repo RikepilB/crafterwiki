@@ -1,0 +1,38 @@
+{
+  "slug": "discer-io",
+  "name": "Discer.io",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "An educational sandbox game where players build agent workflows from blocks and watch them compete.",
+  "placement": { "status": "track-winner", "awards": ["YC x HackPrinceton Challenge by Y Combinator", "Best Use of Dedalus by Dedalus Labs"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Few people understand how AI agents work, and resources are text- or code-heavy.",
+  "solution": "A drag-and-drop block editor for agent workflows in a multiplayer sandbox where workflows compete side by side.",
+  "demo_moment": "Team-described: build two agent workflows and watch them battle.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "bun", "python", "dedalus", "digitalocean", "snowflake"], "ai_patterns": ["agent", "multi-agent"] },
+  "domains": ["education", "agent-infrastructure"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “YC x HackPrinceton Challenge by Y Combinator” and “Best Use of Dedalus by Dedalus Labs” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Positioned as Scratch for agentic AI.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["relatable-demo-wrapper", "cultural-reference-hook"],
+    "judging_lens": ["business-potential", "sponsor-api-use"],
+    "lessons": ["\"Scratch for X\" is a quick way to explain an educational tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/discer-io",
+    "repo": "https://github.com/RomanSlack/Discerio",
+    "demo": "https://www.discerio.tech/",
+    "video": "https://www.youtube.com/watch?v=0r1ZjDX3WjM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/discer-io", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

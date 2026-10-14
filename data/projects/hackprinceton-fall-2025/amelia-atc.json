@@ -1,0 +1,34 @@
+{
+  "slug": "amelia-atc",
+  "name": "Amelia",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "A second brain for air traffic controllers: surfaces missed risks from live flight and weather data.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Vibe Kanban by Vibe Kanban"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Air traffic control is understaffed, worsened during a government shutdown, the team says.",
+  "solution": "Fuses real-time flight and weather data, surfaces insights and automates routine work while keeping the controller in the loop.",
+  "demo_moment": "Team-described: see a conflict flagged on the live map with a suggested action.",
+  "build_style": "software-only",
+  "tech": { "stack": ["react", "typescript", "fastapi", "python", "mapbox", "redis", "grok", "elevenlabs", "dedalus"], "ai_patterns": ["agent", "voice-ai"] },
+  "domains": ["emergencies-disaster", "connectivity-telecom"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Vibe Kanban by Vibe Kanban” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Augments rather than replaces controllers.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "trend-wave-timing"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Keep the human in the loop explicit for safety-critical AI."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/amelia-b815hi",
+    "repo": "https://github.com/sai-nallani/hack-princeton",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=GPBcNjmKcPM"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/amelia-b815hi", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

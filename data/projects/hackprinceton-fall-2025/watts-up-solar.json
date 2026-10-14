@@ -1,0 +1,41 @@
+{
+  "slug": "watts-up-solar",
+  "name": "Watt's Up",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "See how much solar your roof could produce, save and offset, from satellite imagery and irradiance data.",
+  "placement": { "status": "podium", "awards": ["Best Overall Hack [Courtesy of Amplitude, Anthropic, OpenAI]"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "People want clean energy but getting a reliable solar estimate takes weeks of outreach.",
+  "solution": "Segments roofs in satellite imagery with a vision model, combines NASA irradiance data, and estimates production, savings and carbon offset instantly.",
+  "demo_moment": "Team-described: enter an address and see the roof's solar potential.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "typescript", "python", "pytorch", "segformer", "opencv", "nasa-power-api", "gemini"],
+    "ai_patterns": ["computer-vision", "ml-model", "llm-api"]
+  },
+  "domains": ["climate-sustainability", "earth-observation"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Overall Hack [Courtesy of Amplitude, Anthropic, OpenAI]” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Uses existing public data that is fragmented and technical.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["expert-data-for-everyone", "one-sentence-clarity"],
+    "judging_lens": ["impact"],
+    "lessons": ["Make public scientific data answer one personal question."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/watt-s-up",
+    "repo": "https://github.com/deepanshgandhi/Watts-Up",
+    "demo": "https://watts-up.tech/",
+    "video": "https://www.youtube.com/watch?v=klGNEmRPOGY"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/watt-s-up", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

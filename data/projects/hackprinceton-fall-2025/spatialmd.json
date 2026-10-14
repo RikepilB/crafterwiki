@@ -1,0 +1,32 @@
+{
+  "slug": "spatialmd",
+  "name": "SpatialMD",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "AR and 3D surgical guidance that brings remote expert help to rural hospitals.",
+  "placement": { "status": "track-winner", "awards": ["Best Use of Dedalus by Dedalus Labs"], "track": null },
+  "team": { "size": 2, "members": [] },
+  "problem": "Rural hospitals lack specialist surgeons for complex procedures.",
+  "solution": "Combines 3D reconstruction, hand and object tracking and vision-language models with live video for remote guidance.",
+  "demo_moment": "Team-described: a remote expert annotates a 3D view during a procedure.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["react", "three.js", "fastapi", "mediapipe", "opencv", "yolov8", "webrtc", "claude", "dedalus"],
+    "ai_patterns": ["computer-vision", "llm-api"]
+  },
+  "domains": ["health"],
+  "analysis": {
+    "why_it_stood_out": [
+      { "claim": "Won “Best Use of Dedalus by Dedalus Labs” among 195 submissions.", "basis": "organizer-stated", "source": 1 },
+      { "claim": "Draws analogies from remote software collaboration.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "visible-engineering-depth"],
+    "judging_lens": ["sponsor-api-use"],
+    "lessons": ["Expertise-gap framing suits telemedicine demos."],
+    "confidence": "low"
+  },
+  "links": { "devpost": "https://devpost.com/software/spatialmd", "repo": "https://github.com/Aaryaman3/FixIt", "demo": null, "video": null },
+  "sources": [
+    { "url": "https://devpost.com/software/spatialmd", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}

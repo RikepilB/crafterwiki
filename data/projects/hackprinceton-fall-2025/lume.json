@@ -1,0 +1,41 @@
+{
+  "slug": "lume",
+  "name": "Lume - Your tech-savvy guide.",
+  "hackathon": "hackprinceton-fall-2025",
+  "tagline": "A voice-activated on-screen tutor that highlights exactly where seniors should click.",
+  "placement": { "status": "track-winner", "awards": ["Best Education + Entertainment Track", "Best Use of ElevenLabs by MLH"], "track": null },
+  "team": { "size": 4, "members": [] },
+  "problem": "Small tech tasks are hard for older adults and create dependence.",
+  "solution": "A Chrome extension listens to questions, reads the screen with AI agents, and highlights the right buttons step by step while speaking instructions.",
+  "demo_moment": "Team-described: ask how to join a Zoom call and watch the buttons light up.",
+  "build_style": "software-only",
+  "tech": {
+    "stack": ["chrome-extension", "flask", "python", "openai", "claude", "whisper", "dedalus"],
+    "ai_patterns": ["multi-agent", "voice-ai", "computer-vision"]
+  },
+  "domains": ["accessibility", "education"],
+  "analysis": {
+    "why_it_stood_out": [
+      {
+        "claim": "Won “Best Education + Entertainment Track” and “Best Use of ElevenLabs by MLH” among 195 submissions.",
+        "basis": "organizer-stated",
+        "source": 1
+      },
+      { "claim": "Framed as a grandchild who is always available.", "basis": "team-stated", "source": 0 }
+    ],
+    "mechanisms": ["human-stakes", "zero-install-channel", "relatable-demo-wrapper"],
+    "judging_lens": ["impact", "sponsor-api-use"],
+    "lessons": ["A relationship metaphor (the helpful grandkid) sells an assistive tool."],
+    "confidence": "low"
+  },
+  "links": {
+    "devpost": "https://devpost.com/software/lume-zrlypk",
+    "repo": "https://github.com/parker-rho/lume/",
+    "demo": null,
+    "video": "https://www.youtube.com/watch?v=o_BVDoVG3aI"
+  },
+  "sources": [
+    { "url": "https://devpost.com/software/lume-zrlypk", "kind": "devpost-project", "retrieved_at": "2026-10-13" },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13" }
+  ]
+}
