@@ -32,7 +32,10 @@ solutions), and scope Phases 5–6 to constraints and legitimate preparation. Ev
 
 Use the **event-scout** agent (skill: `hackathon-recon`). Requires: rubric and lens weights (explicit or
 inferred and labelled), judge profile, prizes and stackable sponsor lanes, submission requirements,
-constraints, saturation, and domain data availability.
+constraints, saturation, and domain data availability. For an indexed event, start from the compiled
+evidence: `plan <run-name> --mode hackathon --event <slug> --json` writes the organizer facts with
+sources, the same-kind prior and the nearest winners. Reverify the rules on the primary pages before
+using them.
 
 ## Phase 2 — Patterns → `02-patterns.md`
 
