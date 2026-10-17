@@ -11,8 +11,9 @@ Goal: the facts that decide which angle can win, in under 30 minutes.
 
 1. **Corpus first.** If the event is indexed, `crafterwiki plan <run-name> --mode hackathon --event <slug>`
    compiles its organizer rules, per-track weights, sources, same-kind prior (with ranges, own winners
-   excluded) and nearest winners into a run's `01-brief.md` and `02-references.md`. Start from those
-   (`event <slug> --json` gives the same facts without a workspace). Otherwise `search "<event name>" --include-entries`
+   excluded) and nearest winners into a run's `01-brief.md` and `02-references.md`. Start from those.
+   `event <slug> --json` gives the event facts and raw same-kind counts only, without ranges or nearest
+   winners. Otherwise `search "<event name>" --include-entries`
    and `patterns --event-kind <kind>` for the closest event kind.
 2. **Primary pages.** Event site; Devpost overview (prizes, judges, "Judging Criteria"); rules; FAQ;
    schedule; prize pages; last edition's gallery and 3–5 winning project pages (confirm prizes on the

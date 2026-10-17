@@ -81,7 +81,9 @@ function referencesEvidence({ event: e, patterns: p, references: r }) {
     r.items.length
       ? [`Nearest winners for this event's judging lenses (${r.lenses.join(', ')}):`, '', '| Record | Event | Status | Shared lenses | Mechanisms |', '|---|---|---|---|---|',
         ...r.items.map((i) => `| ${cell(i.name)} (\`${i.slug}\`) | ${i.hackathon} | ${i.status} | ${cell((i.shared.lenses ?? []).join(', '))} | ${cell(i.mechanisms.join(', '))} |`)].join('\n')
-      : 'Nearest winners: the event publishes no judging lenses, so search by problem instead.',
+      : r.lenses.length
+        ? `Nearest winners: no indexed winner matches this event's judging lenses (${r.lenses.join(', ')}), so search by problem instead.`
+        : 'Nearest winners: the event publishes no judging lenses, so search by problem instead.',
     '',
     '## Team references',
     '',

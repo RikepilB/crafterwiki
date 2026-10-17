@@ -52,7 +52,7 @@
   },
   "required_tech": [],
   "sponsors": ["Amplitude", "Anthropic", "OpenAI", "Daylight Health", "Orcava AI", "Eragon AI", "EaglePlan", "Amazon", "Capital One", "Y Combinator", "X", "xAI", "Knot", "Telora", "Photon", "Dedalus Labs", "Vibe Kanban", "Chestnut Forty", "MLH"],
-  "submission_requirements": ["Devpost submission", "In person at Princeton", "Link to a public GitHub repository created during the event (November 7–9, 2025)", "Optional demo video of up to 2 minutes"],
+  "submission_requirements": ["Devpost submission", "In person at Princeton", "Link to a public GitHub repository created during the event (November 7–9, 2025)", "Optional demo video of up to 2 minutes", "In-person presentation to judges on November 9, 2025 (9:30 AM to 2 PM), at most 2 minutes, required even with a video"],
   "results_status": "complete",
   "roster_coverage": "partial",
   "entries": [
@@ -253,7 +253,7 @@
   ],
   "organizer_takeaways": [],
   "sources": [
-    { "url": "https://hackprinceton-fall-2025.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-14", "note": "Dates, venue, participants, prizes, judging criteria, submission requirements (public GitHub repository, optional video)." },
+    { "url": "https://hackprinceton-fall-2025.devpost.com/", "kind": "official-event-page", "retrieved_at": "2026-10-14", "note": "Dates, venue, participants, prizes, judging criteria, submission requirements (public GitHub repository, optional video, two-minute presentation to judges)." },
     { "url": "https://hackprinceton-fall-2025.devpost.com/rules", "kind": "official-event-page", "retrieved_at": "2026-10-13", "note": "Team size: up to 4 members; individuals may also enter." },
     { "url": "https://hackprinceton-fall-2025.devpost.com/project-gallery", "kind": "devpost-gallery", "retrieved_at": "2026-10-13", "note": "All 9 pages captured: Devpost counts 195 submissions and lists 194 publicly; prize names from each of the 37 winning project pages." }
   ],

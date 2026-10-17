@@ -76,6 +76,15 @@ test('an event kind without indexed winners falls back to every kind, labelled',
   for (const ref of e.references.items) assert.notEqual(ref.hackathon, 'wateraid-water-challenge-2026');
 });
 
+test('published lenses with no matching winner are not reported as missing lenses', (t) => {
+  const evidence = planEvidence(loadCorpus(ROOT), 'wateraid-water-challenge-2026');
+  evidence.references.items = [];
+  const r = createPlan({ slug: 'no-match', mode: 'hackathon', event: 'wateraid-water-challenge-2026', out: temporary(t), evidence });
+  const refs = readFileSync(resolve(r.directory, '02-references.md'), 'utf8');
+  assert.match(refs, /no indexed winner matches this event's judging lenses \(impact,/);
+  assert.doesNotMatch(refs, /publishes no judging lenses/);
+});
+
 test('evidence for a different event is refused before writing', (t) => {
   const corpus = loadCorpus(ROOT);
   const out = temporary(t);
