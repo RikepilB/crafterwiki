@@ -386,6 +386,49 @@ export function eventBrief(corpus, slug) {
   };
 }
 
+// What the corpus already knows when a team starts planning for an event: the organizer's rules and
+// weights, winners of the same event kind with ranges, and the nearest winners for its judging lenses.
+// Facts only, each with its source; the team still verifies the rules before building anything.
+export function planEvidence(corpus, slug, { limit = 5 } = {}) {
+  const brief = eventBrief(corpus, slug);
+  const h = corpus.hackathons.find((x) => x.slug === slug);
+  // The event's own winners stay out of its prior, as in eventBrief. An event kind with no indexed
+  // winners yet falls back to every kind, labelled as a weaker signal.
+  const winners = corpus.items.filter((i) => i.analyzed && i.hackathon !== slug && isWinner(corpus, i));
+  let pool = winners.filter((i) => i.event_kind === h.kind);
+  const sameKind = pool.length > 0;
+  if (!sameKind) pool = winners;
+  const n = pool.length;
+  const ranged = (rows) => rows.slice(0, 8).map(([value, k]) => {
+    const w = wilson(k, n);
+    return { value, count: k, share: w.p, lo: w.lo, hi: w.hi };
+  });
+  const criteria = [...(h.judging?.criteria ?? []), ...(h.tracks ?? []).flatMap((t) => t.criteria ?? [])];
+  const lenses = [...new Set(criteria.map((c) => c.lens).filter(Boolean))];
+  const references = lenses.length
+    ? similar(corpus, { lens: lenses, limit: 200 })
+      .filter((i) => i.hackathon !== slug && isWinner(corpus, i))
+      .slice(0, limit)
+      .map((i) => ({ slug: i.slug, name: i.name, hackathon: i.hackathon, status: i.status, mechanisms: i.mechanisms, shared: i.shared, score: i.score }))
+    : [];
+  return {
+    event: {
+      ...brief,
+      team_size: h.team_size ?? null,
+      timeline: h.timeline ?? [],
+      tracks: (h.tracks ?? []).map((t) => ({ name: t.name, criteria: (t.criteria ?? []).map((c) => ({ label: c.label, lens: c.lens ?? null, weight: c.weight ?? null })) })),
+      sources: (h.sources ?? []).map((s) => ({ url: s.url, kind: s.kind, retrieved_at: s.retrieved_at ?? null })),
+    },
+    guide: h.guide ?? null,
+    patterns: {
+      basis: sameKind ? 'same event kind' : 'all event kinds (no winners of this kind indexed yet)',
+      event_kind: h.kind, n, events: [...new Set(pool.map((i) => i.hackathon))],
+      mechanisms: ranged(count(pool.flatMap((i) => i.mechanisms))), lenses: ranged(count(pool.flatMap((i) => i.lenses))),
+    },
+    references: { lenses, items: references },
+  };
+}
+
 function mulberry32(seed) {
   let a = seed >>> 0;
   return () => {

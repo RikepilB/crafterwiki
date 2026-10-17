@@ -36,6 +36,10 @@ not a completed plan, agent execution engine, or permission to start event work.
    claim basis, sample size and event-kind filters. Rank by stated relevance, not win odds.
    Acceptance: a non-NASA event and an independent project each produce a usable shortlist;
    unknown rules and incomplete rosters remain visible. No private overlay export.
+   *Event runs delivered 2026-10-14:* `--event <slug>` compiles organizer facts and sources,
+   per-track weights, the same-kind prior with Wilson ranges (the event's own winners excluded;
+   an unindexed kind falls back to every kind, labelled) and the nearest winners for the event's
+   judging lenses. A test compiles every indexed event. Independent projects are still manual.
 3. **Execution and review:** machine-readable gate status, checkpoint/resume and bounded
    role adapters using the same run documents. Acceptance: blocked event work cannot advance,
    a failed integration triggers a scope cut, and fabricated sources fail review.
@@ -54,8 +58,10 @@ node cli/crafterwiki.mjs plan my-event --mode hackathon --event nasa-space-apps-
 ```
 
 Default output: gitignored `builder-runs/<slug>/`. `--out <directory>` selects a parent
-directory. Existing run directories are refused. A known `--event` is only a corpus pointer;
-it does not verify current rules. Never publish a run without reviewing its personal data.
+directory. Existing run directories are refused. A known `--event` compiles what the corpus
+records about the event into `01-brief.md` and `02-references.md`; it does not verify current
+rules, and the build gate stays blocked until the team does. Never publish a run without
+reviewing its personal data.
 
 Open the generated `README.md` and work through the numbered documents. Give an assistant
 the run directory and ask it to complete the next unresolved stage using cited evidence.

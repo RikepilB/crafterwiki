@@ -61,11 +61,13 @@ It supports independent projects and any hackathon through editable local worksp
 
 ```bash
 node cli/crafterwiki.mjs plan my-build --mode project
-node cli/crafterwiki.mjs plan my-event --mode hackathon
+node cli/crafterwiki.mjs plan my-event --mode hackathon --event hack-the-north-2025
 ```
 
 Open `builder-runs/<slug>/README.md`. Runs are gitignored and existing directories are never
-overwritten. This is a workspace generator; evidence retrieval and gate decisions are manual.
+overwritten. With `--event`, the brief and references are compiled from the corpus: organizer rules
+and weights with sources, the same-kind prior with ranges, and the nearest winners. Gate decisions stay
+with the team.
 
 `hack-plan/nasa-space-apps-2026/` is the `/hack-plan` output for NASA Space Apps 2026 (14–15 Nov 2026),
 also rendered at `/plans/nasa-space-apps-2026/` on the site. The five-minute product demo is scripted in
